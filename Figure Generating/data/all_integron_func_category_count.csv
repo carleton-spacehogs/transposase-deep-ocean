@@ -1,0 +1,25 @@
+COG_function,integron_count,integron_prop,normal_count,normal_prop
+Inorganic ion transport and metabolism,37,0.018964634,1046133,0.044859104
+General function prediction only,171,0.08764736,1865011,0.079973313
+Lipid transport and metabolism,48,0.024602768,1355277,0.05811547
+"Translation, ribosomal structure and biogenesis",130,0.066632496,1965949,0.084301623
+"Posttranslational modification, protein turnover, chaperones",108,0.055356228,1356302,0.058159423
+"Replication, recombination and repair",247,0.126601743,1300911,0.055784208
+Coenzyme transport and metabolism,62,0.031778575,1550988,0.06650773
+Transcription,122,0.062532035,867578,0.037202508
+Cell motility,10,0.005125577,312316,0.013392385
+Extracellular structures,12,0.006150692,151971,0.00651665
+Function unknown,144,0.073808303,703170,0.030152548
+Defense mechanisms,240,0.123013839,493672,0.02116909
+Signal transduction mechanisms,65,0.033316248,1018467,0.043672761
+Energy production and conversion,105,0.053818555,1532670,0.065722238
+Cell wall/membrane/envelope biogenesis,71,0.036391594,1992022,0.085419656
+Amino acid transport and metabolism,71,0.036391594,2088150,0.089541709
+Nucleotide transport and metabolism,38,0.019477191,840383,0.036036362
+"Secondary metabolites biosynthesis, transport and catabolism",59,0.030240902,513800,0.022032196
+"Mobilome: prophages, transposons",116,0.059456689,278134,0.011926631
+Carbohydrate transport and metabolism,43,0.022039979,1279184,0.054852535
+"Intracellular trafficking, secretion, and vesicular transport",26,0.013326499,378454,0.016228441
+"Cell cycle control, cell division, chromosome partitioning",18,0.009226038,383749,0.016455495
+Cytoskeleton,8,0.004100461,41169,0.001765363
+~Total,1951,1,23320417,1

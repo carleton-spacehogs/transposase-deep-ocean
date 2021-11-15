@@ -1,0 +1,529 @@
+﻿pnps,category,type_molecule,from_integron_type
+0.015867618,"Replication, recombination and repair",protein,In0
+1.010062168,Inorganic ion transport and metabolism,protein,CALIN
+0.312771247,Inorganic ion transport and metabolism,protein,CALIN
+0.224266698,Lipid transport and metabolism,protein,CALIN
+0.064814132,"Replication, recombination and repair",protein,CALIN
+0.104289621,"Replication, recombination and repair",protein,complete
+0.262427546,"Replication, recombination and repair",protein,In0
+0.033914184,"Replication, recombination and repair",protein,In0
+0.072674717,"Replication, recombination and repair",protein,In0
+0.096741107,Energy production and conversion,protein,CALIN
+0.862989878,"Replication, recombination and repair",protein,complete
+0.195963676,Defense mechanisms,protein,CALIN
+0.0869275,Defense mechanisms,protein,CALIN
+0.267430747,Transcription,protein,CALIN
+0.064947765,"Translation, ribosomal structure and biogenesis",protein,CALIN
+0.115768258,Nucleotide transport and metabolism,protein,CALIN
+0.17350191,Coenzyme transport and metabolism,protein,CALIN
+0.664432921,Amino acid transport and metabolism,protein,CALIN
+0.053937505,Inorganic ion transport and metabolism,protein,CALIN
+0.013737655,Lipid transport and metabolism,protein,complete
+0.032494424,"Replication, recombination and repair",protein,complete
+0.278113921,"Replication, recombination and repair",protein,In0
+0.192119045,Inorganic ion transport and metabolism,protein,CALIN
+0.092482191,Inorganic ion transport and metabolism,protein,CALIN
+1.731707797,Inorganic ion transport and metabolism,protein,CALIN
+0.679948062,Energy production and conversion,protein,CALIN
+0.19328714,Function unknown,protein,CALIN
+0.241747745,"Replication, recombination and repair",protein,complete
+inf,"Mobilome: prophages, transposons",protein,CALIN
+0.002447351,Cell wall/membrane/envelope biogenesis,protein,CALIN
+0.135756149,"Replication, recombination and repair",protein,complete
+0.165435348,"Replication, recombination and repair",protein,complete
+0.010872961,Nucleotide transport and metabolism,protein,CALIN
+0.101126768,"Replication, recombination and repair",protein,CALIN
+0.080172952,"Replication, recombination and repair",protein,complete
+0.010304401,"Replication, recombination and repair",protein,In0
+0.249211691,"Replication, recombination and repair",protein,In0
+0.325372899,"Replication, recombination and repair",protein,complete
+0.063307551,"Secondary metabolites biosynthesis, transport and catabolism",protein,CALIN
+0.116673019,"Mobilome: prophages, transposons",protein,complete
+1.128149527,"Replication, recombination and repair",protein,complete
+0.728034535,General function prediction only,protein,CALIN
+0.368530442,Energy production and conversion,protein,CALIN
+0.167748288,"Replication, recombination and repair",protein,In0
+0.268545362,"Posttranslational modification, protein turnover, chaperones",protein,CALIN
+0.060167609,"Replication, recombination and repair",protein,In0
+0.235182035,"Replication, recombination and repair",protein,In0
+0.587596442,"Replication, recombination and repair",protein,In0
+3.313621947,"Translation, ribosomal structure and biogenesis",protein,CALIN
+0.137432991,Amino acid transport and metabolism,protein,CALIN
+0.126372827,Defense mechanisms,protein,CALIN
+0.462196293,"Replication, recombination and repair",protein,complete
+1.646170649,"Replication, recombination and repair",protein,In0
+0.031464223,General function prediction only,protein,complete
+0.04671501,"Replication, recombination and repair",protein,complete
+0.011453414,"Replication, recombination and repair",protein,CALIN
+0.188158276,Energy production and conversion,protein,CALIN
+0.045559115,"Mobilome: prophages, transposons",protein,CALIN
+0.197818628,Cell wall/membrane/envelope biogenesis,protein,CALIN
+0.041586851,Function unknown,protein,CALIN
+0.013173884,Transcription,protein,CALIN
+0.058565254,Defense mechanisms,protein,CALIN
+0.373009888,Coenzyme transport and metabolism,protein,CALIN
+0.201585504,Inorganic ion transport and metabolism,protein,CALIN
+2.965026114,"Replication, recombination and repair",protein,In0
+0.024490676,"Replication, recombination and repair",protein,In0
+0.109432082,"Replication, recombination and repair",protein,In0
+0.083597768,Defense mechanisms,protein,CALIN
+0.083597768,"Intracellular trafficking, secretion, and vesicular transport",protein,CALIN
+0.083597768,Extracellular structures,protein,CALIN
+0.089655249,General function prediction only,protein,CALIN
+0.281538087,"Replication, recombination and repair",protein,complete
+0.084047443,"Replication, recombination and repair",protein,In0
+3.151197355,"Posttranslational modification, protein turnover, chaperones",protein,CALIN
+0.23599788,"Replication, recombination and repair",protein,complete
+0.932600281,"Translation, ribosomal structure and biogenesis",protein,CALIN
+0.056584041,"Replication, recombination and repair",protein,In0
+0.079985054,Defense mechanisms,protein,CALIN
+0.118351102,Defense mechanisms,protein,CALIN
+0.201799316,"Secondary metabolites biosynthesis, transport and catabolism",protein,CALIN
+0.062075756,"Secondary metabolites biosynthesis, transport and catabolism",protein,CALIN
+0.088884376,"Translation, ribosomal structure and biogenesis",protein,CALIN
+0.088884376,"Posttranslational modification, protein turnover, chaperones",protein,CALIN
+0.230506156,"Mobilome: prophages, transposons",protein,CALIN
+0.129133827,"Replication, recombination and repair",protein,In0
+0.29228844,Defense mechanisms,protein,CALIN
+0.0151069,Lipid transport and metabolism,protein,complete
+0.060600888,"Replication, recombination and repair",protein,complete
+0.364439513,"Mobilome: prophages, transposons",protein,CALIN
+0.131923645,"Replication, recombination and repair",protein,In0
+0.024397704,"Translation, ribosomal structure and biogenesis",protein,CALIN
+0.024397704,"Posttranslational modification, protein turnover, chaperones",protein,CALIN
+0.03746125,"Replication, recombination and repair",protein,complete
+0.038497527,General function prediction only,protein,complete
+0.330906245,Defense mechanisms,protein,CALIN
+0.092558821,Transcription,protein,CALIN
+0.004911513,Defense mechanisms,protein,CALIN
+0.175767811,"Mobilome: prophages, transposons",protein,CALIN
+0.035030947,Defense mechanisms,protein,CALIN
+0.030958,"Replication, recombination and repair",protein,complete
+0.032378472,"Replication, recombination and repair",protein,In0
+0.018675109,Lipid transport and metabolism,protein,complete
+0.082942652,"Replication, recombination and repair",protein,complete
+0.033532658,Defense mechanisms,protein,complete
+0.224019904,General function prediction only,protein,complete
+0.022181586,Amino acid transport and metabolism,protein,complete
+0.26285512,"Replication, recombination and repair",protein,In0
+0.137424047,"Replication, recombination and repair",protein,In0
+0.182945448,"Replication, recombination and repair",protein,In0
+0.0553839,"Mobilome: prophages, transposons",protein,CALIN
+0.066464076,Defense mechanisms,protein,CALIN
+0.157617367,Energy production and conversion,protein,CALIN
+0.066766866,"Replication, recombination and repair",protein,complete
+0.016996129,Defense mechanisms,protein,CALIN
+0.072802484,"Replication, recombination and repair",protein,In0
+0.161861842,"Replication, recombination and repair",protein,CALIN
+0.158301411,Defense mechanisms,protein,CALIN
+0.710550781,"Replication, recombination and repair",protein,complete
+0.308219608,Amino acid transport and metabolism,protein,CALIN
+1.637166044,"Replication, recombination and repair",protein,In0
+0.060906479,General function prediction only,protein,CALIN
+0.089071413,"Replication, recombination and repair",protein,In0
+0.0829408,Defense mechanisms,protein,CALIN
+0.11000149,"Mobilome: prophages, transposons",protein,CALIN
+0.26634679,Energy production and conversion,protein,CALIN
+0.236306242,"Replication, recombination and repair",protein,In0
+0.017757008,Nucleotide transport and metabolism,protein,complete
+0.155429603,"Replication, recombination and repair",protein,complete
+0.132371381,"Translation, ribosomal structure and biogenesis",protein,complete
+0.09028487,Defense mechanisms,protein,CALIN
+0.162972011,"Posttranslational modification, protein turnover, chaperones",protein,CALIN
+0.208010811,"Replication, recombination and repair",protein,In0
+0.328618294,"Replication, recombination and repair",protein,In0
+0.023073165,"Mobilome: prophages, transposons",protein,CALIN
+0.069271009,"Replication, recombination and repair",protein,CALIN
+0.097137617,"Translation, ribosomal structure and biogenesis",protein,CALIN
+0.09116065,Nucleotide transport and metabolism,protein,CALIN
+0.076324179,Defense mechanisms,protein,CALIN
+0.52843194,Defense mechanisms,protein,CALIN
+0.054914859,"Replication, recombination and repair",protein,In0
+0.029849004,Energy production and conversion,protein,CALIN
+0.289489959,"Secondary metabolites biosynthesis, transport and catabolism",protein,CALIN
+0.320842609,"Mobilome: prophages, transposons",protein,CALIN
+0.952496121,"Replication, recombination and repair",protein,In0
+0.046527741,Defense mechanisms,protein,CALIN
+0.102321029,"Replication, recombination and repair",protein,In0
+0.062252843,"Replication, recombination and repair",protein,In0
+0.066677838,"Posttranslational modification, protein turnover, chaperones",protein,complete
+0.047090969,"Replication, recombination and repair",protein,complete
+0.218566583,"Replication, recombination and repair",protein,In0
+0,Cell wall/membrane/envelope biogenesis,protein,complete
+0.07660858,Transcription,protein,CALIN
+0.022672027,Defense mechanisms,protein,CALIN
+0.278995144,"Replication, recombination and repair",protein,complete
+0.063675339,Defense mechanisms,protein,CALIN
+2.224782148,"Replication, recombination and repair",protein,In0
+0.062728389,"Mobilome: prophages, transposons",protein,CALIN
+0.064559946,Transcription,protein,CALIN
+0.116604698,Amino acid transport and metabolism,protein,complete
+0.180055238,"Replication, recombination and repair",protein,complete
+0.096878671,"Replication, recombination and repair",protein,In0
+inf,"Replication, recombination and repair",protein,complete
+0.130298985,"Replication, recombination and repair",protein,complete
+0.039413557,Function unknown,protein,complete
+0.151873001,Energy production and conversion,protein,complete
+0.600194211,"Replication, recombination and repair",protein,In0
+0.045667897,Defense mechanisms,protein,CALIN
+0.099193251,"Translation, ribosomal structure and biogenesis",protein,CALIN
+0.02550762,"Replication, recombination and repair",protein,In0
+0.617234218,Function unknown,protein,CALIN
+0.017021048,"Replication, recombination and repair",protein,In0
+0.051459664,"Replication, recombination and repair",protein,In0
+0.346261296,Function unknown,protein,CALIN
+0.158239966,"Translation, ribosomal structure and biogenesis",protein,CALIN
+0.158239966,"Posttranslational modification, protein turnover, chaperones",protein,CALIN
+0.069070924,"Replication, recombination and repair",protein,CALIN
+0.150446637,Carbohydrate transport and metabolism,protein,CALIN
+0.150446637,Amino acid transport and metabolism,protein,CALIN
+0.142748857,Lipid transport and metabolism,protein,CALIN
+0.186620427,"Replication, recombination and repair",protein,In0
+0.909587585,Cell wall/membrane/envelope biogenesis,protein,complete
+0.095574513,"Intracellular trafficking, secretion, and vesicular transport",protein,CALIN
+0.003440276,Defense mechanisms,protein,CALIN
+0,Defense mechanisms,protein,CALIN
+0.001616465,Lipid transport and metabolism,protein,complete
+0.030572361,"Replication, recombination and repair",protein,complete
+0.055847508,"Replication, recombination and repair",protein,In0
+0.015157047,"Replication, recombination and repair",protein,In0
+0.003007459,"Mobilome: prophages, transposons",protein,CALIN
+0.010372681,"Replication, recombination and repair",protein,In0
+0.087399389,"Replication, recombination and repair",protein,In0
+0.054697159,"Replication, recombination and repair",protein,In0
+0.146059212,Transcription,protein,CALIN
+0.280937167,"Replication, recombination and repair",protein,In0
+0.039257197,Energy production and conversion,protein,complete
+0.011245575,"Secondary metabolites biosynthesis, transport and catabolism",protein,CALIN
+0.073133771,"Replication, recombination and repair",protein,In0
+0.142459613,Transcription,protein,CALIN
+0.086597149,"Replication, recombination and repair",protein,complete
+0.528324913,"Translation, ribosomal structure and biogenesis",protein,CALIN
+3.518094603,Signal transduction mechanisms,protein,CALIN
+0.047714027,"Replication, recombination and repair",protein,In0
+1.61759815,Transcription,protein,CALIN
+0.255290192,Defense mechanisms,protein,CALIN
+0.051724716,Defense mechanisms,protein,CALIN
+0.094721017,Defense mechanisms,protein,CALIN
+0.076121533,Defense mechanisms,protein,CALIN
+0.30626308,General function prediction only,protein,CALIN
+0.22528748,"Mobilome: prophages, transposons",protein,CALIN
+1.816957061,"Replication, recombination and repair",protein,In0
+0.302162106,"Replication, recombination and repair",protein,In0
+0.164028986,"Replication, recombination and repair",protein,complete
+0.381064413,"Mobilome: prophages, transposons",protein,CALIN
+0.170767343,"Mobilome: prophages, transposons",protein,CALIN
+0.033119945,Transcription,protein,CALIN
+0.156479896,Coenzyme transport and metabolism,protein,CALIN
+0.226690337,Signal transduction mechanisms!!!Transcription,protein,CALIN
+0.065039165,"Replication, recombination and repair",protein,In0
+0.012949395,Lipid transport and metabolism,protein,complete
+0.042264036,Defense mechanisms,protein,CALIN
+0.574921565,"Mobilome: prophages, transposons",protein,CALIN
+0.178466873,Transcription,protein,CALIN
+0.761702881,"Replication, recombination and repair",protein,In0
+0.095932264,"Replication, recombination and repair",protein,In0
+0.147893083,"Replication, recombination and repair",protein,In0
+0.396080057,"Replication, recombination and repair",protein,complete
+0.050038044,"Replication, recombination and repair",protein,In0
+0.36387499,"Replication, recombination and repair",protein,In0
+0.10332681,"Replication, recombination and repair",protein,In0
+0.1689694,"Replication, recombination and repair",protein,In0
+2.647961855,"Replication, recombination and repair",protein,In0
+0.980987568,Carbohydrate transport and metabolism,protein,CALIN
+1.180132406,"Replication, recombination and repair",protein,In0
+1.858810971,"Replication, recombination and repair",protein,In0
+0.468261426,General function prediction only,protein,CALIN
+0.172508998,Cell wall/membrane/envelope biogenesis,protein,CALIN
+0.316900647,"Replication, recombination and repair",protein,complete
+0.254205324,Cell wall/membrane/envelope biogenesis,protein,CALIN
+0.693935481,Signal transduction mechanisms!!!Transcription,protein,CALIN
+0.061833235,"Translation, ribosomal structure and biogenesis",protein,CALIN
+0.758896399,"Replication, recombination and repair",protein,In0
+0.037849186,"Replication, recombination and repair",protein,In0
+0.142982929,"Mobilome: prophages, transposons",protein,CALIN
+0.205855273,"Replication, recombination and repair",protein,complete
+0.084886204,"Mobilome: prophages, transposons",protein,complete
+0.011373908,"Replication, recombination and repair",protein,CALIN
+0.003788777,"Replication, recombination and repair",protein,CALIN
+0.00502037,"Replication, recombination and repair",protein,CALIN
+0.01952531,"Replication, recombination and repair",protein,CALIN
+0.041976097,"Replication, recombination and repair",protein,In0
+0.093696735,Transcription,protein,CALIN
+0.067228741,"Replication, recombination and repair",protein,complete
+0.084943478,"Replication, recombination and repair",protein,CALIN
+0.077361405,"Replication, recombination and repair",protein,complete
+inf,"Replication, recombination and repair",protein,In0
+0.14203851,"Mobilome: prophages, transposons",protein,CALIN
+0.412630354,"Replication, recombination and repair",protein,In0
+0.046519256,"Mobilome: prophages, transposons",protein,CALIN
+0.244128872,"Replication, recombination and repair",protein,In0
+0.37944478,Function unknown,protein,CALIN
+0.132574935,"Translation, ribosomal structure and biogenesis",protein,CALIN
+0.132574935,"Posttranslational modification, protein turnover, chaperones",protein,CALIN
+0.10394537,"Replication, recombination and repair",protein,complete
+0.022981856,Defense mechanisms,protein,complete
+0.218022966,Defense mechanisms,protein,CALIN
+0.271222185,Defense mechanisms,protein,CALIN
+0.425380479,"Replication, recombination and repair",protein,In0
+0.289330701,Defense mechanisms,protein,CALIN
+0.042073828,Defense mechanisms,protein,CALIN
+0.919932274,Transcription,protein,CALIN
+0,"Replication, recombination and repair",protein,complete
+0.025220005,"Mobilome: prophages, transposons",protein,CALIN
+0.322275695,"Mobilome: prophages, transposons",protein,CALIN
+0.140780313,"Replication, recombination and repair",protein,In0
+0.044512969,"Replication, recombination and repair",protein,CALIN
+0.323659861,Cell wall/membrane/envelope biogenesis,protein,CALIN
+0.394777532,"Translation, ribosomal structure and biogenesis",protein,CALIN
+inf,"Replication, recombination and repair",protein,In0
+0.108445388,Defense mechanisms,protein,CALIN
+0.062747887,Defense mechanisms,protein,CALIN
+0.445884098,"Replication, recombination and repair",protein,In0
+0.022355169,"Replication, recombination and repair",protein,In0
+0.048730266,"Replication, recombination and repair",protein,complete
+0.082432433,Coenzyme transport and metabolism,protein,complete
+0.044161937,"Replication, recombination and repair",protein,In0
+0.117510981,"Replication, recombination and repair",protein,complete
+0.47575876,Function unknown,protein,CALIN
+0.195603517,"Replication, recombination and repair",protein,complete
+0,"Mobilome: prophages, transposons",protein,complete
+0.158972924,Transcription,protein,complete
+0.0760305,Defense mechanisms,protein,CALIN
+0.123726489,"Replication, recombination and repair",protein,complete
+0.887070345,Cell wall/membrane/envelope biogenesis,protein,CALIN
+0.360746802,"Replication, recombination and repair",protein,complete
+0.048826127,Lipid transport and metabolism,protein,CALIN
+0.055713121,"Replication, recombination and repair",protein,complete
+0.302566313,Inorganic ion transport and metabolism,protein,CALIN
+0.068956715,"Posttranslational modification, protein turnover, chaperones",protein,CALIN
+0.068956715,Energy production and conversion,protein,CALIN
+0.083114134,"Replication, recombination and repair",protein,complete
+0.254829753,Signal transduction mechanisms,protein,CALIN
+0.070940168,"Replication, recombination and repair",protein,In0
+0.021992728,Defense mechanisms,protein,CALIN
+0.115012176,Transcription,protein,CALIN
+0.396208851,Defense mechanisms,protein,CALIN
+0.321009332,Function unknown,protein,CALIN
+1.171707451,Defense mechanisms,protein,CALIN
+0.046972303,"Replication, recombination and repair",protein,In0
+0.041880337,Defense mechanisms,protein,CALIN
+0.080335223,"Replication, recombination and repair",protein,complete
+0.138115883,"Replication, recombination and repair",protein,In0
+0.710940881,Defense mechanisms,protein,CALIN
+0.079662908,"Replication, recombination and repair",protein,In0
+0.072923286,"Replication, recombination and repair",protein,In0
+0.061447642,"Mobilome: prophages, transposons",protein,CALIN
+0.298320398,Defense mechanisms,protein,CALIN
+0.237762235,"Replication, recombination and repair",protein,In0
+0.080201345,"Mobilome: prophages, transposons",protein,CALIN
+0.184798156,General function prediction only,protein,CALIN
+0.320882367,"Replication, recombination and repair",protein,complete
+0.538165836,General function prediction only,protein,CALIN
+0.1133509,Energy production and conversion,protein,CALIN
+2.012783474,"Replication, recombination and repair",protein,In0
+0.216589675,"Replication, recombination and repair",protein,complete
+0.250518017,Function unknown,protein,complete
+0.327632409,"Replication, recombination and repair",protein,complete
+0.023865779,"Replication, recombination and repair",protein,complete
+0.190664244,Function unknown,protein,CALIN
+0.099019307,"Replication, recombination and repair",protein,In0
+0.119294081,"Replication, recombination and repair",protein,In0
+0.438229996,Transcription,protein,complete
+0.20799026,"Replication, recombination and repair",protein,complete
+0.090163676,Coenzyme transport and metabolism,protein,complete
+0.131834161,"Replication, recombination and repair",protein,CALIN
+1.417588534,"Mobilome: prophages, transposons",protein,CALIN
+0.085701839,"Replication, recombination and repair",protein,complete
+0.152524376,Inorganic ion transport and metabolism,protein,complete
+inf,Function unknown,protein,CALIN
+0.120339862,"Replication, recombination and repair",protein,In0
+0.284946515,Defense mechanisms,protein,CALIN
+0.310786535,"Translation, ribosomal structure and biogenesis",protein,CALIN
+0.318776709,"Replication, recombination and repair",protein,complete
+0.141553367,"Mobilome: prophages, transposons",protein,CALIN
+0.39633237,"Replication, recombination and repair",protein,In0
+0.047050641,"Mobilome: prophages, transposons",protein,CALIN
+0.305966227,"Replication, recombination and repair",protein,complete
+0.041329588,Signal transduction mechanisms,protein,CALIN
+0.112610794,"Mobilome: prophages, transposons",protein,CALIN
+0.201805887,"Replication, recombination and repair",protein,In0
+0.189526065,Coenzyme transport and metabolism,protein,CALIN
+0.238827574,"Replication, recombination and repair",protein,In0
+0.112444118,"Mobilome: prophages, transposons",protein,CALIN
+0.00380158,Defense mechanisms,protein,complete
+0.142363905,Defense mechanisms,protein,complete
+0.153635466,"Replication, recombination and repair",protein,complete
+0.017387825,Inorganic ion transport and metabolism,protein,CALIN
+0.009346594,Inorganic ion transport and metabolism,protein,CALIN
+0.163102602,Transcription,protein,CALIN
+0.067916697,Transcription,protein,CALIN
+0.048020545,"Mobilome: prophages, transposons",protein,CALIN
+0.090841181,Transcription,protein,CALIN
+3.981182432,Energy production and conversion,protein,CALIN
+0.162416411,Nucleotide transport and metabolism,protein,complete
+0.054861444,"Replication, recombination and repair",protein,complete
+0.231243745,"Replication, recombination and repair",protein,complete
+1.197658539,Coenzyme transport and metabolism,protein,complete
+1.197658539,Inorganic ion transport and metabolism,protein,complete
+2.798485204,Signal transduction mechanisms,protein,complete
+2.798485204,"Intracellular trafficking, secretion, and vesicular transport",protein,complete
+2.798485204,Extracellular structures,protein,complete
+0.079448064,"Replication, recombination and repair",protein,complete
+0.164639752,"Translation, ribosomal structure and biogenesis",protein,complete
+0.164639752,"Posttranslational modification, protein turnover, chaperones",protein,complete
+0.134324432,"Replication, recombination and repair",protein,In0
+0.034670488,Defense mechanisms,protein,CALIN
+0.137171971,Defense mechanisms,protein,CALIN
+1.193623523,Function unknown,protein,CALIN
+0.297756879,"Replication, recombination and repair",protein,CALIN
+0,"Mobilome: prophages, transposons",protein,CALIN
+0.054207347,Amino acid transport and metabolism,protein,CALIN
+0.265791801,"Posttranslational modification, protein turnover, chaperones",protein,CALIN
+0.812478799,Function unknown,protein,CALIN
+0.091095792,"Replication, recombination and repair",protein,In0
+0.767685553,"Replication, recombination and repair",protein,complete
+0.665831383,"Replication, recombination and repair",protein,complete
+0.114410066,"Replication, recombination and repair",protein,In0
+0.072005994,"Replication, recombination and repair",protein,In0
+0.109897639,Lipid transport and metabolism,protein,CALIN
+0.610632446,"Replication, recombination and repair",protein,complete
+0.018234909,Inorganic ion transport and metabolism,protein,CALIN
+0.634425732,Amino acid transport and metabolism,protein,CALIN
+0.634425732,Cell wall/membrane/envelope biogenesis,protein,CALIN
+0.566761172,General function prediction only,protein,CALIN
+0.379939244,"Secondary metabolites biosynthesis, transport and catabolism",protein,CALIN
+0.12861456,Carbohydrate transport and metabolism,protein,CALIN
+0.273131339,"Mobilome: prophages, transposons",protein,CALIN
+0.819331501,"Replication, recombination and repair",protein,complete
+0.063490597,"Replication, recombination and repair",protein,In0
+0.132109888,"Replication, recombination and repair",protein,In0
+0.202596772,Cell wall/membrane/envelope biogenesis,protein,CALIN
+0.181552617,"Replication, recombination and repair",protein,CALIN
+0.600276831,"Mobilome: prophages, transposons",protein,CALIN
+0.126593689,"Replication, recombination and repair",protein,complete
+0.163250346,"Replication, recombination and repair",protein,In0
+0.374732772,"Replication, recombination and repair",protein,In0
+0.166646373,"Replication, recombination and repair",protein,In0
+0.062528285,Signal transduction mechanisms,protein,complete
+0.08945828,Defense mechanisms,protein,CALIN
+0.162889605,"Replication, recombination and repair",protein,In0
+3.684090454,"Replication, recombination and repair",protein,In0
+0.908517443,"Replication, recombination and repair",protein,complete
+0.106894076,"Intracellular trafficking, secretion, and vesicular transport",protein,CALIN
+0.59099228,"Replication, recombination and repair",protein,complete
+inf,"Replication, recombination and repair",protein,complete
+0.063076726,Transcription,protein,CALIN
+1.605880855,Transcription,protein,CALIN
+0.184962453,"Mobilome: prophages, transposons",protein,CALIN
+0.028585123,Nucleotide transport and metabolism,protein,complete
+0.262976085,"Replication, recombination and repair",protein,complete
+0.236118447,Function unknown,protein,CALIN
+0.005493299,Function unknown,protein,CALIN
+0.157161678,Defense mechanisms,protein,CALIN
+0.133202942,Transcription,protein,CALIN
+0.17156919,"Replication, recombination and repair",protein,In0
+0.134829444,"Replication, recombination and repair",protein,complete
+0.004048253,"Posttranslational modification, protein turnover, chaperones",protein,complete
+0.087676667,"Replication, recombination and repair",protein,complete
+0.119234076,"Translation, ribosomal structure and biogenesis",protein,complete
+0.119234076,"Posttranslational modification, protein turnover, chaperones",protein,complete
+1.170205118,"Replication, recombination and repair",protein,In0
+0.139866334,"Mobilome: prophages, transposons",protein,CALIN
+0.18107644,Function unknown,protein,CALIN
+0.306988937,Function unknown,protein,CALIN
+0.098137572,"Replication, recombination and repair",protein,complete
+0.25937724,Function unknown,protein,complete
+0.232293983,"Replication, recombination and repair",protein,complete
+0.957212309,"Replication, recombination and repair",protein,In0
+0.099173334,Cell wall/membrane/envelope biogenesis,protein,CALIN
+0.358309232,"Secondary metabolites biosynthesis, transport and catabolism",protein,CALIN
+1.783558563,"Translation, ribosomal structure and biogenesis",protein,CALIN
+1.783558563,"Posttranslational modification, protein turnover, chaperones",protein,CALIN
+0.248444197,Coenzyme transport and metabolism,protein,CALIN
+0.099140448,"Replication, recombination and repair",protein,complete
+0.835836816,"Translation, ribosomal structure and biogenesis",protein,CALIN
+0.392925461,General function prediction only,protein,CALIN
+0.097513175,"Replication, recombination and repair",protein,complete
+0.197479647,"Replication, recombination and repair",protein,complete
+0.553347637,"Replication, recombination and repair",protein,complete
+inf,"Replication, recombination and repair",protein,In0
+0.445748027,Defense mechanisms,protein,CALIN
+0.080087077,Amino acid transport and metabolism,protein,complete
+0.079095096,"Replication, recombination and repair",protein,In0
+0.030269738,Defense mechanisms,protein,CALIN
+0.080049391,Transcription,protein,CALIN
+0.056250663,Transcription,protein,CALIN
+0.183354883,"Replication, recombination and repair",protein,complete
+inf,"Replication, recombination and repair",protein,In0
+0.229720592,"Replication, recombination and repair",protein,In0
+0.028596252,Nucleotide transport and metabolism,protein,complete
+0.089986548,Defense mechanisms,protein,CALIN
+0.081156607,Defense mechanisms,protein,CALIN
+0.37113566,"Replication, recombination and repair",protein,complete
+0.38166359,"Replication, recombination and repair",protein,In0
+0.017116889,"Posttranslational modification, protein turnover, chaperones",protein,CALIN
+0.017116889,Amino acid transport and metabolism,protein,CALIN
+0.159218929,Energy production and conversion,protein,CALIN
+0.03912405,Energy production and conversion,protein,CALIN
+1.560964543,Energy production and conversion,protein,CALIN
+0.14607848,"Replication, recombination and repair",protein,CALIN
+0.263992433,Energy production and conversion,protein,CALIN
+0.168734734,Coenzyme transport and metabolism,protein,CALIN
+0.004398345,Lipid transport and metabolism,protein,In0
+0.237614855,"Posttranslational modification, protein turnover, chaperones",protein,CALIN
+0.166411129,Energy production and conversion,protein,CALIN
+0.166411129,"Posttranslational modification, protein turnover, chaperones",protein,CALIN
+0.108419857,"Posttranslational modification, protein turnover, chaperones",protein,CALIN
+0.06007059,Nucleotide transport and metabolism,protein,CALIN
+0.191427616,Carbohydrate transport and metabolism,protein,CALIN
+0.191427616,Amino acid transport and metabolism,protein,CALIN
+0.128278494,Carbohydrate transport and metabolism,protein,CALIN
+0.01811444,Cell wall/membrane/envelope biogenesis,protein,CALIN
+0.053853032,Cell wall/membrane/envelope biogenesis,protein,CALIN
+0.053853032,"Intracellular trafficking, secretion, and vesicular transport",protein,CALIN
+0.001996098,Lipid transport and metabolism,protein,CALIN
+0.185240402,"Posttranslational modification, protein turnover, chaperones",protein,CALIN
+0.049621846,"Replication, recombination and repair",protein,complete
+23.73976342,Defense mechanisms,protein,complete
+23.73976342,Defense mechanisms,attC,complete
+0.290699681,Function unknown,protein,complete
+0.084852371,Cell wall/membrane/envelope biogenesis,protein,In0
+0.269470988,"Replication, recombination and repair",protein,CALIN
+0.313166573,Signal transduction mechanisms,protein,CALIN
+0.322746356,Carbohydrate transport and metabolism,protein,CALIN
+0.164558474,General function prediction only,protein,CALIN
+0.082013579,Amino acid transport and metabolism,protein,CALIN
+0.107283018,Amino acid transport and metabolism,protein,CALIN
+6.184474188,Cell wall/membrane/envelope biogenesis,protein,CALIN
+6.184474188,"Intracellular trafficking, secretion, and vesicular transport",protein,CALIN
+0.872761317,Signal transduction mechanisms,protein,In0
+0.10005062,Amino acid transport and metabolism,protein,CALIN
+0.412129073,Energy production and conversion,protein,CALIN
+0.088259626,Carbohydrate transport and metabolism,protein,complete
+0.088259626,Amino acid transport and metabolism,protein,complete
+0.454020891,Lipid transport and metabolism,protein,CALIN
+0.129292333,Coenzyme transport and metabolism,protein,CALIN
+0.208213305,"Replication, recombination and repair",protein,CALIN
+0.07199179,"Posttranslational modification, protein turnover, chaperones",protein,CALIN
+0.049872338,"Posttranslational modification, protein turnover, chaperones",protein,CALIN
+0.726489128,Cell wall/membrane/envelope biogenesis,protein,CALIN
+0.086535004,Lipid transport and metabolism,protein,In0
+0.142852771,Function unknown,protein,In0
+0.451484116,General function prediction only,protein,CALIN
+0.128172919,"Translation, ribosomal structure and biogenesis",protein,CALIN
+0.270326932,Amino acid transport and metabolism,protein,CALIN
+0.270326932,Signal transduction mechanisms,protein,CALIN
+0,General function prediction only,protein,In0
+5.508244281,Nucleotide transport and metabolism,protein,CALIN
+5.508244281,Coenzyme transport and metabolism,protein,CALIN
+0.273728395,General function prediction only,protein,CALIN
+0.068904438,Function unknown,protein,CALIN
+1.642462563,"Replication, recombination and repair",protein,complete
+1.957786216,Transcription,protein,CALIN
+0.933779437,Amino acid transport and metabolism,protein,In0
+0.10222682,"Mobilome: prophages, transposons",protein,CALIN
+0.034531317,"Posttranslational modification, protein turnover, chaperones",protein,complete
+0.004057639,Energy production and conversion,protein,complete
+0.09222094,Amino acid transport and metabolism,protein,CALIN
+0.360477835,"Translation, ribosomal structure and biogenesis",protein,CALIN

@@ -1,0 +1,1239 @@
+ocean,gene_callers_id,gene_function,category,pnps,from_integron_type,log_pnps,gene_type
+ARS,125435,,,0.217076302,CALIN,-0.663387585,no_call
+ARS,125436,,,0.14705795,CALIN,-0.832511493,no_call
+ARS,125439,,,0.069461969,CALIN,-1.15825291,no_call
+ARS,241253,,,0.838587516,CALIN,-0.076451607,no_call
+ARS,241254,"Arylsulfatase A or related enzyme, AlkP superfamily (AslA) (PDB:1E1Z)",Inorganic ion transport and metabolism,1.010062168,CALIN,0.004348105,non_defense
+ARS,241255,"Arylsulfatase A or related enzyme, AlkP superfamily (AslA) (PDB:1E1Z)",Inorganic ion transport and metabolism,0.312771247,CALIN,-0.504773179,non_defense
+ARS,340183,,,0.246384372,CALIN,-0.608386842,no_call
+ARS,368706,,,0.315478843,CALIN,-0.50102976,no_call
+ARS,381491,"Lipid-binding SYLF domain, Ysc84/FYVE family (SYLF) (PUBMED:21624956)",Lipid transport and metabolism,0.224266698,CALIN,-0.649235211,non_defense
+ARS,381492,,,0.502656172,CALIN,-0.29872898,no_call
+ARS,452342,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.064814132,CALIN,-1.18833029,non_defense
+ARS,491997,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.104289621,complete,-0.98175891,non_defense
+ARS,566886,,,0.103997735,CALIN,-0.982976121,no_call
+ARS,566887,,,0.096092138,CALIN,-1.017312142,no_call
+ARS,585642,,,0.195377171,CALIN,-0.709126183,no_call
+ARS,585643,,,1.231483097,CALIN,0.090428455,no_call
+ARS,600867,,,0.278323707,CALIN,-0.5554498,no_call
+ARS,600870,,,3.702482296,CALIN,0.568492991,no_call
+ARS,600871,,,0.062476444,CALIN,-1.204283701,no_call
+ARS,600872,Trans-aconitate methyltransferase (Tam) (PDB:2P35),Energy production and conversion,0.096741107,CALIN,-1.014388946,non_defense
+ARS,601563,,,0.601293225,CALIN,-0.220913689,no_call
+ARS,605793,,,0.028996952,CALIN,-1.537647651,no_call
+ARS,605795,,,0.7091511,CALIN,-0.149261219,no_call
+ARS,625255,,,2.932806324,CALIN,0.467283384,no_call
+ARS,655842,,,1.272022967,CALIN,0.104494953,no_call
+ARS,671431,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.862989878,complete,-0.063994298,non_defense
+ARS,764827,"Antitoxin component YafN of the YafNO toxin-antitoxin module, PHD/YefM family (StbD) (PDB:2A6Q)",Defense mechanisms,0.195963676,CALIN,-0.707824422,defense
+ARS,764828,"Toxin component of the Txe-Axe toxin-antitoxin module, Txe/YoeB family (PDB:2A6Q)",Defense mechanisms,0.0869275,CALIN,-1.060842812,defense
+ARS,764829,"Transcriptional regulator GlxA, contains an amidase domain and an AraC-type DNA-binding HTH domain (GlxA)",Transcription,0.267430747,CALIN,-0.572788663,non_defense
+ARS,786463,,,4.315450344,CALIN,0.635026124,no_call
+ARS,786464,,,1.877772921,CALIN,0.273643072,no_call
+ARS,786465,,,0.758068193,CALIN,-0.120291725,no_call
+ARS,786470,,,0.495646936,CALIN,-0.304827575,no_call
+ARS,807712,Ribosomal protein S18 acetylase RimI and related acetyltransferases (RimI) (PDB:1GHE),"Translation, ribosomal structure and biogenesis",0.064947765,CALIN,-1.187435792,non_defense
+ARS,807719,,,0.19299821,CALIN,-0.714446718,no_call
+ARS,807721,,,0.021712772,CALIN,-1.66328472,no_call
+ARS,808252,Cytosine/adenosine deaminase or related metal-dependent hydrolase (SsnA) (PDB:3O7U),Nucleotide transport and metabolism!!!General function prediction only,0.115768258,CALIN,-0.9364105,non_defense
+ARS,808253,"2-succinyl-6-hydroxy-2,4-cyclohexadiene-1-carboxylate synthase MenH and related esterases, alpha/beta hydrolase fold (MenH) (PDB:4MYS)",Coenzyme transport and metabolism!!!General function prediction only,0.17350191,CALIN,-0.760695739,non_defense
+ARS,808254,"Predicted gamma-glutamylamine cyclotransferase YtfP, GGCT/AIG2-like family (YtfP) (PDB:1V30) (PUBMED:16754964;20110353)",Amino acid transport and metabolism,0.664432921,CALIN,-0.177548858,non_defense
+ARS,909151,Outer membrane receptor for monomeric catechols (Fiu),Inorganic ion transport and metabolism,0.053937505,CALIN,-1.268109149,non_defense
+ARS,916040,,,0.148510244,CALIN,-0.82824359,no_call
+ARS,916042,,,0.156133166,CALIN,-0.806504835,no_call
+ARS,916043,,,0.04907612,CALIN,-1.309129776,no_call
+ARS,916044,,,0.272954202,CALIN,-0.563910216,no_call
+ARS,925184,Acetyl-CoA acetyltransferase (PaaJ) (PDB:1AFW),Lipid transport and metabolism,0.013737655,complete,-1.86208738,non_defense
+ARS,925185,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.032494424,complete,-1.488191155,non_defense
+ARS,1102580,"Arylsulfatase A or related enzyme, AlkP superfamily (AslA) (PDB:1E1Z)",Inorganic ion transport and metabolism,0.192119045,CALIN,-0.716429582,non_defense
+ARS,1102584,"Arylsulfatase A or related enzyme, AlkP superfamily (AslA) (PDB:1E1Z)",Inorganic ion transport and metabolism,0.092482191,CALIN,-1.033941888,non_defense
+ARS,1102585,"Arylsulfatase A or related enzyme, AlkP superfamily (AslA) (PDB:1E1Z)",Inorganic ion transport and metabolism,1.731707797,CALIN,0.238474612,non_defense
+ARS,1139519,,,0.199205201,CALIN,-0.700699327,no_call
+ARS,1139520,"Omega-amidase YafV/Nit2, hydrolyzes alpha-ketoglutaramate (Nit2) (PUBMED:28373563)",Energy production and conversion,0.679948062,CALIN,-0.16752426,non_defense
+ARS,1139521,Uncharacterized conserved protein (PDB:1X6M),Function unknown,0.19328714,CALIN,-0.713797041,non_defense
+ARS,1167330,,,0.148753346,CALIN,-0.827533255,no_call
+ARS,1172804,,,0.602008132,CALIN,-0.220397642,no_call
+ARS,1172806,,,0.095972182,CALIN,-1.017854631,no_call
+ARS,1188125,,,0.74226318,complete,-0.129442082,no_call
+ARS,1188126,,,0.629082834,complete,-0.201292165,no_call
+ARS,1188127,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.241747745,complete,-0.616637569,non_defense
+ARS,1190477,,,0.117225397,CALIN,-0.930978289,no_call
+ARS,1192428,,,0.453295162,CALIN,-0.343618916,no_call
+ARS,1259750,,,0.126844654,CALIN,-0.896727833,no_call
+ARS,1280481,,,0.157271499,CALIN,-0.803349974,no_call
+ARS,1280482,,,0.308178677,CALIN,-0.511197414,no_call
+ARS,1280483,,,0.510815977,CALIN,-0.291735527,no_call
+ARS,1310255,,,0.216426777,CALIN,-0.664689008,no_call
+ARS,1310257,Post-segregation antitoxin (ccd killing mechanism protein) encoded by the F plasmid (PDB:2ADL),"Mobilome: prophages, transposons",inf,CALIN,inf,non_defense
+ARS,1310260,,,1.029987517,CALIN,0.012831961,no_call
+ARS,1386836,,,0.15096414,CALIN,-0.821126202,no_call
+ARS,1487877,LPS assembly outer membrane protein LptD (organic solvent tolerance protein OstA) (LptD) (PDB:4N4R),Cell wall/membrane/envelope biogenesis,0.002447351,CALIN,-2.611303753,non_defense
+ARS,1491874,,,0.764153494,CALIN,-0.116819397,no_call
+ARS,1491876,,,0.076698217,CALIN,-1.11521473,no_call
+ARS,1498184,,,0.322398067,CALIN,-0.491607571,no_call
+ARS,1498186,,,2.271743683,CALIN,0.356359329,no_call
+ARS,1540978,,,0.902558765,CALIN,-0.044524512,no_call
+ARS,1568434,,,0.01559556,CALIN,-1.806999026,no_call
+ARS,1568436,,,0.205464777,CALIN,-0.68726262,no_call
+ARS,1568437,,,0.337857006,CALIN,-0.471267071,no_call
+ARS,1590389,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.135756149,complete,-0.86724049,non_defense
+ARS,1596400,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.165435348,complete,-0.78137169,non_defense
+ARS,1628773,Orotidine-5'-phosphate decarboxylase (PyrF) (PDB:1DBT),Nucleotide transport and metabolism,0.010872961,CALIN,-1.963652172,non_defense
+ARS,1652051,,,1.091579801,CALIN,0.038055491,no_call
+ARS,1703576,,,0.208052529,CALIN,-0.681827,no_call
+ARS,1712058,,,0.168975176,CALIN,-0.772177093,no_call
+ARS,1712060,,,0.376066254,CALIN,-0.424735636,no_call
+ARS,1712062,,,1.739252329,CALIN,0.240362594,no_call
+ARS,1855678,,,0.048602796,CALIN,-1.313338746,no_call
+ARS,1865323,,,0.208621746,CALIN,-0.680640424,no_call
+ARS,1868824,,,0.08282899,CALIN,-1.081817636,no_call
+ARS,1868825,,,3.126813684,CALIN,0.495102004,no_call
+ARS,1868826,,,0.195244329,CALIN,-0.709421571,no_call
+ARS,1868828,,,1.8496885,CALIN,0.267098597,no_call
+ARS,1886090,Site-specific recombinase XerC (XerC),"Replication, recombination and repair",0.101126768,CALIN,-0.995133874,non_defense
+ARS,1892383,,,0.952658825,CALIN,-0.021062605,no_call
+ARS,1892385,,,0.374620057,CALIN,-0.426408974,no_call
+ARS,1899004,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.080172952,complete,-1.095972124,non_defense
+ARS,1901064,,,1.516892412,CALIN,0.180954779,no_call
+ARS,1912099,,,0.153862169,CALIN,-0.812868151,no_call
+ARS,1912102,,,3.985836114,CALIN,0.600519438,no_call
+ARS,1930000,,,0.19880241,CALIN,-0.701578356,no_call
+ARS,1936407,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.325372899,complete,-0.487618623,non_defense
+ARS,1942940,,,0.672755565,CALIN,-0.172142701,no_call
+ARS,1942941,Dienelactone hydrolase (DLH) (PDB:4ZV9),"Secondary metabolites biosynthesis, transport and catabolism",0.063307551,CALIN,-1.198544485,non_defense
+ARS,1945256,,,1.779574297,CALIN,0.250316124,no_call
+ARS,2070832,,,41.75686149,CALIN,1.620727849,no_call
+ARS,2070835,,,0.373429307,CALIN,-0.427791601,no_call
+ARS,2094824,"Transposase and inactivated derivatives, IS5 family (IS5)","Mobilome: prophages, transposons",0.116673019,complete,-0.933029564,non_defense
+ARS,2094826,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",1.128149527,complete,0.052366666,non_defense
+ARS,2131642,,,0.024655189,CALIN,-1.608091656,no_call
+ARS,2131643,Putative NADPH-quinone reductase (modulator of drug activity B) (MdaB) (PDB:1D4A),General function prediction only,0.728034535,CALIN,-0.137848019,non_defense
+ARS,2131644,,,0.508763381,CALIN,-0.293484155,no_call
+ARS,2133288,Trans-aconitate methyltransferase (Tam) (PDB:2P35),Energy production and conversion,0.368530442,CALIN,-0.433526632,non_defense
+ARS,2133756,,,0.107669567,CALIN,-0.967907032,no_call
+ARS,2133758,,,0.374601016,CALIN,-0.42643105,no_call
+ARS,2134970,,,0.324147382,CALIN,-0.489257481,no_call
+ARS,2134971,,,0.181276649,CALIN,-0.741658135,no_call
+ARS,2134972,,,0.808800362,CALIN,-0.092158663,no_call
+ARS,2191377,,,0.427042916,CALIN,-0.369528478,no_call
+ARS,2211486,,,0.144530895,CALIN,-0.840039309,no_call
+ARS,2219808,,,0.267792077,CALIN,-0.572202276,no_call
+ARS,2219810,,,inf,CALIN,inf,no_call
+ARS,2229945,,,0.259891425,CALIN,-0.585208049,no_call
+ARS,2240349,,,inf,CALIN,inf,no_call
+ARS,2240350,,,0.259041968,CALIN,-0.58662987,no_call
+ARS,2240351,,,0.732021404,CALIN,-0.13547622,no_call
+ARS,2252005,,,0.318957981,CALIN,-0.496266526,no_call
+ARS,2252020,,,0.794213107,CALIN,-0.10006295,no_call
+ARS,2252021,,,0.661823738,CALIN,-0.17925766,no_call
+ARS,2286150,"C-terminal processing protease CtpA/Prc, contains a PDZ domain (CtpA) (PDB:6IQU)","Posttranslational modification, protein turnover, chaperones",0.268545362,CALIN,-0.570982343,non_defense
+ARS,2842895,,,0.796782572,CALIN,-0.098660174,no_call
+ARS,2898217,,,0.357675598,CALIN,-0.446510688,no_call
+ARS,2898218,,,0.614455879,CALIN,-0.211509296,no_call
+ARS,2926230,,,1.247704473,CALIN,0.096111732,no_call
+ARS,2926231,,,0.954741279,CALIN,-0.0201143,no_call
+ARS,2926232,,,0.009934363,CALIN,-2.002859974,no_call
+ARS,2941243,,,inf,CALIN,inf,no_call
+ARS,2954533,Ribonuclease G or E (CafA) (PDB:1SLJ),"Translation, ribosomal structure and biogenesis",3.313621947,CALIN,0.520302958,non_defense
+ARS,2972097,"N-acetylglutamate synthase or related acetyltransferase, GNAT family (ArgA) (PDB:2R98)",Amino acid transport and metabolism,0.137432991,CALIN,-0.861909003,non_defense
+ARS,2972098,,,0.296257141,CALIN,-0.528331172,no_call
+ARS,2972099,,,1.117676476,CALIN,0.04831611,no_call
+CPC,14067,,,0.057006528,CALIN,-1.244075406,no_call
+CPC,14068,,,0.300425066,CALIN,-0.522263835,no_call
+CPC,35880,,,0.154151625,CALIN,-0.812051893,no_call
+CPC,44000,"mRNA-degrading endonuclease RelE, toxin component of the RelBE toxin-antitoxin system (RelE) (PDB:1WMI)",Defense mechanisms,0.126372827,CALIN,-0.8983463,defense
+CPC,99698,,,0.421749782,CALIN,-0.374945134,no_call
+CPC,157350,,,0.1101175,CALIN,-0.958143656,no_call
+CPC,186595,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.462196293,complete,-0.335173542,non_defense
+CPC,261558,,,0.637249357,CALIN,-0.195690594,no_call
+CPC,307173,"Predicted RNA-binding protein, contains PUA-like EVE domain (PDB:1WMM)",General function prediction only,0.031464223,complete,-1.502182983,non_defense
+CPC,307176,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.04671501,complete,-1.330543554,non_defense
+CPC,417719,,,0.232947611,CALIN,-0.632741739,no_call
+CPC,417731,,,0.113822434,CALIN,-0.943772131,no_call
+CPC,417732,,,0.049068364,CALIN,-1.30919842,no_call
+CPC,417735,,,1.48602071,CALIN,0.172024862,no_call
+CPC,467178,Chromosomal replication initiation ATPase DnaA (DnaA) (PDB:1L8Q),"Replication, recombination and repair",0.011453414,CALIN,-1.941065028,non_defense
+CPC,485578,,,inf,CALIN,inf,no_call
+CPC,485578,,,inf,CALIN,inf,no_call
+CPC,490382,Trans-aconitate methyltransferase (Tam) (PDB:2P35),Energy production and conversion,0.188158276,CALIN,-0.725476674,non_defense
+CPC,597742,,,0.385971692,CALIN,-0.413444546,no_call
+CPC,597743,,,0.396164729,CALIN,-0.402124193,no_call
+CPC,736608,,,0.504920362,CALIN,-0.296777115,no_call
+CPC,736609,,,1.456219162,CALIN,0.163226741,no_call
+CPC,753853,Transposase,"Mobilome: prophages, transposons",0.045559115,CALIN,-1.341424724,non_defense
+CPC,771302,"Accessory colonization factor AcfC, contains ABC-type periplasmic domain (AcfC) (PDB:4JB7)",Cell wall/membrane/envelope biogenesis,0.197818628,CALIN,-0.703732815,non_defense
+CPC,777608,,,0.081949047,CALIN,-1.086456092,no_call
+CPC,777614,Uncharacterized conserved protein,Function unknown,0.041586851,CALIN,-1.381043964,non_defense
+CPC,777615,"DNA-binding transcriptional regulator YiaG, XRE-type HTH domain (YiaG) (PDB:5JAA)",Transcription,0.013173884,CALIN,-1.880286171,non_defense
+CPC,820412,,,0.377032703,CALIN,-0.423620978,no_call
+CPC,820414,,,0.012511109,CALIN,-1.902704193,no_call
+CPC,820415,,,0.055322529,CALIN,-1.257097971,no_call
+CPC,820418,"Antitoxin component YafN of the YafNO toxin-antitoxin module, PHD/YefM family (StbD) (PDB:2A6Q)",Defense mechanisms,0.058565254,CALIN,-1.232359969,defense
+CPC,845263,,,0.004645726,complete,-2.332946455,no_call
+CPC,845266,,,1.100611637,complete,0.041634101,no_call
+CPC,954359,,,0.544300505,CALIN,-0.264161263,no_call
+CPC,971684,"2-succinyl-6-hydroxy-2,4-cyclohexadiene-1-carboxylate synthase MenH and related esterases, alpha/beta hydrolase fold (MenH) (PDB:4MYS)",Coenzyme transport and metabolism!!!General function prediction only,0.373009888,CALIN,-0.428279655,non_defense
+CPC,977059,,,0.134036729,CALIN,-0.872776181,no_call
+CPC,977060,"Predicted Fe2+/Mn2+ transporter, VIT1/CCC1 family (Ccc1) (PDB:6IU3)",Inorganic ion transport and metabolism,0.201585504,CALIN,-0.695540702,non_defense
+CPC,995184,,,0.463037231,CALIN,-0.334384088,no_call
+CPC,1021396,,,inf,CALIN,inf,no_call
+CPC,1021397,,,0.066400856,CALIN,-1.177826325,no_call
+CPC,1035829,,,0.090399483,CALIN,-1.043834053,no_call
+CPC,1035830,"CubicO group peptidase, beta-lactamase class C family (AmpC) (PDB:1BLS)!!!Flp pilus assembly protein TadD, contains TPR repeats (TadD) (PDB:3WXX)","Defense mechanisms!!!Intracellular trafficking, secretion, and vesicular transport!!!Extracellular structures",0.083597768,CALIN,-1.077805315,defense
+CPC,1035832,Tetratricopeptide (TPR) repeat (TPR) (PDB:3AS4),General function prediction only,0.089655249,CALIN,-1.047424279,non_defense
+CPC,1043561,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.281538087,complete,-0.550462844,non_defense
+CPC,1050714,,,1.345089206,CALIN,0.128751088,no_call
+CPC,1097985,,,1.132358697,CALIN,0.05398402,no_call
+CPC,1097990,"Transglutaminase-like enzyme, putative cysteine protease (YebA) (PDB:3ISR)","Posttranslational modification, protein turnover, chaperones",3.151197355,CALIN,0.498475603,non_defense
+CPC,1111862,,,0.800962923,CALIN,-0.096387587,no_call
+CPC,1114697,,,0.358054562,CALIN,-0.446050789,no_call
+CPC,1142278,,,0.210397211,CALIN,-0.67696002,no_call
+CPC,1144228,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.23599788,complete,-0.627091898,non_defense
+CPC,1153148,,,0.441589146,CALIN,-0.35498161,no_call
+CPC,1156700,Ribosomal protein S18 acetylase RimI and related acetyltransferases (RimI) (PDB:1GHE),"Translation, ribosomal structure and biogenesis",0.932600281,CALIN,-0.030304458,non_defense
+CPC,1183050,,,0.155157195,CALIN,-0.809228081,no_call
+CPC,1183052,,,2.602280522,CALIN,0.415354111,no_call
+CPC,1184341,,,0.045310183,CALIN,-1.343804179,no_call
+CPC,1184344,,,inf,CALIN,inf,no_call
+CPC,1184996,Plasmid maintenance system killer protein (HigB),Defense mechanisms,0.079985054,CALIN,-1.096991155,defense
+CPC,1184997,"Plasmid maintenance system antidote protein VapI, contains XRE-type HTH domain (VapI) (PDB:4MCT)",Defense mechanisms,0.118351102,CALIN,-0.926827695,defense
+CPC,1184999,,,0.237865374,CALIN,-0.623668773,no_call
+CPC,1186510,,,0.542718411,CALIN,-0.265425445,no_call
+CPC,1186511,,,0.383719797,CALIN,-0.415985794,no_call
+CPC,1186514,,,0.207470483,CALIN,-0.683043682,no_call
+CPC,1216749,,,0.210236599,CALIN,-0.677291679,no_call
+CPC,1216750,,,0.138574262,CALIN,-0.858317425,no_call
+CPC,1222763,,,0.09149543,CALIN,-1.038600598,no_call
+CPC,1222765,"Bacillithiol/mycothiol S-transferase BstA/DinB, DinB/YfiT family (unrelated to E. coli DinB) (DinB) (PDB:2QE9) (PUBMED:22059487;24821014)","Secondary metabolites biosynthesis, transport and catabolism",0.201799316,CALIN,-0.69508031,non_defense
+CPC,1222766,"Phenylpyruvate tautomerase PptA, 4-oxalocrotonate tautomerase family (PptA) (PDB:1BJP)","Secondary metabolites biosynthesis, transport and catabolism",0.062075756,CALIN,-1.207077981,non_defense
+CPC,1222767,"Protein N-acetyltransferase, RimJ/RimL family (RimL) (PDB:1S7F)","Translation, ribosomal structure and biogenesis!!!Posttranslational modification, protein turnover, chaperones",0.088884376,CALIN,-1.051174572,non_defense
+CPC,1222793,,,0.137632463,CALIN,-0.861279118,no_call
+CPC,1225030,,,0.443435869,CALIN,-0.35316918,no_call
+CPC,1227804,,,3.357081039,CALIN,0.525961825,no_call
+CPC,1227805,Transposase,"Mobilome: prophages, transposons",0.230506156,CALIN,-0.637317471,non_defense
+CPC,1232981,,,1.315233442,CALIN,0.119002843,no_call
+CPC,1232982,,,1.37076928,CALIN,0.136964363,no_call
+CPC,1851059,,,82.25331744,CALIN,1.915153423,no_call
+CPC,1879567,,,0.598150925,CALIN,-0.223189222,no_call
+CPC,1879568,,,2.007305439,CALIN,0.302613461,no_call
+CPC,1879569,,,0.013755575,CALIN,-1.861521256,no_call
+CPC,1879570,,,0.062371723,CALIN,-1.205012258,no_call
+CPC,1879573,"Antitoxin component YafN of the YafNO toxin-antitoxin module, PHD/YefM family (StbD) (PDB:2A6Q)",Defense mechanisms,0.29228844,CALIN,-0.534188361,defense
+CPC,1898587,,,0.076296537,CALIN,-1.117495173,no_call
+CPC,1953273,,,0.187062023,CALIN,-0.728014372,no_call
+CPC,1970703,,,0.086398194,CALIN,-1.063495335,no_call
+CPC,1974421,Acetyl-CoA acetyltransferase (PaaJ) (PDB:1AFW),Lipid transport and metabolism,0.0151069,complete,-1.820824645,non_defense
+CPC,1974422,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.060600888,complete,-1.217521009,non_defense
+CPC,2018873,,,0.068529157,CALIN,-1.164124608,no_call
+CPC,2039114,Plasmid stabilization system protein ParE (ParE) (PDB:3KXE),"Mobilome: prophages, transposons",0.364439513,CALIN,-0.438374542,non_defense
+CPC,2039116,,,0.011008977,CALIN,-1.958253051,no_call
+CPC,2054835,,,inf,CALIN,inf,no_call
+CPC,2054838,,,3.959825703,CALIN,0.59767607,no_call
+CPC,2054840,,,1.236832843,CALIN,0.092311009,no_call
+CPC,2054840,,,1.236832843,CALIN,0.092311009,no_call
+CPC,2062217,,,0.270477365,CALIN,-0.567869073,no_call
+CPC,2073718,,,0.030492874,complete,-1.51580164,no_call
+CPC,2248387,,,0.114466855,complete,-0.941320248,no_call
+CPC,2393989,,,0.069036763,CALIN,-1.160919581,no_call
+CPC,2460717,,,0.060356133,CALIN,-1.21927859,no_call
+CPC,2485451,"Proline 4-hydroxylase (includes Rps23 Pro-64 3,4-dihydroxylase Tpa1), contains SM-20 domain (EGL9) (PDB:2G19)","Translation, ribosomal structure and biogenesis!!!Posttranslational modification, protein turnover, chaperones",0.024397704,CALIN,-1.612651042,non_defense
+CPC,2562533,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.03746125,complete,-1.426417741,non_defense
+CPC,2562537,"Predicted RNA-binding protein, contains PUA-like EVE domain (PDB:1WMM)",General function prediction only,0.038497527,complete,-1.414567173,non_defense
+CPC,2611838,"Ribonuclease/mRNA interferase VapC, contains PIN domain (VapC) (PDB:3TND)",Defense mechanisms,0.330906245,CALIN,-0.480295036,defense
+CPC,2611839,Transcription regulator of the Arc/MetJ class (VapB6) (PDB:6A7V),Transcription,0.092558821,CALIN,-1.033582186,non_defense
+CPC,2630872,,,0.073646438,CALIN,-1.132848254,no_call
+CPC,2630873,,,1.919150199,CALIN,0.283108965,no_call
+CPC,2633075,"Antitoxin component YafN of the YafNO toxin-antitoxin module, PHD/YefM family (StbD) (PDB:2A6Q)",Defense mechanisms,0.004911513,CALIN,-2.308784705,defense
+CPC,2633076,Plasmid stabilization system protein ParE (ParE) (PDB:3KXE),"Mobilome: prophages, transposons",0.175767811,CALIN,-0.755060657,non_defense
+CPC,2633077,"Antitoxin component YafN of the YafNO toxin-antitoxin module, PHD/YefM family (StbD) (PDB:2A6Q)",Defense mechanisms,0.035030947,CALIN,-1.455548127,defense
+CPC,2639851,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.030958,complete,-1.509227111,non_defense
+CPC,2665307,,,0.412785332,CALIN,-0.384275743,no_call
+CPC,2665310,,,0.389969745,CALIN,-0.408969086,no_call
+CPC,2668971,,,0.222538482,CALIN,-0.652594878,no_call
+CPC,2681551,,,0.263342305,CALIN,-0.579479367,no_call
+CPC,2929217,,,2.11982677,CALIN,0.326300372,no_call
+CPC,2956479,,,2.147106357,CALIN,0.331853558,no_call
+CPC,2956481,,,0.734990167,CALIN,-0.133718471,no_call
+CPC,2966306,Acetyl-CoA acetyltransferase (PaaJ) (PDB:1AFW),Lipid transport and metabolism,0.018675109,complete,-1.72873686,non_defense
+CPC,2966307,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.082942652,complete,-1.081222083,non_defense
+CPC,2966319,,,0.237077438,complete,-0.625109775,no_call
+CPC,2966322,,,1.189324249,complete,0.075300274,no_call
+CPC,2973582,,,0.341368728,complete,-0.466776266,no_call
+CPC,3000142,,,0.450697342,CALIN,-0.346115003,no_call
+CPC,3116521,Multidrug transporter EmrE and related cation transporters (EmrE) (PDB:2I68),Defense mechanisms,0.033532658,complete,-1.474532017,defense
+CPC,3116523,Predicted N-acetyltransferase YhbS (yhbS) (PDB:4ZBG),General function prediction only,0.224019904,complete,-0.649713393,non_defense
+CPC,3116524,Phosphoserine phosphatase (SerB) (PDB:3N28),Amino acid transport and metabolism,0.022181586,complete,-1.654007411,non_defense
+EAC,48075,,,0.491675247,CALIN,-0.308321655,no_call
+EAC,48076,,,0.566913969,CALIN,-0.246482841,no_call
+EAC,179207,,,0.049293687,CALIN,-1.307208695,no_call
+EAC,234121,,,4.371475769,complete,0.640628075,no_call
+EAC,234122,,,0.163236041,complete,-0.787183946,no_call
+EAC,234127,,,0.949321735,complete,-0.022586576,no_call
+EAC,253923,,,0.243571601,CALIN,-0.613373349,no_call
+EAC,333597,,,0.094624811,CALIN,-1.023994975,no_call
+EAC,344436,,,0.144542575,CALIN,-0.840004212,no_call
+EAC,351108,,,0.320723956,CALIN,-0.4938686,no_call
+EAC,693684,,,0.220513459,CALIN,-0.656564898,no_call
+EAC,718125,"Transposase, IS1182 family","Mobilome: prophages, transposons",0.0553839,CALIN,-1.256616465,non_defense
+EAC,718126,,,0.124829702,CALIN,-0.903682066,no_call
+EAC,801067,,,1.183968749,CALIN,0.073340239,no_call
+EAC,807106,"Antitoxin component YafN of the YafNO toxin-antitoxin module, PHD/YefM family (StbD) (PDB:2A6Q)",Defense mechanisms,0.066464076,CALIN,-1.177413031,defense
+EAC,807112,Quinol monooxygenase YgiN (YgiN) (PDB:1R6Y) (PUBMED:15613473),Energy production and conversion,0.157617367,CALIN,-0.802395933,non_defense
+EAC,810357,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.066766866,complete,-1.175439007,non_defense
+EAC,811667,,,inf,CALIN,inf,no_call
+EAC,811668,,,0.066328546,CALIN,-1.178299524,no_call
+EAC,811669,,,0.101952448,CALIN,-0.99160234,no_call
+EAC,816056,"Plasmid maintenance system antidote protein VapI, contains XRE-type HTH domain (VapI) (PDB:4MCT)",Defense mechanisms,0.016996129,CALIN,-1.769649982,defense
+EAC,1043223,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.161861842,CALIN,-0.790855522,non_defense
+EAC,1085880,,,0.283416845,CALIN,-0.547574341,no_call
+EAC,1089776,Plasmid maintenance system killer protein (HigB),Defense mechanisms,0.158301411,CALIN,-0.800515213,defense
+EAC,1134895,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.710550781,complete,-0.148404879,non_defense
+EAC,1139040,"N-acetylglutamate synthase or related acetyltransferase, GNAT family (ArgA) (PDB:2R98)",Amino acid transport and metabolism,0.308219608,CALIN,-0.511139737,non_defense
+EAC,1174069,"Uncharacterized inner membrane protein YnfA, drug/metabolite transporter superfamily (YnfA) (PUBMED:25560019)",General function prediction only,0.060906479,CALIN,-1.215336508,non_defense
+EAC,1176104,,,0.169215276,CALIN,-0.771560434,no_call
+EAC,1189922,,,0.161421066,CALIN,-0.792039789,no_call
+EAC,1201868,,,0.674871388,CALIN,-0.170778984,no_call
+EAC,1213453,,,inf,CALIN,inf,no_call
+EAC,1225880,,,inf,CALIN,inf,no_call
+EAC,1225882,,,0.849393411,CALIN,-0.070891113,no_call
+EAC,1242723,,,1.587857441,CALIN,0.200811509,no_call
+EAC,1242727,"Ribonuclease/mRNA interferase VapC, contains PIN domain (VapC) (PDB:3TND)",Defense mechanisms,0.0829408,CALIN,-1.08123178,defense
+EAC,1260054,,,0.395856928,CALIN,-0.40246175,no_call
+EAC,1261270,"Transposase, IS1182 family","Mobilome: prophages, transposons",0.11000149,CALIN,-0.958601432,non_defense
+EAC,1286975,Quinol monooxygenase YgiN (YgiN) (PDB:1R6Y) (PUBMED:15613473),Energy production and conversion,0.26634679,CALIN,-0.574552533,non_defense
+EAC,1295644,,,0.094964546,CALIN,-1.022438502,no_call
+EAC,1304463,Ribonucleotide reductase alpha subunit (NrdA) (PDB:1R1R)!!!Anaerobic ribonucleoside-triphosphate reductase (NrdD) (PDB:4COI),Nucleotide transport and metabolism!!!Nucleotide transport and metabolism,0.017757008,complete,-1.7506302,non_defense
+EAC,1304465,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.155429603,complete,-0.808466262,non_defense
+EAC,1304468,Ribosomal protein S18 acetylase RimI and related acetyltransferases (RimI) (PDB:1GHE),"Translation, ribosomal structure and biogenesis",0.132371381,complete,-0.8782059,non_defense
+EAC,1308062,"Enamine deaminase RidA, house cleaning of reactive enamine intermediates, YjgF/YER057c/UK114 family (RidA) (PDB:1J7H) (PUBMED:22094463;32205462)",Defense mechanisms,0.09028487,CALIN,-1.044385023,defense
+EAC,1312516,,,1.485301496,CALIN,0.171814618,no_call
+EAC,1375821,,,0.584292273,CALIN,-0.233369857,no_call
+EAC,1375822,,,0.815162503,CALIN,-0.088755806,no_call
+EAC,1383769,,,0.169541024,CALIN,-0.770725197,no_call
+EAC,1383770,"Membrane-associated serine protease, rhomboid family (GlpG) (PDB:2IC8)","Posttranslational modification, protein turnover, chaperones",0.162972011,CALIN,-0.787886975,non_defense
+EAC,1389142,,,0.162731688,CALIN,-0.78852787,no_call
+EAC,1456247,,,0.153545659,CALIN,-0.813762457,no_call
+EAC,1456248,,,1.721091224,CALIN,0.23580389,no_call
+EAC,1471343,,,1.154073573,CALIN,0.062233496,no_call
+EAC,1471344,,,2.234348812,CALIN,0.349150973,no_call
+EAC,1471344,,,2.234348812,CALIN,0.349150973,no_call
+EAC,1480119,,,0.872881793,CALIN,-0.059044565,no_call
+EAC,1610451,,,0.082657219,CALIN,-1.08271921,no_call
+EAC,1610452,,,0.076258132,CALIN,-1.117713835,no_call
+EAC,1639052,Phage terminase large subunit (XtmB) (PDB:4IDH),"Mobilome: prophages, transposons",0.023073165,CALIN,-1.636892837,non_defense
+EAC,1639053,DNA modification methylase (YhdJ) (PDB:1BOO),"Replication, recombination and repair",0.069271009,CALIN,-1.159448485,non_defense
+EAC,1852993,tRNA U34 5-carboxymethylaminomethyl modifying GTPase MnmE/TrmE (MnmE),"Translation, ribosomal structure and biogenesis",0.097137617,CALIN,-1.012612553,non_defense
+EAC,1920504,Anaerobic ribonucleoside-triphosphate reductase (NrdD) (PDB:4COI),Nucleotide transport and metabolism,0.09116065,CALIN,-1.040192585,non_defense
+EAC,1920505,,,0.17934756,CALIN,-0.746304529,no_call
+EAC,1920506,,,0.060780497,CALIN,-1.216235751,no_call
+EAC,1920507,,,0.249787163,CALIN,-0.602429885,no_call
+EAC,1920508,,,0.143073527,CALIN,-0.844440716,no_call
+EAC,1946077,"Antitoxin component YafN of the YafNO toxin-antitoxin module, PHD/YefM family (StbD) (PDB:2A6Q)",Defense mechanisms,0.076324179,CALIN,-1.117337857,defense
+EAC,1946078,"Toxin component of the Txe-Axe toxin-antitoxin module, Txe/YoeB family (PDB:2A6Q)",Defense mechanisms,0.52843194,CALIN,-0.277010941,defense
+EAC,2015367,Quinol monooxygenase YgiN (YgiN) (PDB:1R6Y) (PUBMED:15613473),Energy production and conversion,0.029849004,CALIN,-1.525070163,non_defense
+EAC,2169952,,,0.203913163,CALIN,-0.690554738,no_call
+EAC,2169953,,,1.235043172,CALIN,0.091682139,no_call
+EAC,2169954,,,0.030389961,CALIN,-1.51726986,no_call
+EAC,2169957,Imidazolonepropionase or related amidohydrolase (HutI) (PDB:3OOQ),"Secondary metabolites biosynthesis, transport and catabolism",0.289489959,CALIN,-0.538366495,non_defense
+EAC,2215733,Plasmid stabilization system protein ParE (ParE) (PDB:3KXE),"Mobilome: prophages, transposons",0.320842609,CALIN,-0.49370796,non_defense
+EAC,2379755,,,0.038399219,CALIN,-1.415677609,no_call
+EAC,2477467,"Plasmid maintenance system antidote protein VapI, contains XRE-type HTH domain (VapI) (PDB:4MCT)",Defense mechanisms,0.046527741,CALIN,-1.332288033,defense
+EAC,2687378,,,0.715389329,CALIN,-0.145457543,no_call
+EAC,2725762,"Periplasmic serine protease, S1-C subfamily, contain C-terminal PDZ domain (DegQ) (PDB:2HGA) (PUBMED:29686141)","Posttranslational modification, protein turnover, chaperones",0.066677838,complete,-1.17601849,non_defense
+EAC,2725763,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.047090969,complete,-1.327062376,non_defense
+EAC,3079041,,,0.28347013,complete,-0.547492697,no_call
+EAC,3155741,,,0.104366044,CALIN,-0.981440776,no_call
+EAC,3155757,,,0.129762537,CALIN,-0.886850672,no_call
+EAC,3220341,,,0.279786786,CALIN,-0.553172801,no_call
+EAC,3220504,,,0.132477298,CALIN,-0.877858537,no_call
+EAC,3274988,"Predicted DNA binding protein, CopG/RHH family",Transcription,0.07660858,CALIN,-1.115722588,non_defense
+EAC,3274989,,,0.138655521,CALIN,-0.858062832,no_call
+EAC,3285203,,,0.376073193,CALIN,-0.424727622,no_call
+EAC,3285205,"Antitoxin component YafN of the YafNO toxin-antitoxin module, PHD/YefM family (StbD) (PDB:2A6Q)",Defense mechanisms,0.022672027,CALIN,-1.644509651,defense
+EAC,3309231,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.278995144,complete,-0.554403356,non_defense
+EAC,3314023,Plasmid maintenance system killer protein (HigB),Defense mechanisms,0.063675339,CALIN,-1.196028737,defense
+EAC,3314024,,,0.457562605,CALIN,-0.339549477,no_call
+EAC,3327084,"Transposase, IS1182 family","Mobilome: prophages, transposons",0.062728389,CALIN,-1.202535863,non_defense
+EAC,3327086,,,0.808164318,CALIN,-0.092500328,no_call
+EAC,3327088,"Predicted DNA binding protein, CopG/RHH family",Transcription,0.064559946,CALIN,-1.190036842,non_defense
+EAC,3461908,Phosphoserine phosphatase (SerB) (PDB:3N28),Amino acid transport and metabolism,0.116604698,complete,-0.933283951,non_defense
+EAC,3461910,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.180055238,complete,-0.744594241,non_defense
+EAC,3480060,,,0.05783723,CALIN,-1.237792516,no_call
+EAC,3480062,,,0.246776485,CALIN,-0.607696226,no_call
+EAC,3613048,,,0.088288867,complete,-1.054094057,no_call
+MED,3309,,,0.405763423,CALIN,-0.391727105,no_call
+MED,13215,,,3.439997996,complete,0.53655819,no_call
+MED,13216,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.086597149,complete,-1.062496405,non_defense
+MED,17212,,,2.749583437,CALIN,0.439266903,no_call
+MED,17213,,,0.561081944,CALIN,-0.250973707,no_call
+MED,17215,,,2.492053366,CALIN,0.396557338,no_call
+MED,18479,,,0.145481603,CALIN,-0.837191922,no_call
+MED,18480,,,0.456004507,CALIN,-0.341030865,no_call
+MED,18481,Ribosomal protein S18 acetylase RimI and related acetyltransferases (RimI) (PDB:1GHE),"Translation, ribosomal structure and biogenesis",0.528324913,CALIN,-0.277098909,non_defense
+MED,23277,Predicted FMN-binding regulatory protein PaiB (PaiB) (PDB:2OL5),Signal transduction mechanisms,3.518094603,CALIN,0.546307514,non_defense
+MED,23278,,,0.016770865,CALIN,-1.775444539,no_call
+MED,32398,,,0.366479965,CALIN,-0.435949763,no_call
+MED,32400,,,1.025705138,CALIN,0.011022531,no_call
+MED,32404,,,9.235207777,CALIN,0.965446671,no_call
+MED,32405,,,0.365224784,CALIN,-0.437439759,no_call
+MED,38152,,,0.996169414,CALIN,-0.001666797,no_call
+MED,57518,,,0.703216876,CALIN,-0.152910715,no_call
+MED,58471,,,3.225492339,CALIN,0.508596015,no_call
+MED,58472,,,0.147755931,CALIN,-0.830455077,no_call
+MED,58473,"Transcriptional regulator, contains XRE-family HTH domain (HipB) (PDB:1ADR)",Transcription,1.61759815,CALIN,0.208870642,non_defense
+MED,64617,,,13.01590913,CALIN,1.114474508,no_call
+MED,64618,,,2.59078343,CALIN,0.413431111,no_call
+MED,79170,,,0.213672171,CALIN,-0.670252038,no_call
+MED,79171,,,0.596081142,CALIN,-0.224694617,no_call
+MED,104309,"mRNA-degrading endonuclease RelE, toxin component of the RelBE toxin-antitoxin system (RelE) (PDB:1WMI)",Defense mechanisms,0.255290192,CALIN,-0.592965871,defense
+MED,104310,"mRNA-degrading endonuclease RelE, toxin component of the RelBE toxin-antitoxin system (RelE) (PDB:1WMI)",Defense mechanisms,0.051724716,CALIN,-1.286301885,defense
+MED,104311,"Antitoxin component YafN of the YafNO toxin-antitoxin module, PHD/YefM family (StbD) (PDB:2A6Q)",Defense mechanisms,0.094721017,CALIN,-1.023553646,defense
+MED,104313,"mRNA-degrading endonuclease RelE, toxin component of the RelBE toxin-antitoxin system (RelE) (PDB:1WMI)",Defense mechanisms,0.076121533,CALIN,-1.118492475,defense
+MED,119772,,,0.234943183,CALIN,-0.629037152,no_call
+MED,120945,Ligand-binding SRPBCC domain (SRPBCC),General function prediction only,0.30626308,CALIN,-0.513905354,non_defense
+MED,121041,Transposase,"Mobilome: prophages, transposons",0.22528748,CALIN,-0.647262942,non_defense
+MED,122204,,,0.448984223,CALIN,-0.347768919,no_call
+MED,122205,,,3.020601336,CALIN,0.48009341,no_call
+MED,122206,,,0.171776658,CALIN,-0.765035852,no_call
+MED,153413,,,0.044729452,CALIN,-1.349406424,no_call
+MED,181511,,,0.130882324,CALIN,-0.883119002,no_call
+MED,211610,,,inf,CALIN,inf,no_call
+MED,211613,,,0.356087315,CALIN,-0.448443497,no_call
+MED,235414,,,0.47290666,CALIN,-0.32522457,no_call
+MED,242261,,,0.257259075,CALIN,-0.589629296,no_call
+MED,316774,,,1.137151008,CALIN,0.05581814,no_call
+MED,364562,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.164028986,complete,-0.7850794,non_defense
+MED,420649,,,0.552698895,CALIN,-0.257511404,no_call
+MED,420650,Transposase,"Mobilome: prophages, transposons",0.381064413,CALIN,-0.419001608,non_defense
+MED,420651,Plasmid stabilization system protein ParE (ParE) (PDB:3KXE),"Mobilome: prophages, transposons",0.170767343,CALIN,-0.767595178,non_defense
+MED,420652,"Transcriptional regulator, contains Arc/MetJ-type RHH (ribbon-helix-helix) DNA-binding domain (ParD) (PDB:3KXE)",Transcription,0.033119945,CALIN,-1.479910389,non_defense
+MED,420653,,,0.935257287,CALIN,-0.029068899,no_call
+MED,442127,GTP cyclohydrolase II (RibA) (PDB:2BZ0),Coenzyme transport and metabolism,0.156479896,CALIN,-0.805541451,non_defense
+MED,442128,"DNA-binding response regulator, OmpR family, contains REC and winged-helix (wHTH) domain (OmpR) (PDB:1XHF)",Signal transduction mechanisms!!!Transcription,0.226690337,CALIN,-0.644566992,non_defense
+MED,627621,Acetyl-CoA acetyltransferase (PaaJ) (PDB:1AFW),Lipid transport and metabolism,0.012949395,complete,-1.887750512,non_defense
+MED,659810,,,0.16020153,CALIN,-0.79533334,no_call
+MED,659811,,,0.439764756,CALIN,-0.356779579,no_call
+MED,659812,,,1.36108148,CALIN,0.133884125,no_call
+MED,730858,,,0.502712242,CALIN,-0.298680539,no_call
+MED,730859,"mRNA-degrading endonuclease RelE, toxin component of the RelBE toxin-antitoxin system (RelE) (PDB:1WMI)",Defense mechanisms,0.042264036,CALIN,-1.374029029,defense
+MED,733210,Plasmid stabilization system protein ParE (ParE) (PDB:3KXE),"Mobilome: prophages, transposons",0.574921565,CALIN,-0.240391401,non_defense
+MED,733212,"Transcriptional regulator, contains XRE-family HTH domain (HipB) (PDB:1ADR)",Transcription,0.178466873,CALIN,-0.748442385,non_defense
+MED,764786,,,0.343604904,CALIN,-0.463940647,no_call
+MED,958869,,,0.370382158,CALIN,-0.431349942,no_call
+MED,958870,,,0.148807928,CALIN,-0.827373929,no_call
+MED,958872,,,0.23294714,CALIN,-0.632742617,no_call
+MED,995231,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.396080057,complete,-0.402217024,non_defense
+MED,995235,,,6.602874373,complete,0.819733034,no_call
+MED,1285576,,,0.105172963,CALIN,-0.978095891,no_call
+MED,1285577,,,0.517421465,CALIN,-0.286155559,no_call
+MED,1427992,,,0.216989064,CALIN,-0.663562154,no_call
+MED,1793810,,,0.482510198,CALIN,-0.316493503,no_call
+MED,2125985,"UDP:flavonoid glycosyltransferase YjiC, YdhE family (YjiC) (PDB:2ACV) (PUBMED:23974133)",Carbohydrate transport and metabolism,0.980987568,CALIN,-0.008336496,non_defense
+MED,2125986,,,1.13152247,CALIN,0.053663183,no_call
+MED,2232530,"Predicted RNA-binding protein, contains PUA-like EVE domain (PDB:1WMM)",General function prediction only,0.468261426,CALIN,-0.329511617,non_defense
+MED,2232533,"Accessory colonization factor AcfC, contains ABC-type periplasmic domain (AcfC) (PDB:4JB7)",Cell wall/membrane/envelope biogenesis,0.172508998,CALIN,-0.763188248,non_defense
+MED,2242169,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.316900647,complete,-0.499076875,non_defense
+MED,2242170,,,0.036647361,complete,-1.435957291,no_call
+MED,2242171,,,1.657629891,complete,0.219487569,no_call
+MED,2295936,"Murein L,D-transpeptidase YafK (YafK) (PDB:4XZZ)",Cell wall/membrane/envelope biogenesis,0.254205324,CALIN,-0.594815358,non_defense
+MED,2329152,"Two-component response regulator, PleD family, consists of two REC domains and a diguanylate cyclase (GGDEF) domain (PleD) (PDB:1W25)",Signal transduction mechanisms!!!Transcription,0.693935481,CALIN,-0.158680906,non_defense
+MED,2346693,Ribosomal protein S18 acetylase RimI and related acetyltransferases (RimI) (PDB:1GHE),"Translation, ribosomal structure and biogenesis",0.061833235,CALIN,-1.208778032,non_defense
+MED,2446395,"Transposase, IS1182 family","Mobilome: prophages, transposons",0.142982929,CALIN,-0.844715811,non_defense
+MED,2909981,,,0.726974086,CALIN,-0.13848107,no_call
+MED,2909984,,,0.433282542,CALIN,-0.363228809,no_call
+MED,3164205,,,0.532069569,CALIN,-0.274031579,no_call
+MED,3293280,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.205855273,complete,-0.686438003,non_defense
+MED,3293281,,,0.145381936,complete,-0.837489552,no_call
+MED,3293282,Retron-type reverse transcriptase (YkfC),"Mobilome: prophages, transposons",0.084886204,complete,-1.071162888,non_defense
+MED,3328640,,,0.03938078,CALIN,-1.404715686,no_call
+MED,3328641,RecA-family ATPase (RepA),"Replication, recombination and repair",0.011373908,CALIN,-1.944090285,non_defense
+MED,3328649,RecA-family ATPase (RepA),"Replication, recombination and repair",0.003788777,CALIN,-2.421500949,non_defense
+MED,3529844,,,0.20534029,CALIN,-0.68752583,no_call
+MED,3529845,,,0.065279466,CALIN,-1.185223408,no_call
+MED,3529846,,,0.066383096,CALIN,-1.177942496,no_call
+MED,3529847,RecA-family ATPase (RepA),"Replication, recombination and repair",0.00502037,CALIN,-2.299264298,non_defense
+MED,3529855,RecA-family ATPase (RepA),"Replication, recombination and repair",0.01952531,CALIN,-1.709402058,non_defense
+NP,47486,,,0.147648004,CALIN,-0.830772418,no_call
+NP,291258,,,0.444721311,CALIN,-0.351912058,no_call
+NP,326938,Transcription regulator of the Arc/MetJ class (VapB6) (PDB:6A7V),Transcription,0.093696735,CALIN,-1.028275544,non_defense
+NP,336506,,,9.726006508,complete,0.987934556,no_call
+NP,336510,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.067228741,complete,-1.172445021,non_defense
+NP,339577,,,0.70536066,CALIN,-0.151588766,no_call
+NP,354804,ATP-dependent DNA ligase (CDC9) (PDB:1A0I),"Replication, recombination and repair",0.084943478,CALIN,-1.070869959,non_defense
+NP,364635,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.077361405,complete,-1.11147565,non_defense
+NP,521021,,,0.013238614,CALIN,-1.878157497,no_call
+NP,838268,"Transposase, IS1182 family","Mobilome: prophages, transposons",0.14203851,CALIN,-0.847593893,non_defense
+NP,878019,,,8.853545135,CALIN,0.947117206,no_call
+NP,1021065,"Transposase and inactivated derivatives, IS5 family (IS5)","Mobilome: prophages, transposons",0.046519256,CALIN,-1.332367239,non_defense
+NP,1023029,,,0.093448856,CALIN,-1.029426013,no_call
+NP,1024791,"Uncharacterized conserved protein, DUF1330 family",Function unknown,0.37944478,CALIN,-0.420851417,non_defense
+NP,1029645,,,3.598278148,CALIN,0.556094731,no_call
+NP,1029648,,,0.30254568,CALIN,-0.519209043,no_call
+NP,1029649,,,0.367356954,CALIN,-0.434911735,no_call
+NP,1030637,"Protein N-acetyltransferase, RimJ/RimL family (RimL) (PDB:1S7F)","Translation, ribosomal structure and biogenesis!!!Posttranslational modification, protein turnover, chaperones",0.132574935,CALIN,-0.877538577,non_defense
+NP,1043949,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.10394537,complete,-0.983194852,non_defense
+NP,1043951,"mRNA-degrading endonuclease RelE, toxin component of the RelBE toxin-antitoxin system (RelE) (PDB:1WMI)",Defense mechanisms,0.022981856,complete,-1.638614895,defense
+NP,1049698,,,1.462517732,CALIN,0.16510114,no_call
+NP,1049699,"Toxin component of the Txe-Axe toxin-antitoxin module, Txe/YoeB family (PDB:2A6Q)",Defense mechanisms,0.218022966,CALIN,-0.661497757,defense
+NP,1049700,"Antitoxin component YafN of the YafNO toxin-antitoxin module, PHD/YefM family (StbD) (PDB:2A6Q)",Defense mechanisms,0.271222185,CALIN,-0.566674789,defense
+NP,1486975,"Antitoxin component YafN of the YafNO toxin-antitoxin module, PHD/YefM family (StbD) (PDB:2A6Q)",Defense mechanisms,0.289330701,CALIN,-0.53860548,defense
+NP,1486976,"Toxin component of the Txe-Axe toxin-antitoxin module, Txe/YoeB family (PDB:2A6Q)",Defense mechanisms,0.042073828,CALIN,-1.375987974,defense
+NP,1486977,"Transcriptional regulator GlxA, contains an amidase domain and an AraC-type DNA-binding HTH domain (GlxA)",Transcription,0.919932274,CALIN,-0.036244144,non_defense
+NP,1536827,Transposase,"Mobilome: prophages, transposons",0.025220005,CALIN,-1.598254837,non_defense
+NP,1536830,,,0.221678763,CALIN,-0.65427591,no_call
+NP,1546461,"Transposase and inactivated derivatives, IS5 family (IS5)","Mobilome: prophages, transposons",0.322275695,CALIN,-0.491772447,non_defense
+NP,1567513,,,0.099189076,CALIN,-1.003536155,no_call
+NP,1785342,Replicative DNA helicase (DnaB) (PDB:1B79),"Replication, recombination and repair",0.044512969,CALIN,-1.351513436,non_defense
+NP,1785343,Alanine racemase (Alr) (PDB:1BD0),Cell wall/membrane/envelope biogenesis,0.323659861,CALIN,-0.489911157,non_defense
+NP,1839356,,,1.827277877,CALIN,0.261804596,no_call
+NP,2124433,S-adenosylmethionine:tRNA-ribosyltransferase-isomerase (queuine synthetase) (QueA) (PDB:1VKY),"Translation, ribosomal structure and biogenesis",0.394777532,CALIN,-0.403647573,non_defense
+NP,2297711,"Plasmid maintenance system antidote protein VapI, contains XRE-type HTH domain (VapI) (PDB:4MCT)",Defense mechanisms,0.108445388,CALIN,-0.964788913,defense
+NP,2297712,Plasmid maintenance system killer protein (HigB),Defense mechanisms,0.062747887,CALIN,-1.202400897,defense
+NP,2640601,,,0.412389173,complete,-0.384692745,no_call
+NP,2640603,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.048730266,complete,-1.312201214,non_defense
+NP,2640604,Hypoxanthine phosphoribosyltransferase (Hpt1) (PDB:2JKZ),Coenzyme transport and metabolism,0.082432433,complete,-1.083901884,non_defense
+NP,2864676,,,0.113368203,CALIN,-0.945508738,no_call
+NP,2867653,,,1.200144533,complete,0.079233551,no_call
+NP,2867657,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.117510981,complete,-0.929921547,non_defense
+NP,2893182,"Uncharacterized membrane protein YphA, DoxX/SURF4 family (DoxX)",Function unknown,0.47575876,CALIN,-0.322613207,non_defense
+NP,2893185,,,0.82263702,CALIN,-0.08479175,no_call
+NP,2903116,,,1.50547997,CALIN,0.177674982,no_call
+NP,2914418,,,0.666639407,CALIN,-0.176109017,no_call
+NP,2914418,,,0.666639407,CALIN,-0.176109017,no_call
+NP,2923747,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.195603517,complete,-0.708623342,non_defense
+NP,2923755,"Transcriptional regulator, contains Arc/MetJ-type RHH (ribbon-helix-helix) DNA-binding domain (ParD) (PDB:3KXE)",Transcription,0.158972924,complete,-0.798676838,non_defense
+NP,2929097,,,0.194888184,CALIN,-0.710214491,no_call
+NP,2937488,"mRNA-degrading endonuclease RelE, toxin component of the RelBE toxin-antitoxin system (RelE) (PDB:1WMI)",Defense mechanisms,0.0760305,CALIN,-1.119012154,defense
+NP,2943673,,,0.306295768,CALIN,-0.513859004,no_call
+NP,2953919,,,0.837737392,CALIN,-0.0768921,no_call
+NP,2964568,,,0.006480613,CALIN,-2.18838391,no_call
+NP,2981124,,,1.946053946,CALIN,0.289154875,no_call
+NP,2986829,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.123726489,complete,-0.907537311,non_defense
+NP,3223942,,,1.047742311,CALIN,0.020254482,no_call
+NP,3434333,"Accessory colonization factor AcfC, contains ABC-type periplasmic domain (AcfC) (PDB:4JB7)",Cell wall/membrane/envelope biogenesis,0.887070345,CALIN,-0.052041939,non_defense
+NP,3439805,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.360746802,complete,-0.442797511,non_defense
+NP,3469703,"Sterol desaturase/sphingolipid hydroxylase, fatty acid hydroxylase superfamily (ERG3) (PDB:4ZR0)",Lipid transport and metabolism,0.048826127,CALIN,-1.311347722,non_defense
+NP,3472815,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.055713121,complete,-1.254042512,non_defense
+NP,3488449,Co/Zn/Cd efflux system component (CzcD),Inorganic ion transport and metabolism,0.302566313,CALIN,-0.519179427,non_defense
+NP,3489572,"ABC-type transport system involved in cytochrome bd biosynthesis, fused ATPase and permease components (CydC)","Energy production and conversion!!!Posttranslational modification, protein turnover, chaperones",0.068956715,CALIN,-1.161423434,non_defense
+NP,3495157,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.083114134,complete,-1.080325116,non_defense
+NP,3499406,"ACT domain, ACT-7 family (ACT-7) (PDB:1ZHV) (PUBMED:16987805)",Signal transduction mechanisms,0.254829753,CALIN,-0.593749867,non_defense
+NP,3750824,"Antitoxin component YafN of the YafNO toxin-antitoxin module, PHD/YefM family (StbD) (PDB:2A6Q)",Defense mechanisms,0.021992728,CALIN,-1.657720894,defense
+NP,3750825,,,0.087904803,CALIN,-1.055987397,no_call
+NP,3750827,Transcription regulator of the Arc/MetJ class (VapB6) (PDB:6A7V),Transcription,0.115012176,CALIN,-0.939256182,non_defense
+NP,3750828,"Ribonuclease/mRNA interferase VapC, contains PIN domain (VapC) (PDB:3TND)",Defense mechanisms,0.396208851,CALIN,-0.402075827,defense
+NP,3769156,Uncharacterized conserved protein (PDB:1X6M),Function unknown,0.321009332,CALIN,-0.493482342,non_defense
+NP,3785383,,,0.491845508,CALIN,-0.308171291,no_call
+NP,3785384,,,0.171683708,CALIN,-0.765270916,no_call
+NP,3792607,"Antitoxin component HigA of the HigAB toxin-antitoxin module, contains an N-terminal HTH domain (HigA)",Defense mechanisms,1.171707451,CALIN,0.068819192,defense
+NP,3852525,"Antitoxin component YafN of the YafNO toxin-antitoxin module, PHD/YefM family (StbD) (PDB:2A6Q)",Defense mechanisms,0.041880337,CALIN,-1.377989833,defense
+NP,3852526,,,0.18250818,CALIN,-0.738717666,no_call
+NP,3852527,,,0.113416135,CALIN,-0.945325155,no_call
+NP,3903386,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.080335223,complete,-1.095093998,non_defense
+NP,3989964,,,0.15068502,CALIN,-0.821929921,no_call
+NP,4021412,"Plasmid maintenance system antidote protein VapI, contains XRE-type HTH domain (VapI) (PDB:4MCT)",Defense mechanisms,0.710940881,CALIN,-0.148166512,defense
+NP,4100894,,,0.1102371,CALIN,-0.957672218,no_call
+NAT,170429,"Antitoxin component YafN of the YafNO toxin-antitoxin module, PHD/YefM family (StbD) (PDB:2A6Q)",Defense mechanisms,0.003440276,CALIN,-2.463406742,defense
+NAT,177296,,,0.403605651,CALIN,-0.394042762,no_call
+NAT,212344,Acetyl-CoA acetyltransferase (PaaJ) (PDB:1AFW),Lipid transport and metabolism,0.001616465,complete,-2.79143365,non_defense
+NAT,212345,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.030572361,complete,-1.514671027,non_defense
+NAT,651115,"Transposase, IS1182 family","Mobilome: prophages, transposons",0.003007459,CALIN,-2.521800274,non_defense
+NAT,1796569,,,0.233596434,CALIN,-0.631533791,no_call
+NAT,2272213,"Transcriptional regulator GlxA, contains an amidase domain and an AraC-type DNA-binding HTH domain (GlxA)",Transcription,0.146059212,CALIN,-0.835471046,non_defense
+NAT,2700741,,,0.6136717,CALIN,-0.212063904,no_call
+NAT,3181902,,,0.64963311,complete,-0.187331848,no_call
+NAT,3181904,"Zn-dependent glyoxalase, PhnB family (PhnB) (PDB:5KEF) (PUBMED:28034013)",Energy production and conversion,0.039257197,complete,-1.406080717,non_defense
+NAT,3213777,"TRAP-type mannitol/chloroaromatic compound transport system, periplasmic component (FcbT1) (PDB:2HZK)","Secondary metabolites biosynthesis, transport and catabolism",0.011245575,CALIN,-1.949018348,non_defense
+NAT,3675586,,,0.175270128,CALIN,-0.756292096,no_call
+NAT,3675590,"Transcriptional regulator, contains Arc/MetJ-type RHH (ribbon-helix-helix) DNA-binding domain (ParD) (PDB:3KXE)",Transcription,0.142459613,CALIN,-0.84630824,non_defense
+NAT,3688065,,,1.542612064,CALIN,0.188256723,no_call
+NAT,4162579,,,0.127067321,CALIN,-0.895966128,no_call
+NAT,4263472,,,0.106310274,CALIN,-0.973424764,no_call
+RS,786251,Plasmid stabilization system protein ParE (ParE) (PDB:3KXE),"Mobilome: prophages, transposons",0.061447642,CALIN,-1.211494781,non_defense
+RS,932736,"mRNA-degrading endonuclease RelE, toxin component of the RelBE toxin-antitoxin system (RelE) (PDB:1WMI)",Defense mechanisms,0.298320398,CALIN,-0.52531705,defense
+RS,979809,,,1.363065255,CALIN,0.134516648,no_call
+RS,1008581,"Transposase, IS1182 family","Mobilome: prophages, transposons",0.080201345,CALIN,-1.095818349,non_defense
+RS,1008582,,,0.163518939,CALIN,-0.786431939,no_call
+RS,1378402,TPR repeat (TPR) (PDB:1KLX),General function prediction only,0.184798156,CALIN,-0.733302366,non_defense
+RS,1386550,,,0.642542871,CALIN,-0.19209789,no_call
+RS,1469873,,,0.113168559,CALIN,-0.946274212,no_call
+SAT,103614,,,0.04055994,CALIN,-1.391902695,no_call
+SAT,264988,,,0.635232782,CALIN,-0.197067098,no_call
+SAT,264991,,,0.719520345,CALIN,-0.142956921,no_call
+SAT,404134,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.320882367,complete,-0.493654147,non_defense
+SAT,404138,,,0.285058871,complete,-0.545065439,no_call
+SAT,518344,,,0.45337074,CALIN,-0.343546512,no_call
+SAT,542751,,,0.4748751,CALIN,-0.323420602,no_call
+SAT,561330,Predicted dehydrogenase (MviM) (PDB:3UUW),General function prediction only,0.538165836,CALIN,-0.269083876,non_defense
+SAT,561331,,,1.122530009,CALIN,0.05019796,no_call
+SAT,561332,"Zn-dependent glyoxalase, PhnB family (PhnB) (PDB:5KEF) (PUBMED:28034013)",Energy production and conversion,0.1133509,CALIN,-0.945575026,non_defense
+SAT,671987,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.216589675,complete,-0.66436225,non_defense
+SAT,714053,Uncharacterized membrane protein,Function unknown,0.250518017,complete,-0.601161035,non_defense
+SAT,714057,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.327632409,complete,-0.484613145,non_defense
+SAT,723353,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.023865779,complete,-1.622224392,non_defense
+SAT,778471,Uncharacterized membrane protein,Function unknown,0.190664244,CALIN,-0.719730744,non_defense
+SAT,922818,,,0.203958438,CALIN,-0.690458322,no_call
+SAT,1142669,,,1.057521241,CALIN,0.024289099,no_call
+SAT,1142675,,,0.590217229,CALIN,-0.228988117,no_call
+SAT,1206235,,,0.544120293,CALIN,-0.264305077,no_call
+SAT,1210719,"DNA-binding transcriptional regulator YiaG, XRE-type HTH domain (YiaG) (PDB:5JAA)",Transcription,0.438229996,complete,-0.358297899,non_defense
+SAT,1210720,,,3.701709078,complete,0.568402284,no_call
+SAT,1210721,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.20799026,complete,-0.681957003,non_defense
+SAT,1210724,4-amino-2-methyl-5-hydroxymethylpyrimidine (HMP) synthase ThiC (ThiC) (PDB:3EPN) (PUBMED:15326535),Coenzyme transport and metabolism,0.090163676,complete,-1.04496839,non_defense
+SAT,1291603,"Endonuclease YncB, thermonuclease family (YncB)","Replication, recombination and repair",0.131834161,CALIN,-0.87997204,non_defense
+SAT,1468805,Transposase,"Mobilome: prophages, transposons",1.417588534,CALIN,0.151550192,non_defense
+SAT,1517316,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.085701839,complete,-1.067009857,non_defense
+SAT,1519745,"Predicted Fe2+/Mn2+ transporter, VIT1/CCC1 family (Ccc1) (PDB:6IU3)",Inorganic ion transport and metabolism,0.152524376,complete,-0.816660744,non_defense
+SAT,1564409,"Uncharacterized conserved protein, DUF4415 family",Function unknown,inf,CALIN,inf,non_defense
+SAT,1635729,"Toxin component of the Txe-Axe toxin-antitoxin module, Txe/YoeB family (PDB:2A6Q)",Defense mechanisms,0.284946515,CALIN,-0.54523665,defense
+SAT,1706459,,,0.562180641,complete,-0.250124114,no_call
+SAT,1730028,Wobble nucleotide-excising tRNase (RloC) (PUBMED:18681940),"Translation, ribosomal structure and biogenesis",0.310786535,CALIN,-0.507537805,non_defense
+SAT,1730030,,,0.447397847,CALIN,-0.34930611,no_call
+SAT,1742301,,,0.061874605,CALIN,-1.208487559,no_call
+SAT,1772118,,,1.433887216,complete,0.156514993,no_call
+SAT,1772119,,,0.812446567,complete,-0.090205192,no_call
+SAT,1772121,,,0.102591745,complete,-0.988887584,no_call
+SAT,1774425,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.318776709,complete,-0.496513417,non_defense
+SAT,1774432,,,1.736176272,complete,0.239593816,no_call
+SAT,1774433,,,0.935025132,complete,-0.029176716,no_call
+SAT,1777237,,,0.25301034,CALIN,-0.596861729,no_call
+SAT,1777238,,,0.42309118,CALIN,-0.373566029,no_call
+SAT,1777239,,,1.371695018,CALIN,0.137257561,no_call
+SAT,1777244,,,inf,CALIN,inf,no_call
+SAT,1788424,,,0.187346255,CALIN,-0.727354983,no_call
+SAT,1788592,Transposase InsE and inactivated derivatives (InsE) (PDB:2JN6) (PUBMED:23818957),"Mobilome: prophages, transposons",0.141553367,CALIN,-0.849079797,non_defense
+SAT,1874329,"Transposase, IS1182 family","Mobilome: prophages, transposons",0.047050641,CALIN,-1.327434451,non_defense
+SAT,2033525,,,1.085339384,CALIN,0.035565563,no_call
+SAT,2034420,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.305966227,complete,-0.514326509,non_defense
+SAT,2035304,,,1.740499344,complete,0.240673864,no_call
+SAT,2258580,"GGDEF domain, diguanylate cyclase (c-di-GMP synthetase) or its enzymatically inactive variants (GGDEF) (PDB:6D9M)!!!EAL domain, c-di-GMP-specific phosphodiesterase class I (or its enzymatically inactive variant) (EAL) (PDB:2BAS)",Signal transduction mechanisms!!!Signal transduction mechanisms,0.041329588,CALIN,-1.383738921,non_defense
+SAT,2267220,,,0.905678529,CALIN,-0.043025928,no_call
+SAT,2557629,"Transposase, IS1182 family","Mobilome: prophages, transposons",0.112610794,CALIN,-0.948419978,non_defense
+SAT,2557633,,,inf,CALIN,inf,no_call
+SAT,2601168,Heme-degrading monooxygenase HmoA and related ABM domain proteins (HmoA) (PDB:1IUJ) (PUBMED:21873409),Coenzyme transport and metabolism,0.189526065,CALIN,-0.722331054,non_defense
+SAT,2601172,,,0.156210163,CALIN,-0.806290713,no_call
+SAT,2683092,Transposase,"Mobilome: prophages, transposons",0.112444118,CALIN,-0.949063257,non_defense
+SAT,2706140,,,0.95013057,complete,-0.022216708,no_call
+SAT,2706140,,,0.95013057,complete,-0.022216708,no_call
+SAT,2706145,"Antitoxin component YafN of the YafNO toxin-antitoxin module, PHD/YefM family (StbD) (PDB:2A6Q)",Defense mechanisms,0.00380158,complete,-2.420035832,defense
+SAT,2706146,"Toxin component of the Txe-Axe toxin-antitoxin module, Txe/YoeB family (PDB:2A6Q)",Defense mechanisms,0.142363905,complete,-0.846600109,defense
+SAT,2706147,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.153635466,complete,-0.813508517,non_defense
+SAT,2713228,"Sulfur relay (sulfurtransferase) complex TusBCD TusD component, DsrE family (DsrE) (PDB:1JX7)",Inorganic ion transport and metabolism,0.017387825,CALIN,-1.759754737,non_defense
+SAT,2713229,"Integral membrane protein YbhL, putative Ca2+ regulator, Bax inhibitor (BI-1)/TMBIM family (YbhL) (PDB:4PGR) (PUBMED:28064000)",Inorganic ion transport and metabolism,0.009346594,CALIN,-2.029346619,non_defense
+SAT,2714566,,,0.216202615,CALIN,-0.665139057,no_call
+SAT,2714567,"Predicted DNA binding protein, CopG/RHH family",Transcription,0.163102602,CALIN,-0.78753911,non_defense
+SAT,2714569,,,0.295167852,CALIN,-0.529930945,no_call
+SAT,2714571,,,0.118302351,CALIN,-0.927006623,no_call
+SAT,2714572,"Predicted DNA binding protein, CopG/RHH family",Transcription,0.067916697,CALIN,-1.168023442,non_defense
+SAT,2714573,,,0.096968216,CALIN,-1.013370594,no_call
+SAT,2714574,,,1.750382891,CALIN,0.24313306,no_call
+SAT,2841095,"Transposase, IS1182 family","Mobilome: prophages, transposons",0.048020545,CALIN,-1.318572916,non_defense
+SAT,2841098,Transcription regulator of the Arc/MetJ class (VapB6) (PDB:6A7V),Transcription,0.090841181,CALIN,-1.041717229,non_defense
+SAT,2848779,"Zn-dependent glyoxalase, PhnB family (PhnB) (PDB:5KEF) (PUBMED:28034013)",Energy production and conversion,3.981182432,CALIN,0.600012079,non_defense
+SAT,2942893,"Phosphoribosylformylglycinamidine (FGAM) synthase, synthetase domain (PurL1) (PDB:3VIU)!!!Phosphoribosylformylglycinamidine (FGAM) synthase, glutamine amidotransferase domain (PurL2) (PDB:1T3T)",Nucleotide transport and metabolism!!!Nucleotide transport and metabolism,0.162416411,complete,-0.789370092,non_defense
+SAT,2942894,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.054861444,complete,-1.260732762,non_defense
+SAT,2962246,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.231243745,complete,-0.635930005,non_defense
+SAT,2962247,,,1.176503345,complete,0.070593166,no_call
+SAT,2986362,Coproheme decarboxylase/chlorite dismutase (HemQ) (PDB:1T0T) (PUBMED:15965735;25602700;27758026;31423350),Coenzyme transport and metabolism!!!Inorganic ion transport and metabolism,1.197658539,complete,0.078333015,non_defense
+SAT,2986364,"Periplasmic ligand-binding sensor domain (PDB:4A2L)!!!Uncharacterized conserved protein, contains CHAT domain (PUBMED:11835511)!!!Flp pilus assembly protein TadD, contains TPR repeats (TadD) (PDB:3WXX)","Signal transduction mechanisms!!!Function unknown!!!Intracellular trafficking, secretion, and vesicular transport!!!Extracellular structures",2.798485204,complete,0.446923015,non_defense
+SAT,2994869,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.079448064,complete,-1.09991668,non_defense
+SAT,2994870,,,0.088202753,complete,-1.054517861,no_call
+SAT,2994871,,,0.680874641,complete,-0.166932841,no_call
+SAT,2994871,,,0.680874641,complete,-0.166932841,no_call
+SAT,2994872,"Protein N-acetyltransferase, RimJ/RimL family (RimL) (PDB:1S7F)","Translation, ribosomal structure and biogenesis!!!Posttranslational modification, protein turnover, chaperones",0.164639752,complete,-0.783465297,non_defense
+SAT,3001497,,,1.060103576,CALIN,0.0253483,no_call
+SAT,3132504,"Antitoxin component YafN of the YafNO toxin-antitoxin module, PHD/YefM family (StbD) (PDB:2A6Q)",Defense mechanisms,0.034670488,CALIN,-1.460040049,defense
+SAT,3132506,,,0.098493328,CALIN,-1.006593186,no_call
+SAT,3215944,,,0.011606569,CALIN,-1.93529616,no_call
+SAT,3215945,,,0.1235315,CALIN,-0.908222285,no_call
+SAT,3313015,,,0.59096099,CALIN,-0.228441187,no_call
+SAT,3317099,,,0.177624214,CALIN,-0.750497832,no_call
+SAT,3317194,"Antitoxin component YafN of the YafNO toxin-antitoxin module, PHD/YefM family (StbD) (PDB:2A6Q)",Defense mechanisms,0.137171971,CALIN,-0.86273462,defense
+SAT,3317195,,,0.424715778,CALIN,-0.371901605,no_call
+SAT,3317196,"Uncharacterized conserved protein, DUF497 family (PDB:3U97)",Function unknown,1.193623523,CALIN,0.076867369,non_defense
+SAT,3317197,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.297756879,CALIN,-0.526138196,non_defense
+SAT,3478843,,,0.080666951,CALIN,-1.093304355,no_call
+SAT,3478844,,,0.036491243,CALIN,-1.437811341,no_call
+SAT,3712011,Cysteine synthase (CysK) (PDB:1FCJ),Amino acid transport and metabolism,0.054207347,CALIN,-1.265941846,non_defense
+SAT,3712012,,,0.058027511,CALIN,-1.236366061,no_call
+SAT,3712013,,,0.09554261,CALIN,-1.019802899,no_call
+SAT,3755900,"Serine protease, subtilase family","Posttranslational modification, protein turnover, chaperones",0.265791801,CALIN,-0.575458419,non_defense
+SAT,4309979,"Uncharacterized membrane protein YphA, DoxX/SURF4 family (DoxX)",Function unknown,0.812478799,CALIN,-0.090187963,non_defense
+SAT,4358297,,,0.017492921,CALIN,-1.757137654,no_call
+SAT,4375696,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.767685553,complete,-0.114816632,non_defense
+SAT,4433200,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.665831383,complete,-0.176635739,non_defense
+SAT,4433201,,,1.062237625,complete,0.02622168,no_call
+SAT,4472278,Enoyl-[acyl-carrier-protein] reductase FabI (FabI) (PDB:1C14),Lipid transport and metabolism,0.109897639,CALIN,-0.959011639,non_defense
+SAT,4524590,,,0.225409362,complete,-0.647028051,no_call
+SAT,4524593,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.610632446,complete,-0.214220123,non_defense
+SAT,4555626,Bacterioferritin (cytochrome b1) (Bfr) (PDB:4E6K),Inorganic ion transport and metabolism,0.018234909,CALIN,-1.739096399,non_defense
+SAT,4582086,4-hydroxy-tetrahydrodipicolinate synthase/N-acetylneuraminate lyase (DapA) (PDB:2R91) (PUBMED:27574185),Amino acid transport and metabolism!!!Cell wall/membrane/envelope biogenesis,0.634425732,CALIN,-0.197619211,non_defense
+SAT,4582090,Predicted dehydrogenase (MviM) (PDB:3UUW),General function prediction only,0.566761172,CALIN,-0.24659991,non_defense
+SAT,4620025,,,0.391552752,CALIN,-0.40720972,no_call
+SAT,4620025,,,0.391552752,CALIN,-0.40720972,no_call
+SAT,4620026,"Ectoine hydroxylase-related dioxygenase, phytanoyl-CoA dioxygenase (PhyH) family (PhyH) (PDB:2A1X)","Secondary metabolites biosynthesis, transport and catabolism",0.379939244,CALIN,-0.420285846,non_defense
+SAT,4620028,"ABC-type glycerol-3-phosphate transport system, permease component (UgpE) (PDB:1VR4)",Carbohydrate transport and metabolism,0.12861456,CALIN,-0.890709862,non_defense
+SAT,4623450,Plasmid stabilization system protein ParE (ParE) (PDB:3KXE),"Mobilome: prophages, transposons",0.273131339,CALIN,-0.563628466,non_defense
+SAT,4626425,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.819331501,complete,-0.086540347,non_defense
+SAT,4633115,,,0.218853533,CALIN,-0.659846439,no_call
+SAT,4692349,,,0.044097691,CALIN,-1.355584151,no_call
+SAT,4732063,"Glycosyltransferase involved in LPS biosynthesis, GR25 family",Cell wall/membrane/envelope biogenesis,0.202596772,CALIN,-0.693367478,non_defense
+SAT,4732064,"DNA polymerase III, delta subunit (HolA) (PDB:3ZH9)","Replication, recombination and repair",0.181552617,CALIN,-0.740997485,non_defense
+SAT,4845078,,,0.330082988,CALIN,-0.481376857,no_call
+SAT,4959918,Plasmid stabilization system protein ParE (ParE) (PDB:3KXE),"Mobilome: prophages, transposons",0.600276831,CALIN,-0.221648419,non_defense
+SAT,4996729,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.126593689,complete,-0.897587945,non_defense
+SAT,5082840,,,0.199058432,CALIN,-0.701019422,no_call
+SAT,5103947,,,0.180535006,CALIN,-0.743438575,no_call
+SAT,5107201,,,0.124085477,CALIN,-0.906279047,no_call
+SAT,5107202,,,0.155324004,CALIN,-0.808761424,no_call
+SAT,5107203,,,0.183760855,CALIN,-0.735746996,no_call
+SAT,5129216,,,0.077165876,CALIN,-1.112574711,no_call
+SAT,5168586,,,0.150520749,CALIN,-0.822403629,no_call
+SAT,5168587,,,3.467276838,CALIN,0.539988518,no_call
+SAT,5198638,,,0.025541224,CALIN,-1.592758302,no_call
+SAT,5207896,,,2.046001522,CALIN,0.310905952,no_call
+SAT,5275066,,,0.550731318,CALIN,-0.259060226,no_call
+SAT,5289021,"PAS domain (PAS) (PDB:2MWG)!!!Extracytoplasmic sensor domain CHASE1 (specificity unknown) (CHASE1) (PDB:3T4J)!!!Cyclic di-GMP metabolism protein, combines GGDEF and EAL domains with a 6TM membrane domain",Signal transduction mechanisms!!!Signal transduction mechanisms!!!Signal transduction mechanisms,0.062528285,complete,-1.20392348,non_defense
+SAT,5313426,,,0.609394866,CALIN,-0.215101209,no_call
+SAT,5316372,"mRNA-degrading endonuclease RelE, toxin component of the RelBE toxin-antitoxin system (RelE) (PDB:1WMI)",Defense mechanisms,0.08945828,CALIN,-1.048379458,defense
+SAT,5316373,,,0.365967079,CALIN,-0.43655798,no_call
+SAT,5327067,,,0.277014069,CALIN,-0.557498174,no_call
+SAT,6544241,,,2.522562717,CALIN,0.401841973,no_call
+SAT,6550399,,,3.060477795,complete,0.485789233,no_call
+SAT,6550400,,,0.66953269,complete,-0.174228214,no_call
+SAT,6550403,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.908517443,complete,-0.04166673,non_defense
+SAT,6559024,,,0.832414567,CALIN,-0.079660328,no_call
+SAT,6559027,,,0.386024435,CALIN,-0.413385204,no_call
+SAT,6612724,"Zn-binding Pro-Ala-Ala-Arg (PAAR) domain, involved in Type VI secretion (PAAR) (PDB:4JIV)","Intracellular trafficking, secretion, and vesicular transport",0.106894076,CALIN,-0.971046363,non_defense
+SAT,6614393,,,0.192887833,CALIN,-0.714695166,no_call
+SAT,6616509,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.59099228,complete,-0.228418193,non_defense
+SAT,6616951,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",inf,complete,inf,non_defense
+SAT,6619846,Transcription regulator of the Arc/MetJ class (VapB6) (PDB:6A7V),Transcription,0.063076726,CALIN,-1.200130854,non_defense
+SAT,6628306,,,0.053448665,CALIN,-1.272063137,no_call
+SAT,6652218,"Predicted DNA binding protein, CopG/RHH family",Transcription,1.605880855,CALIN,0.205713321,non_defense
+SAT,6660539,,,0.177117411,CALIN,-0.751738746,no_call
+SAT,6690789,,,12.75336028,CALIN,1.105624628,no_call
+SAT,6690790,,,inf,CALIN,inf,no_call
+SAT,6794260,,,3.222684338,complete,0.508217768,no_call
+SAT,6804409,,,0.346321968,CALIN,-0.46051996,no_call
+SAT,6819007,,,0.132107239,CALIN,-0.879073383,no_call
+SAT,6828408,,,0.1829795,CALIN,-0.737597564,no_call
+SAT,6845491,,,0.234425828,CALIN,-0.629994541,no_call
+SAT,6850807,Transposase InsE and inactivated derivatives (InsE) (PDB:2JN6) (PUBMED:23818957),"Mobilome: prophages, transposons",0.184962453,CALIN,-0.732916424,non_defense
+SAT,6857964,,,0.162255889,CALIN,-0.789799532,no_call
+SAT,6862004,"Ribonucleotide reductase beta subunit, ferritin-like domain (NrdB) (PDB:1AV8)",Nucleotide transport and metabolism,0.028585123,complete,-1.543859931,non_defense
+SAT,6862005,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.262976085,complete,-0.580083745,non_defense
+SAT,6862387,Uncharacterized conserved protein (PDB:1X6M),Function unknown,0.236118447,CALIN,-0.626870082,non_defense
+SAT,6862388,,,0.599084033,CALIN,-0.222512255,no_call
+SAT,6867653,"Uncharacterized conserved protein YecT, DUF1311 family (YecT) (PDB:3GI7)",Function unknown,0.005493299,CALIN,-2.260166797,non_defense
+SAT,6867654,,,inf,CALIN,inf,no_call
+SAT,6871296,"Ribonuclease/mRNA interferase VapC, contains PIN domain (VapC) (PDB:3TND)",Defense mechanisms,0.157161678,CALIN,-0.803653343,defense
+SAT,6871297,Transcription regulator of the Arc/MetJ class (VapB6) (PDB:6A7V),Transcription,0.133202942,CALIN,-0.875486183,non_defense
+SAT,6890138,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.134829444,complete,-0.870215257,non_defense
+SAT,6907559,"Periplasmic serine protease, S1-C subfamily, contain C-terminal PDZ domain (DegQ) (PDB:2HGA) (PUBMED:29686141)","Posttranslational modification, protein turnover, chaperones",0.004048253,complete,-2.392732328,non_defense
+SAT,6907560,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.087676667,complete,-1.057115966,non_defense
+SAT,6907561,,,0.073739319,complete,-1.132300875,no_call
+SAT,6907562,,,0.82041073,complete,-0.085968668,no_call
+SAT,6907562,,,0.82041073,complete,-0.085968668,no_call
+SAT,6907563,"Protein N-acetyltransferase, RimJ/RimL family (RimL) (PDB:1S7F)","Translation, ribosomal structure and biogenesis!!!Posttranslational modification, protein turnover, chaperones",0.119234076,complete,-0.92359961,non_defense
+SAT,6920279,,,0.183073686,CALIN,-0.737374074,no_call
+SAT,6921131,,,0.108297832,CALIN,-0.965380239,no_call
+SAT,6934569,,,0.079589451,CALIN,-1.099144491,no_call
+SAT,6942571,,,2.828985629,CALIN,0.451630741,no_call
+SAT,6949659,Transposase InsO and inactivated derivatives (Tra5)!!!Transposase InsE and inactivated derivatives (InsE) (PDB:2JN6) (PUBMED:23818957),"Mobilome: prophages, transposons!!!Mobilome: prophages, transposons",0.139866334,CALIN,-0.854286809,non_defense
+SAT,6949664,"Uncharacterized conserved protein, MAPEG superfamily",Function unknown,0.18107644,CALIN,-0.742138052,non_defense
+SAT,6949668,,,0.66421796,CALIN,-0.177689385,no_call
+SAT,6949668,,,0.66421796,CALIN,-0.177689385,no_call
+SAT,6954412,,,0.140618825,CALIN,-0.851956535,no_call
+SAT,6988832,Uncharacterized conserved protein (PDB:1X6M),Function unknown,0.306988937,CALIN,-0.512877275,non_defense
+SAT,7010971,,,0.153318999,CALIN,-0.814404026,no_call
+SAT,7012405,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.098137572,complete,-1.008164691,non_defense
+SAT,7012408,,,0.179040404,complete,-0.747048951,no_call
+SAT,7012409,,,0.134923494,complete,-0.869912422,no_call
+SAT,7012410,,,0.458231689,complete,-0.338914881,no_call
+SAT,7040584,Uncharacterized membrane protein,Function unknown,0.25937724,complete,-0.586068136,non_defense
+SAT,7040587,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.232293983,complete,-0.63396204,non_defense
+SAT,7099265,,,0.240253101,CALIN,-0.619330999,no_call
+SAT,7099266,Amino acid racemase YgeA (RacX) (PDB:5ELL),Cell wall/membrane/envelope biogenesis,0.099173334,CALIN,-1.003605087,non_defense
+SAT,7099268,"Phenylpyruvate tautomerase PptA, 4-oxalocrotonate tautomerase family (PptA) (PDB:1BJP)","Secondary metabolites biosynthesis, transport and catabolism",0.358309232,CALIN,-0.445742002,non_defense
+SAT,7099269,"Protein N-acetyltransferase, RimJ/RimL family (RimL) (PDB:1S7F)","Translation, ribosomal structure and biogenesis!!!Posttranslational modification, protein turnover, chaperones",1.783558563,CALIN,0.251287374,non_defense
+SAT,7476189,Heme-degrading monooxygenase HmoA and related ABM domain proteins (HmoA) (PDB:1IUJ) (PUBMED:21873409),Coenzyme transport and metabolism,0.248444197,CALIN,-0.604771142,non_defense
+SAT,7520652,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.099140448,complete,-1.003749122,non_defense
+SAT,7528007,Ribosomal protein S18 acetylase RimI and related acetyltransferases (RimI) (PDB:1GHE),"Translation, ribosomal structure and biogenesis",0.835836816,CALIN,-0.077878503,non_defense
+SAT,7528008,Predicted dehydrogenase (MviM) (PDB:3UUW),General function prediction only,0.392925461,CALIN,-0.405689829,non_defense
+SAT,7528009,,,0.102320869,CALIN,-0.990035781,no_call
+SAT,7543250,,,0.011749056,CALIN,-1.929997044,no_call
+SAT,7545322,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.097513175,complete,-1.010936704,non_defense
+SAT,7545323,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.197479647,complete,-0.704477658,non_defense
+SAT,7560174,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.553347637,complete,-0.25700194,non_defense
+SAT,7798680,,,0.168614267,CALIN,-0.773105682,no_call
+SAT,7798681,"Predicted restriction endonuclease, HNH family (PDB:6GHC)",Defense mechanisms,0.445748027,CALIN,-0.350910571,defense
+SAT,7800992,Imidazole glycerol phosphate synthase subunit HisF (HisF) (PDB:1OX4),Amino acid transport and metabolism,0.080087077,complete,-1.096437558,non_defense
+SAT,7815344,"Plasmid maintenance system antidote protein VapI, contains XRE-type HTH domain (VapI) (PDB:4MCT)",Defense mechanisms,0.030269738,CALIN,-1.518991338,defense
+SAT,7817169,"Predicted DNA binding protein, CopG/RHH family",Transcription,0.080049391,CALIN,-1.096641967,non_defense
+SAT,7817171,,,0.381352525,CALIN,-0.418673374,no_call
+SAT,7817172,"DNA-binding transcriptional regulator YiaG, XRE-type HTH domain (YiaG) (PDB:5JAA)",Transcription,0.056250663,CALIN,-1.249872358,non_defense
+SAT,7817173,,,0.616739108,CALIN,-0.209898512,no_call
+SAT,7819730,,,0.309680028,CALIN,-0.509086803,no_call
+SAT,7821583,,,2.592665037,complete,0.413746411,no_call
+SAT,7821584,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.183354883,complete,-0.73670752,non_defense
+SAT,7825730,,,0.236097746,CALIN,-0.626908158,no_call
+SAT,7825733,,,0.111516628,CALIN,-0.95266037,no_call
+SAT,7890424,,,27.99442446,CALIN,1.447071543,no_call
+SAT,7948698,Ribonucleotide reductase alpha subunit (NrdA) (PDB:1R1R)!!!Anaerobic ribonucleoside-triphosphate reductase (NrdD) (PDB:4COI),Nucleotide transport and metabolism!!!Nucleotide transport and metabolism,0.028596252,complete,-1.543690887,non_defense
+SAT,7998461,,,10.09147882,CALIN,1.003954813,no_call
+SAT,8012521,Plasmid maintenance system killer protein (HigB),Defense mechanisms,0.089986548,CALIN,-1.045822406,defense
+SAT,8012522,"Plasmid maintenance system antidote protein VapI, contains XRE-type HTH domain (VapI) (PDB:4MCT)",Defense mechanisms,0.081156607,CALIN,-1.090676116,defense
+SAT,8147615,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.37113566,complete,-0.430467315,non_defense
+SAT,8201363,,,0.462828875,CALIN,-0.334579554,no_call
+SAT,8236480,,,0.38881294,CALIN,-0.41025929,no_call
+SAT,8236481,,,7.887710464,CALIN,0.896950961,no_call
+SAT,8236768,,,0.399935355,CALIN,-0.398010201,no_call
+SP,72504,,,0.075563645,CALIN,-1.121687103,no_call
+SP,153624,"Zn-dependent amino- or carboxypeptidase, M28 family (Iap) (PDB:1AMP)","Posttranslational modification, protein turnover, chaperones!!!Amino acid transport and metabolism",0.017116889,CALIN,-1.766575155,non_defense
+SP,153625,,,0.098088499,CALIN,-1.008381911,no_call
+SP,153626,NAD(P)H-dependent FMN reductase (SsuE) (PDB:6DQI),Energy production and conversion,0.159218929,CALIN,-0.798005301,non_defense
+SP,235485,,,0.257677918,CALIN,-0.588922797,no_call
+SP,237194,,,0.021837696,CALIN,-1.660793175,no_call
+SP,237196,"Succinyl-CoA synthetase, beta subunit (SucC) (PDB:1SCU)",Energy production and conversion,0.03912405,CALIN,-1.407556198,non_defense
+SP,248080,,,0.515676931,CALIN,-0.287622296,no_call
+SP,248082,,,0.057479302,CALIN,-1.240488515,no_call
+SP,363151,"Na+-translocating ferredoxin:NAD+ oxidoreductase  RNF, RnfE subunit (RnfE)",Energy production and conversion,1.560964543,CALIN,0.193393038,non_defense
+SP,363152,Endonuclease III (Nth) (PDB:4UOB),"Replication, recombination and repair",0.14607848,CALIN,-0.835413759,non_defense
+SP,395104,Na+ or H+-translocating membrane pyrophosphatase (OVP1) (PDB:4A01) (PUBMED:11342551),Energy production and conversion,0.263992433,CALIN,-0.578408521,non_defense
+SP,395107,4-hydroxybenzoate polyprenyltransferase (UbiA) (PDB:4OD4) (PUBMED:28830929),Coenzyme transport and metabolism,0.168734734,CALIN,-0.772795508,non_defense
+SP,562443,"ABC-type transport system involved in cytochrome c biogenesis, ATPase component (CcmA)","Posttranslational modification, protein turnover, chaperones",0.237614855,CALIN,-0.624126412,non_defense
+SP,562448,Cytochrome c biogenesis protein CcmF (CcmF),"Energy production and conversion!!!Posttranslational modification, protein turnover, chaperones",0.166411129,CALIN,-0.778817632,non_defense
+SP,562449,Thiol-disulfide isomerase or thioredoxin (TrxA) (PDB:1XFL),"Posttranslational modification, protein turnover, chaperones",0.108419857,CALIN,-0.964891169,non_defense
+SP,668943,Thymidylate synthase (ThyA) (PDB:1AN5),Nucleotide transport and metabolism,0.06007059,CALIN,-1.221338101,non_defense
+SP,674553,,,0.303922306,complete,-0.517237425,no_call
+SP,690817,Permease of the drug/metabolite transporter (DMT) superfamily (RhaT) (PDB:5I20),Carbohydrate transport and metabolism!!!Amino acid transport and metabolism!!!General function prediction only,0.191427616,CALIN,-0.71799541,non_defense
+SP,690818,Sugar lactone lactonase YvrE (YvrE) (PDB:1E1A),Carbohydrate transport and metabolism,0.128278494,CALIN,-0.891846148,non_defense
+SP,762419,Apolipoprotein N-acyltransferase (Lnt) (PDB:6NWR),Cell wall/membrane/envelope biogenesis,0.01811444,CALIN,-1.741975088,non_defense
+SP,762424,Lipoprotein signal peptidase (LspA) (PDB:5DIR),"Cell wall/membrane/envelope biogenesis!!!Intracellular trafficking, secretion, and vesicular transport",0.053853032,CALIN,-1.268789839,non_defense
+SP,769441,,,0.433049242,CALIN,-0.363462717,no_call
+SP,862174,4-Hydroxy-3-methylbut-2-enyl diphosphate reductase IspH (IspH) (PDB:3DNF),Lipid transport and metabolism,0.001996098,CALIN,-2.699818055,non_defense
+SP,862175,"Peptidyl-prolyl cis-trans isomerase, FKBP type (SlpA) (PDB:2M2A)","Posttranslational modification, protein turnover, chaperones",0.185240402,CALIN,-0.732264285,non_defense
+SP,892838,"DNA gyrase/topoisomerase IV, subunit A (GyrA) (PDB:1SUU)","Replication, recombination and repair",0.049621846,complete,-1.304327084,non_defense
+SP,956714,,,0.249723283,complete,-0.602540964,no_call
+SP,956716,,,0.041846569,complete,-1.378340149,no_call
+SP,957904,,,0.109646327,complete,-0.960005911,no_call
+SP,957908,,,0.066096068,complete,-1.179824375,no_call
+SP,957910,Alkyl hydroperoxide reductase subunit AhpC (peroxiredoxin) (AhpC) (PDB:2RII),Defense mechanisms,23.73976342,complete,1.375476387,defense
+SP,957910,Alkyl hydroperoxide reductase subunit AhpC (peroxiredoxin) (AhpC) (PDB:2RII),Defense mechanisms,23.73976342,complete,1.375476387,defense
+SP,1001421,"Uncharacterized conserved protein YcbK, DUF882 family (YcbK)",Function unknown,0.290699681,complete,-0.536555444,non_defense
+SP,1001422,,,0.136876673,complete,-0.863670559,no_call
+SP,1001424,,,0.254171116,complete,-0.594873805,no_call
+SP,1072281,,,0.10929623,CALIN,-0.961394818,no_call
+SP,1072282,,,0.044324898,CALIN,-1.353352257,no_call
+SP,1072283,,,0.11421623,CALIN,-0.94227218,no_call
+SP,1289497,,,0.007641475,CALIN,-2.11682281,no_call
+SP,1289499,Replicative DNA helicase (DnaB) (PDB:1B79),"Replication, recombination and repair",0.269470988,CALIN,-0.569487985,non_defense
+SP,1300465,"DNA-binding response regulator, OmpR family, contains REC and winged-helix (wHTH) domain (OmpR) (PDB:1XHF)!!!CheY-like REC (receiver) domain, includes chemotaxis protein CheY  and sporulation regulator Spo0F (CheY) (PDB:6QRJ)!!!Signal transduction histidine kinase regulating C4-dicarboxylate transport system (PDB:4GCZ)",Signal transduction mechanisms!!!Transcription!!!Signal transduction mechanisms!!!Signal transduction mechanisms,0.313166573,CALIN,-0.504224601,non_defense
+SP,1587271,,,0.130061612,CALIN,-0.885850868,no_call
+SP,1600461,Glucokinase (Glk) (PDB:1Q18),Carbohydrate transport and metabolism,0.322746356,CALIN,-0.491138652,non_defense
+SP,1600464,,,0.217049405,CALIN,-0.663441401,no_call
+SP,1600466,,,0.474748008,CALIN,-0.323536848,no_call
+SP,1600467,Predicted RNA methylase (PDB:6H2U),General function prediction only,0.164558474,CALIN,-0.783679748,non_defense
+SP,1608824,,,0.259926733,CALIN,-0.585149051,no_call
+SP,1608826,,,0.206197762,CALIN,-0.685716053,no_call
+SP,1628512,5-enolpyruvylshikimate-3-phosphate synthase (AroA) (PDB:4N3P),Amino acid transport and metabolism,0.082013579,CALIN,-1.086114236,non_defense
+SP,1628513,Homocysteine/selenocysteine methylase (S-methylmethionine-dependent) (MHT1) (PDB:5DML),Amino acid transport and metabolism,0.107283018,CALIN,-0.969469016,non_defense
+SP,1640703,,,0.65087893,CALIN,-0.186499787,no_call
+SP,1649376,Lipoprotein signal peptidase (LspA) (PDB:5DIR),"Cell wall/membrane/envelope biogenesis!!!Intracellular trafficking, secretion, and vesicular transport",6.184474188,CALIN,0.791302781,non_defense
+SP,1649377,,,1.655714989,CALIN,0.218985581,no_call
+SP,1815917,,,0.046949624,complete,-1.328367882,no_call
+SP,1815918,,,0.003600652,complete,-2.443618796,no_call
+SP,1865751,,,0.217447983,complete,-0.662644617,no_call
+SP,1892618,Lactate dehydrogenase or related 2-hydroxyacid dehydrogenase (LdhA) (PDB:1DXY),Energy production and conversion!!!Coenzyme transport and metabolism!!!General function prediction only,inf,CALIN,inf,non_defense
+SP,1894133,Glutamate dehydrogenase/leucine dehydrogenase (GdhA) (PDB:1B3B) (PUBMED:24391520),Amino acid transport and metabolism,0.10005062,CALIN,-0.999780214,non_defense
+SP,1894134,Dihydrolipoamide dehydrogenase (E3) component of pyruvate/2-oxoglutarate dehydrogenase complex or glutathione oxidoreductase (Lpd) (PDB:6QKG),Energy production and conversion,0.412129073,CALIN,-0.384966748,non_defense
+SP,1894135,,,0.10618763,CALIN,-0.973926071,no_call
+SP,1926989,,,0.321673258,complete,-0.492585043,no_call
+SP,1964609,Permease of the drug/metabolite transporter (DMT) superfamily (RhaT) (PDB:5I20),Carbohydrate transport and metabolism!!!Amino acid transport and metabolism!!!General function prediction only,0.088259626,complete,-1.054237916,non_defense
+SP,1971775,Acyl-CoA dehydrogenase related to the alkylation response protein AidB (CaiA) (PDB:1BUC),Lipid transport and metabolism,0.454020891,CALIN,-0.342924163,non_defense
+SP,1971776,"Coproporphyrinogen-III oxidase HemH, oxygen-dependent (HemF) (PDB:3E8J)",Coenzyme transport and metabolism,0.129292333,CALIN,-0.888427228,non_defense
+SP,1971777,DNA mismatch repair ATPase MutL (MutL) (PDB:1B62),"Replication, recombination and repair",0.208213305,CALIN,-0.681491523,non_defense
+SP,1971778,"Membrane-associated serine protease, rhomboid family (GlpG) (PDB:2IC8)","Posttranslational modification, protein turnover, chaperones",0.07199179,CALIN,-1.142717026,non_defense
+SP,1971779,"Membrane-associated serine protease, rhomboid family (GlpG) (PDB:2IC8)","Posttranslational modification, protein turnover, chaperones",0.049872338,CALIN,-1.302140272,non_defense
+SP,2012477,Glycosyltransferase involved in cell wall bisynthesis (RfaB) (PDB:2IV7),Cell wall/membrane/envelope biogenesis,0.726489128,CALIN,-0.138770881,non_defense
+SP,2012479,,,0.076664223,CALIN,-1.11540726,no_call
+SP,2012483,,,0.762596746,CALIN,-0.117705052,no_call
+SP,2012484,,,0.275079492,CALIN,-0.560541786,no_call
+SP,2012488,,,0.014096664,CALIN,-1.85088365,no_call
+SP,2088264,,,0.657704489,CALIN,-0.181969194,no_call
+SP,2088266,,,0.112611903,CALIN,-0.948415704,no_call
+SP,2264233,,,inf,CALIN,inf,no_call
+SP,2264234,"Predicted Fe-S protein YdhL, DUF1289 family (YdhL)",General function prediction only,0.451484116,CALIN,-0.345357524,non_defense
+SP,2264259,"ssRNA-specific RNase YbeY, 16S rRNA maturation enzyme (YbeY) (PDB:1XM5) (PUBMED:17407324;23543739)","Translation, ribosomal structure and biogenesis",0.128172919,CALIN,-0.892203723,non_defense
+SP,2298470,Nitrogen regulatory protein PII (GlnK) (PDB:2GW8) (PUBMED:24610711),Signal transduction mechanisms!!!Amino acid transport and metabolism,0.270326932,CALIN,-0.568110685,non_defense
+SP,2298472,,,5.558786993,CALIN,0.744980033,no_call
+SP,2589919,,,0.274579616,complete,-0.561331707,no_call
+SP,2613124,,,2.817897681,CALIN,0.44992522,no_call
+SP,2613125,,,0.414150987,CALIN,-0.382841299,no_call
+SP,2613126,,,0.013612047,CALIN,-1.866076548,no_call
+SP,2613127,"Nucleoside phosphorylase/nucleosidase, includes 5'-methylthioadenosine/S-adenosylhomocysteine nucleosidase MtnN and futalosine hydrolase MqnB (MtnN) (PDB:1T8R) (PUBMED:18801996)",Nucleotide transport and metabolism!!!Coenzyme transport and metabolism,5.508244281,CALIN,0.741013192,non_defense
+SP,2621251,,,0.14843415,complete,-0.828466171,no_call
+SP,2744373,,,0.42770815,complete,-0.368852474,no_call
+SP,2798591,,,0.076141747,CALIN,-1.118377162,no_call
+SP,2798597,,,0.267625375,CALIN,-0.572472711,no_call
+SP,2855599,Metal-dependent amidase/aminoacylase/carboxypeptidase (AbgB) (PDB:3RAM) (PUBMED:17307853),General function prediction only,0.273728395,CALIN,-0.562680149,non_defense
+SP,2895569,,,1.304356571,CALIN,0.11539633,no_call
+SP,2989618,,,1.01500396,CALIN,0.006467737,no_call
+SP,2989633,Uncharacterized coiled-coil protein SlyX (sensitive to lysis X) (SlyX) (PDB:3EFG),Function unknown,0.068904438,CALIN,-1.161752803,non_defense
+SP,3029587,,,0.849239186,CALIN,-0.070969975,no_call
+SP,3029594,,,inf,CALIN,inf,no_call
+SP,3032733,"DNA replicative helicase MCM subunit Mcm2, Cdc46/Mcm family (Mcm2) (PDB:3F8T)","Replication, recombination and repair",1.642462563,complete,0.215495479,non_defense
+SP,3134215,,,0.234711712,CALIN,-0.62946524,no_call
+SP,3152043,,,0.287040645,CALIN,-0.542056602,no_call
+SP,3159206,,,0.099384724,CALIN,-1.002680364,no_call
+SP,3159244,,,0.11222816,complete,-0.949898158,no_call
+SP,3164969,,,10.43395225,CALIN,1.018448845,no_call
+SP,3193607,,,0.465017417,CALIN,-0.332530781,no_call
+SP,3240339,Exoribonuclease R (VacB) (PDB:6H25),Transcription,1.957786216,CALIN,0.291765267,non_defense
+SP,3648722,,,0.133417035,CALIN,-0.874788716,no_call
+SP,3664640,,,0.23847652,complete,-0.622554374,no_call
+SP,3689780,Phage tail sheath protein FI (PDB:3J9Q) (PUBMED:18586829),"Mobilome: prophages, transposons",0.10222682,CALIN,-0.990435148,non_defense
+SP,3689781,,,0.254403437,CALIN,-0.594477025,no_call
+SP,3689782,,,5.260427108,CALIN,0.721021007,no_call
+SP,3699247,,,0.085419636,complete,-1.068442282,no_call
+SP,3931957,Metal-sulfur cluster biosynthetic enzyme (PaaD) (PDB:1UWD),"Posttranslational modification, protein turnover, chaperones",0.034531317,complete,-1.461786853,non_defense
+SP,3931958,Ferredoxin (Fdx) (PDB:1KRH)!!!Flavodoxin/ferredoxin--NADP reductase (Fpr) (PDB:3OZU),Energy production and conversion!!!Energy production and conversion,0.004057639,complete,-2.391726589,non_defense
+SP,3981137,,,0.301005392,CALIN,-0.521425724,no_call
+SP,4026166,,,0.009868106,CALIN,-2.005766213,no_call
+SP,4028650,,,0.002899712,complete,-2.537645173,no_call
+SP,4046533,,,0.054495289,CALIN,-1.26364104,no_call
+SP,4046534,Homoaconitase/3-isopropylmalate dehydratase large subunit (LeuC) (PDB:4KP1)!!!3-isopropylmalate dehydratase small subunit (LeuD) (PDB:3Q3W),Amino acid transport and metabolism!!!Amino acid transport and metabolism,0.09222094,CALIN,-1.035170456,non_defense
+SP,4046537,,,0.069327531,CALIN,-1.159094264,no_call
+SP,4046541,Protein chain release factor PrfB (PrfB) (PDB:1GQE),"Translation, ribosomal structure and biogenesis",0.360477835,CALIN,-0.443121434,non_defense
+SP,4050294,,,1.405105179,CALIN,0.147708834,no_call
+SP,4070353,,,0.261899509,CALIN,-0.581865317,no_call
+SP,4093497,,,0.059185031,CALIN,-1.227788121,no_call
+SP,4119405,,,inf,CALIN,inf,no_call
+SP,4119405,,,inf,CALIN,inf,no_call
+SP,4139291,,,3.976958384,CALIN,0.599551046,no_call
+SP,4149649,,,0.150898084,CALIN,-0.821316275,no_call
+SP,4158834,,,0.277281512,CALIN,-0.557079087,no_call
+SP,4158838,,,1.663948508,CALIN,0.221139883,no_call
+SP,4219614,,,0.126478675,CALIN,-0.897982692,no_call
+SP,4219615,,,0.225928885,CALIN,-0.646028241,no_call
+SP,4219616,,,0.075556297,CALIN,-1.121729334,no_call
+SP,4219617,,,0.111522339,CALIN,-0.952638131,no_call
+SP,4219618,,,0.076757975,CALIN,-1.114876492,no_call
+SP,4412770,,,0.057561674,complete,-1.239866581,no_call
+SP,4413465,,,0.016375639,CALIN,-1.785801744,no_call
+SP,4448460,,,0.075320618,CALIN,-1.123086124,no_call
+SP,4457643,,,0.293926212,complete,-0.531761682,no_call
+SP,4541790,,,0.053190224,complete,-1.274168182,no_call
+SP,4547759,,,0.143925731,CALIN,-0.841861557,no_call
+SP,4547764,,,inf,CALIN,inf,no_call
+SP,4584086,,,0.006682942,CALIN,-2.17503232,no_call
+SP,4590016,,,0.125394628,CALIN,-0.901721068,no_call
+SP,4593236,,,0.003105256,complete,-2.507902598,no_call
+SP,4593237,,,0.024269779,complete,-1.614934179,no_call
+SP,4596715,,,0.110196885,CALIN,-0.957830681,no_call
+SP,4631433,,,0.719417249,CALIN,-0.143019154,no_call
+SP,4631435,,,0.255968273,CALIN,-0.591813861,no_call
+SP,4674789,,,7.17363947,CALIN,0.855739546,no_call
+SP,4679851,,,0.06796087,complete,-1.167741069,no_call
+SP,4680323,,,0.039154343,CALIN,-1.407220059,no_call
+SP,4708546,,,0.109217033,CALIN,-0.961709626,no_call
+SP,4708547,,,0.073457553,CALIN,-1.133963543,no_call
+SP,4708550,,,0.170041079,CALIN,-0.769446148,no_call
+SP,4713025,,,0.12928021,complete,-0.888467953,no_call
+SP,4713028,,,0.567216113,complete,-0.246251441,no_call
+SP,4713029,,,9.044528278,complete,0.956385921,no_call
+SP,4724790,,,0.016666685,complete,-1.778150767,no_call
+SP,4724793,,,0.356736297,complete,-0.4476527,no_call
+SP,4724794,,,1.114118183,complete,0.046931262,no_call
+SP,4724796,,,0.088521843,complete,-1.052949553,no_call
+SP,4724798,,,0.193264703,complete,-0.713847457,no_call
+SP,4769742,,,0.039220335,complete,-1.406488703,no_call
+SP,5065122,,,0.183694231,CALIN,-0.735904483,no_call
+SP,5065123,,,0.425707073,CALIN,-0.370889134,no_call
+SP,5080840,,,0.300345737,CALIN,-0.522378527,no_call
+SP,5080842,,,0.180639565,CALIN,-0.743187122,no_call
+SP,5097164,,,1.390397419,CALIN,0.143138953,no_call
+SP,5097167,,,0.081573811,CALIN,-1.08844925,no_call
+SP,5101234,,,2.239239175,CALIN,0.350100483,no_call
+SP,5220618,,,0.015418452,CALIN,-1.81195924,no_call
+SP,5221739,,,0.15315743,CALIN,-0.81486193,no_call
+SP,5221740,,,0.031225245,CALIN,-1.505494145,no_call
+SP,5276071,,,1.363601767,CALIN,0.134687555,no_call
+SP,5276075,,,0.17628269,CALIN,-0.75379033,no_call
+SP,5276077,,,0.176678584,CALIN,-0.75281609,no_call
+SP,5293328,,,0.120395011,complete,-0.919391509,no_call
+SP,5293329,,,0.139048566,complete,-0.856833485,no_call
+SP,5312611,,,0.27553579,CALIN,-0.559821982,no_call
+SP,5342042,,,0.283720134,CALIN,-0.547109844,no_call
+SP,5342044,,,2.684996505,CALIN,0.428943725,no_call
+SP,5365740,,,0.201745899,CALIN,-0.695195284,no_call
+SP,5366845,,,0.386409485,CALIN,-0.412952222,no_call
+SP,5366846,,,0.181239508,CALIN,-0.741747126,no_call
+SP,5404218,,,0.097518808,CALIN,-1.010911615,no_call
+SP,5419784,,,inf,CALIN,inf,no_call
+SP,5419786,,,0.942758239,CALIN,-0.025599664,no_call
+SP,5428144,,,0.050586279,CALIN,-1.295967267,no_call
+SP,5432070,,,0.434251228,CALIN,-0.362258944,no_call
+SP,5432077,,,0.058076256,CALIN,-1.236001388,no_call
+SP,5451239,,,0.108566298,complete,-0.964304971,no_call
+SP,5451240,,,0.140771082,complete,-0.851486552,no_call
+SP,5587469,,,0.195923597,CALIN,-0.707913255,no_call
+SP,5587472,,,0.196692178,CALIN,-0.70621291,no_call
+SP,5592695,,,0.279886177,CALIN,-0.55301855,no_call
+SP,5686054,,,0.094474964,CALIN,-1.024683265,no_call
+SP,5686061,,,0.272668333,CALIN,-0.564365296,no_call
+SP,5686828,,,0.075433513,CALIN,-1.122435664,no_call
+SP,5690152,,,0.153295473,CALIN,-0.814470671,no_call
+SP,5699517,,,0.263193089,complete,-0.579725518,no_call
+SP,5699518,,,0.274901904,complete,-0.560822252,no_call
+SP,5714173,,,0.12299074,CALIN,-0.910127585,no_call
+SP,5718799,,,0.021337174,complete,-1.670863101,no_call
+SP,5733536,,,0.026353492,CALIN,-1.579161825,no_call
+SP,5733537,,,0.199828956,CALIN,-0.69934158,no_call
+SP,5733538,,,0.208523847,CALIN,-0.680844272,no_call
+SP,5733539,,,0.036558959,CALIN,-1.437006173,no_call
+SP,5737640,,,0.072297649,CALIN,-1.140875824,no_call
+SP,5745105,,,0.055908531,CALIN,-1.25252192,no_call
+SP,5763652,,,0.181133435,CALIN,-0.742001377,no_call
+SP,5763654,,,0.192555142,CALIN,-0.715444879,no_call
+SP,5771480,,,0.645401503,CALIN,-0.190170028,no_call
+SP,5780764,,,0.026258491,complete,-1.580730239,no_call
+SP,5782860,,,7.831193701,CALIN,0.893827966,no_call
+SP,5782860,,,7.831193701,CALIN,0.893827966,no_call
+SP,5782862,,,0.353973595,CALIN,-0.451029134,no_call
+SP,5784926,,,0.678563703,CALIN,-0.168409375,no_call
+SP,5784927,,,13.8649768,CALIN,1.141919147,no_call
+SP,5784928,,,0.064243382,CALIN,-1.192171603,no_call
+SP,5788931,,,0.110917181,CALIN,-0.955001178,no_call
+SP,5788933,,,0.26149979,CALIN,-0.582528655,no_call
+SP,5788939,,,0.145716265,CALIN,-0.836491969,no_call
+SP,5800301,,,0.730662852,CALIN,-0.136282972,no_call
+SP,5800302,,,0.518086966,CALIN,-0.285597333,no_call
+SP,5800304,,,0.107737909,CALIN,-0.967631458,no_call
+SP,5803166,,,0.660872321,complete,-0.179882437,no_call
+SP,5803168,,,0.120848229,complete,-0.917759711,no_call
+SP,5812429,,,0.050462142,complete,-1.297034318,no_call
+SP,5812431,,,0.081218617,complete,-1.090344408,no_call
+SP,5812539,,,0.069782711,CALIN,-1.156252164,no_call
+SP,5834790,,,2.360694823,CALIN,0.373039848,no_call
+SP,5834790,,,2.360694823,CALIN,0.373039848,no_call
+SP,5838502,,,0.059042868,CALIN,-1.228832556,no_call
+SP,5850684,,,0.21738577,CALIN,-0.662768888,no_call
+SP,5850695,,,1.737668006,CALIN,0.239966805,no_call
+SP,5850702,,,inf,CALIN,inf,no_call
+SP,5855161,,,1.257791527,CALIN,0.099608665,no_call
+SP,5855162,,,0.199492694,CALIN,-0.700073006,no_call
+SP,5855163,,,0.189688031,CALIN,-0.721960071,no_call
+SP,5921567,,,0.284653016,CALIN,-0.54568421,no_call
+SP,5955868,,,0.279360905,CALIN,-0.553834371,no_call
+SP,5955869,,,1.677013053,CALIN,0.224536443,no_call
+SP,5955871,,,5.177431504,CALIN,0.714114362,no_call
+SP,5955873,,,0.074529636,CALIN,-1.127670999,no_call
+SP,5955875,,,17.05242996,CALIN,1.231786274,no_call
+SP,5959321,,,22.99368772,CALIN,1.361608629,no_call
+SP,5960720,,,0.140455997,CALIN,-0.852459712,no_call
+SP,5968063,,,0.044227851,CALIN,-1.354304164,no_call
+SP,5978884,,,1.133251153,CALIN,0.05432617,no_call
+SP,5978886,,,0.247637899,CALIN,-0.606182888,no_call
+SP,6067597,,,0.178680206,CALIN,-0.747923555,no_call
+SP,6087148,,,0.294837194,CALIN,-0.53041773,no_call
+SP,6088252,,,0.134830204,CALIN,-0.87021281,no_call
+SP,6089101,,,0.120170043,CALIN,-0.920203783,no_call
+SP,6090103,,,3.65866947,CALIN,0.563323176,no_call
+SP,6090104,,,0.43357241,CALIN,-0.362938362,no_call
+SP,6090105,,,0.140781213,CALIN,-0.851455297,no_call
+SP,6093057,,,0.220634918,complete,-0.656325754,no_call
+SP,6093058,,,0.290810541,complete,-0.536389856,no_call
+SP,6093060,,,0.306805024,complete,-0.513137534,no_call
+SP,6096908,,,4.266021767,CALIN,0.630023067,no_call
+SP,6097338,,,0.103325041,CALIN,-0.985794413,no_call
+SP,6097340,,,0.507914727,CALIN,-0.294209195,no_call
+SP,6099305,,,0.206319412,CALIN,-0.685459908,no_call
+SP,6099306,,,0.188044205,CALIN,-0.725740045,no_call
+SP,6099309,,,0.128928756,CALIN,-0.889650206,no_call
+SP,6103253,,,0.068457119,complete,-1.164581384,no_call
+SP,6110024,,,0.557667572,complete,-0.253624609,no_call
+SP,6110027,,,0.18902882,complete,-0.723471977,no_call
+SP,6110028,,,0.076259073,complete,-1.117708481,no_call
+SP,6113106,,,0.041665601,CALIN,-1.380222351,no_call
+SP,6114930,,,0.079246771,CALIN,-1.101018423,no_call
+SP,6114931,,,0.193938093,CALIN,-0.71233688,no_call
+SP,6114934,,,0.411624878,CALIN,-0.385498385,no_call
+SP,6115071,,,0.1987218,CALIN,-0.701754488,no_call
+SP,6115076,,,0.915505646,CALIN,-0.038338973,no_call
+SP,6122822,,,0.829130231,CALIN,-0.08137725,no_call
+SP,6122823,,,0.31071517,CALIN,-0.507637543,no_call
+SP,6122824,,,0.027337901,CALIN,-1.563234834,no_call
+SP,6122833,,,0.097426008,CALIN,-1.011325091,no_call
+SP,6122836,,,0.135468458,CALIN,-0.868161813,no_call
+SP,6122839,,,0.106791742,CALIN,-0.971462327,no_call
+SP,6122840,,,0.442440417,CALIN,-0.354145207,no_call
+SP,6129353,,,0.154647152,complete,-0.810658074,no_call
+SP,6135313,,,0.545664501,CALIN,-0.263074299,no_call
+SP,6135315,,,0.129756467,CALIN,-0.886870988,no_call
+SP,6135320,,,0.370038885,CALIN,-0.431752637,no_call
+SP,6218325,,,0.655171311,CALIN,-0.183645128,no_call
+SP,6218332,,,0.298191908,CALIN,-0.525504147,no_call
+SP,6302102,,,0.330801833,CALIN,-0.480432093,no_call
+SP,6334046,,,0.037351564,CALIN,-1.427691214,no_call
+SP,6352828,,,0.162112651,CALIN,-0.790183093,no_call
+SP,6369593,,,0.057591507,CALIN,-1.239641556,no_call
+SP,6396836,,,1.672633634,CALIN,0.223400825,no_call
+SP,6396845,,,0.703830222,CALIN,-0.152532089,no_call
+SP,6396847,,,0.033008293,CALIN,-1.48137694,no_call
+SP,6597430,,,0.821965462,CALIN,-0.085146431,no_call
+SP,6610689,,,inf,CALIN,inf,no_call
+SP,6610690,,,0.462737776,CALIN,-0.334665045,no_call
+SP,6610693,,,0.890844265,CALIN,-0.050198211,no_call
+SP,6620200,,,11.42744113,complete,1.057948993,no_call
+SP,6641436,,,0.52927851,complete,-0.276315739,no_call
+SP,6645281,,,0.172699608,CALIN,-0.762708648,no_call
+SP,6645284,,,0.126096541,CALIN,-0.899296827,no_call
+SP,6645286,,,0.27180557,CALIN,-0.565741648,no_call
+SP,6726762,,,1.511892048,CALIN,0.179520783,no_call
+SP,6726763,,,0.435198691,CALIN,-0.36131242,no_call
+SP,6906822,,,0.313100364,CALIN,-0.504316428,no_call
+SP,6906826,,,0.534651539,CALIN,-0.271929179,no_call
+SP,6929921,,,0.927600763,CALIN,-0.032638903,no_call
+SP,6929922,,,0.052846819,CALIN,-1.276981145,no_call
+SP,6929923,,,0.023228279,CALIN,-1.633982975,no_call
+SP,6933937,,,inf,CALIN,inf,no_call
+SP,6953895,,,0.007802483,CALIN,-2.107767163,no_call
+SP,6953901,,,0.36278114,CALIN,-0.440355298,no_call
+SP,7046201,,,0.072776453,CALIN,-1.138009115,no_call
+SP,7084395,,,0.096966609,CALIN,-1.013377791,no_call
+SP,7127848,,,0.53926107,CALIN,-0.268200931,no_call
+SP,7141223,,,0.227382217,CALIN,-0.643243503,no_call
+SP,7141224,,,0.1579852,CALIN,-0.801383596,no_call
+SP,7141225,,,0.972949126,CALIN,-0.011909868,no_call
+SP,7141226,,,0.185023991,CALIN,-0.732771955,no_call
+SP,7141228,,,0.154070666,CALIN,-0.81228004,no_call
+SP,7266631,,,0.106991977,CALIN,-0.970648789,no_call
+SP,7266632,,,0.210094053,CALIN,-0.677586241,no_call
+SP,7266633,,,0.237018032,CALIN,-0.625218612,no_call
+SP,7266636,,,5.446835086,CALIN,0.736144226,no_call
+SP,7266636,,,5.446835086,CALIN,0.736144226,no_call
+SP,7266637,,,0.190062588,CALIN,-0.72110336,no_call
+SP,7266638,,,0.307220824,CALIN,-0.51254935,no_call
+SP,7266639,,,0.625359147,CALIN,-0.203870493,no_call
+SP,7288340,,,0.283110028,CALIN,-0.548044747,no_call
+SP,7288351,,,0.227581406,CALIN,-0.642863223,no_call
+SP,7292188,,,0.254752754,CALIN,-0.593881113,no_call
+SP,7295933,,,0.999114919,CALIN,-0.000384556,no_call
+SP,7295934,,,0.0494349,CALIN,-1.305966342,no_call
+SP,7299345,,,0.351767968,CALIN,-0.45374371,no_call
+SP,7313235,,,0.012448604,CALIN,-1.904879333,no_call
+SP,7313240,,,0.143332371,CALIN,-0.843655716,no_call
+SP,7389263,,,0.099585689,CALIN,-1.001803068,no_call
+SP,7399186,,,2.482050039,CALIN,0.394810533,no_call
+SP,7415859,,,0.157468713,CALIN,-0.802805722,no_call
+SP,7415860,,,0.484780942,CALIN,-0.314454461,no_call
+SP,7415861,,,0.203311576,CALIN,-0.691837893,no_call
+SP,7449665,,,0.071376822,CALIN,-1.146442795,no_call
+SP,7489787,,,0.179353494,CALIN,-0.746290158,no_call
+SP,7523551,,,0.175525392,CALIN,-0.755660049,no_call
+SP,7528341,,,0.20624928,complete,-0.685607558,no_call
+SP,7528574,,,0.122838585,CALIN,-0.910665196,no_call
+SP,7584370,,,0.005503144,CALIN,-2.259389108,no_call
+SP,7586054,,,0.06168472,complete,-1.209822404,no_call
+SP,7607489,,,0.06520089,CALIN,-1.185746476,no_call
+SP,7607490,,,0.30905796,CALIN,-0.509960067,no_call
+SP,7613347,,,0.033857184,complete,-1.470349169,no_call
+SP,7626052,,,0.351433547,CALIN,-0.454156784,no_call
+SP,7653330,,,0.043915401,complete,-1.357383146,no_call
+SP,7671695,,,2.450985142,CALIN,0.389340679,no_call
+SP,7674100,,,2.365431408,CALIN,0.373910359,no_call
+SP,7686618,,,0.288976544,CALIN,-0.539137408,no_call
+SP,7690912,,,0.850663783,CALIN,-0.070242057,no_call
+SP,7690913,,,0.148925419,CALIN,-0.827031169,no_call
+SP,7690914,,,1.534449758,CALIN,0.185952673,no_call
+SP,7696851,,,14.17399936,CALIN,1.151492409,no_call
+SP,7696853,,,0.372231547,CALIN,-0.429186822,no_call
+SP,7696854,,,0.307655291,CALIN,-0.511935612,no_call
+SP,7703837,,,0.210671354,CALIN,-0.676394513,no_call
+SP,7703838,,,0.307200764,CALIN,-0.512577709,no_call
+SP,7887408,,,0.39591089,CALIN,-0.402402553,no_call
+SP,7909338,,,1.701681109,CALIN,0.230878178,no_call
+SP,7921623,,,2.647027027,complete,0.422758376,no_call
+IN,48266,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",7.846781507,complete,0.89469156,non_defense
+IN,412667,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.145340817,complete,-0.837612404,non_defense
+IN,412670,Uncharacterized membrane protein,Function unknown,0.100240825,complete,-0.998955368,non_defense
+IN,458080,Quinol monooxygenase YgiN (YgiN) (PDB:1R6Y) (PUBMED:15613473),Energy production and conversion,0.207151442,complete,-0.68371204,non_defense
+IN,458085,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.137107255,complete,-0.862939563,non_defense
+IN,562905,"Antitoxin component YafN of the YafNO toxin-antitoxin module, PHD/YefM family (StbD) (PDB:2A6Q)",Defense mechanisms,0.045667897,CALIN,-1.340388986,defense
+IN,562906,,,0.141097787,CALIN,-0.850479799,no_call
+IN,562907,,,1.006143397,CALIN,0.002659881,no_call
+IN,564465,,,0.960466152,CALIN,-0.017517936,no_call
+IN,564466,,,0.943743494,CALIN,-0.025146029,no_call
+IN,564467,,,0.598077393,CALIN,-0.223242614,no_call
+IN,564468,,,0.233334608,CALIN,-0.632020843,no_call
+IN,564958,,,inf,CALIN,inf,no_call
+IN,564961,,,1.400965087,CALIN,0.146427312,no_call
+IN,564962,,,0.196713137,CALIN,-0.706166635,no_call
+IN,564963,,,inf,CALIN,inf,no_call
+IN,565228,,,0.529244552,CALIN,-0.276343604,no_call
+IN,565228,,,0.529244552,CALIN,-0.276343604,no_call
+IN,565229,,,0.694920799,CALIN,-0.15806469,no_call
+IN,565231,,,0.758140883,CALIN,-0.120250083,no_call
+IN,565233,,,0.611855762,CALIN,-0.213350946,no_call
+IN,568066,,,0.339390986,CALIN,-0.469299696,no_call
+IN,568067,,,inf,CALIN,inf,no_call
+IN,568069,"Antitoxin component YafN of the YafNO toxin-antitoxin module, PHD/YefM family (StbD) (PDB:2A6Q)",Defense mechanisms,0.135016428,CALIN,-0.869613387,defense
+IN,569686,Ribosomal protein S18 acetylase RimI and related acetyltransferases (RimI) (PDB:1GHE),"Translation, ribosomal structure and biogenesis",0.099193251,CALIN,-1.003517875,non_defense
+IN,572162,,,0.595704405,CALIN,-0.224969188,no_call
+IN,572163,,,1.3294273,CALIN,0.123664593,no_call
+IN,582280,,,0.369184185,CALIN,-0.432756911,no_call
+IN,582281,Predicted periplasmic protein,Function unknown,0.617234218,CALIN,-0.209550006,non_defense
+IN,582284,Plasmid maintenance system killer protein (HigB),Defense mechanisms,0.715789474,CALIN,-0.145214693,defense
+IN,590630,,,0.031266135,CALIN,-1.504925806,no_call
+IN,590631,,,0.093322946,CALIN,-1.030011561,no_call
+IN,590632,,,1.92913191,CALIN,0.285361925,no_call
+IN,591520,,,3.731016088,CALIN,0.571827122,no_call
+IN,591521,,,inf,CALIN,inf,no_call
+IN,593423,Uncharacterized conserved protein (PDB:1X6M),Function unknown,0.342816334,CALIN,-0.464938494,non_defense
+IN,593424,,,1.8027391,CALIN,0.255932878,no_call
+IN,593425,,,inf,CALIN,inf,no_call
+IN,593426,,,0.709084385,CALIN,-0.149302079,no_call
+IN,593429,,,3.1837888,CALIN,0.502944251,no_call
+IN,593430,,,0.586166266,CALIN,-0.231979179,no_call
+IN,593431,,,0.145679237,CALIN,-0.836602341,no_call
+IN,593435,,,0.259536244,CALIN,-0.585801985,no_call
+IN,593437,"Protein N-acetyltransferase, RimJ/RimL family (RimL) (PDB:1S7F)","Translation, ribosomal structure and biogenesis!!!Posttranslational modification, protein turnover, chaperones",0.171729261,CALIN,-0.765155699,non_defense
+IN,594577,,,1.660432569,CALIN,0.220221243,no_call
+IN,594578,,,0.571650417,CALIN,-0.242869476,no_call
+IN,594579,,,0.31577913,CALIN,-0.500616577,no_call
+IN,661692,Site-specific recombinase XerC (XerC),"Replication, recombination and repair",0.08656492,CALIN,-1.062658066,non_defense
+IN,661695,,,inf,CALIN,inf,no_call
+IN,685014,,,0.123158281,CALIN,-0.90953638,no_call
+IN,685015,,,0.07618573,CALIN,-1.118126369,no_call
+IN,685015,,,0.07618573,CALIN,-1.118126369,no_call
+IN,685016,,,0.032782174,CALIN,-1.484362248,no_call
+IN,685017,,,0.151389225,CALIN,-0.819905033,no_call
+IN,685018,,,0.322735752,CALIN,-0.491152921,no_call
+IN,707147,GTPase SAR1 family domain (Gem1) (PDB:4C0J)!!!WD40 repeat (WD40) (PDB:3UVN),General function prediction only!!!General function prediction only,inf,CALIN,inf,non_defense
+IN,1103800,Permease of the drug/metabolite transporter (DMT) superfamily (RhaT) (PDB:5I20),Carbohydrate transport and metabolism!!!Amino acid transport and metabolism!!!General function prediction only,0.150446637,CALIN,-0.822617515,non_defense
+IN,1103802,"NAD(P)-dependent dehydrogenase, short-chain alcohol dehydrogenase family (FabG) (PDB:6L1H)",Lipid transport and metabolism,0.149596059,CALIN,-0.825079849,non_defense
+IN,1361236,,,1.259079903,CALIN,0.100053292,no_call
+IN,1378445,Pyridoxine/pyridoxamine 5'-phosphate oxidase (PdxH) (PDB:1CI0),Coenzyme transport and metabolism,0.656049715,complete,-0.183063249,non_defense
+IN,1378446,"Accessory colonization factor AcfC, contains ABC-type periplasmic domain (AcfC) (PDB:4JB7)",Cell wall/membrane/envelope biogenesis,0.87620456,complete,-0.057394491,non_defense
+IN,1378447,"Protein N-acetyltransferase, RimJ/RimL family (RimL) (PDB:1S7F)","Translation, ribosomal structure and biogenesis!!!Posttranslational modification, protein turnover, chaperones",1.450623369,complete,0.161554669,non_defense
+IN,1378448,,,0.876340681,complete,-0.057327027,no_call
+IN,1378449,"Fe-S cluster carrier ATPase, Mrp/ApbC/NBP35 family (Mrp) (PDB:2PH1) (PUBMED:18616280;19114487;31709520)","Cell cycle control, cell division, chromosome partitioning",0.70554162,complete,-0.151477362,non_defense
+IN,1378450,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.21481349,complete,-0.667938448,non_defense
+IN,1385757,,,0.835864172,complete,-0.07786429,no_call
+IN,1385758,,,0.168856227,complete,-0.772482919,no_call
+IN,1385759,,,1.726326742,complete,0.237122998,no_call
+IN,1385761,,,inf,complete,inf,no_call
+IN,1385762,,,0.211344525,complete,-0.675008999,no_call
+IN,1385763,,,inf,complete,inf,no_call
+IN,1385764,,,1.047165949,complete,0.020015512,no_call
+IN,1385765,,,3.28470303,complete,0.516496111,no_call
+IN,1385766,Site-specific recombinase XerD (XerD) (PDB:1A0P),"Replication, recombination and repair",0.228062458,complete,-0.6419462,non_defense
+IN,1415558,Retron-type reverse transcriptase (YkfC),"Mobilome: prophages, transposons",0.834959552,CALIN,-0.078334562,non_defense
+IN,1507939,Large exoprotein involved in heme utilization or adhesion (FhaB) (PDB:4RM6),"Intracellular trafficking, secretion, and vesicular transport",0.095574513,CALIN,-1.019657904,non_defense
+IN,1565958,Peroxiredoxin (Bcp) (PDB:5IPH),"Posttranslational modification, protein turnover, chaperones",0.389359447,CALIN,-0.409649284,non_defense
+IN,1580023,,,0.28300794,CALIN,-0.54820138,no_call
+IN,1679254,Multidrug transporter EmrE and related cation transporters (EmrE) (PDB:2I68),Defense mechanisms,5.463741722,CALIN,0.737490161,defense
+IN,1679255,"Uncharacterized conserved protein, DUF1643 domain",Function unknown,3.602245023,CALIN,0.55657325,non_defense
+IN,1679256,,,0.927282573,CALIN,-0.032787902,no_call
