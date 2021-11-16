@@ -22,15 +22,14 @@ to_graph <- rbind(trans, biofilm, defense)
 to_graph$gene <- factor(to_graph$gene, levels = c("transposase", "biofilm", "defense"))
 options(scipen=10000)
 pC <- ggplot(to_graph, aes(x=`lifestyle`, y=prop, fill=gene)) + 
-  # geom_boxplot(outlier.color = "gray") + 
-  geom_violin(adjust = 5) +
+  geom_boxplot(outlier.color = "gray") + 
+  #geom_violin(adjust = 5) +
   theme_classic() +
-  #ylab("number of [gene] hits / total number of genes in a bin") +
-  scale_y_continuous( name = "% of transposases, biofilm in total ORFs", # first axis
+  scale_y_continuous(name = "% of transposases, biofilm in total ORFs", # first axis
     sec.axis = sec_axis(~.*defense_scale, name="% of defense mechanisms in total ORFs") # second axis
   ) +
-  xlab("") +
-  scale_x_discrete(labels=c("free-living\n(n = 96)", "mix\n(n = 1081)", "particle-attched\n(n = 130)")) +
+  xlab("Lifestyles of MAGs") +
+  scale_x_discrete(labels=c("free-living\n(n = 96)", "mix\n(n = 1081)", "particle-assoc\n(n = 130)")) +
   coord_flip(ylim= c(0,0.65)) +
   scale_fill_manual(breaks=c("defense","biofilm","transposase"), values=c('red','darkolivegreen1','cadetblue1'))
 
