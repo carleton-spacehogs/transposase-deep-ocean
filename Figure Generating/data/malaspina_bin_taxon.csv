@@ -1,4 +1,4 @@
-﻿magId,domain,phylum,class,order,family,genus,species,Completeness,Contamination,genomeSize,contigCount,N50,meanContigLen,minContigLen,maxContigLen,complete genome size (Mbp),is_MES
+﻿magId,domain,phylum,class,order,family,genus,species,Completeness,Contamination,genomeSize,contigCount,N50,meanContigLen,minContigLen,maxContigLen,complete genome size (Mbp),is_tara
 mp-deep_mag-0002,Bacteria,Proteobacteria,Gammaproteobacteria,Pseudomonadales,Alcanivoracaceae,Alcanivorax,Alcanivorax sp900107995,65.08,9.48,3413907,440,11202,7759,2026,54965,5.245708359,Deep_Malaspina
 mp-deep_mag-0008,Bacteria,Proteobacteria,Gammaproteobacteria,Pseudomonadales,HTCC2089,UBA9659,undef,76.19,2.38,2884344,578,5681,4990,2004,21206,3.785725161,Deep_Malaspina
 mp-deep_mag-0011,Bacteria,Planctomycetota,Planctomycetes,Pirellulales,Pirellulaceae,GCA-2718815,undef,95.91,3.45,6827226,478,35869,14283,2002,262447,7.118367219,Deep_Malaspina

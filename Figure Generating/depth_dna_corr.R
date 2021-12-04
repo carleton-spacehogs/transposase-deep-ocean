@@ -5,6 +5,8 @@ g(DNA_tara, RNA_tara, DNA_RNA_tara, depth_comparison) %=% init_tara()
 scale <- c(-2, -2.5, -3, -3.5, -4, -4.5)
 # log_scale <- round(10^scale, digits = 5)
 percent_scale <- c("1.00%", "0.316%", "0.100%", "0.032%", "0.010%", "0.003%")
+colors <- c("sky blue", "steelblue","gray","blue")
+color_breaks <- c('SRF','DCM','MIX','MES')
 
 p1 <- DNA_tara %>% 
   ggplot(aes(x = Depth, y = log_dna_trans)) +
@@ -14,13 +16,9 @@ p1 <- DNA_tara %>%
   scale_x_continuous(trans='log10') + xlab("Depth (m)") +
   geom_point(aes(color = Layer_DNA)) +
   geom_smooth(method = "lm", se = F) +
-  scale_color_manual(breaks=c('SRF','DCM','MES', "MIX"), 
-                     values=c("sky blue", "steelblue", "blue", "gray")) +
+  scale_color_manual(breaks=color_breaks, 
+                     values=colors) +
   theme(legend.position = "none")
-
-stat.test <- compare_means(log_dna_trans ~ upper_size_dna, data = DNA_tara, method = "t.test")
-stat.test <- stat.test %>% mutate(y.position = c(-2))
-
 
 p2 <- DNA_tara %>% 
   # filter(Layer_DNA != "MIX") %>%
@@ -37,12 +35,17 @@ p2 <- DNA_tara %>%
   scale_y_continuous(breaks = scale, labels = percent_scale, limits=c(-4.5, -2)) +
   stat_pvalue_manual(stat.test, label = "p.adj") + 
   #stat_compare_means(comparisons = list( c("1.6", "3") ))
-  scale_color_manual(breaks=c('SRF','DCM','MES', "MIX"), 
-    values=c("sky blue", "steelblue", "blue", "gray"),
+  scale_color_manual(breaks=color_breaks, values=colors,
     labels = c("SRF (5 or 9 m)", "DCM (17-188m)", "MIX (25-200m)", "MES (250-1000m)"))
   # theme(axis.title.y=element_blank())
 
 ggarrange(p1, p2, labels = c("A", "B"), ncol = 2, nrow = 1, widths = c(0.4, 0.6))
+
+
+
+
+stat.test <- compare_means(log_dna_trans ~ upper_size_dna, data = DNA_tara, method = "t.test")
+stat.test <- stat.test %>% mutate(y.position = c(-2))
 
 for (ocean in unique(DNA_tara$Ocean_DNA)){
   print(ocean)

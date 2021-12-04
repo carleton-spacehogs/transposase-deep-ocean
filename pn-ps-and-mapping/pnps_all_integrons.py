@@ -21,6 +21,18 @@ min         0.001616
 max              inf
 Name: pnps, dtype: float64
 
+#extremely large values:
+>>> all_integron_with_pnps.query("pnps > 10 & pnps < 100").pnps.describe()
+count    14.000000
+mean     23.235098
+std      19.110803
+min      10.091479
+25%      12.818997
+50%      15.613215
+75%      23.739763
+max      82.253317
+Name: pnps, dtype: float64
+
 >>> all_integron_with_pnps.query("pnps < 10").pnps.describe()
 count    1186.000000
 mean        0.564597

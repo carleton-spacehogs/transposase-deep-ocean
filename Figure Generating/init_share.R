@@ -70,22 +70,15 @@ g = function(...) {
 
 init_bins <- function(){
   init_env()
-  RPKM <- read_excel("data/TOBG-Combined.RPKM.xlsx")
-  virus <- read_csv("data/viral_contig_each_bin.csv", col_names = c("bin", "viral_contig_count"))
-  taxon <- read_csv("data/bin_taxon2.csv")
-  taxon <- merge(taxon, RPKM[c("bin", "Max_RPKM", "sum")])
-  # HTG <- read_csv("data/HGT_genes_each_bin.csv")
-  # taxon <- merge(taxon, HTG, by="bin", all.x = TRUE)
-  # taxon$HTG_proportion <- taxon$HTG/taxon$`Total ORFs`
-  taxon$depth <- factor(taxon$depth, levels = c("SRF", "DCM", "mixed", "epi", "MES"))
-  taxon$`transposase gene calls in genome (%)` <- taxon$`Percent Transposases`*100
-  taxon$`biofilm gene calls in genome (%)` <- taxon$`percent_biofilm`*100
-  taxon$`defense mechanisms gene calls in genome (%)` <- taxon$`percent_defense`*100
+  taxon <- read_csv("data/bin_taxon.csv")
+  taxon$depth <- factor(taxon$depth, levels = c("SRF", "DCM", "MES"))
+  taxon$`transposase gene calls in genome (%)` <- taxon$percent_trans
+  taxon$`biofilm gene calls in genome (%)` <- taxon$percent_biofilm
+  taxon$`defense mechanisms gene calls in genome (%)` <- taxon$percent_defense
   taxon$log_complete_bin_size <- log(taxon$`complete genome size (Mbp)`)
   taxon$complete_ORF_count <- taxon$`Total ORFs`/taxon$`Percent Complete`*100
   
   taxon_count_greater_than_10 <- taxon %>% 
-    #filter(depth %in% c("SRF", "DCM", "MES")) %>%
     group_by(Class) %>%  filter(n() > 10) %>%
     select(Class) %>% unique()
   
@@ -99,19 +92,21 @@ init_bins <- function(){
                               ifelse(!is.na(`Class with more than 10 MAGs`), `Class with more than 10 MAGs`, "Others Or Unknown"))
   taxon <- taxon %>% mutate(`Order>5` = 
                               ifelse(Order %in% c(order_count_greater_than_5)$Order, Order, "Others Or Unknown"))
-  taxon <- taxon %>% mutate(`Order>5` = 
-                              ifelse(!is.na(`Order>5`), `Order>5`, "Others Or Unknown"))
+  taxon <- taxon %>% mutate(`Order>5` = ifelse(!is.na(`Order>5`), `Order>5`, "Others Or Unknown"))
+  # taxon <- taxon %>% mutate(is_MES = ifelse(depth == "unsure", "unsure", ifelse(depth == "MES", "MES", "SRF&DCM")))
+  taxon$is_tara <- "Tara"
   
-  rm(virus, RPKM)
   pn_ps_bins <- read_csv("data/bin_median_pnps.csv")
-  taxon <- merge(taxon, pn_ps_bins, by="bin")
+  taxon <- merge(taxon, pn_ps_bins, by="bin", all.x = TRUE)
+  taxon$log_median_bin_pnps <- log10(taxon$median_bin_pnps)
   
   depth_comparisons <- list(c("DCM", "MES"), c("SRF", "DCM"), c("SRF", "MES") )
   
   malaspina_bins <- read_csv("data/malaspina_bin_taxon.csv")
   pn_ps_malaspina_bins <- read_csv("data/malaspina_bin_median_pnps.csv")
   malaspina_bins$bin <- gsub('mp-deep_mag-', 'deep_MAG_', malaspina_bins$magId)
-  malaspina_bins <- merge(malaspina_bins, pn_ps_malaspina_bins, by="bin")
+  malaspina_bins <- merge(malaspina_bins, pn_ps_malaspina_bins, by="bin", all.x = TRUE)
+  malaspina_bins$log_median_bin_pnps <- log10(malaspina_bins$median_bin_pnps)
   
   return(list(taxon, depth_comparisons, malaspina_bins))
 }

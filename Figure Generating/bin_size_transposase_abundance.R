@@ -10,18 +10,20 @@ lm(`transposase gene calls in genome (%)`~ `complete genome size (Mbp)`*depth + 
 pred <- bin_taxon %>% select(`complete genome size (Mbp)`, depth)
 bin_taxon$predicted_transposase_percent <- predict(transposase_size_depth.lm, pred)
 
+outlier_cut <- min(boxplot(bin_taxon$`transposase gene calls in genome (%)`)$out)
 p1 <- bin_taxon %>% 
-  filter(depth %in% c("SRF", "DCM", "MES")) %>%
-  group_by(`Class with more than 10 MAGs`) %>%
-  ggplot(aes(x = `complete genome size (Mbp)`, y = `transposase gene calls in genome (%)`)) +
-  coord_flip() +
+  filter(`transposase gene calls in genome (%)` < outlier_cut) %>%
+  filter(`complete genome size (Mbp)` > 2.4) %>%
+  ggplot(aes(y = `transposase gene calls in genome (%)`, 
+             x = `complete genome size (Mbp)`)) +
   facet_wrap(~depth) +
-  ylab("% of transposase ORFs in genome")+
-  geom_point(aes(color = `Class with more than 10 MAGs`)) + 
+  ylab("% of transposase ORFs in genome") +
+  geom_point(aes(color = `Class with more than 10 MAGs`), alpha = 0.6) +
+  geom_smooth(se=F) +
   guides(col = guide_legend(nrow = 9)) +
   labs(color='Class with \u2265 10 MAGs') +
   theme_classic()
-
+  
 p2 <- bin_taxon %>% filter(depth %in% c("SRF", "DCM", "MES")) %>%
   group_by(`Class with more than 10 MAGs`) %>%
   mutate(depth = fct_rev(depth)) %>% 
@@ -31,11 +33,11 @@ p2 <- bin_taxon %>% filter(depth %in% c("SRF", "DCM", "MES")) %>%
                      label = "p.signif", hide.ns = TRUE, 
                      method = "t.test", 
                      label.y = c(11,12)) +
-  geom_jitter(aes(color = `Class with more than 10 MAGs`)) +
+  geom_jitter(aes(color = `Class with more than 10 MAGs`), alpha = 0.6) +
+  geom_violin(alpha = 0.5) + 
   stat_summary(fun.data = boxplot.give.n, 
                geom = "text", 
-               position=position_nudge(x = 0.45, y = 0)) +
-  geom_violin(alpha = 0.5) + 
+               position=position_nudge(x = 0, y = 0)) +
   coord_flip() +
   theme_classic() + 
   theme(legend.position = "none")
@@ -45,19 +47,21 @@ p3 <- bin_taxon %>% filter(depth %in% c("SRF", "DCM", "MES")) %>%
   mutate(depth = fct_rev(depth)) %>% 
   ggplot(aes(x = depth, y = `transposase gene calls in genome (%)`)) +
   ylab("% of transposase ORFs in genome")+
-  geom_jitter(aes(color = `Class with more than 10 MAGs`)) +
   stat_compare_means(comparisons = list(c("DCM","MES"), c("SRF","MES")), 
-                     label = "p.signif", hide.ns = TRUE, method = "t.test") +
-  stat_summary(fun.data = boxplot.give.n, geom = "text", position=position_nudge(x = 0.45, y = 0)) +
-  geom_boxplot(alpha = 0.5, outlier.shape=NA) + 
+                     label = "p.signif", method = "t.test", 
+                     tip.length = 0.01,
+                     label.y = c(0.75, 0.85)) +
+  # stat_summary(fun.data = boxplot.give.n, geom = "text", position=position_nudge(x = 0.45, y = 0)) +
+  geom_boxplot(alpha = 0.5, outlier.shape = NA) + 
   xlab("") + 
-  coord_flip() + 
+  coord_flip(ylim = c(0, 0.85)) + 
   theme_classic() + 
   theme(legend.position = "none")
 
 ggarrange(ggarrange(p2, p3, ncol = 2, labels = c("A", "B")), # Second row with box and dot plots
           p1,
           nrow = 2, 
+          heights = c(2/5, 3/5),
           labels = c("", "  C"))
 
 bin_taxon %>% 

@@ -8,20 +8,19 @@ pn_ps_merged$gene_type <- factor(pn_ps_merged$gene_type, levels = c(
   "transposase", "all cassette genes", # transposase and all cassette genes is not currently used
   "normal", "defense", "non_defense", "no_call"))
 
-scale <- c(-3, -2, -1, 0, 1)
-log_scale <- c("lower\nthan\n0.001", "0.01", "0.1", "1", "10")
+scale <- c(-3, -2, -1, 0, 0.60, 1)
+log_scale <- c("lower\nthan\n0.001", "0.01", "0.1", "1", "max \npnps:4", "10")
 pB <- pn_ps_merged %>%
-  filter(pnps < 10) %>%
+  filter(pnps < 4) %>%
   filter(gene_type %in% c("normal","non_defense", "defense", "no_call")) %>%
   ggplot(aes(x = gene_type, y = log_pnps, fill=gene_type)) +
-  # geom_violin() +
   geom_boxplot(outlier.color = "gray") +
   ylab("pN/pS ratio") +
-  scale_y_continuous(breaks = scale, labels = log_scale) +
+  scale_y_continuous(breaks = scale, labels = log_scale, limits = c(-3, 1)) +
   stat_summary(fun.data = boxplot.give.n, geom = "text", position=position_nudge(x = 0, y = 0.17)) +
   stat_compare_means(comparisons =list(c("non_defense", "defense"),
                                        c("no_call","non_defense")),
-                     label.y = c(0.6, 1),
+                     label.y = c(0.6, 0.8),
                      method = "t.test",
                      tip.length = 0.005) + 
   scale_x_discrete(labels=c("normal (not\ntranposase\nor cassette)", 
@@ -72,27 +71,4 @@ pn_ps_integron <- pn_ps_integron %>% filter(!is.na(category)) %>%
 t.test(log_pnps~ is_metabolism, data = pn_ps_integron %>% 
          filter(pnps < 10) %>% filter(!is.na(category)))
 
-pn_ps_integron[pn_ps_integron$is_metabolism=="lipid",]
 
-
-# trashed
-pB <- pn_ps_merged %>%
-  filter(pnps < 10) %>%
-  filter(gene_type %in% c("normal","defense mech","non-defense cassette gene calls")) %>%
-  ggplot(aes(x = gene_type, y = pnps, fill=gene_type)) +
-  # geom_boxplot(outlier.colour=NA) +
-  geom_violin() +
-  ylab("pN/pS ratio") +
-  stat_summary(fun.data = boxplot.give.n, geom = "text", position=position_nudge(x = 0, y = -0.095)) +
-  stat_compare_means(comparisons =list(c("non-defense cassette gene calls", "normal"), 
-                                       c("non-defense cassette gene calls", "defense mech")),
-                     label.y = c(0.58, 0.54),
-                     label = "p.signif",
-                     tip.length = 0.002) + 
-  scale_x_discrete(labels=c("normal (not tran-\nposase/cassette)", 
-                            "Non-defense \n cassette genes",
-                            "Defense mech \n cassette genes")) +
-  theme_bw() +
-  coord_flip(ylim = c(0, 0.6)) +
-  theme(axis.title.x = element_blank(), legend.position="none") + 
-  scale_fill_manual(values=c("transparent", "orange", "red"))
