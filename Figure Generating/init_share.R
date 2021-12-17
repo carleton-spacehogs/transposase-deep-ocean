@@ -16,6 +16,7 @@ init_env <- function(){
   library(dplyr)
   library(data.table)
   library(gridExtra)
+  library(stringr)
   library(png)
   setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
   getwd()
@@ -66,6 +67,25 @@ g = function(...) {
   List = as.list(substitute(list(...)))[-1L]
   class(List) = 'lbunch'
   return(List)
+}
+
+init_individual_metagenomes <- function(){
+  init_env()
+  SRF <- read_csv("data/trans_and_normal_pnps_SRF.csv")
+  DCM <- read_csv("data/trans_and_normal_pnps_DCM.csv")
+  MES <- read_csv("data/trans_and_normal_pnps_MES.csv")
+  Malaspina <- read_csv("data/trans_and_normal_pnps_Malaspina.csv")
+  all <- rbind(SRF, DCM, MES, Malaspina)
+  all$log_pnps <- ifelse(all$pnps == 0, 0.01, log10(all$pnps)) 
+  all$gene_type <- factor(all$gene_type, 
+        #levels = c("SRF", "SRF_trans","DCM", "DCM_trans", "MES", "MES_trans", "Malaspina", "Malaspina_trans"))
+        levels = c("SRF","DCM","MES","Malaspina","SRF_trans","DCM_trans","MES_trans","Malaspina_trans"))
+  all$gene_type2 <- ifelse(str_detect(all$gene_type, "trans"), "transposase", "normal")
+  all$gene_type2 <- factor(all$gene_type2, levels=c("transposase", "normal")) 
+  all <- mutate(all, depth = str_remove_all(gene_type, "_trans"))
+  all$depth2 <- ifelse(all$depth %in% c("SRF", "DCM"), "SRF&DCM", all$depth)
+  all$depth <- factor(all$depth, levels=c("SRF", "DCM", "MES", "Malaspina")) 
+  return(list(all))
 }
 
 init_bins <- function(){

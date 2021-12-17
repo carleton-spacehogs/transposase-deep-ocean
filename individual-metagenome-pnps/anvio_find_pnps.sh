@@ -1,3 +1,4 @@
+#!/bin/bash
 all_db=$(ls *.db)
 
 for db in $all_db; do
