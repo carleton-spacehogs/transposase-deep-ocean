@@ -102,9 +102,10 @@ init_individual_metagenomes <- function(){
 init_bins <- function(){
   init_env()
   c <- 0.0000000001 # for log(0)
-  low_trans <- c("Verrucomicrobia", "Acidimicrobidae")
-  high_trans <- c("Alphaproteobacteria", "Betaproteobacteria", "Deltaproteobacteria", 
-                  "Gammaproteobacteria", "Sphingobacteria", "Actinobacteria")
+  low_trans <- c("Flavobacteria","Acidimicrobidae","novelClass_E",
+                 "Gemmatimonadetes","SAR202-2","Marinisomatia")
+  high_trans <- c("Alphaproteobacteria","Gammaproteobacteria",
+                  "Betaproteobacteria","Actinobacteria")
   taxon <- read_csv("data/bin_taxon.csv")
   taxon$depth <- factor(taxon$depth, levels = c("SRF", "DCM", "MES"))
   taxon$`transposase gene calls in genome (%)` <- taxon$percent_trans
@@ -114,22 +115,6 @@ init_bins <- function(){
   taxon$log_percent_trans <- log10(taxon$percent_trans + c)
   taxon$log_percent_biofilm <- log10(taxon$percent_biofilm + c)
   taxon$complete_ORF_count <- taxon$`Total ORFs`/taxon$`Percent Complete`*100
-  
-  taxon_count_greater_than_10 <- taxon %>% 
-    group_by(Class) %>%  filter(n() > 10) %>%
-    select(Class) %>% unique()
-  
-  order_count_greater_than_5 <- taxon %>% 
-    group_by(Order) %>% filter(n() > 5) %>%
-    select(Order) %>% unique()
-  
-  taxon <- taxon %>% mutate(`Class with more than 10 MAGs` = 
-                             ifelse(Class %in% c(taxon_count_greater_than_10)$Class, Class, "Others Or Unknown"))
-  taxon <- taxon %>% mutate(`Class with more than 10 MAGs` = 
-                              ifelse(!is.na(`Class with more than 10 MAGs`), `Class with more than 10 MAGs`, "Others Or Unknown"))
-  taxon <- taxon %>% mutate(`Order>5` = 
-                              ifelse(Order %in% c(order_count_greater_than_5)$Order, Order, "Others Or Unknown"))
-  taxon <- taxon %>% mutate(`Order>5` = ifelse(!is.na(`Order>5`), `Order>5`, "Others Or Unknown"))
   taxon <- taxon %>% mutate(is_MES = ifelse(depth == "unsure", "unsure", ifelse(depth == "MES", "MES", "SRF&DCM")))
   taxon$is_biofilm <- ifelse(taxon$biofilm_count > 0, "present", "absent")
   taxon$is_tara <- "Tara"
@@ -167,6 +152,14 @@ init_bins <- function(){
                               ifelse(malaspina_bins$Class %in% high_trans, "high", "normal"))
   malaspina_bins$class_trans <- factor(malaspina_bins$class_trans, levels = c("high", "normal", "low"))
   
+  tmp <- c(taxon[, "Class"], malaspina_bins[, "Class"])
+  tmp<-tmp[!is.na(tmp)]
+  tmp2 <- as.data.frame(table(tmp)) %>% filter(Freq > 9)
+  big_taxa <- tmp2[ , "tmp"]
+  taxon$`Class with more than 10 MAGs` <- ifelse(is.na(taxon$Class), "Others Or Unknown",
+                                          ifelse(taxon$Class %in% big_taxa, taxon$Class,"Others Or Unknown"))
+  malaspina_bins$`Class with more than 10 MAGs` <- ifelse(is.na(malaspina_bins$Class), "Others Or Unknown",
+                                          ifelse(malaspina_bins$Class %in% big_taxa, malaspina_bins$Class,"Others Or Unknown"))
   malaspina_bins$is_biofilm <- ifelse(malaspina_bins$biofilm_count > 0, "present", "absent")
   malaspina_bins$depth <- "Deep Malaspina"
   malaspina_bins$g_depth <- "Deep\nMalaspina"

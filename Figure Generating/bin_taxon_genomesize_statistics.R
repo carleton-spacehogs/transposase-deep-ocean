@@ -4,12 +4,14 @@ g(bin_taxon, depth_comparison, malaspina_bins) %=% init_bins()
 
 all_tara <- bin_taxon %>% 
   select("complete genome size (Mbp)", "percent_trans", "log_percent_trans", "class_trans",
-         "depth", "Class", "is_MES", "is_biofilm", "percent_biofilm", "log_percent_biofilm") %>%
+         "depth", "Class", "is_MES", "is_biofilm", "percent_biofilm", "log_percent_biofilm",
+         "Class with more than 10 MAGs") %>%
   filter(!is.na(depth))
 
 all_mala <- malaspina_bins %>% 
   select(c("complete genome size (Mbp)", "percent_trans", "log_percent_trans", "class_trans",
-           "depth", "Class", "is_MES", "is_biofilm","percent_biofilm", "log_percent_biofilm"))
+           "depth", "Class", "is_MES", "is_biofilm","percent_biofilm", "log_percent_biofilm",
+           "Class with more than 10 MAGs"))
 
 #all  <- filter_outliers(rbind(all_tara, all_mala),"percent_trans")
 all <- rbind(all_tara, all_mala)
@@ -80,21 +82,30 @@ all %>%
   with(table(class_trans, is_MES)) %>% 
   chisq.test()
 
-big_taxa <- unique(bin_taxon$`Class with more than 10 MAGs`)
+big_taxa <- unique(all$`Class with more than 10 MAGs`)
 big_taxa <- big_taxa[!big_taxa == "Others Or Unknown"]
-bi_var <- bin_taxon %>% select(c("Class with more than 10 MAGs", "percent_trans"))
+bi_var <- all %>% select(c("Class with more than 10 MAGs", "percent_trans"))
 
+more_taxa <- c()
+less_taxa <- c()
 for (taxa in big_taxa){
   this_taxa <- bi_var %>% filter(`Class with more than 10 MAGs`==taxa)
   others <- bi_var %>% filter(`Class with more than 10 MAGs`!=taxa)
   res <- t.test(this_taxa$percent_trans, others$percent_trans)
   if (res$p.value < 0.05){
-    message <- "less"
-    # print(res)
-    if (res$estimate[1] > res$estimate[2]){message <- "more"}
-    print(paste(taxa, "->", message, ":transposases than the rest"))
+    if (res$estimate[1] < res$estimate[2]){
+      less_taxa <- c(less_taxa, taxa)
+      print(paste(taxa, "->", "less transposases than the rest"))
+    } else {
+      more_taxa <- c(more_taxa, taxa)
+      print(paste(taxa, "->", "more transposases than the rest"))
+    }
   }
 }
 
-one.way <- aov(log_percent_trans ~ Class, data = all)
-summary(one.way)
+# > more_taxa
+# [1] "Alphaproteobacteria" "Gammaproteobacteria" "Betaproteobacteria"  "Actinobacteria"     
+# > less_taxa
+# [1] "Flavobacteria"    "Acidimicrobidae"  "novelClass_E"     "Gemmatimonadetes"
+# [5] "SAR202-2"         "Marinisomatia" 
+

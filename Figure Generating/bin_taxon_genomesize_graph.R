@@ -56,7 +56,7 @@ ggsave("some_taxa_trans.png", plot = last_plot())
 
 
 
-all_tara <- filter_outliers(bin_taxon, "percent_trans") %>% 
+all_tara <- bin_taxon %>% 
   select("complete genome size (Mbp)", "percent_trans", "log_percent_trans", 
          "depth", "Class", "class_trans", "graphing_log_trans") %>%
   filter(!is.na(depth))
@@ -103,12 +103,13 @@ p2<-all %>%
                      tip.length = 0.01, label.y = c(8,9)) +
   scale_color_manual(labels = c("High %-transposase (\u0251- \u03b2- \u03b3- proteobact.,\n and Actinobacteria)\n", 
                                 "Normal transposase abundance\n", 
-                                "Low %-transposase\n(Verrucomicrobia, Acidimicrobidae)"),
+                                "Low %-transposase (Flavobact., Acidimicro.,\n\u03b3- timonadetes, and Marinisomatia)"),
                      values = c('orange','gray', "green"))+
   labs(color='Taxonomical Class of:') +
   geom_jitter(aes(color = class_trans), alpha = 0.5) +
   geom_boxplot(outlier.shape = NA, alpha = 0.1) +
-  stat_summary(fun.data = boxplot.give.n, geom = "text", position=position_nudge(x = 0, y = 0.2)) +
+  ylab("complete genome size (Mbp) of MAGs") +
+  stat_summary(fun.data = boxplot.give.n, geom = "text", position=position_nudge(x = 0, y = 0.4)) +
   coord_flip() +
   theme_classic() +
   theme(axis.title.y=element_blank())
@@ -117,7 +118,7 @@ p2<-all %>%
 
 ggarrange(p1,p2,p3,
           nrow = 3, 
-          # heights = c(3/5,2/5,3/5),
+          heights = c(3/5,2/5,3/5),
           labels = c("A", "B", "C"))
 
 ggsave("trans_genome_size.png", plot = last_plot())

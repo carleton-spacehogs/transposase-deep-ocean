@@ -12,14 +12,26 @@ all_y <- malaspina_bins %>%
          "depth", "Class", "percent_biofilm", "log_percent_biofilm", "graphing_log_trans",
          "class_trans") 
 all_p <- filter_outliers(rbind(all_x, all_y), "median_bin_pnps")
+all_p <- filter_outliers(all_p, "percent_trans")
 
 # median_bin_pnps is decently normally distributed
 hist(all_p$median_bin_pnps)
 
-p3 <- filter_outliers(all_p, "percent_trans") %>% 
+old.lm <- lm(log_percent_trans~depth*Class +log_percent_biofilm 
+              +`complete genome size (Mbp)` + I(`complete genome size (Mbp)`^2), all_p)
+
+pnps.lm <- update(old.lm, .~. +median_bin_pnps)
+anova(pnps.lm)
+depth.lm <- lm(log_percent_trans~depth, all_p)
+pnps2.lm <- update(depth.lm, .~. +median_bin_pnps)
+anova(pnps2.lm)
+
+scale <- c(0.05, 0.15, 0.25, 0.35)
+# log_scale <- c("0.05", "0.15", "0.25", "0.35")
+p3 <- all_p %>% 
   ggplot(aes(y = percent_trans, x = median_bin_pnps)) +
   facet_wrap(~depth, ncol = 4) +
-  # scale_y_continuous(breaks = scale, labels = log_scale) +
+  scale_x_continuous(breaks = scale) +
   xlab("Median MAG pN/pS") +
   ylab("%-transposase ORF") + 
   geom_jitter(aes(color = class_trans), alpha = 0.5, height = 0.05) +
@@ -29,8 +41,7 @@ p3 <- filter_outliers(all_p, "percent_trans") %>%
   theme(legend.position = "none")
 # used in bin_taxon_genomesize_graph.R
 
-scale <- c(-2.5, -2, -1.5, -1, -0.5, 0)
-log_scale <- c("no hits", "0.01%", "0.03%", "0.10%", "0.33%", "1.0%")
+
 
 
 all_x <- filter_outliers(all_x, "median_bin_pnps")
