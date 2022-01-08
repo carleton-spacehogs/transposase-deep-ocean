@@ -13,8 +13,8 @@ all_mala <- malaspina_bins %>%
            "depth", "Class", "is_MES", "is_biofilm","percent_biofilm", "log_percent_biofilm",
            "Class with more than 10 MAGs"))
 
-#all  <- filter_outliers(rbind(all_tara, all_mala),"percent_trans")
-all <- rbind(all_tara, all_mala)
+all  <- filter_outliers(rbind(all_tara, all_mala),"percent_trans")
+# all <- rbind(all_tara, all_mala)
 
 depth.lm <- lm(log_percent_trans~depth, data=all)
 summary(depth.lm)
@@ -108,4 +108,14 @@ for (taxa in big_taxa){
 # > less_taxa
 # [1] "Flavobacteria"    "Acidimicrobidae"  "novelClass_E"     "Gemmatimonadetes"
 # [5] "SAR202-2"         "Marinisomatia" 
+
+depth_stats_taxon <- all %>% 
+  with(table(`Class with more than 10 MAGs`, depth)) %>% 
+  as.data.frame.matrix() %>% 
+  rownames_to_column(var = "Class with more than 10 MAGs")
+write.csv(depth_stats_taxon,"taxon_depth_summary.csv", row.names = FALSE)
+
+MES <- all %>% filter(depth == "MES")
+Mala <- all %>% filter(depth == "Deep Malaspina")
+t.test(MES$percent_trans, Mala$percent_trans)
 

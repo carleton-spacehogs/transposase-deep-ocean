@@ -3,7 +3,27 @@ source("./init_share.R")
 g(bin_taxon, depth_comparison, malaspina_bins) %=% init_bins()
 transposase_in_bins <- init_transposase_in_bins()
 
-graph_taxon <- c("Acidimicrobidae", "Deltaproteobacteria", "Gammaproteobacteria")
+# from bin_taxon_genomesize_statistics.R
+normal_taxa <- setdiff(setdiff(big_taxa, less_taxa), more_taxa)
+normal_taxa_rows <- rbind(bin_taxon%>%select("Class"), malaspina_bins%>%select("Class")) %>%
+  filter(Class %in% normal_taxa) 
+as.data.frame(table(normal_taxa_rows[, "Class"]))
+
+# Class Freq
+#         Bacteroidia   30
+#     Dehalococcoidia   27
+# Deltaproteobacteria   35
+#               OM190   11
+#            Opitutae   16
+#       Phycisphaerae   24
+#      Planctomycetia   32
+#     Sphingobacteria   14
+#     Verrucomicrobia   43 # use this because it has the most MAGs
+
+# graph_taxon <- c("Acidimicrobidae", "Deltaproteobacteria", "Gammaproteobacteria")
+graph_taxon <- c("Acidimicrobidae", "Verrucomicrobia", "Gammaproteobacteria")
+# graph_taxon <- c("Acidimicrobidae", "Dehalococcoidia", "Gammaproteobacteria")
+
 
 x_tax <- bin_taxon[,c("Class", "biofilm_count", "log_percent_trans", 
                       "depth", "percent_trans", "is_biofilm")] %>% 
