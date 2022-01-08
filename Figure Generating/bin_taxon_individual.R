@@ -2,16 +2,20 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
 source("./init_share.R")
 g(bin_taxon, depth_comparisons, malaspina_bins) %=% init_bins()
 
-graph_taxon <- as.factor(c("Acidimicrobidae", "Flavobacteria", "Gammaproteobacteria"))
+graph_taxon <- as.factor(c("Verrucomicrobiae", "Flavobacteria", "Gammaproteobacteria"))
 # graph_taxon <- factor(graph_taxon, levels= c("Acidimicrobidae", "Flavobacteria","Alphaproteobacteria", "Gammaproteobacteria"))
 
-p_depth <- bin_taxon %>% 
-  filter(Class %in% graph_taxon) %>% 
-  mutate(depth = fct_rev(depth)) %>%
+g_tax <- bin_taxon[,c("Class", "biofilm_count", "log_percent_trans", 
+                      "depth", "percent_trans", "is_biofilm")] %>% 
+  filter(Class %in% graph_taxon) %>% filter(!is.na(depth)) %>%
+  mutate(depth = fct_rev(depth)) 
+g_tax <- filter_outliers(g_tax, "percent_trans")
+
+p_depth <- g_tax %>%
   ggplot(aes(x=percent_trans, y = depth)) +
   facet_wrap(~Class, ncol = 4) +
   geom_boxplot() + 
-  xlim(0, 0.8) +
+  # xlim(0, 0.8) +
   stat_summary(fun.data = boxplot.give.n, geom = "text",
                position=position_nudge(x = 0.1, y = 0)) + 
   theme_classic() +
@@ -19,11 +23,7 @@ p_depth <- bin_taxon %>%
         axis.ticks.x=element_blank())
   # theme(strip.background =element_rect(fill=c("red", "blue", "blue"))) 
 
-bin_taxon_small <- bin_taxon %>%
-  mutate(is_biofilm = ifelse(biofilm_count > 0, "biofilm\n  present", "biofilm\n  absent")) %>%
-  filter(Class %in% graph_taxon)
-
-p_biofilm <- bin_taxon_small %>% 
+p_biofilm <- g_tax %>% 
   # filter(percent_trans < min(boxplot(bin_taxon_small$percent_trans)$out)) %>%
   # filter(biofilm_count < min(boxplot(bin_taxon_small$biofilm_count)$out)) %>%
   ggplot(aes(y = percent_trans, x = is_biofilm)) +
@@ -31,7 +31,7 @@ p_biofilm <- bin_taxon_small %>%
   geom_boxplot() +
   stat_summary(fun.data = boxplot.give.n, geom = "text", position=position_nudge(x = 0, y = 0.1)) + 
   ylab("% of transposase ORFs in MAG") +
-  ylim(0, 0.8) +
+  # ylim(0, 0.8) +
   coord_flip() + 
   theme_classic() +
   theme(strip.text.x = element_blank(),
@@ -98,7 +98,7 @@ bin_taxon_class <- bin_taxon%>%filter(!is.na(Class))
 tran.Classlast <- lm(percent_trans~biofilm_count+depth+Class, data = bin_taxon_class)
 anova(tran.Classlast)
 
-tran.biolast <- lm(percent_trans~depth+Class+biofilm_count, data = bin_taxon_class)
+tran.biolast <- lm(percent_trans~depth+Class+percent_biofilm, data = bin_taxon_class)
 anova(tran.biolast)
 
 tran.depthlast <- lm(percent_trans~Class+biofilm_count+depth, data = bin_taxon_class)

@@ -4,8 +4,90 @@ g(bin_taxon, depth_comparison, malaspina_bins) %=% init_bins()
 transposase_in_bins <- init_transposase_in_bins()
 
 # bin pnps and transposases => nothing correlative (use the old, a few fasta map all-bins-concat approch)
+low_trans <- c("Verrucomicrobia", "Acidimicrobidae")
+high_trans <- c("Alphaproteobacteria", "Betaproteobacteria", "Deltaproteobacteria", 
+                "Gammaproteobacteria", "Sphingobacteria", "Actinobacteria")
 
-lm(`transposase gene calls in genome (%)`~ `complete genome size (Mbp)`*depth + I(`complete genome size (Mbp)`^2), 
+all <- filter_outliers(bin_taxon, "percent_trans") %>% 
+  select("complete genome size (Mbp)", "percent_trans", "log_percent_trans", 
+         "Class with more than 10 MAGs", "depth", "Class", "percent_biofilm", 
+         "log_percent_biofilm") %>%
+  filter(!is.na(depth))
+all <- all%>%  #filter_outliers(all,"complete genome size (Mbp)") %>%
+  mutate(size_bin=cut(`complete genome size (Mbp)`, breaks = c(0,2,3,4,5,20)))
+  # mutate(size_bin = cut_interval(`complete genome size (Mbp)`, 5))
+all$graphing_log_trans <- ifelse(all$log_percent_trans < -9, -2, all$log_percent_trans)
+all$graphing_log_biofilm <- ifelse(all$log_percent_biofilm < -9, -2, all$log_percent_biofilm)
+all$class_trans <- ifelse(all$Class %in% low_trans, "low",
+                          ifelse(all$Class %in% high_trans, "high", "normal"))
+
+all$size_bin <- as.character(all$size_bin)
+all$size_bin[all$size_bin == '(0,2]'] <- '0-2'
+all$size_bin[all$size_bin == '(2,3]'] <- '2-3'
+all$size_bin[all$size_bin == '(3,4]'] <- '3-4'
+all$size_bin[all$size_bin == '(4,5]'] <- '4-5'
+all$size_bin[all$size_bin == '(5,20]'] <- '>5'
+all$size_bin <- factor(all$size_bin, levels = c(">5","4-5","3-4","2-3","0-2"))
+
+ggplot(all, aes(x=fct_rev(size_bin), y=percent_trans)) + 
+  geom_jitter(aes(color = class_trans), alpha = 0.8) +
+  geom_boxplot(outlier.shape = NA, alpha = 0.7) +
+  scale_color_manual(labels = c("High %-transposase", "Low %-transposase", "Normal %-transposase"),
+                     values = c('orange', "green",'gray'))+
+  stat_summary(fun.data = boxplot.give.n, geom = "text", position=position_nudge(x = 0, y = 0.03)) + 
+  facet_wrap(~depth, ncol= 1) +
+  labs(color='Taxonomical Classes of:') +
+  #coord_flip()+
+  ylab("% of transposase ORFs in genome") +
+  xlab("MAG genome size (Mbp)") +
+  theme_classic()
+
+
+# complete genome size (Mbp) is approximately normally distributed 
+hist(all$`complete genome size (Mbp)`)
+
+old.lm <- lm(log_percent_trans~depth+Class+log_percent_biofilm, all)
+linear_bin_size.lm <- lm(log_percent_trans~depth+Class+log_percent_biofilm+`complete genome size (Mbp)`, all)
+quadra_bin_size.lm <- lm(log_percent_trans~depth+Class+log_percent_biofilm
+                         +`complete genome size (Mbp)`+ I(`complete genome size (Mbp)`^2), all)
+
+anova(quadra_bin_size.lm)
+get_r(linear_bin_size.lm)
+get_r(quadra_bin_size.lm)
+
+all %>% ggplot(aes(y = percent_trans, x = `complete genome size (Mbp)`)) +
+  facet_wrap(~depth) +
+  ylab("% of transposase ORFs in genome") +
+  geom_point(aes(color = class_trans), alpha = 0.7) +
+  geom_smooth(se=F) + 
+  scale_color_manual(labels = 
+    c("High %-transposase",
+      "Normal %-transposase", 
+      "Low %-transposase"),
+    values = c('darkorange','gold', "khaki")) +
+  guides(col = guide_legend(nrow = 9)) +
+  labs(color='Taxonomical Classes of:') +
+  theme_classic()
+
+
+
+
+
+
+
+
+
+
+
+
+graph_taxon <- as.factor(c("Acidimicrobidae", "Flavobacteria", "Gammaproteobacteria"))
+# graph_taxon <- factor(graph_taxon, levels= c("Acidimicrobidae", "Flavobacteria","Alphaproteobacteria", "Gammaproteobacteria"))
+
+g_tax <- bin_taxon[,c("Class", "biofilm_count", "log_percent_trans", "depth", "percent_trans")] %>% 
+  filter(Class %in% graph_taxon) %>% filter(!is.na(depth)) %>%
+  mutate(depth = fct_rev(depth)) 
+
+lm(percent_trans~ `complete genome size (Mbp)`*depth + I(`complete genome size (Mbp)`^2), 
    data = bin_taxon) -> transposase_size_depth.lm
 pred <- bin_taxon %>% select(`complete genome size (Mbp)`, depth)
 bin_taxon$predicted_transposase_percent <- predict(transposase_size_depth.lm, pred)

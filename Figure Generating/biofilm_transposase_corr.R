@@ -20,6 +20,29 @@ p1 <- DNA_tara %>%
   geom_smooth(method = "lm", se = F)  +
   theme(legend.position = "none")
 
+to_graph <- DNA_tara[,c("log_dna_biofilm", "Layer_DNA", "log_dna_trans")]%>%filter(Layer_DNA !="MIX")
+to_graph$Layer_DNA <- factor(to_graph$Layer_DNA, levels = c("SRF", "DCM", "MES"))
+
+ocean_names <- levels(DNA_tara$Ocean_short)
+nine_colors <- scales::hue_pal()(9) # scales::show_col(scales::hue_pal()(9))
+all_oceans <- DNA_tara$Ocean_short
+color_DNA <- case_when(all_oceans==ocean_names[1]~nine_colors[1],
+                       all_oceans==ocean_names[2]~nine_colors[2],
+                       all_oceans==ocean_names[3]~nine_colors[3],
+                       all_oceans==ocean_names[4]~nine_colors[4],
+                       all_oceans==ocean_names[5]~nine_colors[5],
+                       all_oceans==ocean_names[6]~nine_colors[6],
+                       all_oceans==ocean_names[7]~nine_colors[7],
+                       all_oceans==ocean_names[8]~nine_colors[8],
+                       all_oceans==ocean_names[9]~nine_colors[9])
+
+#color_DNA = ifelse(to_graph$Layer_DNA==ocean_names[1],nine_colors[1],
+#                   ifelse(to_graph$Layer_DNA=="DCM", "steelblue", "sky blue"))
+
+scatterplot3d(to_graph, color=color_DNA,
+              angle = -30, pch = 20, #type = "h", lty.hplot = 2,
+              grid=TRUE, box=FALSE)
+
 biofilm_RNA_scale <- c(-4.5, -4, -3.5, -3, -2.5, -2)
 biofilm_RNA_percent_scale <- c("0.003%", "0.01%", "0.032%", "0.10%", "0.316%", "1.00%")
 
@@ -49,7 +72,11 @@ ggarrange(p3, p4, labels = c("A", "B"), ncol = 2, nrow = 1)
 
 # ggarrange(p3, p1, p2, labels = c("A", "B", "C"), widths = c(0.4, 0.3, 0.3), ncol = 3, nrow = 1)
 
-summary(lm(log_dna_trans~log_dna_biofilm, DNA_tara))
+depth_biofilm.lm <- lm(log_dna_trans~Layer_DNA+log_dna_biofilm, DNA_tara)
+anova(depth_biofilm.lm)
+get_r(depth_biofilm.lm) - get_r(lm(log_dna_trans~Layer_DNA, DNA_tara))
+
+get_r(lm(log_dna_trans~log_dna_biofilm, DNA_tara))
 summary(lm(log_rna_trans~log_rna_biofilm, RNA_tara))
 summary(lm(log_dna_trans~log_rna_biofilm, DNA_RNA_tara))
 

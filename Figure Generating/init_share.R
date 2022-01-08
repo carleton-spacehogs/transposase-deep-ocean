@@ -1,5 +1,6 @@
 init_env <- function(){
-  library(readr);
+  library(readr)
+  library(scatterplot3d)
   library(tidyverse)
   library(ggpubr)
   library(purrr)
@@ -24,6 +25,16 @@ init_env <- function(){
 
 boxplot.give.n <- function(x){ return(c(y = mean(x), label = length(x)))}
 
+filter_outliers <- function(df, colname){
+  b <- colname
+  out <- boxplot(df[,b])$out
+  if (length(out) == 0){ return(df) } else {
+    out_ind <- which(df[,b] %in% c(out))
+    return(df[-out_ind,])
+  }
+}
+
+get_r <- function(reglm) {return(summary(reglm)$r.squared)}
 
 # Generic form
 '%=%' = function(l, r, ...) UseMethod('%=%')
@@ -90,12 +101,18 @@ init_individual_metagenomes <- function(){
 
 init_bins <- function(){
   init_env()
+  c <- 0.0000000001 # for log(0)
+  low_trans <- c("Verrucomicrobia", "Acidimicrobidae")
+  high_trans <- c("Alphaproteobacteria", "Betaproteobacteria", "Deltaproteobacteria", 
+                  "Gammaproteobacteria", "Sphingobacteria", "Actinobacteria")
   taxon <- read_csv("data/bin_taxon.csv")
   taxon$depth <- factor(taxon$depth, levels = c("SRF", "DCM", "MES"))
   taxon$`transposase gene calls in genome (%)` <- taxon$percent_trans
   taxon$`biofilm gene calls in genome (%)` <- taxon$percent_biofilm
   taxon$`defense mechanisms gene calls in genome (%)` <- taxon$percent_defense
-  taxon$log_complete_bin_size <- log(taxon$`complete genome size (Mbp)`)
+  taxon$log_complete_bin_size <- log10(taxon$`complete genome size (Mbp)` + c)
+  taxon$log_percent_trans <- log10(taxon$percent_trans + c)
+  taxon$log_percent_biofilm <- log10(taxon$percent_biofilm + c)
   taxon$complete_ORF_count <- taxon$`Total ORFs`/taxon$`Percent Complete`*100
   
   taxon_count_greater_than_10 <- taxon %>% 
@@ -113,8 +130,15 @@ init_bins <- function(){
   taxon <- taxon %>% mutate(`Order>5` = 
                               ifelse(Order %in% c(order_count_greater_than_5)$Order, Order, "Others Or Unknown"))
   taxon <- taxon %>% mutate(`Order>5` = ifelse(!is.na(`Order>5`), `Order>5`, "Others Or Unknown"))
-  # taxon <- taxon %>% mutate(is_MES = ifelse(depth == "unsure", "unsure", ifelse(depth == "MES", "MES", "SRF&DCM")))
+  taxon <- taxon %>% mutate(is_MES = ifelse(depth == "unsure", "unsure", ifelse(depth == "MES", "MES", "SRF&DCM")))
+  taxon$is_biofilm <- ifelse(taxon$biofilm_count > 0, "present", "absent")
   taxon$is_tara <- "Tara"
+  taxon$graphing_log_trans <- ifelse(taxon$log_percent_trans < -9, -2.5, taxon$log_percent_trans)
+  taxon$graphing_log_biofilm <- ifelse(taxon$log_percent_biofilm < -9, -2.5, taxon$log_percent_biofilm)
+  taxon$class_trans <- ifelse(taxon$Class %in% low_trans, "low",
+                            ifelse(taxon$Class %in% high_trans, "high", "normal"))
+  taxon$class_trans <- factor(taxon$class_trans, levels = c("high", "normal", "low"))
+  taxon$Class <- gsub('Verrucomicrobiae', 'Verrucomicrobia', taxon$Class)
   
   pn_ps_bins <- read_csv("data/bin_median_pnps.csv")
   taxon <- merge(taxon, pn_ps_bins, by="bin", all.x = TRUE)
@@ -124,10 +148,29 @@ init_bins <- function(){
   
   malaspina_bins <- read_csv("data/malaspina_bin_taxon.csv")
   pn_ps_malaspina_bins <- read_csv("data/malaspina_bin_median_pnps.csv")
+  malaspina_ORF_count <- read_csv("data/malaspina_ORF_count.csv")
+  malaspina_bins_trans_biofilm_TA <- read_csv("data/malaspina_biofilm_trans_TA_each_bin.csv")
   malaspina_bins$bin <- gsub('mp-deep_mag-', 'deep_MAG_', malaspina_bins$magId)
   malaspina_bins <- merge(malaspina_bins, pn_ps_malaspina_bins, by="bin", all.x = TRUE)
+  malaspina_bins <- merge(malaspina_bins, malaspina_bins_trans_biofilm_TA, by="bin", all.x = TRUE)
+  malaspina_bins <- merge(malaspina_bins, malaspina_ORF_count, by="bin", all.x = TRUE)
+  malaspina_bins$percent_trans <- malaspina_bins$transposase_count / malaspina_bins$ORF_count * 100
+  malaspina_bins$percent_biofilm <- malaspina_bins$biofilm_count / malaspina_bins$ORF_count * 100
+  malaspina_bins$log_percent_trans <- log10(malaspina_bins$percent_trans + c)
+  malaspina_bins$log_percent_biofilm <- log10(malaspina_bins$percent_biofilm + c)
   malaspina_bins$log_median_bin_pnps <- log10(malaspina_bins$median_bin_pnps)
+  malaspina_bins$graphing_log_trans <- ifelse(malaspina_bins$log_percent_trans < -9, -2.5, malaspina_bins$log_percent_trans)
+  malaspina_bins$graphing_log_biofilm <- ifelse(malaspina_bins$log_percent_biofilm < -9, -2.5, malaspina_bins$log_percent_biofilm)
+  malaspina_bins$Class <- gsub('Acidimicrobiia', 'Acidimicrobidae', malaspina_bins$Class)
+  malaspina_bins$Class <- gsub('Verrucomicrobiae', 'Verrucomicrobia', malaspina_bins$Class)
+  malaspina_bins$class_trans <- ifelse(malaspina_bins$Class %in% low_trans, "low",
+                              ifelse(malaspina_bins$Class %in% high_trans, "high", "normal"))
+  malaspina_bins$class_trans <- factor(malaspina_bins$class_trans, levels = c("high", "normal", "low"))
   
+  malaspina_bins$is_biofilm <- ifelse(malaspina_bins$biofilm_count > 0, "present", "absent")
+  malaspina_bins$depth <- "Deep Malaspina"
+  malaspina_bins$g_depth <- "Deep\nMalaspina"
+  malaspina_bins$is_MES <- "MES"
   return(list(taxon, depth_comparisons, malaspina_bins))
 }
 
@@ -174,6 +217,7 @@ init_tara <- function(){
   DNA_RNA_connector <- read_excel("data/DNA_RNA_connector.xlsx")
   DNA_Metadata <- read_excel("data/DNA_Location_Metadata.xlsx")
   DNA_Metadata$Layer_DNA <- factor(DNA_Metadata$Layer_DNA, levels = c("SRF", "DCM", "MIX", "MES"))
+  DNA_Metadata$Ocean_short<-factor(DNA_Metadata$Ocean_short)
   DNA_Metadata$upper_size_dna <- factor(DNA_Metadata$upper_size_dna, levels = c("1.6", "3"))
   RNA_Metadata <- read_excel("data/RNA_Location_Metadata.xlsx")
   RNA_Metadata$Layer_RNA <- factor(RNA_Metadata$Layer_RNA, levels = c("SRF", "DCM", "MIX", "MES"))
