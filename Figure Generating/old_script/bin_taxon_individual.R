@@ -38,7 +38,7 @@ p_biofilm <- g_tax %>%
         axis.title.y=element_blank(),
         axis.ticks.y=element_blank())
 
-ggarrange(p_depth, p_biofilm, ncol = 1, nrow = 2)
+pcom2 <- ggarrange(p_depth, p_biofilm, ncol = 1, nrow = 2)
 
 # to_graph1 comes from bin_taxon.R
 to_graph1  %>%

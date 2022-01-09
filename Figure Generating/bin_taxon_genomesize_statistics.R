@@ -4,13 +4,13 @@ g(bin_taxon, depth_comparison, malaspina_bins) %=% init_bins()
 
 all_tara <- bin_taxon %>% 
   select("complete genome size (Mbp)", "percent_trans", "log_percent_trans", "class_trans",
-         "depth", "Class", "is_MES", "is_biofilm", "percent_biofilm", "log_percent_biofilm",
+         "depth", "Class", "is_deep_sea", "is_biofilm", "percent_biofilm", "log_percent_biofilm",
          "Class with more than 10 MAGs") %>%
   filter(!is.na(depth))
 
 all_mala <- malaspina_bins %>% 
   select(c("complete genome size (Mbp)", "percent_trans", "log_percent_trans", "class_trans",
-           "depth", "Class", "is_MES", "is_biofilm","percent_biofilm", "log_percent_biofilm",
+           "depth", "Class", "is_deep_sea", "is_biofilm","percent_biofilm", "log_percent_biofilm",
            "Class with more than 10 MAGs"))
 
 all  <- filter_outliers(rbind(all_tara, all_mala),"percent_trans")
@@ -71,15 +71,15 @@ all$class_trans1 <- ifelse(all$Class %in% low_trans, "low", "not_low")
 all$class_trans2 <- ifelse(all$Class %in% high_trans, "high", "not_high")
 
 all %>% 
-  with(table(class_trans1, is_MES)) %>% 
+  with(table(class_trans1, is_deep_sea)) %>% 
   chisq.test()
 
 all %>% 
-  with(table(class_trans2, is_MES)) %>% 
+  with(table(class_trans2, is_deep_sea)) %>% 
   chisq.test()
 
 all %>% 
-  with(table(class_trans, is_MES)) %>% 
+  with(table(class_trans, is_deep_sea)) %>% 
   chisq.test()
 
 big_taxa <- unique(all$`Class with more than 10 MAGs`)
@@ -118,4 +118,6 @@ write.csv(depth_stats_taxon,"taxon_depth_summary.csv", row.names = FALSE)
 MES <- all %>% filter(depth == "MES")
 Mala <- all %>% filter(depth == "Deep Malaspina")
 t.test(MES$percent_trans, Mala$percent_trans)
+
+t.test(`complete genome size (Mbp)`~is_deep_sea, all)
 

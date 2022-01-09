@@ -115,7 +115,7 @@ init_bins <- function(){
   taxon$log_percent_trans <- log10(taxon$percent_trans + c)
   taxon$log_percent_biofilm <- log10(taxon$percent_biofilm + c)
   taxon$complete_ORF_count <- taxon$`Total ORFs`/taxon$`Percent Complete`*100
-  taxon <- taxon %>% mutate(is_MES = ifelse(depth == "unsure", "unsure", ifelse(depth == "MES", "MES", "SRF&DCM")))
+  taxon <- taxon %>% mutate(is_deep_sea = ifelse(depth == "unsure", "unsure", ifelse(depth == "MES", "deep_sea", "SRF&DCM")))
   taxon$is_biofilm <- ifelse(taxon$biofilm_count > 0, "present", "absent")
   taxon$is_tara <- "Tara"
   taxon$graphing_log_trans <- ifelse(taxon$log_percent_trans < -9, -2.5, taxon$log_percent_trans)
@@ -163,7 +163,7 @@ init_bins <- function(){
   malaspina_bins$is_biofilm <- ifelse(malaspina_bins$biofilm_count > 0, "present", "absent")
   malaspina_bins$depth <- "Deep Malaspina"
   malaspina_bins$g_depth <- "Deep\nMalaspina"
-  malaspina_bins$is_MES <- "MES"
+  malaspina_bins$is_deep_sea <- "deep_sea"
   return(list(taxon, depth_comparisons, malaspina_bins))
 }
 

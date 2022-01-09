@@ -1,21 +1,21 @@
-"Class with more than 10 MAGs","SRF","DCM","MES","Deep Malaspina"
-"Acidimicrobidae",11,22,14,3
-"Actinobacteria",6,6,11,9
-"Alphaproteobacteria",72,60,122,67
-"Bacteroidia",1,0,0,29
-"Betaproteobacteria",1,0,10,0
-"Dehalococcoidia",0,3,5,19
-"Deltaproteobacteria",12,2,15,0
-"Flavobacteria",75,28,43,0
-"Gammaproteobacteria",50,46,140,82
-"Gemmatimonadetes",0,9,10,5
-"Marinisomatia",0,0,0,18
-"novelClass_E",3,12,12,0
-"OM190",2,0,9,0
-"Opitutae",9,5,0,0
-"Others Or Unknown",72,94,66,76
-"Phycisphaerae",4,9,3,3
-"Planctomycetia",5,13,10,0
-"SAR202-2",2,15,8,0
-"Sphingobacteria",2,5,6,0
-"Verrucomicrobia",12,17,3,6
+Class with ? 10 MAGs,SRF,DCM,MES,Deep Malaspina
+Acidimicrobidae,11,22,14,3
+Actinobacteria,6,6,11,9
+Alphaproteobacteria,72,60,122,67
+Bacteroidia,1,0,0,29
+Betaproteobacteria,1,0,10,0
+Dehalococcoidia,0,3,5,19
+Deltaproteobacteria,12,2,15,0
+Flavobacteria,75,28,43,0
+Gammaproteobacteria,50,46,140,82
+Gemmatimonadetes,0,9,10,5
+Marinisomatia,0,0,0,18
+novelClass_E,3,12,12,0
+OM190,2,0,9,0
+Opitutae,9,5,0,0
+Others Or Unknown,72,94,66,76
+Phycisphaerae,4,9,3,3
+Planctomycetia,5,13,10,0
+SAR202-2,2,15,8,0
+Sphingobacteria,2,5,6,0
+Verrucomicrobia,12,17,3,6

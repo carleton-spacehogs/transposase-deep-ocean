@@ -30,15 +30,17 @@ scale <- c(0.05, 0.15, 0.25, 0.35)
 # log_scale <- c("0.05", "0.15", "0.25", "0.35")
 p3 <- all_p %>% 
   ggplot(aes(y = percent_trans, x = median_bin_pnps)) +
-  facet_wrap(~depth, ncol = 4) +
+  facet_wrap(~depth, ncol = 1) +
   scale_x_continuous(breaks = scale) +
   xlab("Median MAG pN/pS") +
   ylab("%-transposase ORF") + 
+  geom_smooth(se = FALSE,method = lm) +
   geom_jitter(aes(color = class_trans), alpha = 0.5, height = 0.05) +
   scale_color_manual(labels = c("High %-transposase", "Normal %-transposase", "Low %-transposase"),
                      values = c('orange','gray', "green"))+
   theme_classic() +
-  theme(legend.position = "none")
+  theme(legend.position = "none",
+        axis.title.y=element_blank())
 # used in bin_taxon_genomesize_graph.R
 
 
