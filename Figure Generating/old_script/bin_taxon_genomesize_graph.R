@@ -4,11 +4,16 @@ g(bin_taxon, depth_comparison, malaspina_bins) %=% init_bins()
 transposase_in_bins <- init_transposase_in_bins()
 
 # from bin_taxon_genomesize_statistics.R
+low_trans <- c("Flavobacteria","Acidimicrobidae","novelClass_E",
+               "Gemmatimonadetes","SAR202-2","Marinisomatia")
+high_trans <- c("Alphaproteobacteria","Gammaproteobacteria",
+                "Betaproteobacteria","Actinobacteria")
+
 normal_taxa <- setdiff(setdiff(big_taxa, less_taxa), more_taxa)
 normal_taxa_rows <- rbind(bin_taxon%>%select("Class"), malaspina_bins%>%select("Class")) %>%
   filter(Class %in% normal_taxa) 
 as.data.frame(table(normal_taxa_rows[, "Class"]))
-
+table(all$Class, all$size_fraction)
 # Class Freq
 #         Bacteroidia   30
 #     Dehalococcoidia   27
@@ -20,18 +25,18 @@ as.data.frame(table(normal_taxa_rows[, "Class"]))
 #     Sphingobacteria   14
 #     Verrucomicrobia   43 # use this because it has the most MAGs
 
-graph_taxon <- c("Acidimicrobidae", "Verrucomicrobia", "Gammaproteobacteria")
-graph_taxon1 <- c("Acidimicrobidae", "Verrucomicrobia", "\u03b3-proteobacteria")
+graph_taxon <- c("Flavobacteria", "Verrucomicrobia", "Gammaproteobacteria")
+graph_taxon1 <- c("Flavobacteria", "Verrucomicrobia", "\u03b3-proteobacteria")
 
-x_tax <- bin_taxon[,c("Class", "biofilm_count", "log_percent_trans", "class_trans",
-                      "depth", "percent_trans", "is_biofilm")] %>% 
+var_list = c("Class", "biofilm_count", "log_percent_trans", "class_trans",
+             "depth", "percent_trans", "is_biofilm", "size_fraction")
+x_tax <- bin_taxon[,var_list] %>% 
   filter(Class %in% graph_taxon) %>% filter(!is.na(depth))
 
-y_tax <- malaspina_bins[,c("Class", "biofilm_count", "log_percent_trans", "class_trans",
-                          "depth", "percent_trans", "is_biofilm")]%>% 
+y_tax <- malaspina_bins[,var_list]%>% 
   filter(Class %in% graph_taxon)
 
-g_tax <- filter_outliers(rbind(x_tax, y_tax), "percent_trans")
+g_tax <- rbind(x_tax, y_tax)
 # g_tax <- rbind(x_tax, y_tax)
 # g_tax <- filter_outliers(x_tax, "percent_trans")
 
@@ -41,9 +46,26 @@ g_tax$is_biofilm <- gsub('absent', 'Biofilm\nabsent', g_tax$is_biofilm)
 g_tax$is_biofilm <- gsub('present', 'Biofilm\n     present', g_tax$is_biofilm)
 g_tax$Class <- gsub('Gammaproteobacteria', '\u03b3-proteobacteria', g_tax$Class)
 g_tax$Class <- factor(g_tax$Class, levels = graph_taxon1)
+
+ls_order <- c("planktonic", "mixed", "particle", "all")
+g_tax %>% 
+  mutate(size_fraction = factor(size_fraction, levels = fct_rev(ls_order))) %>% 
+  ggplot(aes(y = percent_trans, x = size_fraction, fill = class_trans)) +
+  facet_wrap(~Class, ncol = 3) +
+  geom_boxplot(outlier.alpha = 0.3,outlier.shape = 21) +
+  scale_fill_manual(values = c('orange','gray', "green"))+
+  stat_summary(fun.data = boxplot.give.n, geom = "text", position=position_nudge(x = 0, y = 0.03)) + 
+  ylab("% of transposase ORFs (among all ORFs in a MAG)") +
+  ylim(c(0, 0.8))+
+  coord_flip() + 
+  theme_classic() +
+  theme(legend.position = "none",
+        strip.text.x = element_blank(),
+        axis.title.y=element_blank())
+
+
 p_depth <- g_tax %>%
   ggplot(aes(x=percent_trans, y = fct_rev(g_depth), fill = class_trans)) +
-  geom_boxplot(outlier.shape = NA, alpha = 0.7) +
   scale_fill_manual(values = c('orange','gray', "green"))+
   facet_wrap(~Class, ncol = 4) +
   geom_boxplot(outlier.alpha = 0.3,outlier.shape = 21) + 
@@ -72,12 +94,12 @@ p_biofilm <- g_tax %>%
 
 
 all_tara <- bin_taxon %>% 
-  select("complete genome size (Mbp)", "percent_trans", "log_percent_trans", 
-         "depth", "Class", "class_trans", "graphing_log_trans") %>%
+  select("complete genome size (Mbp)", "percent_trans", "log_percent_trans", "percent_biofilm", 
+         "depth", "Class", "class_trans", "graphing_log_trans", "graphing_log_biofilm") %>%
   filter(!is.na(depth))
 
-all_mala <- malaspina_bins[,c("complete genome size (Mbp)", "percent_trans", "log_percent_trans", 
-                           "depth", "Class", "class_trans", "graphing_log_trans")]
+all_mala <- malaspina_bins[,c("complete genome size (Mbp)", "percent_trans", "log_percent_trans", "percent_biofilm",
+                           "depth", "Class", "class_trans", "graphing_log_trans", "graphing_log_biofilm")]
 
 all <- filter_outliers(rbind(all_tara, all_mala),"percent_trans") %>%
   mutate(size_bin=cut(`complete genome size (Mbp)`, breaks = c(0,2,3,4,5,20)))
@@ -150,12 +172,42 @@ ggarrange(pcom,p1,p3,
           widths = c(4.7/10,2.6/10,2.4/10),
           labels = c("", "D","E"))
 
-ggsave("trans_genome_size.png", plot = last_plot())
+ggsave("trans_genome_size3.png", plot = last_plot())
 
 
+all <- rbind(all_tara, all_mala)
+# all$is_biofilm <- gsub('absent', 'Biofilm\nabsent', all$is_biofilm)
+# all$is_biofilm <- gsub('present', 'Biofilm\npresent', all$is_biofilm)
+
+p_biofilm1 <- all %>%
+  ggplot(aes(y=percent_biofilm, x= fct_rev(class_trans), fill = class_trans)) +
+  geom_boxplot(outlier.shape = NA, alpha = 0.7) +
+  scale_fill_manual(values = c('orange','gray', "green"))+
+  geom_boxplot(outlier.alpha = 0.3,outlier.shape = 21) + 
+  ylab("% of biofilm-associated ORFs\n(among all ORFs in a MAG)")+
+  xlab("Transposase abundance of\nthe taxonomic Class") +
+  stat_summary(fun.data = boxplot.give.n, geom = "text",
+               position=position_nudge(x = 0, y = 0)) + 
+  theme_classic() +
+  coord_flip() +
+  theme(legend.position = "none")
+
+p_biofilm2 <- all %>%
+  ggplot(aes(x=is_biofilm, y = `complete genome size (Mbp)`)) +
+  ylim(c(0, 9)) +
+  geom_boxplot() +
+  scale_color_manual(values = c('orange','gray', "green"))+
+  xlab("is there biofilm in MAGs")+
+  stat_summary(fun.data = boxplot.give.n, geom = "text",
+               position=position_nudge(x = 0, y = 0.3)) + 
+  theme_classic() +
+  coord_flip() +
+  theme(legend.position = "none", 
+        axis.title.y=element_blank())
 
 
-
-
-
+ggarrange(p_biofilm1,p_biofilm2,
+          ncol = 1, 
+          #widths = c(3/5,2/5),
+          labels = c("B", "C"))
 

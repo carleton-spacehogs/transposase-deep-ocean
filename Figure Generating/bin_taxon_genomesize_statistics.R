@@ -2,51 +2,76 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
 source("./init_share.R")
 g(bin_taxon, depth_comparison, malaspina_bins) %=% init_bins()
 
-all_tara <- bin_taxon %>% 
-  select("complete genome size (Mbp)", "percent_trans", "log_percent_trans", "class_trans",
-         "depth", "Class", "is_deep_sea", "is_biofilm", "percent_biofilm", "log_percent_biofilm",
-         "Class with more than 10 MAGs") %>%
-  filter(!is.na(depth))
+col_list <- c("complete genome size (Mbp)", "percent_trans", "log_percent_trans", "class_trans",
+              "depth", "Class", "is_deep_sea", "is_biofilm", "percent_biofilm", "log_percent_biofilm",
+              "Class with more than 10 MAGs", "size_fraction")
+stat_all_tara <- bin_taxon[,col_list] # %>% filter(!is.na(depth))
 
-all_mala <- malaspina_bins %>% 
-  select(c("complete genome size (Mbp)", "percent_trans", "log_percent_trans", "class_trans",
-           "depth", "Class", "is_deep_sea", "is_biofilm","percent_biofilm", "log_percent_biofilm",
-           "Class with more than 10 MAGs"))
+stat_all_mala <- malaspina_bins[,col_list] %>%
+  filter(size_fraction != "error")
 
-all  <- filter_outliers(rbind(all_tara, all_mala),"percent_trans")
-# all <- rbind(all_tara, all_mala)
+stat_all <- filter_outliers(rbind(stat_all_tara, stat_all_mala),"percent_trans")
+stat_all <- filter_outliers(stat_all,"complete genome size (Mbp)")
 
-depth.lm <- lm(log_percent_trans~depth, data=all)
-summary(depth.lm)
+summary(lm(log_percent_trans~Class, data=stat_all))
+summary(lm(log_percent_trans~`complete genome size (Mbp)`, data=stat_all))
+summary(lm(log_percent_trans~size_fraction, data=stat_all))
 
-taxon_depth.lm <- lm(log_percent_trans~depth+Class, data=all)
+
+depth.lm <- lm(log_percent_trans~depth, data=stat_all)
+gsize_depth.lm <- lm(log_percent_trans~depth + `complete genome size (Mbp)`, stat_all)
+add1.lm <- update(gsize_depth.lm, .~. +size_fraction)
+add2.lm <- update(add1.lm, .~. +Class)
+add3.lm <- update(add2.lm, .~. +Class*depth)
+add4.lm <- update(add3.lm, .~. +I(`complete genome size (Mbp)`^2))
+
+get_r(depth.lm)
+get_r(gsize_depth.lm)
+get_r(add1.lm)
+get_r(add2.lm)
+get_r(add3.lm)
+get_r(add4.lm)
+
+anova(add1.lm)
+anova(add3.lm)
+anova(add4.lm)
+
+
+
+
+
+
+
+
+
+
+
+
+taxon_depth.lm <- lm(log_percent_trans~depth+Class, data=stat_all)
 anova(taxon_depth.lm)
 
-taxon_depth2.lm <- lm(log_percent_trans~depth*Class, data=all)
+taxon_depth2.lm <- lm(log_percent_trans~depth*Class, data=stat_all)
 anova(taxon_depth2.lm)
 
-biofilm_depth.lm <- lm(log_percent_trans~depth+log_percent_biofilm, all)
+biofilm_depth.lm <- lm(log_percent_trans~depth+log_percent_biofilm, stat_all)
 anova(biofilm_depth.lm)
 
-gsize_depth.lm <- lm(log_percent_trans~depth+`complete genome size (Mbp)`, all)
+size_fraction_depth.lm <- lm(log_percent_trans~depth+size_fraction, stat_all)
+get_r(size_fraction_depth.lm)
+
+gsize_depth.lm <- lm(log_percent_trans~depth+`complete genome size (Mbp)`, stat_all)
 anova(gsize_depth.lm)
 
 # binary is_biofilm not as good as log_percent_biofilm
-allq.lm <- update(taxon_depth2.lm, .~. +log_percent_biofilm)
-anova(allq.lm)
-get_r(allq.lm)
+# log_percent_biofilm is not as good as size_fraction
 
-all1.lm <- update(allq.lm, .~. +`complete genome size (Mbp)`)
-anova(all1.lm)
-get_r(all1.lm)
+stat_allq.lm <- update(taxon_depth2.lm, .~. +size_fraction)
+stat_all1.lm <- update(stat_allq.lm, .~. +`complete genome size (Mbp)`)
+stat_all2.lm <- update(stat_all1.lm, .~. + I(`complete genome size (Mbp)`^2), stat_all)
+summary(stat_all2.lm)
 
-quadra_all.lm <- lm(log_percent_trans~depth*Class +log_percent_biofilm 
-                    +`complete genome size (Mbp)` + I(`complete genome size (Mbp)`^2), all)
-summary(quadra_bin_size.lm)
-
-anova(quadra_bin_size.lm)
-get_r(linear_bin_size.lm)
-get_r(quadra_bin_size.lm)
+anova(stat_all2.lm)
+get_r(stat_all2.lm)
 
 # get high/low abundance class
 coe <- as.data.frame(summary(quadra_bin_size.lm)$coefficients)
@@ -56,35 +81,38 @@ coe_class <- coe %>%
   slice(grep("^Clas", varname)) %>% 
   filter(pvalue < 0.05)
 
-
-anova(lm(log_percent_trans~depth*Class + log_percent_biofilm +`complete genome size (Mbp)`, all))
-summary(lm(`complete genome size (Mbp)`~percent_biofilm, all))
-
 library("car")
-car::vif(ally.lm, singular.ok = TRUE)
-allx.lm <- update(taxon_depth.lm, .~. +`complete genome size (Mbp)`)
-ally.lm <- update(allx.lm, .~. +log_percent_biofilm)
-anova(ally.lm)
+car::vif(stat_ally.lm, singular.ok = TRUE)
+stat_allx.lm <- update(taxon_depth.lm, .~. +`complete genome size (Mbp)`)
+stat_ally.lm <- update(stat_allx.lm, .~. +log_percent_biofilm)
+anova(stat_ally.lm)
 
 
-all$class_trans1 <- ifelse(all$Class %in% low_trans, "low", "not_low")
-all$class_trans2 <- ifelse(all$Class %in% high_trans, "high", "not_high")
+stat_all$class_trans1 <- ifelse(stat_all$class_trans == "low", "low", "not_low")
+stat_all$class_trans2 <- ifelse(stat_all$class_trans == "high", "high", "not_high")
 
-all %>% 
+biofilm_stat_all <- filter_outliers(stat_all, "percent_biofilm")
+t.test(percent_biofilm ~ class_trans2, stat_all)
+boxplot(percent_biofilm ~ class_trans, biofilm_stat_all)
+t.test(percent_biofilm ~ class_trans, biofilm_stat_all %>% filter(class_trans != "high"))
+boxplot(`complete genome size (Mbp)`~is_biofilm, stat_all, ylim = c(0, 9))
+
+
+stat_all %>% 
   with(table(class_trans1, is_deep_sea)) %>% 
   chisq.test()
 
-all %>% 
+stat_all %>% 
   with(table(class_trans2, is_deep_sea)) %>% 
   chisq.test()
 
-all %>% 
+stat_all %>% 
   with(table(class_trans, is_deep_sea)) %>% 
   chisq.test()
 
-big_taxa <- unique(all$`Class with more than 10 MAGs`)
+big_taxa <- unique(stat_all$`Class with more than 10 MAGs`)
 big_taxa <- big_taxa[!big_taxa == "Others Or Unknown"]
-bi_var <- all %>% select(c("Class with more than 10 MAGs", "percent_trans"))
+bi_var <- stat_all %>% select(c("Class with more than 10 MAGs", "percent_trans"))
 
 more_taxa <- c()
 less_taxa <- c()
@@ -109,15 +137,23 @@ for (taxa in big_taxa){
 # [1] "Flavobacteria"    "Acidimicrobidae"  "novelClass_E"     "Gemmatimonadetes"
 # [5] "SAR202-2"         "Marinisomatia" 
 
-depth_stats_taxon <- all %>% 
+depth_stats_taxon <- stat_all %>% 
   with(table(`Class with more than 10 MAGs`, depth)) %>% 
   as.data.frame.matrix() %>% 
   rownames_to_column(var = "Class with more than 10 MAGs")
 write.csv(depth_stats_taxon,"taxon_depth_summary.csv", row.names = FALSE)
 
-MES <- all %>% filter(depth == "MES")
-Mala <- all %>% filter(depth == "Deep Malaspina")
+SRF <- stat_all %>% filter(depth == "SRF")
+DCM <- stat_all %>% filter(depth == "DCM")
+MES <- stat_all %>% filter(depth == "MES")
+Mala <- stat_all %>% filter(depth == "Deep Malaspina")
 t.test(MES$percent_trans, Mala$percent_trans)
 
-t.test(`complete genome size (Mbp)`~is_deep_sea, all)
+t.test(`complete genome size (Mbp)`~is_deep_sea, stat_all)
+
+SRF[,"percent_trans"]
+
+for (each in list(SRF, DCM, MES, Mala)){
+  print(mean(each[,"percent_trans"]))
+}
 

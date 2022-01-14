@@ -133,14 +133,10 @@ init_bins <- function(){
   
   malaspina_bins <- read_csv("data/malaspina_bin_taxon.csv")
   pn_ps_malaspina_bins <- read_csv("data/malaspina_bin_median_pnps.csv")
-  malaspina_ORF_count <- read_csv("data/malaspina_ORF_count.csv")
-  malaspina_bins_trans_biofilm_TA <- read_csv("data/malaspina_biofilm_trans_TA_each_bin.csv")
+  malaspina_bins_trans_biofilm_TA <- read_csv("data/Malaspina_origin_biofilm_trans_TA_each_bin.csv")
   malaspina_bins$bin <- gsub('mp-deep_mag-', 'deep_MAG_', malaspina_bins$magId)
   malaspina_bins <- merge(malaspina_bins, pn_ps_malaspina_bins, by="bin", all.x = TRUE)
   malaspina_bins <- merge(malaspina_bins, malaspina_bins_trans_biofilm_TA, by="bin", all.x = TRUE)
-  malaspina_bins <- merge(malaspina_bins, malaspina_ORF_count, by="bin", all.x = TRUE)
-  malaspina_bins$percent_trans <- malaspina_bins$transposase_count / malaspina_bins$ORF_count * 100
-  malaspina_bins$percent_biofilm <- malaspina_bins$biofilm_count / malaspina_bins$ORF_count * 100
   malaspina_bins$log_percent_trans <- log10(malaspina_bins$percent_trans + c)
   malaspina_bins$log_percent_biofilm <- log10(malaspina_bins$percent_biofilm + c)
   malaspina_bins$log_median_bin_pnps <- log10(malaspina_bins$median_bin_pnps)

@@ -1,12 +1,9 @@
+#!/usr/bin/env python3 
 # Written by Jimmy Zhong (zhongj2@carleton.edu), Carleton '23 under Professor Rika Anderson
-# date: August 4th 2021
+# date: August 4th 2021 - Jan 13th 2022
 import glob
 import os
 import subprocess
-import sys
-import csv
-import time
-import re
 
 def get_COG_num_from_dict(COG_dict, search_str):
 	COG_numbers = set()
@@ -57,9 +54,9 @@ def get_dict_bin_coverage(sam_console_output_file):
 	print(len(bin_coverage_dict))
 	return bin_coverage_dict
 
-src_directory = "/workspace/data/zhongj/Transposase_Project/deep_ocean_bins/acinas-et-al-2020_Malaspina-deep-HQ-MQ-317-MAG-set" # where the bins are
+src_directory = "/workspace/data/zhongj/Transposase_Project/deep_ocean_bins/deep_ocean_bins" # where the bins are
 analysis_dir = "/workspace/data/zhongj/Transposase_Project/deep_ocean_bins/bins_analysis"
-bin_function_dir = "/workspace/data/zhongj/Transposase_Project/deep_ocean_bins/acinas-et-al-2020_Malaspina-deep-HQ-MQ-317-MAG-set-annotation"
+bin_function_dir = "/workspace/data/zhongj/Transposase_Project/deep_ocean_bins/deep_ocean_bins_annotation"
 small_size_file = "all_bins_mapped_small_hole.txt"
 big_size_file = "all_bins_mapped_big_hole.txt"
 
@@ -90,12 +87,12 @@ def trace_bin_origin(bin_name):
 		this_bin_cov_in_big = float(big_size_bin_cov[bin_name])
 
 		ratio = this_bin_cov_in_small/this_bin_cov_in_big
-		if ratio > 10: 
-			return "free_living", str(ratio)
-		elif ratio < 0.1:
-			return "particle-attached", str(ratio)
+		if ratio > 2: 
+			return "planktonic", str(ratio)
+		elif ratio < 0.5:
+			return "particle", str(ratio)
 		else:
-			return "undecided", str(ratio)
+			return "mixed", str(ratio)
 	return "error", str(-1)
 
 def findUniqueORFs(fileName):
@@ -133,7 +130,7 @@ def count_genes_in_cog_set(bin_name, cog_set):
 			count += 1
 	return count, Total_gene_count
 
-final_write = ['''bin_name,size_fraction,small/big ratio,biofilm_count,transposase_count,toxin_antitoxin_count,defense_count,total_gene_count,biofilm_prop,trans_prop,TA_prop,defense_prop''']
+final_write = ['''bin,size_fraction,small/big ratio,biofilm_count,transposase_count,toxin_antitoxin_count,defense_count,ORF_count,percent_biofilm,percent_trans,percent_TA,percent_defense''']
 
 for filename in list_to_do:
 	MAG_file = filename.strip('./')
@@ -144,12 +141,13 @@ for filename in list_to_do:
 	Biofilm_count = get_biofilm_count(MAG_name)
 	Trans_count = get_transposase_count(MAG_name)
 
-	Biofilm_prop = Biofilm_count/Total_gene_count
-	Trans_prop = Trans_count/Total_gene_count
-	TA_prop = TA_count/Total_gene_count
-	defense_prop = defense_count/Total_gene_count
+	Biofilm_prop = Biofilm_count/Total_gene_count * 100
+	Trans_prop = Trans_count/Total_gene_count * 100
+	TA_prop = TA_count/Total_gene_count * 100
+	defense_prop = defense_count/Total_gene_count * 100
+	new_name = MAG_name.replace("mp-deep_mag-", "deep_MAG_")
 
-	this_line = f'''{MAG_name},{MAG_origin},{numeric_ratio},{str(Biofilm_count)},{str(Trans_count)},{str(TA_count)},{str(defense_count)},{str(Total_gene_count)},{str(Biofilm_prop)},{str(Trans_prop)}, {str(TA_prop)}, {str(defense_prop)}'''
+	this_line = f'''{new_name},{MAG_origin},{numeric_ratio},{str(Biofilm_count)},{str(Trans_count)},{str(TA_count)},{str(defense_count)},{str(Total_gene_count)},{str(Biofilm_prop)},{str(Trans_prop)}, {str(TA_prop)}, {str(defense_prop)}'''
 	
 	final_write.append(this_line)
 
