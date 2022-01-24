@@ -52,7 +52,7 @@ tax_depth <- g_tax %>%
   ggplot(aes(x=percent_trans, y = fct_rev(g_depth), fill = class_trans)) +
   scale_fill_manual(values = c('orange','gray', "green"))+
   facet_wrap(~Class, ncol = 3) +
-  geom_boxplot(outlier.alpha = 0.3,outlier.shape = 21) + 
+  geom_boxplot(outlier.alpha = 0.3,outlier.shape = 21,varwidth = TRUE) + 
   ylab("depth")+
   xlim(c(0, 0.8))+
   stat_summary(fun.data = boxplot.give.n, geom = "text",
@@ -66,7 +66,7 @@ tax_lifestyle <- g_tax %>%
   mutate(size_fraction = factor(size_fraction, levels = fct_rev(ls_order))) %>% 
   ggplot(aes(y = percent_trans, x = fct_rev(size_fraction), fill = class_trans)) +
   facet_wrap(~Class, ncol = 3) +
-  geom_boxplot(outlier.alpha = 0.3,outlier.shape = 21) +
+  geom_boxplot(outlier.alpha = 0.3,outlier.shape = 21,varwidth = TRUE) +
   scale_fill_manual(labels = c("High %-transposase (\u0251- \u03b2- \u03b3- proteobact., and Actinobact.)", 
                                 "Normal transposase abundance", 
                                 "Low %-transposase (Flavobact., Acidimicrobidae, etc.)"),
@@ -128,7 +128,7 @@ p_depth_gsize<-all %>%
   ggplot(aes(x = depth, y = `complete genome size (Mbp)`)) +
   ylim(0,9) +
   stat_compare_means(comparisons = 
-                       list(c("Deep\nMalaspina","DCM"),c("Deep\nMalaspina","SRF")), 
+                     list(c("Deep\nMalaspina","DCM"),c("Deep\nMalaspina","SRF")), 
                      label = "p.signif", hide.ns = TRUE, method = "t.test", 
                      tip.length = 0.01, label.y = c(7.6,8.4)) +
   scale_color_manual(labels = c("High %-transposase", "Normal %-transposase", "Low %-transposase"),
@@ -161,14 +161,14 @@ size_trans<- ggplot(all, aes(x=fct_rev(size_bin), y=percent_trans)) +
 pcom <- ggarrange(p_depth_gsize,tax_depth, tax_lifestyle,
                   nrow = 3, 
                   heights = c(4/14,3.5/14,5.7/14),
-                  labels = c("A", "B", "C"))
+                  labels = c("A", "D", "E"))
 
 # p3 comes from bin_pnps_v3.R
 ggarrange(pcom,particle_gsize,size_trans,
           ncol = 3, 
           widths = c(4.7/10,2.2/10,2.4/10),
-          labels = c("", "D","E"))
+          labels = c("", "B","C"))
 
-ggsave("trans_genome_size4.png", plot = last_plot())
+ggsave("trans_genome_size_varwidth.png", plot = last_plot())
 
 

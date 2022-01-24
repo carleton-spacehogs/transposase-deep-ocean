@@ -24,7 +24,7 @@ to_graph$lifestyle <- factor(to_graph$lifestyle, levels = c("planktonic", "mixed
 to_graph <- filter(to_graph, lifestyle %in% c("planktonic", "particle"))
 options(scipen=10000)
 pC <- ggplot(to_graph, aes(x=lifestyle, y=prop, fill=gene)) + 
-  geom_boxplot(outlier.color = "gray", width = 0.7) + 
+  geom_boxplot(outlier.color = "gray", width = 0.7, notch = TRUE) + 
   theme_classic() +
   scale_y_continuous(name = "% of transposase, biofilm in MAGs", limits=c(0,0.65),
     sec.axis = sec_axis(~.*defense_scale, name="% of defense mechanisms in MAGs")) + # second axis  theme(axis.text.y.right = element_text(color = "red"))+
@@ -39,6 +39,8 @@ pC <- ggplot(to_graph, aes(x=lifestyle, y=prop, fill=gene)) +
                     values=c('red','darkolivegreen1','cadetblue1'))
 
 ggarrange(pB, pC, ncol = 2, labels = c("A", "B"), widths = c(0.48, 0.52), heights = c(0.9, 1))
+
+ggsave("pnps_cassettes.png", plot = last_plot())
 
 
 particle_biofilm_prop <- bin_taxon[bin_taxon$lifestyle == "particle", "percent_biofilm"]

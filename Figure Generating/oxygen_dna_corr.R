@@ -27,4 +27,8 @@ p2 <- DNA_tara %>%
   geom_point(aes(color = Layer_DNA)) +
   geom_smooth(method = "lm", se = F) 
 
+# supplementary 2
 ggarrange(p2, p1, labels = c("   A", "B"), ncol = 2, nrow = 1, widths = c(0.5, 0.5))
+
+with_oxygen <- lm(log_dna_trans~Layer_DNA+Oxygen_DNA, DNA_tara)
+anova(with_oxygen)

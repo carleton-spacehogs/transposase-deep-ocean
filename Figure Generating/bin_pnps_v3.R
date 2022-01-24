@@ -2,41 +2,35 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
 source("./init_share.R")
 g(bin_taxon, depth_comparisons, malaspina_bins) %=% init_bins()
 
-all_x <- bin_taxon %>% # filter_outliers(bin_taxon, "percent_trans") %>% 
-  select("median_bin_pnps", "percent_trans", "log_percent_trans", "complete genome size (Mbp)",
-         "depth", "Class", "percent_biofilm", "log_percent_biofilm", "graphing_log_trans",
-         "class_trans") %>% filter(!is.na(depth)) 
+selected <- c("percent_trans", "median_bin_pnps", "depth", "size_fraction")
+# select("median_bin_pnps", "percent_trans", "log_percent_trans", "complete genome size (Mbp)", 
+# "depth", "Class", "percent_biofilm", "log_percent_biofilm", "graphing_log_trans", "class_trans")
 
-all_y <- malaspina_bins %>% 
-  select("median_bin_pnps", "percent_trans", "log_percent_trans", "complete genome size (Mbp)",
-         "depth", "Class", "percent_biofilm", "log_percent_biofilm", "graphing_log_trans",
-         "class_trans")
+all_x <- bin_taxon[,selected] %>% filter(!is.na(depth)) 
+all_y <- malaspina_bins[,selected] %>% filter(size_fraction != "error")
 all_p <- filter_outliers(rbind(all_x, all_y), "percent_trans")
 
-scale <- c(0.05, 0.15, 0.25, 0.35, 0.45)
-# log_scale <- c("0.05", "0.15", "0.25", "0.35")
-# supplementary 5
-all_p %>% 
+
+# used in individual_metagenome_pnps.R
+scale <- c(0, 0.2, 0.4, 0.6)
+p2 <- all_p %>% 
   ggplot(aes(y = percent_trans, x = median_bin_pnps)) +
   facet_wrap(~depth, ncol = 2) +
-  scale_x_continuous(breaks = scale, limits=c(0, 0.6)) +
+  scale_x_continuous(breaks = scale, limits=c(0, 0.65)) +
   xlab("Median MAG pN/pS") +
-  ylab("% of transposase ORFs\n(among all ORFs in a MAG)") + 
+  ylab("% of transposase ORFs in MAG") + 
   geom_smooth(se = FALSE,method = lm) +
-  geom_point(aes(color = class_trans), alpha = 0.5) +
-  scale_color_manual(labels = c("High %-transposase (\u0251- \u03b2- \u03b3- proteobact., and Actinobact.)", 
-                                "Normal transposase abundance", 
-                                "Low %-transposase (Flavobact., Acidimicrobidae, etc.)"),
-                     values = c('orange','gray', "green"))+
-  labs(color='Taxonomical Class of:') +
-  theme_classic() +
-  theme(legend.position="bottom",
-        legend.direction="vertical")
+  scale_color_manual(values=c('green','orange', "red"))+
+  geom_point(aes(color = size_fraction), alpha = 0.5) +
+  labs(color='Lifestyle') +
+  theme_classic()
 
-ggsave("supplementary_bin_pnps_trans.png", plot = last_plot())
 
-# all_p <- filter_outliers(rbind(all_x, all_y), "median_bin_pnps")
-# all_p <- rbind(filter_outliers(all_x,"median_bin_pnps"), filter_outliers(all_y,"median_bin_pnps"))
+
+
+
+
+
 
 all_p <- all_p %>% 
   filter(!is.na(median_bin_pnps)) %>%

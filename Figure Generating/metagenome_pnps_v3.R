@@ -14,7 +14,7 @@ pB <- pn_ps_merged %>%
   filter(pnps < 4) %>%
   filter(gene_type %in% c("normal","non_defense", "defense", "no_call")) %>%
   ggplot(aes(x = gene_type, y = log_pnps, fill=gene_type)) +
-  geom_boxplot(outlier.color = "gray") +
+  geom_boxplot(outlier.color = "gray", notch = TRUE) +
   ylab("pN/pS ratio") +
   scale_y_continuous(breaks = scale, labels = log_scale, limits = c(-3, 1)) +
   stat_summary(fun.data = boxplot.give.n, geom = "text", position=position_nudge(x = 0, y = 0.17)) +

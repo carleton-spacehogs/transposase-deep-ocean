@@ -6,7 +6,7 @@ g(DNA_tara, RNA_tara, DNA_RNA_tara, depth_comparison) %=% init_tara()
 
 DNA_tara %>% 
   # filter(Layer_DNA != "MIX") %>%
-  ggplot(aes(x=upper_size_dna, y=DNA_Defense)) +
+  ggplot(aes(x=Layer_DNA, y=DNA_Defense)) +
   geom_boxplot(outlier.shape = NA) +
   theme_classic() +
   geom_jitter(aes(color=Layer_DNA)) +
@@ -27,3 +27,26 @@ DNA_tara %>%
   theme_classic() +
   geom_point(aes(color = Layer_DNA)) +
   geom_smooth(method = "lm", se = F)
+
+RNA_tara %>% 
+  ggplot(aes(x=Layer_RNA, y=log_rna_defense)) +
+  geom_boxplot(outlier.shape = NA) +
+  theme_classic() +
+  geom_jitter(aes(color=Layer_RNA)) +
+  labs(color = "Depth")+
+  xlab("size fraction (\u03BCm)") +
+  # scale_x_discrete(labels=c("1.6" = "0.22-1.6", "3" = "0.22-3.0")) +
+  stat_summary(fun.data = boxplot.give.n, geom = "text") + 
+  stat_compare_means(comparisons = list( c("1.6", "3") ))
+scale_color_manual(breaks=c('SRF','DCM','MES', "MIX"), 
+                   values=c("sky blue", "steelblue", "blue", "gray"),
+                   labels = c("SRF (5 or 9 m)", "DCM (17-188m)", "MIX (25-200m)", "MES (250-1000m)"))
+
+size_frac_defense.lm <- lm(log_rna_defense ~ Layer_RNA + upper_size_rna, RNA_tara)
+summary(size_frac_defense.lm)
+
+dna_size_frac_defense.lm <- lm(log_dna_defense ~ Layer_DNA + upper_size_dna, DNA_tara)
+summary(dna_size_frac_defense.lm)
+
+
+

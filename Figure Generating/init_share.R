@@ -82,19 +82,14 @@ g = function(...) {
 
 init_individual_metagenomes <- function(){
   init_env()
-  SRF <- read_csv("data/trans_and_normal_pnps_SRF.csv")
-  DCM <- read_csv("data/trans_and_normal_pnps_DCM.csv")
-  MES <- read_csv("data/trans_and_normal_pnps_MES.csv")
-  Malaspina <- read_csv("data/trans_and_normal_pnps_Malaspina.csv")
+  SRF <- read_csv("data/trans_biofilm_defense_and_normal_pnps_SRF.csv")
+  DCM <- read_csv("data/trans_biofilm_defense_and_normal_pnps_DCM.csv")
+  MES <- read_csv("data/trans_biofilm_defense_and_normal_pnps_MES.csv")
+  Malaspina <- read_csv("data/trans_biofilm_defense_and_normal_pnps_Malaspina.csv")
   all <- rbind(SRF, DCM, MES, Malaspina)
-  all$log_pnps <- ifelse(all$pnps == 0, 0.01, log10(all$pnps)) 
-  all$gene_type <- factor(all$gene_type, 
-        #levels = c("SRF", "SRF_trans","DCM", "DCM_trans", "MES", "MES_trans", "Malaspina", "Malaspina_trans"))
-        levels = c("SRF","DCM","MES","Malaspina","SRF_trans","DCM_trans","MES_trans","Malaspina_trans"))
-  all$gene_type2 <- ifelse(str_detect(all$gene_type, "trans"), "transposase", "normal")
-  all$gene_type2 <- factor(all$gene_type2, levels=c("transposase", "normal")) 
-  all <- mutate(all, depth = str_remove_all(gene_type, "_trans"))
-  all$depth2 <- ifelse(all$depth %in% c("SRF", "DCM"), "SRF&DCM", all$depth)
+  all <- all%>%filter(!is.na(pnps))
+  all$log_pnps <- ifelse(all$pnps == "0", -4, log10(all$pnps)) 
+  all$gene_type <- factor(all$gene_type, levels = c("biofilm", "defense", "n", "transposase"))
   all$depth <- factor(all$depth, levels=c("SRF", "DCM", "MES", "Malaspina")) 
   return(list(all))
 }
@@ -107,6 +102,7 @@ init_bins <- function(){
   high_trans <- c("Alphaproteobacteria","Gammaproteobacteria",
                   "Betaproteobacteria","Actinobacteria")
   taxon <- read_csv("data/bin_taxon.csv")
+  COG_diversity <- read_csv("data/tara_bin_COG_diversity2.csv")
   taxon$depth <- factor(taxon$depth, levels = c("SRF", "DCM", "MES"))
   taxon$`transposase gene calls in genome (%)` <- taxon$percent_trans
   taxon$`biofilm gene calls in genome (%)` <- taxon$percent_biofilm
@@ -127,11 +123,13 @@ init_bins <- function(){
   
   pn_ps_bins <- read_csv("data/bin_median_pnps.csv")
   taxon <- merge(taxon, pn_ps_bins, by="bin", all.x = TRUE)
+  taxon <- merge(taxon, COG_diversity, by="bin", all.x = TRUE)
   taxon$log_median_bin_pnps <- log10(taxon$median_bin_pnps)
+  taxon$size_fraction <- factor(taxon$size_fraction, levels = c("planktonic", "mixed", "particle"))
   
   depth_comparisons <- list(c("DCM", "MES"), c("SRF", "DCM"), c("SRF", "MES") )
   
-  malaspina_bins <- read_csv("data/malaspina_bin_taxon.csv")
+  malaspina_bins <- read_csv("data/malaspina_bin_taxon_over70complete.csv")
   pn_ps_malaspina_bins <- read_csv("data/malaspina_bin_median_pnps.csv")
   malaspina_bins_trans_biofilm_TA <- read_csv("data/Malaspina_origin_biofilm_trans_TA_each_bin.csv")
   malaspina_bins$bin <- gsub('mp-deep_mag-', 'deep_MAG_', malaspina_bins$magId)
@@ -160,6 +158,7 @@ init_bins <- function(){
   malaspina_bins$depth <- "Deep Malaspina"
   malaspina_bins$g_depth <- "Deep\nMalaspina"
   malaspina_bins$is_deep_sea <- "deep_sea"
+  malaspina_bins$size_fraction <- factor(malaspina_bins$size_fraction, levels = c("planktonic", "mixed", "particle"))
   return(list(taxon, depth_comparisons, malaspina_bins))
 }
 

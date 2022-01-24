@@ -14,38 +14,39 @@ p1 <- DNA_tara %>%
   scale_y_continuous(breaks = scale, labels = percent_scale, limits=c(-4.5, -2)) + 
   ylab("% reads mapped to transposases") +
   scale_x_continuous(trans='log10') + xlab("Depth (m)") +
-  geom_point(aes(color = Layer_DNA)) +
+  geom_jitter(aes(color = Layer_DNA), width = 0.05) +
   geom_smooth(method = "lm", se = F) +
   scale_color_manual(breaks=color_breaks, 
                      values=colors) +
   theme(legend.position = "none")
 
 p2 <- DNA_tara %>% 
-  # filter(Layer_DNA != "MIX") %>%
   ggplot(aes(x=upper_size_dna, y=log_dna_trans)) +
-  geom_boxplot(outlier.shape = NA) +
-  theme_classic() +
+  # facet_wrap(~Layer_DNA) +
   geom_jitter(aes(color=Layer_DNA)) +
+  geom_boxplot(outlier.shape = NA, alpha = 0.5) +
+  theme_classic() +
   labs(color = "Depth")+
   xlab("size fraction (\u03BCm)") +
   scale_x_discrete(labels=c("1.6" = "0.22-1.6", "3" = "0.22-3.0")) +
-  #coord_trans(y = "log10") +
   ylab("") +
   stat_summary(fun.data = boxplot.give.n, geom = "text") + 
+  stat_compare_means(comparisons = list(c("1.6","3")), method = "t.test", 
+                     tip.length = 0.01, label.y = c(-2.1)) +
   scale_y_continuous(breaks = scale, labels = percent_scale, limits=c(-4.5, -2)) +
-  stat_pvalue_manual(stat.test, label = "p.adj") + 
-  #stat_compare_means(comparisons = list( c("1.6", "3") ))
   scale_color_manual(breaks=color_breaks, values=colors,
-    labels = c("SRF (5 or 9 m)", "DCM (17-188m)", "MIX (25-200m)", "MES (250-1000m)"))
-  # theme(axis.title.y=element_blank())
+                     labels = c("SRF (5 or 9 m)", "DCM (17-188m)", "MIX (25-200m)", "MES (250-1000m)"))
 
 ggarrange(p1, p2, labels = c("A", "B"), ncol = 2, nrow = 1, widths = c(0.4, 0.6))
+ggsave("depth_size_fraction_trans_coor.png", plot = last_plot())
 
 
+DNA_tara_noOL <- filter_outliers(DNA_tara, "DNA_Transposase")
+summary( lm(log_dna_trans~upper_size_dna, DNA_tara) )
+with_size <- lm(log_dna_trans~Layer_DNA*upper_size_dna, DNA_tara %>% filter(Layer_DNA != "MIX"))
+anova(with_size)
 
 
-stat.test <- compare_means(log_dna_trans ~ upper_size_dna, data = DNA_tara, method = "t.test")
-stat.test <- stat.test %>% mutate(y.position = c(-2))
 
 for (ocean in unique(DNA_tara$Ocean_DNA)){
   print(ocean)
@@ -128,6 +129,6 @@ DNA_tara %>%
 
 hist(DNA_tara$DNA_Defense)
 
+summary(lm(log_dna_trans~Ocean_short, DNA_tara))
 
 
-  
