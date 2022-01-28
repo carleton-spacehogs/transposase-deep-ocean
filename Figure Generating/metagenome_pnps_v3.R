@@ -1,74 +1,49 @@
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
 source("./init_share.R")
-g(pn_ps_integron, pn_ps_bins, pn_ps_total, tara_integron_summary, malaspina_integron_summary, tara_integron_all, malaspina_integron_all) %=% init_integron()
+g(pn_ps_integron, pn_ps_bins, pn_ps_total, tara_integron_summary, 
+  malaspina_integron_summary, malaspina_total, malaspina_integron_all) %=% init_integron()
 
-pn_ps_merged <- rbind(select(pn_ps_total, gene_type, pnps, log_pnps), 
-                      select(pn_ps_integron, pnps, gene_type, log_pnps))
-pn_ps_merged$gene_type <- factor(pn_ps_merged$gene_type, levels = c(
-  "transposase", "all cassette genes", # transposase and all cassette genes is not currently used
-  "normal", "defense", "non_defense", "no_call"))
+scale <- c(-2, -1.5, -1, -0.5, 0, 0.5)
+log_scale <- c("less\nthan\n0.01", "0.032", "0.1", "0.316", "1", "3.162")
+cols <- c("gene_type", "pnps", "log_pnps")
+pn_ps_merged <- rbind(pn_ps_total[,cols] %>% 
+                        filter(gene_type == "normal"), # non-transposase, non-cassette 
+                      malaspina_integron_all[,cols],
+                      malaspina_total[,cols],
+                      pn_ps_integron[,cols])
 
-scale <- c(-3, -2, -1, 0, 0.60, 1)
-log_scale <- c("lower\nthan\n0.001", "0.01", "0.1", "1", "max \npnps:4", "10")
+pn_ps_merged$gene_type<-factor(pn_ps_merged$gene_type,levels=c("normal","defense","non_defense", "no_call"))
+
 pB <- pn_ps_merged %>%
-  filter(pnps < 4) %>%
-  filter(gene_type %in% c("normal","non_defense", "defense", "no_call")) %>%
   ggplot(aes(x = gene_type, y = log_pnps, fill=gene_type)) +
   geom_boxplot(outlier.color = "gray", notch = TRUE) +
   ylab("pN/pS ratio") +
-  scale_y_continuous(breaks = scale, labels = log_scale, limits = c(-3, 1)) +
+  scale_y_continuous(breaks = scale, labels = log_scale, limits = c(-2, 0.603)) +
   stat_summary(fun.data = boxplot.give.n, geom = "text", position=position_nudge(x = 0, y = 0.17)) +
-  stat_compare_means(comparisons =list(c("non_defense", "defense"),
-                                       c("no_call","non_defense")),
-                     label.y = c(0.6, 0.8),
-                     method = "t.test",
-                     tip.length = 0.005) + 
-  scale_x_discrete(labels=c("normal (not\ntranposase\nor cassette)", 
-                            "Defense\nmechanism\ncassette ORFs",
-                            "cassette with\nnon-defense\nCOG-function",
-                            "cassette\nwithout\nCOG calls")) +
+  scale_x_discrete(labels=c("Non-tranposase\nnon-cassette\nORFs", 
+                           "Defense\nmechanism\ncassette",
+                           "Cassette with\nnon-defense\nCOG-function",
+                           "Cassette\nwithout\nCOG-calls")) +
   theme_classic() +
   theme(axis.title.x = element_blank(), legend.position="none") + 
   scale_fill_manual(values=c("transparent", "red", "orange", "yellow"))
 
-# pB used in conjunction with pC in bin_lifestyle.R
+# pB used in depth_expression_corr.R
 
+has_COG <- pn_ps_integron %>% filter(gene_type %in% c("non_defense", "defense")) %>% filter(pnps < 4)
+t.test(log_pnps~gene_type, data=has_COG)
 
-pn_ps_merged %>% 
-  filter(pnps < 10) %>%
-  ggplot(aes(x = gene_type, y = pnps)) +
-  #geom_violin() + 
-  #ylim(0,0.95) +
-  geom_boxplot(outlier.colour=NA) + 
-  coord_cartesian(ylim = c(0, 1.05)) + ylab("pN/pS") + xlab ("") +
-  stat_summary(fun.data = boxplot.give.n, geom = "text") +
-  stat_compare_means(comparisons = list( c("all cassette genes", "normal"), 
-                                         c("transposase", "normal"),
-                                         c("all cassette genes", "non-defense cassette gene calls"),
-                                         c("non-defense cassette gene calls", "defense mech")),
-                     label.y = c(1.05, 0.8, 0.9, 0.75),
-                     tip.length = 0.003)
+has_COG1 <- pn_ps_merged %>% filter(gene_type %in% c("non_defense", "defense")) %>% filter(pnps < 4)
+t.test(pnps~gene_type, data=has_COG1)
+boxplot(pnps~gene_type, data=has_COG1)
 
+pn_ps_integron %>% filter(!is.na(pnps) & pnps< 4) %>% nrow() # 1208
+malaspina_integron_all %>% filter(!is.na(pnps) & pnps< 4) %>% nrow() # 443
 
-p1 <- pn_ps_total %>% 
-  filter(pnps < 10) %>%
-  ggplot(aes(x = gene_type, y = pnps)) +
-  #geom_violin() + 
-  #ylim(0,0.95) +
-  geom_boxplot(outlier.colour=NA) + 
-  coord_cartesian(ylim = c(0, 1.05)) + ylab("pN/pS") + xlab ("") +
-  stat_summary(fun.data = boxplot.give.n, geom = "text") +
-  stat_compare_means(comparisons = list( c("all cassette genes", "normal"), c("transposase", "normal") ),
-                     label.y = c(1.05, 0.8),
-                     tip.length = 0.003)
+pn_ps_total[,cols] %>% filter(gene_type == "normal") %>% filter(pnps < 4) %>% nrow()
+malaspina_total %>% filter(pnps < 4) %>% nrow()
 
-ggarrange(p1, p2, ncol = 2, nrow = 1)
-
-pn_ps_integron <- pn_ps_integron %>% filter(!is.na(category)) %>%
-  mutate(is_metabolism = ifelse(category %in% c("Lipid transport and metabolism","Nucleotide transport and metabolism"), "lipid", "non-lipid"))
-# mutate(is_metabolism = ifelse(category %like% "metabolism", "metabolism", "non-metabolism"))
-
-t.test(log_pnps~ is_metabolism, data = pn_ps_integron %>% 
-         filter(pnps < 10) %>% filter(!is.na(category)))
+pnps_cassette<- (pn_ps_merged %>% filter(gene_type != "normal") %>% filter(pnps < 100))$pnps
+quantile(pnps_cassette, probs = c(0.97), na.rm = TRUE)
 
 

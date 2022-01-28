@@ -164,29 +164,35 @@ init_bins <- function(){
 
 init_integron <- function(){
   init_env()
-  # pn_ps_integron <- read_csv("data/integron_pnps_exploded.csv")
-  # pn_ps_integron <- pn_ps_integron %>%  mutate(gene_type = ifelse(category == "Defense mechanisms",  "defense mech", "non-defense cassette gene calls"))
-  
   pn_ps_integron <- read_csv("data/all_integron_with_pnps_exploded.csv")
+  pn_ps_integron <- pn_ps_integron %>% mutate(log_pnps = ifelse(pnps < 0.01, -2, log10(pnps)))
   pn_ps_bins <- read_csv("data/bin_median_pnps.csv")
   pn_ps_total <- read_csv("data/pNpS_total.csv")
-  pn_ps_total <- pn_ps_total %>% mutate(gene_type = 
-                              ifelse(integron == "Y", "all cassette genes", ifelse(transposase == "Y", "transposase", "normal") ))
-  pn_ps_total$gene_type <- factor(pn_ps_total$gene_type, levels = c("normal", "transposase", "all cassette genes"))
-  pn_ps_total <- pn_ps_total %>%  mutate(log_pnps = ifelse(pnps < 0.001, -3, log10(pnps)))
+  pn_ps_total <- pn_ps_total %>% mutate(gene_type = ifelse(integron == "Y", "all cassette genes", 
+                              ifelse(transposase == "Y", "transposase", "normal") ))
+  pn_ps_total <- pn_ps_total %>% mutate(log_pnps = ifelse(pnps < 0.01, -2, log10(pnps)))
   
-  # tara_integron_summary <- read_csv("data/all_integron_func_category_count.csv")
+  malaspina_total <- read_csv("data/trans_biofilm_defense_and_normal_pnps_Malaspina.csv")
+  
   tara_integron_summary <- read_csv("data/integron_func_category_count_known_function.csv")
   tara_integron_summary$ratio_prop = tara_integron_summary$integron_prop/tara_integron_summary$normal_prop
   tara_integron_summary <- tara_integron_summary[order(tara_integron_summary$COG_function),]
-  tara_integron_all <- read_csv("data/all_ocean_merged_integrons.csv")
   
   deep_integron_summary <- read_csv("data/all_deep_integron_func_category_count.csv")
   deep_integron_summary$ratio_prop = deep_integron_summary$integron_prop/deep_integron_summary$deep_prop
   deep_integron_summary <- deep_integron_summary[order(deep_integron_summary$COG_function),]
-  deep_integron_all <- read_csv("data/deep_integrons_merged_func_category.csv")
+  deep_integron <- read_csv("data/malaspina_pNpS2_integron.csv")
+  deep_integron <- deep_integron %>% 
+    mutate(log_pnps = ifelse(pnps < 0.01, -2, log10(pnps))) %>%
+    mutate(gene_type = ifelse(COG20_CATEGORY == "nan", "no_call", 
+                       ifelse(COG20_CATEGORY == "V", "defense", "non_defense")))
+  deep_all <- read_csv("data/malaspina_pNpS2_non_integrons_subsampled.csv")
+  deep_all <- deep_all %>% mutate(log_pnps = ifelse(pnps < 0.01, -2, log10(pnps)))
+  deep_non_trans <- deep_all %>% filter(gene_type != "_T")
+  deep_non_trans$gene_type <- "normal"
   
-  return(list(pn_ps_integron, pn_ps_bins, pn_ps_total, tara_integron_summary, deep_integron_summary, tara_integron_all, deep_integron_all))
+  return(list(pn_ps_integron, pn_ps_bins, pn_ps_total, tara_integron_summary, 
+              deep_integron_summary, deep_non_trans, deep_integron))
 }
 
 init_transposase_in_bins <- function(){
