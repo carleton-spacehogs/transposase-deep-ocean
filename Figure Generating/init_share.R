@@ -97,9 +97,9 @@ init_individual_metagenomes <- function(){
 init_mala_cov <- function(){
   init_env()
   mala_cov <- read_csv("data/Malaspina-transposase-cov.csv")
-  mala_cov$size <- factor(mala_cov$size)
   mala_cov$log_dna_trans <- log10(mala_cov$prop)
   mala_cov$Layer_DNA <- "Malaspina"
+  mala_cov$is_MES = "MES, Malaspina"
   return(mala_cov)
 }
 
@@ -290,7 +290,8 @@ init_tara <- function(){
   depth_comparisons <- list( c("SRF", "DCM"), c("DCM", "MES"), c("SRF", "MES") )
   DNA_tara$Depth <- as.numeric(DNA_tara$Depth_DNA)
   RNA_tara$Depth <- as.numeric(RNA_tara$Depth_RNA)
-  DNA_tara <- mutate(DNA_tara, is_MES = ifelse(Layer_DNA == "MES", "MES", "SRF, DCM"))
+  DNA_tara <- mutate(DNA_tara, is_MES = ifelse(Layer_DNA == "MES", "MES, Malaspina", 
+                                               ifelse(Layer_DNA == "MIX", "MIX", "SRF, DCM")))
   
   return(list(DNA_tara, RNA_tara, DNA_RNA_tara, depth_comparisons))
 }

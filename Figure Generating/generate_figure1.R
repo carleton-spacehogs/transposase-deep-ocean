@@ -6,16 +6,12 @@ mala_cov <- init_mala_cov()
 scale <- c(-2, -2.5, -3, -3.5, -4, -4.5)
 # log_scale <- round(10^scale, digits = 5)
 percent_scale <- c("1.00%", "0.316%", "0.100%", "0.032%", "0.010%", "0.003%")
-colors <- c("sky blue", "steelblue","gray","blue")
-color_breaks <- c('SRF','DCM','MIX','MES')
 
-# a fake upper size to conform with tara Ocean data
-mala_cov$upper_size_dna <- ifelse(mala_cov$size == "0.2", "1.6", "3")
-sel_col <- c("Layer_DNA","log_dna_trans","upper_size_dna")
-to_graph <- rbind(mala_cov[,sel_col],
-                  DNA_tara[,sel_col]%>%filter(Layer_DNA != "MIX"))
-# repaired the fake upper size fraction
-to_graph$size_fraction <- ifelse(to_graph$upper_size_dna == "1.6", "planktonic", "particle-associated")
+mala_cov$size_fraction <- ifelse(mala_cov$lower_filter_size == "0.2", "planktonic", "particle-associated")
+DNA_tara$size_fraction <- ifelse(DNA_tara$upper_size_dna == "1.6", "planktonic", "particle-associated")
+
+sel_col <- c("Layer_DNA","log_dna_trans","size_fraction")
+to_graph <- rbind(mala_cov[,sel_col], DNA_tara[,sel_col]%>%filter(Layer_DNA != "MIX"))
 to_graph$Layer_DNA <- factor(to_graph$Layer_DNA, levels = c("SRF","DCM","MES","Malaspina"))
 
 counts = to_graph %>% group_by(size_fraction, Layer_DNA) %>% tally
@@ -32,7 +28,8 @@ to_graph %>%
   scale_x_discrete(labels=c("SRF" = "SRF\n(depth < 10 m)", 
                             "DCM" = "DCM\n(17 - 120 m)",
                             "MES" = "MES\n(250 - 1000 m)",
-                            "Malaspina" = "Malaspina\n(2400 - 4000 m)")) +
+                            "Malaspina" = "Malaspina\n(2400 - 4000 m)")) + 
+  scale_fill_manual(values=c("orange","green"))+
   guides(fill = guide_legend(title = "Metagenome size fraction:")) + # reverse = TRUE
   theme(legend.position = c(0.73, 0.18),
         # axis.title.x=element_blank(),
@@ -40,26 +37,24 @@ to_graph %>%
 
 ggsave("depth_size_fraction_trans_coor2.png", plot = last_plot())
 
+sel_col2 <- c("log_dna_trans","is_MES", "Ocean_DNA")
+supplement_graph <- rbind(mala_cov[,sel_col2], DNA_tara[,sel_col2]%>%filter(is_MES != "MIX"))
 
-
-for (ocean in unique(DNA_tara$Ocean_DNA)){
+for (ocean in unique(supplement_graph$Ocean_DNA)){
   print(ocean)
-  MES_rows <- DNA_tara %>% filter(Ocean_DNA %in% ocean) %>% filter(is_MES == "MES")
+  MES_rows <- DNA_tara %>% filter(Ocean_DNA %in% ocean) %>% filter(is_MES == "MES, Malaspina")
   if (nrow(MES_rows) < 5){
     print("less than 5 MES, skip")
     next
   }
-  t_test <- t.test(log_dna_trans~is_MES, data = DNA_tara %>% 
+  t_test <- t.test(log_dna_trans~is_MES, data = supplement_graph %>% 
                      filter(Ocean_DNA %in% ocean) %>% 
-                     filter(Layer_DNA %in% c("MES", "SRF", "DCM")))
+                     filter(is_MES != "MIX"))
   print(t_test$p.value)
 }
 
 # supplement 1
-trans_scale <- c(-2, -2.5, -3, -3.5, -4, -4.5)
-trans_percent_scale <- c("1.00%", "0.316%", "0.100%", "0.032%", "0.010%", "0.003%")
-DNA_tara %>% 
-  filter(!is.na(is_MES)) %>%
+supplement_graph %>% 
   filter(!Ocean_DNA %in% c("Southern", "Red Sea", "Mediterranean")) %>%
   ggplot(aes(x=fct_rev(Ocean_DNA), y=log_dna_trans, fill=is_MES)) +
   theme_classic() +
@@ -67,11 +62,10 @@ DNA_tara %>%
   stat_summary(fun.data = boxplot.give.n, geom = "text", position=position_nudge(x = 0.45, y = 0)) +
   xlab("") + 
   labs(fill = "Depth") +
-  scale_y_continuous(breaks = trans_scale, 
-                     labels = trans_percent_scale, 
-                     limits=c(-4.5, -2)) +
+  scale_y_continuous(breaks = scale, 
+                     labels = percent_scale) +
   ylab("% DNA reads mapped to transposase") +
-  scale_fill_manual(breaks=c("SRF, DCM", "MES"), values=c('azure','blue')) +
+  scale_fill_manual(breaks=c("SRF, DCM", "MES, Malaspina"), values=c('azure','blue')) +
   coord_flip()
 
 oceans <- DNA_tara %>% filter(!Ocean_DNA %in% c("Southern", "Red Sea", "Mediterranean")) %>% 
