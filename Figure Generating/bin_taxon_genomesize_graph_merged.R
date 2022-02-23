@@ -52,7 +52,7 @@ tax_depth <- g_tax %>%
   ggplot(aes(x=percent_trans, y = fct_rev(g_depth), fill = class_trans)) +
   scale_fill_manual(values = c('orange','gray', "green"))+
   facet_wrap(~Class, ncol = 3) +
-  geom_boxplot(outlier.alpha = 0.3,outlier.shape = 21,varwidth = TRUE) + 
+  geom_boxplot(outlier.alpha = 0.3,outlier.shape = 21) + 
   ylab("depth")+
   xlim(c(0, 0.8))+
   stat_summary(fun.data = boxplot.give.n, geom = "text",
@@ -66,7 +66,7 @@ tax_lifestyle <- g_tax %>%
   mutate(size_fraction = factor(size_fraction, levels = fct_rev(ls_order))) %>% 
   ggplot(aes(y = percent_trans, x = fct_rev(size_fraction), fill = class_trans)) +
   facet_wrap(~Class, ncol = 3) +
-  geom_boxplot(outlier.alpha = 0.3,outlier.shape = 21,varwidth = TRUE) +
+  geom_boxplot(outlier.alpha = 0.3,outlier.shape = 21) +
   scale_fill_manual(labels = c("High %-transposase (\u0251- \u03b2- \u03b3- proteobact., and Actinobact.)", 
                                 "Normal transposase abundance", 
                                 "Low %-transposase (Flavobact., Acidimicrobidae, etc.)"),
@@ -111,15 +111,22 @@ all$size_bin <- factor(all$size_bin, levels = c(">5","4-5","3-4","2-3","0-2"))
 all$g_depth <- gsub('Deep Malaspina', 'Deep\nMalaspina', all$depth)
 all$g_depth <- factor(all$g_depth, levels = c("SRF", "DCM", "MES", 'Deep\nMalaspina'))
 
+
+all <- all %>%
+  group_by(depth) %>%
+  mutate(countEachDepth= sum(n())) %>%
+  group_by(size_fraction, .add=TRUE) %>%
+  mutate(lifestyle_prop_to_depth=n()/countEachDepth)
+
 particle_gsize <- all %>% 
   mutate(size_fraction = factor(size_fraction, levels = ls_order)) %>% 
   ggplot(aes(x=size_fraction, y = `complete genome size (Mbp)`)) +
   facet_wrap(~depth, ncol= 1) +
   xlab("MAG lifestyle") +
   coord_cartesian(ylim =c(0.7, 7.7)) +
+  geom_boxplot(outlier.alpha = 0.1, varwidth = TRUE, aes(weight=sqrt(all$lifestyle_prop_to_depth)))+
   stat_summary(fun.data = boxplot.give.n, geom = "text",
-               position=position_nudge(x = 0, y = 1.5)) +
-  geom_boxplot(outlier.alpha = 0.1)+
+               position=position_nudge(x = 0.25, y = 1.5)) +
   theme_classic() +
   theme()# strip.text.x = element_blank()
 

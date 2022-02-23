@@ -45,6 +45,7 @@ DNA_tara_noOL <- filter_outliers(DNA_tara, "DNA_Transposase")
 summary( lm(log_dna_trans~upper_size_dna, DNA_tara) )
 with_size <- lm(log_dna_trans~Layer_DNA*upper_size_dna, DNA_tara %>% filter(Layer_DNA != "MIX"))
 anova(with_size)
+summary(with_size)
 
 
 

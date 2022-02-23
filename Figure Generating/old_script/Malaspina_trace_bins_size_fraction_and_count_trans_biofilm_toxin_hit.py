@@ -1,6 +1,6 @@
 #!/usr/bin/env python3 
 # Written by Jimmy Zhong (zhongj2@carleton.edu), Carleton '23 under Professor Rika Anderson
-# date: August 4th 2021 - Jan 13th 2022
+# date: August 4th 2021 - Feb 21th 2022
 import glob
 import os
 import subprocess
@@ -57,8 +57,8 @@ def get_dict_bin_coverage(sam_console_output_file):
 src_directory = "/workspace/data/zhongj/Transposase_Project/deep_ocean_bins/deep_ocean_bins" # where the bins are
 analysis_dir = "/workspace/data/zhongj/Transposase_Project/deep_ocean_bins/bins_analysis"
 bin_function_dir = "/workspace/data/zhongj/Transposase_Project/deep_ocean_bins/deep_ocean_bins_annotation"
-small_size_file = "all_bins_mapped_small_hole.txt"
-big_size_file = "all_bins_mapped_big_hole.txt"
+small_size_file = "all_bins_mapped_0.2-0.8.txt"
+big_size_file = "all_bins_mapped_0.8-5.txt"
 
 os.chdir(src_directory)
 path = r'./'

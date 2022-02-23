@@ -122,6 +122,7 @@ init_bins <- function(){
   taxon$Class <- gsub('Verrucomicrobiae', 'Verrucomicrobia', taxon$Class)
   
   pn_ps_bins <- read_csv("data/bin_median_pnps.csv")
+  pn_ps_bins <- pn_ps_bins %>% filter(count >= 100)
   taxon <- merge(taxon, pn_ps_bins, by="bin", all.x = TRUE)
   taxon <- merge(taxon, COG_diversity, by="bin", all.x = TRUE)
   taxon$log_median_bin_pnps <- log10(taxon$median_bin_pnps)
@@ -174,13 +175,6 @@ init_integron <- function(){
   
   malaspina_total <- read_csv("data/trans_biofilm_defense_and_normal_pnps_Malaspina.csv")
   
-  tara_integron_summary <- read_csv("data/integron_func_category_count_known_function.csv")
-  tara_integron_summary$ratio_prop = tara_integron_summary$integron_prop/tara_integron_summary$normal_prop
-  tara_integron_summary <- tara_integron_summary[order(tara_integron_summary$COG_function),]
-  
-  deep_integron_summary <- read_csv("data/all_deep_integron_func_category_count.csv")
-  deep_integron_summary$ratio_prop = deep_integron_summary$integron_prop/deep_integron_summary$deep_prop
-  deep_integron_summary <- deep_integron_summary[order(deep_integron_summary$COG_function),]
   deep_integron <- read_csv("data/malaspina_pNpS2_integron.csv")
   deep_integron <- deep_integron %>% 
     mutate(log_pnps = ifelse(pnps < 0.01, -2, log10(pnps))) %>%
@@ -191,8 +185,37 @@ init_integron <- function(){
   deep_non_trans <- deep_all %>% filter(gene_type != "_T")
   deep_non_trans$gene_type <- "normal"
   
-  return(list(pn_ps_integron, pn_ps_bins, pn_ps_total, tara_integron_summary, 
-              deep_integron_summary, deep_non_trans, deep_integron))
+  return(list(pn_ps_integron, pn_ps_bins, pn_ps_total, deep_non_trans, deep_integron))
+}
+
+init_integron_category <- function(){
+  # tara_integron_summary <- read_csv("data/integron_func_category_count_known_function.csv")
+  # tara_integron_summary$ratio_prop = tara_integron_summary$integron_prop/tara_integron_summary$normal_prop
+  # tara_integron_summary <- tara_integron_summary[order(tara_integron_summary$COG_function),]
+  
+  # deep_integron_summary <- read_csv("data/all_deep_integron_func_category_count.csv")
+  # deep_integron_summary$ratio_prop = deep_integron_summary$integron_prop/deep_integron_summary$deep_prop
+  # deep_integron_summary <- deep_integron_summary[order(deep_integron_summary$COG_function),]
+  
+  summary <- read_csv("data/tara_malaspina_integron_func_category_count.csv")
+  # summary$ratio_prop = summary$integron_prop/summary$normal_prop
+  
+  col1 <- c('Secondary metabolites biosynthesis, transport and catabolism',
+            "Posttranslational modification, protein turnover, chaperones", 
+            "Intracellular trafficking, secretion, and vesicular transport",
+            "Cell cycle control, cell division, chromosome partitioning",
+            "Translation, ribosomal structure and biogenesis",
+            "transport and metabolism")
+  col2 <- c("Secondary metabolites...", "Posttranslational modification...",
+            "Intracellular trafficking...", "Cell cycle control...",
+            "Translation, ribosomal structure...", "TM*")
+  replace <- data.frame(col1, col2)
+  
+  for (r in 1:nrow(replace)){
+    summary$COG_function <- gsub(replace[r,1],replace[r,2],summary$COG_function)
+  }
+  
+  return(summary)
 }
 
 init_transposase_in_bins <- function(){

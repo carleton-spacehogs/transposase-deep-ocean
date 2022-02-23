@@ -4,6 +4,10 @@ g(DNA_tara, RNA_tara, DNA_RNA_tara, depth_comparison) %=% init_tara()
 
 # for making figure 1, the 2 size filter, see biofilm_transposase_corr
 
+
+
+
+
 DNA_tara %>% 
   # filter(Layer_DNA != "MIX") %>%
   ggplot(aes(x=Layer_DNA, y=DNA_Defense)) +

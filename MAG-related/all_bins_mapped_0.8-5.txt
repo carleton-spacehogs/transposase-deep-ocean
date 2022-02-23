@@ -1,0 +1,2532 @@
+I am starting at here!!!
+mp-deep_mag-0196
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460407 (100.00%) aligned 0 times
+    162 (0.00%) aligned exactly 1 time
+    0 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0323
+(ERR): bowtie2-align died with signal 11 (SEGV) (core dumped)
+
+mp-deep_mag-0095
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19455648 (99.97%) aligned 0 times
+    4917 (0.03%) aligned exactly 1 time
+    4 (0.00%) aligned >1 times
+0.03% overall alignment rate
+
+mp-deep_mag-0596
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458521 (99.99%) aligned 0 times
+    2044 (0.01%) aligned exactly 1 time
+    4 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0293
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19419832 (99.79%) aligned 0 times
+    39537 (0.20%) aligned exactly 1 time
+    1200 (0.01%) aligned >1 times
+0.21% overall alignment rate
+
+mp-deep_mag-0449
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460007 (100.00%) aligned 0 times
+    561 (0.00%) aligned exactly 1 time
+    1 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0390
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19446564 (99.93%) aligned 0 times
+    13878 (0.07%) aligned exactly 1 time
+    127 (0.00%) aligned >1 times
+0.07% overall alignment rate
+
+mp-deep_mag-0361
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19450251 (99.95%) aligned 0 times
+    10178 (0.05%) aligned exactly 1 time
+    140 (0.00%) aligned >1 times
+0.05% overall alignment rate
+
+mp-deep_mag-0045
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19447086 (99.93%) aligned 0 times
+    12838 (0.07%) aligned exactly 1 time
+    645 (0.00%) aligned >1 times
+0.07% overall alignment rate
+
+mp-deep_mag-0262
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19447899 (99.93%) aligned 0 times
+    11897 (0.06%) aligned exactly 1 time
+    773 (0.00%) aligned >1 times
+0.07% overall alignment rate
+
+mp-deep_mag-0146
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19453926 (99.97%) aligned 0 times
+    6480 (0.03%) aligned exactly 1 time
+    163 (0.00%) aligned >1 times
+0.03% overall alignment rate
+
+mp-deep_mag-0508
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19452976 (99.96%) aligned 0 times
+    7521 (0.04%) aligned exactly 1 time
+    72 (0.00%) aligned >1 times
+0.04% overall alignment rate
+
+mp-deep_mag-0340
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458856 (99.99%) aligned 0 times
+    1712 (0.01%) aligned exactly 1 time
+    1 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0064
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19442062 (99.90%) aligned 0 times
+    18402 (0.09%) aligned exactly 1 time
+    105 (0.00%) aligned >1 times
+0.10% overall alignment rate
+
+mp-deep_mag-0167
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459369 (99.99%) aligned 0 times
+    1196 (0.01%) aligned exactly 1 time
+    4 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0108
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19407988 (99.73%) aligned 0 times
+    51765 (0.27%) aligned exactly 1 time
+    816 (0.00%) aligned >1 times
+0.27% overall alignment rate
+
+mp-deep_mag-0430
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19454371 (99.97%) aligned 0 times
+    6181 (0.03%) aligned exactly 1 time
+    17 (0.00%) aligned >1 times
+0.03% overall alignment rate
+
+mp-deep_mag-0285
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19450657 (99.95%) aligned 0 times
+    9760 (0.05%) aligned exactly 1 time
+    152 (0.00%) aligned >1 times
+0.05% overall alignment rate
+
+mp-deep_mag-0386
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19426896 (99.83%) aligned 0 times
+    33367 (0.17%) aligned exactly 1 time
+    306 (0.00%) aligned >1 times
+0.17% overall alignment rate
+
+mp-deep_mag-0314
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19443095 (99.91%) aligned 0 times
+    17335 (0.09%) aligned exactly 1 time
+    139 (0.00%) aligned >1 times
+0.09% overall alignment rate
+
+mp-deep_mag-0617
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19427877 (99.83%) aligned 0 times
+    31550 (0.16%) aligned exactly 1 time
+    1142 (0.01%) aligned >1 times
+0.17% overall alignment rate
+
+mp-deep_mag-0533
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19438928 (99.89%) aligned 0 times
+    21555 (0.11%) aligned exactly 1 time
+    86 (0.00%) aligned >1 times
+0.11% overall alignment rate
+
+mp-deep_mag-0483
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459000 (99.99%) aligned 0 times
+    1569 (0.01%) aligned exactly 1 time
+    0 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0112
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460352 (100.00%) aligned 0 times
+    216 (0.00%) aligned exactly 1 time
+    1 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0335
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19452937 (99.96%) aligned 0 times
+    7532 (0.04%) aligned exactly 1 time
+    100 (0.00%) aligned >1 times
+0.04% overall alignment rate
+
+mp-deep_mag-0512
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458361 (99.99%) aligned 0 times
+    2203 (0.01%) aligned exactly 1 time
+    5 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0011
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19441314 (99.90%) aligned 0 times
+    19162 (0.10%) aligned exactly 1 time
+    93 (0.00%) aligned >1 times
+0.10% overall alignment rate
+
+mp-deep_mag-0580
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19451995 (99.96%) aligned 0 times
+    8535 (0.04%) aligned exactly 1 time
+    39 (0.00%) aligned >1 times
+0.04% overall alignment rate
+
+mp-deep_mag-0339
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19447148 (99.93%) aligned 0 times
+    13396 (0.07%) aligned exactly 1 time
+    25 (0.00%) aligned >1 times
+0.07% overall alignment rate
+
+mp-deep_mag-0571
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19455603 (99.97%) aligned 0 times
+    4847 (0.02%) aligned exactly 1 time
+    119 (0.00%) aligned >1 times
+0.03% overall alignment rate
+
+mp-deep_mag-0356
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19457828 (99.99%) aligned 0 times
+    2657 (0.01%) aligned exactly 1 time
+    84 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0472
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19444392 (99.92%) aligned 0 times
+    16045 (0.08%) aligned exactly 1 time
+    132 (0.00%) aligned >1 times
+0.08% overall alignment rate
+
+mp-deep_mag-0255
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19441658 (99.90%) aligned 0 times
+    18061 (0.09%) aligned exactly 1 time
+    850 (0.00%) aligned >1 times
+0.10% overall alignment rate
+
+mp-deep_mag-0053
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19456384 (99.98%) aligned 0 times
+    4165 (0.02%) aligned exactly 1 time
+    20 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0318
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458854 (99.99%) aligned 0 times
+    1678 (0.01%) aligned exactly 1 time
+    37 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0150
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19457830 (99.99%) aligned 0 times
+    2708 (0.01%) aligned exactly 1 time
+    31 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0274
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19445841 (99.92%) aligned 0 times
+    14576 (0.07%) aligned exactly 1 time
+    152 (0.00%) aligned >1 times
+0.08% overall alignment rate
+
+mp-deep_mag-0289
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19346518 (99.41%) aligned 0 times
+    112046 (0.58%) aligned exactly 1 time
+    2005 (0.01%) aligned >1 times
+0.59% overall alignment rate
+
+mp-deep_mag-0322
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458912 (99.99%) aligned 0 times
+    1647 (0.01%) aligned exactly 1 time
+    10 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0505
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19457828 (99.99%) aligned 0 times
+    2673 (0.01%) aligned exactly 1 time
+    68 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0094
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19456422 (99.98%) aligned 0 times
+    4121 (0.02%) aligned exactly 1 time
+    26 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0494
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19452829 (99.96%) aligned 0 times
+    7711 (0.04%) aligned exactly 1 time
+    29 (0.00%) aligned >1 times
+0.04% overall alignment rate
+
+mp-deep_mag-0469
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19451157 (99.95%) aligned 0 times
+    9033 (0.05%) aligned exactly 1 time
+    379 (0.00%) aligned >1 times
+0.05% overall alignment rate
+
+mp-deep_mag-0105
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460518 (100.00%) aligned 0 times
+    51 (0.00%) aligned exactly 1 time
+    0 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0048
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19457649 (99.98%) aligned 0 times
+    2625 (0.01%) aligned exactly 1 time
+    295 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0391
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19456227 (99.98%) aligned 0 times
+    4287 (0.02%) aligned exactly 1 time
+    55 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0600
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459277 (99.99%) aligned 0 times
+    1292 (0.01%) aligned exactly 1 time
+    0 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0303
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19437441 (99.88%) aligned 0 times
+    23069 (0.12%) aligned exactly 1 time
+    59 (0.00%) aligned >1 times
+0.12% overall alignment rate
+
+mp-deep_mag-0027
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458888 (99.99%) aligned 0 times
+    1679 (0.01%) aligned exactly 1 time
+    2 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0524
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19455180 (99.97%) aligned 0 times
+    5344 (0.03%) aligned exactly 1 time
+    45 (0.00%) aligned >1 times
+0.03% overall alignment rate
+
+mp-deep_mag-0200
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19457913 (99.99%) aligned 0 times
+    2641 (0.01%) aligned exactly 1 time
+    15 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0427
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460346 (100.00%) aligned 0 times
+    222 (0.00%) aligned exactly 1 time
+    1 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0128
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459997 (100.00%) aligned 0 times
+    572 (0.00%) aligned exactly 1 time
+    0 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0263
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19414749 (99.76%) aligned 0 times
+    44822 (0.23%) aligned exactly 1 time
+    998 (0.01%) aligned >1 times
+0.24% overall alignment rate
+
+mp-deep_mag-0044
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458751 (99.99%) aligned 0 times
+    1815 (0.01%) aligned exactly 1 time
+    3 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0528
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19428137 (99.83%) aligned 0 times
+    32295 (0.17%) aligned exactly 1 time
+    137 (0.00%) aligned >1 times
+0.17% overall alignment rate
+
+mp-deep_mag-0166
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19360117 (99.48%) aligned 0 times
+    99370 (0.51%) aligned exactly 1 time
+    1082 (0.01%) aligned >1 times
+0.52% overall alignment rate
+
+mp-deep_mag-0465
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459586 (99.99%) aligned 0 times
+    983 (0.01%) aligned exactly 1 time
+    0 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0242
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19455683 (99.97%) aligned 0 times
+    4855 (0.02%) aligned exactly 1 time
+    31 (0.00%) aligned >1 times
+0.03% overall alignment rate
+
+mp-deep_mag-0509
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19406779 (99.72%) aligned 0 times
+    52362 (0.27%) aligned exactly 1 time
+    1428 (0.01%) aligned >1 times
+0.28% overall alignment rate
+
+mp-deep_mag-0566
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458501 (99.99%) aligned 0 times
+    2062 (0.01%) aligned exactly 1 time
+    6 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0098
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19434745 (99.87%) aligned 0 times
+    25208 (0.13%) aligned exactly 1 time
+    616 (0.00%) aligned >1 times
+0.13% overall alignment rate
+
+mp-deep_mag-0387
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459821 (100.00%) aligned 0 times
+    747 (0.00%) aligned exactly 1 time
+    1 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0031
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459714 (100.00%) aligned 0 times
+    854 (0.00%) aligned exactly 1 time
+    1 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0616
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460174 (100.00%) aligned 0 times
+    393 (0.00%) aligned exactly 1 time
+    2 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0315
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459342 (99.99%) aligned 0 times
+    1218 (0.01%) aligned exactly 1 time
+    9 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0132
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19454563 (99.97%) aligned 0 times
+    5847 (0.03%) aligned exactly 1 time
+    159 (0.00%) aligned >1 times
+0.03% overall alignment rate
+
+mp-deep_mag-0284
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19457085 (99.98%) aligned 0 times
+    3475 (0.02%) aligned exactly 1 time
+    9 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0334
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459519 (99.99%) aligned 0 times
+    1045 (0.01%) aligned exactly 1 time
+    5 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0082
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19456304 (99.98%) aligned 0 times
+    4257 (0.02%) aligned exactly 1 time
+    8 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0258
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19456477 (99.98%) aligned 0 times
+    4060 (0.02%) aligned exactly 1 time
+    32 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0181
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459670 (100.00%) aligned 0 times
+    892 (0.00%) aligned exactly 1 time
+    7 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0410
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19395545 (99.67%) aligned 0 times
+    64549 (0.33%) aligned exactly 1 time
+    475 (0.00%) aligned >1 times
+0.33% overall alignment rate
+
+mp-deep_mag-0338
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19445491 (99.92%) aligned 0 times
+    14369 (0.07%) aligned exactly 1 time
+    709 (0.00%) aligned >1 times
+0.08% overall alignment rate
+
+mp-deep_mag-0570
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458379 (99.99%) aligned 0 times
+    2187 (0.01%) aligned exactly 1 time
+    3 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0275
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19447826 (99.93%) aligned 0 times
+    12410 (0.06%) aligned exactly 1 time
+    333 (0.00%) aligned >1 times
+0.07% overall alignment rate
+
+mp-deep_mag-0452
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19448748 (99.94%) aligned 0 times
+    11676 (0.06%) aligned exactly 1 time
+    145 (0.00%) aligned >1 times
+0.06% overall alignment rate
+
+mp-deep_mag-0376
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19456778 (99.98%) aligned 0 times
+    3781 (0.02%) aligned exactly 1 time
+    10 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0052
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19439277 (99.89%) aligned 0 times
+    20730 (0.11%) aligned exactly 1 time
+    562 (0.00%) aligned >1 times
+0.11% overall alignment rate
+
+mp-deep_mag-0319
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459465 (99.99%) aligned 0 times
+    1102 (0.01%) aligned exactly 1 time
+    2 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0291
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19450699 (99.95%) aligned 0 times
+    9669 (0.05%) aligned exactly 1 time
+    201 (0.00%) aligned >1 times
+0.05% overall alignment rate
+
+mp-deep_mag-0203
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460036 (100.00%) aligned 0 times
+    532 (0.00%) aligned exactly 1 time
+    1 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0127
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19428631 (99.84%) aligned 0 times
+    31133 (0.16%) aligned exactly 1 time
+    805 (0.00%) aligned >1 times
+0.16% overall alignment rate
+
+mp-deep_mag-0300
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19457273 (99.98%) aligned 0 times
+    3282 (0.02%) aligned exactly 1 time
+    14 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0603
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459249 (99.99%) aligned 0 times
+    1310 (0.01%) aligned exactly 1 time
+    10 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0527
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19440611 (99.90%) aligned 0 times
+    19853 (0.10%) aligned exactly 1 time
+    105 (0.00%) aligned >1 times
+0.10% overall alignment rate
+
+mp-deep_mag-0548
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19436667 (99.88%) aligned 0 times
+    23430 (0.12%) aligned exactly 1 time
+    472 (0.00%) aligned >1 times
+0.12% overall alignment rate
+
+mp-deep_mag-0222
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458690 (99.99%) aligned 0 times
+    1867 (0.01%) aligned exactly 1 time
+    12 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0405
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19457414 (99.98%) aligned 0 times
+    3134 (0.02%) aligned exactly 1 time
+    21 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0194
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460191 (100.00%) aligned 0 times
+    371 (0.00%) aligned exactly 1 time
+    7 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0169
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19442908 (99.91%) aligned 0 times
+    17243 (0.09%) aligned exactly 1 time
+    418 (0.00%) aligned >1 times
+0.09% overall alignment rate
+
+mp-deep_mag-0569
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460540 (100.00%) aligned 0 times
+    29 (0.00%) aligned exactly 1 time
+    0 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0321
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19451366 (99.95%) aligned 0 times
+    9179 (0.05%) aligned exactly 1 time
+    24 (0.00%) aligned >1 times
+0.05% overall alignment rate
+
+mp-deep_mag-0598
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19457209 (99.98%) aligned 0 times
+    3353 (0.02%) aligned exactly 1 time
+    7 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0342
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19452616 (99.96%) aligned 0 times
+    7917 (0.04%) aligned exactly 1 time
+    36 (0.00%) aligned >1 times
+0.04% overall alignment rate
+
+mp-deep_mag-0466
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19418303 (99.78%) aligned 0 times
+    40675 (0.21%) aligned exactly 1 time
+    1591 (0.01%) aligned >1 times
+0.22% overall alignment rate
+
+mp-deep_mag-0165
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19354783 (99.46%) aligned 0 times
+    103692 (0.53%) aligned exactly 1 time
+    2094 (0.01%) aligned >1 times
+0.54% overall alignment rate
+
+mp-deep_mag-0241
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460207 (100.00%) aligned 0 times
+    356 (0.00%) aligned exactly 1 time
+    6 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0028
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459813 (100.00%) aligned 0 times
+    756 (0.00%) aligned exactly 1 time
+    0 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0047
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19447161 (99.93%) aligned 0 times
+    13066 (0.07%) aligned exactly 1 time
+    342 (0.00%) aligned >1 times
+0.07% overall alignment rate
+
+mp-deep_mag-0363
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458720 (99.99%) aligned 0 times
+    1832 (0.01%) aligned exactly 1 time
+    17 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0447
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19455692 (99.97%) aligned 0 times
+    4827 (0.02%) aligned exactly 1 time
+    50 (0.00%) aligned >1 times
+0.03% overall alignment rate
+
+mp-deep_mag-0144
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19418837 (99.79%) aligned 0 times
+    41135 (0.21%) aligned exactly 1 time
+    597 (0.00%) aligned >1 times
+0.21% overall alignment rate
+
+mp-deep_mag-0182
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19455660 (99.97%) aligned 0 times
+    4838 (0.02%) aligned exactly 1 time
+    71 (0.00%) aligned >1 times
+0.03% overall alignment rate
+
+mp-deep_mag-0358
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19274606 (99.04%) aligned 0 times
+    177563 (0.91%) aligned exactly 1 time
+    8400 (0.04%) aligned >1 times
+0.96% overall alignment rate
+
+mp-deep_mag-0081
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19455670 (99.97%) aligned 0 times
+    4867 (0.03%) aligned exactly 1 time
+    32 (0.00%) aligned >1 times
+0.03% overall alignment rate
+
+mp-deep_mag-0582
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458807 (99.99%) aligned 0 times
+    1758 (0.01%) aligned exactly 1 time
+    4 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0510
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460175 (100.00%) aligned 0 times
+    394 (0.00%) aligned exactly 1 time
+    0 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0013
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19457122 (99.98%) aligned 0 times
+    3440 (0.02%) aligned exactly 1 time
+    7 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0131
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458800 (99.99%) aligned 0 times
+    1725 (0.01%) aligned exactly 1 time
+    44 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0531
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19414649 (99.76%) aligned 0 times
+    44925 (0.23%) aligned exactly 1 time
+    995 (0.01%) aligned >1 times
+0.24% overall alignment rate
+
+mp-deep_mag-0619
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458917 (99.99%) aligned 0 times
+    1647 (0.01%) aligned exactly 1 time
+    5 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0375
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458808 (99.99%) aligned 0 times
+    1752 (0.01%) aligned exactly 1 time
+    9 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0152
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19442229 (99.91%) aligned 0 times
+    17903 (0.09%) aligned exactly 1 time
+    437 (0.00%) aligned >1 times
+0.09% overall alignment rate
+
+mp-deep_mag-0354
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458200 (99.99%) aligned 0 times
+    2323 (0.01%) aligned exactly 1 time
+    46 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0573
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459214 (99.99%) aligned 0 times
+    1328 (0.01%) aligned exactly 1 time
+    27 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0070
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458140 (99.99%) aligned 0 times
+    2290 (0.01%) aligned exactly 1 time
+    139 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0238
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19455971 (99.98%) aligned 0 times
+    4516 (0.02%) aligned exactly 1 time
+    82 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0470
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460075 (100.00%) aligned 0 times
+    449 (0.00%) aligned exactly 1 time
+    45 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0173
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458783 (99.99%) aligned 0 times
+    1766 (0.01%) aligned exactly 1 time
+    20 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0526
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460197 (100.00%) aligned 0 times
+    368 (0.00%) aligned exactly 1 time
+    4 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0549
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19453066 (99.96%) aligned 0 times
+    7437 (0.04%) aligned exactly 1 time
+    66 (0.00%) aligned >1 times
+0.04% overall alignment rate
+
+mp-deep_mag-0290
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460417 (100.00%) aligned 0 times
+    152 (0.00%) aligned exactly 1 time
+    0 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0149
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19456593 (99.98%) aligned 0 times
+    3969 (0.02%) aligned exactly 1 time
+    7 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0126
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19338645 (99.37%) aligned 0 times
+    117890 (0.61%) aligned exactly 1 time
+    4034 (0.02%) aligned >1 times
+0.63% overall alignment rate
+
+mp-deep_mag-0202
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19423989 (99.81%) aligned 0 times
+    36367 (0.19%) aligned exactly 1 time
+    213 (0.00%) aligned >1 times
+0.19% overall alignment rate
+
+mp-deep_mag-0096
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19446485 (99.93%) aligned 0 times
+    13390 (0.07%) aligned exactly 1 time
+    694 (0.00%) aligned >1 times
+0.07% overall alignment rate
+
+mp-deep_mag-0568
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460451 (100.00%) aligned 0 times
+    118 (0.00%) aligned exactly 1 time
+    0 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0507
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460072 (100.00%) aligned 0 times
+    496 (0.00%) aligned exactly 1 time
+    1 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0320
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19457677 (99.99%) aligned 0 times
+    2866 (0.01%) aligned exactly 1 time
+    26 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0404
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459618 (100.00%) aligned 0 times
+    950 (0.00%) aligned exactly 1 time
+    1 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0223
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458471 (99.99%) aligned 0 times
+    2081 (0.01%) aligned exactly 1 time
+    17 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0496
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459297 (99.99%) aligned 0 times
+    1259 (0.01%) aligned exactly 1 time
+    13 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0195
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19419301 (99.79%) aligned 0 times
+    39619 (0.20%) aligned exactly 1 time
+    1649 (0.01%) aligned >1 times
+0.21% overall alignment rate
+
+mp-deep_mag-0467
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19453788 (99.97%) aligned 0 times
+    6688 (0.03%) aligned exactly 1 time
+    93 (0.00%) aligned >1 times
+0.03% overall alignment rate
+
+mp-deep_mag-0343
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459276 (99.99%) aligned 0 times
+    1289 (0.01%) aligned exactly 1 time
+    4 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0067
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460005 (100.00%) aligned 0 times
+    564 (0.00%) aligned exactly 1 time
+    0 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0564
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19446952 (99.93%) aligned 0 times
+    13490 (0.07%) aligned exactly 1 time
+    127 (0.00%) aligned >1 times
+0.07% overall alignment rate
+
+mp-deep_mag-0008
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459779 (100.00%) aligned 0 times
+    785 (0.00%) aligned exactly 1 time
+    5 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0029
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19455388 (99.97%) aligned 0 times
+    5173 (0.03%) aligned exactly 1 time
+    8 (0.00%) aligned >1 times
+0.03% overall alignment rate
+
+mp-deep_mag-0362
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19451255 (99.95%) aligned 0 times
+    9270 (0.05%) aligned exactly 1 time
+    44 (0.00%) aligned >1 times
+0.05% overall alignment rate
+
+mp-deep_mag-0545
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19455565 (99.97%) aligned 0 times
+    4979 (0.03%) aligned exactly 1 time
+    25 (0.00%) aligned >1 times
+0.03% overall alignment rate
+
+mp-deep_mag-0336
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459954 (100.00%) aligned 0 times
+    613 (0.00%) aligned exactly 1 time
+    2 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0511
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19450104 (99.95%) aligned 0 times
+    10344 (0.05%) aligned exactly 1 time
+    121 (0.00%) aligned >1 times
+0.05% overall alignment rate
+
+mp-deep_mag-0111
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19454560 (99.97%) aligned 0 times
+    5998 (0.03%) aligned exactly 1 time
+    11 (0.00%) aligned >1 times
+0.03% overall alignment rate
+
+mp-deep_mag-0480
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19455613 (99.97%) aligned 0 times
+    4849 (0.02%) aligned exactly 1 time
+    107 (0.00%) aligned >1 times
+0.03% overall alignment rate
+
+mp-deep_mag-0183
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458847 (99.99%) aligned 0 times
+    1720 (0.01%) aligned exactly 1 time
+    2 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0614
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19451160 (99.95%) aligned 0 times
+    9198 (0.05%) aligned exactly 1 time
+    211 (0.00%) aligned >1 times
+0.05% overall alignment rate
+
+mp-deep_mag-0317
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19454634 (99.97%) aligned 0 times
+    5922 (0.03%) aligned exactly 1 time
+    13 (0.00%) aligned >1 times
+0.03% overall alignment rate
+
+mp-deep_mag-0378
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19428208 (99.83%) aligned 0 times
+    32139 (0.17%) aligned exactly 1 time
+    222 (0.00%) aligned >1 times
+0.17% overall alignment rate
+
+mp-deep_mag-0286
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19450046 (99.95%) aligned 0 times
+    10430 (0.05%) aligned exactly 1 time
+    93 (0.00%) aligned >1 times
+0.05% overall alignment rate
+
+mp-deep_mag-0214
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19440579 (99.90%) aligned 0 times
+    19645 (0.10%) aligned exactly 1 time
+    345 (0.00%) aligned >1 times
+0.10% overall alignment rate
+
+mp-deep_mag-0130
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460488 (100.00%) aligned 0 times
+    81 (0.00%) aligned exactly 1 time
+    0 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0153
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19434784 (99.87%) aligned 0 times
+    25675 (0.13%) aligned exactly 1 time
+    110 (0.00%) aligned >1 times
+0.13% overall alignment rate
+
+mp-deep_mag-0218
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459788 (100.00%) aligned 0 times
+    777 (0.00%) aligned exactly 1 time
+    4 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0050
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19456388 (99.98%) aligned 0 times
+    4158 (0.02%) aligned exactly 1 time
+    23 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0553
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19427010 (99.83%) aligned 0 times
+    32780 (0.17%) aligned exactly 1 time
+    779 (0.00%) aligned >1 times
+0.17% overall alignment rate
+
+mp-deep_mag-0239
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19454517 (99.97%) aligned 0 times
+    6020 (0.03%) aligned exactly 1 time
+    32 (0.00%) aligned >1 times
+0.03% overall alignment rate
+
+mp-deep_mag-0471
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19455441 (99.97%) aligned 0 times
+    4954 (0.03%) aligned exactly 1 time
+    174 (0.00%) aligned >1 times
+0.03% overall alignment rate
+
+mp-deep_mag-0572
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19405663 (99.72%) aligned 0 times
+    54613 (0.28%) aligned exactly 1 time
+    293 (0.00%) aligned >1 times
+0.28% overall alignment rate
+
+mp-deep_mag-0355
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19457814 (99.99%) aligned 0 times
+    2747 (0.01%) aligned exactly 1 time
+    8 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0142
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460213 (100.00%) aligned 0 times
+    350 (0.00%) aligned exactly 1 time
+    6 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0441
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19457307 (99.98%) aligned 0 times
+    3252 (0.02%) aligned exactly 1 time
+    10 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0209
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19455398 (99.97%) aligned 0 times
+    5099 (0.03%) aligned exactly 1 time
+    72 (0.00%) aligned >1 times
+0.03% overall alignment rate
+
+mp-deep_mag-0609
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19456124 (99.98%) aligned 0 times
+    4363 (0.02%) aligned exactly 1 time
+    82 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0542
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19442002 (99.90%) aligned 0 times
+    18480 (0.09%) aligned exactly 1 time
+    87 (0.00%) aligned >1 times
+0.10% overall alignment rate
+
+mp-deep_mag-0228
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19441441 (99.90%) aligned 0 times
+    19084 (0.10%) aligned exactly 1 time
+    44 (0.00%) aligned >1 times
+0.10% overall alignment rate
+
+mp-deep_mag-0060
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19455887 (99.98%) aligned 0 times
+    4589 (0.02%) aligned exactly 1 time
+    93 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0344
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19452771 (99.96%) aligned 0 times
+    7654 (0.04%) aligned exactly 1 time
+    144 (0.00%) aligned >1 times
+0.04% overall alignment rate
+
+mp-deep_mag-0592
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19263983 (98.99%) aligned 0 times
+    189465 (0.97%) aligned exactly 1 time
+    7121 (0.04%) aligned >1 times
+1.01% overall alignment rate
+
+mp-deep_mag-0327
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459316 (99.99%) aligned 0 times
+    1244 (0.01%) aligned exactly 1 time
+    9 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0491
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19451145 (99.95%) aligned 0 times
+    9414 (0.05%) aligned exactly 1 time
+    10 (0.00%) aligned >1 times
+0.05% overall alignment rate
+
+mp-deep_mag-0192
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460182 (100.00%) aligned 0 times
+    375 (0.00%) aligned exactly 1 time
+    12 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0605
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460111 (100.00%) aligned 0 times
+    457 (0.00%) aligned exactly 1 time
+    1 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0422
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19391254 (99.64%) aligned 0 times
+    68739 (0.35%) aligned exactly 1 time
+    576 (0.00%) aligned >1 times
+0.36% overall alignment rate
+
+mp-deep_mag-0419
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460205 (100.00%) aligned 0 times
+    364 (0.00%) aligned exactly 1 time
+    0 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0251
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458135 (99.99%) aligned 0 times
+    2425 (0.01%) aligned exactly 1 time
+    9 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0175
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19446457 (99.93%) aligned 0 times
+    13956 (0.07%) aligned exactly 1 time
+    156 (0.00%) aligned >1 times
+0.07% overall alignment rate
+
+mp-deep_mag-0188
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19444840 (99.92%) aligned 0 times
+    15693 (0.08%) aligned exactly 1 time
+    36 (0.00%) aligned >1 times
+0.08% overall alignment rate
+
+mp-deep_mag-0019
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19438750 (99.89%) aligned 0 times
+    21617 (0.11%) aligned exactly 1 time
+    202 (0.00%) aligned >1 times
+0.11% overall alignment rate
+
+mp-deep_mag-0457
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19456247 (99.98%) aligned 0 times
+    4298 (0.02%) aligned exactly 1 time
+    24 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0438
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459121 (99.99%) aligned 0 times
+    1436 (0.01%) aligned exactly 1 time
+    12 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0038
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19455276 (99.97%) aligned 0 times
+    5286 (0.03%) aligned exactly 1 time
+    7 (0.00%) aligned >1 times
+0.03% overall alignment rate
+
+mp-deep_mag-0373
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19448520 (99.94%) aligned 0 times
+    11920 (0.06%) aligned exactly 1 time
+    129 (0.00%) aligned >1 times
+0.06% overall alignment rate
+
+mp-deep_mag-0554
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19455616 (99.97%) aligned 0 times
+    4937 (0.03%) aligned exactly 1 time
+    16 (0.00%) aligned >1 times
+0.03% overall alignment rate
+
+mp-deep_mag-0137
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19439067 (99.89%) aligned 0 times
+    21303 (0.11%) aligned exactly 1 time
+    199 (0.00%) aligned >1 times
+0.11% overall alignment rate
+
+mp-deep_mag-0434
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19448446 (99.94%) aligned 0 times
+    12063 (0.06%) aligned exactly 1 time
+    60 (0.00%) aligned >1 times
+0.06% overall alignment rate
+
+mp-deep_mag-0213
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19457238 (99.98%) aligned 0 times
+    3314 (0.02%) aligned exactly 1 time
+    17 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0584
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19448614 (99.94%) aligned 0 times
+    11384 (0.06%) aligned exactly 1 time
+    571 (0.00%) aligned >1 times
+0.06% overall alignment rate
+
+mp-deep_mag-0015
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19436798 (99.88%) aligned 0 times
+    23408 (0.12%) aligned exactly 1 time
+    363 (0.00%) aligned >1 times
+0.12% overall alignment rate
+
+mp-deep_mag-0184
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19438545 (99.89%) aligned 0 times
+    21575 (0.11%) aligned exactly 1 time
+    449 (0.00%) aligned >1 times
+0.11% overall alignment rate
+
+mp-deep_mag-0608
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19421671 (99.80%) aligned 0 times
+    38297 (0.20%) aligned exactly 1 time
+    601 (0.00%) aligned >1 times
+0.20% overall alignment rate
+
+mp-deep_mag-0399
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458211 (99.99%) aligned 0 times
+    2324 (0.01%) aligned exactly 1 time
+    34 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0040
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19437882 (99.88%) aligned 0 times
+    22465 (0.12%) aligned exactly 1 time
+    222 (0.00%) aligned >1 times
+0.12% overall alignment rate
+
+mp-deep_mag-0267
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19424324 (99.81%) aligned 0 times
+    35970 (0.18%) aligned exactly 1 time
+    275 (0.00%) aligned >1 times
+0.19% overall alignment rate
+
+mp-deep_mag-0208
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19446506 (99.93%) aligned 0 times
+    13813 (0.07%) aligned exactly 1 time
+    250 (0.00%) aligned >1 times
+0.07% overall alignment rate
+
+mp-deep_mag-0345
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19410641 (99.74%) aligned 0 times
+    49711 (0.26%) aligned exactly 1 time
+    217 (0.00%) aligned >1 times
+0.26% overall alignment rate
+
+mp-deep_mag-0562
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19378493 (99.58%) aligned 0 times
+    81531 (0.42%) aligned exactly 1 time
+    545 (0.00%) aligned >1 times
+0.42% overall alignment rate
+
+mp-deep_mag-0229
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19439400 (99.89%) aligned 0 times
+    20920 (0.11%) aligned exactly 1 time
+    249 (0.00%) aligned >1 times
+0.11% overall alignment rate
+
+mp-deep_mag-0246
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460531 (100.00%) aligned 0 times
+    38 (0.00%) aligned exactly 1 time
+    0 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0461
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458861 (99.99%) aligned 0 times
+    1662 (0.01%) aligned exactly 1 time
+    46 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0162
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459821 (100.00%) aligned 0 times
+    747 (0.00%) aligned exactly 1 time
+    1 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0101
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19450520 (99.95%) aligned 0 times
+    9685 (0.05%) aligned exactly 1 time
+    364 (0.00%) aligned >1 times
+0.05% overall alignment rate
+
+mp-deep_mag-0193
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19431919 (99.85%) aligned 0 times
+    28214 (0.14%) aligned exactly 1 time
+    436 (0.00%) aligned >1 times
+0.15% overall alignment rate
+
+mp-deep_mag-0490
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19438105 (99.88%) aligned 0 times
+    21799 (0.11%) aligned exactly 1 time
+    665 (0.00%) aligned >1 times
+0.12% overall alignment rate
+
+mp-deep_mag-0349
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19437059 (99.88%) aligned 0 times
+    23254 (0.12%) aligned exactly 1 time
+    256 (0.00%) aligned >1 times
+0.12% overall alignment rate
+
+mp-deep_mag-0593
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19435849 (99.87%) aligned 0 times
+    24633 (0.13%) aligned exactly 1 time
+    87 (0.00%) aligned >1 times
+0.13% overall alignment rate
+
+mp-deep_mag-0002
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19312577 (99.24%) aligned 0 times
+    138061 (0.71%) aligned exactly 1 time
+    9931 (0.05%) aligned >1 times
+0.76% overall alignment rate
+
+mp-deep_mag-0296
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19445009 (99.92%) aligned 0 times
+    15377 (0.08%) aligned exactly 1 time
+    183 (0.00%) aligned >1 times
+0.08% overall alignment rate
+
+mp-deep_mag-0023
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19441619 (99.90%) aligned 0 times
+    18629 (0.10%) aligned exactly 1 time
+    321 (0.00%) aligned >1 times
+0.10% overall alignment rate
+
+mp-deep_mag-0307
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458897 (99.99%) aligned 0 times
+    1584 (0.01%) aligned exactly 1 time
+    88 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0604
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19455717 (99.98%) aligned 0 times
+    4846 (0.02%) aligned exactly 1 time
+    6 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0368
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19454223 (99.97%) aligned 0 times
+    6298 (0.03%) aligned exactly 1 time
+    48 (0.00%) aligned >1 times
+0.03% overall alignment rate
+
+mp-deep_mag-0589
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19406851 (99.72%) aligned 0 times
+    51244 (0.26%) aligned exactly 1 time
+    2474 (0.01%) aligned >1 times
+0.28% overall alignment rate
+
+mp-deep_mag-0077
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459137 (99.99%) aligned 0 times
+    1421 (0.01%) aligned exactly 1 time
+    11 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0353
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458666 (99.99%) aligned 0 times
+    1849 (0.01%) aligned exactly 1 time
+    54 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0018
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458815 (99.99%) aligned 0 times
+    1725 (0.01%) aligned exactly 1 time
+    29 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0477
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460267 (100.00%) aligned 0 times
+    297 (0.00%) aligned exactly 1 time
+    5 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0250
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19455680 (99.97%) aligned 0 times
+    4873 (0.03%) aligned exactly 1 time
+    16 (0.00%) aligned >1 times
+0.03% overall alignment rate
+
+mp-deep_mag-0039
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19456140 (99.98%) aligned 0 times
+    4295 (0.02%) aligned exactly 1 time
+    134 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0555
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19435717 (99.87%) aligned 0 times
+    24306 (0.12%) aligned exactly 1 time
+    546 (0.00%) aligned >1 times
+0.13% overall alignment rate
+
+mp-deep_mag-0155
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459808 (100.00%) aligned 0 times
+    760 (0.00%) aligned exactly 1 time
+    1 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0439
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19450165 (99.95%) aligned 0 times
+    10354 (0.05%) aligned exactly 1 time
+    50 (0.00%) aligned >1 times
+0.05% overall alignment rate
+
+mp-deep_mag-0280
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19450237 (99.95%) aligned 0 times
+    10250 (0.05%) aligned exactly 1 time
+    82 (0.00%) aligned >1 times
+0.05% overall alignment rate
+
+mp-deep_mag-0212
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459899 (100.00%) aligned 0 times
+    669 (0.00%) aligned exactly 1 time
+    1 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0435
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19453064 (99.96%) aligned 0 times
+    7409 (0.04%) aligned exactly 1 time
+    96 (0.00%) aligned >1 times
+0.04% overall alignment rate
+
+mp-deep_mag-0612
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19433484 (99.86%) aligned 0 times
+    26728 (0.14%) aligned exactly 1 time
+    357 (0.00%) aligned >1 times
+0.14% overall alignment rate
+
+mp-deep_mag-0035
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460208 (100.00%) aligned 0 times
+    349 (0.00%) aligned exactly 1 time
+    12 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0559
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19457938 (99.99%) aligned 0 times
+    2619 (0.01%) aligned exactly 1 time
+    12 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0383
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19438251 (99.89%) aligned 0 times
+    21806 (0.11%) aligned exactly 1 time
+    512 (0.00%) aligned >1 times
+0.11% overall alignment rate
+
+mp-deep_mag-0233
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19456931 (99.98%) aligned 0 times
+    3631 (0.02%) aligned exactly 1 time
+    7 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0185
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19407215 (99.73%) aligned 0 times
+    52504 (0.27%) aligned exactly 1 time
+    850 (0.00%) aligned >1 times
+0.27% overall alignment rate
+
+mp-deep_mag-0178
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460154 (100.00%) aligned 0 times
+    413 (0.00%) aligned exactly 1 time
+    2 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0578
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19457117 (99.98%) aligned 0 times
+    3418 (0.02%) aligned exactly 1 time
+    34 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0585
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19457780 (99.99%) aligned 0 times
+    2784 (0.01%) aligned exactly 1 time
+    5 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0330
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458222 (99.99%) aligned 0 times
+    2332 (0.01%) aligned exactly 1 time
+    15 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0161
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19448304 (99.94%) aligned 0 times
+    12136 (0.06%) aligned exactly 1 time
+    129 (0.00%) aligned >1 times
+0.06% overall alignment rate
+
+mp-deep_mag-0329
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19445699 (99.92%) aligned 0 times
+    14633 (0.08%) aligned exactly 1 time
+    237 (0.00%) aligned >1 times
+0.08% overall alignment rate
+
+mp-deep_mag-0140
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19444978 (99.92%) aligned 0 times
+    15498 (0.08%) aligned exactly 1 time
+    93 (0.00%) aligned >1 times
+0.08% overall alignment rate
+
+mp-deep_mag-0367
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19408646 (99.73%) aligned 0 times
+    51366 (0.26%) aligned exactly 1 time
+    557 (0.00%) aligned >1 times
+0.27% overall alignment rate
+
+mp-deep_mag-0020
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460189 (100.00%) aligned 0 times
+    371 (0.00%) aligned exactly 1 time
+    9 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0523
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19432038 (99.85%) aligned 0 times
+    27464 (0.14%) aligned exactly 1 time
+    1067 (0.01%) aligned >1 times
+0.15% overall alignment rate
+
+mp-deep_mag-0607
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19457673 (99.99%) aligned 0 times
+    2894 (0.01%) aligned exactly 1 time
+    2 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0304
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19447598 (99.93%) aligned 0 times
+    12586 (0.06%) aligned exactly 1 time
+    385 (0.00%) aligned >1 times
+0.07% overall alignment rate
+
+mp-deep_mag-0123
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460336 (100.00%) aligned 0 times
+    233 (0.00%) aligned exactly 1 time
+    0 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0420
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19453165 (99.96%) aligned 0 times
+    7381 (0.04%) aligned exactly 1 time
+    23 (0.00%) aligned >1 times
+0.04% overall alignment rate
+
+mp-deep_mag-0295
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19313657 (99.25%) aligned 0 times
+    145894 (0.75%) aligned exactly 1 time
+    1018 (0.01%) aligned >1 times
+0.75% overall alignment rate
+
+mp-deep_mag-0502
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459461 (99.99%) aligned 0 times
+    1105 (0.01%) aligned exactly 1 time
+    3 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0325
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19442251 (99.91%) aligned 0 times
+    18038 (0.09%) aligned exactly 1 time
+    280 (0.00%) aligned >1 times
+0.09% overall alignment rate
+
+mp-deep_mag-0590
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458094 (99.99%) aligned 0 times
+    2425 (0.01%) aligned exactly 1 time
+    50 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0093
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459183 (99.99%) aligned 0 times
+    1372 (0.01%) aligned exactly 1 time
+    14 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0102
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458315 (99.99%) aligned 0 times
+    2233 (0.01%) aligned exactly 1 time
+    21 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0401
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19428422 (99.83%) aligned 0 times
+    30625 (0.16%) aligned exactly 1 time
+    1522 (0.01%) aligned >1 times
+0.17% overall alignment rate
+
+mp-deep_mag-0226
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458470 (99.99%) aligned 0 times
+    2092 (0.01%) aligned exactly 1 time
+    7 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0156
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19453962 (99.97%) aligned 0 times
+    6467 (0.03%) aligned exactly 1 time
+    140 (0.00%) aligned >1 times
+0.03% overall alignment rate
+
+mp-deep_mag-0455
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19436177 (99.87%) aligned 0 times
+    24186 (0.12%) aligned exactly 1 time
+    206 (0.00%) aligned >1 times
+0.13% overall alignment rate
+
+mp-deep_mag-0055
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19454255 (99.97%) aligned 0 times
+    5853 (0.03%) aligned exactly 1 time
+    461 (0.00%) aligned >1 times
+0.03% overall alignment rate
+
+mp-deep_mag-0539
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19441675 (99.90%) aligned 0 times
+    18427 (0.09%) aligned exactly 1 time
+    467 (0.00%) aligned >1 times
+0.10% overall alignment rate
+
+mp-deep_mag-0489
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19440694 (99.90%) aligned 0 times
+    19372 (0.10%) aligned exactly 1 time
+    503 (0.00%) aligned >1 times
+0.10% overall alignment rate
+
+mp-deep_mag-0177
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19440416 (99.90%) aligned 0 times
+    19981 (0.10%) aligned exactly 1 time
+    172 (0.00%) aligned >1 times
+0.10% overall alignment rate
+
+mp-deep_mag-0474
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458765 (99.99%) aligned 0 times
+    1803 (0.01%) aligned exactly 1 time
+    1 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0118
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19439173 (99.89%) aligned 0 times
+    21234 (0.11%) aligned exactly 1 time
+    162 (0.00%) aligned >1 times
+0.11% overall alignment rate
+
+mp-deep_mag-0518
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19445667 (99.92%) aligned 0 times
+    14730 (0.08%) aligned exactly 1 time
+    172 (0.00%) aligned >1 times
+0.08% overall alignment rate
+
+mp-deep_mag-0577
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459311 (99.99%) aligned 0 times
+    1213 (0.01%) aligned exactly 1 time
+    45 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0514
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459979 (100.00%) aligned 0 times
+    589 (0.00%) aligned exactly 1 time
+    1 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0586
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19456896 (99.98%) aligned 0 times
+    3605 (0.02%) aligned exactly 1 time
+    68 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0078
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19451052 (99.95%) aligned 0 times
+    8962 (0.05%) aligned exactly 1 time
+    555 (0.00%) aligned >1 times
+0.05% overall alignment rate
+
+mp-deep_mag-0485
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460513 (100.00%) aligned 0 times
+    55 (0.00%) aligned exactly 1 time
+    1 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0478
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19437707 (99.88%) aligned 0 times
+    22543 (0.12%) aligned exactly 1 time
+    319 (0.00%) aligned >1 times
+0.12% overall alignment rate
+
+mp-deep_mag-0186
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19434856 (99.87%) aligned 0 times
+    25298 (0.13%) aligned exactly 1 time
+    415 (0.00%) aligned >1 times
+0.13% overall alignment rate
+
+mp-deep_mag-0380
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19455329 (99.97%) aligned 0 times
+    5206 (0.03%) aligned exactly 1 time
+    34 (0.00%) aligned >1 times
+0.03% overall alignment rate
+
+mp-deep_mag-0611
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19450701 (99.95%) aligned 0 times
+    9622 (0.05%) aligned exactly 1 time
+    246 (0.00%) aligned >1 times
+0.05% overall alignment rate
+
+mp-deep_mag-0036
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19397992 (99.68%) aligned 0 times
+    60197 (0.31%) aligned exactly 1 time
+    2380 (0.01%) aligned >1 times
+0.32% overall alignment rate
+
+mp-deep_mag-0535
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19446567 (99.93%) aligned 0 times
+    13927 (0.07%) aligned exactly 1 time
+    75 (0.00%) aligned >1 times
+0.07% overall alignment rate
+
+mp-deep_mag-0459
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19446554 (99.93%) aligned 0 times
+    13736 (0.07%) aligned exactly 1 time
+    279 (0.00%) aligned >1 times
+0.07% overall alignment rate
+
+mp-deep_mag-0283
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459747 (100.00%) aligned 0 times
+    788 (0.00%) aligned exactly 1 time
+    34 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0328
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19455300 (99.97%) aligned 0 times
+    5239 (0.03%) aligned exactly 1 time
+    30 (0.00%) aligned >1 times
+0.03% overall alignment rate
+
+mp-deep_mag-0560
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460272 (100.00%) aligned 0 times
+    289 (0.00%) aligned exactly 1 time
+    8 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0347
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19456109 (99.98%) aligned 0 times
+    4429 (0.02%) aligned exactly 1 time
+    31 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0042
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460194 (100.00%) aligned 0 times
+    371 (0.00%) aligned exactly 1 time
+    4 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0366
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19456267 (99.98%) aligned 0 times
+    4291 (0.02%) aligned exactly 1 time
+    11 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0309
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458606 (99.99%) aligned 0 times
+    1924 (0.01%) aligned exactly 1 time
+    39 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0265
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19441879 (99.90%) aligned 0 times
+    18416 (0.09%) aligned exactly 1 time
+    274 (0.00%) aligned >1 times
+0.10% overall alignment rate
+
+mp-deep_mag-0298
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19423290 (99.81%) aligned 0 times
+    36412 (0.19%) aligned exactly 1 time
+    867 (0.00%) aligned >1 times
+0.19% overall alignment rate
+
+mp-deep_mag-0421
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19431796 (99.85%) aligned 0 times
+    28520 (0.15%) aligned exactly 1 time
+    253 (0.00%) aligned >1 times
+0.15% overall alignment rate
+
+mp-deep_mag-0122
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19452226 (99.96%) aligned 0 times
+    8151 (0.04%) aligned exactly 1 time
+    192 (0.00%) aligned >1 times
+0.04% overall alignment rate
+
+mp-deep_mag-0269
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    18631584 (95.74%) aligned 0 times
+    822408 (4.23%) aligned exactly 1 time
+    6577 (0.03%) aligned >1 times
+4.26% overall alignment rate
+
+mp-deep_mag-0294
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458252 (99.99%) aligned 0 times
+    2122 (0.01%) aligned exactly 1 time
+    195 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0397
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19445878 (99.92%) aligned 0 times
+    13557 (0.07%) aligned exactly 1 time
+    1134 (0.01%) aligned >1 times
+0.08% overall alignment rate
+
+mp-deep_mag-0305
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19418826 (99.79%) aligned 0 times
+    40976 (0.21%) aligned exactly 1 time
+    767 (0.00%) aligned >1 times
+0.21% overall alignment rate
+
+mp-deep_mag-0606
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19456499 (99.98%) aligned 0 times
+    4042 (0.02%) aligned exactly 1 time
+    28 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0021
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19447399 (99.93%) aligned 0 times
+    13152 (0.07%) aligned exactly 1 time
+    18 (0.00%) aligned >1 times
+0.07% overall alignment rate
+
+mp-deep_mag-0191
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459406 (99.99%) aligned 0 times
+    1159 (0.01%) aligned exactly 1 time
+    4 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0400
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19407118 (99.73%) aligned 0 times
+    52233 (0.27%) aligned exactly 1 time
+    1218 (0.01%) aligned >1 times
+0.27% overall alignment rate
+
+mp-deep_mag-0103
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459107 (99.99%) aligned 0 times
+    1453 (0.01%) aligned exactly 1 time
+    9 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0503
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458312 (99.99%) aligned 0 times
+    2248 (0.01%) aligned exactly 1 time
+    9 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0591
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19416626 (99.77%) aligned 0 times
+    43112 (0.22%) aligned exactly 1 time
+    831 (0.00%) aligned >1 times
+0.23% overall alignment rate
+
+mp-deep_mag-0557
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19438509 (99.89%) aligned 0 times
+    21826 (0.11%) aligned exactly 1 time
+    234 (0.00%) aligned >1 times
+0.11% overall alignment rate
+
+mp-deep_mag-0273
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460388 (100.00%) aligned 0 times
+    180 (0.00%) aligned exactly 1 time
+    1 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0519
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19439337 (99.89%) aligned 0 times
+    20853 (0.11%) aligned exactly 1 time
+    379 (0.00%) aligned >1 times
+0.11% overall alignment rate
+
+mp-deep_mag-0351
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19422150 (99.80%) aligned 0 times
+    37155 (0.19%) aligned exactly 1 time
+    1264 (0.01%) aligned >1 times
+0.20% overall alignment rate
+
+mp-deep_mag-0576
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460362 (100.00%) aligned 0 times
+    200 (0.00%) aligned exactly 1 time
+    7 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0075
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19448268 (99.94%) aligned 0 times
+    12271 (0.06%) aligned exactly 1 time
+    30 (0.00%) aligned >1 times
+0.06% overall alignment rate
+
+mp-deep_mag-0176
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19390753 (99.64%) aligned 0 times
+    66282 (0.34%) aligned exactly 1 time
+    3534 (0.02%) aligned >1 times
+0.36% overall alignment rate
+
+mp-deep_mag-0488
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19457288 (99.98%) aligned 0 times
+    3255 (0.02%) aligned exactly 1 time
+    26 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0484
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459472 (99.99%) aligned 0 times
+    1097 (0.01%) aligned exactly 1 time
+    0 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0416
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19451445 (99.95%) aligned 0 times
+    9087 (0.05%) aligned exactly 1 time
+    37 (0.00%) aligned >1 times
+0.05% overall alignment rate
+
+mp-deep_mag-0231
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19449428 (99.94%) aligned 0 times
+    11127 (0.06%) aligned exactly 1 time
+    14 (0.00%) aligned >1 times
+0.06% overall alignment rate
+
+mp-deep_mag-0084
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19449369 (99.94%) aligned 0 times
+    11144 (0.06%) aligned exactly 1 time
+    56 (0.00%) aligned >1 times
+0.06% overall alignment rate
+
+mp-deep_mag-0437
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19457227 (99.98%) aligned 0 times
+    3290 (0.02%) aligned exactly 1 time
+    52 (0.00%) aligned >1 times
+0.02% overall alignment rate
+
+mp-deep_mag-0134
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19450617 (99.95%) aligned 0 times
+    9859 (0.05%) aligned exactly 1 time
+    93 (0.00%) aligned >1 times
+0.05% overall alignment rate
+
+mp-deep_mag-0210
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19447410 (99.93%) aligned 0 times
+    12676 (0.07%) aligned exactly 1 time
+    483 (0.00%) aligned >1 times
+0.07% overall alignment rate
+
+mp-deep_mag-0282
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19459445 (99.99%) aligned 0 times
+    1120 (0.01%) aligned exactly 1 time
+    4 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0058
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19448415 (99.94%) aligned 0 times
+    12086 (0.06%) aligned exactly 1 time
+    68 (0.00%) aligned >1 times
+0.06% overall alignment rate
+
+mp-deep_mag-0534
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19460210 (100.00%) aligned 0 times
+    355 (0.00%) aligned exactly 1 time
+    4 (0.00%) aligned >1 times
+0.00% overall alignment rate
+
+mp-deep_mag-0037
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19458718 (99.99%) aligned 0 times
+    1824 (0.01%) aligned exactly 1 time
+    27 (0.00%) aligned >1 times
+0.01% overall alignment rate
+
+mp-deep_mag-0610
+19460569 reads; of these:
+  19460569 (100.00%) were unpaired; of these:
+    19454591 (99.97%) aligned 0 times
+    5917 (0.03%) aligned exactly 1 time
+    61 (0.00%) aligned >1 times
+0.03% overall alignment rate
+

@@ -4,19 +4,18 @@ g(DNA_tara, RNA_tara, DNA_RNA_tara, depth_comparison) %=% init_tara()
 options(scipen=10000)
 DNA_RNA_tara <- DNA_RNA_tara %>% filter(Layer_DNA != "MIX")
 
-p1 <- DNA_RNA_tara %>%
+pTrans <- DNA_RNA_tara %>%
   ggplot(aes(x=Layer_DNA, y=trans_exp_rate, fill = mean_dna_trans)) +
   geom_boxplot() + 
   labs(y = "ORF Expression Ratio") + 
   theme_classic() + 
   theme(axis.title.x=element_blank(),
-        axis.ticks = element_blank()) +
+        axis.ticks.x = element_blank()) +
   coord_cartesian(ylim = c(0, 4)) +
   stat_summary(fun.data = boxplot.give.n, geom = "text", position=position_nudge(x = 0, y = -0.1)) +
   scale_fill_gradient(limits = c(0, max(DNA_RNA_tara$mean_dna_trans)), 
                       low="white",
                       high="dodgerblue3", 
-                      # name = "mean % of\nTransposase\nDNA reads at\neach depth\n", 
                       name = "Mean DNA\nabundance of\ntransposase\n",
                       breaks = c(0,
                                  # max(DNA_RNA_tara$mean_dna_trans)/2,
@@ -28,19 +27,18 @@ p1 <- DNA_RNA_tara %>%
                                  paste("SRF ", round(DNA_RNA_tara[DNA_RNA_tara$Layer_DNA == "SRF", "mean_dna_trans"][[1,1]]*100, 3), "%", sep = ""),
                                  paste("DCM ", round(DNA_RNA_tara[DNA_RNA_tara$Layer_DNA == "DCM", "mean_dna_trans"][[1,1]]*100, 3), "%", sep = ""), 
                                  paste("MES ", round(DNA_RNA_tara[DNA_RNA_tara$Layer_DNA == "MES", "mean_dna_trans"][[1,1]]*100, 3), "%", sep = ""))) + 
+  scale_y_continuous(labels = scales::number_format(accuracy = 0.1)) +
   guides(fill = guide_colourbar(barwidth = 0.6, barheight = 8, 
                                 ticks.linewidth = 3, ticks.colour = "black")) 
 
 
-p2 <- DNA_RNA_tara %>% 
+pBiofilm <- DNA_RNA_tara %>% 
   ggplot(aes(x=Layer_DNA, y=biofilm_exp_rate, fill = mean_dna_biofilm)) +
   geom_boxplot() + 
-  labs(y = "ORF Expression Ratio") + 
+  labs(y = "ORF Expression Ratio\n(% RNA reads / % DNA reads)") + 
   theme_classic() + 
-  theme(#axis.title.y=element_blank(), axis.text.y=element_blank(), 
-    # axis.line=element_blank(),
-    axis.ticks = element_blank(),
-    axis.title.x=element_blank()) +
+  theme(axis.title.x=element_blank(),
+        axis.ticks.x = element_blank()) +
   coord_cartesian(ylim = c(0, 4)) +
   # stat_summary(fun.data = boxplot.give.n, geom = "text") +
   scale_fill_gradient(limits = c(0, max(DNA_RNA_tara$mean_dna_biofilm)), 
@@ -60,16 +58,16 @@ p2 <- DNA_RNA_tara %>%
   stat_compare_means(comparisons = list(c("DCM","MES"), c("SRF","MES")),
                      label = "p.signif",
                      label.y = c(3.3, 3.7)) + 
+  scale_y_continuous(labels = scales::number_format(accuracy = 0.1)) +
   guides(fill = guide_colourbar(barwidth = 0.6, barheight = 8, 
                                 ticks.linewidth = 3, ticks.colour = "black")) 
 
-p3 <- DNA_RNA_tara %>% 
+pDefense <- DNA_RNA_tara %>% 
   ggplot(aes(x=Layer_DNA, y=defense_exp_rate, fill = mean_dna_defense)) +
   geom_boxplot() + 
-  labs(y = "Expression Ratio  (RNA/DNA reads %)") +
+  labs(y = "ORF Expression Ratio") +
   theme_classic() +
-  theme(# axis.title.y=element_blank(), 
-        axis.ticks = element_blank(),
+  theme(axis.ticks.x = element_blank(),
         axis.title.x=element_blank()) +
   stat_compare_means(comparisons = list(c("DCM","MES"), c("SRF","MES")),
                      label.y = c(1.1, 1.25),
@@ -102,8 +100,8 @@ p3 <- DNA_RNA_tara %>%
 #theme(plot.margin = margin(r=1, unit = "cm", t=1, l=1, b=1))
 
 ggarrange(
-  ggarrange(pB, p3, labels = c("A", "   B"), widths = c(0.55, 0.45), ncol =2),
-  ggarrange(p1, p2, labels = c("C", "D"), widths = c(0.5, 0.5), ncol =2),
+  ggarrange(pCassette, pDefense, labels = c("A", "C"), widths = c(0.55, 0.47), ncol =2),
+  ggarrange(pBiofilm, pTrans, labels = c("B", "D"), widths = c(0.55, 0.47), ncol =2),
   nrow = 2
 )
 
