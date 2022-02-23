@@ -94,6 +94,15 @@ init_individual_metagenomes <- function(){
   return(list(all))
 }
 
+init_mala_cov <- function(){
+  init_env()
+  mala_cov <- read_csv("data/Malaspina-transposase-cov.csv")
+  mala_cov$size <- factor(mala_cov$size)
+  mala_cov$log_dna_trans <- log10(mala_cov$prop)
+  mala_cov$Layer_DNA <- "Malaspina"
+  return(mala_cov)
+}
+
 init_bins <- function(){
   init_env()
   c <- 0.0000000001 # for log(0)

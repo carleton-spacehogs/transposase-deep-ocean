@@ -1,6 +1,7 @@
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
 source("./init_share.R")
 g(DNA_tara, RNA_tara, DNA_RNA_tara, depth_comparison) %=% init_tara()
+mala_cov <- init_mala_cov()
 
 scale <- c(-2, -2.5, -3, -3.5, -4, -4.5)
 # log_scale <- round(10^scale, digits = 5)
@@ -8,41 +9,36 @@ percent_scale <- c("1.00%", "0.316%", "0.100%", "0.032%", "0.010%", "0.003%")
 colors <- c("sky blue", "steelblue","gray","blue")
 color_breaks <- c('SRF','DCM','MIX','MES')
 
-p1 <- DNA_tara %>% 
+# a fake upper size to conform with tara Ocean data
+mala_cov$upper_size_dna <- ifelse(mala_cov$size == "0.2", "1.6", "3")
+sel_col <- c("Layer_DNA","log_dna_trans","upper_size_dna")
+to_graph <- rbind(mala_cov[,sel_col],
+                  DNA_tara[,sel_col]%>%filter(Layer_DNA != "MIX"))
+# repaired the fake upper size fraction
+to_graph$size_fraction <- ifelse(to_graph$upper_size_dna == "1.6", "planktonic", "particle-associated")
+to_graph$Layer_DNA <- factor(to_graph$Layer_DNA, levels = c("SRF","DCM","MES","Malaspina"))
+
+counts = to_graph %>% group_by(size_fraction, Layer_DNA) %>% tally
+
+to_graph %>% 
   filter(Layer_DNA != "MIX") %>%
-  ggplot(aes(x = Depth, y = log_dna_trans)) +
+  ggplot(aes(x=Layer_DNA, y=log_dna_trans, fill=size_fraction)) + 
+  geom_boxplot(varwidth = TRUE, outlier.alpha = 0.5) +
   theme_classic() +
-  scale_y_continuous(breaks = scale, labels = percent_scale, limits=c(-4.5, -2)) + 
-  ylab("% reads mapped to transposases") +
-  scale_x_continuous(trans='log10') + xlab("Depth (m)") +
-  geom_jitter(aes(color = Layer_DNA), width = 0.05) +
-  geom_smooth(method = "lm", se = F) +
-  scale_color_manual(breaks=color_breaks, 
-                     values=colors) + 
-  labs(color = "Tara Oceans metagenomes") +
-  theme(legend.position = c(0.4, 0.8),
+  ylab("% reads mapped to transposase ORFs") +
+  xlab("Depth") +
+  scale_y_continuous(breaks = scale, labels = percent_scale, limits=c(-4.5, -2)) +
+  geom_text(data=counts, aes(label=n, y=-2.27), position=position_dodge(0.6)) +
+  scale_x_discrete(labels=c("SRF" = "SRF\n(depth < 10 m)", 
+                            "DCM" = "DCM\n(17 - 120 m)",
+                            "MES" = "MES\n(250 - 1000 m)",
+                            "Malaspina" = "Malaspina\n(2400 - 4000 m)")) +
+  guides(fill = guide_legend(title = "Metagenome size fraction:")) + # reverse = TRUE
+  theme(legend.position = c(0.73, 0.18),
+        # axis.title.x=element_blank(),
         legend.background = element_rect(fill="transparent",color="transparent"))
 
-
-mala_cov <- read_csv("data/Malaspina-transposase-cov.csv")
-mala_cov$size <- factor(mala_cov$size)
-mala_cov$log_prop <- log10(mala_cov$prop)
-p2 <- mala_cov %>% 
-  ggplot(aes(x=size, y=log_prop)) +
-  geom_boxplot(color = "dark gray", fill = "#00008B") + # outlier.alpha = 0.3, 
-  theme_classic() +
-  xlab("size fraction (\u03BCm)") +
-  scale_x_discrete(labels=c("0.2" = "0.2-0.8", "0.8" = "0.8-5")) +
-  ylab("") +
-  stat_summary(fun.data = boxplot.give.n, geom = "text", position=position_nudge(x = 0, y = -0.33)) + 
-  stat_compare_means(comparisons = list(c("0.2","0.8")), method = "t.test", 
-                     tip.length = 0.01, label.y = c(-2.3)) + 
-  annotate(geom="text", x=1.5, y=-3.8, label="Malaspina\nmetagenomes\n(2400-4000m)", color="#00008B") +
-  scale_y_continuous(breaks = scale, labels = percent_scale, limits=c(-4.5, -2)) 
-  # theme(axis.title.y=element_blank())
-
-ggarrange(p1, p2, labels = c("A", "B"), ncol = 2, nrow = 1, widths = c(0.6, 0.4))
-ggsave("depth_size_fraction_trans_coor.png", plot = last_plot())
+ggsave("depth_size_fraction_trans_coor2.png", plot = last_plot())
 
 
 
