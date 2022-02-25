@@ -7,31 +7,42 @@ scale <- c(-2, -2.5, -3, -3.5, -4, -4.5)
 # log_scale <- round(10^scale, digits = 5)
 percent_scale <- c("1.00%", "0.316%", "0.100%", "0.032%", "0.010%", "0.003%")
 
-mala_cov$size_fraction <- ifelse(mala_cov$lower_filter_size == "0.2", "planktonic", "particle-associated")
-DNA_tara$size_fraction <- ifelse(DNA_tara$upper_size_dna == "1.6", "planktonic", "particle-associated")
+mala_cov$size_fraction <- ifelse(mala_cov$lower_filter_size == "0.2", "planktonic", "particle")
+DNA_tara$size_fraction <- ifelse(DNA_tara$upper_size_dna == "1.6", "planktonic", "particle")
 
 sel_col <- c("Layer_DNA","log_dna_trans","size_fraction")
 to_graph <- rbind(mala_cov[,sel_col], DNA_tara[,sel_col]%>%filter(Layer_DNA != "MIX"))
 to_graph$Layer_DNA <- factor(to_graph$Layer_DNA, levels = c("SRF","DCM","MES","Malaspina"))
 
 counts = to_graph %>% group_by(size_fraction, Layer_DNA) %>% tally
-
+# generate figure 1
 to_graph %>% 
   filter(Layer_DNA != "MIX") %>%
-  ggplot(aes(x=Layer_DNA, y=log_dna_trans, fill=size_fraction)) + 
+  ggplot(aes(x=fct_rev(Layer_DNA), y=log_dna_trans, fill=fct_rev(size_fraction))) + 
+  geom_rect(aes(xmin = 0.5, xmax = 1.5, ymin = -4.5, ymax = -2), fill = "#57C1FF", alpha = 0.1) +
+  geom_rect(aes(xmin = 1.5, xmax = 4.5, ymin = -4.5, ymax = -2), fill = "#A9E6FF", alpha = 0.1) +
   geom_boxplot(varwidth = TRUE, outlier.alpha = 0.5) +
   theme_classic() +
   ylab("% reads mapped to transposase ORFs") +
   xlab("Depth") +
   scale_y_continuous(breaks = scale, labels = percent_scale, limits=c(-4.5, -2)) +
-  geom_text(data=counts, aes(label=n, y=-2.27), position=position_dodge(0.6)) +
+  geom_text(data=counts, aes(label=n, y=-2.33), position=position_dodge(0.6)) +
   scale_x_discrete(labels=c("SRF" = "SRF\n(depth < 10 m)", 
                             "DCM" = "DCM\n(17 - 120 m)",
                             "MES" = "MES\n(250 - 1000 m)",
-                            "Malaspina" = "Malaspina\n(2400 - 4000 m)")) + 
-  scale_fill_manual(values=c("orange","green"))+
-  guides(fill = guide_legend(title = "Metagenome size fraction:")) + # reverse = TRUE
-  theme(legend.position = c(0.73, 0.18),
+                            "Malaspina" = "BAT\n(2400 - 4000 m)")) + 
+  coord_flip() +
+  scale_fill_manual(values=c("green","orange"))+
+  guides(fill = guide_legend(title = "Size fraction", reverse = TRUE)) +
+  annotate(geom="text", x=2.25, y=-4.1, 
+           label="italic(Tara)~Oceans", parse=TRUE, color="blue") +
+  annotate(geom="text", x=2, y=-4.1, 
+           label="metagenomes", color="blue") +
+  annotate(geom="text", x=1.15, y=-4.1, 
+           label="Malaspina", color="dark blue") +
+  annotate(geom="text", x=0.9, y=-4.1, 
+           label="metagenomes", color="dark blue") +
+  theme(# legend.position = c(0.85, 0.5),
         # axis.title.x=element_blank(),
         legend.background = element_rect(fill="transparent",color="transparent"))
 
@@ -68,11 +79,9 @@ supplement_graph %>%
   scale_fill_manual(breaks=c("SRF, DCM", "MES, Malaspina"), values=c('azure','blue')) +
   coord_flip()
 
-oceans <- DNA_tara %>% filter(!Ocean_DNA %in% c("Southern", "Red Sea", "Mediterranean")) %>% 
-  select("Ocean_DNA") %>% unique() %>% unlist()
 
-
-
+# Not relavant to published graph from this point
+# exploratory graph for biofilm
 DNA_tara %>% 
   filter(Layer_DNA != "MIX") %>%
   ggplot(aes(x=Layer_DNA, y=log_dna_biofilm))  +
@@ -83,40 +92,21 @@ DNA_tara %>%
   coord_flip()
 
 
-
-DNA_tara %>% 
-  filter(Layer_DNA != "MIX") %>%
-  filter(!Ocean_DNA %in% c("Southern", "Red Sea", "Mediterranean")) %>% # they have too little data points/no MES
-  ggplot(aes(x=fct_rev(Ocean_DNA), y=DNA_Transposase, fill=fct_rev(Layer_DNA))) +
+sel_col3 <- c("log_dna_trans","Layer_DNA", "Ocean_DNA")
+individual_depth <- rbind(mala_cov[,sel_col3], DNA_tara[,sel_col3]%>%filter(Layer_DNA != "MIX"))
+individual_depth$Layer_DNA <- factor(individual_depth$Layer_DNA, levels = c("SRF", "DCM", "MES", "Malaspina"))
+individual_depth %>% 
+  filter(!Ocean_DNA %in% c("Southern", "Red Sea", "Mediterranean")) %>%
+  ggplot(aes(x=fct_rev(Ocean_DNA), y=log_dna_trans, fill=Layer_DNA)) +
+  theme_classic() +
   geom_boxplot(outlier.color = "gray") + 
   stat_summary(fun.data = boxplot.give.n, geom = "text", position=position_nudge(x = 0.45, y = 0)) +
-  xlab("") + labs(fill = "Depth") +
-  scale_y_continuous(trans='log10')+ ylab("Proportion of transposase reads") +
-  scale_fill_manual(breaks=c('SRF','DCM','MES'), values=c('azure','sky blue','blue')) +
-  coord_flip() + theme(legend.position = "none")
-
-
-
-my_fn <- function(data, mapping, ...){
-  p <- ggplot(data = data, mapping = mapping) + 
-    geom_point(aes(color=data$Layer_DNA)) + geom_smooth(method=lm, se = F, ...) +
-    stat_poly_eq(formula = y~x, 
-               aes(label = paste(..rr.label..)), 
-               parse = TRUE)
-  p
-}
-
-DNA_tara %>%
-  filter(!DNA_TA %in% boxplot(DNA_tara$DNA_TA)$out) %>%
-  select(c("log_dna_biofilm", "log_dna_trans", "DNA_TA")) %>%
-  ggpairs(ggplot2::aes(), lower = list(continuous = my_fn))
-
-DNA_tara %>% 
-  select(c("log_dna_biofilm", "log_dna_trans", "DNA_Defense", "Layer_DNA")) %>%
-  ggpairs(ggplot2::aes(), lower = list(continuous = my_fn))
-
-hist(DNA_tara$DNA_Defense)
-
-summary(lm(log_dna_trans~Ocean_short, DNA_tara))
+  xlab("") + 
+  labs(fill = "Depth") +
+  scale_y_continuous(breaks = scale, 
+                     labels = percent_scale) +
+  ylab("% DNA reads mapped to transposase") +
+  # scale_fill_manual(breaks=c("SRF, DCM", "MES, Malaspina"), values=c('azure','blue')) +
+  coord_flip()
 
 

@@ -96,8 +96,10 @@ init_individual_metagenomes <- function(){
 
 init_mala_cov <- function(){
   init_env()
-  mala_cov <- read_csv("data/Malaspina-transposase-cov.csv")
-  mala_cov$log_dna_trans <- log10(mala_cov$prop)
+  mala_cov <- read_csv("data/Malaspina-transposase-coverage.csv")
+  mala_cov$log_dna_trans <- log10(mala_cov$trans_prop)
+  mala_cov$log_dna_biofilm <- log10(mala_cov$biofilm_prop)
+  mala_cov$log_dna_defense <- log10(mala_cov$defense_prop)
   mala_cov$Layer_DNA <- "Malaspina"
   mala_cov$is_MES = "MES, Malaspina"
   return(mala_cov)
@@ -246,7 +248,9 @@ init_tara <- function(){
   DNA_Metadata$Ocean_short<-factor(DNA_Metadata$Ocean_short)
   DNA_Metadata$upper_size_dna <- factor(DNA_Metadata$upper_size_dna, levels = c("1.6", "3"))
   RNA_Metadata <- read_excel("data/RNA_Location_Metadata.xlsx")
-  RNA_Metadata$Layer_RNA <- factor(RNA_Metadata$Layer_RNA, levels = c("SRF", "DCM", "MIX", "MES"))
+  RNA_Metadata <- RNA_Metadata %>% mutate(Layer_RNA = ifelse(Layer_RNA != "MIX", Layer_RNA,
+                                              ifelse(Depth_RNA <= 120, "DCM", "MES")))
+  RNA_Metadata$Layer_RNA <- factor(RNA_Metadata$Layer_RNA, levels = c("SRF", "DCM", "MES"))
   RNA_Metadata$upper_size_rna <- factor(RNA_Metadata$upper_size_rna, levels = c("1.6", "3"))
   
   DNA_tara <- merge(x=DNA_Metadata, y=DNA_cov_file, by ='connector_DNA', all = TRUE)

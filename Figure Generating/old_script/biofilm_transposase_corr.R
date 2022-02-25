@@ -1,19 +1,64 @@
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
 source("./init_share.R")
 g(DNA_tara, RNA_tara, DNA_RNA_tara, depth_comparison) %=% init_tara()
+mala_cov <- init_mala_cov()
 
 trans_scale <- c(-2, -2.5, -3, -3.5, -4, -4.5)
 trans_percent_scale <- c("1.00%", "0.316%", "0.100%", "0.032%", "0.010%", "0.003%")
 biofilm_scale <- c(-3.4, -3.6, -3.8, -4.0)
 biofilm_percent_scale <- c("0.040%", "0.025%", "0.016%", "0.01%")
+defense_scale <- c(-1.75, -1.875, -2, -2.125, -2.25, -2.375, -2.5)
+defense_percent_scale <- c("1.78%", "1.33%", "1.00%", "0.75", "0.56%", "0.42%", "0.316%")
 
-p1 <- DNA_tara %>%
-  filter(DNA_Biofilm > 0) %>%
-  filter(DNA_Transposase > 0) %>%
+bt_sel_col <- c("log_dna_trans", "log_dna_biofilm", "log_dna_defense", "Ocean_DNA", "Layer_DNA", "Oxygen_DNA")
+bt_to_graph <- rbind(mala_cov[,bt_sel_col], DNA_tara[,bt_sel_col])
+bt_to_graph$Layer_DNA <- factor(bt_to_graph$Layer_DNA, levels = c("SRF","DCM","MES","Malaspina"))
+
+biofilm_scale2 <- seq(-3.25, -4.0, by = -0.125)
+biofilm_percent_scale2 <- c("0.056","0.042","0.032","0.024","0.018", "0.013", "0.010") # 10**(seq(-3.25, -4.0, by = -0.125))
+defense_scale <- c(-1.75, -1.875, -2, -2.125, -2.25, -2.375, -2.5)
+defense_percent_scale <- c("1.78%", "1.33%", "1.00%", "0.75%", "0.56%", "0.42%", "0.316%")
+
+
+bt_to_graph %>%
+  filter(Layer_DNA != "MIX") %>%
+  filter(log_dna_biofilm > -4) %>% # filter outlier
+  ggplot(aes(x=log_dna_biofilm, y=log_dna_defense)) +
+  facet_wrap(~Layer_DNA) + # scales = "free"
+  scale_y_continuous(breaks = defense_scale, labels = defense_percent_scale) + 
+  scale_x_continuous(breaks = biofilm_scale, labels = biofilm_percent_scale) + # outlier
+  geom_point(aes(color = Ocean_DNA)) + 
+  theme_classic() +
+  ylab("% Defense Mechanisms DNA reads") +
+  xlab("% DNA reads mapped to biofilm") +
+  geom_smooth(method = "lm", se = F)  +
+  theme(legend.position = "none")
+
+defense_biofilm.lm <- lm(log_dna_defense~Layer_DNA + log_dna_biofilm, bt_to_graph)
+summary(defense_biofilm.lm)
+
+bt_to_graph %>%
+  filter(Layer_DNA != "MIX") %>%
   ggplot(aes(x=log_dna_biofilm, y=log_dna_trans)) +
+  facet_wrap(~Layer_DNA, scales = "free") +
+  #scale_y_continuous(breaks = trans_scale, labels = trans_percent_scale, limits=c(-4.5, -2)) + 
+  scale_x_continuous(breaks = biofilm_scale, labels = biofilm_percent_scale, limits=c(-4, -3.4)) +
+  geom_point(aes(color = Ocean_DNA)) + 
+  theme_classic() +
+  ylab("% transposase DNA reads") +
+  xlab("% DNA reads mapped to biofilm") +
+  geom_smooth(method = "lm", se = F)  +
+  theme(legend.position = "none")
+
+trans_biofilm.lm <- lm(log_dna_trans~Layer_DNA + log_dna_biofilm, bt_to_graph)
+summary(trans_biofilm.lm)
+
+p1 <- bt_to_graph %>%
+  ggplot(aes(x=log_dna_biofilm, y=log_dna_trans)) +
+  facet_wrap(~Layer_DNA) +
   scale_y_continuous(breaks = trans_scale, labels = trans_percent_scale, limits=c(-4.5, -2)) + 
   scale_x_continuous(breaks = biofilm_scale, labels = biofilm_percent_scale) +
-  geom_point(aes(color = Ocean_short)) + 
+  geom_point(aes(color = Ocean_DNA)) + 
   theme_classic() +
   ylab("% transposase DNA reads") +
   xlab("% DNA reads mapped to biofilm") +
@@ -69,8 +114,9 @@ ggarrange(p2, p1, labels = c("A", "B"), ncol = 2, nrow = 1, widths = c(0.55, 0.4
 ggarrange(p3, p4, labels = c("A", "B"), ncol = 2, nrow = 1)
 
 
-
 # ggarrange(p3, p1, p2, labels = c("A", "B", "C"), widths = c(0.4, 0.3, 0.3), ncol = 3, nrow = 1)
+
+
 
 depth_biofilm.lm <- lm(log_dna_trans~Layer_DNA+log_dna_biofilm, DNA_tara)
 anova(depth_biofilm.lm)
@@ -87,6 +133,7 @@ get_r(lm(log_dna_trans~log_dna_biofilm, DNA_tara))
 summary(lm(log_rna_trans~log_rna_biofilm, RNA_tara))
 summary(lm(log_dna_trans~log_rna_biofilm, DNA_RNA_tara))
 
+
 # statistic learned from http://www.sthda.com/english/wiki/unpaired-two-samples-t-test-in-r
 var.test(log_dna_trans~upper_size_dna, DNA_tara) # equal variance, F-test to test for homogeneity in variances
 t.test(log_dna_trans~upper_size_dna, DNA_tara, var.equal = TRUE)
@@ -99,11 +146,14 @@ with(DNA_tara, shapiro.test(log_dna_trans[upper_size_dna == "3"])) # assume norm
 trans_RNA_scale <- c(-4.5, -4, -3.5, -3)
 trans_RNA_percent_scale <- c("0.003%", "0.01%", "0.032%", "0.10%")
 
-p1 <- RNA_tara %>%
+p1 <- 
+  RNA_tara %>%
+  filter(!is.na(Depth_RNA)) %>%
   ggplot(aes(x=log_rna_biofilm, y=log_rna_trans)) +
   theme_classic() +
   scale_y_continuous(breaks = trans_RNA_scale, labels = trans_RNA_percent_scale) + 
   scale_x_continuous(breaks = biofilm_RNA_scale, labels = biofilm_RNA_percent_scale) +
+  facet_wrap(~Layer_RNA) +
   geom_point(aes(color = Ocean)) +
   xlab("% RNA transcript mapped to biofilm") +
   ylab("% transposase RNA transcript") +
@@ -111,6 +161,7 @@ p1 <- RNA_tara %>%
 
 p2 <- DNA_RNA_tara %>%
   ggplot(aes(x=log_rna_biofilm, y=log_dna_trans)) +
+  facet_wrap(~Layer_RNA) +
   geom_point(aes(color = Ocean_short)) +
   scale_y_continuous(breaks = trans_scale, labels = trans_percent_scale) + 
   scale_x_continuous(breaks = biofilm_RNA_scale, labels = biofilm_RNA_percent_scale) +
