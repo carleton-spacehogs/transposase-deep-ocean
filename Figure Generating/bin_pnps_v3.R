@@ -29,7 +29,9 @@ p2 <- all_p %>%
 
 
 pnps_depth.lm <- lm(percent_trans~depth*median_bin_pnps, all_p)
-summary(pnps_depth.lm)
+summary(pnps_depth.lm) 
+# median_bin_pnps itself (not interactions) does not have a
+# significant correlation with the transposase abundance in bins
 
 
 # median_bin_pnps is decently normally distributed

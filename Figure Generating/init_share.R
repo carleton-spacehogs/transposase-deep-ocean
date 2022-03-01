@@ -24,6 +24,13 @@ init_env <- function(){
 }
 
 boxplot.give.n <- function(x){ return(c(y = mean(x), label = length(x)))}
+boxplot.give.nr <- function(x){ 
+  if (length(x)==522366) {
+    c(y = mean(x), label = 500000) # round up the 500,000 non transposase ORFs
+  } else {
+    return(c(y = mean(x), label = signif(length(x), 4)))
+  }
+}
 
 filter_outliers <- function(df, colname){
   b <- colname
@@ -90,7 +97,7 @@ init_individual_metagenomes <- function(){
   all <- all%>%filter(!is.na(pnps))
   all$log_pnps <- ifelse(all$pnps == "0", -4, log10(all$pnps)) 
   all$gene_type <- factor(all$gene_type, levels = c("biofilm", "defense", "n", "transposase"))
-  all$depth <- factor(all$depth, levels=c("SRF", "DCM", "MES", "Malaspina")) 
+  all$depth <- factor(all$depth, levels=c("SRF", "DCM", "MES", "BAT")) 
   return(list(all))
 }
 
@@ -171,7 +178,7 @@ init_bins <- function(){
   malaspina_bins$`Class with more than 10 MAGs` <- ifelse(is.na(malaspina_bins$Class), "Others Or Unknown",
                                           ifelse(malaspina_bins$Class %in% big_taxa, malaspina_bins$Class,"Others Or Unknown"))
   malaspina_bins$is_biofilm <- ifelse(malaspina_bins$biofilm_count > 0, "present", "absent")
-  malaspina_bins$depth <- "Deep Malaspina"
+  malaspina_bins$depth <- "BAT"
   malaspina_bins$g_depth <- "Deep\nMalaspina"
   malaspina_bins$is_deep_sea <- "deep_sea"
   malaspina_bins$size_fraction <- factor(malaspina_bins$size_fraction, levels = c("planktonic", "mixed", "particle"))

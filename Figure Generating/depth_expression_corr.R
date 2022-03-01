@@ -119,8 +119,8 @@ pDefense <- DNA_RNA_tara %>%
 
 # from metagenome_pnps_v3.R -> pCassette
 ggarrange(
-  ggarrange(pCassette, pDefense, labels = c("A", "C"), widths = c(0.55, 0.47), ncol =2),
-  ggarrange(pBiofilm, pTrans, labels = c("B", "D"), widths = c(0.55, 0.47), ncol =2),
+  ggarrange(pCassette, pDefense, labels = c("A", "C"), widths = c(0.5, 0.47), ncol =2),
+  ggarrange(pBiofilm, pTrans, labels = c("B", "D"), widths = c(0.5, 0.47), ncol =2),
   nrow = 2
 )
 

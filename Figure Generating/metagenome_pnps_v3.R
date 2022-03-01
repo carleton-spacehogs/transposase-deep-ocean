@@ -3,7 +3,7 @@ source("./init_share.R")
 g(pn_ps_integron, pn_ps_bins, pn_ps_total, malaspina_total, malaspina_integron_all) %=% init_integron()
 
 scale <- c(-2, -1.5, -1, -0.5, 0, 0.5)
-log_scale <- c("less\nthan\n0.01", "0.032", "0.1", "0.316", "1", "3.162")
+log_scale <- c("< 0.01", "0.032", "0.1", "0.316", "1", "3.162")
 cols <- c("gene_type", "pnps", "log_pnps")
 pn_ps_merged <- rbind(pn_ps_total[,cols] %>% 
                         filter(gene_type == "normal"), # non-transposase, non-cassette 
@@ -16,16 +16,19 @@ pn_ps_merged$gene_type<-factor(pn_ps_merged$gene_type,levels=c("normal","defense
 pCassette <- pn_ps_merged %>%
   ggplot(aes(x = gene_type, y = log_pnps, fill=gene_type)) +
   geom_boxplot(outlier.color = "gray", notch = TRUE) +
-  ylab("pN/pS ratio") +
-  scale_y_continuous(breaks = scale, labels = log_scale, limits = c(-2, 0.603)) +
-  stat_summary(fun.data = boxplot.give.n, geom = "text", position=position_nudge(x = 0, y = 0.17)) +
+  ylab(expression(paste(italic("pN/pS"), " ratio"))) +
+  scale_y_continuous(breaks = scale, 
+                     labels = log_scale, limits = c(-2, 0.603)) +
+  stat_summary(fun.data = boxplot.give.nr, 
+               geom = "text", position=position_nudge(x = 0.3, y = 0.25)) +
   scale_x_discrete(labels=c("Non-\ntransposon\nORFs", 
                            "Defense\nmechanism \ncassette",
                            "Cassette with\nnon-defense\nCOG-function",
                            "Cassette\nwithout\nCOG-calls")) +
   theme_classic() +
-  theme(axis.title.x = element_blank(), legend.position="none") + 
-  scale_fill_manual(values=c("transparent", "red", "orange", "yellow"))
+  theme(axis.title.y = element_blank(), legend.position="none") + 
+  scale_fill_manual(values=c("transparent", "red", "orange", "yellow")) +
+  coord_flip()
 
 # pCassette used in depth_expression_corr.R
 
