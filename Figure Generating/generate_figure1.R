@@ -7,12 +7,12 @@ scale <- c(-2, -2.5, -3, -3.5, -4, -4.5)
 # log_scale <- round(10^scale, digits = 5)
 percent_scale <- c("1.00%", "0.316%", "0.100%", "0.032%", "0.010%", "0.003%")
 
-mala_cov$size_fraction <- ifelse(mala_cov$lower_filter_size == "0.2", "planktonic", "particle")
-DNA_tara$size_fraction <- ifelse(DNA_tara$upper_size_dna == "1.6", "planktonic", "particle")
+mala_cov$size_fraction <- ifelse(mala_cov$lower_filter_size == "0.2", "planktonic", "particle-\nassociated")
+DNA_tara$size_fraction <- ifelse(DNA_tara$upper_size_dna == "1.6", "planktonic", "particle-\nassociated")
 
 sel_col <- c("Layer_DNA","log_dna_trans","size_fraction")
 to_graph <- rbind(mala_cov[,sel_col], DNA_tara[,sel_col]%>%filter(Layer_DNA != "MIX"))
-to_graph$Layer_DNA <- factor(to_graph$Layer_DNA, levels = c("SRF","DCM","MES","Malaspina"))
+to_graph$Layer_DNA <- factor(to_graph$Layer_DNA, levels = c("SRF","DCM","MES","BAT"))
 
 counts = to_graph %>% group_by(size_fraction, Layer_DNA) %>% tally
 # generate figure 1
@@ -30,7 +30,7 @@ to_graph %>%
   scale_x_discrete(labels=c("SRF" = "SRF\n(depth < 10 m)", 
                             "DCM" = "DCM\n(17 - 120 m)",
                             "MES" = "MES\n(250 - 1000 m)",
-                            "Malaspina" = "BAT\n(2400 - 4000 m)")) + 
+                            "BAT" = "BAT\n(2400 - 4000 m)")) + 
   coord_flip() +
   scale_fill_manual(values=c("green","orange"))+
   guides(fill = guide_legend(title = "Size fraction", reverse = TRUE)) +
@@ -48,6 +48,13 @@ to_graph %>%
 
 ggsave("depth_size_fraction_trans_coor2.png", plot = last_plot())
 
+DNA_trans_depth.lm <- lm(log_dna_trans~Layer_DNA, to_graph)
+DNA_trans_with_size.lm <- lm(log_dna_trans~Layer_DNA + size_fraction, to_graph)
+anova(DNA_trans_depth.lm, DNA_trans_with_size.lm)
+summary(DNA_trans_with_size.lm)
+anova(DNA_trans_with_size.lm)
+
+
 sel_col2 <- c("log_dna_trans","is_MES", "Ocean_DNA")
 supplement_graph <- rbind(mala_cov[,sel_col2], DNA_tara[,sel_col2]%>%filter(is_MES != "MIX"))
 
@@ -64,13 +71,18 @@ for (ocean in unique(supplement_graph$Ocean_DNA)){
   print(t_test$p.value)
 }
 
+
 # supplement 1
-supplement_graph %>% 
-  filter(!Ocean_DNA %in% c("Southern", "Red Sea", "Mediterranean")) %>%
+supplement_graph <- supplement_graph %>% # these oceans don't have enough samples for boxplots
+  filter(!Ocean_DNA %in% c("Southern", "Red Sea", "Mediterranean")) 
+counts = supplement_graph %>% group_by(Ocean_DNA, is_MES) %>% tally
+
+supplement_graph%>%
   ggplot(aes(x=fct_rev(Ocean_DNA), y=log_dna_trans, fill=is_MES)) +
   theme_classic() +
   geom_boxplot(outlier.color = "gray") + 
-  stat_summary(fun.data = boxplot.give.n, geom = "text", position=position_nudge(x = 0.45, y = 0)) +
+  # stat_summary(fun.data = boxplot.give.n, geom = "text", position=position_nudge(x = 0.45, y = 0)) +
+  geom_text(data=counts, aes(label=n, y=-2.3), position=position_dodge(0.8)) +
   xlab("") + 
   labs(fill = "Depth") +
   scale_y_continuous(breaks = scale, 
@@ -79,6 +91,7 @@ supplement_graph %>%
   scale_fill_manual(breaks=c("SRF, DCM", "MES, Malaspina"), values=c('azure','blue')) +
   coord_flip()
 
+ggsave("S1_transposase-depth-each-ocean.png", plot = last_plot())
 
 # Not relavant to published graph from this point
 # exploratory graph for biofilm

@@ -25,7 +25,7 @@ nor_legend <- "The rest of Tara Oceans &\nMalaspina metagenomes"
 lab_font <- c(rep(c("plain"),each=17), "bald", rep(c("plain"),each=3), "bald", "bald")
 out_category <- c("~Total")
 
-graphing %>% 
+p_cassette_category <- graphing %>% 
   filter(!COG_function %in% out_category) %>%
   ggplot(aes(fill=type, y=value, 
              x=reorder(COG_function, desc(integron_val_rank)))) + # SORT
@@ -37,10 +37,15 @@ graphing %>%
   guides(fill = guide_legend(reverse = TRUE, title = "COG gene-calls for:")) +
   scale_fill_manual(values=c("dark gray", "orange"), 
                     labels = c(nor_legend, cas_legend)) +
-  theme(legend.position = c(0.7, 0.93),
+  theme(legend.position = c(0.68, 0.93),
         axis.title.y=element_blank(),
         # axis.text.y = element_text(face = lab_font),
         legend.background = element_rect(fill="transparent",color="transparent")) 
   # annotate(geom="text", x=0, y=-0.08, label="* TM: transport and metabolism", color="red")
 
-ggsave("cassette_function_categories.png", plot = last_plot())
+# p_bd sees biofilm_defense_corr.T
+ggarrange(p_cassette_category, p_bd, labels = c("A", "B"), 
+          ncol = 2, nrow = 1, widths = c(0.68, 0.38))
+
+# ggsave("cassette_function_categories.png", plot = last_plot())
+ggsave("F5_cassette-COG-cateogory_biofilm-vs-defense.png", plot = last_plot())

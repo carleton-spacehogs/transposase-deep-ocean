@@ -100,8 +100,12 @@ init_mala_cov <- function(){
   mala_cov$log_dna_trans <- log10(mala_cov$trans_prop)
   mala_cov$log_dna_biofilm <- log10(mala_cov$biofilm_prop)
   mala_cov$log_dna_defense <- log10(mala_cov$defense_prop)
-  mala_cov$Layer_DNA <- "Malaspina"
-  mala_cov$is_MES = "MES, Malaspina"
+  mala_cov$log_dna_toxin <- log10(mala_cov$toxin_prop)
+  mala_cov$DNA_Transposase <- mala_cov$trans_prop
+  mala_cov$DNA_Biofilm <- mala_cov$biofilm_prop
+  mala_cov$DNA_Defense <- mala_cov$defense_prop
+  mala_cov$Layer_DNA <- "BAT"
+  mala_cov$is_MES = "MES, BAT"
   return(mala_cov)
 }
 
@@ -244,10 +248,13 @@ init_tara <- function(){
   
   DNA_RNA_connector <- read_excel("data/DNA_RNA_connector.xlsx")
   DNA_Metadata <- read_excel("data/DNA_Location_Metadata.xlsx")
+  DNA_Metadata$Depth <- as.numeric(DNA_Metadata$Depth_DNA)
   DNA_Metadata$Layer_DNA <- factor(DNA_Metadata$Layer_DNA, levels = c("SRF", "DCM", "MIX", "MES"))
   DNA_Metadata$Ocean_short<-factor(DNA_Metadata$Ocean_short)
   DNA_Metadata$upper_size_dna <- factor(DNA_Metadata$upper_size_dna, levels = c("1.6", "3"))
   RNA_Metadata <- read_excel("data/RNA_Location_Metadata.xlsx")
+  RNA_Metadata <- filter(RNA_Metadata, Depth_RNA != "NA")
+  RNA_Metadata$Depth <- as.numeric(RNA_Metadata$Depth_RNA)
   RNA_Metadata <- RNA_Metadata %>% mutate(Layer_RNA = ifelse(Layer_RNA != "MIX", Layer_RNA,
                                               ifelse(Depth_RNA <= 120, "DCM", "MES")))
   RNA_Metadata$Layer_RNA <- factor(RNA_Metadata$Layer_RNA, levels = c("SRF", "DCM", "MES"))
@@ -258,16 +265,6 @@ init_tara <- function(){
   
   DNA_Merged <- merge(x=DNA_RNA_connector, y=DNA_tara, by = 'connector_DNA', all = FALSE)
   DNA_RNA_tara <- merge(x=DNA_Merged, y=RNA_tara, by ='connector_RNA', all = FALSE)
-  
-  #DNA_RNA_tara$biofilm_exp_rate <- DNA_RNA_tara$log_rna_biofilm/DNA_RNA_tara$log_dna_biofilm
-  #DNA_RNA_tara$trans_exp_rate <- DNA_RNA_tara$log_rna_trans/DNA_RNA_tara$log_dna_trans
-  #DNA_RNA_tara$toxin_exp_rate <- DNA_RNA_tara$log_rna_toxin/DNA_RNA_tara$log_dna_toxin
-  #DNA_RNA_tara$defense_exp_rate <- DNA_RNA_tara$log_rna_defense/DNA_RNA_tara$log_dna_defense
-  
-  #DNA_RNA_tara$biofilm_exp_rate <- log(DNA_RNA_tara$RNA_Biofilm/DNA_RNA_tara$DNA_Biofilm)
-  #DNA_RNA_tara$trans_exp_rate <- log(DNA_RNA_tara$RNA_Trans/DNA_RNA_tara$DNA_Transposase)
-  #DNA_RNA_tara$toxin_exp_rate <- log(DNA_RNA_tara$RNA_TA/DNA_RNA_tara$DNA_TA)
-  #DNA_RNA_tara$defense_exp_rate <- log(DNA_RNA_tara$RNA_Defense/DNA_RNA_tara$DNA_Defense)
   
   DNA_RNA_tara$biofilm_exp_rate <- DNA_RNA_tara$RNA_Biofilm/DNA_RNA_tara$DNA_Biofilm
   DNA_RNA_tara$trans_exp_rate <- DNA_RNA_tara$RNA_Trans/DNA_RNA_tara$DNA_Transposase
@@ -292,9 +289,7 @@ init_tara <- function(){
   rm(DNA_cov_file, RNA_cov_file, DNA_Merged, DNA_RNA_connector, DNA_Metadata, RNA_Metadata)
   
   depth_comparisons <- list( c("SRF", "DCM"), c("DCM", "MES"), c("SRF", "MES") )
-  DNA_tara$Depth <- as.numeric(DNA_tara$Depth_DNA)
-  RNA_tara$Depth <- as.numeric(RNA_tara$Depth_RNA)
-  DNA_tara <- mutate(DNA_tara, is_MES = ifelse(Layer_DNA == "MES", "MES, Malaspina", 
+  DNA_tara <- mutate(DNA_tara, is_MES = ifelse(Layer_DNA == "MES", "MES, BAT", 
                                                ifelse(Layer_DNA == "MIX", "MIX", "SRF, DCM")))
   
   return(list(DNA_tara, RNA_tara, DNA_RNA_tara, depth_comparisons))
