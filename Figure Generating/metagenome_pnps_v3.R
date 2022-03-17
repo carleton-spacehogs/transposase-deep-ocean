@@ -20,7 +20,7 @@ pCassette <- pn_ps_merged %>%
   scale_y_continuous(breaks = scale, 
                      labels = log_scale, limits = c(-2, 0.603)) +
   stat_summary(fun.data = boxplot.give.nr, 
-               geom = "text", position=position_nudge(x = 0.3, y = 0.25)) +
+               geom = "text", position=position_nudge(x = 0.2, y = 0.68)) +
   scale_x_discrete(labels=c("Non-\ntransposon\nORFs", 
                            "Defense\nmechanism \ncassette",
                            "Cassette with\nnon-defense\nCOG-function",

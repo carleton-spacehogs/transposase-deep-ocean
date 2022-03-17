@@ -67,7 +67,7 @@ pBiofilm <- DNA_RNA_tara %>%
                       low="white", high="chartreuse4",
                       name = "Median DNA\nabundance of\nbiofilm\n",
                       breaks = c(0, bio_array), 
-                      labels = c("0%","","",get_depth_percent("MES ", SRF_bio_median),
+                      labels = c("0%","","",get_depth_percent("MES ", MES_bio_median),
                                  paste("SRF  ", round(SRF_bio_median*100, 3), "%\n", 
                                        "DCM ", round(DCM_bio_median*100, 3), "%\n",
                                        "BAT   ", round(BAT_bio_median*100, 3), "%",

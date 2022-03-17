@@ -6,20 +6,20 @@ mala_cov <- init_mala_cov()
 trans_scale <- c(-2, -2.5, -3, -3.5, -4, -4.5)
 trans_percent_scale <- c("1.00%", "0.316%", "0.100%", "0.032%", "0.010%", "0.003%")
 
-
 oxy_sel_col <- c("log_dna_trans", "log_dna_biofilm", "log_dna_defense", "Ocean_DNA", "Layer_DNA", "Oxygen_DNA")
 oxy_to_graph <- rbind(mala_cov[,oxy_sel_col], DNA_tara[,oxy_sel_col])
-oxy_to_graph$Layer_DNA <- factor(oxy_to_graph$Layer_DNA, levels = c("SRF","DCM","MES","Malaspina"))
+oxy_to_graph$Layer_DNA <- factor(oxy_to_graph$Layer_DNA, levels = c("SRF","DCM","MES","BAT"))
 
 # supplmentary figure 2
 oxy_to_graph %>%
   filter(Layer_DNA != "MIX") %>%
   ggplot(aes(x=Oxygen_DNA, y=log_dna_trans)) +
-  facet_wrap(~Layer_DNA, scales = "free") + # scales = "free"
+  facet_wrap(~Layer_DNA, scales = "free", nrow = 2) + # scales = "free"
   geom_point(aes(color = Ocean_DNA)) + 
+  labs(color="Ocean") +
   scale_y_continuous(breaks = trans_scale, labels = trans_percent_scale) + 
   theme_classic() +
-  ylab("% Transposase reads in metagenomes") +
+  ylab("% metagenomic reads mapped to transposase") +
   xlab(expression(paste("Dissolved Oxygen (", mu, "mol/Kg)"))) +
   geom_smooth(method = "lm", se = F)  +
   theme() #legend.position = "none"

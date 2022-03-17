@@ -42,11 +42,9 @@ to_graph %>%
            label="Malaspina", color="dark blue") +
   annotate(geom="text", x=0.9, y=-4.1, 
            label="metagenomes", color="dark blue") +
-  theme(# legend.position = c(0.85, 0.5),
-        # axis.title.x=element_blank(),
-        legend.background = element_rect(fill="transparent",color="transparent"))
+  theme(legend.background = element_rect(fill="transparent",color="transparent"))
 
-ggsave("depth_size_fraction_trans_coor2.png", plot = last_plot())
+ggsave("F1_depth_size_fraction_trans_coor.png", plot = last_plot())
 
 DNA_trans_depth.lm <- lm(log_dna_trans~Layer_DNA, to_graph)
 DNA_trans_with_size.lm <- lm(log_dna_trans~Layer_DNA + size_fraction, to_graph)

@@ -92,9 +92,10 @@ init_individual_metagenomes <- function(){
   SRF <- read_csv("data/trans_biofilm_defense_and_normal_pnps_SRF.csv")
   DCM <- read_csv("data/trans_biofilm_defense_and_normal_pnps_DCM.csv")
   MES <- read_csv("data/trans_biofilm_defense_and_normal_pnps_MES.csv")
-  Malaspina <- read_csv("data/trans_biofilm_defense_and_normal_pnps_Malaspina.csv")
+  Malaspina <- read_csv("data/trans_biofilm_defense_and_normal_pnps_BAT.csv")
   all <- rbind(SRF, DCM, MES, Malaspina)
   all <- all%>%filter(!is.na(pnps))
+  all <- all%>%filter(pnps<4)
   all$log_pnps <- ifelse(all$pnps == "0", -4, log10(all$pnps)) 
   all$gene_type <- factor(all$gene_type, levels = c("biofilm", "defense", "n", "transposase"))
   all$depth <- factor(all$depth, levels=c("SRF", "DCM", "MES", "BAT")) 
@@ -195,7 +196,7 @@ init_integron <- function(){
                               ifelse(transposase == "Y", "transposase", "normal") ))
   pn_ps_total <- pn_ps_total %>% mutate(log_pnps = ifelse(pnps < 0.01, -2, log10(pnps)))
   
-  malaspina_total <- read_csv("data/trans_biofilm_defense_and_normal_pnps_Malaspina.csv")
+  malaspina_total <- read_csv("data/trans_biofilm_defense_and_normal_pnps_BAT.csv")
   
   deep_integron <- read_csv("data/malaspina_pNpS2_integron.csv")
   deep_integron <- deep_integron %>% 
@@ -211,16 +212,7 @@ init_integron <- function(){
 }
 
 init_integron_category <- function(){
-  # tara_integron_summary <- read_csv("data/integron_func_category_count_known_function.csv")
-  # tara_integron_summary$ratio_prop = tara_integron_summary$integron_prop/tara_integron_summary$normal_prop
-  # tara_integron_summary <- tara_integron_summary[order(tara_integron_summary$COG_function),]
-  
-  # deep_integron_summary <- read_csv("data/all_deep_integron_func_category_count.csv")
-  # deep_integron_summary$ratio_prop = deep_integron_summary$integron_prop/deep_integron_summary$deep_prop
-  # deep_integron_summary <- deep_integron_summary[order(deep_integron_summary$COG_function),]
-  
   summary <- read_csv("data/tara_malaspina_integron_func_category_count.csv")
-  # summary$ratio_prop = summary$integron_prop/summary$normal_prop
   
   col1 <- c('Secondary metabolites biosynthesis, transport and catabolism',
             "Posttranslational modification, protein turnover, chaperones", 

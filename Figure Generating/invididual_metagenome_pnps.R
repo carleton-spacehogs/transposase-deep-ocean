@@ -12,7 +12,7 @@ to_graph <- pn_ps_metagenome %>%
   mutate(is_trans = ifelse(gene_type == "transposase", 'y', 'n'))
 
 counts <- to_graph %>% count(depth, is_trans)
-counts <- mutate(counts, n = signif(n, digits = 3))
+# counts <- mutate(counts, n = signif(n, digits = 4))
 
 p1<- to_graph %>%
   ggplot(aes(x=fct_rev(depth), y=log_pnps, fill = is_trans)) +
