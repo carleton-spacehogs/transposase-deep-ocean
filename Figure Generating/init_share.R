@@ -114,14 +114,17 @@ init_mala_cov <- function(){
   mala_cov$DNA_Defense <- mala_cov$defense_prop
   mala_cov$Layer_DNA <- "BAT"
   mala_cov$is_MES = "MES, BAT"
+  mala_cov$Depth <- mala_cov$Depth * (-1)
   return(mala_cov)
 }
 
 init_bins <- function(){
   init_env()
   c <- 0.0000000001 # for log(0)
-  low_trans <- c("Flavobacteria","Acidimicrobidae","novelClass_E",
-                 "Gemmatimonadetes","SAR202-2","Marinisomatia")
+  # low_trans <- c("Flavobacteria","Acidimicrobidae","novelClass_E",
+  #                "Gemmatimonadetes","SAR202-2","Marinisomatia")
+  low_trans <- c("Flavobacteria","Acidimicrobidae",
+                 "Gemmatimonadetes","Marinisomatia")
   high_trans <- c("Alphaproteobacteria","Gammaproteobacteria",
                   "Betaproteobacteria","Actinobacteria")
   taxon <- read_csv("data/bin_taxon.csv")

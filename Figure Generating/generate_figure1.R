@@ -10,7 +10,7 @@ percent_scale <- c("1.00%", "0.316%", "0.100%", "0.032%", "0.010%", "0.003%")
 mala_cov$size_fraction <- ifelse(mala_cov$lower_filter_size == "0.2", "planktonic", "particle-\nassociated")
 DNA_tara$size_fraction <- ifelse(DNA_tara$upper_size_dna == "1.6", "planktonic", "particle-\nassociated")
 
-sel_col <- c("Layer_DNA","log_dna_trans","size_fraction")
+sel_col <- c("Layer_DNA","log_dna_trans","size_fraction","Depth")
 to_graph <- rbind(mala_cov[,sel_col], DNA_tara[,sel_col]%>%filter(Layer_DNA != "MIX"))
 to_graph$Layer_DNA <- factor(to_graph$Layer_DNA, levels = c("SRF","DCM","MES","BAT"))
 
@@ -75,7 +75,7 @@ supplement_graph <- supplement_graph %>% # these oceans don't have enough sample
   filter(!Ocean_DNA %in% c("Southern", "Red Sea", "Mediterranean")) 
 counts = supplement_graph %>% group_by(Ocean_DNA, is_MES) %>% tally
 
-supplement_graph%>%
+s11 <- supplement_graph%>%
   ggplot(aes(x=fct_rev(Ocean_DNA), y=log_dna_trans, fill=is_MES)) +
   theme_classic() +
   geom_boxplot(outlier.color = "gray") + 
@@ -83,13 +83,37 @@ supplement_graph%>%
   geom_text(data=counts, aes(label=n, y=-2.3), position=position_dodge(0.8)) +
   xlab("") + 
   labs(fill = "Depth") +
-  scale_y_continuous(breaks = scale, 
-                     labels = percent_scale) +
+  scale_y_continuous(breaks = scale, labels = percent_scale) +
   ylab("% DNA reads mapped to transposase") +
-  scale_fill_manual(breaks=c("SRF, DCM", "MES, Malaspina"), values=c('azure','blue')) +
+  scale_fill_manual(breaks=c("SRF, DCM", "MES, BAT"), values=c('azure','blue')) +
   coord_flip()
 
-ggsave("S1_transposase-depth-each-ocean.png", plot = last_plot())
+# supplementary 2 
+colors <- c("light blue","sky blue", "steelblue","blue")
+color_breaks <- c('SRF','DCM','MES','BAT')
+depth_scale <- c(5, 10, 40, 100, 400, 1000, 4000)
+d_scale <- log10(depth_scale)
+to_graph$log_depth <- log10(to_graph$Depth)
+
+s12 <- to_graph %>% 
+  ggplot(aes(x = log_depth, y = log_dna_trans)) +
+  theme_classic() +
+  scale_y_continuous(breaks = scale, labels = percent_scale, limits=c(-4.5, -2)) + 
+  scale_x_continuous(breaks = d_scale, labels = depth_scale) + 
+  labs(x="Depth (m)", y="% DNA reads mapped to transposase", colour="Depth") +
+  geom_jitter(aes(color = Layer_DNA), width = 0.02) +
+  geom_smooth(method = "lm", se = F, color = "orange") +
+  scale_color_manual(breaks=color_breaks, 
+                     values=colors) 
+  # theme(legend.position = "none")
+ggarrange(s12, s11, labels = c("A", "B"), 
+          ncol = 2, nrow = 1, widths = c(0.48, 0.55))
+
+ggsave("S1_transposase-depth_each-ocean.png", plot = last_plot())
+
+
+
+
 
 # Not relavant to published graph from this point
 # exploratory graph for biofilm

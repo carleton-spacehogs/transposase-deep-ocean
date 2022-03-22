@@ -38,18 +38,32 @@ pCassette <- pn_ps_merged %>%
 pn_ps_integron %>% filter(!is.na(pnps)) %>% nrow() # 1286
 malaspina_integron_all %>% filter(!is.na(pnps)) %>% nrow() # 447
 
-pnps_cassette<- (pn_ps_merged %>% filter(gene_type != "normal") %>% filter(!is.na(pnps)))$pnps
-pnps_cassette<- (pn_ps_merged %>% filter(gene_type != "normal") %>% filter(pnps < 100))$pnps
-# if don't filter inf: 95% quantile: 7.1, ln = 1.96
-# if filter out inf: 95% quantile: 2.6, ln = 0.9555
-quantile(pnps_cassette, probs = c(0.935), na.rm = TRUE) 
-# e^((1.96+0.955)/2) = 4.3 -> upper cutoff: pnps = 4
+pnps_cassette <- pn_ps_merged %>% 
+  filter(gene_type != "normal") %>% 
+  filter(!is.na(pnps)) %>% 
+  filter(pnps < 100) # take out INf
+
+quantile(pnps_cassette$pnps, probs = c(0.97), na.rm = TRUE)
+# 97% 
+# 4.361391 
+# upper cutoff: pnps = 4
 
 pn_ps_total[,cols] %>% filter(gene_type == "normal") %>% filter(pnps < 4) %>% nrow()
 malaspina_total %>% filter(pnps < 4) %>% nrow()
 
 with_pnps <- pn_ps_merged %>% filter(gene_type != "normal") %>% filter(!is.na(pnps)) # 1753
 with_pnps_fun <- with_pnps %>% filter(gene_type != "no_call") # 617
+
+# if I don't take out Inf
+quantile(with_pnps_fun$pnps, c(.95, .97, .99))
+# 95%      97%      99% 
+# 3.182308 5.508244      Inf 
+
+# if I take out Inf
+pnps_no_inf <- with_pnps_fun %>% filter(pnps < 100)
+quantile(pnps_no_inf$pnps, c(.95, .97, .99))
+# 95%      97%      99% 
+# 2.429197 3.312591 6.150663 
 
 pnps_less4 <- with_pnps %>% filter(pnps < 4) # 1651
 func_less4 <- pnps_less4 %>% filter(gene_type != "no_call")

@@ -95,6 +95,11 @@ summary(RNA_trans_biofilm.lm)
 anova(RNA_trans_biofilm.lm)
 
 
+RNA_tara %>%
+  group_by(Layer_RNA) %>%
+  summarise_at(vars(RNA_Biofilm), list(mean = mean, median = median))
+
+
 DNA_DCM_trans <- DNA_tara %>%
   filter(Layer_DNA == "DCM") %>%
   select(c("DNA_Transposase"))

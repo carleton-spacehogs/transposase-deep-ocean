@@ -7,11 +7,12 @@ col_list <- c("complete genome size (Mbp)", "percent_trans", "log_percent_trans"
               "Class with more than 10 MAGs", "size_fraction")
 stat_all_tara <- bin_taxon[,col_list] # %>% filter(!is.na(depth))
 
+t.test(percent_trans~is_deep_sea, stat_all)
+
 stat_all_mala <- malaspina_bins[,col_list] %>%
   filter(size_fraction != "error")
 
-stat_all <- filter_outliers(rbind(stat_all_tara, stat_all_mala),"percent_trans")
-stat_all <- filter_outliers(stat_all,"complete genome size (Mbp)")
+stat_all <- rbind(stat_all_tara, stat_all_mala)
 
 summary(lm(log_percent_trans~Class, data=stat_all))
 summary(lm(log_percent_trans~`complete genome size (Mbp)`, data=stat_all))
@@ -112,6 +113,8 @@ stat_all %>%
   with(table(class_trans, is_deep_sea)) %>% 
   chisq.test()
 
+
+
 big_taxa <- unique(stat_all$`Class with more than 10 MAGs`)
 big_taxa <- big_taxa[!big_taxa == "Others Or Unknown"]
 bi_var <- stat_all %>% select(c("Class with more than 10 MAGs", "percent_trans"))
@@ -138,6 +141,11 @@ for (taxa in big_taxa){
 # > less_taxa
 # [1] "Flavobacteria"    "Acidimicrobidae"  "novelClass_E"     "Gemmatimonadetes"
 # [5] "SAR202-2"         "Marinisomatia" 
+
+class_trans <-bi_var %>% group_by(`Class with more than 10 MAGs`) %>%
+  summarise(across(where(is.numeric), list(mean = mean)))
+
+class_trans <- class_trans[order(-class_trans$percent_trans_mean),]
 
 depth_stats_taxon <- stat_all %>% 
   with(table(`Class with more than 10 MAGs`, depth)) %>% 
