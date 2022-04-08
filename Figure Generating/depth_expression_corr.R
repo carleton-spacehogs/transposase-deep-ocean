@@ -124,5 +124,5 @@ ggarrange(
   nrow = 2
 )
 
-ggsave("F6_expression_and_cassette_pnps.png", plot = last_plot())
+ggsave("F6_expression_and_cassette_pnps2.png", plot = last_plot())
 

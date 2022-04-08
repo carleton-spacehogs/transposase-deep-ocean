@@ -61,12 +61,12 @@ tax_depth <- g_tax %>%
         axis.title.y=element_blank())
 
 ls_order <- c("planktonic", "mixed", "particle", "all")
-g_tax_label <- c("High %-transposase (\u0251- \u03b2- \u03b3- proteobact., and Actinobact.)", 
-                "Normal transposase abundance", 
-                "Low %-transposase (Flavobact., Acidimicrobidae, etc.)")
+g_tax_label <- c("High %-transposase classes (\u0251- \u03b2- \u03b3- proteobact. and Actinobact.)", 
+                "Normal transposase abundance classes", 
+                "Low %-transposase classes (Flavobact., Acidimicrobidae, etc.)")
 g_tax_col <- c('orange','gray', "green")
 
-lab_text <- expression("Taxonomical "*italic("Class")*" of")
+# lab_text <- expression("Taxonomical "*italic("Class")*" of")
 
 tax_lifestyle <- g_tax %>%
   ggplot(aes(x = percent_trans, y = size_fraction, fill = class_trans)) +
@@ -74,13 +74,16 @@ tax_lifestyle <- g_tax %>%
   geom_boxplot(outlier.alpha = 0.3,outlier.shape = 21) +
   scale_fill_manual(guide = guide_legend(reverse = TRUE),
     labels = g_tax_label, values = g_tax_col)+
-  labs(fill=lab_text) +
+  # labs(fill=lab_text) +
   stat_summary(fun.data = boxplot.give.n, geom = "text", position=position_nudge(x = 0.1, y = 0)) + 
   xlab("% of transposase ORFs in MAGs") +
   scale_x_continuous(breaks = c(0, 0.2, 0.4, 0.6), limits=c(0, 0.8)) +
   theme_classic() +
   theme(strip.text.x = element_blank(),
         axis.title.y = element_blank(),
+        legend.title = element_blank(),
+        legend.justification='left',
+        legend.margin = margin(0),
         legend.position="bottom",
         legend.direction="vertical")
 
@@ -144,7 +147,7 @@ p_depth_gsize<-all %>%
                      values = c('orange','gray', "green"))+
   geom_jitter(aes(color = class_trans), alpha = 0.5) +
   geom_boxplot(outlier.shape = NA, alpha = 0.1) +
-  ylab("MAG complete genome size (Mbp)") +
+  ylab("MAG estimated complete genome size (Mbp)") +
   stat_summary(fun.data = boxplot.give.n, 
                geom = "text", 
                position=position_nudge(x = 0, y = 0.4)) +
@@ -177,6 +180,6 @@ ggarrange(pcom,particle_gsize,size_trans,
           widths = c(4.7/10,2.2/10,2.4/10),
           labels = c("", "B","C"))
 
-ggsave("F3_trans_genome_size_varwidth.png", plot = last_plot())
+ggsave("F3_trans_genome_size_varwidth1.png", plot = last_plot())
 
 

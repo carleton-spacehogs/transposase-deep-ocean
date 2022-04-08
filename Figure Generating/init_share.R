@@ -35,10 +35,29 @@ boxplot.give.nr <- function(x){
 filter_outliers <- function(df, colname){
   b <- colname
   out <- boxplot(df[,b])$out
-  if (length(out) == 0){ return(df) } else {
-    out_ind <- which(df[,b] %in% c(out))
-    return(df[-out_ind,])
+  if (length(out) == 0){
+    return(df) 
+  } else {
+    # need to use get() because this is a dynamic variable
+    return(filter(df, get(b) < max(out) && get(b) > min(out)))
   }
+}
+
+filter_outliers_vct <- function(vector){
+  out <- boxplot(vector)$out
+  if (length(out) == 0){ return(vector) } else {
+    return(vector[-out])
+  }
+}
+
+less_than <- function(vct, upper) {
+  out <- c()
+  for (each in vct) {
+    if (each[1] < upper) {
+      out <- c(each, out)
+    } else { a <- 1}
+  }
+  return (out)
 }
 
 get_r <- function(reglm) {return(summary(reglm)$r.squared)}
@@ -195,9 +214,14 @@ init_integron <- function(){
   pn_ps_integron <- pn_ps_integron %>% mutate(log_pnps = ifelse(pnps < 0.01, -2, log10(pnps)))
   pn_ps_bins <- read_csv("data/bin_median_pnps.csv")
   pn_ps_total <- read_csv("data/pNpS_total.csv")
-  pn_ps_total <- pn_ps_total %>% mutate(gene_type = ifelse(integron == "Y", "all cassette genes", 
-                              ifelse(transposase == "Y", "transposase", "normal") ))
-  pn_ps_total <- pn_ps_total %>% mutate(log_pnps = ifelse(pnps < 0.01, -2, log10(pnps)))
+  # pn_ps_total <- pn_ps_total %>% mutate(gene_type = ifelse(integron == "Y", "all cassette genes", 
+  #                             ifelse(transposase == "Y", "transposase", "normal") ))
+  tara_non_cassette <- pn_ps_total %>% 
+    filter(integron == "N" & transposase == "N") %>% 
+    mutate(gene_type = "normal")
+  tara_non_cassette <- tara_non_cassette %>% 
+    filter(pnps < 4) %>% filter(!is.na(pnps)) %>%
+    mutate(log_pnps = ifelse(pnps < 0.01, -2, log10(pnps)))
   
   malaspina_total <- read_csv("data/trans_biofilm_defense_and_normal_pnps_BAT.csv")
   
@@ -206,12 +230,19 @@ init_integron <- function(){
     mutate(log_pnps = ifelse(pnps < 0.01, -2, log10(pnps))) %>%
     mutate(gene_type = ifelse(COG20_CATEGORY == "nan", "no_call", 
                        ifelse(COG20_CATEGORY == "V", "defense", "non_defense")))
-  deep_all <- read_csv("data/malaspina_pNpS2_non_integrons_subsampled.csv")
-  deep_all <- deep_all %>% mutate(log_pnps = ifelse(pnps < 0.01, -2, log10(pnps)))
-  deep_non_trans <- deep_all %>% filter(gene_type != "_T")
-  deep_non_trans$gene_type <- "normal"
+  deep_non_cassette <- read_csv("data/malaspina_pNpS2_non_integrons_subsampled.csv")
+  deep_non_cassette <- deep_non_cassette %>% 
+    filter(pnps < 4) %>% filter(!is.na(pnps)) %>%
+    mutate(log_pnps = ifelse(pnps < 0.01, -2, log10(pnps)))
+  # deep_non_trans <- deep_non_cassette %>% filter(gene_type != "_T")
+  deep_non_cassette$gene_type <- "normal"
   
-  return(list(pn_ps_integron, pn_ps_bins, pn_ps_total, deep_non_trans, deep_integron))
+  # 364,720 Tara Oceans ORFs and 135,280 Malaspina ORFs
+  # following the ratio of 1,286 and 477 ORFs from the 
+  # Tara Oceans and Malaspina metagenomes with pN/pS
+  
+  return(list(pn_ps_integron, pn_ps_bins, sample_n(tara_non_cassette, 364720), 
+              sample_n(deep_non_cassette, 135280), deep_integron))
 }
 
 init_integron_category <- function(){
