@@ -94,6 +94,13 @@ RNA_trans_biofilm.lm <- lm(log_rna_trans~Layer_RNA + log_rna_biofilm, RNA_tara)
 summary(RNA_trans_biofilm.lm)
 anova(RNA_trans_biofilm.lm)
 
+b <- RNA_tara[,c("log_rna_biofilm", "Layer_RNA")] %>% 
+  mutate(is_MES = ifelse(Layer_RNA == "MES", "Y", "N"))
+b.test <- t.test(log_rna_biofilm~is_MES, a)
+
+1/10**b.test$conf.int[1:2]
+# 95% CI: 3.126015 1.700280
+
 
 RNA_tara %>%
   group_by(Layer_RNA) %>%

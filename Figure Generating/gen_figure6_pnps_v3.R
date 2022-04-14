@@ -95,7 +95,7 @@ df_p_val <- data.frame(
 pn_ps_merged %>%
   filter(log_pnps < 0.603) %>%
   ggplot(aes(x = gene_type, y = log_pnps)) +
-  geom_boxplot(outlier.color = "gray", notch = TRUE, aes(fill=gene_type)) +
+  geom_boxplot(outlier.color = "gray", aes(fill=gene_type)) + #notch = TRUE,
   ylab(expression(paste(italic("pN/pS"), " ratio"))) +
   scale_y_continuous(breaks = pnps_scale, 
                      labels = log_pnps_scale, limits = c(-2, 0.7)) + # 

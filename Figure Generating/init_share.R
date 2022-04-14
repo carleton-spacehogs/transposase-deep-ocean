@@ -276,8 +276,15 @@ init_transposase_in_bins <- function(){
 
 init_tara <- function(){
   init_env()
-  DNA_cov_file <- read_excel("data/DNA_Biofilm_Trans_ToxinAntitoxin_Coverage.xlsx")
-  RNA_cov_file <- read_excel("data/RNA_Biofilm_Trans_ToxinAntitoxin_Coverage.xlsx")
+  DNA_cov <- read_excel("data/DNA_Biofilm_Trans_Defense_Coverage.xlsx")
+  DNA_cov$log_dna_biofilm <- log10(DNA_cov$DNA_Biofilm)
+  DNA_cov$log_dna_trans <- log10(DNA_cov$DNA_Transposase)
+  DNA_cov$log_dna_defense <- log10(DNA_cov$DNA_Defense)
+  
+  RNA_cov <- read_excel("data/RNA_Biofilm_Trans_Defense_Coverage.xlsx")
+  RNA_cov$log_rna_biofilm <- log10(RNA_cov$RNA_Biofilm)
+  RNA_cov$log_rna_trans <- log10(RNA_cov$RNA_Transposase)
+  RNA_cov$log_rna_defense <- log10(RNA_cov$RNA_Defense)
   
   DNA_RNA_connector <- read_excel("data/DNA_RNA_connector.xlsx")
   DNA_Metadata <- read_excel("data/DNA_Location_Metadata.xlsx")
@@ -293,33 +300,17 @@ init_tara <- function(){
   RNA_Metadata$Layer_RNA <- factor(RNA_Metadata$Layer_RNA, levels = c("SRF", "DCM", "MES"))
   RNA_Metadata$upper_size_rna <- factor(RNA_Metadata$upper_size_rna, levels = c("1.6", "3"))
   
-  DNA_tara <- merge(x=DNA_Metadata, y=DNA_cov_file, by ='connector_DNA', all = TRUE)
-  RNA_tara <- merge(x=RNA_Metadata, y=RNA_cov_file, by ='connector_RNA', all = TRUE)
+  DNA_tara <- merge(x=DNA_Metadata, y=DNA_cov, by ='connector_DNA', all = TRUE)
+  RNA_tara <- merge(x=RNA_Metadata, y=RNA_cov, by ='connector_RNA', all = TRUE)
   
   DNA_Merged <- merge(x=DNA_RNA_connector, y=DNA_tara, by = 'connector_DNA', all = FALSE)
   DNA_RNA_tara <- merge(x=DNA_Merged, y=RNA_tara, by ='connector_RNA', all = FALSE)
   
   DNA_RNA_tara$biofilm_exp_rate <- DNA_RNA_tara$RNA_Biofilm/DNA_RNA_tara$DNA_Biofilm
   DNA_RNA_tara$trans_exp_rate <- DNA_RNA_tara$RNA_Trans/DNA_RNA_tara$DNA_Transposase
-  DNA_RNA_tara$toxin_exp_rate <- DNA_RNA_tara$RNA_TA/DNA_RNA_tara$DNA_TA
   DNA_RNA_tara$defense_exp_rate <- DNA_RNA_tara$RNA_Defense/DNA_RNA_tara$DNA_Defense
   
-  DNA_RNA_tara <- DNA_RNA_tara%>%group_by(Layer_DNA)%>%
-    mutate(mean_layer_trans_exp=mean(trans_exp_rate), 
-           mean_layer_biofilm_exp=mean(biofilm_exp_rate),
-           median_dna_trans = median(DNA_Transposase),
-           median_dna_biofilm = median(DNA_Biofilm),
-           median_dna_defense = median(DNA_Defense),
-           mean_dna_trans = mean(DNA_Transposase),
-           mean_dna_biofilm = mean(DNA_Biofilm),
-           mean_dna_defense = mean(DNA_Defense),
-           mean_dna_toxin = mean(DNA_TA),
-           median_rna_trans = median(RNA_Trans),
-           median_rna_biofilm = median(RNA_Biofilm),
-           median_rna_defense = median(RNA_Defense)
-           )
-  
-  rm(DNA_cov_file, RNA_cov_file, DNA_Merged, DNA_RNA_connector, DNA_Metadata, RNA_Metadata)
+  rm(DNA_cov, RNA_cov, DNA_Merged, DNA_RNA_connector, DNA_Metadata, RNA_Metadata)
   
   depth_comparisons <- list( c("SRF", "DCM"), c("DCM", "MES"), c("SRF", "MES") )
   DNA_tara <- mutate(DNA_tara, is_MES = ifelse(Layer_DNA == "MES", "MES, BAT", 
