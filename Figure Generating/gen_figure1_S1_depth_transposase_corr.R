@@ -33,9 +33,9 @@ to_graph %>%
   coord_flip() +
   scale_fill_manual(values=c("green","orange"))+
   guides(fill = guide_legend(title = "Size fraction", reverse = TRUE)) +
-  annotate(geom="text", x=2.25, y=-4.1, 
+  annotate(geom="text", x=2.2, y=-4.1, 
            label="italic(Tara)~Oceans", parse=TRUE, color="blue") +
-  annotate(geom="text", x=2, y=-4.1, 
+  annotate(geom="text", x=1.95, y=-4.1, 
            label="metagenomes", color="blue") +
   annotate(geom="text", x=1.15, y=-4.1, 
            label="Malaspina", color="dark blue") +
@@ -44,6 +44,7 @@ to_graph %>%
   theme(legend.background = element_rect(fill="transparent",color="transparent"))
 
 ggsave("F1_depth_size_fraction_trans_coor.png", plot = last_plot())
+ggsave("F1_depth_size_fraction_trans_coor.pdf", plot = last_plot())
 
 DNA_trans_depth.lm <- lm(log_dna_trans~Layer_DNA, to_graph)
 DNA_trans_with_size.lm <- lm(log_dna_trans~Layer_DNA + size_fraction, to_graph)
@@ -52,17 +53,59 @@ summary(DNA_trans_with_size.lm)
 anova(DNA_trans_with_size.lm)
 
 # supplement 1
-sel_col2 <- c("log_dna_trans","is_MES", "Ocean_DNA")
+sel_col2 <- c("log_dna_trans","is_MES", "Ocean_DNA", "DNA_Transposase")
 supplement_graph <- rbind(mala_cov[,sel_col2], DNA_tara[,sel_col2]%>%filter(is_MES != "MIX"))
 
-supplement_graph <- supplement_graph %>% # these oceans don't have enough samples for boxplots
-  filter(!Ocean_DNA %in% c("Southern", "Red Sea", "Mediterranean")) 
-counts = supplement_graph %>% group_by(Ocean_DNA, is_MES) %>% tally
+median_per_ocean <- supplement_graph %>%
+  # these oceans don't have enough samples for boxplots
+  filter(!Ocean_DNA %in% c("Southern", "Red Sea", "Mediterranean")) %>%
+  group_by(Ocean_DNA,is_MES) %>%
+  summarise(median = median(DNA_Transposase) * 100,
+            count = n())
+
+# cleaner version
+sel_lr <- c("Ocean_DNA","median","count")
+l <- median_per_ocean%>%filter(is_MES == "SRF, DCM") %>% select(sel_lr)
+r <- median_per_ocean%>%filter(is_MES == "MES, BAT") %>% select(sel_lr)
+colnames(l) <- c("Ocean_DNA", "shallow_median", "shallow_count")
+colnames(r) <- c("Ocean_DNA", "deep_median", "deep_count")
+t <- merge(l, r, by = "Ocean_DNA")
 
 over_5_oceans_stats <- compare_means(
   log_dna_trans~is_MES, data = supplement_graph, group.by = "Ocean_DNA",
   method = "t.test", ref.group = "MES, BAT"
 )
+
+merge(t, over_5_oceans_stats[,c("Ocean_DNA","p")], by="Ocean_DNA")
+
+# Supplementary 1A only
+colors <- c("light blue","sky blue","steelblue","blue")
+color_breaks <- c('SRF','DCM','MES','BAT')
+depth_scale <- c(5, 10, 40, 100, 400, 1000, 4000)
+d_scale <- -log10(depth_scale)
+# depth_scale <- -1*depth_scale
+to_graph$log_depth <- log10(to_graph$Depth)
+long_depths <- c("SRF (surface)",
+                 "DCM (deep chlorophyll maximum)",
+                 "MES (mesopelagic zone)",
+                 "BAT (bathypelagic zone)")
+
+to_graph %>% 
+  ggplot(aes(y = log_depth*-1, x = log_dna_trans)) +
+  theme_classic() +
+  scale_x_continuous(breaks = scale, labels = percent_scale, limits=c(-4.5, -2)) + 
+  scale_y_continuous(breaks = d_scale, labels = depth_scale) + 
+  labs(y="Depth (m)", x="% DNA reads mapped to transposase", colour="Depth") +
+  geom_jitter(aes(color = Layer_DNA), width = 0.02) +
+  geom_smooth(method = "lm", se = F, color = "orange") +
+  scale_color_manual(breaks=color_breaks,
+                     labels=long_depths,
+                     values=colors)  # theme(legend.position = "none")
+ggsave("S1A_only.png", plot = last_plot())
+ggsave("S1A_only.svg", plot = last_plot())
+
+
+
 
 s11 <- supplement_graph%>% # 
   ggplot(aes(x=fct_rev(Ocean_DNA), y=log_dna_trans, fill=is_MES)) +
@@ -93,6 +136,7 @@ s12 <- to_graph %>%
   geom_smooth(method = "lm", se = F, color = "orange") +
   scale_color_manual(breaks=color_breaks, 
                      values=colors)  # theme(legend.position = "none")
+
 ggarrange(s12, s11, labels = c("A", "B"), 
           ncol = 2, nrow = 1, widths = c(0.48, 0.55))
 

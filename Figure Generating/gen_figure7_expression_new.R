@@ -100,7 +100,7 @@ exp_summary <- melted %>% #
   ggplot(aes(x=Depth, y=value, fill = Gene)) +
   scale_fill_manual(values = c("green", "red","light blue"))+
   facet_wrap(~ Gene, ncol = 3, scales = "free_x") +
-  geom_boxplot() +
+  geom_boxplot(outlier.colour = "gray") +
   stat_pvalue_manual(stat.test2, label = "p.adj.signif", tip.length = 0.01) +
   ylab("RNA/DNA ratio (%RNA / %DNA per sample)") +
   scale_y_log10() +
@@ -113,7 +113,14 @@ ggarrange(nrow = 2, ncol = 1,
   ggarrange(exp_biofilm, exp_defense, widths = c(0.5,0.46), labels = c("A","B"), ncol = 2),
   ggarrange(exp_trans, exp_summary, widths = c(0.4,0.6), labels = c("C","D"), ncol = 2))
 
-ggsave("F7_expression_bars2.png", plot = last_plot())
+ggsave("F7_DNA-RNA-ratio_target-genes.png", 
+       plot = last_plot(),
+       height = 4.3,
+       width = 7.5)
+ggsave("F7_DNA-RNA-ratio_target-genes.pdf", 
+       plot = last_plot(),
+       height = 4.3,
+       width = 7.5)
 
 for (g in c("biofilm", "defense", "trans")){
   DNA_exp <- paste(g,"exp_rate", sep="_")
@@ -127,6 +134,18 @@ for (g in c("biofilm", "defense", "trans")){
   print(paste("SRF vs MES, P:", t.test(srf_data, mes_data)$p.value))
   print(paste("SRF vs DCM, P:", t.test(srf_data, dcm_data)$p.value))
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # trashed 

@@ -53,8 +53,7 @@ tax_depth <- g_tax %>%
   geom_boxplot(outlier.alpha = 0.3,outlier.shape = 21) + 
   ylab("depth")+
   scale_x_continuous(breaks = c(0, 0.2, 0.4, 0.6), limits=c(0, 0.8)) +
-  stat_summary(fun.data = boxplot.give.n, geom = "text",
-               position=position_nudge(x = 0.1, y = 0)) + 
+  stat_summary(fun.data = boxplot.give.n, geom = "text", position=position_nudge(x = 0.1, y = 0)) + 
   theme_classic() +
   theme(legend.position = "none",
         axis.title.x=element_blank(),
@@ -131,14 +130,14 @@ particle_gsize <- all %>%
   coord_cartesian(ylim =c(0.7, 7.7)) +
   geom_boxplot(outlier.alpha = 0.1, varwidth = TRUE, aes(weight=sqrt(all$lifestyle_prop_to_depth)))+
   stat_summary(fun.data = boxplot.give.n, geom = "text",
-               position=position_nudge(x = 0.25, y = 1.5)) +
+               position=position_nudge(x = 0.3, y = 1.5)) +
   theme_classic() +
   theme()# strip.text.x = element_blank()
 
 p_depth_gsize<-all %>% 
   mutate(depth = fct_rev(g_depth)) %>% 
   ggplot(aes(x = depth, y = `complete genome size (Mbp)`)) +
-  ylim(0,8) +
+  ylim(0,9) +
   stat_compare_means(comparisons = 
                      list(c("BAT","DCM"),c("BAT","SRF")), 
                      label = "p.signif", hide.ns = TRUE, method = "t.test", 
@@ -148,9 +147,11 @@ p_depth_gsize<-all %>%
   geom_jitter(aes(color = class_trans), alpha = 0.5) +
   geom_boxplot(outlier.shape = NA, alpha = 0.1) +
   ylab("MAG estimated complete genome size (Mbp)") +
-  stat_summary(fun.data = boxplot.give.n, 
-               geom = "text", 
-               position=position_nudge(x = 0, y = 0.4)) +
+  # stat_summary(fun.data = boxplot.give.n, geom = "text", position=position_nudge(x = 0, y = 0.4)) +
+  scale_x_discrete(labels=c("SRF" = "SRF (n = 339)", 
+                            "DCM" = "DCM (n = 346)", 
+                            "MES" = "MES (n = 497)",
+                            "BAT" = "BAT (n = 255)")) +
   coord_flip() +
   theme_classic() +
   theme(axis.title.y=element_blank(),
@@ -177,9 +178,18 @@ pcom <- ggarrange(p_depth_gsize, tax_depth, tax_lifestyle,
 
 ggarrange(pcom,particle_gsize,size_trans,
           ncol = 3, 
-          widths = c(4.7/10,2.2/10,2.4/10),
+          widths = c(5/10,2.2/10,2.4/10),
           labels = c("", "B","C"))
 
-ggsave("F3_trans_genome_size_varwidth1.png", plot = last_plot())
+ggsave("F3_MAG_transposase_genome_size_varwidth1.png", plot = last_plot())
 
+library(Cairo)
+cairo_pdf(filename = "F3_MAG_transposase_genome_size.pdf",
+          width = 9,
+          height = 6.5)
 
+ggarrange(pcom,particle_gsize,size_trans,
+          ncol = 3, 
+          widths = c(5/10,2.2/10,2.4/10),
+          labels = c("", "B","C"))
+dev.off()

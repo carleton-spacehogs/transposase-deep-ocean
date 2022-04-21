@@ -112,9 +112,12 @@ pn_ps_merged %>%
   scale_fill_manual(values=c("red", "transparent", "orange", "yellow")) +
   coord_flip()
 
-ggsave("F6_cassette_pnps.png", plot = last_plot())
+ggsave("F6_cassette_pnps.png", plot = last_plot(),
+       height = 2.8, width = 5)
 
-# pCassette used in depth_expression_corr.R
+ggsave("F6_cassette_pnps.pdf", plot = last_plot(),
+       height = 2.8, width = 5)
+
 
 
 

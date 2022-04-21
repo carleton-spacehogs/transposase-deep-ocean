@@ -6,17 +6,20 @@ mala_cov <- init_mala_cov()
 
 biofilm_scale_bd <- c("0.0004","0.0002","0.0001") 
 biofilm_scale2 <- log10(as.numeric(biofilm_scale_bd))
-biofilm_percent_scale2 <- c("0.04%","0.02%","0.01%") 
-defense_scale <- c(-2.2, -2.0, -1.8)
-defense_percent_scale <- c("0.63%", "1.00%", "1.58%")
+biofilm_percent_scale2 <- c("0.04%","0.02%","0.01%")
+defense_percent_scale <- c(0.5, 0.7, 0.9, 1.2, 1.7)
+defense_scale <- log10(defense_percent_scale/100)
+# defense_percent_scale <- c("0.5%", "0.7%", "1.0%", "1.3%", "1.7%")
+defense_percent_scale <- c("0.5%", "0.7%", "0.9%", "1.2%", "1.7%")
 
 mala_cov$size_fraction <- ifelse(mala_cov$lower_filter_size == "0.2", "planktonic", "particle")
 DNA_tara$size_fraction <- ifelse(DNA_tara$upper_size_dna == "1.6", "planktonic", "particle")
 bd_sel_col <- c("log_dna_biofilm", "log_dna_trans", "log_dna_defense", 
-                "log_dna_toxin", "Ocean_DNA", "Layer_DNA", "size_fraction")
+                "Ocean_DNA", "Layer_DNA", "size_fraction")
 bd_to_graph <- rbind(mala_cov[,bd_sel_col], DNA_tara[,bd_sel_col])
 bd_to_graph$Layer_DNA <- factor(bd_to_graph$Layer_DNA, levels = c("SRF","DCM","MES","BAT"))
 
+# used in gen_figure5_integron_finder_category_v2.R
 p_bd <- bd_to_graph %>%
   filter(Layer_DNA != "MIX") %>%
   ggplot(aes(x=log_dna_biofilm, y=log_dna_defense)) +

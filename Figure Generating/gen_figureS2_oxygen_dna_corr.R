@@ -10,21 +10,23 @@ oxy_sel_col <- c("log_dna_trans", "log_dna_biofilm", "log_dna_defense", "Ocean_D
 oxy_to_graph <- rbind(mala_cov[,oxy_sel_col], DNA_tara[,oxy_sel_col])
 oxy_to_graph$Layer_DNA <- factor(oxy_to_graph$Layer_DNA, levels = c("SRF","DCM","MES","BAT"))
 
-# supplmentary figure 2
+# supplementary figure 2
 oxy_to_graph %>%
   filter(Layer_DNA != "MIX") %>%
   ggplot(aes(x=Oxygen_DNA, y=log_dna_trans)) +
-  facet_wrap(~Layer_DNA, scales = "free", nrow = 2) + # scales = "free"
+  facet_wrap(~Layer_DNA, nrow = 2) + # scales = "free"
   geom_point(aes(color = Ocean_DNA)) + 
-  labs(color="Ocean") +
+  labs(color="Oceanic Regions") +
   scale_y_continuous(breaks = trans_scale, labels = trans_percent_scale) + 
   theme_classic() +
-  ylab("% metagenomic reads mapped to transposase") +
+  ylab("% DNA reads mapped to transposase") +
   xlab(expression(paste("Dissolved Oxygen (", mu, "mol/Kg)"))) +
+  scale_color_brewer(palette="Set1")+
   geom_smooth(method = "lm", se = F)  +
   theme() #legend.position = "none"
 
 ggsave("S2_oxygen_transposase_corr.png", plot = last_plot())
+ggsave("S2_oxygen_transposase_corr.svg", plot = last_plot())
 
 
 # trashed 

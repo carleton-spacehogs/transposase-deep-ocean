@@ -115,7 +115,7 @@ init_individual_metagenomes <- function(){
   all <- rbind(SRF, DCM, MES, Malaspina)
   all <- all%>%filter(!is.na(pnps))
   all <- all%>%filter(pnps<4)
-  all$log_pnps <- ifelse(all$pnps == "0", -4, log10(all$pnps)) 
+  all$log_pnps <- ifelse(all$pnps < 0.01, -2, log10(all$pnps)) 
   all$gene_type <- factor(all$gene_type, levels = c("biofilm", "defense", "n", "transposase"))
   all$depth <- factor(all$depth, levels=c("SRF", "DCM", "MES", "BAT")) 
   return(list(all))

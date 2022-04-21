@@ -4,14 +4,14 @@ g(DNA_tara, RNA_tara, DNA_RNA_tara, depth_comparison) %=% init_tara()
 mala_cov <- init_mala_cov()
 
 biofilm_RNA_scale <- c(-4.5, -4, -3.5, -3, -2.5, -2)
-biofilm_RNA_percent_scale <- c("0.003", "0.01", "0.03", "0.10", "0.32", "1.00")
+biofilm_RNA_percent_scale <- c("0.003", "0.01", "0.03", "0.1", "0.32", "1.00")
 trans_RNA_scale <- c(-4.5, -4, -3.5, -3)
 trans_RNA_percent_scale <- c("0.003", "0.010", "0.032", "0.100")
 
 trans_scale <- c(-2.5, -3, -3.5, -4, -4.5)
-trans_percent_scale <- c("0.316", "0.100", "0.032", "0.010", "0.003")
-biofilm_scale <- c(-3.4, -3.6, -3.8, -4.0)
-biofilm_percent_scale <- c("0.040", "0.025", "0.016", "0.01")
+trans_percent_scale <- c("0.316", "0.100", "0.032", "0.01", "0.003")
+biofilm_percent_scale <- c(0.04, 0.02, 0.01)
+biofilm_scale <- log10(biofilm_percent_scale/100)
 mala_cov$size_fraction <- ifelse(mala_cov$lower_filter_size == "0.2", "planktonic", "particle")
 DNA_tara$size_fraction <- ifelse(DNA_tara$upper_size_dna == "1.6", "planktonic", "particle")
 
@@ -36,7 +36,7 @@ bt_DNA <- bt_to_graph %>%
   geom_smooth(method = "lm", se = F)  +
   theme(legend.position = "none") # legend.position = "none"
 
-ann_text <- data.frame(log_rna_biofilm = -3.65, log_rna_trans = -3.8,
+ann_text <- data.frame(log_rna_biofilm = -3.83, log_rna_trans = -3.6,
             label = "No metatranscriptome\nsamples available",
             Layer_RNA = factor("BAT",levels = c("SRF", "DCM", "MES", "BAT")))
 
@@ -58,31 +58,38 @@ bt_RNA <- RNA_tara %>% #
 
 ggarrange(bt_DNA, bt_RNA, labels = c("A", "B"), widths = c(0.42,0.6), ncol =2)
 
-ggsave("F2_biofilm_transposase_RNA_DNA.png", plot = last_plot()) 
+ggsave("F2_biofilm_transposase_correlation_RNA_DNA.png", plot = last_plot()) 
+ggsave("F2_biofilm_transposase_correlation_RNA_DNA.pdf", plot = last_plot()) 
 
 RNA_tara$Layer_RNA <- factor(RNA_tara$Layer_RNA, levels = c("SRF", "DCM", "MES", "BAT"))
 
-RNA_tara %>% 
+biofilm_RNA_percent_scale2 <- c(0.0025, 0.005, 0.01, 0.02, 0.04, 0.08, 0.16, 0.32)
+biofilm_RNA_scale2 <- log10(biofilm_RNA_percent_scale2/100)
+RNA_tara %>%
   filter(Layer_RNA != "MIX") %>%
   mutate(Layer_RNA = fct_rev(Layer_RNA)) %>% 
-  ggplot(aes(x=Layer_RNA, y=log_rna_biofilm)) +
-  geom_violin() +
+  ggplot(aes(x=Layer_RNA, y=log_rna_biofilm))+ 
+  scale_x_discrete(labels=c("SRF" = "SRF (n = 103)", 
+                            "DCM" = "DCM (n = 51)", 
+                            "MES" = "MES (n = 31)")) +
+  geom_boxplot(outlier.colour = NA) + # geom_violin() +
   geom_jitter(aes(color=Ocean)) +
-  stat_summary(fun.data = boxplot.give.n, geom = "text") +
+  # stat_summary(fun.data = boxplot.give.n, geom = "text") +
   stat_compare_means(label = "p.signif",
                      method = "t.test",
-    comparisons = depth_comparison ) + 
+    comparisons = depth_comparison ) +
+  scale_color_brewer(palette="Set1")+
   theme_classic() + 
-  scale_y_continuous(breaks = biofilm_RNA_scale, 
-                     labels = biofilm_RNA_percent_scale,
-                     limits=c(-4.5, -1.5)) +
+  scale_y_continuous(breaks = biofilm_RNA_scale2, 
+                     labels = biofilm_RNA_percent_scale2) + # limits=c(-4.5, -2)
   ylab("% RNA transcript mapped to biofilm") + 
-  xlab("depth") +
+  xlab("Depth") +
   # scale_x_discrete(drop=FALSE) + # position = "right"
   # annotate(geom="text", label="No metatranscriptome\nsamples available", y=-3.6, x=1) +
   coord_flip()
 
-ggsave("S3_biofilm_depth_RNA.png", plot = last_plot()) 
+ggsave("S3_biofilm_depth_RNA.png", plot = last_plot())
+ggsave("S3_biofilm_depth_RNA.svg", plot = last_plot())
 
 summary(lm(log_dna_trans~Layer_DNA, DNA_tara))
 trans_biofilm.lm <- lm(log_dna_trans~Layer_DNA + log_dna_biofilm, DNA_tara)

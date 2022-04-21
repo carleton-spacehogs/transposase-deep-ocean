@@ -43,9 +43,15 @@ p_cassette_category <- graphing %>%
         legend.background = element_rect(fill="transparent",color="transparent")) 
   # annotate(geom="text", x=0, y=-0.08, label="* TM: transport and metabolism", color="red")
 
-# p_bd sees biofilm_defense_corr.R
+# p_bd sees gen_figure5_biofilm_defense_corr.R
 ggarrange(p_cassette_category, p_bd, labels = c("A", "B"), 
           ncol = 2, nrow = 1, widths = c(0.7, 0.35))
 
-# ggsave("cassette_function_categories.png", plot = last_plot())
-ggsave("F5_cassette-COG-cateogory_biofilm-vs-defense.png", plot = last_plot())
+ggsave("F5_cassette-COG-cateogory_biofilm-vs-defense.png", 
+       plot = last_plot(),
+       height = 8,
+       width = 8)
+ggsave("F5_cassette-COG-cateogory_biofilm-vs-defense.pdf", 
+       plot = last_plot(),
+       height = 8,
+       width = 8)
