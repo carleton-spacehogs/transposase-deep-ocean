@@ -31,7 +31,7 @@ p2 <- all_p %>%
   xlab("Median MAG pN/pS") +
   ylab("% of transposase ORFs in MAG") + 
   geom_smooth(se = FALSE,method = lm) +
-  scale_color_manual(values=c('green','orange', "red"))+
+  scale_color_manual(values=c('green','gray','orange'))+
   geom_point(aes(color = size_fraction)) +
   labs(color='Lifestyle') +
   theme_classic()

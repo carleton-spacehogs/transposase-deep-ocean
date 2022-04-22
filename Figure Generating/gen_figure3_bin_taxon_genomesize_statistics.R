@@ -7,12 +7,19 @@ col_list <- c("complete genome size (Mbp)", "percent_trans", "log_percent_trans"
               "Class with more than 10 MAGs", "size_fraction")
 stat_all_tara <- bin_taxon[,col_list] # %>% filter(!is.na(depth))
 
-t.test(percent_trans~is_deep_sea, stat_all)
-
 stat_all_mala <- malaspina_bins[,col_list] %>%
   filter(size_fraction != "error")
 
 stat_all <- rbind(stat_all_tara, stat_all_mala)
+
+t.test(percent_trans~is_deep_sea, stat_all)
+print(paste("95% CI:", 1/0.1522989, 1/0.1858968))
+
+stat_all_deep <- stat_all %>% filter(percent_trans>0) %>% 
+  filter(is_deep_sea == "deep_sea")
+
+stat_all_s <- stat_all %>% filter(percent_trans>0) %>% 
+  filter(is_deep_sea == "SRF&DCM")
 
 summary(lm(log_percent_trans~Class, data=stat_all))
 summary(lm(log_percent_trans~`complete genome size (Mbp)`, data=stat_all))

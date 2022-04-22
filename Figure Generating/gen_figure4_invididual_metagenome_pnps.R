@@ -11,8 +11,13 @@ to_graph <- pn_ps_metagenome %>%
   filter(log_pnps > -3) %>%
   mutate(is_trans = ifelse(gene_type == "transposase", 'y', 'n'))
 
-counts <- to_graph %>% count(depth, is_trans)
-# counts <- mutate(counts, n = signif(n, digits = 4))
+counts <- to_graph %>% count(depth, is_trans) %>% as.data.frame()
+# counts$n <- formatC(counts$n, format = "e", digits = 2)
+
+counts[1,3] <- "2.2e+06"
+counts[3,3] <- "2.8e+06"
+counts[5,3] <- "1.5e+06"
+counts[7,3] <- "3.7e+05"
 
 p1<- to_graph %>%
   ggplot(aes(x=fct_rev(depth), y=log_pnps, fill = is_trans)) +
@@ -24,7 +29,7 @@ p1<- to_graph %>%
   # facet_wrap(~depth, nrow = 4, strip.position = "left") +
   guides(fill=guide_legend(title="", reverse = TRUE)) +
   scale_fill_manual(labels = c("Non-transposase", "Transposase"),
-                     values= c("gray","orange")) +
+                     values= c("gray","steelblue")) +
   geom_text(data=counts, aes(label=n, y=1.05), position=position_dodge(0.8)) +
   coord_flip() +
   theme(axis.title.y=element_blank(),
@@ -37,7 +42,10 @@ p1<- to_graph %>%
 # p2 comes from bin_pnps_v3.R
 
 ggarrange(p1, p2, ncol = 2, nrow = 1, widths = c(0.45,0.5),labels = c("A", "B"))
-ggsave("F4_pnps_depth_bin_pnps.png", plot = last_plot())
+ggsave("F4_pnps_depth_bin_pnps.png", 
+       plot = last_plot(),
+       height = 4,
+       width = 10)
 ggsave("F4_pnps_depth_bin_pnps.pdf", 
        plot = last_plot(), 
        height = 4,

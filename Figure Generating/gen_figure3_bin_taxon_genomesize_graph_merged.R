@@ -46,14 +46,22 @@ g_tax$is_biofilm <- gsub('present', 'Biofilm\n     present', g_tax$is_biofilm)
 g_tax$Class <- gsub('Gammaproteobacteria', '\u03b3-proteobacteria', g_tax$Class)
 g_tax$Class <- factor(g_tax$Class, levels = graph_taxon1)
 
+# high, mid, low
+# color_code <- rev(c("gray","yellow","orange")) # fada5e
+color_code <- c("steelblue","cyan","yellow")
+
 tax_depth <- g_tax %>%
   ggplot(aes(x=percent_trans, y = fct_rev(g_depth), fill = class_trans)) +
-  scale_fill_manual(values = c('orange','gray', "green"))+
+  scale_fill_manual(values = color_code)+
   facet_wrap(~Class, ncol = 3) +
-  geom_boxplot(outlier.alpha = 0.3,outlier.shape = 21) + 
+  geom_boxplot(outlier.alpha = 0.3,
+               outlier.shape = 21,
+               outlier.color = NA) + 
   ylab("depth")+
   scale_x_continuous(breaks = c(0, 0.2, 0.4, 0.6), limits=c(0, 0.8)) +
-  stat_summary(fun.data = boxplot.give.n, geom = "text", position=position_nudge(x = 0.1, y = 0)) + 
+  stat_summary(fun.data = boxplot.give.n, 
+               geom = "text", 
+               position=position_nudge(x = 0.4, y = 0)) + 
   theme_classic() +
   theme(legend.position = "none",
         axis.title.x=element_blank(),
@@ -63,18 +71,22 @@ ls_order <- c("planktonic", "mixed", "particle", "all")
 g_tax_label <- c("High %-transposase classes (\u0251- \u03b2- \u03b3- proteobact. and Actinobact.)", 
                 "Normal transposase abundance classes", 
                 "Low %-transposase classes (Flavobact., Acidimicrobidae, etc.)")
-g_tax_col <- c('orange','gray', "green")
+g_tax_col <- color_code
 
 # lab_text <- expression("Taxonomical "*italic("Class")*" of")
 
 tax_lifestyle <- g_tax %>%
-  ggplot(aes(x = percent_trans, y = size_fraction, fill = class_trans)) +
+  ggplot(aes(x = percent_trans, y = fct_rev(size_fraction), fill = class_trans)) +
   facet_wrap(~Class, ncol = 3) +
-  geom_boxplot(outlier.alpha = 0.3,outlier.shape = 21) +
+  geom_boxplot(outlier.alpha = 0.3,
+               outlier.shape = 21,
+               outlier.color = NA) +
   scale_fill_manual(guide = guide_legend(reverse = TRUE),
     labels = g_tax_label, values = g_tax_col)+
   # labs(fill=lab_text) +
-  stat_summary(fun.data = boxplot.give.n, geom = "text", position=position_nudge(x = 0.1, y = 0)) + 
+  stat_summary(fun.data = boxplot.give.n, 
+               geom = "text", 
+               position=position_nudge(x = 0.4, y = 0)) + 
   xlab("% of transposase ORFs in MAGs") +
   scale_x_continuous(breaks = c(0, 0.2, 0.4, 0.6), limits=c(0, 0.8)) +
   theme_classic() +
@@ -143,9 +155,11 @@ p_depth_gsize<-all %>%
                      label = "p.signif", hide.ns = TRUE, method = "t.test", 
                      tip.length = 0.01, label.y = c(7.2,7.8)) +
   scale_color_manual(labels = c("High %-transposase", "Normal %-transposase", "Low %-transposase"),
-                     values = c('orange','gray', "green"))+
+                     values = color_code)+
   geom_jitter(aes(color = class_trans), alpha = 0.5) +
-  geom_boxplot(outlier.shape = NA, alpha = 0.1) +
+  geom_boxplot(outlier.shape = NA, 
+               outlier.color = NA,
+               alpha = 0.1) + # shape = NA, alpha = 0.1
   ylab("MAG estimated complete genome size (Mbp)") +
   # stat_summary(fun.data = boxplot.give.n, geom = "text", position=position_nudge(x = 0, y = 0.4)) +
   scale_x_discrete(labels=c("SRF" = "SRF (n = 339)", 
@@ -158,10 +172,12 @@ p_depth_gsize<-all %>%
         legend.position="none")
 
 size_trans<- ggplot(all, aes(x=fct_rev(size_bin), y=percent_trans)) + 
-  geom_jitter(aes(color = class_trans), alpha = 0.8) +
-  geom_boxplot(outlier.shape = NA, alpha = 0.7) +
-  scale_color_manual(labels = c("High %-transposase", "Normal %-transposase", "Low %-transposase"),
-                     values = c('orange','gray', "green"))+
+  # geom_jitter(aes(color = class_trans), alpha = 0.8) +
+  geom_boxplot(outlier.alpha = 0.2) + # .shape = NA, alpha = 0.2
+  scale_color_manual(labels = c("High %-transposase",
+                                "Normal %-transposase",
+                                "Low %-transposase"),
+                     values = color_code)+
   stat_summary(fun.data = boxplot.give.n, geom = "text", 
                position=position_nudge(x = 0, y = 0.3)) + 
   facet_wrap(~depth, ncol= 1) +
@@ -181,7 +197,7 @@ ggarrange(pcom,particle_gsize,size_trans,
           widths = c(5/10,2.2/10,2.4/10),
           labels = c("", "B","C"))
 
-ggsave("F3_MAG_transposase_genome_size_varwidth1.png", plot = last_plot())
+# ggsave("F3_MAG_transposase_genome_size_varwidth1.png", plot = last_plot())
 
 library(Cairo)
 cairo_pdf(filename = "F3_MAG_transposase_genome_size.pdf",

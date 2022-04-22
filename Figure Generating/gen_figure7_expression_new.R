@@ -91,8 +91,8 @@ melted$log_exp <- log10(melted$value)
 stat.test <- melted %>%
   group_by(Gene) %>%
   t_test(log_exp~Depth) %>%
-  add_significance()
-stat.test <- stat.test %>% add_xy_position()
+  add_significance("p") %>% 
+  add_xy_position()
 stat.test2 <- filter(stat.test, group1 =="MES")
 stat.test2$y.position <- log10(c(3.2, 3.8, 1.9, 1.2, 5.6, 25)) # bio, def, trans
 
@@ -101,7 +101,7 @@ exp_summary <- melted %>% #
   scale_fill_manual(values = c("green", "red","light blue"))+
   facet_wrap(~ Gene, ncol = 3, scales = "free_x") +
   geom_boxplot(outlier.colour = "gray") +
-  stat_pvalue_manual(stat.test2, label = "p.adj.signif", tip.length = 0.01) +
+  stat_pvalue_manual(stat.test2, label = "p.signif", tip.length = 0.01) +
   ylab("RNA/DNA ratio (%RNA / %DNA per sample)") +
   scale_y_log10() +
   theme_classic() +

@@ -108,16 +108,17 @@ g = function(...) {
 
 init_individual_metagenomes <- function(){
   init_env()
-  SRF <- read_csv("data/trans_biofilm_defense_and_normal_pnps_SRF.csv")
-  DCM <- read_csv("data/trans_biofilm_defense_and_normal_pnps_DCM.csv")
-  MES <- read_csv("data/trans_biofilm_defense_and_normal_pnps_MES.csv")
-  Malaspina <- read_csv("data/trans_biofilm_defense_and_normal_pnps_BAT.csv")
-  all <- rbind(SRF, DCM, MES, Malaspina)
+  SRF <- read_csv("data/trans_biofilm_defense_and_normal_pnps_SRF_all.csv")
+  DCM <- read_csv("data/trans_biofilm_defense_and_normal_pnps_DCM_all.csv")
+  MES <- read_csv("data/trans_biofilm_defense_and_normal_pnps_MES_all.csv")
+  MAL <- read_csv("data/trans_biofilm_defense_and_normal_pnps_BAT_all.csv")
+  all <- rbind(SRF, DCM, MES, MAL)
   all <- all%>%filter(!is.na(pnps))
   all <- all%>%filter(pnps<4)
   all$log_pnps <- ifelse(all$pnps < 0.01, -2, log10(all$pnps)) 
   all$gene_type <- factor(all$gene_type, levels = c("biofilm", "defense", "n", "transposase"))
-  all$depth <- factor(all$depth, levels=c("SRF", "DCM", "MES", "BAT")) 
+  all$depth <- factor(all$depth, levels=c("SRF", "DCM", "MES", "BAT"))
+  rm(SRF, DCM, MES, MAL)
   return(list(all))
 }
 

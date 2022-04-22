@@ -53,7 +53,8 @@ g_tax_label <- c("High transposase abundance",
                  "Average transposase abundance",
                  "Low transposase abundance")
 
-g_tax_col <- rev(c("light blue","sky blue","steelblue"))
+# g_tax_col <- rev(c("light blue","sky blue","steelblue"))
+color_code <- c("steelblue","cyan","yellow")
 
 MAG_r <- ggplot(depth_trans, aes(fill=class_trans, y=fct_rev(depth), x=n)) + 
   geom_bar(position="fill", stat="identity") +
@@ -74,7 +75,10 @@ MAG_r <- ggplot(depth_trans, aes(fill=class_trans, y=fct_rev(depth), x=n)) +
 ggarrange(MAG_l, MAG_r, labels = c("A", "B"), 
           ncol = 2, nrow = 1, widths = c(0.5, 0.5))
 
-ggsave("S4_MAG_prop_depth_combine.svg", plot = last_plot())
+# ggsave("S4_MAG_prop_depth_combine.svg", plot = last_plot())
 
-ggsave("S4_MAG_prop_depth_combine.png", plot = last_plot())
+ggsave("S4_MAG_prop_depth_combine.png", 
+       plot = last_plot(),
+       height = 3,
+       width = 8)
 
