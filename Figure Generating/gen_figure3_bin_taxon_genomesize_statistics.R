@@ -34,62 +34,16 @@ add2.lm <- update(add1.lm, .~. +Class)
 add3.lm <- update(add2.lm, .~. +Class*depth)
 add4.lm <- update(add3.lm, .~. +I(`complete genome size (Mbp)`^2))
 
-get_r(depth.lm)
-get_r(gsize_depth.lm)
-get_r(lifestyle_depth.lm)
-get_r(add1.lm)
-get_r(add2.lm)
-get_r(add3.lm)
-get_r(add4.lm)
+sum <- summary(add4.lm)
 
-anova(add1.lm)
-anova(add3.lm)
-anova(add4.lm)
+get_rp(depth.lm)
+get_rp(gsize_depth.lm)
+get_rp(lifestyle_depth.lm)
+get_rp(add1.lm)
+get_rp(add2.lm)
+get_rp(add3.lm)
+get_rp(add4.lm)
 
-
-
-
-
-
-
-
-
-
-
-
-taxon_depth.lm <- lm(log_percent_trans~depth+Class, data=stat_all)
-anova(taxon_depth.lm)
-
-taxon_depth2.lm <- lm(log_percent_trans~depth*Class, data=stat_all)
-anova(taxon_depth2.lm)
-
-biofilm_depth.lm <- lm(log_percent_trans~depth+log_percent_biofilm, stat_all)
-anova(biofilm_depth.lm)
-
-size_fraction_depth.lm <- lm(log_percent_trans~depth+size_fraction, stat_all)
-get_r(size_fraction_depth.lm)
-
-gsize_depth.lm <- lm(log_percent_trans~depth+`complete genome size (Mbp)`, stat_all)
-anova(gsize_depth.lm)
-
-# binary is_biofilm not as good as log_percent_biofilm
-# log_percent_biofilm is not as good as size_fraction
-
-stat_allq.lm <- update(taxon_depth2.lm, .~. +size_fraction)
-stat_all1.lm <- update(stat_allq.lm, .~. +`complete genome size (Mbp)`)
-stat_all2.lm <- update(stat_all1.lm, .~. + I(`complete genome size (Mbp)`^2), stat_all)
-summary(stat_all2.lm)
-
-anova(stat_all2.lm)
-get_r(stat_all2.lm)
-
-# get high/low abundance class
-coe <- as.data.frame(summary(quadra_bin_size.lm)$coefficients)
-colnames(coe)<- c('estimate', 'error', 'tvalue', "pvalue")
-coe <- tibble::rownames_to_column(coe, "varname")
-coe_class <- coe %>%
-  slice(grep("^Clas", varname)) %>% 
-  filter(pvalue < 0.05)
 
 library("car")
 car::vif(stat_ally.lm, singular.ok = TRUE)
@@ -121,38 +75,46 @@ stat_all %>%
   chisq.test()
 
 
+# which taxa class is transposase enriched?
+big_taxa <- stat_all %>% 
+  group_by(Class) %>%
+  summarise(count = n()) %>%
+  filter(count > 10) %>%
+  drop_na() %>%
+  as.data.frame()
 
-big_taxa <- unique(stat_all$`Class with more than 10 MAGs`)
-big_taxa <- big_taxa[!big_taxa == "Others Or Unknown"]
-bi_var <- stat_all %>% select(c("Class with more than 10 MAGs", "percent_trans"))
+big_taxa <- big_taxa$Class
+
+bi_var <- stat_all %>% select(c("Class", "log_percent_trans"))
 
 more_taxa <- c()
 less_taxa <- c()
 for (taxa in big_taxa){
-  this_taxa <- bi_var %>% filter(`Class with more than 10 MAGs`==taxa)
-  others <- bi_var %>% filter(`Class with more than 10 MAGs`!=taxa)
-  res <- t.test(this_taxa$percent_trans, others$percent_trans)
+  this_taxa <- bi_var %>% filter(Class==taxa)
+  others <- bi_var %>% filter(Class!=taxa)
+  res <- t.test(this_taxa$log_percent_trans, others$log_percent_trans)
   if (res$p.value < 0.05){
     if (res$estimate[1] < res$estimate[2]){
       less_taxa <- c(less_taxa, taxa)
-      print(paste(taxa, "->", "less transposases than the rest"))
+      print(paste(taxa, "->", "less transposases")) # than the rest 
     } else {
       more_taxa <- c(more_taxa, taxa)
-      print(paste(taxa, "->", "more transposases than the rest"))
+      print(paste(taxa, "->", "more transposases")) # than the rest
     }
   }
 }
 
 # > more_taxa
-# [1] "Alphaproteobacteria" "Gammaproteobacteria" "Betaproteobacteria"  "Actinobacteria"     
+# [1] "Alphaproteobacteria" "Gammaproteobacteria" "Betaproteobacteria"  "Deltaproteobacteria"
 # > less_taxa
-# [1] "Flavobacteria"    "Acidimicrobidae"  "novelClass_E"     "Gemmatimonadetes"
-# [5] "SAR202-2"         "Marinisomatia" 
+# [1] "Verrucomicrobia" "Flavobacteria"   "Acidimicrobidae" "novelClass_E"    "Opitutae"       
+# [6] "SAR202-2" 
 
-class_trans <-bi_var %>% group_by(`Class with more than 10 MAGs`) %>%
-  summarise(across(where(is.numeric), list(mean = mean)))
-
-class_trans <- class_trans[order(-class_trans$percent_trans_mean),]
+stat_all %>% group_by(Class) %>%
+  summarise(mean.log.trans = mean(log_percent_trans),
+            count = n()) %>%
+  filter(Class %in% big_taxa) %>% 
+  arrange(mean.log.trans)
 
 depth_stats_taxon <- stat_all %>% 
   with(table(`Class with more than 10 MAGs`, depth)) %>% 

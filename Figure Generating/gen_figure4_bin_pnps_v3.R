@@ -1,6 +1,6 @@
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
 source("./init_share.R")
-g(bin_taxon, depth_comparisons, malaspina_bins) %=% init_bins()
+g(bin_taxon, depth_comparison, malaspina_bins, low_trans, high_trans) %=% init_bins()
 
 selected <- c("percent_trans", "log_percent_trans", "median_bin_pnps", "depth", 
               "size_fraction", "complete genome size (Mbp)")

@@ -41,6 +41,28 @@ def get_depth(depth_r):
 	else: 
 		return "unsure"
 
+def get_depth2(sum_row_depth, normaling_factor):
+	global SRF_count
+	global DCM_count
+	global MES_count
+	def comp(r_sum, nor, ind): # r_sum: read sum
+		this_depth_rpkm = r_sum[ind]/nor[ind]
+		other_depths_rpkm = sum(r_sum[:ind] + r_sum[ind+1:])/sum(nor[:ind] + nor[ind+1:])
+		if this_depth_rpkm/other_depths_rpkm > 2:
+			return True
+	if comp(sum_row_depth, normaling_factor, 0):
+		SRF_count += 1
+		return "SRF"
+	elif comp(sum_row_depth, normaling_factor, 1): 
+		DCM_count += 1
+		return "DCM"
+	elif comp(sum_row_depth, normaling_factor, 2): 
+		MES_count += 1
+		return "MES"
+	else: 
+		return "unsure"
+
+
 def get_size(size_r):
 	global par_count 
 	global plank_count 
@@ -82,7 +104,8 @@ for MAG_row in bin_coverages[1:]:
 	sum_normalized_depth = [a / b for a, b in zip(sum_row_depth, normaling_factor)]
 	sum_nor_size = [a / b for a, b in zip(sum_row_size, nor_fac_size)]
 
-	out_row.append(get_depth(sum_normalized_depth))
+	# out_row.append(get_depth(sum_normalized_depth))
+	out_row.append(get_depth2(sum_row_depth, normaling_factor))
 	out_row.append(get_size(sum_nor_size))
 
 	out_row.extend(sum_normalized_depth)

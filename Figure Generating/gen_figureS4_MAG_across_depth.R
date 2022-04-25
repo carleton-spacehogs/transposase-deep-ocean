@@ -1,12 +1,6 @@
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
 source("./init_share.R")
-g(bin_taxon, depth_comparison, malaspina_bins) %=% init_bins()
-
-# from bin_taxon_genomesize_statistics.R
-low_trans <- c("Flavobacteria","Acidimicrobidae","novelClass_E",
-               "Gemmatimonadetes","SAR202-2","Marinisomatia")
-high_trans <- c("Alphaproteobacteria","Gammaproteobacteria",
-                "Betaproteobacteria","Actinobacteria")
+g(bin_taxon, depth_comparison, malaspina_bins, low_trans, high_trans) %=% init_bins()
 
 col_list <- c("size_fraction","depth", "Class", "class_trans")
 

@@ -61,6 +61,12 @@ less_than <- function(vct, upper) {
 }
 
 get_r <- function(reglm) {return(summary(reglm)$r.squared)}
+get_rp <- function(reglm) {
+  r <- summary(reglm)$r.squared
+  p <- rev(anova(reglm)$`Pr(>F)`)[2]
+  out <- format(signif(p, digits = 3), scientific = TRUE)
+  return(out)
+}
 
 # Generic form
 '%=%' = function(l, r, ...) UseMethod('%=%')
@@ -140,15 +146,18 @@ init_mala_cov <- function(){
 
 init_bins <- function(){
   init_env()
-  c <- 0.0000000001 # for log(0)
+  c <- 0.0001 # for log(0)
   # low_trans <- c("Flavobacteria","Acidimicrobidae","novelClass_E",
   #                "Gemmatimonadetes","SAR202-2","Marinisomatia")
-  low_trans <- c("Flavobacteria","Acidimicrobidae",
-                 "Gemmatimonadetes","Marinisomatia")
+  # from bin_taxon_genomesize_statistics.R
+  low_trans <- c("Flavobacteria","Acidimicrobidae","novelClass_E", 
+                 "Verrucomicrobia","SAR202-2")
   high_trans <- c("Alphaproteobacteria","Gammaproteobacteria",
-                  "Betaproteobacteria","Actinobacteria")
+                  "Betaproteobacteria","Deltaproteobacteria")
   taxon <- read_csv("data/bin_taxon.csv")
-  COG_diversity <- read_csv("data/tara_bin_COG_diversity2.csv")
+  origin <- read_csv("../MAG-related/Tara_bins_origin.csv")[,c("bin","depth","size_fraction")]
+  taxon <- merge(origin, taxon, by = "bin")
+  # COG_diversity <- read_csv("data/tara_bin_COG_diversity2.csv")
   taxon$depth <- factor(taxon$depth, levels = c("SRF", "DCM", "MES"))
   taxon$`transposase gene calls in genome (%)` <- taxon$percent_trans
   taxon$`biofilm gene calls in genome (%)` <- taxon$percent_biofilm
@@ -170,7 +179,7 @@ init_bins <- function(){
   pn_ps_bins <- read_csv("data/bin_median_pnps.csv")
   pn_ps_bins <- pn_ps_bins %>% filter(count >= 100)
   taxon <- merge(taxon, pn_ps_bins, by="bin", all.x = TRUE)
-  taxon <- merge(taxon, COG_diversity, by="bin", all.x = TRUE)
+  # taxon <- merge(taxon, COG_diversity, by="bin", all.x = TRUE)
   taxon$log_median_bin_pnps <- log10(taxon$median_bin_pnps)
   taxon$size_fraction <- factor(taxon$size_fraction, levels = c("planktonic", "mixed", "particle"))
   
@@ -206,7 +215,7 @@ init_bins <- function(){
   malaspina_bins$g_depth <- "Deep\nMalaspina"
   malaspina_bins$is_deep_sea <- "deep_sea"
   malaspina_bins$size_fraction <- factor(malaspina_bins$size_fraction, levels = c("planktonic", "mixed", "particle"))
-  return(list(taxon, depth_comparisons, malaspina_bins))
+  return(list(taxon, depth_comparisons, malaspina_bins, low_trans, high_trans))
 }
 
 init_integron <- function(){
