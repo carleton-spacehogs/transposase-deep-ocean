@@ -2,7 +2,6 @@ init_env <- function(){
   library(readr)
   library(scatterplot3d)
   library(tidyverse)
-  library(ggpubr)
   library(purrr)
   library(ggpubr)
   library(ggrepel)
@@ -19,6 +18,7 @@ init_env <- function(){
   library(gridExtra)
   library(stringr)
   library(png)
+  library(rstatix)
   setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
   getwd()
 }
@@ -151,7 +151,7 @@ init_bins <- function(){
   #                "Gemmatimonadetes","SAR202-2","Marinisomatia")
   # from bin_taxon_genomesize_statistics.R
   low_trans <- c("Flavobacteria","Acidimicrobidae","novelClass_E", 
-                 "Verrucomicrobia","SAR202-2")
+                 "Verrucomicrobia","SAR202-2","Opitutae")
   high_trans <- c("Alphaproteobacteria","Gammaproteobacteria",
                   "Betaproteobacteria","Deltaproteobacteria")
   taxon <- read_csv("data/bin_taxon.csv")
@@ -233,7 +233,7 @@ init_integron <- function(){
     filter(pnps < 4) %>% filter(!is.na(pnps)) %>%
     mutate(log_pnps = ifelse(pnps < 0.01, -2, log10(pnps)))
   
-  malaspina_total <- read_csv("data/trans_biofilm_defense_and_normal_pnps_BAT.csv")
+  malaspina_total <- read_csv("data/trans_biofilm_defense_and_normal_pnps_BAT_all.csv")
   
   deep_integron <- read_csv("data/malaspina_pNpS2_integron.csv")
   deep_integron <- deep_integron %>% 

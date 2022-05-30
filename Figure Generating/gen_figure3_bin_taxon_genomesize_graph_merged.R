@@ -17,8 +17,8 @@ count_nor_class <- as.data.frame.matrix(table(normal_taxa_rows$Class, normal_tax
 count_nor_class[order(-count_nor_class$SRF),]
 #                        SRF DCM MES BAT
 # Opitutae                7   4   0   0
-# Actinobacteria          5   3  11   9 # has the least worst distribution for each depth 
-# Planctomycetia          5  11  10   0
+# Actinobacteria          5   3  11   9 
+# Planctomycetia          5  11  10   0 # has the least worst distribution for each depth 
 # Phycisphaerae           4  10   3   1
 # Kiritimatiellae         3   0   0   1
 

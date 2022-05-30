@@ -43,8 +43,10 @@ to_graph %>%
            label="metagenomes", color="dark blue") +
   theme(legend.background = element_rect(fill="transparent",color="transparent"))
 
-ggsave("F1_depth_size_fraction_trans_coor.png", plot = last_plot())
-ggsave("F1_depth_size_fraction_trans_coor.pdf", plot = last_plot())
+ggsave("AGU_depth_size_fraction_trans_coor.png", plot = last_plot(),
+       height = 2.3, width = 6)
+ggsave("F1_depth_size_fraction_trans_coor.pdf", plot = last_plot(),
+       height = 3, width = 6.3)
 
 DNA_trans_depth.lm <- lm(log_dna_trans~Layer_DNA, to_graph)
 DNA_trans_with_size.lm <- lm(log_dna_trans~Layer_DNA + size_fraction, to_graph)
