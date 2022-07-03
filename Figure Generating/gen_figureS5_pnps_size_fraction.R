@@ -11,6 +11,9 @@ counts1 <- to_graph %>% count(depth, size_fraction)
 scale <- c(-2, -1.5, -1, -0.5, 0, 0.5)
 log_scale <- c("< 0.01", "0.032", "0.1", "0.316", "1", "3.162")
 
+to_graph %>% group_by(depth, is_trans) %>%
+  summarize(pnps_median = median(pnps))
+
 to_graph %>%
   ggplot(aes(x=fct_rev(depth), y=log_pnps, fill = size_fraction)) +
   geom_boxplot(outlier.shape=NA) +

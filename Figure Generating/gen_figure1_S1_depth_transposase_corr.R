@@ -9,11 +9,58 @@ percent_scale <- c("1.00%", "0.316%", "0.100%", "0.032%", "0.010%", "0.003%")
 mala_cov$size_fraction <- ifelse(mala_cov$lower_filter_size == "0.2", "planktonic", "particle-\nassociated")
 DNA_tara$size_fraction <- ifelse(DNA_tara$upper_size_dna == "1.6", "planktonic", "particle-\nassociated")
 
-sel_col <- c("Layer_DNA","log_dna_trans","size_fraction","Depth")
+sel_col <- c("Layer_DNA","log_dna_trans","size_fraction","Depth","log_dna_biofilm")
 to_graph <- rbind(mala_cov[,sel_col], DNA_tara[,sel_col]%>%filter(Layer_DNA != "MIX"))
 to_graph$Layer_DNA <- factor(to_graph$Layer_DNA, levels = c("SRF","DCM","MES","BAT"))
 
 counts = to_graph %>% group_by(size_fraction, Layer_DNA) %>% tally
+
+# biofilm related:
+to_graph %>%
+  filter(Layer_DNA != "MIX") %>%
+  ggplot(aes(y=fct_rev(Layer_DNA), x=log_dna_biofilm, fill = size_fraction)) +
+  geom_text(data=counts, aes(label=n, x=-3), position=position_dodge(0.6)) +
+  geom_boxplot(varwidth = TRUE, outlier.alpha = 0.5) +
+  ylab("depth")
+
+
+RNA_to_graph = DNA_RNA_tara %>%
+  filter(Layer_DNA != "MIX") %>%
+  mutate(size_fraction = as.factor(upper.size))
+
+counts2 = RNA_to_graph %>% group_by(size_fraction, Layer_RNA) %>% tally
+RNA_to_graph %>%
+  ggplot(aes(y=fct_rev(Layer_RNA), x = log_rna_biofilm, fill = size_fraction)) +
+  geom_text(data=counts2, aes(label=n, x=-3), position=position_dodge(0.6)) +
+  geom_boxplot(varwidth = TRUE, outlier.alpha = 0.5) +
+  ylab("depth")
+
+
+
+DNA_tara %>%
+  filter(Layer_DNA != "MIX") %>%
+  ggplot(aes(y=fct_rev(Layer_DNA), x=DNA_CAZenzyme, fill = size_fraction)) +
+  # geom_text(data=counts, aes(label=n, x=-3), position=position_dodge(0.6)) +
+  geom_boxplot(varwidth = TRUE, outlier.alpha = 0.5) +
+  ylab("depth")
+
+RNA_to_graph %>%
+  filter(Layer_RNA != "MIX") %>%
+  ggplot(aes(y=fct_rev(Layer_RNA), x=RNA_CAZenzyme, fill = size_fraction)) +
+  # geom_text(data=counts, aes(label=n, x=-3), position=position_dodge(0.6)) +
+  geom_boxplot(varwidth = TRUE, outlier.alpha = 0.5) +
+  ylab("depth")
+
+
+
+
+
+
+
+
+
+
+
 # generate figure 1
 to_graph %>% 
   filter(Layer_DNA != "MIX") %>%
