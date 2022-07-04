@@ -23,13 +23,9 @@ to_graph %>%
   geom_boxplot(varwidth = TRUE, outlier.alpha = 0.5) +
   ylab("depth")
 
-
-RNA_to_graph = DNA_RNA_tara %>%
-  filter(Layer_DNA != "MIX") %>%
-  mutate(size_fraction = as.factor(upper.size))
-
 counts2 = RNA_to_graph %>% group_by(size_fraction, Layer_RNA) %>% tally
-RNA_to_graph %>%
+RNA_tara %>%
+  mutate(size_fraction = as.factor(upper.size)) %>%
   ggplot(aes(y=fct_rev(Layer_RNA), x = log_rna_biofilm, fill = size_fraction)) +
   geom_text(data=counts2, aes(label=n, x=-3), position=position_dodge(0.6)) +
   geom_boxplot(varwidth = TRUE, outlier.alpha = 0.5) +
@@ -39,17 +35,17 @@ RNA_to_graph %>%
 
 DNA_tara %>%
   filter(Layer_DNA != "MIX") %>%
-  ggplot(aes(y=fct_rev(Layer_DNA), x=DNA_sect_CAZ, fill = size_fraction)) +
-  # geom_text(data=counts, aes(label=n, x=-3), position=position_dodge(0.6)) +
+  ggplot(aes(y=fct_rev(Layer_DNA), x=percent_sect_CAZ, fill = size_fraction)) +
+  geom_text(data=counts, aes(label=n, x=20), position=position_dodge(0.6)) +
   geom_boxplot(varwidth = TRUE, outlier.alpha = 0.5) +
-  ylab("depth")
+  ylab("depth") + xlab("Percentage of secretory CAZenzyme (DNA)")
 
-RNA_to_graph %>%
+RNA_tara %>%
   filter(Layer_RNA != "MIX") %>%
-  ggplot(aes(y=fct_rev(Layer_RNA), x=RNA_sect_CAZ, fill = size_fraction)) +
-  # geom_text(data=counts, aes(label=n, x=-3), position=position_dodge(0.6)) +
+  mutate(size_fraction = ifelse(upper_size_rna == 1.6, "planktonic", "particle")) %>%
+  ggplot(aes(y=fct_rev(Layer_RNA), x=percent_sect_CAZ, fill = size_fraction)) +
   geom_boxplot(varwidth = TRUE, outlier.alpha = 0.5) +
-  ylab("depth")
+  ylab("depth") + xlab("Percentage of secretory CAZenzyme (RNA)")
 
 
 

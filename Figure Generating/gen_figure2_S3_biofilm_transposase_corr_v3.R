@@ -20,6 +20,60 @@ bt_sel_col <- c("log_dna_trans", "log_dna_biofilm", "log_dna_defense",
 bt_to_graph <- rbind(mala_cov[,bt_sel_col], DNA_tara[,bt_sel_col])
 bt_to_graph$Layer_DNA <- factor(bt_to_graph$Layer_DNA, levels = c("SRF","DCM","MES","BAT"))
 
+DNA_tara %>%
+  filter(Layer_DNA != "MIX") %>%
+  ggplot(aes(x=percent_sect_CAZ, y=log_dna_trans)) +
+  scale_y_continuous(breaks = trans_scale, labels = trans_percent_scale) + 
+  scale_color_brewer(palette="Set1")+
+  facet_wrap(~Layer_DNA) +
+  geom_point(aes(color = Ocean_DNA)) + 
+  theme_classic() +
+  ylab("% DNA reads mapped to transposase") +
+  xlab("Percentage of secretory CAZenzyme") +
+  geom_smooth(method = "lm", se = F)  +
+  theme(legend.position = "none")
+
+DNA_tara %>%
+  filter(Layer_DNA != "MIX") %>%
+  ggplot(aes(x=DNA_sect_CAZ, y=log_dna_trans)) +
+  scale_y_continuous(breaks = trans_scale, labels = trans_percent_scale) + 
+  scale_color_brewer(palette="Set1")+
+  facet_wrap(~Layer_DNA) +
+  geom_point(aes(color = Ocean_DNA)) + 
+  theme_classic() +
+  ylab("% DNA reads mapped to transposase") +
+  xlab("% DNA reads mapped to secretory CAZenzyme") +
+  geom_smooth(method = "lm", se = F)  +
+  theme(legend.position = "none")
+
+RNA_tara %>%
+  filter(Layer_RNA != "MIX") %>%
+  ggplot(aes(x=percent_sect_CAZ, y=log_rna_trans)) +
+  scale_y_continuous(breaks = trans_scale, labels = trans_percent_scale) + 
+  scale_color_brewer(palette="Set1")+
+  facet_wrap(~Layer_RNA) +
+  geom_point(aes(color = Ocean)) + 
+  theme_classic() +
+  ylab("% RNA reads mapped to transposase") +
+  xlab("Percentage of secretory CAZenzyme") +
+  geom_smooth(method = "lm", se = F)  +
+  theme(legend.position = "none")
+
+# RNA_tara$log_rna_sect_CAZ = log(RNA_tara$RNA_sect_CAZ)
+
+RNA_tara %>%
+  filter(Layer_RNA != "MIX") %>%
+  ggplot(aes(x=log_rna_sect_CAZ, y=log_rna_trans)) +
+  scale_y_continuous(breaks = trans_scale, labels = trans_percent_scale) + 
+  scale_color_brewer(palette="Set1")+
+  facet_wrap(~Layer_RNA) +
+  geom_point(aes(color = Ocean)) + 
+  theme_classic() +
+  ylab("% RNA reads mapped to transposase") +
+  xlab("(log 10 scale) % RNA reads mapped to secretory CAZenzyme") +
+  geom_smooth(method = "lm", se = F)  +
+  theme(legend.position = "none")
+
 bt_DNA <- bt_to_graph %>%
   filter(Layer_DNA != "MIX") %>%
   ggplot(aes(x=log_dna_biofilm, y=log_dna_trans)) +

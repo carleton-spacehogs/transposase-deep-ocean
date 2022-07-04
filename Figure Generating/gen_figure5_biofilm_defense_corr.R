@@ -19,6 +19,34 @@ bd_sel_col <- c("log_dna_biofilm", "log_dna_trans", "log_dna_defense",
 bd_to_graph <- rbind(mala_cov[,bd_sel_col], DNA_tara[,bd_sel_col])
 bd_to_graph$Layer_DNA <- factor(bd_to_graph$Layer_DNA, levels = c("SRF","DCM","MES","BAT"))
 
+
+DNA_tara %>%
+  filter(Layer_DNA != "MIX") %>%
+  ggplot(aes(x=DNA_sect_CAZ, y=log_dna_defense)) +
+  scale_y_continuous(breaks = defense_scale, labels = defense_percent_scale) + 
+  scale_color_brewer(palette="Set1")+
+  facet_wrap(~Layer_DNA) +
+  geom_point(aes(color = Ocean_DNA)) + 
+  theme_classic() +
+  ylab("% DNA reads mapped to defense") +
+  # xlab("% of secretory CAZenzyme (DNA)") +
+  xlab("% DNA reads mapped to secretory CAZenzyme") +
+  geom_smooth(method = "lm", se = F)  +
+  theme(legend.position = "none")
+
+
+DNA_tara %>%
+  filter(Layer_DNA != "MIX") %>%
+  ggplot(aes(x=DNA_sect_CAZ, y=log_dna_biofilm)) +
+  scale_color_brewer(palette="Set1")+
+  facet_wrap(~Layer_DNA) +
+  geom_point(aes(color = Ocean_DNA)) + 
+  theme_classic() +
+  ylab("% DNA reads mapped to defense") +
+  xlab("% DNA reads mapped to secretory CAZenzyme") +
+  geom_smooth(method = "lm", se = F)  +
+  theme(legend.position = "none")
+
 # used in gen_figure5_integron_finder_category_v2.R
 p_bd <- bd_to_graph %>%
   filter(Layer_DNA != "MIX") %>%
