@@ -290,11 +290,16 @@ init_tara <- function(){
   DNA_cov$log_dna_biofilm <- log10(DNA_cov$DNA_Biofilm)
   DNA_cov$log_dna_trans <- log10(DNA_cov$DNA_Transposase)
   DNA_cov$log_dna_defense <- log10(DNA_cov$DNA_Defense)
+  DNA_cov$percent_sect_CAZ = DNA_cov$DNA_sect_CAZ/DNA_cov$DNA_CAZenzyme*100
+  DNA_cov$log_percent_sect_CAZ = log10(DNA_cov$percent_sect_CAZ)
   
   RNA_cov <- read_excel("data/RNA_Biofilm_Trans_Defense_Coverage.xlsx")
   RNA_cov$log_rna_biofilm <- log10(RNA_cov$RNA_Biofilm)
   RNA_cov$log_rna_trans <- log10(RNA_cov$RNA_Transposase)
   RNA_cov$log_rna_defense <- log10(RNA_cov$RNA_Defense)
+  RNA_cov$percent_sect_CAZ = RNA_cov$RNA_sect_CAZ/RNA_cov$RNA_CAZenzyme*100
+  RNA_cov$log_percent_sect_CAZ = log10(RNA_cov$percent_sect_CAZ)
+  RNA_cov$log_rna_sect_CAZ = log(RNA_cov$RNA_sect_CAZ)
   
   DNA_RNA_connector <- read_excel("data/DNA_RNA_connector.xlsx")
   DNA_Metadata <- read_excel("data/DNA_Location_Metadata.xlsx")
