@@ -7,45 +7,44 @@ mala_cov <- init_mala_cov()
 biofilm_scale_bd <- c("0.0004","0.0002","0.0001") 
 biofilm_scale2 <- log10(as.numeric(biofilm_scale_bd))
 biofilm_percent_scale2 <- c("0.04%","0.02%","0.01%")
-defense_percent_scale <- c(0.5, 0.7, 0.9, 1.2, 1.7)
+defense_percent_scale <- c(0.5, 1, 2)
 defense_scale <- log10(defense_percent_scale/100)
-# defense_percent_scale <- c("0.5%", "0.7%", "1.0%", "1.3%", "1.7%")
-defense_percent_scale <- c("0.5%", "0.7%", "0.9%", "1.2%", "1.7%")
+
+CAZ_percent_scale <- c(0.8, 0.4, 0.2, 0.1)
+CAZ_scale <- log10(CAZ_percent_scale/100)
 
 mala_cov$size_fraction <- ifelse(mala_cov$lower_filter_size == "0.2", "planktonic", "particle")
 DNA_tara$size_fraction <- ifelse(DNA_tara$upper_size_dna == "1.6", "planktonic", "particle")
-bd_sel_col <- c("log_dna_biofilm", "log_dna_trans", "log_dna_defense", 
+bd_sel_col <- c("log_dna_biofilm", "log_dna_trans", "log_dna_defense",
+                "log_dna_sect_CAZ", "percent_sect_CAZ",
                 "Ocean_DNA", "Layer_DNA", "size_fraction")
 bd_to_graph <- rbind(mala_cov[,bd_sel_col], DNA_tara[,bd_sel_col])
 bd_to_graph$Layer_DNA <- factor(bd_to_graph$Layer_DNA, levels = c("SRF","DCM","MES","BAT"))
 
-
-DNA_tara %>%
+bd_to_graph %>%
   filter(Layer_DNA != "MIX") %>%
-  ggplot(aes(x=DNA_sect_CAZ, y=log_dna_defense)) +
-  scale_y_continuous(breaks = defense_scale, labels = defense_percent_scale) + 
-  scale_color_brewer(palette="Set1")+
-  facet_wrap(~Layer_DNA) +
-  geom_point(aes(color = Ocean_DNA)) + 
+  ggplot(aes(x=log_dna_sect_CAZ, y=log_dna_defense)) +
+  facet_wrap(~Layer_DNA, ncol = 2) + # scales = "free"
+  scale_y_continuous(breaks = defense_scale, labels = defense_percent_scale, limits=c(-2.3, -1.65)) + 
+  scale_x_continuous(breaks = CAZ_scale, labels = CAZ_percent_scale) +
+  geom_point(aes(color=size_fraction)) +
   theme_classic() +
-  ylab("% DNA reads mapped to defense") +
-  # xlab("% of secretory CAZenzyme (DNA)") +
+  ylab("% DNA reads mapped to defense mechanism ORFs") +
   xlab("% DNA reads mapped to secretory CAZenzyme") +
   geom_smooth(method = "lm", se = F)  +
-  theme(legend.position = "none")
+  theme()
 
-
-DNA_tara %>%
-  filter(Layer_DNA != "MIX") %>%
-  ggplot(aes(x=DNA_sect_CAZ, y=log_dna_biofilm)) +
-  scale_color_brewer(palette="Set1")+
-  facet_wrap(~Layer_DNA) +
-  geom_point(aes(color = Ocean_DNA)) + 
+bd_to_graph %>%
+  filter(!Layer_DNA %in% c("MIX",NA)) %>%
+  ggplot(aes(x=percent_sect_CAZ, y=log_dna_defense)) +
+  facet_wrap(~Layer_DNA, ncol = 2) + # scales = "free"
+  scale_y_continuous(breaks = defense_scale, labels = defense_percent_scale) + # , limits=c(-2.3, -1.65) 
+  geom_point(aes(color=size_fraction)) +
   theme_classic() +
-  ylab("% DNA reads mapped to defense") +
-  xlab("% DNA reads mapped to secretory CAZenzyme") +
+  ylab("% DNA reads mapped to defense mechanism ORFs") +
+  xlab("secretory CAZenzyme among all CAZenzyme (%)") +
   geom_smooth(method = "lm", se = F)  +
-  theme(legend.position = "none")
+  theme()
 
 # used in gen_figure5_integron_finder_category_v2.R
 p_bd <- bd_to_graph %>%

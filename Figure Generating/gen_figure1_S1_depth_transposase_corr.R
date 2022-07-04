@@ -9,52 +9,27 @@ percent_scale <- c("1.00%", "0.316%", "0.100%", "0.032%", "0.010%", "0.003%")
 mala_cov$size_fraction <- ifelse(mala_cov$lower_filter_size == "0.2", "planktonic", "particle-\nassociated")
 DNA_tara$size_fraction <- ifelse(DNA_tara$upper_size_dna == "1.6", "planktonic", "particle-\nassociated")
 
-sel_col <- c("Layer_DNA","log_dna_trans","size_fraction","Depth","log_dna_biofilm")
+sel_col <- c("Layer_DNA","log_dna_trans","size_fraction","Depth", "DNA_CAZenzyme",
+             "log_dna_biofilm","percent_sect_CAZ","DNA_sect_CAZ", "log_dna_sect_CAZ")
 to_graph <- rbind(mala_cov[,sel_col], DNA_tara[,sel_col]%>%filter(Layer_DNA != "MIX"))
 to_graph$Layer_DNA <- factor(to_graph$Layer_DNA, levels = c("SRF","DCM","MES","BAT"))
 
 counts = to_graph %>% group_by(size_fraction, Layer_DNA) %>% tally
 
-# biofilm related:
+
 to_graph %>%
   filter(Layer_DNA != "MIX") %>%
-  ggplot(aes(y=fct_rev(Layer_DNA), x=log_dna_biofilm, fill = size_fraction)) +
-  geom_text(data=counts, aes(label=n, x=-3), position=position_dodge(0.6)) +
-  geom_boxplot(varwidth = TRUE, outlier.alpha = 0.5) +
-  ylab("depth")
-
-counts2 = RNA_to_graph %>% group_by(size_fraction, Layer_RNA) %>% tally
-RNA_tara %>%
-  mutate(size_fraction = as.factor(upper.size)) %>%
-  ggplot(aes(y=fct_rev(Layer_RNA), x = log_rna_biofilm, fill = size_fraction)) +
-  geom_text(data=counts2, aes(label=n, x=-3), position=position_dodge(0.6)) +
-  geom_boxplot(varwidth = TRUE, outlier.alpha = 0.5) +
-  ylab("depth")
-
-
-
-DNA_tara %>%
-  filter(Layer_DNA != "MIX") %>%
   ggplot(aes(y=fct_rev(Layer_DNA), x=percent_sect_CAZ, fill = size_fraction)) +
-  geom_text(data=counts, aes(label=n, x=20), position=position_dodge(0.6)) +
+  geom_text(data=counts, aes(label=n, x=25), position=position_dodge(0.6)) +
   geom_boxplot(varwidth = TRUE, outlier.alpha = 0.5) +
   ylab("depth") + xlab("Percentage of secretory CAZenzyme (DNA)")
 
-RNA_tara %>%
-  filter(Layer_RNA != "MIX") %>%
-  mutate(size_fraction = ifelse(upper_size_rna == 1.6, "planktonic", "particle")) %>%
-  ggplot(aes(y=fct_rev(Layer_RNA), x=percent_sect_CAZ, fill = size_fraction)) +
+to_graph %>%
+  filter(Layer_DNA != "MIX") %>%
+  ggplot(aes(y=fct_rev(Layer_DNA), x=log_dna_sect_CAZ, fill = size_fraction)) +
+  geom_text(data=counts, aes(label=n, x=-2), position=position_dodge(0.6)) +
   geom_boxplot(varwidth = TRUE, outlier.alpha = 0.5) +
-  ylab("depth") + xlab("Percentage of secretory CAZenzyme (RNA)")
-
-
-
-
-
-
-
-
-
+  ylab("depth") + xlab("Percentage of secretory CAZenzyme (DNA)")
 
 
 # generate figure 1
@@ -85,6 +60,8 @@ to_graph %>%
   annotate(geom="text", x=0.9, y=-4.1, 
            label="metagenomes", color="dark blue") +
   theme(legend.background = element_rect(fill="transparent",color="transparent"))
+
+
 
 ggsave("AGU_depth_size_fraction_trans_coor.png", plot = last_plot(),
        height = 2.3, width = 6)

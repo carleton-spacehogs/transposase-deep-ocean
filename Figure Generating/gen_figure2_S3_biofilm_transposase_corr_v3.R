@@ -12,44 +12,21 @@ trans_scale <- c(-2.5, -3, -3.5, -4, -4.5)
 trans_percent_scale <- c("0.316", "0.100", "0.032", "0.01", "0.003")
 biofilm_percent_scale <- c(0.04, 0.02, 0.01)
 biofilm_scale <- log10(biofilm_percent_scale/100)
+CAZ_percent_scale <- c(0.8, 0.4, 0.2, 0.1)
+CAZ_scale <- log10(CAZ_percent_scale/100)
 mala_cov$size_fraction <- ifelse(mala_cov$lower_filter_size == "0.2", "planktonic", "particle")
 DNA_tara$size_fraction <- ifelse(DNA_tara$upper_size_dna == "1.6", "planktonic", "particle")
 
-bt_sel_col <- c("log_dna_trans", "log_dna_biofilm", "log_dna_defense", 
+bt_sel_col <- c("log_dna_trans", "log_dna_biofilm", "log_dna_defense",
+                "percent_sect_CAZ","DNA_sect_CAZ","log_dna_sect_CAZ",
                 "Ocean_DNA", "Layer_DNA", "Oxygen_DNA", "size_fraction")
 bt_to_graph <- rbind(mala_cov[,bt_sel_col], DNA_tara[,bt_sel_col])
 bt_to_graph$Layer_DNA <- factor(bt_to_graph$Layer_DNA, levels = c("SRF","DCM","MES","BAT"))
 
-DNA_tara %>%
-  filter(Layer_DNA != "MIX") %>%
-  ggplot(aes(x=percent_sect_CAZ, y=log_dna_trans)) +
-  scale_y_continuous(breaks = trans_scale, labels = trans_percent_scale) + 
-  scale_color_brewer(palette="Set1")+
-  facet_wrap(~Layer_DNA) +
-  geom_point(aes(color = Ocean_DNA)) + 
-  theme_classic() +
-  ylab("% DNA reads mapped to transposase") +
-  xlab("Percentage of secretory CAZenzyme") +
-  geom_smooth(method = "lm", se = F)  +
-  theme(legend.position = "none")
-
-DNA_tara %>%
-  filter(Layer_DNA != "MIX") %>%
-  ggplot(aes(x=DNA_sect_CAZ, y=log_dna_trans)) +
-  scale_y_continuous(breaks = trans_scale, labels = trans_percent_scale) + 
-  scale_color_brewer(palette="Set1")+
-  facet_wrap(~Layer_DNA) +
-  geom_point(aes(color = Ocean_DNA)) + 
-  theme_classic() +
-  ylab("% DNA reads mapped to transposase") +
-  xlab("% DNA reads mapped to secretory CAZenzyme") +
-  geom_smooth(method = "lm", se = F)  +
-  theme(legend.position = "none")
-
 RNA_tara %>%
   filter(Layer_RNA != "MIX") %>%
   ggplot(aes(x=percent_sect_CAZ, y=log_rna_trans)) +
-  scale_y_continuous(breaks = trans_scale, labels = trans_percent_scale) + 
+  scale_y_continuous(breaks = trans_scale, labels = trans_percent_scale) +
   scale_color_brewer(palette="Set1")+
   facet_wrap(~Layer_RNA) +
   geom_point(aes(color = Ocean)) + 
@@ -73,6 +50,34 @@ RNA_tara %>%
   xlab("(log 10 scale) % RNA reads mapped to secretory CAZenzyme") +
   geom_smooth(method = "lm", se = F)  +
   theme(legend.position = "none")
+
+bt_to_graph %>%
+  filter(Layer_DNA != "MIX") %>%
+  ggplot(aes(x=percent_sect_CAZ, y=log_dna_trans)) +
+  scale_y_continuous(breaks = trans_scale, labels = trans_percent_scale) +
+  scale_color_brewer(palette="Set1")+
+  facet_wrap(~Layer_DNA) + # , scales = "free"
+  geom_point(aes(color = size_fraction)) + 
+  theme_classic() +
+  ylab("% DNA reads mapped to transposase") +
+  xlab("secretory CAZenzyme among all CAZenzyme (%)") +
+  geom_smooth(method = "lm", se = F)  +
+  theme() # legend.position = "none"
+
+bt_to_graph %>%
+  filter(Layer_DNA != "MIX") %>%
+  ggplot(aes(x=log_dna_sect_CAZ, y=log_dna_trans)) +
+  scale_y_continuous(breaks = trans_scale, labels = trans_percent_scale) +
+  scale_color_brewer(palette="Set1")+
+  facet_wrap(~Layer_DNA) + # , scales = "free"
+  geom_point(aes(color = size_fraction)) + 
+  theme_classic() +
+  ylab("% DNA reads mapped to transposase") +
+  xlab("secretory CAZenzyme among all CAZenzyme (%)") +
+  geom_smooth(method = "lm", se = F)  +
+  theme() # legend.position = "none"
+
+
 
 bt_DNA <- bt_to_graph %>%
   filter(Layer_DNA != "MIX") %>%
