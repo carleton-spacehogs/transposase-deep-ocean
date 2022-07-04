@@ -5,9 +5,11 @@ import glob
 
 # outfile
 secretory_CAZ = "./secretory_CAZenzyme.txt"
+deep_secretory_CAZ = "./deep_secretory_CAZenzyme.txt"
 secretory_pep = "./secretory_peptidase.txt"
 
 CAZ_signalp_outfiles = glob.glob("../../CAZenzyme_signalp_out/*_summary.signalp5")
+deep_CAZ_signalp_f = glob.glob("../../deep_metagenome/*_summary.signalp5")
 ''' a summary.signalp5 output file structure:
 # SignalP-5.0   Organism: gram- Timestamp: 20220703215412
 # ID    Prediction      SP(Sec/SPI)     TAT(Tat/SPI)    LIPO(Sec/SPII)  OTHER   CS Position
@@ -30,7 +32,12 @@ def main():
 		for cf in CAZ_signalp_outfiles:
 			CAZ_list = get_all_signalp(cf)
 			for Gene_ID in CAZ_list: a.write("%s\n" % Gene_ID)
-	# the same thing will repeat for secretory_peptidase.txt
+	
+	with open(deep_secretory_CAZ, 'w') as a:
+		for cf in deep_CAZ_signalp_f:
+			CAZ_list = get_all_signalp(cf)
+			for Gene_ID in CAZ_list: a.write("%s\n" % Gene_ID)
+		# the same thing will repeat for secretory_peptidase.txt
 
 if __name__ == "__main__":
 	main()
