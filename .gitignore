@@ -1,4 +1,6 @@
 git-ignore/
-Figure\ Generating/.Rhistory
-*__pycache__*
+*.Rhistory
+*__pycache__
+*.log
+*_contig_cov.txt
 
