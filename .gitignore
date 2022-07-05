@@ -1,2 +1,4 @@
 git-ignore/
 Figure\ Generating/.Rhistory
+*__pycache__*
+
