@@ -1,4 +1,3 @@
-git-ignore/
 *.Rhistory
 *__pycache__
 *.log
