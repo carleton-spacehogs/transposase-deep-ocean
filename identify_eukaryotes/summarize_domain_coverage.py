@@ -58,7 +58,7 @@ def main():
 		row = summarize_composition(f, funct_in, domains)
 		rows.append(row)
 	
-	sorted(rows,key=lambda x: x[1])
+	rows = sorted(rows,key=lambda x: x[6])
 
 	sum_f_col = "sample,depth,size_fraction,sum_cov_bp,archaea,bacteria,eukarya,prokarya,organelle,unknown\n"
 	out_f = "domain_composition_summary.csv"
