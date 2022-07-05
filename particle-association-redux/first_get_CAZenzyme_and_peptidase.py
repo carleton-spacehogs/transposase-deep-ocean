@@ -1,5 +1,6 @@
 import csv
 import glob
+from pickle import FALSE, TRUE
 from Bio import SeqIO
 
 # working dir: /workspace/data/zhongj/Transposase_Project/particle_lifestyle/transposase-deep-ocean/particle-association-redux
@@ -31,20 +32,23 @@ def read_peptidase(pep_f):
 		out.add(Gene_ID)
 	return out
 
-def get_gene_amino_acid(in_files, gene_list_file, outfile_name):
-	gene_id_set = set(line.strip() for line in open(gene_list_file))
-	print(gene_list_file)
-	for in_f in in_files:
-		out_filename = in_f.replace("uniInput", outfile_name)
-		print(out_filename)
-		with open(out_filename, 'a') as out_file:
-			fasta_seq = SeqIO.parse(open(in_f), 'fasta')
-			for f in fasta_seq:
+def get_gene_amino_acid_base(in_faa, gene_id_set, outfile, werid_split = False):
+	out_fname = in_faa.replace("uniInput", outfile)
+	with open(out_fname, 'w') as out_file:
+		fasta_seq = SeqIO.parse(open(in_faa), 'fasta')
+		for f in fasta_seq:
+			name, seq = f.id, str(f.seq)
+			if werid_split:
 				name, seq = f.id.split("_")[0], str(f.seq)
-				if name in gene_id_set:
-					out_file.write(f">{name}\n")
-					out_file.write(f"{seq}\n")
-	print(f"write file {out_filename} done!")
+			if name in gene_id_set:
+				out_file.write(f">{name}\n")
+				out_file.write(f"{seq}\n")
+	return out_fname
+
+def get_gene_amino_acid(in_files, gene_id_set, outfile_name):
+	for in_f in in_files:
+		out_filename = get_gene_amino_acid_base(in_f, gene_id_set, outfile_name, werid_split = True)
+		print(f"write file {out_filename} done!")
 
 def main():
 	# root = '/researchdrive/zhongj2/BLAST_tara_OM-RGC_v2/'
@@ -65,8 +69,11 @@ def main():
 
 	print(f"Done, file outputed to: {f1} ; {f2}")
 
-	# get_gene_amino_acid(all_aminoacid_f, f1, "only_CAZenzyme.faa")
-	get_gene_amino_acid(all_aminoacid_f, f2, "only_peptidase.faa")
+	CAZ_id_set = set(line.strip() for line in open(f1))
+	get_gene_amino_acid(all_aminoacid_f, CAZ_id_set, "only_CAZenzyme.faa")
+
+	# peptiase_id_set = set(line.strip() for line in open(f2))
+	# get_gene_amino_acid(all_aminoacid_f, peptiase_id_set, "only_peptidase.faa")
 
 if __name__ == "__main__":
 	main()

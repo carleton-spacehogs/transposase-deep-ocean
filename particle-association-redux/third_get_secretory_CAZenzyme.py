@@ -28,6 +28,8 @@ def get_all_signalp(signalp_file):
 	return out
 
 def main():
+	# NOTE!!! this file might contain repeated singal protein ID
+	# gramNegative and gramPositive prediction sometimes overlap
 	with open(secretory_CAZ, 'w') as a:
 		for cf in CAZ_signalp_outfiles:
 			CAZ_list = get_all_signalp(cf)
