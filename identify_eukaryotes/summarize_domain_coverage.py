@@ -23,9 +23,8 @@ def get_deep_per_contig_cov(samtool_idxstats_f):
 
 def cal_deep_composition(composition_info, euk_file_name, domain):
 	composition_dict = {d:float(0) for d in domain}
-	SRR_num = euk_file_name.split("/")[-1]
-	SRR_num = SRR_num.split("_")[0]
-	contig_cov_file = f"get_malaspina_contig_cov/{SRR_num}_contig_cov.txt"
+	SRR_num = euk_file_name.split("_")[0] if "SRR" in euk_file_name else euk_file_name.split("_")[1]
+	contig_cov_file = f"get_contig_cov/{SRR_num}_contig_cov.txt"
 	contig_cov_dict = get_deep_per_contig_cov(contig_cov_file)
 	for row in composition_info:
 		contig_name, domain = row[0], row[1].strip()
@@ -54,14 +53,14 @@ def main():
 	rows = []
 	for f in all_composition_files:
 		print(f)
-		funct_in = cal_tara_composition if "Tara" in f else cal_deep_composition
+		funct_in = cal_tara_composition if "0.22-3" in f else cal_deep_composition
 		row = summarize_composition(f, funct_in, domains)
 		rows.append(row)
 	
 	rows = sorted(rows,key=lambda x: x[6])
 
 	sum_f_col = "sample,depth,size_fraction,sum_cov_bp,archaea,bacteria,eukarya,prokarya,organelle,unknown\n"
-	out_f = "domain_composition_summary.csv"
+	out_f = "domain_composition_summary1.csv"
 	with open(out_f, 'w') as a:
 		a.write(sum_f_col)
 		csv_write = csv.writer(a, delimiter=',')

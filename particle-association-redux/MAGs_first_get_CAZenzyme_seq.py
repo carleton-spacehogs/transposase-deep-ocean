@@ -30,12 +30,13 @@ def extract_specific_gene_sequences(overviews, aminoacids_fs):
 def main():
 	ocean = sys.argv[1] # e.g. python3 MAGs_get_CAZenzyme_seq.py ARS
 	path = f"../../bins/{ocean}/TOBG_{ocean}-*/"
-	if ocean == "deep": path = "../../bins/deep/mp-deep_mag-*"
+	if ocean == "deep": path = "../../bins/deep/mp-deep_mag-*/"
 
 	all_CAZ_overview = glob.glob(path + "overview.txt")
 	all_aminoacid_f = glob.glob(path + "uniInput")
+	print(len(all_aminoacid_f))
 
-	extract_specific_gene_sequences(all_CAZ_overview, all_aminoacid_f)
+	extract_specific_gene_sequences(all_CAZ_overview[:268], all_aminoacid_f[:268])
 	print("done with CAZenzyme!!!")
 
 if __name__ == "__main__":
