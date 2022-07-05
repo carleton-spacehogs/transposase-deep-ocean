@@ -17,6 +17,10 @@ def read_overview(CAZ_f):
 
 def extract_specific_gene_sequences(overviews, aminoacids_fs):
 	if len(overviews) != len(aminoacids_fs):
+		uniInput_dir_set = set([a.replace("uniInput","") for a in aminoacids_fs])
+		overview_dir_set = set([o.replace("overview.txt","") for o in overviews])
+		print(uniInput_dir_set.difference(overview_dir_set))
+		print(overview_dir_set.difference(uniInput_dir_set))
 		exit("the length of the overviews and amino acids uniInput do not match")
 	for i in range(len(overviews)):
 		gene_id_set = read_overview(overviews[i])
