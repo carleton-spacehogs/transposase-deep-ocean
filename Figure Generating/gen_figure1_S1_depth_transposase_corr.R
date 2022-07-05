@@ -31,6 +31,7 @@ to_graph %>%
   geom_boxplot(varwidth = TRUE, outlier.alpha = 0.5) +
   ylab("depth") + xlab("Percentage of secretory CAZenzyme (DNA)")
 
+counts2 = RNA_to_graph %>% group_by(size_fraction, Layer_RNA) %>% tally
 
 # generate figure 1
 to_graph %>% 
