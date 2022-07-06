@@ -72,8 +72,8 @@ def main():
 	CAZ_id_set = set(line.strip() for line in open(f1))
 	get_gene_amino_acid(all_aminoacid_f, CAZ_id_set, "only_CAZenzyme.faa")
 
-	# peptiase_id_set = set(line.strip() for line in open(f2))
-	# get_gene_amino_acid(all_aminoacid_f, peptiase_id_set, "only_peptidase.faa")
+	peptiase_id_set = set(line.strip() for line in open(f2))
+	get_gene_amino_acid(all_aminoacid_f, peptiase_id_set, "only_peptidase.faa")
 
 if __name__ == "__main__":
 	main()

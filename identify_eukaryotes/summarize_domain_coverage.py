@@ -53,7 +53,7 @@ def main():
 	rows = []
 	for f in all_composition_files:
 		print(f)
-		funct_in = cal_tara_composition if "0.22-3" in f else cal_deep_composition
+		funct_in = cal_deep_composition # cal_tara_composition() is deprecated -> use mapping based approach instead
 		row = summarize_composition(f, funct_in, domains)
 		rows.append(row)
 	

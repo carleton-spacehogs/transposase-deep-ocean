@@ -1,5 +1,6 @@
 *.Rhistory
 *__pycache__
-*.log
+*log_SRR*
+*log_Tara*
 *_contig_cov.txt
 

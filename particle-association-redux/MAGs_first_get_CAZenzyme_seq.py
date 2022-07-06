@@ -9,7 +9,8 @@ def read_overview(CAZ_f):
 	info = list(csv.reader(open(CAZ_f), delimiter='\t'))[1:]
 	out = set()
 	for l in info:
-		if int(l[-1]) >= 2: # has have 2/3 tools agree
+		# if int(l[-1]) >= 2: # has have 2/3 tools agree -> only_CAZenzyme.faa
+		if l[-2].strip() != "-": # diamond recognizes it -> only_diamond_CAZenzyme.faa
 			out.add(l[0])
 	return out
 
@@ -24,7 +25,7 @@ def extract_specific_gene_sequences(overviews, aminoacids_fs):
 		exit("the length of the overviews and amino acids uniInput do not match")
 	for i in range(len(overviews)):
 		gene_id_set = read_overview(overviews[i])
-		subset_aa = get_gene_amino_acid_base(aminoacids_fs[i], gene_id_set, "only_CAZenzyme.faa")
+		subset_aa = get_gene_amino_acid_base(aminoacids_fs[i], gene_id_set, "only_diamond_CAZenzyme.faa")
 		print(f"write new file: {subset_aa}")
 
 def main():
@@ -36,7 +37,7 @@ def main():
 	all_aminoacid_f = glob.glob(path + "uniInput")
 	print(len(all_aminoacid_f))
 
-	extract_specific_gene_sequences(all_CAZ_overview[:268], all_aminoacid_f[:268])
+	extract_specific_gene_sequences(all_CAZ_overview, all_aminoacid_f)
 	print("done with CAZenzyme!!!")
 
 if __name__ == "__main__":

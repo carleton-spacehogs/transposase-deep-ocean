@@ -22,3 +22,13 @@ cp $outf $newf
 echo $newf
 done
 
+samples=$(ls /researchdrive/zhongj2/tara_contig_fasta/Tara*0.22-3.bam) # only 0.22-3
+
+for s in $samples; do
+bamfile=$(echo $s | awk -F'/' '{print $(NF)}')
+outf=${s%%${bamfile}}trash/tmp_contig_cov.txt
+samtools idxstats $s > $outf
+newf=$(echo $bamfile | awk -F'_' '{print $2}')_contig_cov.txt
+cp $outf $newf
+echo $newf
+done
