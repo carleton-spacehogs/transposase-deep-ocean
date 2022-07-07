@@ -58,7 +58,7 @@ def main():
 	
 	rows = sorted(rows,key=lambda x: x[6])
 
-	sum_f_col = "sample,depth,size_fraction,sum_cov_bp,archaea,bacteria,eukarya,prokarya,organelle,unknown\n"
+	sum_f_col = "sample,depth,size_fraction,sum_cov_reads,archaea,bacteria,eukarya,prokarya,organelle,unknown\n"
 	out_f = "domain_composition_summary2.csv"
 	with open(out_f, 'w') as a:
 		a.write(sum_f_col)

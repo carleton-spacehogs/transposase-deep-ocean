@@ -16,20 +16,20 @@ def read_CAZ(CAZ_f):
 		out.add(Gene_ID)
 	return out
 
-def read_peptidase(pep_f):
-	print(pep_f)
+def read_peptidase(pep_f, split = True):
 	info = list(csv.reader(open(pep_f), delimiter='\t'))
 	out = set()
 	for l in info:
 		if float(l[-2]) > e_cutoff:
 			continue # filter out things more than e-val cutoff
 		Gene_ID = l[1].split("_")[0]
+		if not split: Gene_ID = l[1]
 		out.add(Gene_ID)
 	return out
 
 def get_gene_amino_acid_base(in_faa, gene_id_set, outfile, werid_split = False):
 	out_fname = in_faa.replace("uniInput", outfile)
-	print(out_fname, in_faa)
+	# print(out_fname, in_faa)
 	with open(out_fname, 'w') as out_file:
 		fasta_seq = SeqIO.parse(open(in_faa), 'fasta')
 		for f in fasta_seq:
