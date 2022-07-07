@@ -1,24 +1,23 @@
 import csv
 import glob
 
-def cal_tara_composition(composition_info, euk_file_name, domain):
-	composition_dict = {d:float(0) for d in domain}
-	for row in composition_info:
-		if len(row) < 3: continue
-		domain = row[1].strip()
-		contig_name_list = row[0].split("_")
-		length, avg_cov = float(contig_name_list[-3]), float(contig_name_list[-1])
-		composition_dict[domain] += length*avg_cov # total coverage in base pairs
-	return composition_dict
+# def cal_tara_composition(composition_info, euk_file_name, domain):
+# 	composition_dict = {d:float(0) for d in domain}
+# 	for row in composition_info:
+# 		if len(row) < 3: continue
+# 		domain = row[1].strip()
+# 		contig_name_list = row[0].split("_")
+# 		length, avg_cov = float(contig_name_list[-3]), float(contig_name_list[-1])
+# 		composition_dict[domain] += length*avg_cov # total coverage in base pairs
+# 	return composition_dict
 
 def get_deep_per_contig_cov(samtool_idxstats_f):
-	avg_read_length = 100 # calculating a proportion, so it shouldn't matter
 	file = list(csv.reader(open(samtool_idxstats_f), delimiter='\t'))
 	cov_dict={}
 	for line in file:
 		if len(line) > 3:
 			contig_name, contig_len, num_reads, zero = line
-			cov_dict[contig_name.strip()] = int(contig_len)*int(num_reads)*int(avg_read_length)
+			cov_dict[contig_name.strip()] = int(num_reads)
 	return cov_dict
 
 def cal_deep_composition(composition_info, euk_file_name, domain):
@@ -60,7 +59,7 @@ def main():
 	rows = sorted(rows,key=lambda x: x[6])
 
 	sum_f_col = "sample,depth,size_fraction,sum_cov_bp,archaea,bacteria,eukarya,prokarya,organelle,unknown\n"
-	out_f = "domain_composition_summary1.csv"
+	out_f = "domain_composition_summary2.csv"
 	with open(out_f, 'w') as a:
 		a.write(sum_f_col)
 		csv_write = csv.writer(a, delimiter=',')

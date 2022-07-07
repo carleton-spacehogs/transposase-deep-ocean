@@ -10,7 +10,7 @@
 # ./signalp -org 'gram+' -fasta $f -prefix ${sample}_CAZenzyme_gramPositive
 # done
 
-aminofp=$(ls ../../../../OM-RGC_v2_reference_pieces/dbcan_output_old/p_c*/only_peptidase.faa)
+aminofp=$(ls ../../../../OM-RGC_v2_reference_pieces/dbcan_output_old/p_d*/only_peptidase.faa)
 for f in $aminofp; do
 sample=$(echo $f | awk -F'/' '{print $7}')
 echo "I am on ${f}"

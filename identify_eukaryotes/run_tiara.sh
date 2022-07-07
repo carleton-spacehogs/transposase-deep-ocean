@@ -18,7 +18,7 @@ samples=$(ls /researchdrive/zhongj2/tara_contig_fasta/Tara*/*${size}.fasta)
 for s in $samples; do
 news=${s%%.fasta}_min1000.fasta
 echo $news
-# ~/seqtk/seqtk seq -L 1000 $s > $news
+~/seqtk/seqtk seq -L 1000 $s > $news
 outf=$(echo $news | awk -F'/' '{print $(NF)}')
 outf=${outf%%.fasta}_euk.txt
 tiara -i $s -o $outf -t 20

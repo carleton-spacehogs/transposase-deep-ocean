@@ -1,15 +1,10 @@
 import csv
 import glob
-from pickle import FALSE, TRUE
 from Bio import SeqIO
 
 # working dir: /workspace/data/zhongj/Transposase_Project/particle_lifestyle/transposase-deep-ocean/particle-association-redux
 
 e_cutoff = float(1e-10)
-
-all_CAZ_f = glob.glob("../../OM-RGC_v2_reference_pieces/dbcan_output_old/p_*/diamond.out")
-all_pep_f = glob.glob("../../OM-RGC_v2_reference_pieces/blast_petidase/p_*_peptidases.tsv")
-all_aminoacid_f = glob.glob("../../OM-RGC_v2_reference_pieces/dbcan_output_old/p_*/uniInput")
 
 def read_CAZ(CAZ_f):
 	info = list(csv.reader(open(CAZ_f), delimiter='\t'))[1:]
@@ -34,6 +29,7 @@ def read_peptidase(pep_f):
 
 def get_gene_amino_acid_base(in_faa, gene_id_set, outfile, werid_split = False):
 	out_fname = in_faa.replace("uniInput", outfile)
+	print(out_fname, in_faa)
 	with open(out_fname, 'w') as out_file:
 		fasta_seq = SeqIO.parse(open(in_faa), 'fasta')
 		for f in fasta_seq:
@@ -52,6 +48,10 @@ def get_gene_amino_acid(in_files, gene_id_set, outfile_name):
 
 def main():
 	# root = '/researchdrive/zhongj2/BLAST_tara_OM-RGC_v2/'
+	all_CAZ_f = glob.glob("../../OM-RGC_v2_reference_pieces/dbcan_output_old/p_*/diamond.out")
+	all_pep_f = glob.glob("../../OM-RGC_v2_reference_pieces/blast_petidase/p_*_peptidases.tsv")
+	all_aminoacid_f = glob.glob("../../OM-RGC_v2_reference_pieces/dbcan_output_old/p_*/uniInput")
+
 	f1, f2 = './all_CAZenzyme.txt', './all_peptidase.txt'
 	with open(f1, 'w') as a:
 		for f in all_CAZ_f:
@@ -74,6 +74,19 @@ def main():
 
 	peptiase_id_set = set(line.strip() for line in open(f2))
 	get_gene_amino_acid(all_aminoacid_f, peptiase_id_set, "only_peptidase.faa")
+
+	# for deep Malaspina
+	f3='deep_peptidase_anvigeneID.txt'
+	root='/researchdrive/zhongj2/deep_ocean_bins/deep_metagenome_transposase_BLAST/'
+	all_aminoacid_f = root+'CAZenzyme/uniInput'
+	pep_f = root + "peptidase/deep-peptidase-anvigeneID.txt"
+	out_f = "../peptidase/deep_only_peptidase.faa"
+	clean_pep = read_peptidase(pep_f)
+	with open(f3, 'w') as c:
+		for Gene_ID in clean_pep:
+			c.write("%s\n" % Gene_ID)
+	peptiase_id_set = set(line.strip() for line in open(f3))
+	get_gene_amino_acid_base(all_aminoacid_f, peptiase_id_set, out_f, werid_split = True)
 
 if __name__ == "__main__":
 	main()

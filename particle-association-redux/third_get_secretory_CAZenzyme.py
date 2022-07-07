@@ -7,9 +7,13 @@ import glob
 secretory_CAZ = "./secretory_CAZenzyme.txt"
 deep_secretory_CAZ = "./deep_secretory_CAZenzyme.txt"
 secretory_pep = "./secretory_peptidase.txt"
+deep_secretory_pep = "./deep_secretory_peptidase.txt"
 
-CAZ_signalp_outfiles = glob.glob("../../CAZenzyme_signalp_out/*_summary.signalp5")
-deep_CAZ_signalp_f = glob.glob("../../deep_metagenome/*_summary.signalp5")
+CAZ_signalp_outfiles = glob.glob("../../OM-RGC_CAZenzyme_signalp/*_summary.signalp5")
+pep_signalp_outfiles = glob.glob("../../OM-RGC_peptidase_signalp/*_summary.signalp5")
+
+deep_CAZ_signalp_f = glob.glob("../../deep_metagenome/deep_CAZenzyme_*_summary.signalp5")
+deep_pep_signalp_f = glob.glob("../../deep_metagenome/deep_peptidase_*_summary.signalp5")
 ''' a summary.signalp5 output file structure:
 # SignalP-5.0   Organism: gram- Timestamp: 20220703215412
 # ID    Prediction      SP(Sec/SPI)     TAT(Tat/SPI)    LIPO(Sec/SPII)  OTHER   CS Position
@@ -27,19 +31,23 @@ def get_all_signalp(signalp_file):
 			out.append(Gene_ID)
 	return out
 
-def main():
-	# NOTE!!! this file might contain repeated singal protein ID
+def get_secretory_file(outfile, signalp_files):
+	out = []
+	for piece in signalp_files:
+		out = out + get_all_signalp(piece)
 	# gramNegative and gramPositive prediction sometimes overlap
-	with open(secretory_CAZ, 'w') as a:
-		for cf in CAZ_signalp_outfiles:
-			CAZ_list = get_all_signalp(cf)
-			for Gene_ID in CAZ_list: a.write("%s\n" % Gene_ID)
+	out = set(out)
+	with open(outfile, 'w') as a:
+		[a.write("%s\n" % Gene_ID) for Gene_ID in out]
+	print("output: " + outfile)
+
+def main():
+	get_secretory_file(secretory_CAZ, CAZ_signalp_outfiles)
+	get_secretory_file(secretory_pep, pep_signalp_outfiles)
 	
-	with open(deep_secretory_CAZ, 'w') as a:
-		for cf in deep_CAZ_signalp_f:
-			CAZ_list = get_all_signalp(cf)
-			for Gene_ID in CAZ_list: a.write("%s\n" % Gene_ID)
-		# the same thing will repeat for secretory_peptidase.txt
+	# deep ocean
+	get_secretory_file(deep_secretory_CAZ, deep_CAZ_signalp_f)
+	get_secretory_file(deep_secretory_pep, deep_pep_signalp_f)
 
 if __name__ == "__main__":
 	main()
