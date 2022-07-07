@@ -1,5 +1,6 @@
 import csv
 import glob
+import os
 
 # working dir: /workspace/data/zhongj/Transposase_Project/particle_lifestyle/transposase-deep-ocean/particle-association-redux
 
@@ -23,8 +24,11 @@ OM-RGC.v2.012952042     OTHER   0.003266        0.000160        0.000483        
 '''
 
 def get_all_signalp(signalp_file):
-	signalp = list(csv.reader(open(signalp_file), delimiter='\t'))[2:]
 	out = []
+	if os.path.getsize(signalp_file) == 0: # the files I created manually,
+		# this MAG doesn't have any blastp match to peptidase
+		return out
+	signalp = list(csv.reader(open(signalp_file), delimiter='\t'))[2:]
 	for line in signalp:
 		Gene_ID, signal_type = line[0], line[1]
 		if signal_type in ['SP(Sec/SPI)','TAT(Tat/SPI)','LIPO(Sec/SPII)']:
