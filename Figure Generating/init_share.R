@@ -135,11 +135,14 @@ init_mala_cov <- function(){
   mala_cov$log_dna_biofilm <- log10(mala_cov$DNA_Biofilm)
   mala_cov$log_dna_defense <- log10(mala_cov$DNA_Defense)
   mala_cov$log_dna_sect_CAZ <- log10(mala_cov$DNA_sect_CAZ)
+  mala_cov$log_dna_defense <- log10(mala_cov$DNA_Defense)
+  mala_cov$log_dna_sect_pep <- log10(mala_cov$DNA_sect_pep)
   hist(mala_cov$toxin_prop)
   mala_cov$Layer_DNA <- "BAT"
   mala_cov$is_MES = "MES, BAT"
   mala_cov$Depth <- mala_cov$Depth * (-1)
   mala_cov$percent_sect_CAZ = mala_cov$DNA_sect_CAZ/mala_cov$DNA_CAZenzyme*100
+  mala_cov$percent_sect_pep = mala_cov$DNA_sect_pep/mala_cov$DNA_peptidase*100
   return(mala_cov)
 }
 
@@ -291,6 +294,8 @@ init_tara <- function(){
   DNA_cov$log_dna_defense <- log10(DNA_cov$DNA_Defense)
   DNA_cov$percent_sect_CAZ = DNA_cov$DNA_sect_CAZ/DNA_cov$DNA_CAZenzyme*100
   DNA_cov$log_dna_sect_CAZ = log10(DNA_cov$DNA_sect_CAZ)
+  DNA_cov$percent_sect_pep = DNA_cov$DNA_sect_pep/DNA_cov$DNA_peptidase*100
+  DNA_cov$log_dna_sect_pep = log10(DNA_cov$DNA_sect_pep)
   
   RNA_cov <- read_excel("data/RNA_Biofilm_Trans_Defense_Coverage.xlsx")
   RNA_cov$log_rna_biofilm <- log10(RNA_cov$RNA_Biofilm)
@@ -299,6 +304,10 @@ init_tara <- function(){
   RNA_cov$percent_sect_CAZ = RNA_cov$RNA_sect_CAZ/RNA_cov$RNA_CAZenzyme*100
   RNA_cov$log_percent_sect_CAZ = log10(RNA_cov$percent_sect_CAZ)
   RNA_cov$log_rna_sect_CAZ = log(RNA_cov$RNA_sect_CAZ)
+  RNA_cov$percent_sect_pep = RNA_cov$RNA_sect_pep/RNA_cov$RNA_peptidase*100
+  RNA_cov$log_percent_sect_pep = log10(RNA_cov$percent_sect_pep)
+  RNA_cov$log_rna_sect_pep = log(RNA_cov$RNA_sect_pep)
+  
   
   DNA_RNA_connector <- read_excel("data/DNA_RNA_connector.xlsx")
   DNA_Metadata <- read_excel("data/DNA_Location_Metadata.xlsx")

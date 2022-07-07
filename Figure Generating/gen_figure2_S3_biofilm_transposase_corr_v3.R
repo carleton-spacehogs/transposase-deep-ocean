@@ -19,6 +19,7 @@ DNA_tara$size_fraction <- ifelse(DNA_tara$upper_size_dna == "1.6", "planktonic",
 
 bt_sel_col <- c("log_dna_trans", "log_dna_biofilm", "log_dna_defense",
                 "percent_sect_CAZ","DNA_sect_CAZ","log_dna_sect_CAZ",
+                "percent_sect_pep","DNA_sect_pep","log_dna_sect_pep",
                 "Ocean_DNA", "Layer_DNA", "Oxygen_DNA", "size_fraction")
 bt_to_graph <- rbind(mala_cov[,bt_sel_col], DNA_tara[,bt_sel_col])
 bt_to_graph$Layer_DNA <- factor(bt_to_graph$Layer_DNA, levels = c("SRF","DCM","MES","BAT"))
@@ -76,6 +77,35 @@ bt_to_graph %>%
   xlab("secretory CAZenzyme among all CAZenzyme (%)") +
   geom_smooth(method = "lm", se = F)  +
   theme() # legend.position = "none"
+
+bt_to_graph %>%
+  filter(Layer_DNA != "MIX") %>%
+  ggplot(aes(x=percent_sect_pep, y=log_dna_trans)) +
+  scale_y_continuous(breaks = trans_scale, labels = trans_percent_scale) +
+  scale_color_brewer(palette="Set1")+
+  facet_wrap(~Layer_DNA) + # , scales = "free"
+  geom_point(aes(color = size_fraction)) + 
+  theme_classic() +
+  ylab("% DNA reads mapped to transposase") +
+  xlab("secretory peptidase among all peptidase (%)") +
+  geom_smooth(method = "lm", se = F)  +
+  theme() # legend.position = "none"
+
+bt_to_graph$avg_percent = (bt_to_graph$percent_sect_CAZ + bt_to_graph$percent_sect_pep)/2
+
+bt_to_graph %>%
+  filter(Layer_DNA != "MIX") %>%
+  ggplot(aes(x=avg_percent, y=log_dna_trans)) +
+  scale_y_continuous(breaks = trans_scale, labels = trans_percent_scale) +
+  scale_color_brewer(palette="Set1")+
+  facet_wrap(~Layer_DNA) + # , scales = "free"
+  geom_point(aes(color = size_fraction)) + 
+  theme_classic() +
+  ylab("% DNA reads mapped to transposase") +
+  xlab("average secretory (%)") +
+  geom_smooth(method = "lm", se = F)  +
+  theme() # legend.position = "none"
+
 
 
 

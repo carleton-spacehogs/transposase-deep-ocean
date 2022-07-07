@@ -10,9 +10,12 @@ mala_cov$size_fraction <- ifelse(mala_cov$lower_filter_size == "0.2", "planktoni
 DNA_tara$size_fraction <- ifelse(DNA_tara$upper_size_dna == "1.6", "planktonic", "particle-\nassociated")
 
 sel_col <- c("Layer_DNA","log_dna_trans","size_fraction","Depth", "DNA_CAZenzyme",
-             "log_dna_biofilm","percent_sect_CAZ","DNA_sect_CAZ", "log_dna_sect_CAZ")
+             "log_dna_biofilm","percent_sect_CAZ","DNA_sect_CAZ", "log_dna_sect_CAZ",
+             "percent_sect_pep","DNA_sect_pep", "log_dna_sect_pep")
 to_graph <- rbind(mala_cov[,sel_col], DNA_tara[,sel_col]%>%filter(Layer_DNA != "MIX"))
 to_graph$Layer_DNA <- factor(to_graph$Layer_DNA, levels = c("SRF","DCM","MES","BAT"))
+
+to_graph$avg_percent = (to_graph$percent_sect_CAZ + to_graph$percent_sect_pep)/2
 
 counts = to_graph %>% group_by(size_fraction, Layer_DNA) %>% tally
 
@@ -29,7 +32,21 @@ to_graph %>%
   ggplot(aes(y=fct_rev(Layer_DNA), x=log_dna_sect_CAZ, fill = size_fraction)) +
   geom_text(data=counts, aes(label=n, x=-2), position=position_dodge(0.6)) +
   geom_boxplot(varwidth = TRUE, outlier.alpha = 0.5) +
-  ylab("depth") + xlab("Percentage of secretory CAZenzyme (DNA)")
+  ylab("depth") + xlab("log abundance of secretory CAZenzyme (DNA)")
+
+to_graph %>%
+  filter(Layer_DNA != "MIX") %>%
+  ggplot(aes(y=fct_rev(Layer_DNA), x=percent_sect_pep, fill = size_fraction)) +
+  geom_text(data=counts, aes(label=n, x=25), position=position_dodge(0.6)) +
+  geom_boxplot(varwidth = TRUE, outlier.alpha = 0.5) +
+  ylab("depth") + xlab("percentage of secretory CAZenzyme (DNA)")
+
+bt_to_graph %>%
+  filter(Layer_DNA != "MIX") %>%
+  ggplot(aes(y=fct_rev(Layer_DNA), x=avg_percent)) +
+  geom_text(data=counts, aes(label=n, x=-2), position=position_dodge(0.6)) +
+  geom_boxplot(varwidth = TRUE, outlier.alpha = 0.5) +
+  ylab("depth") + xlab("log abundance of secretory peptidase (DNA)")
 
 counts2 = RNA_to_graph %>% group_by(size_fraction, Layer_RNA) %>% tally
 
