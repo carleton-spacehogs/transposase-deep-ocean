@@ -1,0 +1,16 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Kryptoperidiniaceae	2137591	family	1	13	100.0%	41.5%	98.51%	1612
+Durinskia baltica	400756	species	56	1242	39.72%	57.52%	98.67%	244301
+Lecanicillium sp. LEC01	2013060	species	63	163	30.58%	11.9%	98.54%	354158
+Candida parapsilosis	5480	species	14	26	8.14%	8.61%	99.78%	312010
+Ochroconis constricta UM 578	1442076	species	7	14	3.57%	6.25%	99.61%	370078
+Porphyra purpurea	2787	species	1	2	3.12%	68.35%	100.0%	38656
+Meira nashicola	286112	species	5	8	2.73%	6.01%	100.0%	341159
+Malassezia restricta	76775	species	4	7	2.67%	3.93%	99.08%	348317
+Cafeteria roenbergensis	33653	species	1	2	2.33%	14.06%	99.13%	50724
+Malassezia globosa CBS 7966	425265	species	3	6	1.91%	13.06%	97.79%	332937
+Meyerozyma	766728	genus	2	4	1.53%	18.52%	100.0%	218630
+Candida orthopsilosis Co 90-125	1136231	species	2	4	1.19%	8.59%	97.94%	306002
+Trichosporon asahii var. asahii CBS 2479	1186058	varietas	1	2	0.73%	7.06%	99.61%	278146
+Chloropicon roscoffensis	1461544	species	1	1	0.63%	10.32%	98.65%	275974
+Kodamaea ohmeri	34356	species	1	2	0.62%	5.14%	98.52%	320078

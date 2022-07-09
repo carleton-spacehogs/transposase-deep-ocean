@@ -1,0 +1,8 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Durinskia baltica	species	class-Dinophyceae|order-Peridiniales|family-Kryptoperidiniaceae|genus-Durinskia|species-Durinskia_baltica	400756	56	1242	39.72%	57.52%	98.67%
+Lecanicillium sp. LEC01	species	phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae|genus-Lecanicillium|species-Lecanicillium_sp._LEC01	2013060	63	163	30.58%	11.9%	98.54%
+Candida parapsilosis	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida|species-Candida_parapsilosis	5480	14	26	8.14%	8.61%	99.78%
+Ochroconis constricta UM 578	species	phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae|genus-Ochroconis|species-Ochroconis_constricta	1442076	7	14	3.57%	6.25%	99.61%
+Meira nashicola	species	phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales|family-Brachybasidiaceae|genus-Meira|species-Meira_nashicola	286112	5	8	2.73%	6.01%	100.0%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	4	7	2.67%	3.93%	99.08%
+Meyerozyma	genus	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Meyerozyma	766728	2	4	1.53%	18.52%	100.0%
