@@ -1,7 +1,85 @@
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
 source("./init_share.R")
-g(DNA_tara, RNA_tara, DNA_RNA_tara, depth_comparison) %=% init_tara()
+# g(DNA_tara, RNA_tara, DNA_RNA_tara, depth_comparison) %=% init_tara()
 mala_cov <- init_mala_cov()
+g(DNA_Metadata, RNA_Metadata) %=% init_tara_md(factorize = FALSE)
+
+sum_reads_into_row = function(hit_table_f, base_path){
+  sum_reads_per_file = function(singel_hit_table, base_path){
+    sample_name = str_replace(singel_hit_table, paste(base_path,"/",sep = ""), "")
+    sample_name = str_replace(sample_name, "_all_hits_table.txt", "")
+    if (file.info(singel_hit_table)$size < 60) { # no reads mapped
+      print(paste("empty table:",singel_hit_table))
+      return(c(sample_name, 0))
+    } else {
+      ht = suppressMessages(read_delim(singel_hit_table, delim = "\t",
+                                       escape_double = FALSE, trim_ws = TRUE))
+      return(c(sample_name, sum(ht$Read_counts)))
+    }
+    return(df)
+  }
+  df = mapply(sum_reads_per_file, hit_table_f, base_path)
+  df = t(as.data.frame(df))
+  rownames(df) <- 1:nrow(df)
+  colnames(df) = c("sample","euk_read_count")
+  df = as.data.frame(df)
+  df = transform(df, euk_read_count = as.numeric(euk_read_count))
+  return(df)
+}
+
+hit_table = "*_all_hits_table.txt"
+base02="../identify_eukaryotes/EukDetect-deep/02_size_fraction/filtering"
+base08="../identify_eukaryotes/EukDetect-deep/08_size_fraction/filtering"
+deep_frac02 = Sys.glob(file.path(base02, hit_table))
+deep_frac08 = Sys.glob(file.path(base08, hit_table))
+
+euk_read_count02 = sum_reads_into_row(deep_frac02, base02)
+euk_read_count02$size_fraction <- "size02-08"
+euk_read_count08 = sum_reads_into_row(deep_frac08, base08)
+euk_read_count08$size_fraction <- "size08-05"
+deep_euk_count = rbind(euk_read_count02, euk_read_count08)
+
+mala_cov = merge(mala_cov, deep_euk_count, by = "sample")
+mala_cov$euk_prop = (mala_cov$euk_read_count*150)/(mala_cov$Sequencing_depth_Gbp*1e+9)
+fudge_factor = min(mala_cov$euk_prop[mala_cov$euk_prop > 0])/2
+mala_cov$log_euk_prop = log2(mala_cov$euk_prop + fudge_factor)
+
+base_tara="../identify_eukaryotes/EukDetect-normal/filtering"
+base_arct="../identify_eukaryotes/EukDetect-arctic/filtering"
+tara_normal = Sys.glob(file.path(base_tara, hit_table))
+euk_tara = sum_reads_into_row(tara_normal, base_tara)
+
+sel_col = c("Layer_DNA","upper_size_dna","Raw reads","Ocean_DNA","ENA_Run_ID")
+match_md_row = function(sample_name, euk_count){
+  md_row = DNA_Metadata[DNA_Metadata$ENA_Run_ID %like% sample_name, sel_col]
+  df = cbind(sample_name, euk_count, md_row)
+  return(df)
+}
+tara_merged = as.data.frame(t(mapply(match_md_row, euk_tara$sample, euk_tara$euk_read_count)))
+tara_merged = transform(tara_merged, euk_count = as.numeric(euk_count), 
+                        total_reads = as.numeric(`Raw reads`)) %>%
+  mutate(size_fraction = ifelse(upper_size_dna == "1.6", "size0.22-1.6", "size0.22-3.0"))
+tara_merged$euk_prop = tara_merged$euk_count/tara_merged$total_reads
+tara_merged$log_euk_prop = log2(tara_merged$euk_prop)
+
+sel_col2 = c("size_fraction", "log_euk_prop","euk_prop","Ocean_DNA")
+depth_cat = rbind(tara_merged[sel_col2], mala_cov[sel_col2])
+depth_cat$Ocean = unlist(depth_cat$Ocean_DNA)
+boxplot(log_euk_prop ~ size_fraction, depth_cat)
+
+depth_cat %>% 
+  mutate(size2 = ifelse(size_fraction %in% c("size0.22-1.6","size02-08"), "planktonic", "particle")) %>%
+  ggplot(aes(x = log_euk_prop, y = Ocean)) +
+  geom_boxplot() +
+  facet_wrap(~size2) +
+  geom_point(aes(color = size_fraction)) +
+  xlab("Proportion of eukaryotic reads (log2)")
+
+
+
+
+
+
 
 scale <- c(-2, -2.5, -3, -3.5, -4, -4.5) # log_scale <- round(10^scale, digits = 5)
 percent_scale <- c("1.00%", "0.316%", "0.100%", "0.032%", "0.010%", "0.003%")

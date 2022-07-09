@@ -105,6 +105,10 @@ extendToMatch <- function(source, destin) {
   return (source)
 }
 
+`%--%` <- function(x, y) { # for string replacement
+  do.call(sprintf, c(list(x), y))
+}
+
 # Grouping the left hand side
 g = function(...) {
   List = as.list(substitute(list(...)))[-1L]
@@ -143,6 +147,7 @@ init_mala_cov <- function(){
   mala_cov$Depth <- mala_cov$Depth * (-1)
   mala_cov$percent_sect_CAZ = mala_cov$DNA_sect_CAZ/mala_cov$DNA_CAZenzyme*100
   mala_cov$percent_sect_pep = mala_cov$DNA_sect_pep/mala_cov$DNA_peptidase*100
+  mala_cov$avg_percent = (mala_cov$percent_sect_CAZ + mala_cov$percent_sect_pep)/2
   return(mala_cov)
 }
 
@@ -220,6 +225,15 @@ init_bins <- function(){
   return(list(taxon, depth_comparisons, malaspina_bins, low_trans, high_trans))
 }
 
+init_MAGs_CAZenzyme_peptide = function(){
+  pa <- read_csv("../particle-association-redux/MAGs_CAZenzyme_and_peptidase_signalp_summary.csv")
+  "%/%" <- function(x,y) ifelse(y==0,1/max(pa$total_CAZ_count),base:::"/"(x,y))
+  pa$percent_CAZ = (pa$signal_CAZ_count %/% pa$total_CAZ_count)*100
+  pa$percent_pep = (pa$signal_pep_count %/% pa$total_pep_count)*100
+  pa$avg_percent = (pa$percent_CAZ + pa$percent_pep)/2
+  return(pa)
+}
+
 init_integron <- function(){
   init_env()
   pn_ps_integron <- read_csv("data/all_integron_with_pnps_exploded.csv")
@@ -286,6 +300,24 @@ init_transposase_in_bins <- function(){
   return(list(tara_trans_in_bins, mala_trans_in_bins))
 }
 
+init_tara_md = function(factorize = TRUE){
+  DNA_Metadata <- read_excel("data/DNA_Location_Metadata.xlsx")
+  DNA_Metadata$Depth <- as.numeric(DNA_Metadata$Depth_DNA)
+  RNA_Metadata <- read_excel("data/RNA_Location_Metadata.xlsx")
+  RNA_Metadata <- filter(RNA_Metadata, Depth_RNA != "NA")
+  RNA_Metadata$Depth <- as.numeric(RNA_Metadata$Depth_RNA)
+  RNA_Metadata <- RNA_Metadata %>% mutate(Layer_RNA = ifelse(Layer_RNA != "MIX", Layer_RNA,
+                                                             ifelse(Depth_RNA <= 120, "DCM", "MES")))
+  if (factorize){
+    DNA_Metadata$Layer_DNA <- factor(DNA_Metadata$Layer_DNA, levels = c("SRF", "DCM", "MIX", "MES"))
+    DNA_Metadata$Ocean_short<-factor(DNA_Metadata$Ocean_short)
+    DNA_Metadata$upper_size_dna <- factor(DNA_Metadata$upper_size_dna, levels = c("1.6", "3"))
+    RNA_Metadata$Layer_RNA <- factor(RNA_Metadata$Layer_RNA, levels = c("SRF", "DCM", "MES"))
+    RNA_Metadata$upper_size_rna <- factor(RNA_Metadata$upper_size_rna, levels = c("1.6", "3")) 
+  }
+  return(list(DNA_Metadata, RNA_Metadata))
+}
+
 init_tara <- function(){
   init_env()
   DNA_cov <- read_excel("data/DNA_Biofilm_Trans_Defense_Coverage.xlsx")
@@ -296,6 +328,7 @@ init_tara <- function(){
   DNA_cov$log_dna_sect_CAZ = log10(DNA_cov$DNA_sect_CAZ)
   DNA_cov$percent_sect_pep = DNA_cov$DNA_sect_pep/DNA_cov$DNA_peptidase*100
   DNA_cov$log_dna_sect_pep = log10(DNA_cov$DNA_sect_pep)
+  DNA_cov$avg_percent = (DNA_cov$percent_sect_CAZ + DNA_cov$percent_sect_pep)/2
   
   RNA_cov <- read_excel("data/RNA_Biofilm_Trans_Defense_Coverage.xlsx")
   RNA_cov$log_rna_biofilm <- log10(RNA_cov$RNA_Biofilm)
@@ -307,22 +340,12 @@ init_tara <- function(){
   RNA_cov$percent_sect_pep = RNA_cov$RNA_sect_pep/RNA_cov$RNA_peptidase*100
   RNA_cov$log_percent_sect_pep = log10(RNA_cov$percent_sect_pep)
   RNA_cov$log_rna_sect_pep = log(RNA_cov$RNA_sect_pep)
+  RNA_cov$avg_percent = (RNA_cov$percent_sect_CAZ + RNA_cov$percent_sect_pep)/2
   
   
   DNA_RNA_connector <- read_excel("data/DNA_RNA_connector.xlsx")
-  DNA_Metadata <- read_excel("data/DNA_Location_Metadata.xlsx")
-  DNA_Metadata$Depth <- as.numeric(DNA_Metadata$Depth_DNA)
-  DNA_Metadata$Layer_DNA <- factor(DNA_Metadata$Layer_DNA, levels = c("SRF", "DCM", "MIX", "MES"))
-  DNA_Metadata$Ocean_short<-factor(DNA_Metadata$Ocean_short)
-  DNA_Metadata$upper_size_dna <- factor(DNA_Metadata$upper_size_dna, levels = c("1.6", "3"))
-  RNA_Metadata <- read_excel("data/RNA_Location_Metadata.xlsx")
-  RNA_Metadata <- filter(RNA_Metadata, Depth_RNA != "NA")
-  RNA_Metadata$Depth <- as.numeric(RNA_Metadata$Depth_RNA)
-  RNA_Metadata <- RNA_Metadata %>% mutate(Layer_RNA = ifelse(Layer_RNA != "MIX", Layer_RNA,
-                                              ifelse(Depth_RNA <= 120, "DCM", "MES")))
-  RNA_Metadata$Layer_RNA <- factor(RNA_Metadata$Layer_RNA, levels = c("SRF", "DCM", "MES"))
-  RNA_Metadata$upper_size_rna <- factor(RNA_Metadata$upper_size_rna, levels = c("1.6", "3"))
-  
+
+  g(DNA_Metadata, RNA_Metadata) %=% init_tara_md()
   DNA_tara <- merge(x=DNA_Metadata, y=DNA_cov, by ='connector_DNA', all = TRUE)
   RNA_tara <- merge(x=RNA_Metadata, y=RNA_cov, by ='connector_RNA', all = TRUE)
   
