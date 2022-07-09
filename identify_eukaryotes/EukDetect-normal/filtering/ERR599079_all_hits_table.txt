@@ -1,0 +1,20 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Stramenopiles sp. TOSAG23-2	1735743	species	46	638	97.87%	51.98%	99.09%	66251
+unclassified Bathycoccus	2590008	genus	48	1322	92.31%	60.16%	98.41%	95463
+Bathycoccus sp. SAG1	2589996	species	4	28	80.0%	23.56%	99.18%	5703
+Bathycoccus sp. SAG2	2589997	species	3	64	75.0%	41.54%	98.17%	8737
+Bathycoccus sp. TOSAG39-1	1735750	species	9	200	69.23%	52.22%	98.44%	28758
+Mamiellales	13792	order	2	9	66.67%	20.38%	99.07%	6183
+Stramenopiles sp. TOSAG23-3	1735745	species	35	116	58.33%	16.43%	98.89%	80549
+Bathycoccus sp. SAG3	2589998	species	2	54	50.0%	54.81%	98.5%	6679
+Bathycoccus sp. SAG4	2589999	species	3	61	42.86%	60.0%	98.69%	10392
+Ostreococcus sp. SAG10	2590005	species	8	17	32.0%	4.86%	99.24%	56396
+Pelagomonas calceolata	35677	species	21	98	27.27%	16.17%	97.99%	128353
+Phaeocystis globosa	33658	species	15	28	12.93%	12.84%	99.27%	154798
+Phaeocystis antarctica	33657	species	8	25	8.0%	13.57%	97.08%	158488
+Ostreococcus sp. SAG12	2590007	species	1	2	7.69%	6.49%	99.39%	29000
+Bathycoccus prasinos	41875	species	5	6	4.07%	3.18%	96.74%	229209
+Stramenopiles sp. TOSAG41-1	1735744	species	2	19	3.85%	33.56%	99.45%	67745
+Gephyrocapsa oceanica	38817	species	2	4	2.0%	4.73%	98.8%	137559
+Chloropicon mariensis	1606511	species	1	2	0.91%	9.17%	98.65%	157984
+Exophiala xenobiotica	348802	species	1	1	0.5%	2.33%	100.0%	372377

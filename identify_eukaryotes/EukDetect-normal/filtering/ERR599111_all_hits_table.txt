@@ -1,0 +1,31 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Bathycoccus sp. SAG1	2589996	species	5	22	100.0%	25.53%	99.73%	5703
+Ostreococcus sp. SAG10	2590005	species	23	134	92.0%	20.24%	99.27%	56396
+unclassified Bathycoccus	2590008	genus	46	891	88.46%	54.84%	99.28%	95463
+Ostreococcus sp. SAG12	2590007	species	11	86	84.62%	26.11%	99.46%	29000
+Bathycoccus sp. TOSAG39-1	1735750	species	10	123	76.92%	34.12%	99.4%	28758
+Ostreococcus sp. SAG9	2590004	species	3	12	75.0%	18.52%	99.34%	6096
+unclassified Ostreococcus	2268852	genus	9	50	75.0%	25.13%	99.24%	18843
+Bathycoccus sp. SAG2	2589997	species	3	44	75.0%	37.58%	98.99%	8737
+Chloropicon roscoffensis	1461544	species	108	451	68.35%	17.69%	99.4%	275974
+Mamiellales	13792	order	2	10	66.67%	16.69%	98.88%	6183
+Pelagomonas calceolata	35677	species	44	452	57.14%	23.95%	97.24%	128353
+Bathycoccus sp. SAG4	2589999	species	4	35	57.14%	40.61%	99.35%	10392
+Chloropicon mariensis	1606511	species	59	154	53.64%	12.46%	98.83%	157984
+Bathycoccus sp. SAG3	2589998	species	2	45	50.0%	52.09%	99.64%	6679
+Stramenopiles sp. TOSAG23-3	1735745	species	30	79	50.0%	14.84%	97.87%	80549
+Stramenopiles sp. TOSAG23-2	1735743	species	19	53	40.43%	15.48%	99.13%	66251
+Micromonas pusilla	38833	species	10	18	38.46%	9.95%	98.03%	49695
+Ostreococcus sp. SAG11	2590006	species	1	2	25.0%	20.85%	99.44%	5643
+Micromonas	38832	genus	36	72	20.22%	5.47%	98.25%	358692
+Chloropicon primus	1764295	species	16	27	11.59%	4.64%	99.42%	281336
+Chloropicon laureae	464258	species	4	7	7.14%	14.75%	99.55%	50762
+Monosiga brevicollis MX1	431895	species	6	12	6.67%	6.66%	99.09%	126657
+Phaeocystis globosa	33658	species	6	12	5.17%	12.77%	99.18%	154798
+Pycnococcus provasolii	41880	species	4	7	4.12%	10.2%	99.23%	119181
+Phaeocystis antarctica	33657	species	4	10	4.0%	5.69%	97.2%	158488
+Bathycoccus prasinos	41875	species	4	5	3.25%	2.51%	97.29%	229209
+Malassezia restricta	76775	species	2	3	1.33%	3.27%	99.3%	348317
+Gephyrocapsa oceanica	38817	species	1	2	1.0%	6.82%	100.0%	137559
+Stylophora pistillata	50429	species	1	2	0.67%	16.18%	99.41%	238357
+Purpureocillium lilacinum	33203	species	1	1	0.49%	10.41%	100.0%	356037

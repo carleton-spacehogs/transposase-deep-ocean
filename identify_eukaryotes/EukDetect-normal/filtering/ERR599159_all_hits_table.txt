@@ -1,0 +1,42 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Stramenopiles sp. TOSAG23-2	1735743	species	33	116	70.21%	16.79%	99.49%	66251
+Mamiellales	13792	order	2	4	66.67%	8.9%	99.71%	6183
+Chloropicon roscoffensis	1461544	species	80	275	50.63%	13.21%	99.66%	275974
+Bathycoccus prasinos	41875	species	62	190	50.41%	10.32%	99.43%	229209
+Bathycoccus sp. SAG3	2589998	species	2	6	50.0%	12.0%	99.02%	6679
+Bathycoccus sp. SAG2	2589997	species	2	4	50.0%	5.06%	99.68%	8737
+Micromonas pusilla	38833	species	10	22	38.46%	9.9%	97.59%	49695
+unclassified Bathycoccus	2590008	genus	20	62	38.46%	9.73%	99.55%	95463
+Ostreococcus sp. SAG9	2590004	species	1	2	25.0%	12.69%	99.43%	6096
+Micromonas	38832	genus	41	85	23.03%	5.16%	98.41%	358692
+Bathycoccus sp. TOSAG39-1	1735750	species	2	6	15.38%	16.84%	100.0%	28758
+Malassezia restricta	76775	species	13	22	8.67%	3.14%	99.08%	348317
+Meyerozyma guilliermondii ATCC 6260	294746	species	3	5	8.33%	3.27%	100.0%	107589
+Ostreococcus sp. SAG10	2590005	species	2	7	8.0%	6.49%	99.1%	56396
+Ostreococcus sp. SAG12	2590007	species	1	2	7.69%	13.98%	98.82%	29000
+Cladosporium sphaerospermum UM 843	1151026	species	15	32	7.39%	6.26%	99.04%	363001
+Ochroconis constricta UM 578	1442076	species	12	19	6.12%	4.99%	99.83%	370078
+Cafeteria roenbergensis	33653	species	2	2	4.65%	5.14%	100.0%	50724
+Meyerozyma	766728	genus	6	10	4.58%	3.54%	99.78%	218630
+Candida parapsilosis	5480	species	7	13	4.07%	5.47%	100.0%	312010
+Exophiala xenobiotica	348802	species	7	11	3.5%	4.19%	99.69%	372377
+Rhodotorula diobovata	5288	species	5	5	3.07%	1.77%	99.3%	358851
+Micromonas bravo	296588	species	3	5	2.54%	6.27%	98.63%	182724
+Meyerozyma caribbica MG20W	1091232	species	1	2	2.22%	3.17%	99.43%	140144
+Purpureocillium lilacinum	33203	species	4	7	1.94%	3.14%	99.23%	356037
+Stramenopiles sp. TOSAG41-1	1735744	species	1	2	1.92%	14.73%	100.0%	67745
+Triparma pacifica	91992	species	1	2	1.79%	3.55%	100.0%	110146
+Stramenopiles sp. TOSAG23-3	1735745	species	1	1	1.67%	7.82%	99.0%	80549
+Hortaea werneckii EXF-2000	1157616	species	5	8	1.35%	3.03%	99.58%	717212
+Pelagomonas calceolata	35677	species	1	1	1.3%	5.07%	100.0%	128353
+Cyphellophora europaea CBS 101466	1220924	species	2	3	1.01%	3.7%	99.63%	391280
+Aspergillus sydowii CBS 593.65	1036612	species	2	4	0.97%	4.73%	100.0%	361206
+Lutzomyia longipalpis	7200	species	1	1	0.71%	7.52%	96.51%	236724
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	3.37%	98.11%	332937
+Candida orthopsilosis Co 90-125	1136231	species	1	2	0.6%	6.03%	98.79%	306002
+[Candida] intermedia	45354	species	1	2	0.57%	3.57%	98.86%	350551
+Exophiala oligosperma	215243	species	1	2	0.5%	5.32%	100.0%	386708
+Malassezia furfur	55194	species	1	2	0.5%	8.0%	100.0%	451087
+Epicoccum nigrum	105696	species	1	2	0.49%	6.64%	100.0%	360210
+Pyrenochaeta sp. UM 256	1295359	species	1	2	0.48%	5.0%	97.77%	365660
+Cadophora sp. DSE1049	1485229	species	1	1	0.48%	1.17%	100.0%	369337

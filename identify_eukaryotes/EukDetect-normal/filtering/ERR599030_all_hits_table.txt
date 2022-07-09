@@ -1,0 +1,30 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Stramenopiles sp. TOSAG41-1	1735744	species	50	639	96.15%	51.84%	98.86%	67745
+Stramenopiles sp. TOSAG23-2	1735743	species	42	318	89.36%	35.82%	99.14%	66251
+Pelagomonas calceolata	35677	species	51	418	66.23%	23.02%	98.37%	128353
+Mamiellales	13792	order	1	4	33.33%	37.22%	98.73%	6183
+Chloropicon roscoffensis	1461544	species	40	119	25.32%	9.01%	99.43%	275974
+Neobodo designis	312471	species	13	35	19.7%	10.76%	98.18%	100830
+Triparma eleuthera	172717	species	13	28	17.81%	9.33%	99.41%	101435
+Partenskyella glossopodia	552666	species	9	24	15.0%	10.23%	98.78%	83769
+Triparma pacifica	91992	species	6	9	10.71%	3.25%	99.51%	110146
+Stramenopiles sp. TOSAG23-3	1735745	species	5	16	8.33%	19.66%	98.08%	80549
+Paraphysomonas bandaiensis	89770	species	3	5	3.37%	6.28%	99.12%	154847
+Pelagococcus subviridis	35679	species	2	4	3.03%	25.66%	97.41%	79272
+Thecamonas trahens ATCC 50062	461836	species	2	2	3.03%	4.53%	100.0%	96258
+Cafeteria roenbergensis	33653	species	1	1	2.33%	8.19%	100.0%	50724
+Durinskia baltica	400756	species	3	5	2.13%	2.74%	99.52%	244301
+Gephyrocapsa oceanica	38817	species	2	4	2.0%	3.49%	99.02%	137559
+unclassified Bathycoccus	2590008	genus	1	4	1.92%	55.78%	98.78%	95463
+Komagataella phaffii GS115	644223	species	3	6	1.89%	3.98%	100.0%	318579
+Chloropicon laureae	464258	species	1	2	1.79%	16.82%	100.0%	50762
+Phaeocystis globosa	33658	species	2	5	1.72%	16.19%	100.0%	154798
+Exophiala xenobiotica	348802	species	3	6	1.5%	10.76%	99.24%	372377
+Oikopleura longicauda	107032	species	1	1	1.37%	5.72%	96.97%	120130
+Rhodotorula diobovata	5288	species	2	3	1.23%	4.49%	100.0%	358851
+Phaeocystis antarctica	33657	species	1	2	1.0%	15.58%	98.88%	158488
+Chloropicon primus	1764295	species	1	1	0.72%	5.71%	99.01%	281336
+Tetraselmis striata	3165	species	1	20	0.71%	35.44%	97.81%	255923
+Lutzomyia longipalpis	7200	species	1	1	0.71%	8.57%	96.94%	236724
+Malassezia restricta	76775	species	1	2	0.67%	5.39%	99.38%	348317
+Hortaea werneckii EXF-2000	1157616	species	2	4	0.54%	2.29%	100.0%	717212

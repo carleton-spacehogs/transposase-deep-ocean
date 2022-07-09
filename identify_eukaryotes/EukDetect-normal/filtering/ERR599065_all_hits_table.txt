@@ -1,0 +1,21 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Chloropicon roscoffensis	1461544	species	139	1536	87.97%	41.3%	99.28%	275974
+Stramenopiles sp. TOSAG41-1	1735744	species	43	250	82.69%	31.18%	99.11%	67745
+Pelagomonas calceolata	35677	species	53	610	68.83%	21.99%	97.54%	128353
+Stramenopiles sp. TOSAG23-2	1735743	species	28	98	59.57%	16.42%	99.13%	66251
+Triparma pacifica	91992	species	16	27	28.57%	4.71%	99.44%	110146
+Phaeocystis globosa	33658	species	22	75	18.97%	25.04%	98.77%	154798
+Phaeocystis antarctica	33657	species	10	24	10.0%	8.68%	97.43%	158488
+Partenskyella glossopodia	552666	species	6	12	10.0%	7.44%	98.66%	83769
+Triparma eleuthera	172717	species	5	9	6.85%	8.13%	99.6%	101435
+Pelagococcus subviridis	35679	species	4	6	6.06%	12.43%	97.76%	79272
+Prasinococcaceae	2201465	family	1	1	4.0%	15.3%	100.0%	36508
+Chloropicon mariensis	1606511	species	4	8	3.64%	10.68%	99.86%	157984
+Phaeocystis rex	1631189	species	1	1	2.56%	1.5%	99.0%	40152
+Prasinococcaceae sp. CCMP 1430	2489100	species	2	4	1.83%	6.32%	98.87%	225148
+Stramenopiles sp. TOSAG23-3	1735745	species	1	8	1.67%	43.97%	98.86%	80549
+Aureococcus anophagefferens	44056	species	1	1	1.54%	4.1%	97.67%	85991
+Calcidiscus leptoporus	127549	species	1	1	1.18%	1.17%	98.82%	114854
+Gephyrocapsa oceanica	38817	species	1	1	1.0%	6.2%	96.88%	137559
+Chloropicon primus	1764295	species	1	2	0.72%	2.88%	96.79%	281336
+Tetraselmis striata	3165	species	1	9	0.71%	17.36%	97.11%	255923

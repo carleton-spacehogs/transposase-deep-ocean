@@ -1,0 +1,27 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Chloropicon roscoffensis	1461544	species	52	127	32.91%	10.5%	99.31%	275974
+Malassezia restricta	76775	species	34	69	22.67%	5.41%	99.17%	348317
+Ochroconis constricta UM 578	1442076	species	38	76	19.39%	8.06%	99.55%	370078
+Stramenopiles sp. TOSAG23-2	1735743	species	9	20	19.15%	11.88%	98.46%	66251
+Pelagomonas calceolata	35677	species	6	9	7.79%	5.28%	98.87%	128353
+Cafeteria roenbergensis	33653	species	3	5	6.98%	7.53%	99.32%	50724
+Cyphellophora europaea CBS 101466	1220924	species	11	16	5.53%	3.77%	99.79%	391280
+Exophiala xenobiotica	348802	species	10	19	5.0%	6.19%	98.99%	372377
+Paraphysomonas bandaiensis	89770	species	4	6	4.49%	6.09%	99.46%	154847
+Cadophora sp. DSE1049	1485229	species	8	11	3.86%	4.07%	97.44%	369337
+Stramenopiles sp. TOSAG41-1	1735744	species	2	3	3.85%	9.84%	100.0%	67745
+Stramenopiles sp. TOSAG23-3	1735745	species	2	4	3.33%	12.52%	99.72%	80549
+Neobodo designis	312471	species	2	4	3.03%	4.89%	98.88%	100830
+Chloropicon mariensis	1606511	species	3	6	2.73%	8.87%	99.29%	157984
+Hortaea werneckii EXF-2000	1157616	species	8	14	2.16%	5.49%	99.92%	717212
+Triparma eleuthera	172717	species	1	1	1.37%	5.21%	100.0%	101435
+Malassezia globosa CBS 7966	425265	species	2	3	1.27%	10.35%	99.6%	332937
+Phaeocystis antarctica	33657	species	1	2	1.0%	32.02%	96.49%	158488
+Gephyrocapsa oceanica	38817	species	1	2	1.0%	12.83%	100.0%	137559
+Chloropicon primus	1764295	species	1	2	0.72%	13.35%	97.81%	281336
+Malassezia sympodialis ATCC 42132	1230383	species	1	2	0.72%	6.65%	99.42%	313165
+Tetraselmis striata	3165	species	1	19	0.71%	33.71%	98.14%	255923
+Lutzomyia longipalpis	7200	species	1	1	0.71%	7.44%	96.47%	236724
+Oithona nana	136191	species	1	2	0.67%	9.75%	98.22%	244880
+Candida parapsilosis	5480	species	1	2	0.58%	1.84%	100.0%	312010
+Debaryomyces hansenii CBS767	284592	species	1	2	0.55%	18.72%	98.82%	326457

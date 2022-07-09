@@ -1,0 +1,15 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Ostreococcus sp. SAG12	2590007	species	1	2	7.69%	1.4%	98.2%	29000
+Neobodo designis	312471	species	5	9	7.58%	8.08%	98.91%	100830
+Durinskia baltica	400756	species	6	11	4.26%	7.17%	99.89%	244301
+unclassified Bathycoccus	2590008	genus	2	3	3.85%	2.49%	98.79%	95463
+Exophiala xenobiotica	348802	species	6	11	3.0%	4.61%	99.89%	372377
+Chloropicon roscoffensis	1461544	species	4	9	2.53%	8.57%	99.65%	275974
+Cyphellophora europaea CBS 101466	1220924	species	5	10	2.51%	4.22%	99.73%	391280
+Stramenopiles sp. TOSAG23-2	1735743	species	1	2	2.13%	6.25%	98.73%	66251
+Purpureocillium lilacinum	33203	species	3	5	1.46%	3.94%	100.0%	356037
+Chloropicon primus	1764295	species	1	2	0.72%	15.17%	96.71%	281336
+Tetraselmis striata	3165	species	1	11	0.71%	19.71%	97.71%	255923
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	7.42%	98.63%	332937
+Penicillium italicum	40296	species	1	2	0.48%	5.65%	100.0%	363540
+Hortaea werneckii EXF-2000	1157616	species	1	2	0.27%	3.11%	100.0%	717212

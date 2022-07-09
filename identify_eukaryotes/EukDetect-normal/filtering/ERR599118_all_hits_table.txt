@@ -1,0 +1,20 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Chloropicon roscoffensis	1461544	species	144	2281	91.14%	52.07%	99.25%	275974
+Stramenopiles sp. TOSAG41-1	1735744	species	46	375	88.46%	38.34%	99.3%	67745
+Pelagomonas calceolata	35677	species	56	407	72.73%	21.92%	98.02%	128353
+Triparma pacifica	91992	species	18	41	32.14%	6.64%	99.86%	110146
+Prasinococcaceae	2201465	family	5	12	20.0%	6.87%	99.12%	36508
+Stramenopiles sp. TOSAG23-2	1735743	species	9	19	19.15%	9.8%	99.34%	66251
+Phaeocystis globosa	33658	species	21	72	18.1%	23.78%	98.87%	154798
+Partenskyella glossopodia	552666	species	7	15	11.67%	8.82%	98.53%	83769
+Phaeocystis antarctica	33657	species	10	20	10.0%	7.32%	97.24%	158488
+Prasinococcaceae sp. CCMP 1430	2489100	species	9	16	8.26%	5.62%	99.1%	225148
+Triparma eleuthera	172717	species	4	7	5.48%	12.92%	99.84%	101435
+Prasinoderma coloniale	156133	species	4	9	4.65%	8.14%	99.73%	155270
+Stramenopiles sp. TOSAG23-3	1735745	species	2	16	3.33%	31.38%	98.61%	80549
+Chloropicon primus	1764295	species	4	6	2.9%	4.84%	97.92%	281336
+Aureococcus anophagefferens	44056	species	1	3	1.54%	10.0%	95.24%	85991
+Tetraselmis striata	3165	species	1	14	0.71%	30.1%	98.17%	255923
+Lutzomyia longipalpis	7200	species	1	1	0.71%	7.0%	96.25%	236724
+Malassezia restricta	76775	species	1	2	0.67%	2.33%	99.45%	348317
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	16.89%	100.0%	332937

@@ -1,0 +1,27 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Ostreococcus sp. SAG9	2590004	species	4	43	100.0%	37.01%	98.8%	6096
+unclassified Ostreococcus	2268852	genus	12	75	100.0%	27.79%	98.99%	18843
+unclassified Bathycoccus	2590008	genus	51	2325	98.08%	75.1%	98.71%	95463
+Micromonas pusilla	38833	species	25	361	96.15%	42.03%	97.9%	49695
+Ostreococcus sp. SAG12	2590007	species	12	137	92.31%	35.81%	98.83%	29000
+Ostreococcus sp. SAG10	2590005	species	22	265	88.0%	33.02%	98.93%	56396
+Bathycoccus sp. TOSAG39-1	1735750	species	11	428	84.62%	50.6%	98.54%	28758
+Bathycoccus sp. SAG1	2589996	species	4	39	80.0%	32.9%	98.23%	5703
+Bathycoccus sp. SAG2	2589997	species	3	111	75.0%	54.17%	98.73%	8737
+Micromonas	38832	genus	133	1927	74.72%	34.48%	97.83%	358692
+Bathycoccus sp. SAG4	2589999	species	5	86	71.43%	32.08%	98.49%	10392
+Mamiellales	13792	order	2	37	66.67%	33.07%	98.92%	6183
+Ostreococcus sp. SAG11	2590006	species	2	6	50.0%	20.9%	99.0%	5643
+Bathycoccus sp. SAG3	2589998	species	2	98	50.0%	76.75%	98.93%	6679
+Pelagomonas calceolata	35677	species	23	96	29.87%	13.5%	97.74%	128353
+Stramenopiles sp. TOSAG23-2	1735743	species	3	5	6.38%	10.3%	99.29%	66251
+Bathycoccus prasinos	41875	species	7	13	5.69%	4.6%	97.3%	229209
+Stramenopiles sp. TOSAG41-1	1735744	species	2	4	3.85%	8.49%	99.38%	67745
+Micromonas bravo	296588	species	3	6	2.54%	8.43%	98.68%	182724
+Chloropicon roscoffensis	1461544	species	3	6	1.9%	10.93%	99.36%	275974
+Phaeocystis globosa	33658	species	2	2	1.72%	11.84%	99.0%	154798
+Alexandrium tamarense	2926	species	2	16	1.42%	31.68%	98.1%	194024
+Thalassiosira oceanica	159749	species	1	1	1.02%	6.82%	100.0%	165190
+Phaeocystis antarctica	33657	species	1	2	1.0%	9.76%	99.45%	158488
+Prasinococcaceae sp. CCMP 1430	2489100	species	1	1	0.92%	7.93%	96.97%	225148
+Chloropicon primus	1764295	species	1	2	0.72%	11.73%	100.0%	281336

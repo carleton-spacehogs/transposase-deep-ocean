@@ -1,0 +1,22 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Chloropicon roscoffensis	1461544	species	26	65	16.46%	7.54%	99.81%	275974
+Stramenopiles sp. TOSAG23-2	1735743	species	7	16	14.89%	11.38%	99.12%	66251
+Bathycoccus prasinos	41875	species	15	30	12.2%	6.38%	99.43%	229209
+Micromonas pusilla	38833	species	3	5	11.54%	11.18%	98.22%	49695
+Ostreococcus sp. SAG12	2590007	species	1	2	7.69%	11.23%	98.8%	29000
+Micromonas	38832	genus	12	22	6.74%	3.1%	98.46%	358692
+unclassified Bathycoccus	2590008	genus	3	7	5.77%	6.11%	100.0%	95463
+Meyerozyma guilliermondii ATCC 6260	294746	species	1	2	2.78%	4.33%	100.0%	107589
+Cladosporium sphaerospermum UM 843	1151026	species	5	8	2.46%	8.97%	98.49%	363001
+Meyerozyma caribbica MG20W	1091232	species	1	2	2.22%	2.58%	100.0%	140144
+Malassezia restricta	76775	species	3	6	2.0%	9.06%	98.75%	348317
+Purpureocillium lilacinum	33203	species	3	5	1.46%	4.03%	99.57%	356037
+Triparma eleuthera	172717	species	1	2	1.37%	2.53%	100.0%	101435
+Pelagomonas calceolata	35677	species	1	2	1.3%	9.28%	100.0%	128353
+Malassezia globosa CBS 7966	425265	species	1	1	0.64%	2.14%	99.01%	332937
+Rhodotorula diobovata	5288	species	1	2	0.61%	1.31%	100.0%	358851
+Candida orthopsilosis Co 90-125	1136231	species	1	2	0.6%	10.66%	99.34%	306002
+Saccharomyces cerevisiae S288C	559292	species	1	2	0.55%	13.09%	100.0%	308302
+Ochroconis constricta UM 578	1442076	species	1	1	0.51%	5.12%	100.0%	370078
+Exophiala xenobiotica	348802	species	1	1	0.5%	8.25%	100.0%	372377
+Hortaea werneckii EXF-2000	1157616	species	1	1	0.27%	2.87%	100.0%	717212

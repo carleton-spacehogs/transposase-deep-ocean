@@ -1,0 +1,26 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Chloropicon mariensis	1606511	species	35	88	31.82%	13.26%	99.76%	157984
+Stramenopiles sp. TOSAG23-2	1735743	species	13	27	27.66%	7.55%	99.26%	66251
+Bathycoccus sp. SAG2	2589997	species	1	2	25.0%	3.08%	98.3%	8737
+unclassified Bathycoccus	2590008	genus	7	20	13.46%	6.56%	99.11%	95463
+Pelagomonas calceolata	35677	species	10	27	12.99%	12.92%	99.0%	128353
+Chloropicon roscoffensis	1461544	species	16	36	10.13%	7.93%	99.34%	275974
+Paraphysomonas bandaiensis	89770	species	8	13	8.99%	6.48%	99.91%	154847
+Ostreococcus sp. SAG12	2590007	species	1	1	7.69%	23.22%	99.01%	29000
+Bathycoccus sp. TOSAG39-1	1735750	species	1	2	7.69%	15.07%	98.29%	28758
+Cyphellophora europaea CBS 101466	1220924	species	14	26	7.04%	4.68%	99.83%	391280
+Phaeocystis globosa	33658	species	7	14	6.03%	12.8%	99.27%	154798
+Exophiala xenobiotica	348802	species	10	19	5.0%	5.46%	99.88%	372377
+Ostreococcus sp. SAG10	2590005	species	1	2	4.0%	2.31%	98.88%	56396
+Malassezia restricta	76775	species	4	8	2.67%	4.93%	99.14%	348317
+Ochroconis constricta UM 578	1442076	species	4	10	2.04%	6.96%	99.77%	370078
+Stramenopiles sp. TOSAG41-1	1735744	species	1	2	1.92%	7.6%	99.43%	67745
+Triparma pacifica	91992	species	1	2	1.79%	4.33%	100.0%	110146
+Stramenopiles sp. TOSAG23-3	1735745	species	1	2	1.67%	29.44%	97.7%	80549
+Phaeocystis antarctica	33657	species	1	1	1.0%	5.39%	97.03%	158488
+Cladosporium sphaerospermum UM 843	1151026	species	2	3	0.99%	7.0%	99.64%	363001
+Hortaea werneckii EXF-2000	1157616	species	3	6	0.81%	8.4%	98.27%	717212
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	11.4%	98.93%	332937
+Candida parapsilosis	5480	species	1	2	0.58%	3.63%	100.0%	312010
+Cadophora sp. DSE1049	1485229	species	1	1	0.48%	9.72%	97.0%	369337
+Aspergillus sp. MA 6041	2153248	species	1	1	0.3%	1.12%	100.0%	605505

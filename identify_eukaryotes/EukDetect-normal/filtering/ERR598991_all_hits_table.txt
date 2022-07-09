@@ -1,0 +1,35 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Micromonas pusilla	38833	species	26	1323	100.0%	68.3%	97.26%	49695
+Ostreococcus sp. SAG9	2590004	species	4	1093	100.0%	97.65%	97.73%	6096
+unclassified Ostreococcus	2268852	genus	12	2306	100.0%	81.12%	97.93%	18843
+Ostreococcus sp. SAG12	2590007	species	13	3872	100.0%	84.91%	97.66%	29000
+Ostreococcus sp. SAG11	2590006	species	4	411	100.0%	52.28%	98.1%	5643
+Bathycoccus sp. TOSAG39-1	1735750	species	13	373	100.0%	44.61%	99.35%	28758
+Ostreococcus sp. SAG10	2590005	species	24	8234	96.0%	93.25%	97.77%	56396
+unclassified Bathycoccus	2590008	genus	49	2242	94.23%	76.01%	99.39%	95463
+Stramenopiles sp. TOSAG41-1	1735744	species	46	327	88.46%	35.78%	98.87%	67745
+Bathycoccus sp. SAG1	2589996	species	4	29	80.0%	36.52%	99.62%	5703
+Micromonas	38832	genus	142	7814	79.78%	62.4%	97.21%	358692
+Bathycoccus sp. SAG2	2589997	species	3	124	75.0%	53.01%	99.07%	8737
+Bathycoccus sp. SAG4	2589999	species	5	75	71.43%	32.94%	99.26%	10392
+Mamiellales	13792	order	2	581	66.67%	66.03%	98.01%	6183
+Pelagomonas calceolata	35677	species	39	248	50.65%	19.37%	97.71%	128353
+Bathycoccus sp. SAG3	2589998	species	2	105	50.0%	78.32%	99.55%	6679
+Chloropicon roscoffensis	1461544	species	45	99	28.48%	9.2%	99.51%	275974
+Pycnococcus provasolii	41880	species	24	63	24.74%	15.68%	99.09%	119181
+Phaeocystis globosa	33658	species	21	57	18.1%	20.09%	99.04%	154798
+Triparma eleuthera	172717	species	7	10	9.59%	8.86%	99.89%	101435
+Triparma pacifica	91992	species	5	9	8.93%	4.24%	99.87%	110146
+Stramenopiles sp. TOSAG23-2	1735743	species	4	9	8.51%	9.5%	99.62%	66251
+Phaeocystis antarctica	33657	species	8	12	8.0%	8.92%	97.64%	158488
+Bathycoccus prasinos	41875	species	6	9	4.88%	3.46%	97.31%	229209
+Stramenopiles sp. TOSAG23-3	1735745	species	2	4	3.33%	7.33%	98.16%	80549
+Alexandrium tamarense	2926	species	3	71	2.13%	47.37%	97.99%	194024
+Ostreococcus lucimarinus CCE9901	436017	species	2	2	1.75%	6.35%	97.13%	233346
+Aureococcus anophagefferens	44056	species	1	1	1.54%	4.81%	97.03%	85991
+Pelagococcus subviridis	35679	species	1	2	1.52%	18.83%	97.0%	79272
+Prasinococcaceae sp. CCMP 1430	2489100	species	1	1	0.92%	7.53%	96.81%	225148
+Micromonas bravo	296588	species	1	2	0.85%	12.05%	97.14%	182724
+Chloropicon primus	1764295	species	1	2	0.72%	5.41%	100.0%	281336
+Malassezia restricta	76775	species	1	2	0.67%	7.76%	100.0%	348317
+Eukaryota	2759	superkingdom	1	1	0.39%	3.84%	96.55%	467758

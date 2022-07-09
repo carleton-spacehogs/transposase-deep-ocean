@@ -1,0 +1,13 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+greenalgae-Chloropicon_roscoffensis-83779at2759-S1	2	192	0	192	1571	12.22	100.0
+greenalgae-Chloropicon_roscoffensis-306227at2759-S1	2	168	1	169	2454	6.89	99.41
+greenalgae-Chloropicon_roscoffensis-919955at2759-S1	2	171	1	172	1254	13.72	99.42
+greenalgae-Chloropicon_mariensis-1236198at2759-S1	2	176	0	176	708	24.86	100.0
+greenalgae-Bathycoccus_SPCollapse_SP3-11	2	128	1	129	2049	6.3	99.22
+fungi-Cyphellophora_europaea_CBS_101466-768809at2759-S1	2	171	0	171	3804	4.5	100.0
+fungi-Exophiala_xenobiotica-39650at2759-S1	1	99	2	101	9405	1.07	98.02
+fungi-Exophiala_xenobiotica-1228942at2759-S1	2	158	0	158	777	20.33	100.0
+fungi-Exophiala_xenobiotica-261328at2759-S1	1	70	0	70	3303	2.12	100.0
+protist-Stramenopiles_sp_TOSAG23-3-388820at2759-S1	2	182	0	182	2544	7.15	100.0
+protist-Stramenopiles_sp_TOSAG23-3-1019762at2759-S1	2	165	1	166	1232	13.47	99.4
+fungi-Candida_parapsilosis-293315at2759-S1	2	174	0	174	4467	3.9	100.0

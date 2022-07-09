@@ -1,0 +1,19 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+species-Stramenopiles_sp._TOSAG41-1	species	Stramenopiles sp. TOSAG41-1	1735744	1.7271	27.4584	117	67745
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	0.3472	5.5195	23	66251
+class-Bolidophyceae	class	Bolidophyceae	91989	0.1433	3.3801	16	111628
+class-Bolidophyceae|order-Parmales	order	Parmales	722750	0.1433	3.3801	16	111628
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma	genus	Triparma	722752	0.1433	3.3801	16	111628
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_pacifica	species	Triparma pacifica	91992	0.1271	2.0208	14	110146
+class-Pelagophyceae	class	Pelagophyceae	35675	1.5426	36.3783	198	128353
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	1.5426	36.3783	198	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	1.5426	36.3783	198	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	1.5426	24.5259	198	128353
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	2.2092	52.098	623	282001
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	2.2092	52.098	623	282001
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	2.2092	52.098	623	282001
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	2.2357	35.5454	617	275974
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.3453	8.1436	59	170852
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	0.3453	8.1436	59	170852
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	0.3453	8.1436	59	170852
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_globosa	species	Phaeocystis globosa	33658	0.3101	4.9299	48	154798

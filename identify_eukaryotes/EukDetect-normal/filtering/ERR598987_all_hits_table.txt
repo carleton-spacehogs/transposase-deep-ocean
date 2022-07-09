@@ -1,0 +1,9 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Stramenopiles sp. TOSAG23-3	1735745	species	7	18	11.67%	11.03%	99.67%	80549
+unclassified Bathycoccus	2590008	genus	1	2	1.92%	11.42%	97.65%	95463
+Cyphellophora europaea CBS 101466	1220924	species	3	6	1.51%	3.42%	99.8%	391280
+Chloropicon roscoffensis	1461544	species	2	3	1.27%	5.28%	99.64%	275974
+Purpureocillium lilacinum	33203	species	2	4	0.97%	5.9%	100.0%	356037
+Tetraselmis striata	3165	species	1	2	0.71%	4.36%	98.28%	255923
+Ochroconis constricta UM 578	1442076	species	1	1	0.51%	2.13%	98.02%	370078
+Exophiala xenobiotica	348802	species	1	2	0.5%	5.68%	100.0%	372377

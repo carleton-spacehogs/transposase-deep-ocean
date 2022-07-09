@@ -1,0 +1,24 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Malassezia restricta	76775	species	38	85	25.33%	5.9%	99.31%	348317
+Ochroconis constricta UM 578	1442076	species	25	46	12.76%	5.62%	99.36%	370078
+Cyphellophora europaea CBS 101466	1220924	species	25	44	12.56%	4.47%	99.78%	391280
+Chloropicon mariensis	1606511	species	13	31	11.82%	8.89%	99.8%	157984
+Stramenopiles sp. TOSAG23-2	1735743	species	2	3	4.26%	6.34%	96.86%	66251
+Malassezia globosa CBS 7966	425265	species	5	8	3.18%	4.23%	99.85%	332937
+Exophiala xenobiotica	348802	species	6	9	3.0%	3.81%	99.5%	372377
+Cadophora sp. DSE1049	1485229	species	6	10	2.9%	3.66%	97.51%	369337
+Pelagomonas calceolata	35677	species	2	2	2.6%	7.36%	97.88%	128353
+Cladosporium sphaerospermum UM 843	1151026	species	5	9	2.46%	6.23%	99.23%	363001
+Cafeteria roenbergensis	33653	species	1	2	2.33%	9.91%	96.36%	50724
+Gephyrocapsa oceanica	38817	species	1	1	1.0%	3.07%	100.0%	137559
+Penicillium digitatum Pd1	1170230	species	2	4	0.95%	5.51%	99.69%	357912
+Rhagoletis zephyria	28612	species	1	1	0.87%	11.07%	97.03%	219191
+Hortaea werneckii EXF-2000	1157616	species	3	3	0.81%	5.16%	98.63%	717212
+Malassezia dermatis	169489	species	1	2	0.74%	16.54%	100.0%	308173
+Malassezia sympodialis ATCC 42132	1230383	species	1	2	0.72%	17.86%	99.42%	313165
+Durinskia baltica	400756	species	1	2	0.71%	1.47%	100.0%	244301
+Lutzomyia longipalpis	7200	species	1	2	0.71%	7.61%	96.55%	236724
+[Candida] intermedia	45354	species	1	2	0.57%	5.58%	99.42%	350551
+Helotiales sp. F229	1967635	species	1	2	0.5%	3.93%	96.39%	364015
+Exophiala dermatitidis NIH/UT8656	858893	species	1	2	0.49%	7.36%	100.0%	392508
+[Nectria] haematococca mpVI 77-13-4	660122	no rank	1	2	0.49%	1.89%	100.0%	351719

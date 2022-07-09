@@ -1,0 +1,10 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Stramenopiles sp. TOSAG23-3	1735745	species	7	16	11.67%	11.35%	99.53%	80549
+Stramenopiles sp. TOSAG23-2	1735743	species	1	2	2.13%	28.78%	98.1%	66251
+Chloropicon roscoffensis	1461544	species	3	5	1.9%	3.89%	98.27%	275974
+Exophiala xenobiotica	348802	species	3	6	1.5%	5.32%	98.5%	372377
+Purpureocillium lilacinum	33203	species	2	2	0.97%	5.34%	100.0%	356037
+Durinskia baltica	400756	species	1	2	0.71%	6.81%	100.0%	244301
+Rhodotorula diobovata	5288	species	1	1	0.61%	6.91%	100.0%	358851
+Cyphellophora europaea CBS 101466	1220924	species	1	1	0.5%	1.97%	100.0%	391280
+Cladosporium sphaerospermum UM 843	1151026	species	1	1	0.49%	3.47%	100.0%	363001

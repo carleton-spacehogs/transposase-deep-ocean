@@ -1,0 +1,31 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Ostreococcus sp. SAG9	2590004	species	4	142	100.0%	84.68%	99.36%	6096
+Bathycoccus sp. SAG1	2589996	species	5	13	100.0%	16.25%	99.24%	5703
+Ostreococcus sp. SAG10	2590005	species	24	923	96.0%	72.07%	99.29%	56396
+Stramenopiles sp. TOSAG41-1	1735744	species	49	563	94.23%	48.18%	99.14%	67745
+Ostreococcus sp. SAG12	2590007	species	12	400	92.31%	66.48%	99.45%	29000
+unclassified Ostreococcus	2268852	genus	11	239	91.67%	61.16%	99.52%	18843
+unclassified Bathycoccus	2590008	genus	46	574	88.46%	38.27%	99.65%	95463
+Ostreococcus sp. SAG11	2590006	species	3	47	75.0%	69.23%	99.22%	5643
+Bathycoccus sp. SAG2	2589997	species	3	29	75.0%	24.83%	99.94%	8737
+Triparma pacifica	91992	species	41	258	73.21%	20.55%	99.65%	110146
+Micromonas pusilla	38833	species	19	69	73.08%	14.02%	97.96%	49695
+Bathycoccus sp. TOSAG39-1	1735750	species	9	104	69.23%	32.26%	99.63%	28758
+Mamiellales	13792	order	2	69	66.67%	47.15%	99.44%	6183
+Bathycoccus sp. SAG4	2589999	species	4	24	57.14%	30.81%	99.67%	10392
+Micromonas	38832	genus	89	298	50.0%	9.59%	97.99%	358692
+Bathycoccus sp. SAG3	2589998	species	2	20	50.0%	29.07%	99.68%	6679
+Triparma eleuthera	172717	species	34	102	46.58%	13.68%	99.58%	101435
+Stramenopiles sp. TOSAG23-2	1735743	species	20	61	42.55%	13.33%	99.24%	66251
+Prasinococcaceae	2201465	family	10	30	40.0%	11.69%	99.14%	36508
+Pelagomonas calceolata	35677	species	25	106	32.47%	15.86%	98.29%	128353
+Prasinococcaceae sp. CCMP 1430	2489100	species	27	58	24.77%	6.76%	99.18%	225148
+Prasinoderma coloniale	156133	species	16	35	18.6%	10.58%	99.54%	155270
+Phaeocystis globosa	33658	species	8	14	6.9%	12.8%	99.15%	154798
+Stramenopiles sp. TOSAG23-3	1735745	species	1	11	1.67%	54.86%	98.93%	80549
+Phaeocystis antarctica	33657	species	1	1	1.0%	6.98%	96.94%	158488
+Ostreococcus lucimarinus CCE9901	436017	species	1	1	0.88%	7.17%	96.97%	233346
+Bathycoccus prasinos	41875	species	1	1	0.81%	2.33%	97.03%	229209
+Alexandrium tamarense	2926	species	1	2	0.71%	11.79%	100.0%	194024
+Chloropicon roscoffensis	1461544	species	1	1	0.63%	8.65%	98.02%	275974
+Komagataella phaffii GS115	644223	species	1	1	0.63%	1.79%	99.0%	318579
