@@ -1,0 +1,26 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Basidiomycota|class-Exobasidiomycetes	class	Exobasidiomycetes	452283	0.0821	4.7152	28	341159
+phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales	order	Exobasidiales	5404	0.0821	4.7152	28	341159
+phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales|family-Brachybasidiaceae	family	Brachybasidiaceae	190068	0.0821	4.7152	28	341159
+phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales|family-Brachybasidiaceae|genus-Meira	genus	Meira	215251	0.0821	4.7319	28	341159
+phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales|family-Brachybasidiaceae|genus-Meira|species-Meira_nashicola	species	Meira nashicola	286112	0.0821	4.9857	28	341159
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.5396	31.0019	6	11119
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.5396	31.0019	6	11119
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae	family	Malasseziaceae	742845	0.5396	31.0019	6	11119
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.5396	31.1113	6	11119
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_globosa	species	Malassezia globosa	76773	0.4513	27.416	4	8863
+phylum-Ascomycota|class-Sordariomycetes	class	Sordariomycetes	147550	0.3049	17.5198	108	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales	order	Hypocreales	5125	0.3049	17.5198	108	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae	family	Cordycipitaceae	474943	0.3049	17.5198	108	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae|genus-Lecanicillium	genus	Lecanicillium	291363	0.3049	17.5816	108	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae|genus-Lecanicillium|species-Lecanicillium_sp._LEC01	species	Lecanicillium sp. LEC01	2013060	0.3049	18.5247	108	354158
+phylum-Ascomycota|class-Dothideomycetes	class	Dothideomycetes	147541	0.5008	28.7738	6	11980
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales	order	Venturiales	1111111	0.5008	28.7738	6	11980
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae	family	Sympoventuriaceae	1111112	0.5008	28.7738	6	11980
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae|genus-Ochroconis	genus	Ochroconis	227045	0.5008	28.8753	6	11980
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae|genus-Ochroconis|species-Ochroconis_constricta	species	Ochroconis constricta	227046	0.5008	30.4243	6	11980
+class-Dinophyceae	class	Dinophyceae	2864	0.3131	17.9892	77	245913
+class-Dinophyceae|order-Peridiniales	order	Peridiniales	2910	0.3131	17.9892	77	245913
+class-Dinophyceae|order-Peridiniales|family-Kryptoperidiniaceae	family	Kryptoperidiniaceae	2137591	0.3131	17.9892	77	245913
+class-Dinophyceae|order-Peridiniales|family-Kryptoperidiniaceae|genus-Durinskia	genus	Durinskia	400754	0.307	17.6998	75	244301
+class-Dinophyceae|order-Peridiniales|family-Kryptoperidiniaceae|genus-Durinskia|species-Durinskia_baltica	species	Durinskia baltica	400756	0.307	18.6493	75	244301

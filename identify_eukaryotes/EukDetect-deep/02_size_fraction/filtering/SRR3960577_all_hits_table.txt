@@ -1,0 +1,7 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Cafeteria roenbergensis	33653	species	1	2	2.33%	14.47%	97.51%	50724
+Neobodo designis	312471	species	1	2	1.52%	18.27%	98.83%	100830
+Durinskia baltica	400756	species	1	1	0.71%	3.44%	99.03%	244301
+Exophiala lecanii-corni	91925	species	1	2	0.7%	11.56%	99.06%	323765
+Exophiala oligosperma	215243	species	1	2	0.5%	5.91%	100.0%	386708
+Lecanicillium sp. LEC01	2013060	species	1	1	0.49%	10.98%	100.0%	354158

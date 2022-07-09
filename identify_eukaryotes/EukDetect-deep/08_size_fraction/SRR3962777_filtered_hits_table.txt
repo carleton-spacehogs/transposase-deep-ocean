@@ -1,0 +1,4 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Lecanicillium sp. LEC01	species	phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae|genus-Lecanicillium|species-Lecanicillium_sp._LEC01	2013060	72	174	34.95%	11.89%	98.74%
+Meira nashicola	species	phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales|family-Brachybasidiaceae|genus-Meira|species-Meira_nashicola	286112	23	50	12.57%	8.81%	99.89%
+Thraustochytriaceae	family	class-Bigyra|order-Labyrinthulomycetes|family-Thraustochytriaceae	33674	4	7	5.97%	11.0%	100.0%

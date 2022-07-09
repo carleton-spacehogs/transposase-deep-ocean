@@ -1,0 +1,13 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae	family	Malasseziaceae	742845	0.0172	1.5002	6	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.0172	1.5002	6	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.0172	1.5002	6	348317
+phylum-Ascomycota|class-Dothideomycetes|order-Dothideales|family-Saccotheciaceae	family	Saccotheciaceae	1570301	0.019	1.6587	7	367526
+phylum-Ascomycota|class-Dothideomycetes|order-Dothideales|family-Saccotheciaceae|genus-Aureobasidium	genus	Aureobasidium	5579	0.019	1.6587	7	367526
+phylum-Ascomycota|class-Dothideomycetes|order-Dothideales|family-Saccotheciaceae|genus-Aureobasidium|species-Aureobasidium_melanogenum	species	Aureobasidium melanogenum	46634	0.019	1.6587	7	367526
+family-Apusomonadidae	family	Apusomonadidae	172820	1.0331	89.9734	37	35814
+family-Apusomonadidae|genus-Thecamonas	genus	Thecamonas	877559	1.0331	89.9734	37	35814
+family-Apusomonadidae|genus-Thecamonas|species-Thecamonas_trahens	species	Thecamonas trahens	529818	1.0331	89.9734	37	35814
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae	family	Cafeteriaceae	238884	0.0789	6.8677	4	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria	genus	Cafeteria	33652	0.0789	6.8677	4	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	species	Cafeteria roenbergensis	33653	0.0789	6.8677	4	50724

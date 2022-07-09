@@ -1,0 +1,12 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Meira nashicola	286112	species	117	409	63.93%	17.57%	99.93%	341159
+Lecanicillium sp. LEC01	2013060	species	30	52	14.56%	7.87%	98.79%	354158
+Cafeteria roenbergensis	33653	species	6	7	13.95%	8.16%	99.68%	50724
+Ostreococcus sp. SAG10	2590005	species	1	2	4.0%	7.13%	98.19%	56396
+Thraustochytrium sp. ATCC 26185	672127	species	2	4	3.85%	8.43%	100.0%	71099
+Aureococcus anophagefferens	44056	species	1	1	1.54%	3.35%	95.24%	85991
+Malassezia restricta	76775	species	2	3	1.33%	4.87%	99.73%	348317
+Chloropicon roscoffensis	1461544	species	2	4	1.27%	9.03%	99.77%	275974
+Bathycoccus prasinos	41875	species	1	2	0.81%	9.32%	99.18%	229209
+Ochroconis constricta UM 578	1442076	species	1	2	0.51%	16.21%	100.0%	370078
+Penicillium digitatum Pd1	1170230	species	1	1	0.48%	40.0%	100.0%	357912

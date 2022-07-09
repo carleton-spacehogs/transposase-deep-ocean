@@ -1,0 +1,3 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+protist-Thecamonas_trahens_ATCC_50062-1051021at2759-S1	2	223	1	224	1566	14.3	99.55
+fungi-Lecanicillium_sp_LEC01-1032689at2759-S1	2	253	5	258	1485	17.37	98.06

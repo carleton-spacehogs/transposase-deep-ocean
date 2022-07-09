@@ -1,0 +1,2 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Cafeteria roenbergensis	33653	species	16	37	37.21%	15.73%	99.61%	50724

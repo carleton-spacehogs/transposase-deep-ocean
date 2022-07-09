@@ -1,0 +1,11 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Ascomycota	phylum	Ascomycota	4890	0.044	100.0	16	363968
+phylum-Ascomycota|class-Sordariomycetes	class	Sordariomycetes	147550	0.0339	7.6723	12	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales	order	Hypocreales	5125	0.0339	7.6723	12	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae	family	Cordycipitaceae	474943	0.0339	7.6723	12	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae|genus-Lecanicillium	genus	Lecanicillium	291363	0.0339	7.6723	12	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae|genus-Lecanicillium|species-Lecanicillium_sp._LEC01	species	Lecanicillium sp. LEC01	2013060	0.0339	100.0	12	354158
+phylum-Ascomycota|class-Saccharomycetes	class	Saccharomycetes	4891	0.4077	92.3277	4	9810
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales	order	Saccharomycetales	4892	0.4077	92.3277	4	9810
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae	family	Debaryomycetaceae	766764	0.4077	92.3277	4	9810
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Meyerozyma	genus	Meyerozyma	766728	0.4077	92.3277	4	9810

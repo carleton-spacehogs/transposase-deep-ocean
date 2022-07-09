@@ -1,0 +1,4 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Cafeteria roenbergensis	33653	species	2	3	4.65%	13.33%	100.0%	50724
+Prototheca ciferrii	1973153	species	1	1	1.3%	7.04%	99.22%	136959
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	5.25%	99.64%	332937

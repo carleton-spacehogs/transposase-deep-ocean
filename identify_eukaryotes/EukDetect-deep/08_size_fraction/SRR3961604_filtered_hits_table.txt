@@ -1,0 +1,10 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Chloropicon roscoffensis	species	phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	1461544	51	103	32.28%	9.21%	99.13%
+Lecanicillium sp. LEC01	species	phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae|genus-Lecanicillium|species-Lecanicillium_sp._LEC01	2013060	41	85	19.9%	9.8%	98.58%
+Thraustochytrium sp. ATCC 26185	species	class-Bigyra|order-Labyrinthulomycetes|family-Thraustochytriaceae|genus-Thraustochytrium|species-Thraustochytrium_sp._ATCC_26185	672127	6	10	11.54%	12.04%	99.92%
+Meira nashicola	species	phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales|family-Brachybasidiaceae|genus-Meira|species-Meira_nashicola	286112	20	41	10.93%	9.65%	99.87%
+Thraustochytriaceae	family	class-Bigyra|order-Labyrinthulomycetes|family-Thraustochytriaceae	33674	4	8	5.97%	13.93%	100.0%
+Durinskia baltica	species	class-Dinophyceae|order-Peridiniales|family-Kryptoperidiniaceae|genus-Durinskia|species-Durinskia_baltica	400756	8	12	5.67%	8.3%	99.52%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	6	11	4.0%	6.92%	99.78%
+Ochroconis constricta UM 578	species	phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae|genus-Ochroconis|species-Ochroconis_constricta	1442076	3	5	1.53%	5.15%	99.82%
+Purpureocillium lilacinum	species	phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Ophiocordycipitaceae|genus-Purpureocillium|species-Purpureocillium_lilacinum	33203	3	5	1.46%	4.85%	99.53%

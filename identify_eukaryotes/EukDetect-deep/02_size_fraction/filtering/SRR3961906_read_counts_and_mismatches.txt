@@ -1,0 +1,10 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+protist-Durinskia_baltica-176625at2759-S1	1	121	3	124	4029	3.08	97.58
+protist-Durinskia_baltica-418107at2759-D1	2	256	1	257	1338	19.21	99.61
+protist-Durinskia_baltica-777920at2759-D2	1	150	0	150	1983	7.56	100.0
+protist-Durinskia_baltica-817008at2759-D1	2	287	4	291	1392	20.91	98.63
+protist-Durinskia_baltica-1049599at2759-S1	2	163	1	164	1686	9.73	99.39
+protist-Durinskia_baltica-1284731at2759-D1	1	150	0	150	798	18.8	100.0
+protist-Durinskia_baltica-1314980at2759-S1	2	160	2	162	2583	6.27	98.77
+fungi-Meira_nashicola-1370285at2759-S1	2	245	0	245	3903	6.28	100.0
+fungi-Lecanicillium_sp_LEC01-1455730at2759-S1	2	230	4	234	1770	13.22	98.29

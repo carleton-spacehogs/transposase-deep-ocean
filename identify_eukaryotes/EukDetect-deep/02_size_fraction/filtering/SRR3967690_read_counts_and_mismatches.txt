@@ -1,0 +1,5 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+greenalgae-Prototheca_ciferrii-1479417at2759-S1	1	127	1	128	1817	7.04	99.22
+fungi-Malassezia_globosa_CBS_7966-355408at2759-S1	2	276	1	277	5281	5.25	99.64
+protist-Cafeteria_roenbergensis-1003258at2759-S1	1	123	0	123	1320	9.32	100.0
+protist-Cafeteria_roenbergensis-734666at2759-S1	2	275	0	275	1665	16.52	100.0

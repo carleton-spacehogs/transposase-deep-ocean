@@ -1,0 +1,11 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Lecanicillium sp. LEC01	2013060	species	66	150	32.04%	11.66%	98.88%	354158
+Ochroconis constricta UM 578	1442076	species	11	14	5.61%	5.45%	99.45%	370078
+Meyerozyma caribbica MG20W	1091232	species	1	1	2.22%	3.31%	100.0%	140144
+Exophiala xenobiotica	348802	species	4	6	2.0%	6.64%	98.02%	372377
+Malassezia sympodialis ATCC 42132	1230383	species	1	2	0.72%	7.44%	99.48%	313165
+[Candida] haemulonis	45357	species	1	2	0.62%	4.77%	100.0%	339692
+Rhodotorula diobovata	5288	species	1	2	0.61%	9.75%	99.26%	358851
+Meyerozyma sp. JA9	2028340	species	1	2	0.58%	3.67%	98.94%	372451
+Saccharomyces cerevisiae S288C	559292	species	1	2	0.55%	7.0%	98.95%	308302
+Exophiala oligosperma	215243	species	1	2	0.5%	14.79%	100.0%	386708

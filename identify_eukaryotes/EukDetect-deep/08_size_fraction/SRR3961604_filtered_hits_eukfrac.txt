@@ -1,0 +1,39 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Basidiomycota|class-Exobasidiomycetes	class	Exobasidiomycetes	452283	0.1202	8.5979	41	341159
+phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales	order	Exobasidiales	5404	0.1202	8.5979	41	341159
+phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales|family-Brachybasidiaceae	family	Brachybasidiaceae	190068	0.1202	7.8801	41	341159
+phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales|family-Brachybasidiaceae|genus-Meira	genus	Meira	215251	0.1202	8.4005	41	341159
+phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales|family-Brachybasidiaceae|genus-Meira|species-Meira_nashicola	species	Meira nashicola	286112	0.1202	8.4005	41	341159
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.0316	2.2593	11	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.0316	2.2593	11	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae	family	Malasseziaceae	742845	0.0316	2.0707	11	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.0316	2.2075	11	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.0316	2.2075	11	348317
+phylum-Ascomycota|class-Sordariomycetes	class	Sordariomycetes	147550	0.1267	9.0663	90	710195
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales	order	Hypocreales	5125	0.1267	9.0663	90	710195
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae	family	Cordycipitaceae	474943	0.24	15.7371	85	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae|genus-Lecanicillium	genus	Lecanicillium	291363	0.24	16.7765	85	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae|genus-Lecanicillium|species-Lecanicillium_sp._LEC01	species	Lecanicillium sp. LEC01	2013060	0.24	16.7765	85	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Ophiocordycipitaceae	family	Ophiocordycipitaceae	474942	0.014	0.9208	5	356037
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Ophiocordycipitaceae|genus-Purpureocillium	genus	Purpureocillium	1052105	0.014	0.9816	5	356037
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Ophiocordycipitaceae|genus-Purpureocillium|species-Purpureocillium_lilacinum	species	Purpureocillium lilacinum	33203	0.014	0.9816	5	356037
+phylum-Ascomycota|class-Dothideomycetes	class	Dothideomycetes	147541	0.4618	33.039	5	10827
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales	order	Venturiales	1111111	0.4618	33.039	5	10827
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae	family	Sympoventuriaceae	1111112	0.4618	30.2807	5	10827
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae|genus-Ochroconis	genus	Ochroconis	227045	0.4618	32.2805	5	10827
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae|genus-Ochroconis|species-Ochroconis_constricta	species	Ochroconis constricta	227046	0.4618	32.2805	5	10827
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	0.3732	26.7014	103	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	0.3732	26.7014	103	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae	family	Chloropicaceae	2302913	0.3732	24.4722	103	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.3732	26.0884	103	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	0.3732	26.0884	103	275974
+class-Bigyra	class	Bigyra	2683628	0.2351	16.8219	18	76553
+class-Bigyra|order-Labyrinthulomycetes	order	Labyrinthulomycetes	35131	0.2351	16.8219	18	76553
+class-Bigyra|order-Labyrinthulomycetes|family-Thraustochytriaceae	family	Thraustochytriaceae	33674	0.2351	15.4175	18	76553
+class-Bigyra|order-Labyrinthulomycetes|family-Thraustochytriaceae|genus-Thraustochytrium	genus	Thraustochytrium	4774	0.1406	9.8314	10	71099
+class-Bigyra|order-Labyrinthulomycetes|family-Thraustochytriaceae|genus-Thraustochytrium|species-Thraustochytrium_sp._ATCC_26185	species	Thraustochytrium sp. ATCC 26185	672127	0.1406	9.8314	10	71099
+class-Dinophyceae	class	Dinophyceae	2864	0.0491	3.5142	12	244301
+class-Dinophyceae|order-Peridiniales	order	Peridiniales	2910	0.0491	3.5142	12	244301
+class-Dinophyceae|order-Peridiniales|family-Kryptoperidiniaceae	family	Kryptoperidiniaceae	2137591	0.0491	3.2208	12	244301
+class-Dinophyceae|order-Peridiniales|family-Kryptoperidiniaceae|genus-Durinskia	genus	Durinskia	400754	0.0491	3.4335	12	244301
+class-Dinophyceae|order-Peridiniales|family-Kryptoperidiniaceae|genus-Durinskia|species-Durinskia_baltica	species	Durinskia baltica	400756	0.0491	3.4335	12	244301

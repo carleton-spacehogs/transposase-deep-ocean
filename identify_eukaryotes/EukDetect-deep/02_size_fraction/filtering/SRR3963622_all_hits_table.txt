@@ -1,0 +1,3 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Thecamonas trahens ATCC 50062	461836	species	6	12	9.09%	10.76%	99.86%	96258
+Exophiala xenobiotica	348802	species	1	2	0.5%	8.48%	100.0%	372377

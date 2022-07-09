@@ -1,0 +1,11 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Lecanicillium sp. LEC01	2013060	species	9	16	4.37%	9.97%	98.4%	354158
+Rhodotorula	5533	genus	2	2	2.35%	4.7%	99.12%	158633
+Malassezia restricta	76775	species	3	6	2.0%	3.07%	99.72%	348317
+Malassezia globosa CBS 7966	425265	species	2	3	1.27%	7.1%	98.38%	332937
+Rhodotorula sp. JG-1b	1305733	species	2	2	1.11%	2.43%	97.07%	395750
+Rhodotorula kratochvilovae	86836	species	1	1	0.64%	7.17%	98.56%	313621
+Rhodotorula diobovata	5288	species	1	2	0.61%	3.99%	100.0%	358851
+Saccharomyces cerevisiae S288C	559292	species	1	2	0.55%	3.62%	100.0%	308302
+Ochroconis constricta UM 578	1442076	species	1	2	0.51%	8.29%	99.02%	370078
+Hortaea werneckii EXF-2000	1157616	species	1	1	0.27%	6.22%	97.32%	717212

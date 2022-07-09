@@ -1,0 +1,4 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+family-Apusomonadidae	family	Apusomonadidae	172820	2.2414	100.0	165	73614
+family-Apusomonadidae|genus-Thecamonas	genus	Thecamonas	877559	2.2414	100.0	165	73614
+family-Apusomonadidae|genus-Thecamonas|species-Thecamonas_trahens	species	Thecamonas trahens	529818	2.2414	100.0	165	73614

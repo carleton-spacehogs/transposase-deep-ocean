@@ -1,0 +1,11 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Thecamonas trahens ATCC 50062	461836	species	16	37	24.24%	11.55%	99.81%	96258
+Cafeteria roenbergensis	33653	species	4	4	9.3%	19.93%	99.64%	50724
+Malassezia restricta	76775	species	3	6	2.0%	3.83%	98.81%	348317
+Aureobasidium melanogenum	46634	species	4	7	1.95%	9.12%	97.37%	367526
+Rhodotorula	5533	genus	1	2	1.18%	9.02%	97.18%	158633
+Rhodotorula sp. JG-1b	1305733	species	2	3	1.11%	6.28%	99.5%	395750
+Lecanicillium sp. LEC01	2013060	species	2	2	0.97%	20.78%	98.51%	354158
+Meyerozyma	766728	genus	1	2	0.76%	19.36%	100.0%	218630
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	7.7%	99.56%	332937
+Meira nashicola	286112	species	1	1	0.55%	8.45%	100.0%	341159

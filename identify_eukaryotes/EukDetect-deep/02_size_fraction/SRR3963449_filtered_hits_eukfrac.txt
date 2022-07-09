@@ -1,0 +1,7 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Ascomycota	phylum	Ascomycota	4890	0.3122	100.0	6	19221
+phylum-Ascomycota|class-Dothideomycetes	class	Dothideomycetes	147541	0.3122	100.0	6	19221
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales	order	Venturiales	1111111	0.3122	100.0	6	19221
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae	family	Sympoventuriaceae	1111112	0.3122	100.0	6	19221
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae|genus-Ochroconis	genus	Ochroconis	227045	0.3122	100.0	6	19221
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae|genus-Ochroconis|species-Ochroconis_constricta	species	Ochroconis constricta	227046	0.3122	100.0	6	19221

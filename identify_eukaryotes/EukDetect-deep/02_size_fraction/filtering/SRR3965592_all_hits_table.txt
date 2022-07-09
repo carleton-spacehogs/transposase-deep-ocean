@@ -1,0 +1,3 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Thecamonas trahens ATCC 50062	461836	species	1	2	1.52%	14.3%	99.55%	96258
+Lecanicillium sp. LEC01	2013060	species	1	2	0.49%	17.37%	98.06%	354158

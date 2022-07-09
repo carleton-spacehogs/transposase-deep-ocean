@@ -1,0 +1,8 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Lecanicillium sp. LEC01	2013060	species	7	12	3.4%	7.63%	98.44%	354158
+Meyerozyma	766728	genus	3	4	2.29%	4.6%	100.0%	218630
+Rhodotorula mucilaginosa	5537	species	1	1	1.06%	6.17%	100.0%	219600
+Malassezia restricta	76775	species	1	2	0.67%	6.15%	99.12%	348317
+Rhodotorula diobovata	5288	species	1	1	0.61%	2.46%	100.0%	358851
+Pichia manshurica	121235	species	1	1	0.6%	19.22%	98.6%	301563
+Rhodotorula sp. JG-1b	1305733	species	1	1	0.56%	3.7%	96.92%	395750

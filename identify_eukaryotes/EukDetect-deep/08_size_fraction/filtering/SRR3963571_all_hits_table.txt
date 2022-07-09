@@ -1,0 +1,7 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Lecanicillium sp. LEC01	2013060	species	27	56	13.11%	8.72%	99.08%	354158
+Thecamonas trahens ATCC 50062	461836	species	6	15	9.09%	13.6%	100.0%	96258
+Meira nashicola	286112	species	16	32	8.74%	6.6%	100.0%	341159
+Malassezia restricta	76775	species	3	5	2.0%	6.56%	98.51%	348317
+Thraustochytriaceae	33674	family	1	2	1.49%	26.4%	100.0%	81045
+Paraphysomonas bandaiensis	89770	species	1	1	1.12%	26.74%	100.0%	154847

@@ -1,0 +1,13 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Meira nashicola	286112	species	91	257	49.73%	14.4%	99.92%	341159
+Thecamonas trahens ATCC 50062	461836	species	14	24	21.21%	7.8%	99.54%	96258
+Lecanicillium sp. LEC01	2013060	species	29	62	14.08%	8.9%	98.83%	354158
+Voromonas pontica	333133	species	1	1	6.25%	11.76%	100.0%	11409
+Malassezia restricta	76775	species	9	17	6.0%	5.38%	99.03%	348317
+Ostreococcus sp. SAG10	2590005	species	1	2	4.0%	13.08%	99.28%	56396
+Ochroconis constricta UM 578	1442076	species	2	4	1.02%	8.14%	99.3%	370078
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	3.76%	99.66%	332937
+Meyerozyma sp. JA9	2028340	species	1	2	0.58%	13.71%	99.32%	372451
+Debaryomyces hansenii CBS767	284592	species	1	2	0.55%	6.68%	97.87%	326457
+Saccharomyces cerevisiae S288C	559292	species	1	1	0.55%	10.99%	100.0%	308302
+Hortaea werneckii EXF-2000	1157616	species	1	2	0.27%	6.44%	98.25%	717212

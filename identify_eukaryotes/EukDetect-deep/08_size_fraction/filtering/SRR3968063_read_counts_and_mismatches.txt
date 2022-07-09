@@ -1,0 +1,15 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+fungi-Malassezia_restricta-836599at2759-S1	1	139	2	141	1527	9.23	98.58
+protist-Cafeteria_roenbergensis-814241at2759-S1	1	132	1	133	1350	9.85	99.25
+protist-Cafeteria_roenbergensis-858842at2759-S1	2	262	0	262	1260	20.79	100.0
+protist-Cafeteria_roenbergensis-1173229at2759-S1	4	388	2	390	1596	24.44	99.49
+protist-Cafeteria_roenbergensis-1450538at2759-S1	1	143	1	144	1284	11.21	99.31
+protist-Cafeteria_roenbergensis-293315at2759-S1	4	406	0	406	4491	9.04	100.0
+protist-Cafeteria_roenbergensis-418107at2759-S1	3	274	0	274	1434	19.11	100.0
+protist-Cafeteria_roenbergensis-598949at2759-S1	1	142	1	143	2976	4.81	99.3
+protist-Cafeteria_roenbergensis-734666at2759-S1	3	375	0	375	1665	22.52	100.0
+protist-Cafeteria_roenbergensis-996662at2759-S1	1	131	0	131	1053	12.44	100.0
+protist-Cafeteria_roenbergensis-1479417at2759-S1	1	118	0	118	1194	9.88	100.0
+protist-Cafeteria_roenbergensis-834694at2759-S1	1	129	1	130	2421	5.37	99.23
+protist-Cafeteria_roenbergensis-1346165at2759-S1	1	141	0	141	1236	11.41	100.0
+protist-Cafeteria_roenbergensis-1287401at2759-S1	2	173	1	174	792	21.97	99.43

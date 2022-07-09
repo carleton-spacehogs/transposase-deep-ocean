@@ -1,0 +1,5 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Durinskia baltica	400756	species	17	26	12.06%	6.53%	98.96%	244301
+Exophiala xenobiotica	348802	species	4	7	2.0%	6.81%	99.74%	372377
+Ochroconis constricta UM 578	1442076	species	1	2	0.51%	19.24%	100.0%	370078
+Exophiala oligosperma	215243	species	1	2	0.5%	5.84%	100.0%	386708

@@ -1,0 +1,4 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Lecanicillium sp. LEC01	2013060	species	2	3	0.97%	4.19%	98.74%	354158
+Malassezia restricta	76775	species	1	1	0.67%	16.45%	97.33%	348317
+Exophiala xenobiotica	348802	species	1	2	0.5%	22.06%	100.0%	372377

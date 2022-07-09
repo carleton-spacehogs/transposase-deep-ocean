@@ -1,0 +1,2 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+fungi-Lecanicillium_sp_LEC01-418107at2759-S1	2	257	1	258	1338	19.28	99.61

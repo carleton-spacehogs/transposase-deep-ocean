@@ -1,0 +1,3 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+greenalgae-Bathycoccus_SPCollapse_SP3-17	2	248	0	248	1566	15.84	100.0
+protist-Thecamonas_trahens_ATCC_50062-1032689at2759-S1	2	177	0	177	1113	15.9	100.0

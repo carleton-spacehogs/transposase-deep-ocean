@@ -1,0 +1,17 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+protist-Cafeteria_roenbergensis-1173229at2759-S1	1	132	0	132	1596	8.27	100.0
+protist-Cafeteria_roenbergensis-1423847at2759-S1	1	140	1	141	1197	11.78	99.29
+protist-Cafeteria_roenbergensis-1552706at2759-S1	2	245	1	246	606	40.59	99.59
+protist-Cafeteria_roenbergensis-604979at2759-S1	3	364	2	366	1476	24.8	99.45
+protist-Cafeteria_roenbergensis-293315at2759-S1	7	684	3	687	4491	15.3	99.56
+protist-Cafeteria_roenbergensis-598949at2759-S1	4	376	1	377	2976	12.67	99.73
+protist-Cafeteria_roenbergensis-1096688at2759-S1	2	224	2	226	1098	20.58	99.12
+protist-Cafeteria_roenbergensis-1003258at2759-S1	5	510	4	514	1320	38.94	99.22
+protist-Cafeteria_roenbergensis-734666at2759-S1	2	181	0	181	1665	10.87	100.0
+protist-Cafeteria_roenbergensis-996662at2759-S1	2	210	0	210	1053	19.94	100.0
+protist-Cafeteria_roenbergensis-1479417at2759-S1	2	246	1	247	1194	20.69	99.6
+protist-Cafeteria_roenbergensis-1264469at2759-S1	1	143	0	143	999	14.31	100.0
+protist-Cafeteria_roenbergensis-834694at2759-S1	1	125	0	125	2421	5.16	100.0
+protist-Cafeteria_roenbergensis-1346165at2759-S1	2	223	1	224	1236	18.12	99.55
+protist-Cafeteria_roenbergensis-1287094at2759-S1	1	139	0	139	660	21.06	100.0
+protist-Cafeteria_roenbergensis-1051021at2759-S1	1	93	0	93	1773	5.25	100.0

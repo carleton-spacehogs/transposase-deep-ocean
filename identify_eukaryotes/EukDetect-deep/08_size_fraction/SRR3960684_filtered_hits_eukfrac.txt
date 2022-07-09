@@ -1,0 +1,17 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae	family	Cordycipitaceae	474943	0.2654	7.701	94	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae|genus-Lecanicillium	genus	Lecanicillium	291363	0.2654	11.0881	94	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae|genus-Lecanicillium|species-Lecanicillium_sp._LEC01	species	Lecanicillium sp. LEC01	2013060	0.2654	11.0881	94	354158
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae	family	Sympoventuriaceae	1111112	0.5501	15.9596	4	7272
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae|genus-Ochroconis	genus	Ochroconis	227045	0.5501	22.9791	4	7272
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae|genus-Ochroconis|species-Ochroconis_constricta	species	Ochroconis constricta	227046	0.5501	22.9791	4	7272
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae	family	Chloropicaceae	2302913	0.1051	3.0489	29	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.1051	4.3899	29	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	0.1051	4.3899	29	275974
+class-Bigyra|order-Labyrinthulomycetes|family-Thraustochytriaceae	family	Thraustochytriaceae	33674	1.049	30.4375	4	3813
+family-Apusomonadidae	family	Apusomonadidae	172820	0.81	23.5031	8	9876
+family-Apusomonadidae|genus-Thecamonas	genus	Thecamonas	877559	0.81	33.8405	8	9876
+family-Apusomonadidae|genus-Thecamonas|species-Thecamonas_trahens	species	Thecamonas trahens	529818	0.81	33.8405	8	9876
+class-Dinophyceae|order-Peridiniales|family-Kryptoperidiniaceae	family	Kryptoperidiniaceae	2137591	0.6669	19.3499	164	245913
+class-Dinophyceae|order-Peridiniales|family-Kryptoperidiniaceae|genus-Durinskia	genus	Durinskia	400754	0.6631	27.7024	162	244301
+class-Dinophyceae|order-Peridiniales|family-Kryptoperidiniaceae|genus-Durinskia|species-Durinskia_baltica	species	Durinskia baltica	400756	0.6631	27.7024	162	244301

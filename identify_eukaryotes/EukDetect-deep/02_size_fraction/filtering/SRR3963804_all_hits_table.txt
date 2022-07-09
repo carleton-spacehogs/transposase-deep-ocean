@@ -1,0 +1,5 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Stramenopiles sp. TOSAG23-2	1735743	species	8	16	17.02%	10.44%	99.31%	66251
+Stramenopiles sp. TOSAG41-1	1735744	species	1	2	1.92%	10.57%	96.43%	67745
+Lecanicillium sp. LEC01	2013060	species	2	4	0.97%	15.58%	98.5%	354158
+Exophiala xenobiotica	348802	species	1	1	0.5%	4.82%	100.0%	372377

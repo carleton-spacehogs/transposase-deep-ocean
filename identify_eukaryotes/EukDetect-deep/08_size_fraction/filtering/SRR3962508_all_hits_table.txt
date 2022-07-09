@@ -1,0 +1,14 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Kryptoperidiniaceae	2137591	family	1	2	100.0%	16.25%	100.0%	1612
+Lecanicillium sp. LEC01	2013060	species	47	108	22.82%	10.44%	98.84%	354158
+Durinskia baltica	400756	species	24	75	17.02%	15.54%	98.91%	244301
+Meira nashicola	286112	species	14	28	7.65%	9.62%	99.89%	341159
+Stramenopiles sp. TOSAG23-2	1735743	species	2	3	4.26%	5.37%	99.51%	66251
+unclassified Bathycoccus	2590008	genus	1	2	1.92%	7.34%	96.93%	95463
+Thraustochytrium sp. ATCC 26185	672127	species	1	1	1.92%	4.87%	100.0%	71099
+Ochroconis constricta UM 578	1442076	species	3	6	1.53%	5.85%	99.86%	370078
+Malassezia restricta	76775	species	2	2	1.33%	12.59%	99.3%	348317
+Malassezia globosa CBS 7966	425265	species	2	4	1.27%	5.92%	98.29%	332937
+Gephyrocapsa oceanica	38817	species	1	1	1.0%	2.94%	98.13%	137559
+Meyerozyma	766728	genus	1	2	0.76%	41.71%	99.57%	218630
+Hortaea werneckii EXF-2000	1157616	species	1	1	0.27%	3.04%	96.67%	717212

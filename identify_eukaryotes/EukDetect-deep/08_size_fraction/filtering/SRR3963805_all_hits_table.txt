@@ -1,0 +1,9 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Stramenopiles sp. TOSAG23-2	1735743	species	27	90	57.45%	23.87%	99.33%	66251
+Emiliania huxleyi CCMP1516	280463	species	1	2	2.94%	19.64%	100.0%	44652
+Gephyrocapsa oceanica	38817	species	2	3	2.0%	16.73%	98.42%	137559
+Lecanicillium sp. LEC01	2013060	species	4	6	1.94%	5.18%	98.77%	354158
+Stramenopiles sp. TOSAG41-1	1735744	species	1	5	1.92%	41.95%	100.0%	67745
+Triparma pacifica	91992	species	1	1	1.79%	7.2%	100.0%	110146
+Mrakia	29901	genus	1	1	0.94%	5.25%	100.0%	171211
+Ochroconis constricta UM 578	1442076	species	1	2	0.51%	8.96%	98.94%	370078

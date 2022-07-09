@@ -1,0 +1,17 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+protist-Durinskia_baltica-245208at2759-S1	2	241	2	243	3655	6.65	99.18
+protist-Durinskia_baltica-290630at2759-D2	2	294	0	294	3258	9.02	100.0
+protist-Durinskia_baltica-674160at2759-S1	2	279	3	282	10704	2.63	98.94
+other_MGCollapse_EPSP3-6	1	150	0	150	1612	9.31	100.0
+protist-Durinskia_baltica-817008at2759-D1	1	136	1	137	1392	9.84	99.27
+protist-Durinskia_baltica-944899at2759-D2	1	150	0	150	1107	13.55	100.0
+protist-Durinskia_baltica-974865at2759-S1	1	149	0	149	1005	14.83	100.0
+protist-Durinskia_baltica-1405073at2759-S1	2	278	7	285	543	52.49	97.54
+greenalgae-Ostreococcus_sp_SAG12-551907at2759-S1	4	459	5	464	7929	5.85	98.92
+greenalgae-Ostreococcus_SPCollapse_SP4	2	152	2	154	1161	13.26	98.7
+greenalgae-Ostreococcus_sp_SAG10-160593at2759-S1	2	257	0	257	7752	3.32	100.0
+fungi-Ochroconis_constricta_UM_578-160593at2759-S1	1	122	0	122	7854	1.55	100.0
+fungi-Ochroconis_constricta_UM_578-1379600at2759-S1	2	254	0	254	2472	10.28	100.0
+fungi-Ochroconis_constricta_UM_578-551907at2759-S1	2	184	2	186	2802	6.64	98.92
+fungi-Lecanicillium_sp_LEC01-1338131at2759-S1	2	204	2	206	597	34.51	99.03
+fungi-Lecanicillium_sp_LEC01-1112002at2759-D1	2	262	2	264	2688	9.82	99.24

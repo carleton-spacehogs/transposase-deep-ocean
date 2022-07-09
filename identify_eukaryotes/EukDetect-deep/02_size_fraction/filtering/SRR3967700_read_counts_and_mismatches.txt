@@ -1,0 +1,5 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+protist-Cafeteria_roenbergensis-814241at2759-S1	2	188	1	189	1350	14.0	99.47
+protist-Cafeteria_roenbergensis-1003258at2759-S1	1	118	0	118	1320	8.94	100.0
+protist-Cafeteria_roenbergensis-1287094at2759-S1	2	194	5	199	660	30.15	97.49
+fungi-Lecanicillium_sp_LEC01-1094121at2759-S1	1	107	0	107	597	17.92	100.0

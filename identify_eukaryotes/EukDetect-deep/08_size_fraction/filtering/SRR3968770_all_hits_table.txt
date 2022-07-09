@@ -1,0 +1,5 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Malassezia restricta	76775	species	3	4	2.0%	5.63%	98.85%	348317
+Malassezia globosa CBS 7966	425265	species	2	3	1.27%	8.0%	99.42%	332937
+Saccharomyces cerevisiae S288C	559292	species	1	2	0.55%	19.08%	99.0%	308302
+Lecanicillium sp. LEC01	2013060	species	1	1	0.49%	3.43%	100.0%	354158

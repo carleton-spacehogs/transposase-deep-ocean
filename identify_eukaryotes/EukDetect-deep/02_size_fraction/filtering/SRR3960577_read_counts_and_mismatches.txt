@@ -1,0 +1,7 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+protist-Durinskia_baltica-1248958at2759-S1	1	102	1	103	2992	3.44	99.03
+protist-Neobodo_designis-1108845at2759-S1	2	253	3	256	1401	18.27	98.83
+fungi-Exophiala_oligosperma-87842at2759-S1	2	171	0	171	2892	5.91	100.0
+fungi-Exophiala_lecanii-corni-330169at2759-S1	2	211	2	213	1842	11.56	99.06
+protist-Cafeteria_roenbergensis-734666at2759-S1	2	235	6	241	1665	14.47	97.51
+fungi-Lecanicillium_sp_LEC01-1197019at2759-S1	1	81	0	81	738	10.98	100.0

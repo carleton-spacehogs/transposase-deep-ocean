@@ -1,0 +1,23 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Basidiomycota	phylum	Basidiomycota	5204	0.0117	23.5382	4	341159
+phylum-Basidiomycota|class-Exobasidiomycetes	class	Exobasidiomycetes	452283	0.0117	2.0073	4	341159
+phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales	order	Exobasidiales	5404	0.0117	2.0073	4	341159
+phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales|family-Brachybasidiaceae	family	Brachybasidiaceae	190068	0.0117	2.0073	4	341159
+phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales|family-Brachybasidiaceae|genus-Meira	genus	Meira	215251	0.0117	2.0073	4	341159
+phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales|family-Brachybasidiaceae|genus-Meira|species-Meira_nashicola	species	Meira nashicola	286112	0.0117	2.0073	4	341159
+phylum-Ascomycota	phylum	Ascomycota	4890	0.0381	76.4618	29	761417
+phylum-Ascomycota|class-Eurotiomycetes	class	Eurotiomycetes	147545	0.0107	1.839	4	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales	order	Chaetothyriales	34395	0.0107	1.839	4	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae	family	Herpotrichiellaceae	43219	0.0107	1.839	4	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala	genus	Exophiala	5583	0.0107	1.839	4	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala|species-Exophiala_xenobiotica	species	Exophiala xenobiotica	348802	0.0107	1.839	4	372377
+phylum-Ascomycota|class-Sordariomycetes	class	Sordariomycetes	147550	0.0169	2.9005	6	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales	order	Hypocreales	5125	0.0169	2.9005	6	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae	family	Cordycipitaceae	474943	0.0169	2.9005	6	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae|genus-Lecanicillium	genus	Lecanicillium	291363	0.0169	2.9005	6	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae|genus-Lecanicillium|species-Lecanicillium_sp._LEC01	species	Lecanicillium sp. LEC01	2013060	0.0169	2.9005	6	354158
+phylum-Ascomycota|class-Dothideomycetes	class	Dothideomycetes	147541	0.5447	93.2532	19	34882
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales	order	Venturiales	1111111	0.5447	93.2532	19	34882
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae	family	Sympoventuriaceae	1111112	0.5447	93.2532	19	34882
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae|genus-Ochroconis	genus	Ochroconis	227045	0.5447	93.2532	19	34882
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae|genus-Ochroconis|species-Ochroconis_constricta	species	Ochroconis constricta	227046	0.5447	93.2532	19	34882

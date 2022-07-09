@@ -1,0 +1,9 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Durinskia baltica	400756	species	9	15	6.38%	6.3%	98.41%	244301
+Ostreococcus sp. SAG10	2590005	species	1	2	4.0%	11.87%	96.85%	56396
+Stramenopiles sp. TOSAG23-2	1735743	species	1	1	2.13%	10.06%	99.17%	66251
+unclassified Bathycoccus	2590008	genus	1	2	1.92%	7.66%	99.29%	95463
+Exophiala	5583	genus	1	2	1.92%	20.93%	100.0%	58551
+Neobodo designis	312471	species	1	2	1.52%	2.35%	98.17%	100830
+Malassezia restricta	76775	species	2	4	1.33%	4.35%	98.62%	348317
+[Candida] haemulonis	45357	species	1	2	0.62%	4.76%	100.0%	339692

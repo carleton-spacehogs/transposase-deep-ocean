@@ -1,0 +1,14 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Chloropicon roscoffensis	1461544	species	51	103	32.28%	9.21%	99.13%	275974
+Lecanicillium sp. LEC01	2013060	species	41	85	19.9%	9.8%	98.58%	354158
+Thraustochytrium sp. ATCC 26185	672127	species	6	10	11.54%	12.04%	99.92%	71099
+Meira nashicola	286112	species	20	41	10.93%	9.65%	99.87%	341159
+Thraustochytriaceae	33674	family	4	8	5.97%	13.93%	100.0%	81045
+Durinskia baltica	400756	species	8	12	5.67%	8.3%	99.52%	244301
+Malassezia restricta	76775	species	6	11	4.0%	6.92%	99.78%	348317
+Ochroconis constricta UM 578	1442076	species	3	5	1.53%	5.15%	99.82%	370078
+Neobodo designis	312471	species	1	2	1.52%	4.99%	98.48%	100830
+Purpureocillium lilacinum	33203	species	3	5	1.46%	4.85%	99.53%	356037
+Saccharomyces cerevisiae S288C	559292	species	2	3	1.1%	11.49%	99.77%	308302
+Meyerozyma	766728	genus	1	2	0.76%	4.06%	100.0%	218630
+Exophiala xenobiotica	348802	species	1	2	0.5%	7.67%	100.0%	372377

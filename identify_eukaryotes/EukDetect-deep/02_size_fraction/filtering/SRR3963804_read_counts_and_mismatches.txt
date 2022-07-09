@@ -1,0 +1,13 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+fungi-Exophiala_xenobiotica-1309031at2759-S1	1	121	0	121	2511	4.82	100.0
+protist-Stramenopiles_sp_TOSAG23-2-551907at2759-S1	3	447	1	448	2607	17.18	99.78
+protist-Stramenopiles_sp_TOSAG23-2-290630at2759-S1	2	225	2	227	2526	8.99	99.12
+protist-Stramenopiles_sp_TOSAG23-2-1626636at2759-S1	2	244	0	244	741	32.93	100.0
+protist-Stramenopiles_sp_TOSAG23-2-751335at2759-S1	2	202	2	204	1518	13.44	99.02
+protist-Stramenopiles_sp_TOSAG23-2-156083at2759-S1	2	263	2	265	7107	3.73	99.25
+protist-Stramenopiles_sp_TOSAG23-2-834694at2759-S1	2	228	2	230	2382	9.66	99.13
+protist-Stramenopiles_sp_TOSAG23-2-1247641at2759-S1	1	146	1	147	1299	11.32	99.32
+protist-Stramenopiles_sp_TOSAG23-2-814241at2759-S1	2	260	4	264	1263	20.9	98.48
+protist-Stramenopiles_sp_TOSAG41-1-975557at2759-S1	2	243	9	252	2385	10.57	96.43
+fungi-Lecanicillium_sp_LEC01-931188at2759-S1	2	247	2	249	1650	15.09	99.2
+fungi-Lecanicillium_sp_LEC01-1173229at2759-S1	2	213	5	218	1347	16.18	97.71

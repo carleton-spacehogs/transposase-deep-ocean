@@ -1,0 +1,14 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Basidiomycota|class-Exobasidiomycetes	class	Exobasidiomycetes	452283	0.1466	9.5158	50	341159
+phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales	order	Exobasidiales	5404	0.1466	9.5158	50	341159
+phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales|family-Brachybasidiaceae	family	Brachybasidiaceae	190068	0.1466	9.5158	50	341159
+phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales|family-Brachybasidiaceae|genus-Meira	genus	Meira	215251	0.1466	22.9765	50	341159
+phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales|family-Brachybasidiaceae|genus-Meira|species-Meira_nashicola	species	Meira nashicola	286112	0.1466	22.9765	50	341159
+phylum-Ascomycota|class-Sordariomycetes	class	Sordariomycetes	147550	0.4913	31.8997	174	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales	order	Hypocreales	5125	0.4913	31.8997	174	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae	family	Cordycipitaceae	474943	0.4913	31.8997	174	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae|genus-Lecanicillium	genus	Lecanicillium	291363	0.4913	77.0235	174	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae|genus-Lecanicillium|species-Lecanicillium_sp._LEC01	species	Lecanicillium sp. LEC01	2013060	0.4913	77.0235	174	354158
+class-Bigyra	class	Bigyra	2683628	0.9023	58.5845	7	7758
+class-Bigyra|order-Labyrinthulomycetes	order	Labyrinthulomycetes	35131	0.9023	58.5845	7	7758
+class-Bigyra|order-Labyrinthulomycetes|family-Thraustochytriaceae	family	Thraustochytriaceae	33674	0.9023	58.5845	7	7758

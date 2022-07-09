@@ -1,0 +1,8 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+fungi-Malassezia_restricta-1003258at2759-S1	2	196	1	197	1626	12.12	99.49
+fungi-Malassezia_restricta-1019762at2759-S1	1	99	0	99	4821	2.05	100.0
+fungi-Malassezia_restricta-1173229at2759-S1	1	133	4	137	1242	11.03	97.08
+fungi-Malassezia_globosa_CBS_7966-679187at2759-S1	1	133	0	133	2679	4.96	100.0
+fungi-Malassezia_globosa_CBS_7966-1442062at2759-S1	2	211	2	213	1647	12.93	99.06
+fungi-Saccharomyces_cerevisiae_S288C-836599at2759-S1	2	297	3	300	1572	19.08	99.0
+fungi-Lecanicillium_sp_LEC01-679187at2759-S1	1	92	0	92	2685	3.43	100.0

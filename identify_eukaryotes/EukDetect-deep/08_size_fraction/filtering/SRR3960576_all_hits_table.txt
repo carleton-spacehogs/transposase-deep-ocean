@@ -1,0 +1,22 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Meyerozyma sp. JA9	2028340	species	73	194	42.2%	10.62%	99.61%	372451
+Neobodo designis	312471	species	22	53	33.33%	14.72%	98.45%	100830
+Debaryomyces nepalensis	27299	species	31	67	16.76%	9.11%	99.46%	340481
+Meyerozyma	766728	genus	18	37	13.74%	8.09%	99.83%	218630
+Durinskia baltica	400756	species	11	21	7.8%	9.11%	98.55%	244301
+Meyerozyma caribbica MG20W	1091232	species	3	7	6.67%	5.66%	100.0%	140144
+Meyerozyma guilliermondii ATCC 6260	294746	species	2	3	5.56%	5.92%	99.71%	107589
+Debaryomyces fabryi	58627	species	9	17	4.86%	6.18%	100.0%	335800
+Lecanicillium sp. LEC01	2013060	species	7	13	3.4%	6.69%	98.94%	354158
+Meyerozyma carpophila	374178	species	5	8	2.89%	5.71%	97.88%	362969
+Rhodotorula diobovata	5288	species	4	6	2.45%	4.74%	99.74%	358851
+Cafeteria roenbergensis	33653	species	1	2	2.33%	18.33%	99.59%	50724
+Malassezia restricta	76775	species	2	4	1.33%	22.5%	98.97%	348317
+Mrakia	29901	genus	1	2	0.94%	6.67%	100.0%	171211
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	8.42%	98.86%	332937
+Candida orthopsilosis Co 90-125	1136231	species	1	2	0.6%	3.86%	100.0%	306002
+Wickerhamomyces anomalus NRRL Y-366-8	683960	species	1	1	0.57%	3.94%	95.73%	287658
+Cladosporium cladosporioides	29917	species	1	2	0.56%	4.14%	99.64%	333901
+Chaetomium globosum CBS 148.51	306901	species	1	2	0.56%	5.82%	100.0%	338249
+Exophiala oligosperma	215243	species	1	2	0.5%	12.6%	100.0%	386708
+Aspergillus sp. MA 6041	2153248	species	1	1	0.3%	6.85%	100.0%	605505

@@ -1,0 +1,10 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Lecanicillium sp. LEC01	2013060	species	25	46	12.14%	8.85%	99.02%	354158
+Arthropoda	6656	phylum	2	4	4.26%	16.98%	100.0%	60948
+Thecamonas trahens ATCC 50062	461836	species	2	2	3.03%	4.53%	100.0%	96258
+Stramenopiles sp. TOSAG23-2	1735743	species	1	1	2.13%	14.02%	99.32%	66251
+Malassezia restricta	76775	species	3	5	2.0%	5.95%	99.86%	348317
+Saccharomyces cerevisiae S288C	559292	species	2	3	1.1%	11.74%	99.28%	308302
+Rhagoletis zephyria	28612	species	1	1	0.87%	3.66%	100.0%	219191
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	5.36%	99.29%	332937
+Wickerhamomyces anomalus NRRL Y-366-8	683960	species	1	2	0.57%	15.1%	98.98%	287658

@@ -1,0 +1,3 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Meira nashicola	286112	species	1	1	0.55%	6.82%	100.0%	341159
+Ochroconis constricta UM 578	1442076	species	1	2	0.51%	8.31%	100.0%	370078

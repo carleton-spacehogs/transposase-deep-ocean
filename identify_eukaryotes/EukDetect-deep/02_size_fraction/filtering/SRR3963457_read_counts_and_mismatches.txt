@@ -1,0 +1,5 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+fungi-Exophiala_xenobiotica-245208at2759-S1	2	253	0	253	3612	7.0	100.0
+fungi-Exophiala_xenobiotica-1576404at2759-S1	2	198	0	198	687	28.82	100.0
+fungi-Exophiala_xenobiotica-271586at2759-S1	1	106	0	106	4338	2.44	100.0
+protist-Thecamonas_trahens_ATCC_50062-1314980at2759-S1	2	220	0	220	2247	9.79	100.0

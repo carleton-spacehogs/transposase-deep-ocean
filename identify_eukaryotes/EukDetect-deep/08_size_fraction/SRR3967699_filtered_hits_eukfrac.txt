@@ -1,0 +1,16 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Ascomycota|class-Saccharomycetes	class	Saccharomycetes	4891	0.8217	55.3508	12	14604
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales	order	Saccharomycetales	4892	0.8217	55.3508	12	14604
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae	family	Debaryomycetaceae	766764	0.8217	55.3508	12	14604
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Debaryomyces	genus	Debaryomyces	4958	0.8217	55.3508	12	14604
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Debaryomyces|species-Debaryomyces_hansenii	species	Debaryomyces hansenii	4959	0.8217	55.3508	12	14604
+class-Choanoflagellata	class	Choanoflagellata	28009	0.4657	31.3691	5	10737
+class-Choanoflagellata|order-Craspedida	order	Craspedida	1924738	0.4657	31.3691	5	10737
+class-Choanoflagellata|order-Craspedida|family-Salpingoecidae	family	Salpingoecidae	81529	0.4657	31.3691	5	10737
+class-Choanoflagellata|order-Craspedida|family-Salpingoecidae|genus-Monosiga	genus	Monosiga	81525	0.4657	31.3691	5	10737
+class-Choanoflagellata|order-Craspedida|family-Salpingoecidae|genus-Monosiga|species-Monosiga_brevicollis	species	Monosiga brevicollis	81824	0.4657	31.3691	5	10737
+class-Bigyra	class	Bigyra	2683628	0.1971	13.2801	10	50724
+class-Bigyra|order-Bicosoecida	order	Bicosoecida	33651	0.1971	13.2801	10	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae	family	Cafeteriaceae	238884	0.1971	13.2801	10	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria	genus	Cafeteria	33652	0.1971	13.2801	10	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	species	Cafeteria roenbergensis	33653	0.1971	13.2801	10	50724

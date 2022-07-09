@@ -1,0 +1,3 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+unclassified Bathycoccus	2590008	genus	1	2	1.92%	15.84%	100.0%	95463
+Thecamonas trahens ATCC 50062	461836	species	1	2	1.52%	15.9%	100.0%	96258

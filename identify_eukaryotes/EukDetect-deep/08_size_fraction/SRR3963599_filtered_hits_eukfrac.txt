@@ -1,0 +1,25 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Basidiomycota|class-Exobasidiomycetes	class	Exobasidiomycetes	452283	1.1989	82.6528	409	341159
+phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales	order	Exobasidiales	5404	1.1989	77.1247	409	341159
+phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales|family-Brachybasidiaceae	family	Brachybasidiaceae	190068	1.1989	77.1247	409	341159
+phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales|family-Brachybasidiaceae|genus-Meira	genus	Meira	215251	1.1989	77.1247	409	341159
+phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales|family-Brachybasidiaceae|genus-Meira|species-Meira_nashicola	species	Meira nashicola	286112	1.1989	77.1247	409	341159
+phylum-Ascomycota|class-Sordariomycetes	class	Sordariomycetes	147550	0.1468	10.1227	52	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales	order	Hypocreales	5125	0.1468	9.4457	52	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae	family	Cordycipitaceae	474943	0.1468	9.4457	52	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae|genus-Lecanicillium	genus	Lecanicillium	291363	0.1468	9.4457	52	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae|genus-Lecanicillium|species-Lecanicillium_sp._LEC01	species	Lecanicillium sp. LEC01	2013060	0.1468	9.4457	52	354158
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	0.0145	0.9993	4	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	0.0145	0.9324	4	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae	family	Chloropicaceae	2302913	0.0145	0.9324	4	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.0145	0.9324	4	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	0.0145	0.9324	4	275974
+class-Bigyra	class	Bigyra	2683628	0.0903	6.2252	11	121823
+class-Bigyra|order-Bicosoecida	order	Bicosoecida	33651	0.138	8.8779	7	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae	family	Cafeteriaceae	238884	0.138	8.8779	7	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria	genus	Cafeteria	33652	0.138	8.8779	7	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	species	Cafeteria roenbergensis	33653	0.138	8.8779	7	50724
+class-Bigyra|order-Labyrinthulomycetes	order	Labyrinthulomycetes	35131	0.0563	3.6193	4	71099
+class-Bigyra|order-Labyrinthulomycetes|family-Thraustochytriaceae	family	Thraustochytriaceae	33674	0.0563	3.6193	4	71099
+class-Bigyra|order-Labyrinthulomycetes|family-Thraustochytriaceae|genus-Thraustochytrium	genus	Thraustochytrium	4774	0.0563	3.6193	4	71099
+class-Bigyra|order-Labyrinthulomycetes|family-Thraustochytriaceae|genus-Thraustochytrium|species-Thraustochytrium_sp._ATCC_26185	species	Thraustochytrium sp. ATCC 26185	672127	0.0563	3.6193	4	71099

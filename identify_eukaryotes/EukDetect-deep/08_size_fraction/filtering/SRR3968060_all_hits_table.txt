@@ -1,0 +1,14 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Cafeteria roenbergensis	33653	species	5	7	11.63%	10.86%	100.0%	50724
+Monosiga brevicollis MX1	431895	species	4	5	4.44%	8.67%	98.48%	126657
+Lecanicillium sp. LEC01	2013060	species	8	17	3.88%	7.94%	98.45%	354158
+Malassezia restricta	76775	species	5	10	3.33%	3.92%	99.11%	348317
+Saccharomyces cerevisiae S288C	559292	species	2	4	1.1%	4.9%	99.12%	308302
+Hortaea werneckii EXF-2000	1157616	species	4	5	1.08%	4.09%	97.12%	717212
+Rhodotorula mucilaginosa	5537	species	1	2	1.06%	6.75%	100.0%	219600
+Meyerozyma	766728	genus	1	2	0.76%	8.03%	100.0%	218630
+Malassezia sympodialis ATCC 42132	1230383	species	1	2	0.72%	4.84%	98.16%	313165
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	16.18%	100.0%	332937
+Candida parapsilosis	5480	species	1	2	0.58%	3.15%	100.0%	312010
+Wickerhamomyces anomalus NRRL Y-366-8	683960	species	1	1	0.57%	15.82%	98.0%	287658
+Debaryomyces hansenii CBS767	284592	species	1	2	0.55%	8.27%	98.25%	326457

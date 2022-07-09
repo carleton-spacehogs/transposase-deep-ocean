@@ -1,0 +1,3 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+fungi-Meira_nashicola-1087488at2759-S1	1	107	0	107	1569	6.82	100.0
+fungi-Ochroconis_constricta_UM_578-261328at2759-S1	2	276	0	276	3321	8.31	100.0

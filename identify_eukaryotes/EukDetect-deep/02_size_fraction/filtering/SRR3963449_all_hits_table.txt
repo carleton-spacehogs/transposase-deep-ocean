@@ -1,0 +1,5 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Ochroconis constricta UM 578	1442076	species	4	6	2.04%	2.87%	99.64%	370078
+Stramenopiles sp. TOSAG41-1	1735744	species	1	2	1.92%	14.07%	98.99%	67745
+Meira nashicola	286112	species	1	1	0.55%	1.99%	100.0%	341159
+Exophiala aquamarina CBS 119918	1182545	species	1	2	0.5%	9.57%	99.48%	376942

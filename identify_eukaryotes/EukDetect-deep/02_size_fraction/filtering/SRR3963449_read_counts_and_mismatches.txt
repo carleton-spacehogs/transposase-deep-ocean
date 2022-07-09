@@ -1,0 +1,8 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+fungi-Exophiala_aquamarina_CBS_119918-901894at2759-S1	2	192	1	193	2016	9.57	99.48
+fungi-Meira_nashicola-1370304at2759-S1	1	58	0	58	2916	1.99	100.0
+fungi-Ochroconis_constricta_UM_578-270107at2759-S1	1	90	0	90	3054	2.95	100.0
+fungi-Ochroconis_constricta_UM_578-722805at2759-S1	2	217	2	219	5154	4.25	99.09
+fungi-Ochroconis_constricta_UM_578-671536at2759-S1	2	105	0	105	3159	3.32	100.0
+fungi-Ochroconis_constricta_UM_578-160593at2759-S1	1	137	0	137	7854	1.74	100.0
+protist-Stramenopiles_sp_TOSAG41-1-708105at2759-S1	2	196	2	198	1407	14.07	98.99

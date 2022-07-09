@@ -1,0 +1,9 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Thecamonas trahens ATCC 50062	461836	species	64	1884	96.97%	77.86%	99.54%	96258
+Lecanicillium sp. LEC01	2013060	species	56	122	27.18%	10.25%	98.72%	354158
+Ochroconis constricta UM 578	1442076	species	5	7	2.55%	7.55%	100.0%	370078
+Neobodo designis	312471	species	1	1	1.52%	9.07%	97.33%	100830
+Malassezia restricta	76775	species	2	4	1.33%	3.15%	99.76%	348317
+Malassezia globosa CBS 7966	425265	species	2	4	1.27%	6.03%	98.99%	332937
+Exophiala xenobiotica	348802	species	2	4	1.0%	6.62%	98.15%	372377
+Hortaea werneckii EXF-2000	1157616	species	1	2	0.27%	10.17%	96.27%	717212

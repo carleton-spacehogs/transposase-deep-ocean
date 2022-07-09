@@ -1,0 +1,5 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+fungi-Malassezia_restricta-1588798at2759-S1	1	146	4	150	912	16.45	97.33
+fungi-Exophiala_xenobiotica-1441854at2759-S1	2	221	0	221	1002	22.06	100.0
+fungi-Lecanicillium_sp_LEC01-271586at2759-S1	1	142	2	144	2847	5.06	98.61
+fungi-Lecanicillium_sp_LEC01-39650at2759-S1	2	251	3	254	6654	3.82	98.82

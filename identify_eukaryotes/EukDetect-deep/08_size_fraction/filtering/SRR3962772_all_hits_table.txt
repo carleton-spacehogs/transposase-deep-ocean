@@ -1,0 +1,13 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Lecanicillium sp. LEC01	2013060	species	58	131	28.16%	11.05%	98.53%	354158
+Malassezia restricta	76775	species	6	11	4.0%	8.29%	98.0%	348317
+Meira nashicola	286112	species	5	9	2.73%	10.83%	99.54%	341159
+Malassezia globosa CBS 7966	425265	species	3	6	1.91%	9.84%	98.15%	332937
+Mrakia blollopis	696254	species	1	2	1.79%	3.95%	97.78%	147162
+Exophiala xenobiotica	348802	species	3	5	1.5%	5.81%	99.63%	372377
+Gephyrocapsa oceanica	38817	species	1	1	1.0%	21.38%	99.3%	137559
+[Candida] haemulonis	45357	species	1	2	0.62%	3.89%	100.0%	339692
+Debaryomyces hansenii CBS767	284592	species	1	2	0.55%	14.67%	99.6%	326457
+Saccharomyces cerevisiae S288C	559292	species	1	2	0.55%	9.28%	100.0%	308302
+Yarrowia galli	197054	species	1	1	0.55%	11.29%	100.0%	330009
+Ochroconis constricta UM 578	1442076	species	1	2	0.51%	9.42%	99.62%	370078

@@ -1,0 +1,8 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Kryptoperidiniaceae	2137591	family	1	1	100.0%	9.31%	100.0%	1612
+unclassified Ostreococcus	2268852	genus	1	2	8.33%	13.26%	98.7%	18843
+Ostreococcus sp. SAG12	2590007	species	1	4	7.69%	5.85%	98.92%	29000
+Durinskia baltica	400756	species	7	11	4.96%	7.11%	99.16%	244301
+Ostreococcus sp. SAG10	2590005	species	1	2	4.0%	3.32%	100.0%	56396
+Ochroconis constricta UM 578	1442076	species	3	5	1.53%	4.28%	99.64%	370078
+Lecanicillium sp. LEC01	2013060	species	2	4	0.97%	14.31%	99.15%	354158

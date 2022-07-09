@@ -1,0 +1,6 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+class-Bigyra	class	Bigyra	2683628	0.7294	100.0	37	50724
+class-Bigyra|order-Bicosoecida	order	Bicosoecida	33651	0.7294	100.0	37	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae	family	Cafeteriaceae	238884	0.7294	100.0	37	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria	genus	Cafeteria	33652	0.7294	100.0	37	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	species	Cafeteria roenbergensis	33653	0.7294	100.0	37	50724

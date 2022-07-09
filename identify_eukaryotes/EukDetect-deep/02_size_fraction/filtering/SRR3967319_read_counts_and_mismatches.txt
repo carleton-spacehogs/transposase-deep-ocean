@@ -1,0 +1,3 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+fungi-Malassezia_globosa_CBS_7966-1398309at2759-S1	2	263	3	266	834	31.89	98.87
+fungi-Lecanicillium_sp_LEC01-176625at2759-S1	2	216	5	221	3294	6.71	97.74
