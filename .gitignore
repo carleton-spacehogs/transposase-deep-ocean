@@ -5,3 +5,4 @@
 *_contig_cov.txt
 *.nfs*
 *.bam*
+*.log*
