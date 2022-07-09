@@ -1,0 +1,12 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Stramenopiles sp. TOSAG23-2	1735743	species	44	581	93.62%	53.78%	99.34%	66251
+Mamiellales	13792	order	1	19	33.33%	68.43%	99.66%	6183
+Stramenopiles sp. TOSAG23-3	1735745	species	8	13	13.33%	7.09%	99.76%	80549
+Amoebophrya sp. AT5.2	1775427	species	1	2	4.55%	12.25%	98.22%	36997
+Stramenopiles sp. TOSAG41-1	1735744	species	2	11	3.85%	30.77%	99.42%	67745
+Triparma eleuthera	172717	species	2	2	2.74%	17.11%	98.56%	101435
+Malassezia restricta	76775	species	4	6	2.67%	3.73%	99.29%	348317
+unclassified Bathycoccus	2590008	genus	1	7	1.92%	77.78%	99.71%	95463
+Pelagomonas calceolata	35677	species	1	1	1.3%	4.76%	99.02%	128353
+Malassezia globosa CBS 7966	425265	species	1	1	0.64%	1.32%	99.04%	332937
+Cladosporium sphaerospermum UM 843	1151026	species	1	1	0.49%	10.3%	99.02%	363001

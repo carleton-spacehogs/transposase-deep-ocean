@@ -1,0 +1,31 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Bathycoccus prasinos	41875	species	121	3358	98.37%	65.6%	99.3%	229209
+Micromonas polaris	1848828	species	136	15071	90.07%	55.59%	98.6%	307796
+Bicosta minor	1864616	species	63	618	86.3%	31.46%	99.39%	126984
+Micromonas sp. ASP10-01a	1621096	species	72	6700	80.9%	43.9%	98.76%	191706
+Arcocellulus cornucervis	1155433	species	57	241	68.67%	22.52%	99.61%	107135
+Phaeocystis antarctica	33657	species	63	1815	63.0%	40.03%	97.08%	158488
+Micromonas	38832	genus	58	5324	32.58%	44.83%	98.44%	358692
+Triparma laevis	1534972	species	9	18	25.0%	8.09%	99.15%	50473
+Florenciella parvula	236787	species	17	28	23.29%	8.38%	99.39%	88783
+Lithomelissa setosa	1054399	species	1	11	20.0%	94.27%	99.45%	2562
+Phaeocystis globosa	33658	species	11	119	9.48%	31.19%	97.12%	154798
+Minutocellus polymorphus	265543	species	10	21	6.71%	5.07%	97.04%	256500
+Voromonas pontica	333133	species	1	3	6.25%	23.78%	100.0%	11409
+Aureococcus anophagefferens	44056	species	3	3	4.62%	3.03%	99.31%	85991
+Micromonas pusilla	38833	species	1	2	3.85%	10.26%	97.02%	49695
+Ostreococcus lucimarinus CCE9901	436017	species	3	6	2.63%	19.0%	99.8%	233346
+Pseudo-nitzschia fraudulenta	183588	species	2	4	2.2%	17.99%	100.0%	108708
+Eukaryota	2759	superkingdom	5	9	1.95%	5.38%	100.0%	467758
+unclassified Bathycoccus	2590008	genus	1	2	1.92%	2.42%	97.39%	95463
+Stramenopiles sp. TOSAG23-3	1735745	species	1	2	1.67%	9.06%	99.43%	80549
+Pelagococcus subviridis	35679	species	1	2	1.52%	3.55%	100.0%	79272
+Thalassiosira gravida	420259	species	1	2	1.28%	17.06%	99.43%	100384
+Oikopleura vanhoeffeni	2056977	species	1	2	1.2%	5.64%	98.83%	103290
+Rhodotorula sp. CCFEE 5036	1965284	species	1	2	1.15%	6.39%	98.95%	209302
+Debaryomyces hansenii CBS767	284592	species	2	4	1.09%	6.39%	99.16%	326457
+Thalassiosira oceanica	159749	species	1	1	1.02%	5.41%	96.97%	165190
+Alexandrium tamarense	2926	species	1	3	0.71%	14.11%	98.4%	194024
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	2.8%	100.0%	332937
+Fragilariopsis cylindrus CCMP1102	635003	species	1	4	0.55%	3.36%	96.59%	370513
+Hortaea werneckii EXF-2000	1157616	species	2	4	0.54%	5.18%	100.0%	717212

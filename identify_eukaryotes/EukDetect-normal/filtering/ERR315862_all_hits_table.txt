@@ -1,0 +1,7 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Stramenopiles sp. TOSAG23-2	1735743	species	42	1880	89.36%	58.22%	99.01%	66251
+Mamiellales	13792	order	1	10	33.33%	72.79%	99.19%	6183
+Stramenopiles sp. TOSAG41-1	1735744	species	9	345	17.31%	50.29%	99.03%	67745
+Stramenopiles sp. TOSAG23-6	1735747	species	1	2	3.33%	9.67%	100.0%	44106
+unclassified Bathycoccus	2590008	genus	1	18	1.92%	95.69%	98.58%	95463
+Malassezia restricta	76775	species	1	2	0.67%	8.8%	97.13%	348317

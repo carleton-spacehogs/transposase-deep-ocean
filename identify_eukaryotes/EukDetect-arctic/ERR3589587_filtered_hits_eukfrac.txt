@@ -1,0 +1,34 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+species-Stramenopiles_sp._TOSAG23-3	species	Stramenopiles sp. TOSAG23-3	1735745	1.8126	4.4605	146	80549
+class-Dictyochophyceae	class	Dictyochophyceae	39119	0.0587	0.4142	12	204410
+class-Dictyochophyceae|order-Pedinellales	order	Pedinellales	35680	0.0346	0.2334	4	115627
+class-Dictyochophyceae|order-Pedinellales|genus-Pseudopedinella	genus	Pseudopedinella	35683	0.0346	0.0856	4	115627
+class-Dictyochophyceae|order-Pedinellales|genus-Pseudopedinella|species-Pseudopedinella_elastica	species	Pseudopedinella elastica	35684	0.0346	0.0851	4	115627
+class-Dictyochophyceae|order-Florenciellales	order	Florenciellales	590977	0.0901	0.6079	8	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella	genus	Florenciella	236786	0.0901	0.2229	8	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella|species-Florenciella_parvula	species	Florenciella parvula	236787	0.0901	0.2217	8	88783
+phylum-Bacillariophyta|class-Mediophyceae	class	Mediophyceae	589449	0.3163	2.2315	115	363635
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales	order	Cymatosirales	420262	0.3163	2.1336	115	363635
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Minutocellus	genus	Minutocellus	265542	0.0546	0.135	14	256500
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Minutocellus|species-Minutocellus_polymorphus	species	Minutocellus polymorphus	265543	0.0546	0.1343	14	256500
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Arcocellulus	genus	Arcocellulus	420263	0.9427	2.3317	101	107135
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Arcocellulus|species-Arcocellulus_cornucervis	species	Arcocellulus cornucervis	1155433	0.9427	2.32	101	107135
+class-Pelagophyceae	class	Pelagophyceae	35675	0.1514	1.0681	12	79272
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	0.1514	1.0213	12	79272
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagococcus	genus	Pelagococcus	35678	0.1514	0.3744	12	79272
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagococcus|species-Pelagococcus_subviridis	species	Pelagococcus subviridis	35679	0.1514	0.3725	12	79272
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.2421	1.7085	53	218890
+phylum-Haptista|class-Haptophyta|order-Prymnesiales	order	Prymnesiales	73028	0.7947	5.3613	48	60402
+phylum-Haptista|class-Haptophyta|order-Prymnesiales|family-Prymnesiaceae|genus-Haptolina	genus	Haptolina	1090112	0.7947	1.9655	48	60402
+phylum-Haptista|class-Haptophyta|order-Prymnesiales|family-Prymnesiaceae|genus-Haptolina|species-Haptolina_ericina	species	Haptolina ericina	156174	0.7856	1.9334	46	58551
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	0.0315	0.2128	5	158488
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	0.0315	0.078	5	158488
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	species	Phaeocystis antarctica	33657	0.0315	0.0776	5	158488
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	13.404	94.5778	8480	632648
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	13.404	90.4297	8480	632648
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	0.2395	0.5924	96	400826
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_polaris	species	Micromonas polaris	1848828	0.1007	0.2479	31	307796
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	1.5308	3.7863	4	2613
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._'lucimarinus'	species	Ostreococcus sp. 'lucimarinus'	242159	0.0715	0.1759	4	55954
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	36.5605	90.4282	8380	229209
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	36.5605	89.9711	8380	229209

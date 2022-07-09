@@ -1,0 +1,26 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+unclassified Bathycoccus	2590008	genus	50	1331	96.15%	63.63%	99.43%	95463
+Stramenopiles sp. TOSAG23-2	1735743	species	41	317	87.23%	35.8%	99.29%	66251
+Bathycoccus sp. TOSAG39-1	1735750	species	11	217	84.62%	41.65%	99.25%	28758
+Micromonas pusilla	38833	species	20	106	76.92%	19.93%	98.18%	49695
+Stramenopiles sp. TOSAG41-1	1735744	species	40	198	76.92%	27.33%	98.96%	67745
+Bathycoccus sp. SAG2	2589997	species	3	71	75.0%	43.3%	98.99%	8737
+Mamiellales	13792	order	2	10	66.67%	11.0%	99.49%	6183
+Bathycoccus sp. SAG1	2589996	species	3	29	60.0%	30.54%	99.58%	5703
+Micromonas	38832	genus	102	696	57.3%	19.71%	98.31%	358692
+Bathycoccus sp. SAG4	2589999	species	4	57	57.14%	48.91%	99.17%	10392
+Ostreococcus sp. SAG10	2590005	species	13	43	52.0%	9.68%	99.38%	56396
+Ostreococcus sp. SAG9	2590004	species	2	6	50.0%	9.92%	99.77%	6096
+Bathycoccus sp. SAG3	2589998	species	2	84	50.0%	81.28%	99.13%	6679
+unclassified Ostreococcus	2268852	genus	5	18	41.67%	14.52%	99.32%	18843
+Ostreococcus sp. SAG12	2590007	species	5	30	38.46%	15.56%	99.35%	29000
+Triparma eleuthera	172717	species	19	41	26.03%	11.47%	99.67%	101435
+Stramenopiles sp. TOSAG23-3	1735745	species	15	33	25.0%	12.04%	98.27%	80549
+Bigelowiella natans CCMP2755	753081	species	3	5	13.04%	5.26%	99.09%	31850
+Pelagomonas calceolata	35677	species	8	15	10.39%	7.67%	98.39%	128353
+Triparma pacifica	91992	species	5	8	8.93%	4.93%	99.86%	110146
+Chloropicon roscoffensis	1461544	species	11	22	6.96%	6.65%	99.84%	275974
+Bathycoccus prasinos	41875	species	4	7	3.25%	4.5%	96.9%	229209
+Pycnococcus provasolii	41880	species	3	6	3.09%	16.22%	98.99%	119181
+Alexandrium tamarense	2926	species	2	6	1.42%	23.71%	99.23%	194024
+Micromonas bravo	296588	species	1	2	0.85%	7.39%	98.34%	182724

@@ -1,0 +1,16 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Chlorophyta	phylum	Chlorophyta	3041	85.3694	99.7758	64470	755189
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	85.3694	99.7758	64470	755189
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	85.3694	99.7758	64470	755189
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae	family	Mamiellaceae	41873	122.3773	99.4823	64368	525980
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	122.3773	99.4823	64368	525980
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_polaris	species	Micromonas polaris	1848828	117.136	99.4774	36054	307796
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae	family	Bathycoccaceae	1525212	0.445	0.3618	102	229209
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	0.445	0.3618	102	229209
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	0.445	0.3779	102	229209
+phylum-Haptista	phylum	Haptista	2608109	0.1918	0.2242	31	161590
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.1918	0.2242	31	161590
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	0.1918	0.2242	31	161590
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae	family	Phaeocystaceae	418920	0.1918	0.156	31	161590
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	0.1918	0.156	31	161590
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	species	Phaeocystis antarctica	33657	0.1704	0.1447	27	158488

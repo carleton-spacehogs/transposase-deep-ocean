@@ -1,0 +1,41 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Ostreococcus lucimarinus CCE9901	436017	species	114	189439	100.0%	95.41%	95.51%	233346
+Bathycoccus prasinos	41875	species	123	22235	100.0%	90.12%	97.47%	229209
+unclassified stramenopiles	46625	no rank	1	3	100.0%	26.34%	99.32%	1116
+Stramenopiles sp. TOSAG23-2	1735743	species	46	4719	97.87%	93.49%	98.72%	66251
+Stramenopiles sp. TOSAG23-3	1735745	species	58	3174	96.67%	93.48%	99.56%	80549
+Stramenopiles sp. TOSAG23-6	1735747	species	25	161	83.33%	29.42%	99.27%	44106
+Florenciella parvula	236787	species	53	206	72.6%	22.37%	99.28%	88783
+Tetrahymena thermophila	5911	species	5	13	62.5%	11.69%	99.34%	15300
+Triparma laevis	1534972	species	22	68	61.11%	15.09%	99.67%	50473
+Alveolata	33630	superkingdom	3	8	42.86%	16.8%	98.63%	6135
+Micromonas bravo	296588	species	50	146	42.37%	11.93%	97.38%	182724
+Micromonas pusilla	38833	species	10	49	38.46%	9.97%	96.27%	49695
+Aureococcus anophagefferens	44056	species	23	53	35.38%	9.99%	98.67%	85991
+Micromonas	38832	genus	61	929	34.27%	8.9%	96.23%	358692
+Mamiellales	13792	order	1	68	33.33%	97.41%	98.67%	6183
+Pelagococcus subviridis	35679	species	21	50	31.82%	11.61%	99.53%	79272
+Eukaryota	2759	superkingdom	65	294	25.39%	16.52%	99.06%	467758
+Arcocellulus cornucervis	1155433	species	19	46	22.89%	10.33%	98.97%	107135
+Lithomelissa setosa	1054399	species	1	167	20.0%	99.74%	95.82%	2562
+Phaeocystis antarctica	33657	species	20	67	20.0%	11.79%	97.34%	158488
+Bicosta minor	1864616	species	14	38	19.18%	6.51%	99.31%	126984
+Pelagomonas calceolata	35677	species	9	18	11.69%	12.6%	98.05%	128353
+Pseudo-nitzschia fraudulenta	183588	species	7	13	7.69%	9.08%	99.91%	108708
+Phaeocystis globosa	33658	species	7	21	6.03%	21.18%	98.35%	154798
+Prasinoderma singulare	676789	species	4	7	4.4%	8.39%	100.0%	121534
+Pycnococcus provasolii	41880	species	4	8	4.12%	9.8%	99.86%	119181
+unclassified Bathycoccus	2590008	genus	2	35	3.85%	8.86%	97.67%	95463
+Minutocellus polymorphus	265543	species	5	10	3.36%	6.03%	97.36%	256500
+Malassezia restricta	76775	species	5	12	3.33%	6.54%	99.52%	348317
+Alexandrium tamarense	2926	species	3	144	2.13%	37.25%	96.42%	194024
+Gephyrocapsa oceanica	38817	species	2	3	2.0%	6.51%	96.58%	137559
+Stramenopiles sp. TOSAG41-1	1735744	species	1	68	1.92%	96.12%	98.66%	67745
+Triparma pacifica	91992	species	1	1	1.79%	1.35%	97.0%	110146
+Chloropicon roscoffensis	1461544	species	2	5	1.27%	13.18%	97.89%	275974
+Prymnesium polylepis	72548	species	1	1	1.12%	1.43%	99.01%	134351
+Prasinococcaceae sp. CCMP 1430	2489100	species	1	6	0.92%	10.02%	97.6%	225148
+Ostreococcus mediterraneus	1486918	species	1	1	0.75%	2.97%	95.45%	261255
+Lutzomyia longipalpis	7200	species	1	1	0.71%	8.49%	95.88%	236724
+Cladosporium sp. SL-16	2048672	species	1	2	0.5%	11.44%	98.03%	366513
+Hortaea werneckii EXF-2000	1157616	species	1	2	0.27%	2.39%	99.36%	717212

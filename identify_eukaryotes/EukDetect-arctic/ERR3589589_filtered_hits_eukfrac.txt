@@ -1,0 +1,21 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+species-Stramenopiles_sp._TOSAG23-3	species	Stramenopiles sp. TOSAG23-3	1735745	0.149	0.1522	12	80549
+class-Dictyochophyceae	class	Dictyochophyceae	39119	0.0676	0.1627	6	88783
+class-Dictyochophyceae|order-Florenciellales	order	Florenciellales	590977	0.0676	0.1627	6	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella	genus	Florenciella	236786	0.0676	0.1154	6	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella|species-Florenciella_parvula	species	Florenciella parvula	236787	0.0676	0.0691	6	88783
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	39.4156	94.9074	30423	771851
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	39.4156	94.9074	30423	771851
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	55.7771	95.2271	30267	542642
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_sp._ASP10-01a	species	Micromonas sp. ASP10-01a	1621096	40.3169	41.195	7729	191706
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_polaris	species	Micromonas polaris	1848828	54.6596	55.85	16824	307796
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	0.6806	1.162	156	229209
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	0.6806	0.6954	156	229209
+phylum-Chordata|class-Appendicularia	class	Appendicularia	30302	0.0768	0.1849	9	117198
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	0.0768	0.1849	9	117198
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Fritillariidae|genus-Fritillaria	genus	Fritillaria	2507559	0.0768	0.1311	9	117198
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Fritillariidae|genus-Fritillaria|species-Fritillaria_borealis	species	Fritillaria borealis	2507563	0.0768	0.0785	9	117198
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	1.9706	4.745	325	164923
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	1.9706	4.745	325	164923
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	1.9706	3.3644	325	164923
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	species	Phaeocystis antarctica	33657	1.9181	1.9599	304	158488

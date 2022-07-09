@@ -1,0 +1,26 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+class-Dictyochophyceae	class	Dictyochophyceae	39119	0.274	2.6475	56	204410
+class-Dictyochophyceae|order-Pedinellales	order	Pedinellales	35680	0.4238	4.0067	49	115627
+class-Dictyochophyceae|order-Pedinellales|genus-Pseudopedinella	genus	Pseudopedinella	35683	0.4238	1.7599	49	115627
+class-Dictyochophyceae|order-Pedinellales|genus-Pseudopedinella|species-Pseudopedinella_elastica	species	Pseudopedinella elastica	35684	0.4238	1.7673	49	115627
+class-Dictyochophyceae|order-Florenciellales	order	Florenciellales	590977	0.0788	0.7454	7	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella	genus	Florenciella	236786	0.0788	0.3274	7	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella|species-Florenciella_parvula	species	Florenciella parvula	236787	0.0788	0.3288	7	88783
+phylum-Bacillariophyta|class-Mediophyceae	class	Mediophyceae	589449	0.4294	4.1492	46	107135
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales	order	Cymatosirales	420262	0.4294	4.0595	46	107135
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Arcocellulus	genus	Arcocellulus	420263	0.4294	1.7831	46	107135
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Arcocellulus|species-Arcocellulus_cornucervis	species	Arcocellulus cornucervis	1155433	0.4294	1.7907	46	107135
+class-Pelagophyceae	class	Pelagophyceae	35675	0.1514	1.4629	12	79272
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	0.1514	1.4312	12	79272
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagococcus	genus	Pelagococcus	35678	0.1514	0.6287	12	79272
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagococcus|species-Pelagococcus_subviridis	species	Pelagococcus subviridis	35679	0.1514	0.6313	12	79272
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.9672	9.3464	60	62037
+phylum-Haptista|class-Haptophyta|order-Prymnesiales	order	Prymnesiales	73028	0.9672	9.1443	60	62037
+phylum-Haptista|class-Haptophyta|order-Prymnesiales|family-Prymnesiaceae|genus-Haptolina	genus	Haptolina	1090112	0.9672	4.0166	60	62037
+phylum-Haptista|class-Haptophyta|order-Prymnesiales|family-Prymnesiaceae|genus-Haptolina|species-Haptolina_ericina	species	Haptolina ericina	156174	0.9564	3.9888	56	58551
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	8.5262	82.3941	5064	593936
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	8.5262	80.6128	5064	593936
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	0.1097	0.4555	40	364727
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_polaris	species	Micromonas polaris	1848828	0.0195	0.0813	6	307796
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	21.9189	91.0287	5024	229209
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	21.9189	91.4118	5024	229209

@@ -1,0 +1,39 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Ostreococcus lucimarinus CCE9901	436017	species	105	1843	92.11%	49.13%	99.72%	233346
+Bathycoccus prasinos	41875	species	48	124	39.02%	8.94%	99.4%	229209
+Stramenopiles sp. TOSAG23-2	1735743	species	17	50	36.17%	12.5%	99.23%	66251
+Mamiellales	13792	order	1	1	33.33%	11.9%	100.0%	6183
+Stramenopiles sp. TOSAG23-3	1735745	species	15	33	25.0%	9.68%	99.72%	80549
+Arcocellulus cornucervis	1155433	species	11	20	13.25%	9.22%	98.96%	107135
+Tetrahymena thermophila	5911	species	1	1	12.5%	7.03%	100.0%	15300
+Pelagococcus subviridis	35679	species	6	10	9.09%	8.78%	99.47%	79272
+Pycnococcus provasolii	41880	species	7	12	7.22%	10.41%	99.28%	119181
+Prasinoderma singulare	676789	species	5	12	5.49%	13.2%	99.73%	121534
+Micromonas pusilla	38833	species	1	1	3.85%	5.87%	97.0%	49695
+Hortaea werneckii EXF-2000	1157616	species	14	27	3.77%	4.92%	99.49%	717212
+Micromonas	38832	genus	6	14	3.37%	3.89%	97.22%	358692
+Malassezia restricta	76775	species	5	8	3.33%	5.58%	99.6%	348317
+Pseudo-nitzschia fraudulenta	183588	species	3	6	3.3%	13.18%	99.62%	108708
+Exophiala xenobiotica	348802	species	6	11	3.0%	5.55%	98.41%	372377
+Aspergillus sp. MA 6041	2153248	species	10	18	3.0%	6.8%	99.39%	605505
+Pelagomonas calceolata	35677	species	2	3	2.6%	14.06%	99.31%	128353
+Cyphellophora europaea CBS 101466	1220924	species	4	8	2.01%	6.75%	100.0%	391280
+Chloropicon roscoffensis	1461544	species	3	5	1.9%	8.37%	99.55%	275974
+Candida parapsilosis	5480	species	3	6	1.74%	6.51%	100.0%	312010
+Saccharomyces cerevisiae S288C	559292	species	3	5	1.65%	9.9%	99.79%	308302
+Puccinia triticina 1-1 BBBD Race 1	630390	species	3	4	1.64%	4.03%	98.67%	326961
+Aureococcus anophagefferens	44056	species	1	1	1.54%	14.48%	97.92%	85991
+Florenciella parvula	236787	species	1	2	1.37%	15.33%	100.0%	88783
+Minutocellus polymorphus	265543	species	2	6	1.34%	5.2%	97.36%	256500
+Thalassiosira oceanica	159749	species	1	2	1.02%	17.43%	97.25%	165190
+Phaeocystis antarctica	33657	species	1	2	1.0%	9.71%	97.25%	158488
+Cladosporium sphaerospermum UM 843	1151026	species	2	4	0.99%	4.99%	98.31%	363001
+Cadophora sp. DSE1049	1485229	species	2	3	0.97%	2.3%	97.0%	369337
+Micromonas bravo	296588	species	1	1	0.85%	27.32%	99.0%	182724
+Stygamoeba regulata	1042828	species	1	2	0.72%	3.44%	97.73%	200967
+Debaryomyces hansenii CBS767	284592	species	1	2	0.55%	4.65%	100.0%	326457
+Purpureocillium lilacinum	33203	species	1	2	0.49%	8.34%	99.45%	356037
+Aspergillus sydowii CBS 593.65	1036612	species	1	2	0.48%	7.93%	100.0%	361206
+Pyrenochaeta sp. UM 256	1295359	species	1	2	0.48%	37.25%	99.47%	365660
+Penicillium digitatum Pd1	1170230	species	1	2	0.48%	6.43%	100.0%	357912
+Eukaryota	2759	superkingdom	1	2	0.39%	12.73%	100.0%	467758

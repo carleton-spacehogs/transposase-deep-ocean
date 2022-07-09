@@ -13,7 +13,8 @@ for ocean in deep; do
 	bins=$(ls ../../bins/${ocean}/mp-deep_mag-*.fasta)
 	for MAG in $bins; do
 		MAG_name=$(echo $MAG | awk -F"/" '{print $5}')
-		outf="../../bins/${ocean}/${MAG_name%%.fna}/tiara_euk.txt"
+		# outf="../../bins/${ocean}/${MAG_name%%.fna}/tiara_euk.txt"
+		outf="../../bins/${ocean}/${MAG_name%%.fasta}/tiara_euk.txt"
 		echo tiara -i $MAG -o $outf -t 10 >> logs/${ocean}.log
 		~/.local/bin/tiara -i $MAG -o $outf -t 10
 	done

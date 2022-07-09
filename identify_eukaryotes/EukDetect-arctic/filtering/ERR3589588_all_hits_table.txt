@@ -1,0 +1,20 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Bathycoccus prasinos	41875	species	123	5024	100.0%	76.3%	99.4%	229209
+Haptolina ericina	156174	species	23	56	42.59%	14.91%	99.71%	58551
+Arcocellulus cornucervis	1155433	species	23	46	27.71%	9.99%	99.44%	107135
+Pseudopedinella elastica	35684	species	22	49	25.58%	9.42%	99.71%	115627
+Lithomelissa setosa	1054399	species	1	3	20.0%	56.25%	100.0%	2562
+Pelagococcus subviridis	35679	species	7	12	10.61%	5.65%	99.49%	79272
+Micromonas	38832	genus	18	31	10.11%	4.93%	97.35%	358692
+Florenciella parvula	236787	species	4	7	5.48%	14.33%	99.68%	88783
+Haptolina brevifila	156173	species	2	4	3.28%	9.61%	97.91%	79918
+Micromonas sp. ASP10-01a	1621096	species	2	3	2.25%	6.57%	100.0%	191706
+Micromonas polaris	1848828	species	3	6	1.99%	4.23%	99.39%	307796
+Stramenopiles sp. TOSAG23-3	1735745	species	1	1	1.67%	8.23%	100.0%	80549
+Minutocellus polymorphus	265543	species	2	3	1.34%	3.22%	96.91%	256500
+Nephroselmis pyriformis	156128	species	1	1	1.25%	10.08%	100.0%	94224
+Prasinococcaceae sp. CCMP 1430	2489100	species	1	1	0.92%	8.09%	98.02%	225148
+Eukaryota	2759	superkingdom	2	4	0.78%	3.9%	100.0%	467758
+Alexandrium tamarense	2926	species	1	4	0.71%	14.04%	97.86%	194024
+Pseudo-nitzschia delicatissima	44447	species	1	2	0.58%	20.0%	96.86%	280363
+Saccharomyces cerevisiae S288C	559292	species	1	2	0.55%	5.65%	97.8%	308302

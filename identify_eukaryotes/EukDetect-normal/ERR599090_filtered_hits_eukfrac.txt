@@ -1,0 +1,28 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	1.674	3.9684	1290	770591
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	1.674	3.9684	1290	770591
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	2.2904	5.3242	1240	541382
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_sp._ASP10-01a	species	Micromonas sp. ASP10-01a	1621096	1.5753	3.435	302	191706
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_polaris	species	Micromonas polaris	1848828	2.3262	5.0723	716	307796
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	0.2181	0.5071	50	229209
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	0.2181	0.4757	50	229209
+class-Dictyochophyceae	class	Dictyochophyceae	39119	0.4618	1.0947	41	88783
+class-Dictyochophyceae|order-Florenciellales	order	Florenciellales	590977	0.4618	1.0947	41	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella	genus	Florenciella	236786	0.4618	1.0735	41	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella|species-Florenciella_parvula	species	Florenciella parvula	236787	0.4618	1.007	41	88783
+phylum-Bacillariophyta|class-Coscinodiscophyceae	class	Coscinodiscophyceae	33836	0.0462	0.1096	12	259523
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Chaetocerotales	order	Chaetocerotales	265576	0.0462	0.1096	12	259523
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Chaetocerotales|family-Chaetocerotaceae|genus-Chaetoceros	genus	Chaetoceros	49237	0.0462	0.1075	12	259523
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Chaetocerotales|family-Chaetocerotaceae|genus-Chaetoceros|species-Chaetoceros_debilis	species	Chaetoceros debilis	122233	0.0462	0.1008	12	259523
+phylum-Bacillariophyta|class-Bacillariophyceae	class	Bacillariophyceae	33849	1.1429	2.7093	155	135620
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales	order	Bacillariales	33851	1.1429	2.7093	155	135620
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Fragilariopsis	genus	Fragilariopsis	186035	1.1429	2.6567	155	135620
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Fragilariopsis|species-Fragilariopsis_cylindrus	species	Fragilariopsis cylindrus	186039	1.1429	2.4921	155	135620
+class-Bigyra	class	Bigyra	2683628	0.138	0.3271	7	50724
+class-Bigyra|order-Bicosoecida	order	Bicosoecida	33651	0.138	0.3271	7	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria	genus	Cafeteria	33652	0.138	0.3208	7	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	species	Cafeteria roenbergensis	33653	0.138	0.3009	7	50724
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	38.7216	91.7909	6443	166393
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	38.7216	91.7909	6443	166393
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	38.7216	90.0102	6443	166393
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	species	Phaeocystis antarctica	33657	39.9526	87.1163	6332	158488

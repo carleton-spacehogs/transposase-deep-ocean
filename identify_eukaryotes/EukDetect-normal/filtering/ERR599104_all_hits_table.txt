@@ -1,0 +1,15 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Phaeocystis antarctica	33657	species	89	4933	89.0%	74.41%	98.04%	158488
+Micromonas polaris	1848828	species	37	92	24.5%	8.19%	99.23%	307796
+Bathycoccus prasinos	41875	species	21	47	17.07%	5.95%	98.42%	229209
+Micromonas sp. ASP10-01a	1621096	species	13	37	14.61%	6.22%	99.78%	191706
+Micromonas	38832	genus	17	36	9.55%	12.46%	99.55%	358692
+Phaeocystis globosa	33658	species	6	76	5.17%	32.8%	96.99%	154798
+Florenciella parvula	236787	species	2	4	2.74%	14.04%	98.55%	88783
+Phaeocystis rex	1631189	species	1	2	2.56%	8.08%	96.12%	40152
+Chaetoceros debilis	122233	species	3	5	2.04%	6.0%	98.49%	259523
+Fragilariopsis cylindrus CCMP1102	635003	species	3	5	1.66%	4.88%	98.65%	370513
+Pycnococcus provasolii	41880	species	1	2	1.03%	13.53%	100.0%	119181
+Proboscia alata	216777	species	1	2	0.83%	26.28%	99.44%	231020
+Malassezia restricta	76775	species	1	1	0.67%	5.19%	98.02%	348317
+Eukaryota	2759	superkingdom	1	2	0.39%	3.59%	99.25%	467758

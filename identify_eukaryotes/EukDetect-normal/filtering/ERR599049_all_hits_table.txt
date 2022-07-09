@@ -1,0 +1,30 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Ostreococcus sp. SAG9	2590004	species	4	312	100.0%	95.98%	98.62%	6096
+unclassified Ostreococcus	2268852	genus	12	835	100.0%	76.3%	98.78%	18843
+Ostreococcus sp. SAG11	2590006	species	4	117	100.0%	46.55%	98.52%	5643
+Micromonas pusilla	38833	species	25	722	96.15%	61.67%	98.01%	49695
+Ostreococcus sp. SAG10	2590005	species	24	2639	96.0%	90.12%	98.55%	56396
+Ostreococcus sp. SAG12	2590007	species	12	1382	92.31%	91.84%	98.5%	29000
+unclassified Bathycoccus	2590008	genus	48	1837	92.31%	73.82%	99.43%	95463
+Stramenopiles sp. TOSAG41-1	1735744	species	43	258	82.69%	31.53%	99.02%	67745
+Bathycoccus sp. SAG1	2589996	species	4	55	80.0%	29.12%	99.23%	5703
+Micromonas	38832	genus	140	3857	78.65%	54.75%	97.99%	358692
+Bathycoccus sp. SAG2	2589997	species	3	121	75.0%	53.02%	99.28%	8737
+Bathycoccus sp. SAG4	2589999	species	5	69	71.43%	50.99%	99.23%	10392
+Bathycoccus sp. TOSAG39-1	1735750	species	9	318	69.23%	66.93%	99.29%	28758
+Mamiellales	13792	order	2	186	66.67%	64.96%	98.93%	6183
+Bathycoccus sp. SAG3	2589998	species	2	69	50.0%	67.78%	99.38%	6679
+Pelagomonas calceolata	35677	species	18	56	23.38%	13.63%	97.84%	128353
+Stramenopiles sp. TOSAG23-2	1735743	species	9	15	19.15%	11.44%	99.49%	66251
+Chloropicon roscoffensis	1461544	species	14	25	8.86%	5.72%	99.42%	275974
+Triparma eleuthera	172717	species	6	12	8.22%	11.2%	99.07%	101435
+Bathycoccus prasinos	41875	species	7	11	5.69%	3.34%	97.13%	229209
+Micromonas bravo	296588	species	6	10	5.08%	7.48%	98.3%	182724
+Phaeocystis globosa	33658	species	5	8	4.31%	9.56%	99.55%	154798
+Triparma pacifica	91992	species	2	4	3.57%	3.76%	100.0%	110146
+Pycnococcus provasolii	41880	species	2	4	2.06%	7.92%	99.72%	119181
+Stramenopiles sp. TOSAG23-3	1735745	species	1	8	1.67%	53.18%	98.9%	80549
+Haptolina brevifila	156173	species	1	1	1.64%	2.16%	96.34%	79918
+Alexandrium tamarense	2926	species	2	11	1.42%	33.28%	98.67%	194024
+Phaeomonas parva	124430	species	1	1	1.22%	7.97%	100.0%	94577
+Prasinococcaceae sp. CCMP 1430	2489100	species	1	1	0.92%	6.89%	97.67%	225148

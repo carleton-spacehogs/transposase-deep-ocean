@@ -1,0 +1,43 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Bacillariophyta|class-Bacillariophyceae	class	Bacillariophyceae	33849	0.0368	0.0655	4	108708
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales	order	Bacillariales	33851	0.0368	0.0655	4	108708
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Pseudo-nitzschia	genus	Pseudo-nitzschia	41953	0.0368	0.0439	4	108708
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Pseudo-nitzschia|species-Pseudo-nitzschia_fraudulenta	species	Pseudo-nitzschia fraudulenta	183588	0.0368	0.0436	4	108708
+phylum-Bacillariophyta|class-Mediophyceae	class	Mediophyceae	589449	0.7205	1.2834	262	363635
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales	order	Cymatosirales	420262	0.7205	1.2834	262	363635
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Minutocellus	genus	Minutocellus	265542	0.0819	0.0978	21	256500
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Minutocellus|species-Minutocellus_polymorphus	species	Minutocellus polymorphus	265543	0.0819	0.0971	21	256500
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Arcocellulus	genus	Arcocellulus	420263	2.2495	2.6863	241	107135
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Arcocellulus|species-Arcocellulus_cornucervis	species	Arcocellulus cornucervis	1155433	2.2495	2.6667	241	107135
+class-Dictyochophyceae	class	Dictyochophyceae	39119	0.3154	0.5617	28	88783
+class-Dictyochophyceae|order-Florenciellales	order	Florenciellales	590977	0.3154	0.5617	28	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella	genus	Florenciella	236786	0.3154	0.3766	28	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella|species-Florenciella_parvula	species	Florenciella parvula	236787	0.3154	0.3739	28	88783
+class-Bolidophyceae	class	Bolidophyceae	91989	0.3566	0.6352	18	50473
+class-Bolidophyceae|order-Parmales	order	Parmales	722750	0.3566	0.6352	18	50473
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma	genus	Triparma	722752	0.3566	0.4259	18	50473
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_laevis	species	Triparma laevis	1534972	0.3566	0.4228	18	50473
+class-Choanoflagellata	class	Choanoflagellata	28009	4.8668	8.6687	618	126984
+class-Choanoflagellata|order-Craspedida	order	Craspedida	1924738	4.8668	8.6687	618	126984
+class-Choanoflagellata|order-Craspedida|family-Salpingoecidae|genus-Bicosta	genus	Bicosta	1864601	4.8668	5.8119	618	126984
+class-Choanoflagellata|order-Craspedida|family-Salpingoecidae|genus-Bicosta|species-Bicosta_minor	species	Bicosta minor	1864616	4.8668	5.7693	618	126984
+phylum-Ascomycota|class-Saccharomycetes	class	Saccharomycetes	4891	0.7138	1.2714	4	5604
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales	order	Saccharomycetales	4892	0.7138	1.2714	4	5604
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Debaryomyces	genus	Debaryomyces	4958	0.7138	0.8524	4	5604
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Debaryomyces|species-Debaryomyces_hansenii	species	Debaryomyces hansenii	4959	0.7138	0.8461	4	5604
+phylum-Ascomycota|class-Dothideomycetes	class	Dothideomycetes	147541	0.5614	1.0	4	7125
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales	order	Capnodiales	134362	0.5614	1.0	4	7125
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea	genus	Hortaea	91942	0.5614	0.6704	4	7125
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	species	Hortaea werneckii	91943	0.5614	0.6655	4	7125
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	37.2577	66.3636	30461	817577
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	37.2577	66.3636	30461	817577
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	46.2564	55.2393	27097	585800
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_polaris	species	Micromonas polaris	1848828	48.9642	58.0448	15071	307796
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	2.3364	2.7902	6	2568
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._'lucimarinus'	species	Ostreococcus sp. 'lucimarinus'	242159	0.1073	0.1272	6	55909
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	14.6504	17.4955	3358	229209
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	14.6504	17.3673	3358	229209
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	11.3129	20.1505	1934	170956
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	11.3129	20.1505	1934	170956
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	11.3129	13.5098	1934	170956
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	species	Phaeocystis antarctica	33657	11.452	13.5758	1815	158488

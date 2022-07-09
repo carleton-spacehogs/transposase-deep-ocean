@@ -1,0 +1,23 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Bathycoccus prasinos	41875	species	123	8380	100.0%	85.34%	99.09%	229209
+Stramenopiles sp. TOSAG23-3	1735745	species	39	146	65.0%	19.56%	99.74%	80549
+Arcocellulus cornucervis	1155433	species	38	101	45.78%	14.78%	99.34%	107135
+Haptolina ericina	156174	species	20	46	37.04%	15.5%	99.63%	58551
+Lithomelissa setosa	1054399	species	1	3	20.0%	69.27%	100.0%	2562
+Micromonas	38832	genus	26	54	14.61%	5.33%	97.81%	358692
+Pelagococcus subviridis	35679	species	8	12	12.12%	6.21%	99.72%	79272
+Micromonas polaris	1848828	species	15	31	9.93%	6.88%	99.64%	307796
+Micromonas pusilla	38833	species	2	2	7.69%	5.92%	96.97%	49695
+Micromonas sp. ASP10-01a	1621096	species	5	9	5.62%	7.09%	99.87%	191706
+Florenciella parvula	236787	species	4	8	5.48%	10.24%	99.07%	88783
+Pseudopedinella elastica	35684	species	4	4	4.65%	3.22%	99.5%	115627
+Minutocellus polymorphus	265543	species	5	14	3.36%	7.55%	96.91%	256500
+Phaeocystis antarctica	33657	species	3	5	3.0%	7.11%	97.58%	158488
+unclassified Bathycoccus	2590008	genus	1	1	1.92%	3.7%	97.0%	95463
+Ostreococcus lucimarinus CCE9901	436017	species	2	4	1.75%	11.79%	100.0%	233346
+Haptolina brevifila	156173	species	1	2	1.64%	9.24%	95.91%	79918
+Malassezia restricta	76775	species	2	3	1.33%	4.16%	98.93%	348317
+Pycnococcus provasolii	41880	species	1	2	1.03%	7.83%	98.95%	119181
+Alexandrium tamarense	2926	species	1	3	0.71%	16.52%	98.64%	194024
+Chaetoceros neogracilis	240364	species	1	2	0.65%	6.03%	100.0%	266485
+Eukaryota	2759	superkingdom	1	2	0.39%	11.3%	100.0%	467758
