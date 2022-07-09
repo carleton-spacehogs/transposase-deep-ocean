@@ -1,0 +1,35 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Stramenopiles sp. TOSAG23-2	1735743	species	46	1268	97.87%	74.91%	99.21%	66251
+unclassified Bathycoccus	2590008	genus	50	1392	96.15%	60.88%	98.4%	95463
+Bathycoccus sp. SAG1	2589996	species	4	31	80.0%	30.42%	98.87%	5703
+Pelagomonas calceolata	35677	species	59	1030	76.62%	28.3%	96.6%	128353
+Bathycoccus sp. SAG2	2589997	species	3	115	75.0%	51.18%	97.89%	8737
+Stramenopiles sp. TOSAG23-3	1735745	species	45	170	75.0%	19.83%	98.62%	80549
+Bathycoccus sp. TOSAG39-1	1735750	species	9	201	69.23%	47.71%	98.54%	28758
+Mamiellales	13792	order	2	16	66.67%	23.46%	98.12%	6183
+Stramenopiles sp. TOSAG41-1	1735744	species	31	148	59.62%	21.48%	98.45%	67745
+Bathycoccus sp. SAG4	2589999	species	4	59	57.14%	53.94%	97.97%	10392
+Bathycoccus sp. SAG3	2589998	species	2	59	50.0%	57.94%	98.26%	6679
+Cafeteria roenbergensis	33653	species	6	11	13.95%	6.61%	99.69%	50724
+Monosiga brevicollis MX1	431895	species	12	17	13.33%	6.85%	98.72%	126657
+Cyphellophora europaea CBS 101466	1220924	species	18	33	9.05%	5.8%	99.76%	391280
+Phaeocystis globosa	33658	species	7	14	6.03%	14.52%	99.16%	154798
+Bathycoccus prasinos	41875	species	6	13	4.88%	3.21%	97.1%	229209
+Ostreococcus sp. SAG10	2590005	species	1	2	4.0%	2.01%	100.0%	56396
+Ochroconis constricta UM 578	1442076	species	7	12	3.57%	6.83%	100.0%	370078
+Phaeocystis antarctica	33657	species	3	8	3.0%	8.31%	96.54%	158488
+Exophiala xenobiotica	348802	species	6	11	3.0%	6.37%	99.27%	372377
+Gephyrocapsa oceanica	38817	species	2	4	2.0%	14.67%	97.65%	137559
+Cadophora sp. DSE1049	1485229	species	3	3	1.45%	4.16%	97.69%	369337
+Durinskia baltica	400756	species	2	3	1.42%	4.31%	98.89%	244301
+Malassezia restricta	76775	species	2	4	1.33%	4.41%	99.17%	348317
+Candida parapsilosis	5480	species	2	4	1.16%	8.41%	99.7%	312010
+Prymnesium polylepis	72548	species	1	2	1.12%	4.77%	96.59%	134351
+Prasinococcaceae sp. CCMP 1430	2489100	species	1	1	0.92%	8.09%	97.03%	225148
+Chloropicon mariensis	1606511	species	1	2	0.91%	8.41%	100.0%	157984
+Lutzomyia longipalpis	7200	species	1	3	0.71%	8.49%	95.88%	236724
+Auxenochlorella protothecoides	3075	species	1	2	0.66%	2.72%	100.0%	300433
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	5.29%	98.84%	332937
+[Candida] aaseri	45518	species	1	2	0.57%	1.74%	99.32%	302091
+Cladosporium sphaerospermum UM 843	1151026	species	1	2	0.49%	12.57%	98.2%	363001
+Hortaea werneckii EXF-2000	1157616	species	1	2	0.27%	16.95%	99.45%	717212

@@ -1,0 +1,12 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+species-Stramenopiles_sp._TOSAG41-1	species	Stramenopiles sp. TOSAG41-1	1735744	9.0044	98.1729	610	67745
+class-Bolidophyceae	class	Bolidophyceae	91989	0.1311	62.45	14	106748
+class-Bolidophyceae|order-Parmales	order	Parmales	722750	0.1311	62.45	14	106748
+class-Bolidophyceae|order-Parmales|family-Triparmaceae	family	Triparmaceae	722751	0.1311	62.45	14	106748
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma	genus	Triparma	722752	0.1311	62.45	14	106748
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_eleuthera	species	Triparma eleuthera	172717	0.0887	0.9674	9	101435
+class-Bigyra	class	Bigyra	2683628	0.0789	37.55	4	50724
+class-Bigyra|order-Bicosoecida	order	Bicosoecida	33651	0.0789	37.55	4	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae	family	Cafeteriaceae	238884	0.0789	37.55	4	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria	genus	Cafeteria	33652	0.0789	37.55	4	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	species	Cafeteria roenbergensis	33653	0.0789	0.8598	4	50724

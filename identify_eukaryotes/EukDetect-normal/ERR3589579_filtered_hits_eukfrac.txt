@@ -1,0 +1,28 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+species-Stramenopiles_sp._TOSAG23-3	species	Stramenopiles sp. TOSAG23-3	1735745	0.5338	0.0945	43	80549
+phylum-Bacillariophyta|class-Coscinodiscophyceae	class	Coscinodiscophyceae	33836	0.0282	0.007	6	212563
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales	order	Thalassiosirales	33847	0.0282	0.007	6	212563
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Thalassiosiraceae|genus-Thalassiosira	genus	Thalassiosira	35127	0.0282	0.0048	6	212563
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Thalassiosiraceae|genus-Thalassiosira|species-Thalassiosira_antarctica	species	Thalassiosira antarctica	160265	0.0282	0.005	6	212563
+phylum-Bacillariophyta|class-Bacillariophyceae	class	Bacillariophyceae	33849	0.5114	0.1262	11	21510
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales	order	Bacillariales	33851	0.5114	0.1262	11	21510
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Fragilariopsis	genus	Fragilariopsis	186035	0.5114	0.0877	11	21510
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Fragilariopsis|species-Fragilariopsis_cylindrus	species	Fragilariopsis cylindrus	186039	0.5114	0.0905	11	21510
+class-Dictyochophyceae	class	Dictyochophyceae	39119	0.428	0.1056	38	88783
+class-Dictyochophyceae|order-Florenciellales	order	Florenciellales	590977	0.428	0.1056	38	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella	genus	Florenciella	236786	0.428	0.0734	38	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella|species-Florenciella_parvula	species	Florenciella parvula	236787	0.428	0.0758	38	88783
+phylum-Chordata|class-Appendicularia	class	Appendicularia	30302	0.1195	0.0295	14	117198
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	0.1195	0.0295	14	117198
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Fritillariidae|genus-Fritillaria	genus	Fritillaria	2507559	0.1195	0.0205	14	117198
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Fritillariidae|genus-Fritillaria|species-Fritillaria_borealis	species	Fritillaria borealis	2507563	0.1195	0.0211	14	117198
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	403.7727	99.6344	306881	760034
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	403.7727	99.6344	306881	760034
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	575.4119	98.6701	305443	530825
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_polaris	species	Micromonas polaris	1848828	556.7681	98.5402	171371	307796
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	6.2738	1.0758	1438	229209
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	6.2738	1.1104	1438	229209
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.3946	0.0974	64	162178
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	0.3946	0.0974	64	162178
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	0.3946	0.0677	64	162178
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	species	Phaeocystis antarctica	33657	0.3533	0.0625	56	158488

@@ -1,0 +1,22 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+unclassified Bathycoccus	2590008	genus	44	474	84.62%	34.87%	98.52%	95463
+Bathycoccus sp. TOSAG39-1	1735750	species	9	68	69.23%	24.26%	98.74%	28758
+Mamiellales	13792	order	2	9	66.67%	16.45%	98.09%	6183
+Bathycoccus sp. SAG1	2589996	species	3	9	60.0%	17.84%	99.42%	5703
+Bathycoccus sp. SAG3	2589998	species	2	17	50.0%	26.66%	98.68%	6679
+Bathycoccus sp. SAG2	2589997	species	2	24	50.0%	22.35%	98.64%	8737
+Bathycoccus sp. SAG4	2589999	species	3	15	42.86%	29.78%	98.73%	10392
+Stramenopiles sp. TOSAG23-2	1735743	species	20	59	42.55%	13.49%	99.55%	66251
+Pelagomonas calceolata	35677	species	21	71	27.27%	15.42%	98.17%	128353
+Ostreococcus sp. SAG9	2590004	species	1	2	25.0%	5.39%	99.39%	6096
+Chloropicon roscoffensis	1461544	species	23	43	14.56%	9.04%	99.19%	275974
+Ostreococcus sp. SAG10	2590005	species	3	6	12.0%	3.97%	99.62%	56396
+unclassified Ostreococcus	2268852	genus	1	1	8.33%	4.19%	97.87%	18843
+Stramenopiles sp. TOSAG41-1	1735744	species	3	6	5.77%	12.85%	99.06%	67745
+Bathycoccus prasinos	41875	species	4	7	3.25%	4.39%	99.19%	229209
+Phaeocystis globosa	33658	species	3	7	2.59%	12.78%	98.9%	154798
+Triparma pacifica	91992	species	1	2	1.79%	8.92%	100.0%	110146
+Stramenopiles sp. TOSAG23-3	1735745	species	1	2	1.67%	10.04%	98.22%	80549
+Oikopleura longicauda	107032	species	1	1	1.37%	3.65%	96.04%	120130
+Chloropicon primus	1764295	species	1	1	0.72%	5.65%	98.0%	281336
+Tetraselmis striata	3165	species	1	4	0.71%	8.44%	98.22%	255923

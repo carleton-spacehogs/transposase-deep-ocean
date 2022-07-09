@@ -1,0 +1,30 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Mamiellales	13792	order	3	19	100.0%	18.73%	98.79%	6183
+Stramenopiles sp. TOSAG41-1	1735744	species	50	621	96.15%	48.12%	99.05%	67745
+unclassified Bathycoccus	2590008	genus	49	665	94.23%	41.77%	99.53%	95463
+Stramenopiles sp. TOSAG23-2	1735743	species	44	660	93.62%	55.12%	99.22%	66251
+Ostreococcus sp. SAG9	2590004	species	3	6	75.0%	8.79%	99.8%	6096
+Bathycoccus sp. SAG2	2589997	species	3	50	75.0%	35.24%	99.36%	8737
+Bathycoccus sp. SAG4	2589999	species	5	25	71.43%	16.99%	99.55%	10392
+Ostreococcus sp. SAG12	2590007	species	9	28	69.23%	9.86%	99.77%	29000
+Bathycoccus sp. TOSAG39-1	1735750	species	9	120	69.23%	36.58%	99.49%	28758
+Ostreococcus sp. SAG10	2590005	species	17	68	68.0%	12.22%	99.43%	56396
+Micromonas pusilla	38833	species	17	48	65.38%	9.65%	98.12%	49695
+Chloropicon roscoffensis	1461544	species	102	425	64.56%	15.53%	99.31%	275974
+Bathycoccus sp. SAG1	2589996	species	3	18	60.0%	25.86%	99.0%	5703
+Pelagomonas calceolata	35677	species	42	264	54.55%	17.8%	98.09%	128353
+Micromonas	38832	genus	93	374	52.25%	10.82%	98.2%	358692
+unclassified Ostreococcus	2268852	genus	6	20	50.0%	14.82%	99.87%	18843
+Bathycoccus sp. SAG3	2589998	species	2	29	50.0%	39.6%	99.47%	6679
+Triparma eleuthera	172717	species	9	16	12.33%	7.67%	99.41%	101435
+Stramenopiles sp. TOSAG23-3	1735745	species	5	16	8.33%	11.33%	98.12%	80549
+Triparma pacifica	91992	species	4	7	7.14%	4.2%	99.5%	110146
+Phaeocystis globosa	33658	species	8	14	6.9%	11.71%	99.22%	154798
+Pelagococcus subviridis	35679	species	3	4	4.55%	7.59%	97.5%	79272
+Prasinococcaceae	2201465	family	1	2	4.0%	15.58%	98.0%	36508
+Phaeocystis antarctica	33657	species	3	5	3.0%	11.05%	97.47%	158488
+Pycnococcus provasolii	41880	species	2	4	2.06%	8.15%	98.17%	119181
+Bathycoccus prasinos	41875	species	2	5	1.63%	4.53%	97.27%	229209
+Prasinococcus capsulatus	156131	species	2	4	1.38%	6.73%	97.44%	248645
+Meyerozyma	766728	genus	1	2	0.76%	34.36%	100.0%	218630
+Papiliotrema laurentii RY1	1354741	species	1	2	0.7%	1.86%	98.02%	273637

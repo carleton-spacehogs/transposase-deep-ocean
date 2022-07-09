@@ -1,0 +1,40 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Stramenopiles sp. TOSAG23-2	1735743	species	46	1167	97.87%	74.74%	99.31%	66251
+Ostreococcus sp. SAG9	2590004	species	3	6	75.0%	10.6%	99.0%	6096
+unclassified Bathycoccus	2590008	genus	38	235	73.08%	21.48%	98.59%	95463
+Bathycoccus sp. SAG3	2589998	species	2	5	50.0%	9.75%	99.52%	6679
+Ostreococcus sp. SAG12	2590007	species	6	10	46.15%	5.08%	99.43%	29000
+Ostreococcus sp. SAG10	2590005	species	11	26	44.0%	8.53%	99.73%	56396
+Bathycoccus sp. TOSAG39-1	1735750	species	5	34	38.46%	21.31%	98.51%	28758
+Mamiellales	13792	order	1	17	33.33%	89.75%	99.87%	6183
+Micromonas pusilla	38833	species	8	19	30.77%	8.39%	97.69%	49695
+Bathycoccus sp. SAG4	2589999	species	2	4	28.57%	15.24%	98.27%	10392
+Bathycoccus sp. SAG2	2589997	species	1	13	25.0%	13.84%	99.11%	8737
+Pelagomonas calceolata	35677	species	19	60	24.68%	16.89%	98.09%	128353
+Stramenopiles sp. TOSAG41-1	1735744	species	12	30	23.08%	11.55%	99.11%	67745
+Bathycoccus sp. SAG1	2589996	species	1	2	20.0%	16.93%	99.23%	5703
+unclassified Ostreococcus	2268852	genus	2	4	16.67%	11.43%	99.7%	18843
+Micromonas	38832	genus	29	65	16.29%	4.43%	98.12%	358692
+Paraphysomonas bandaiensis	89770	species	13	27	14.61%	9.27%	99.61%	154847
+Triparma pacifica	91992	species	7	16	12.5%	4.83%	99.79%	110146
+Stramenopiles sp. TOSAG23-3	1735745	species	7	14	11.67%	9.29%	98.97%	80549
+Cafeteria roenbergensis	33653	species	5	8	11.63%	8.66%	99.56%	50724
+Emiliania huxleyi CCMP1516	280463	species	2	2	5.88%	7.58%	98.37%	44652
+Triparma eleuthera	172717	species	4	6	5.48%	10.36%	99.03%	101435
+Pelagococcus subviridis	35679	species	3	4	4.55%	3.2%	96.39%	79272
+Neobodo designis	312471	species	2	4	3.03%	21.47%	97.58%	100830
+Gephyrocapsa oceanica	38817	species	3	3	3.0%	3.66%	96.51%	137559
+Malassezia restricta	76775	species	3	6	2.0%	4.86%	99.42%	348317
+Exophiala xenobiotica	348802	species	4	8	2.0%	6.57%	99.7%	372377
+Aureococcus anophagefferens	44056	species	1	2	1.54%	15.11%	98.12%	85991
+Florenciella parvula	236787	species	1	1	1.37%	1.24%	97.67%	88783
+Chloropicon roscoffensis	1461544	species	2	3	1.27%	3.74%	99.54%	275974
+Prymnesium polylepis	72548	species	1	1	1.12%	3.37%	96.34%	134351
+Monosiga brevicollis MX1	431895	species	1	1	1.11%	7.32%	100.0%	126657
+Hortaea werneckii EXF-2000	1157616	species	4	7	1.08%	4.58%	99.31%	717212
+Phaeocystis antarctica	33657	species	1	2	1.0%	3.92%	96.61%	158488
+Bathycoccus prasinos	41875	species	1	2	0.81%	8.14%	96.23%	229209
+Alexandrium tamarense	2926	species	1	1	0.71%	6.98%	100.0%	194024
+Durinskia baltica	400756	species	1	2	0.71%	4.48%	100.0%	244301
+Tetraselmis striata	3165	species	1	42	0.71%	54.52%	97.38%	255923
+Lutzomyia longipalpis	7200	species	1	2	0.71%	7.96%	95.6%	236724

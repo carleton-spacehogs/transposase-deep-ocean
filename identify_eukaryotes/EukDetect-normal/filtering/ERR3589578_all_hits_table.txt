@@ -1,0 +1,22 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Fritillaria borealis	2507563	species	40	211	63.49%	17.04%	98.58%	117198
+Micromonas polaris	1848828	species	75	331	49.67%	15.39%	99.44%	307796
+Bathycoccus prasinos	41875	species	50	168	40.65%	10.18%	98.89%	229209
+Micromonas sp. ASP10-01a	1621096	species	36	134	40.45%	9.86%	99.63%	191706
+Phaeocystis antarctica	33657	species	28	174	28.0%	22.23%	97.5%	158488
+Lithomelissa setosa	1054399	species	1	2	20.0%	24.26%	98.71%	2562
+Micromonas	38832	genus	31	132	17.42%	25.26%	99.5%	358692
+Stramenopiles sp. TOSAG23-3	1735745	species	10	19	16.67%	8.39%	99.81%	80549
+Fragilariopsis cylindrus CCMP1102	635003	species	5	10	2.76%	3.5%	97.35%	370513
+Phaeocystis globosa	33658	species	3	8	2.59%	12.56%	97.5%	154798
+Arcocellulus cornucervis	1155433	species	2	3	2.41%	11.12%	100.0%	107135
+Oikopleura vanhoeffeni	2056977	species	2	3	2.41%	7.0%	100.0%	103290
+Bicosta minor	1864616	species	1	2	1.37%	7.28%	98.73%	126984
+Malassezia restricta	76775	species	2	4	1.33%	6.24%	99.69%	348317
+Skeletonema dohrnii	267566	species	1	2	0.88%	4.74%	100.0%	167667
+Ostreococcus lucimarinus CCE9901	436017	species	1	2	0.88%	1.99%	100.0%	233346
+Helgoeca nana	530540	species	1	1	0.87%	17.65%	100.0%	185375
+Detonula confervacea	83371	species	1	2	0.76%	11.16%	98.16%	252287
+Lutzomyia longipalpis	7200	species	1	1	0.71%	7.17%	95.12%	236724
+Protomyces lactucaedebilis	56484	species	1	1	0.64%	4.29%	97.75%	335789
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	3.9%	96.63%	332937

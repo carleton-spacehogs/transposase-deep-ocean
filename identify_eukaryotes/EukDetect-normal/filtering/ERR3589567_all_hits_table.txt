@@ -1,0 +1,28 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Micromonas polaris	1848828	species	135	6848	89.4%	48.69%	98.99%	307796
+Micromonas sp. ASP10-01a	1621096	species	70	3183	78.65%	40.38%	99.24%	191706
+Bathycoccus prasinos	41875	species	39	97	31.71%	7.43%	98.87%	229209
+Phaeocystis antarctica	33657	species	27	81	27.0%	12.66%	97.33%	158488
+Stramenopiles sp. TOSAG23-3	1735745	species	16	35	26.67%	9.42%	99.8%	80549
+Micromonas	38832	genus	35	2350	19.66%	94.95%	99.09%	358692
+Stramenopiles sp. TOSAG23-2	1735743	species	4	10	8.51%	7.35%	98.32%	66251
+Voromonas pontica	333133	species	1	2	6.25%	15.12%	100.0%	11409
+Fritillaria borealis	2507563	species	3	6	4.76%	7.95%	99.8%	117198
+Fragilariopsis cylindrus CCMP1102	635003	species	7	12	3.87%	3.89%	97.2%	370513
+Malassezia restricta	76775	species	5	10	3.33%	3.55%	99.31%	348317
+Cafeteria roenbergensis	33653	species	1	1	2.33%	5.58%	100.0%	50724
+Attheya septentrionalis	420275	species	2	3	2.08%	4.14%	100.0%	133632
+Malassezia globosa CBS 7966	425265	species	3	6	1.91%	8.99%	99.22%	332937
+Haptolina ericina	156174	species	1	2	1.85%	10.85%	99.44%	58551
+Haptolina brevifila	156173	species	1	1	1.64%	8.91%	97.03%	79918
+Florenciella parvula	236787	species	1	4	1.37%	17.65%	98.4%	88783
+Thalassiosira rotula	49265	species	1	2	1.18%	12.43%	97.59%	122590
+Debaryomyces hansenii CBS767	284592	species	2	4	1.09%	5.62%	100.0%	326457
+Exophiala xenobiotica	348802	species	2	4	1.0%	3.79%	100.0%	372377
+Cadophora sp. DSE1049	1485229	species	2	3	0.97%	2.06%	98.5%	369337
+Phaeocystis globosa	33658	species	1	1	0.86%	7.48%	97.03%	154798
+Skeletonema menzelii	216823	species	1	2	0.76%	7.15%	96.45%	226948
+Stygamoeba regulata	1042828	species	1	2	0.72%	18.05%	99.43%	200967
+Lutzomyia longipalpis	7200	species	1	1	0.71%	7.35%	96.43%	236724
+Saccharomyces cerevisiae S288C	559292	species	1	2	0.55%	24.8%	100.0%	308302
+Hortaea werneckii EXF-2000	1157616	species	1	2	0.27%	1.72%	100.0%	717212

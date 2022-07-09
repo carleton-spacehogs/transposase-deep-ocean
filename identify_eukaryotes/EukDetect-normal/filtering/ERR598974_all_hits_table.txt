@@ -1,0 +1,27 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Ostreococcus sp. SAG10	2590005	species	24	552	96.0%	53.72%	99.16%	56396
+Ostreococcus sp. SAG12	2590007	species	12	290	92.31%	59.26%	98.99%	29000
+unclassified Ostreococcus	2268852	genus	11	197	91.67%	56.92%	99.15%	18843
+unclassified Bathycoccus	2590008	genus	42	332	80.77%	28.88%	99.77%	95463
+Ostreococcus sp. SAG9	2590004	species	3	73	75.0%	61.87%	99.12%	6096
+Ostreococcus sp. SAG11	2590006	species	3	18	75.0%	41.92%	99.48%	5643
+Bathycoccus sp. SAG2	2589997	species	3	17	75.0%	20.49%	99.93%	8737
+Stramenopiles sp. TOSAG41-1	1735744	species	35	129	67.31%	20.32%	99.3%	67745
+Mamiellales	13792	order	2	34	66.67%	33.33%	99.38%	6183
+Bathycoccus sp. SAG4	2589999	species	4	15	57.14%	26.81%	99.62%	10392
+Bathycoccus sp. TOSAG39-1	1735750	species	7	64	53.85%	26.35%	99.71%	28758
+Bathycoccus sp. SAG3	2589998	species	2	27	50.0%	46.45%	99.8%	6679
+Bathycoccus sp. SAG1	2589996	species	2	4	40.0%	17.69%	99.69%	5703
+Stramenopiles sp. TOSAG23-2	1735743	species	18	40	38.3%	10.94%	99.2%	66251
+Micromonas pusilla	38833	species	8	16	30.77%	8.41%	98.04%	49695
+Micromonas	38832	genus	37	95	20.79%	6.03%	98.21%	358692
+Pelagomonas calceolata	35677	species	11	28	14.29%	9.52%	97.87%	128353
+Triparma eleuthera	172717	species	6	12	8.22%	10.38%	99.26%	101435
+Triparma pacifica	91992	species	4	5	7.14%	2.98%	100.0%	110146
+Prasinococcaceae	2201465	family	1	2	4.0%	17.17%	100.0%	36508
+Prasinoderma coloniale	156133	species	1	2	1.16%	12.93%	99.47%	155270
+Pycnococcus provasolii	41880	species	1	2	1.03%	5.71%	98.9%	119181
+Phaeocystis globosa	33658	species	1	2	0.86%	16.21%	100.0%	154798
+Bathycoccus prasinos	41875	species	1	2	0.81%	4.9%	98.1%	229209
+Chloropicon roscoffensis	1461544	species	1	2	0.63%	2.29%	100.0%	275974
+Candida parapsilosis	5480	species	1	2	0.58%	13.92%	100.0%	312010

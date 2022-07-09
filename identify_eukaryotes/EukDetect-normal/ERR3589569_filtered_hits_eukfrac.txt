@@ -1,0 +1,31 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+class-Choanoflagellata	class	Choanoflagellata	28009	0.3623	0.1056	46	126984
+class-Choanoflagellata|order-Craspedida	order	Craspedida	1924738	0.3623	0.1056	46	126984
+class-Choanoflagellata|order-Craspedida|family-Salpingoecidae|genus-Bicosta	genus	Bicosta	1864601	0.3623	0.0736	46	126984
+class-Choanoflagellata|order-Craspedida|family-Salpingoecidae|genus-Bicosta|species-Bicosta_minor	species	Bicosta minor	1864616	0.3623	0.0758	46	126984
+phylum-Bacillariophyta|class-Mediophyceae	class	Mediophyceae	589449	0.14	0.0408	15	107135
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales	order	Cymatosirales	420262	0.14	0.0408	15	107135
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Arcocellulus	genus	Arcocellulus	420263	0.14	0.0285	15	107135
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Arcocellulus|species-Arcocellulus_cornucervis	species	Arcocellulus cornucervis	1155433	0.14	0.0293	15	107135
+phylum-Bacillariophyta|class-Coscinodiscophyceae	class	Coscinodiscophyceae	33836	0.075	0.0219	25	333191
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales	order	Thalassiosirales	33847	0.075	0.0219	25	333191
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Skeletonemataceae|genus-Skeletonema	genus	Skeletonema	2842	0.075	0.0152	25	333191
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Skeletonemataceae|genus-Skeletonema|species-Skeletonema_marinoi	species	Skeletonema marinoi	267567	0.0726	0.0152	24	330644
+phylum-Bacillariophyta|class-Bacillariophyceae	class	Bacillariophyceae	33849	0.7672	0.2236	4	5214
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales	order	Bacillariales	33851	0.7672	0.2236	4	5214
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Fragilariopsis	genus	Fragilariopsis	186035	0.7672	0.1559	4	5214
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Fragilariopsis|species-Fragilariopsis_cylindrus	species	Fragilariopsis cylindrus	186039	0.7672	0.1605	4	5214
+class-Dictyochophyceae	class	Dictyochophyceae	39119	0.7321	0.2134	65	88783
+class-Dictyochophyceae|order-Florenciellales	order	Florenciellales	590977	0.7321	0.2134	65	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella	genus	Florenciella	236786	0.7321	0.1488	65	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella|species-Florenciella_parvula	species	Florenciella parvula	236787	0.7321	0.1532	65	88783
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	338.6296	98.7185	257177	759464
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	338.6296	98.7185	257177	759464
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	482.994	98.1605	256110	530255
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_polaris	species	Micromonas polaris	1848828	468.843	98.1034	144308	307796
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	4.6551	0.9461	1067	229209
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	4.6551	0.9741	1067	229209
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	2.3194	0.6761	382	164701
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	2.3194	0.6761	382	164701
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	2.3194	0.4714	382	164701
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	species	Phaeocystis antarctica	33657	2.3346	0.4885	370	158488

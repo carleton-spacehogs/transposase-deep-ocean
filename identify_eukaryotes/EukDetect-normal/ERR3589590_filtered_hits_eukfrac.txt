@@ -1,0 +1,29 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+class-Choanoflagellata	class	Choanoflagellata	28009	1.9058	0.9658	242	126984
+class-Choanoflagellata|order-Craspedida	order	Craspedida	1924738	1.9058	0.9658	242	126984
+class-Choanoflagellata|order-Craspedida|family-Salpingoecidae|genus-Bicosta	genus	Bicosta	1864601	1.9058	0.6745	242	126984
+class-Choanoflagellata|order-Craspedida|family-Salpingoecidae|genus-Bicosta|species-Bicosta_minor	species	Bicosta minor	1864616	1.9058	0.6944	242	126984
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.0115	0.0058	4	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.0115	0.0058	4	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.0115	0.0041	4	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.0115	0.0042	4	348317
+phylum-Chordata|class-Appendicularia	class	Appendicularia	30302	1.3833	0.701	305	220488
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	1.3833	0.701	305	220488
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Fritillariidae|genus-Fritillaria	genus	Fritillaria	2507559	0.0512	0.0181	6	117198
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Fritillariidae|genus-Fritillaria|species-Fritillaria_borealis	species	Fritillaria borealis	2507563	0.0512	0.0187	6	117198
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura	genus	Oikopleura	34763	2.8948	1.0245	299	103290
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_vanhoeffeni	species	Oikopleura vanhoeffeni	2056977	2.8948	1.0548	299	103290
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	192.6338	97.6223	146091	758387
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	192.6338	97.6223	146091	758387
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	275.8902	97.6383	145995	529178
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_polaris	species	Micromonas polaris	1848828	267.83	97.5879	82437	307796
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	0.4188	0.1482	96	229209
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	0.4188	0.1526	96	229209
+class-Dictyochophyceae	class	Dictyochophyceae	39119	0.1014	0.0514	9	88783
+class-Dictyochophyceae|order-Florenciellales	order	Florenciellales	590977	0.1014	0.0514	9	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella	genus	Florenciella	236786	0.1014	0.0359	9	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella|species-Florenciella_parvula	species	Florenciella parvula	236787	0.1014	0.0369	9	88783
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	1.2898	0.6537	211	163588
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	1.2898	0.6537	211	163588
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	1.2898	0.4565	211	163588
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	species	Phaeocystis antarctica	33657	1.2367	0.4506	196	158488
