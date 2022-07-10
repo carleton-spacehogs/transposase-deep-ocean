@@ -234,6 +234,12 @@ init_MAGs_CAZenzyme_peptide = function(){
   return(pa)
 }
 
+init_MAGs_eukaryote = function(){
+  euk = read_csv("../identify_eukaryotes/MAG_composition_summary.csv")
+  euk_short = euk[c("bin","eukarya_prop")]
+  return(euk_short)
+}
+
 init_integron <- function(){
   init_env()
   pn_ps_integron <- read_csv("data/all_integron_with_pnps_exploded.csv")

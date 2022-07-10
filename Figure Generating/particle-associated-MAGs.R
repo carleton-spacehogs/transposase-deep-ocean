@@ -2,6 +2,7 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
 source("./init_share.R")
 g(bin_taxon, depth_comparison, malaspina_bins, low_trans, high_trans) %=% init_bins()
 quantitative_particle_association = init_MAGs_CAZenzyme_peptide()
+quantitative_MAG_eukaryote = init_MAGs_eukaryote()
 
 selected <- c("bin","percent_trans", "log_percent_trans", "median_bin_pnps", "depth", 
               "size_fraction", "complete genome size (Mbp)", "Class", "Genus","Order")
@@ -18,14 +19,20 @@ all_p <- rbind(all_x, all_y) %>%
 
 all_p = merge(all_p, quantitative_particle_association, by = "bin")
 
+p_euk = merge(all_p, quantitative_MAG_eukaryote, bu = "bin")
+
 plot(`complete genome size (Mbp)` ~ percent_CAZ, data = all_p)
 
-plot(log(`complete genome size (Mbp)`) ~ sqrt(avg_percent), data = all_p)
+plot(log(`complete genome size (Mbp)`) ~ sqrt(avg_percent), data = p_euk)
+
+plot(log(`complete genome size (Mbp)`) ~ sqrt(avg_percent),
+     data = filter(p_euk, eukarya_prop < 0.01))
 
 plot(log(`complete genome size (Mbp)`) ~ sqrt(percent_CAZ), data = all_p)
 
 get_r(lm(log(`complete genome size (Mbp)`) ~ Class, data = all_p))
-summary(lm(log(`complete genome size (Mbp)`) ~ Class + depth + sqrt(avg_percent), data = all_p))
+summary(lm(log(`complete genome size (Mbp)`) ~ Class + depth + sqrt(avg_percent),
+           data = filter(p_euk, eukarya_prop < 0.05)))
 
 tmp <- all_p %>% group_by(Order, depth) %>%
   count() %>% filter(n > 5)

@@ -38,8 +38,9 @@ bd_to_graph %>%
 
 bd_to_graph %>%
   filter(!Layer_DNA %in% c("MIX",NA)) %>%
+  filter(!(Layer_DNA == "BAT" & size_fraction == "particle")) %>%
   ggplot(aes(x=percent_sect_CAZ, y=log_dna_defense)) +
-  facet_wrap(~Layer_DNA, ncol = 2) + # scales = "free"
+  facet_wrap(~Layer_DNA, ncol = 2, scales = "free") + # 
   scale_y_continuous(breaks = defense_scale, labels = defense_percent_scale) + # , limits=c(-2.3, -1.65) 
   geom_point(aes(color=size_fraction)) +
   theme_classic() +
