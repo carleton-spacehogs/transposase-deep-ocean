@@ -1,0 +1,16 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Bathycoccus prasinos	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	41875	100	690	81.3%	24.47%	99.31%
+Ostreococcus lucimarinus CCE9901	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._'lucimarinus'	436017	75	408	65.79%	17.22%	99.78%
+Tetrahymena thermophila	species	phylum-Ciliophora|class-Oligohymenophorea|order-Hymenostomatida|family-Tetrahymenidae|genus-Tetrahymena|species-Tetrahymena_thermophila	5911	5	10	62.5%	9.19%	99.89%
+Arcocellulus cornucervis	species	phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Arcocellulus|species-Arcocellulus_cornucervis	1155433	47	160	56.63%	17.42%	99.42%
+Aureococcus anophagefferens	species	class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus|species-Aureococcus_anophagefferens	44056	35	95	53.85%	15.05%	99.06%
+Triparma laevis	species	class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_laevis	1534972	19	58	52.78%	13.1%	99.07%
+Lithomelissa setosa	species	class-Polycystinea|order-Nassellaria|family-Plagiacanthidae|genus-Lithomelissa|species-Lithomelissa_setosa	1054399	2	9	40.0%	49.85%	98.82%
+Oikopleura vanhoeffeni	species	phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_vanhoeffeni	2056977	29	53	34.94%	11.15%	99.63%
+Phaeocystis antarctica	species	phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	33657	21	77	21.0%	10.69%	97.5%
+Florenciella parvula	species	class-Dictyochophyceae|order-Florenciellales|genus-Florenciella|species-Florenciella_parvula	236787	13	24	17.81%	8.32%	99.29%
+Micromonas pusilla	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_pusilla	38833	4	4	15.38%	4.49%	96.67%
+Stramenopiles sp. TOSAG23-3	species	species-Stramenopiles_sp._TOSAG23-3	1735745	9	16	15.0%	13.07%	99.85%
+Eukaryota	superkingdom		2759	38	108	14.84%	9.12%	99.73%
+Micromonas	genus	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	38832	22	64	12.36%	6.24%	97.28%
+Minutocellus polymorphus	species	phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Minutocellus|species-Minutocellus_polymorphus	265543	7	14	4.7%	6.18%	97.34%

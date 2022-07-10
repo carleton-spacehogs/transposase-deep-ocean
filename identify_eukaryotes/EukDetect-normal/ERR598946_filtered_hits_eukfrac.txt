@@ -1,0 +1,11 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	0.0633	44.5269	10	157984
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	0.0633	44.5269	10	157984
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae	family	Chloropicaceae	2302913	0.0633	44.5269	10	157984
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.0633	44.5269	10	157984
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_mariensis	species	Chloropicon mariensis	1606511	0.0633	44.5269	10	157984
+class-Bigyra	class	Bigyra	2683628	0.0789	55.4731	4	50724
+class-Bigyra|order-Bicosoecida	order	Bicosoecida	33651	0.0789	55.4731	4	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae	family	Cafeteriaceae	238884	0.0789	55.4731	4	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria	genus	Cafeteria	33652	0.0789	55.4731	4	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	species	Cafeteria roenbergensis	33653	0.0789	55.4731	4	50724

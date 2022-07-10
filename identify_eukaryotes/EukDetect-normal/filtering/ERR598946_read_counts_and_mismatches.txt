@@ -1,0 +1,13 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+greenalgae-Chloropicon_mariensis-306227at2759-S1	2	183	1	184	2345	7.85	99.46
+greenalgae-Chloropicon_mariensis-570797at2759-S1	2	170	2	172	2373	7.25	98.84
+greenalgae-Chloropicon_mariensis-598949at2759-S1	2	166	2	168	2583	6.5	98.81
+greenalgae-Chloropicon_mariensis-1019762at2759-S1	2	169	0	169	1773	9.53	100.0
+greenalgae-Chloropicon_mariensis-1442062at2759-S1	2	172	2	174	2418	7.2	98.85
+fungi-Cyphellophora_europaea_CBS_101466-604979at2759-S1	1	91	0	91	2037	4.47	100.0
+fungi-Malassezia_restricta-160593at2759-S1	1	96	0	96	7788	1.23	100.0
+fungi-Ochroconis_constricta_UM_578-692986at2759-S1	2	166	0	166	2739	6.06	100.0
+fungi-Exophiala_xenobiotica-1339553at2759-S1	1	101	0	101	3000	3.37	100.0
+protist-Cafeteria_roenbergensis-293315at2759-S1	2	158	1	159	4491	3.54	99.37
+protist-Cafeteria_roenbergensis-734666at2759-S1	2	171	0	171	1665	10.27	100.0
+other_MGCollapse_NSP3-818	1	96	0	96	876	10.96	100.0

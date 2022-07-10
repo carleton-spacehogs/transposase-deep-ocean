@@ -1,0 +1,3 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Cafeteria roenbergensis	species	class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	33653	2	4	4.65%	5.36%	99.7%
+Chloropicon mariensis	species	phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_mariensis	1606511	5	10	4.55%	7.54%	99.19%

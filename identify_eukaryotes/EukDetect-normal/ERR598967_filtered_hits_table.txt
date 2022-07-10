@@ -1,0 +1,5 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Stramenopiles sp. TOSAG23-2	species	species-Stramenopiles_sp._TOSAG23-2	1735743	46	1104	97.87%	72.36%	99.24%
+Voromonas pontica	species	family-Colpodellaceae|genus-Voromonas|species-Voromonas_pontica	333133	6	10	37.5%	17.42%	99.3%
+Triparma laevis	species	class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_laevis	1534972	6	11	16.67%	8.1%	99.23%
+Gephyrocapsa oceanica	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	38817	4	5	4.0%	4.84%	97.94%

@@ -1,0 +1,11 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Micromonas polaris	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_polaris	1848828	86	436	56.95%	18.4%	99.28%
+Micromonas sp. ASP10-01a	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_sp._ASP10-01a	1621096	43	188	48.31%	12.6%	99.51%
+Stramenopiles sp. TOSAG23-3	species	species-Stramenopiles_sp._TOSAG23-3	1735745	19	48	31.67%	11.65%	99.83%
+Micromonas	genus	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	38832	28	133	15.73%	26.75%	99.62%
+Stramenopiles sp. TOSAG23-2	species	species-Stramenopiles_sp._TOSAG23-2	1735743	4	8	8.51%	5.64%	97.01%
+Fritillaria borealis	species	phylum-Chordata|class-Appendicularia|order-Copelata|family-Fritillariidae|genus-Fritillaria|species-Fritillaria_borealis	2507563	3	5	4.76%	2.87%	99.04%
+Phaeocystis antarctica	species	phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	33657	4	8	4.0%	4.31%	97.17%
+Bathycoccus prasinos	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	41875	3	6	2.44%	3.93%	99.03%
+Cyphellophora europaea CBS 101466	species	phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Cyphellophoraceae|genus-Cyphellophora|species-Cyphellophora_europaea	1220924	3	6	1.51%	15.1%	99.39%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	2	4	1.33%	12.71%	99.71%

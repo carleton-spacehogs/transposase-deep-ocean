@@ -1,0 +1,12 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+other_MGCollapse_EASP3-692	1	86	0	86	498	17.27	100.0
+greenalgae-Chloropicon_roscoffensis-1236198at2759-S1	2	169	0	169	726	23.28	100.0
+greenalgae-Ostreococcus_SPCollapse_SP3	2	164	0	164	3627	4.52	100.0
+greenalgae-Ostreococcus_sp_SAG10-426305at2759-S1	2	165	4	169	2139	7.9	97.63
+greenalgae-Ostreococcus_sp_SAG10-1323575at2759-S1	1	101	0	101	603	16.75	100.0
+greenalgae-Bathycoccus_prasinos-918816at2759-S1	2	172	0	172	1776	9.68	100.0
+fungi-Cladosporium_sphaerospermum_UM_843-271586at2759-S1	2	171	2	173	5325	3.25	98.84
+fungi-Malassezia_restricta-679771at2759-S1	2	170	1	171	1461	11.7	99.42
+fungi-Rhodotorula_sp_JG-1b-176625at2759-S1	2	176	0	176	3915	4.5	100.0
+fungi-Malassezia_sympodialis_ATCC_42132-1269244at2759-S1	1	101	0	101	858	11.77	100.0
+fungi-Candida_parapsilosis-1312453at2759-S1	2	166	0	166	4593	3.61	100.0

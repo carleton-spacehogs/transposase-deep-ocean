@@ -1,0 +1,44 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+class-Choanoflagellata	class	Choanoflagellata	28009	0.2305	2.7208	72	312359
+class-Choanoflagellata|order-Craspedida	order	Craspedida	1924738	0.4804	5.4706	61	126984
+class-Choanoflagellata|order-Craspedida|family-Salpingoecidae|genus-Bicosta	genus	Bicosta	1864601	0.4804	3.4541	61	126984
+class-Choanoflagellata|order-Craspedida|family-Salpingoecidae|genus-Bicosta|species-Bicosta_minor	species	Bicosta minor	1864616	0.4804	3.5826	61	126984
+class-Choanoflagellata|order-Acanthoecida	order	Acanthoecida	1924739	0.0593	0.6758	11	185375
+class-Choanoflagellata|order-Acanthoecida|family-Acanthoecidae|genus-Helgoeca	genus	Helgoeca	530539	0.0593	0.4267	11	185375
+class-Choanoflagellata|order-Acanthoecida|family-Acanthoecidae|genus-Helgoeca|species-Helgoeca_nana	species	Helgoeca nana	530540	0.0593	0.4425	11	185375
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.0171	0.2015	6	351422
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.0171	0.1944	6	351422
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.0171	0.1228	6	351422
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.0115	0.0856	4	348317
+phylum-Chordata|class-Appendicularia	class	Appendicularia	30302	0.3001	3.5426	31	103290
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	0.3001	3.4179	31	103290
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura	genus	Oikopleura	34763	0.3001	2.158	31	103290
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_vanhoeffeni	species	Oikopleura vanhoeffeni	2056977	0.3001	2.2383	31	103290
+phylum-Bacillariophyta|class-Mediophyceae	class	Mediophyceae	589449	0.0373	0.4407	4	107135
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales	order	Cymatosirales	420262	0.0373	0.4252	4	107135
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Arcocellulus	genus	Arcocellulus	420263	0.0373	0.2685	4	107135
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Arcocellulus|species-Arcocellulus_cornucervis	species	Arcocellulus cornucervis	1155433	0.0373	0.2784	4	107135
+phylum-Bacillariophyta|class-Coscinodiscophyceae	class	Coscinodiscophyceae	33836	0.0204	0.2407	12	588408
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales	order	Thalassiosirales	33847	0.0204	0.2323	12	588408
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Thalassiosiraceae|genus-Detonula	genus	Detonula	83370	0.0159	0.114	4	252287
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Thalassiosiraceae|genus-Detonula|species-Detonula_confervacea	species	Detonula confervacea	83371	0.0159	0.1182	4	252287
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Skeletonemataceae|genus-Skeletonema	genus	Skeletonema	2842	0.0238	0.1711	8	336121
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Skeletonemataceae|genus-Skeletonema|species-Skeletonema_marinoi	species	Skeletonema marinoi	267567	0.0151	0.1128	5	330644
+phylum-Bacillariophyta|class-Bacillariophyceae	class	Bacillariophyceae	33849	0.5884	6.9459	20	33988
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales	order	Bacillariales	33851	0.5884	6.7013	20	33988
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Fragilariopsis	genus	Fragilariopsis	186035	0.5884	4.2311	20	33988
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Fragilariopsis|species-Fragilariopsis_cylindrus	species	Fragilariopsis cylindrus	186039	0.5884	4.3885	20	33988
+class-Dictyochophyceae	class	Dictyochophyceae	39119	0.0451	0.5318	4	88783
+class-Dictyochophyceae|order-Florenciellales	order	Florenciellales	590977	0.0451	0.5131	4	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella	genus	Florenciella	236786	0.0451	0.324	4	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella|species-Florenciella_parvula	species	Florenciella parvula	236787	0.0451	0.336	4	88783
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	7.1461	84.3518	5364	750617
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	7.1461	81.3815	5364	750617
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	8.7456	62.8841	4560	521408
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_polaris	species	Micromonas polaris	1848828	8.2847	61.7863	2550	307796
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	3.5077	25.2219	804	229209
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	3.5077	26.1601	804	229209
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.0868	1.024	14	161380
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	0.0868	0.9879	14	161380
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	0.0868	0.6238	14	161380
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	species	Phaeocystis antarctica	33657	0.0631	0.4706	10	158488

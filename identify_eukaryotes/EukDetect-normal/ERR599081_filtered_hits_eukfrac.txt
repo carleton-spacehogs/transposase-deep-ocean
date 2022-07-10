@@ -1,0 +1,23 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	9.9317	76.7333	1590	160094
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	9.9317	76.7333	1590	160094
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	10.082	77.0004	1582	156914
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_sp._TOSAG39-1	species	Bathycoccus sp. TOSAG39-1	1735750	7.2675	27.0374	209	28758
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	0.4071	3.1454	69	169486
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	0.4071	3.1454	69	169486
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.4071	3.1093	69	169486
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_mariensis	species	Chloropicon mariensis	1606511	0.3988	1.4836	63	157984
+species-Stramenopiles_sp._TOSAG23-3	species	Stramenopiles sp. TOSAG23-3	1735745	2.185	8.1289	176	80549
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	14.5054	53.9645	961	66251
+class-Bigyra	class	Bigyra	2683628	0.8872	6.8543	45	50724
+class-Bigyra|order-Bicosoecida	order	Bicosoecida	33651	0.8872	6.8543	45	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria	genus	Cafeteria	33652	0.8872	6.7756	45	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	species	Cafeteria roenbergensis	33653	0.8872	3.3005	45	50724
+class-Pelagophyceae	class	Pelagophyceae	35675	1.2933	9.9923	166	128353
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	1.2933	9.9923	166	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	1.2933	9.8776	166	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	1.2933	4.8115	166	128353
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.4239	3.2747	78	184027
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	0.4239	3.2747	78	184027
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	0.4239	3.2371	78	184027
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_globosa	species	Phaeocystis globosa	33658	0.3424	1.2738	53	154798

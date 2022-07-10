@@ -1,0 +1,16 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	37	96	24.67%	5.87%	99.25%
+Ochroconis constricta UM 578	species	phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae|genus-Ochroconis|species-Ochroconis_constricta	1442076	28	55	14.29%	6.07%	99.62%
+unclassified Bathycoccus	no rank	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	2590008	7	17	13.46%	8.26%	99.11%
+Stramenopiles sp. TOSAG23-2	species	species-Stramenopiles_sp._TOSAG23-2	1735743	4	8	8.51%	12.74%	99.7%
+Durinskia baltica	species	class-Dinophyceae|order-Peridiniales|family-Kryptoperidiniaceae|genus-Durinskia|species-Durinskia_baltica	400756	11	30	7.8%	7.56%	99.42%
+Pelagomonas calceolata	species	class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	35677	6	16	7.79%	9.82%	98.43%
+Thraustochytrium sp. ATCC 26185	species	class-Bigyra|order-Labyrinthulomycetes|family-Thraustochytriaceae|genus-Thraustochytrium|species-Thraustochytrium_sp._ATCC_26185	672127	4	9	7.69%	8.62%	100.0%
+Exophiala xenobiotica	species	phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala|species-Exophiala_xenobiotica	348802	11	18	5.5%	4.38%	98.88%
+Cyphellophora europaea CBS 101466	species	phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Cyphellophoraceae|genus-Cyphellophora|species-Cyphellophora_europaea	1220924	9	18	4.52%	6.84%	99.86%
+Cadophora sp. DSE1049	species	phylum-Ascomycota|class-Leotiomycetes|order-Helotiales|genus-Cadophora|species-Cadophora_sp._DSE1049	1485229	8	9	3.86%	3.44%	97.5%
+Thraustochytriaceae	family	class-Bigyra|order-Labyrinthulomycetes|family-Thraustochytriaceae	33674	2	4	2.99%	11.39%	100.0%
+Ostreococcus lucimarinus CCE9901	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._'lucimarinus'	436017	3	6	2.63%	5.87%	99.81%
+Hortaea werneckii EXF-2000	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	1157616	7	14	1.89%	3.93%	99.33%
+Chloropicon mariensis	species	phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_mariensis	1606511	2	4	1.82%	3.91%	99.66%
+Cladosporium sphaerospermum UM 843	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae|genus-Cladosporium|species-Cladosporium_sphaerospermum	1151026	3	6	1.48%	6.06%	98.9%

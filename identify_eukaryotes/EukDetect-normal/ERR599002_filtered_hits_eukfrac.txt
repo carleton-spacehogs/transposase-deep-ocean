@@ -1,0 +1,23 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	10.9816	93.9291	3161	287844
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae	family	Bathycoccaceae	1525212	11.102	93.9909	3127	281661
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_sp._TOSAG39-1	species	Bathycoccus sp. TOSAG39-1	1735750	10.2232	43.1459	294	28758
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._SAG10	species	Ostreococcus sp. SAG10	2590005	4.628	19.5318	261	56396
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	0.0362	0.3099	10	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae	family	Chloropicaceae	2302913	0.0362	0.3068	10	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	0.0362	0.1529	10	275974
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales	order	Prasinococcales	485343	0.0906	0.7751	22	242771
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae	family	Prasinococcaceae	2201465	0.0906	0.7672	22	242771
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|species-Prasinococcaceae_sp._CCMP_1430	species	Prasinococcaceae sp. CCMP 1430	2489100	0.0355	0.15	8	225148
+species-Stramenopiles_sp._TOSAG23-3	species	Stramenopiles sp. TOSAG23-3	1735745	0.0745	0.3144	6	80549
+species-Stramenopiles_sp._TOSAG41-1	species	Stramenopiles sp. TOSAG41-1	1735744	2.1404	9.0332	145	67745
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	6.098	25.7359	404	66251
+class-Bolidophyceae|order-Parmales	order	Parmales	722750	0.1627	1.3914	19	116794
+class-Bolidophyceae|order-Parmales|family-Triparmaceae	family	Triparmaceae	722751	0.1627	1.3773	19	116794
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_pacifica	species	Triparma pacifica	91992	0.1089	0.4598	12	110146
+phylum-Euglenozoa|order-Kinetoplastida	order	Kinetoplastida	5653	0.0397	0.3393	4	100830
+phylum-Euglenozoa|order-Kinetoplastida|family-Bodonidae	family	Bodonidae	5708	0.0397	0.3359	4	100830
+phylum-Euglenozoa|order-Kinetoplastida|family-Bodonidae|genus-Neobodo|species-Neobodo_designis	species	Neobodo designis	312471	0.0397	0.1674	4	100830
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	0.3806	3.2552	69	181305
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae	family	Phaeocystaceae	418920	0.3806	3.222	69	181305
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_globosa	species	Phaeocystis globosa	33658	0.3101	1.3087	48	154798

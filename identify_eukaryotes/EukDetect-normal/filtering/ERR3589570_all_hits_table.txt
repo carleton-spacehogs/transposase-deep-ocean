@@ -1,0 +1,19 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Micromonas polaris	1848828	species	86	436	56.95%	18.4%	99.28%	307796
+Micromonas sp. ASP10-01a	1621096	species	43	188	48.31%	12.6%	99.51%	191706
+Mamiellales	13792	order	1	2	33.33%	19.67%	95.81%	6183
+Stramenopiles sp. TOSAG23-3	1735745	species	19	48	31.67%	11.65%	99.83%	80549
+Micromonas	38832	genus	28	133	15.73%	26.75%	99.62%	358692
+Stramenopiles sp. TOSAG23-2	1735743	species	4	8	8.51%	5.64%	97.01%	66251
+Fritillaria borealis	2507563	species	3	5	4.76%	2.87%	99.04%	117198
+Phaeocystis antarctica	33657	species	4	8	4.0%	4.31%	97.17%	158488
+Florenciella parvula	236787	species	2	3	2.74%	8.44%	100.0%	88783
+Bathycoccus prasinos	41875	species	3	6	2.44%	3.93%	99.03%	229209
+Cyphellophora europaea CBS 101466	1220924	species	3	6	1.51%	15.1%	99.39%	391280
+Malassezia restricta	76775	species	2	4	1.33%	12.71%	99.71%	348317
+Lutzomyia longipalpis	7200	species	1	2	0.71%	8.49%	95.88%	236724
+Clavispora lusitaniae ATCC 42720	306902	species	1	2	0.58%	6.3%	100.0%	320224
+Cladosporium cladosporioides	29917	species	1	2	0.56%	2.71%	99.45%	333901
+Fragilariopsis cylindrus CCMP1102	635003	species	1	1	0.55%	3.11%	97.03%	370513
+Helotiales sp. F229	1967635	species	1	2	0.5%	2.98%	96.51%	364015
+Cadophora sp. DSE1049	1485229	species	1	1	0.48%	4.99%	98.96%	369337

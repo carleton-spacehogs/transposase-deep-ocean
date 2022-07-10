@@ -1,0 +1,46 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Ascomycota|class-Eurotiomycetes	class	Eurotiomycetes	147545	0.0914	3.7545	36	393804
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales	order	Chaetothyriales	34395	0.0914	3.0372	36	393804
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala	genus	Exophiala	5583	0.0483	0.9306	18	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala|species-Exophiala_xenobiotica	species	Exophiala xenobiotica	348802	0.0483	1.3279	18	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Cyphellophoraceae|genus-Cyphellophora	genus	Cyphellophora	226991	0.8401	16.1728	18	21427
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Cyphellophoraceae|genus-Cyphellophora|species-Cyphellophora_europaea	species	Cyphellophora europaea	293227	0.8401	23.077	18	21427
+phylum-Ascomycota|class-Leotiomycetes	class	Leotiomycetes	147548	0.0244	1.0008	9	369337
+phylum-Ascomycota|class-Leotiomycetes|order-Helotiales	order	Helotiales	5178	0.0244	0.8096	9	369337
+phylum-Ascomycota|class-Leotiomycetes|order-Helotiales|genus-Cadophora	genus	Cadophora	210567	0.0244	0.4691	9	369337
+phylum-Ascomycota|class-Leotiomycetes|order-Helotiales|genus-Cadophora|species-Cadophora_sp._DSE1049	species	Cadophora sp. DSE1049	1485229	0.0244	0.6694	9	369337
+phylum-Ascomycota|class-Dothideomycetes	class	Dothideomycetes	147541	0.6401	26.2887	75	117172
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales	order	Capnodiales	134362	0.5087	16.9002	20	39318
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea	genus	Hortaea	91942	0.4616	8.8874	14	30327
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	species	Hortaea werneckii	91943	0.4616	12.6814	14	30327
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae|genus-Cladosporium	genus	Cladosporium	5498	0.6673	12.8475	6	8991
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae|genus-Cladosporium|species-Cladosporium_sphaerospermum	species	Cladosporium sphaerospermum	92950	0.6673	18.3321	6	8991
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales	order	Venturiales	1111111	0.7065	23.4712	55	77854
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae|genus-Ochroconis	genus	Ochroconis	227045	0.7065	13.6006	55	77854
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae|genus-Ochroconis|species-Ochroconis_constricta	species	Ochroconis constricta	227046	0.7065	19.4066	55	77854
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.2842	11.6726	100	351854
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.2842	9.4426	100	351854
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.2842	5.4716	100	351854
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.2756	7.5712	96	348317
+class-Bigyra	class	Bigyra	2683628	0.1753	7.1985	13	74171
+class-Bigyra|order-Labyrinthulomycetes	order	Labyrinthulomycetes	35131	0.1753	5.8232	13	74171
+class-Bigyra|order-Labyrinthulomycetes|family-Thraustochytriaceae|genus-Thraustochytrium	genus	Thraustochytrium	4774	0.1266	2.437	9	71099
+class-Bigyra|order-Labyrinthulomycetes|family-Thraustochytriaceae|genus-Thraustochytrium|species-Thraustochytrium_sp._ATCC_26185	species	Thraustochytrium sp. ATCC 26185	672127	0.1266	3.4773	9	71099
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	0.1208	3.3172	8	66251
+class-Pelagophyceae	class	Pelagophyceae	35675	0.1247	5.1197	16	128353
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	0.1247	4.1416	16	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	0.1247	2.3999	16	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	0.1247	3.4244	16	128353
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	0.0253	1.0399	4	157984
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	0.0253	0.8412	4	157984
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.0253	0.4874	4	157984
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_mariensis	species	Chloropicon mariensis	1606511	0.0253	0.6955	4	157984
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	0.9467	38.8818	27	28520
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	0.9467	31.4534	27	28520
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	0.8015	15.4309	8	9981
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._'lucimarinus'	species	Ostreococcus sp. 'lucimarinus'	242159	0.0963	2.6466	6	62278
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	0.961	18.501	17	17690
+class-Dinophyceae	class	Dinophyceae	2864	0.1228	5.0435	30	244301
+class-Dinophyceae|order-Peridiniales	order	Peridiniales	2910	0.1228	4.0799	30	244301
+class-Dinophyceae|order-Peridiniales|family-Kryptoperidiniaceae|genus-Durinskia	genus	Durinskia	400754	0.1228	2.3641	30	244301
+class-Dinophyceae|order-Peridiniales|family-Kryptoperidiniaceae|genus-Durinskia|species-Durinskia_baltica	species	Durinskia baltica	400756	0.1228	3.3734	30	244301

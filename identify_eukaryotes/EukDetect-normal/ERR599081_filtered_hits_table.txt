@@ -1,0 +1,10 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Stramenopiles sp. TOSAG23-2	species	species-Stramenopiles_sp._TOSAG23-2	1735743	46	961	97.87%	70.37%	99.19%
+unclassified Bathycoccus	no rank	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	2590008	48	1169	92.31%	59.46%	98.4%
+Bathycoccus sp. TOSAG39-1	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_sp._TOSAG39-1	1735750	11	209	84.62%	39.23%	98.33%
+Stramenopiles sp. TOSAG23-3	species	species-Stramenopiles_sp._TOSAG23-3	1735745	41	176	68.33%	21.11%	99.1%
+Mamiellales	order	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	13792	2	8	66.67%	19.75%	98.57%
+Cafeteria roenbergensis	species	class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	33653	20	45	46.51%	13.01%	99.59%
+Pelagomonas calceolata	species	class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	35677	27	166	35.06%	19.83%	98.14%
+Chloropicon mariensis	species	phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_mariensis	1606511	26	63	23.64%	10.38%	99.68%
+Phaeocystis globosa	species	phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_globosa	33658	19	53	16.38%	17.31%	98.78%

@@ -1,0 +1,32 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+species-Stramenopiles_sp._TOSAG23-3	species	Stramenopiles sp. TOSAG23-3	1735745	0.5959	11.7433	48	80549
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	0.1208	2.3796	8	66251
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	0.9985	34.0439	765	766160
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	0.9985	34.0439	765	766160
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae	family	Mamiellaceae	41873	1.412	41.8672	757	536102
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	1.412	41.8672	757	536102
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_sp._ASP10-01a	species	Micromonas sp. ASP10-01a	1621096	0.9807	19.3255	188	191706
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_polaris	species	Micromonas polaris	1848828	1.4165	27.9146	436	307796
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae	family	Bathycoccaceae	1525212	0.0262	0.7761	6	229209
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	0.0262	0.7761	6	229209
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	0.0262	0.5159	6	229209
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.0115	0.3915	4	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.0115	0.3915	4	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae	family	Malasseziaceae	742845	0.0115	0.3405	4	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.0115	0.3405	4	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.0115	0.2263	4	348317
+phylum-Ascomycota|class-Eurotiomycetes	class	Eurotiomycetes	147545	1.8298	62.3889	6	3279
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales	order	Chaetothyriales	34395	1.8298	62.3889	6	3279
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Cyphellophoraceae	family	Cyphellophoraceae	1341112	1.8298	54.2545	6	3279
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Cyphellophoraceae|genus-Cyphellophora	genus	Cyphellophora	226991	1.8298	54.2545	6	3279
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Cyphellophoraceae|genus-Cyphellophora|species-Cyphellophora_europaea	species	Cyphellophora europaea	293227	1.8298	36.0594	6	3279
+phylum-Chordata|class-Appendicularia	class	Appendicularia	30302	0.0427	1.4546	5	117198
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	0.0427	1.4546	5	117198
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Fritillariidae	family	Fritillariidae	2507558	0.0427	1.265	5	117198
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Fritillariidae|genus-Fritillaria	genus	Fritillaria	2507559	0.0427	1.265	5	117198
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Fritillariidae|genus-Fritillaria|species-Fritillaria_borealis	species	Fritillaria borealis	2507563	0.0427	0.8407	5	117198
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.0505	1.721	8	158488
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	0.0505	1.721	8	158488
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae	family	Phaeocystaceae	418920	0.0505	1.4966	8	158488
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	0.0505	1.4966	8	158488
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	species	Phaeocystis antarctica	33657	0.0505	0.9947	8	158488

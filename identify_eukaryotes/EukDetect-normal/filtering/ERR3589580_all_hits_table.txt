@@ -1,0 +1,24 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Micromonas polaris	1848828	species	130	2550	86.09%	40.35%	99.32%	307796
+Bathycoccus prasinos	41875	species	104	804	84.55%	26.95%	99.19%	229209
+Micromonas sp. ASP10-01a	1621096	species	62	1139	69.66%	32.42%	99.33%	191706
+Bicosta minor	1864616	species	27	61	36.99%	8.32%	99.57%	126984
+Oikopleura vanhoeffeni	2056977	species	19	31	22.89%	8.72%	99.78%	103290
+Micromonas	38832	genus	38	871	21.35%	57.05%	99.39%	358692
+Lithomelissa setosa	1054399	species	1	2	20.0%	46.88%	99.44%	2562
+Helgoeca nana	530540	species	7	11	6.09%	5.2%	99.09%	185375
+Fragilariopsis cylindrus CCMP1102	635003	species	11	20	6.08%	5.03%	97.25%	370513
+Phaeocystis antarctica	33657	species	6	10	6.0%	5.94%	97.64%	158488
+Florenciella parvula	236787	species	3	4	4.11%	3.68%	97.28%	88783
+Aureobasidium	5579	genus	2	3	2.53%	4.02%	100.0%	123825
+Arcocellulus cornucervis	1155433	species	2	4	2.41%	18.45%	98.84%	107135
+Phaeocystis globosa	33658	species	2	4	1.72%	11.96%	97.11%	154798
+Detonula confervacea	83371	species	2	4	1.52%	4.91%	100.0%	252287
+Skeletonema menzelii	216823	species	2	3	1.52%	3.76%	98.06%	226948
+Malassezia restricta	76775	species	2	4	1.33%	4.28%	100.0%	348317
+Skeletonema marinoi	267567	species	2	5	1.2%	8.84%	99.31%	330644
+Diaphanoeca grandis	28014	species	1	1	0.94%	13.97%	99.01%	140015
+Ostreococcus mediterraneus	1486918	species	1	2	0.75%	5.14%	98.82%	261255
+Lutzomyia longipalpis	7200	species	1	1	0.71%	6.74%	97.4%	236724
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	5.6%	100.0%	332937
+Phialosimplex sp. HF37	1960876	species	1	2	0.49%	4.63%	97.02%	374233

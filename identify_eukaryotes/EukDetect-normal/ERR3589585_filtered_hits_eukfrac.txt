@@ -1,0 +1,26 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala	genus	Exophiala	5583	0.0483	0.7783	18	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala|species-Exophiala_xenobiotica	species	Exophiala xenobiotica	348802	0.0483	0.9289	18	372377
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Debaryomyces	genus	Debaryomyces	4958	0.5579	8.9823	8	14340
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Debaryomyces|species-Debaryomyces_hansenii	species	Debaryomyces hansenii	4959	0.5579	10.7202	8	14340
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.0345	0.5547	12	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.0345	0.662	12	348317
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura	genus	Oikopleura	34763	0.2324	3.7411	24	103290
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_vanhoeffeni	species	Oikopleura vanhoeffeni	2056977	0.2324	4.4649	24	103290
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Minutocellus	genus	Minutocellus	265542	0.078	1.2554	20	256500
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Minutocellus|species-Minutocellus_polymorphus	species	Minutocellus polymorphus	265543	0.078	1.4983	20	256500
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Arcocellulus	genus	Arcocellulus	420263	2.3708	38.1725	254	107135
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Arcocellulus|species-Arcocellulus_cornucervis	species	Arcocellulus cornucervis	1155433	2.3708	45.5578	254	107135
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma	genus	Triparma	722752	0.0793	1.276	4	50473
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_laevis	species	Triparma laevis	1534972	0.0793	1.5229	4	50473
+class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus	genus	Aureococcus	44055	0.4419	7.1151	38	85991
+class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus|species-Aureococcus_anophagefferens	species	Aureococcus anophagefferens	44056	0.4419	8.4916	38	85991
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	0.7262	11.6927	27	37179
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	1.0963	17.652	170	155061
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._'lucimarinus'	species	Ostreococcus sp. 'lucimarinus'	242159	0.8157	15.675	170	208402
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	0.3228	5.1981	74	229209
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	0.3228	6.2038	74	229209
+phylum-Chlorophyta|family-Pycnococcaceae|genus-Pycnococcus	genus	Pycnococcus	41879	0.1846	2.9721	22	119181
+phylum-Chlorophyta|family-Pycnococcaceae|genus-Pycnococcus|species-Pycnococcus_provasolii	species	Pycnococcus provasolii	41880	0.1846	3.5471	22	119181
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	0.0379	0.6095	6	158488
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	species	Phaeocystis antarctica	33657	0.0379	0.7275	6	158488

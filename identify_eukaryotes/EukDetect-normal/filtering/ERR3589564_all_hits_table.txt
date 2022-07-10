@@ -1,0 +1,26 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Bathycoccus prasinos	41875	species	100	690	81.3%	24.47%	99.31%	229209
+Ostreococcus lucimarinus CCE9901	436017	species	75	408	65.79%	17.22%	99.78%	233346
+Tetrahymena thermophila	5911	species	5	10	62.5%	9.19%	99.89%	15300
+Arcocellulus cornucervis	1155433	species	47	160	56.63%	17.42%	99.42%	107135
+Aureococcus anophagefferens	44056	species	35	95	53.85%	15.05%	99.06%	85991
+Triparma laevis	1534972	species	19	58	52.78%	13.1%	99.07%	50473
+Lithomelissa setosa	1054399	species	2	9	40.0%	49.85%	98.82%	2562
+Oikopleura vanhoeffeni	2056977	species	29	53	34.94%	11.15%	99.63%	103290
+Alveolata	33630	superkingdom	2	2	28.57%	8.78%	100.0%	6135
+Phaeocystis antarctica	33657	species	21	77	21.0%	10.69%	97.5%	158488
+Florenciella parvula	236787	species	13	24	17.81%	8.32%	99.29%	88783
+Micromonas pusilla	38833	species	4	4	15.38%	4.49%	96.67%	49695
+Stramenopiles sp. TOSAG23-3	1735745	species	9	16	15.0%	13.07%	99.85%	80549
+Eukaryota	2759	superkingdom	38	108	14.84%	9.12%	99.73%	467758
+Micromonas	38832	genus	22	64	12.36%	6.24%	97.28%	358692
+Minutocellus polymorphus	265543	species	7	14	4.7%	6.18%	97.34%	256500
+Phaeocystis globosa	33658	species	4	6	3.45%	9.1%	98.58%	154798
+Stramenopiles sp. TOSAG23-2	1735743	species	1	2	2.13%	7.85%	98.93%	66251
+Pelagococcus subviridis	35679	species	1	2	1.52%	5.21%	99.47%	79272
+Pycnococcus provasolii	41880	species	1	2	1.03%	18.16%	100.0%	119181
+Alexandrium tamarense	2926	species	1	7	0.71%	34.76%	97.41%	194024
+Lutzomyia longipalpis	7200	species	1	2	0.71%	8.66%	95.96%	236724
+Calocera viscosa TUFC12733	1330018	species	1	1	0.57%	2.34%	96.91%	364392
+Fragilariopsis cylindrus CCMP1102	635003	species	1	1	0.55%	3.41%	98.02%	370513
+Hortaea werneckii EXF-2000	1157616	species	1	2	0.27%	2.74%	98.91%	717212

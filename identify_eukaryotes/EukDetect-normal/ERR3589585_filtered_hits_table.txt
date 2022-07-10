@@ -1,0 +1,15 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Arcocellulus cornucervis	species	phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Arcocellulus|species-Arcocellulus_cornucervis	1155433	56	254	67.47%	24.62%	99.47%
+Ostreococcus lucimarinus CCE9901	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._'lucimarinus'	436017	52	170	45.61%	9.92%	99.8%
+Aureococcus anophagefferens	species	class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus|species-Aureococcus_anophagefferens	44056	19	38	29.23%	8.86%	98.68%
+Bathycoccus prasinos	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	41875	31	74	25.2%	7.27%	99.38%
+Oikopleura vanhoeffeni	species	phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_vanhoeffeni	2056977	16	24	19.28%	11.47%	98.99%
+Pycnococcus provasolii	species	phylum-Chlorophyta|family-Pycnococcaceae|genus-Pycnococcus|species-Pycnococcus_provasolii	41880	11	22	11.34%	11.97%	99.31%
+Eukaryota	superkingdom		2759	22	52	8.59%	7.91%	99.75%
+Triparma laevis	species	class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_laevis	1534972	3	4	8.33%	3.17%	99.23%
+Micromonas	genus	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	38832	14	26	7.87%	5.8%	97.42%
+Minutocellus polymorphus	species	phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Minutocellus|species-Minutocellus_polymorphus	265543	10	20	6.71%	5.06%	97.23%
+Exophiala xenobiotica	species	phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala|species-Exophiala_xenobiotica	348802	10	18	5.0%	7.0%	99.57%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	6	12	4.0%	4.76%	99.16%
+Phaeocystis antarctica	species	phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	33657	3	6	3.0%	4.17%	97.28%
+Debaryomyces hansenii CBS767	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Debaryomyces|species-Debaryomyces_hansenii	284592	4	8	2.19%	4.76%	100.0%

@@ -1,0 +1,14 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Micromonas polaris	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_polaris	1848828	130	2550	86.09%	40.35%	99.32%
+Bathycoccus prasinos	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	41875	104	804	84.55%	26.95%	99.19%
+Bicosta minor	species	class-Choanoflagellata|order-Craspedida|family-Salpingoecidae|genus-Bicosta|species-Bicosta_minor	1864616	27	61	36.99%	8.32%	99.57%
+Oikopleura vanhoeffeni	species	phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_vanhoeffeni	2056977	19	31	22.89%	8.72%	99.78%
+Micromonas	genus	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	38832	38	871	21.35%	57.05%	99.39%
+Helgoeca nana	species	class-Choanoflagellata|order-Acanthoecida|family-Acanthoecidae|genus-Helgoeca|species-Helgoeca_nana	530540	7	11	6.09%	5.2%	99.09%
+Fragilariopsis cylindrus CCMP1102	species	phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Fragilariopsis|species-Fragilariopsis_cylindrus	635003	11	20	6.08%	5.03%	97.25%
+Phaeocystis antarctica	species	phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	33657	6	10	6.0%	5.94%	97.64%
+Florenciella parvula	species	class-Dictyochophyceae|order-Florenciellales|genus-Florenciella|species-Florenciella_parvula	236787	3	4	4.11%	3.68%	97.28%
+Arcocellulus cornucervis	species	phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Arcocellulus|species-Arcocellulus_cornucervis	1155433	2	4	2.41%	18.45%	98.84%
+Detonula confervacea	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Thalassiosiraceae|genus-Detonula|species-Detonula_confervacea	83371	2	4	1.52%	4.91%	100.0%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	2	4	1.33%	4.28%	100.0%
+Skeletonema marinoi	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Skeletonemataceae|genus-Skeletonema|species-Skeletonema_marinoi	267567	2	5	1.2%	8.84%	99.31%

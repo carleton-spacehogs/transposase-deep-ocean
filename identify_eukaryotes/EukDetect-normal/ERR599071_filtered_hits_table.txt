@@ -1,0 +1,9 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Exophiala xenobiotica	species	phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala|species-Exophiala_xenobiotica	348802	17	34	8.5%	5.57%	99.8%
+Ochroconis constricta UM 578	species	phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae|genus-Ochroconis|species-Ochroconis_constricta	1442076	15	27	7.65%	4.68%	99.74%
+Cyphellophora europaea CBS 101466	species	phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Cyphellophoraceae|genus-Cyphellophora|species-Cyphellophora_europaea	1220924	12	21	6.03%	5.01%	99.61%
+Thraustochytriaceae	family	class-Bigyra|order-Labyrinthulomycetes|family-Thraustochytriaceae	33674	3	6	4.48%	8.22%	100.0%
+Thecamonas trahens ATCC 50062	species	family-Apusomonadidae|genus-Thecamonas|species-Thecamonas_trahens	461836	2	4	3.03%	6.11%	100.0%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	4	7	2.67%	3.45%	99.51%
+Cladosporium sphaerospermum UM 843	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae|genus-Cladosporium|species-Cladosporium_sphaerospermum	1151026	3	5	1.48%	6.04%	100.0%
+Cadophora sp. DSE1049	species	phylum-Ascomycota|class-Leotiomycetes|order-Helotiales|genus-Cadophora|species-Cadophora_sp._DSE1049	1485229	3	5	1.45%	4.14%	97.49%

@@ -1,0 +1,19 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Exophiala xenobiotica	348802	species	17	34	8.5%	5.57%	99.8%	372377
+Ochroconis constricta UM 578	1442076	species	15	27	7.65%	4.68%	99.74%	370078
+Cyphellophora europaea CBS 101466	1220924	species	12	21	6.03%	5.01%	99.61%	391280
+Thraustochytriaceae	33674	family	3	6	4.48%	8.22%	100.0%	81045
+Thecamonas trahens ATCC 50062	461836	species	2	4	3.03%	6.11%	100.0%	96258
+Malassezia restricta	76775	species	4	7	2.67%	3.45%	99.51%	348317
+Cafeteria roenbergensis	33653	species	1	2	2.33%	4.07%	99.45%	50724
+Stramenopiles sp. TOSAG23-2	1735743	species	1	2	2.13%	28.02%	98.28%	66251
+Malassezia globosa CBS 7966	425265	species	3	5	1.91%	5.24%	98.83%	332937
+Rhodotorula diobovata	5288	species	3	3	1.84%	3.3%	99.63%	358851
+Cladosporium sphaerospermum UM 843	1151026	species	3	5	1.48%	6.04%	100.0%	363001
+Cadophora sp. DSE1049	1485229	species	3	5	1.45%	4.14%	97.49%	369337
+Gephyrocapsa oceanica	38817	species	1	2	1.0%	4.74%	97.35%	137559
+Tetraselmis striata	3165	species	1	4	0.71%	9.04%	98.06%	255923
+Lutzomyia longipalpis	7200	species	1	1	0.71%	7.7%	96.59%	236724
+Candida orthopsilosis Co 90-125	1136231	species	1	2	0.6%	4.38%	97.4%	306002
+Yarrowia lipolytica CLIB122	284591	species	1	2	0.53%	2.42%	100.0%	346692
+Hortaea werneckii EXF-2000	1157616	species	1	2	0.27%	6.91%	100.0%	717212

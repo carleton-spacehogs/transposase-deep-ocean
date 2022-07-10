@@ -1,0 +1,9 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Saccharomyces cerevisiae S288C	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces|species-Saccharomyces_cerevisiae	559292	60	152	32.97%	7.36%	99.77%
+Candida parapsilosis	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida|species-Candida_parapsilosis	5480	25	55	14.53%	7.55%	99.87%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	18	37	12.0%	4.45%	99.35%
+Cafeteria roenbergensis	species	class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	33653	4	10	9.3%	16.37%	99.6%
+Monosiga brevicollis MX1	species	class-Choanoflagellata|order-Craspedida|family-Salpingoecidae|genus-Monosiga|species-Monosiga_brevicollis	431895	4	6	4.44%	6.41%	99.44%
+Cladosporium sphaerospermum UM 843	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae|genus-Cladosporium|species-Cladosporium_sphaerospermum	1151026	5	9	2.46%	6.43%	98.88%
+Meyerozyma	genus	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Meyerozyma	766728	2	4	1.53%	8.17%	100.0%
+Chloropicon roscoffensis	species	phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	1461544	2	4	1.27%	11.59%	98.79%

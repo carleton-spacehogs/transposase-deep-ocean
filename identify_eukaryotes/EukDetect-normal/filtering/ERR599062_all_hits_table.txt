@@ -1,0 +1,11 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+unclassified Ostreococcus	2268852	genus	1	2	8.33%	4.52%	100.0%	18843
+Ostreococcus sp. SAG10	2590005	species	2	3	8.0%	9.85%	98.52%	56396
+Bathycoccus prasinos	41875	species	1	2	0.81%	9.68%	100.0%	229209
+Malassezia sympodialis ATCC 42132	1230383	species	1	1	0.72%	11.77%	100.0%	313165
+Malassezia restricta	76775	species	1	2	0.67%	11.7%	99.42%	348317
+Chloropicon roscoffensis	1461544	species	1	2	0.63%	23.28%	100.0%	275974
+Candida parapsilosis	5480	species	1	2	0.58%	3.61%	100.0%	312010
+Micromonas	38832	genus	1	1	0.56%	17.27%	100.0%	358692
+Rhodotorula sp. JG-1b	1305733	species	1	2	0.56%	4.5%	100.0%	395750
+Cladosporium sphaerospermum UM 843	1151026	species	1	2	0.49%	3.25%	98.84%	363001

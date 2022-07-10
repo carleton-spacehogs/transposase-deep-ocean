@@ -1,0 +1,18 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Saccharomyces cerevisiae S288C	559292	species	60	152	32.97%	7.36%	99.77%	308302
+Candida parapsilosis	5480	species	25	55	14.53%	7.55%	99.87%	312010
+Malassezia restricta	76775	species	18	37	12.0%	4.45%	99.35%	348317
+Cafeteria roenbergensis	33653	species	4	10	9.3%	16.37%	99.6%	50724
+Malassezia globosa CBS 7966	425265	species	7	15	4.46%	4.39%	98.39%	332937
+Monosiga brevicollis MX1	431895	species	4	6	4.44%	6.41%	99.44%	126657
+Ostreococcus sp. SAG10	2590005	species	1	2	4.0%	8.66%	98.92%	56396
+Aspergillus ochraceus	40380	species	1	1	3.7%	4.61%	98.02%	49122
+Cladosporium sphaerospermum UM 843	1151026	species	5	9	2.46%	6.43%	98.88%	363001
+Meyerozyma	766728	genus	2	4	1.53%	8.17%	100.0%	218630
+Chloropicon roscoffensis	1461544	species	2	4	1.27%	11.59%	98.79%	275974
+Rhodotorula diobovata	5288	species	2	3	1.23%	2.13%	98.87%	358851
+Rhodotorula sp. JG-1b	1305733	species	2	2	1.11%	6.82%	100.0%	395750
+Tetraselmis striata	3165	species	1	1	0.71%	2.45%	100.0%	255923
+Saccharomyces eubayanus	1080349	species	1	2	0.55%	16.73%	97.2%	304194
+[Nectria] haematococca mpVI 77-13-4	660122	no rank	1	2	0.49%	8.9%	100.0%	351719
+Aureobasidium melanogenum	46634	species	1	2	0.49%	2.3%	99.46%	367526

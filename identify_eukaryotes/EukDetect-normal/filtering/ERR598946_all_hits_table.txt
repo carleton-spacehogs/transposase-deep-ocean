@@ -1,0 +1,8 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Cafeteria roenbergensis	33653	species	2	4	4.65%	5.36%	99.7%	50724
+Chloropicon mariensis	1606511	species	5	10	4.55%	7.54%	99.19%	157984
+Thraustochytriaceae	33674	family	1	1	1.49%	10.96%	100.0%	81045
+Malassezia restricta	76775	species	1	1	0.67%	1.23%	100.0%	348317
+Ochroconis constricta UM 578	1442076	species	1	2	0.51%	6.06%	100.0%	370078
+Cyphellophora europaea CBS 101466	1220924	species	1	1	0.5%	4.47%	100.0%	391280
+Exophiala xenobiotica	348802	species	1	1	0.5%	3.37%	100.0%	372377

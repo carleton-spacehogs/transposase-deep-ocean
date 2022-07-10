@@ -1,0 +1,27 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Stramenopiles sp. TOSAG23-2	1735743	species	46	961	97.87%	70.37%	99.19%	66251
+unclassified Bathycoccus	2590008	genus	48	1169	92.31%	59.46%	98.4%	95463
+Bathycoccus sp. TOSAG39-1	1735750	species	11	209	84.62%	39.23%	98.33%	28758
+Bathycoccus sp. SAG1	2589996	species	4	27	80.0%	25.18%	98.37%	5703
+Bathycoccus sp. SAG2	2589997	species	3	68	75.0%	41.45%	98.14%	8737
+Stramenopiles sp. TOSAG23-3	1735745	species	41	176	68.33%	21.11%	99.1%	80549
+Mamiellales	13792	order	2	8	66.67%	19.75%	98.57%	6183
+Bathycoccus sp. SAG3	2589998	species	2	52	50.0%	56.22%	98.45%	6679
+Cafeteria roenbergensis	33653	species	20	45	46.51%	13.01%	99.59%	50724
+Bathycoccus sp. SAG4	2589999	species	3	52	42.86%	57.76%	98.24%	10392
+Pelagomonas calceolata	35677	species	27	166	35.06%	19.83%	98.14%	128353
+Ostreococcus sp. SAG9	2590004	species	1	2	25.0%	5.94%	98.9%	6096
+Chloropicon mariensis	1606511	species	26	63	23.64%	10.38%	99.68%	157984
+Phaeocystis globosa	33658	species	19	53	16.38%	17.31%	98.78%	154798
+Phaeocystis antarctica	33657	species	12	25	12.0%	7.36%	97.3%	158488
+Bathycoccus prasinos	41875	species	4	5	3.25%	2.81%	96.71%	229209
+Emiliania huxleyi CCMP1516	280463	species	1	1	2.94%	5.57%	100.0%	44652
+Chloropicon roscoffensis	1461544	species	4	6	2.53%	4.6%	99.43%	275974
+Stramenopiles sp. TOSAG41-1	1735744	species	1	23	1.92%	70.71%	99.03%	67745
+Aureococcus anophagefferens	44056	species	1	1	1.54%	4.62%	97.94%	85991
+Pelagococcus subviridis	35679	species	1	1	1.52%	9.32%	96.97%	79272
+Triparma eleuthera	172717	species	1	2	1.37%	11.62%	96.72%	101435
+Paraphysomonas bandaiensis	89770	species	1	2	1.12%	5.45%	99.43%	154847
+Prymnesium polylepis	72548	species	1	1	1.12%	1.16%	98.78%	134351
+Gephyrocapsa oceanica	38817	species	1	1	1.0%	2.5%	98.9%	137559
+Tetraselmis striata	3165	species	1	56	0.71%	55.15%	97.55%	255923

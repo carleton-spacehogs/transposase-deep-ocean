@@ -1,0 +1,35 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.1371	6.0517	52	379372
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.1371	6.0517	52	379372
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae	family	Malasseziaceae	742845	0.1371	4.3555	52	379372
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.1371	3.4176	52	379372
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.1062	3.4284	37	348317
+phylum-Ascomycota|class-Saccharomycetes	class	Saccharomycetes	4891	0.4753	20.9866	213	448099
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales	order	Saccharomycetales	4892	0.4753	20.9866	213	448099
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae	family	Debaryomycetaceae	766764	0.1864	5.9219	59	316588
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida	genus	Candida	1535326	0.1763	4.3952	55	312010
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida|species-Candida_parapsilosis	species	Candida parapsilosis	5480	0.1763	5.6892	55	312010
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Meyerozyma	genus	Meyerozyma	766728	0.8737	21.7855	4	4578
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae	family	Saccharomycetaceae	4893	1.171	37.2101	154	131511
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces	genus	Saccharomyces	4930	1.171	29.1973	154	131511
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces|species-Saccharomyces_cerevisiae	species	Saccharomyces cerevisiae	4932	1.1634	37.5468	152	130656
+phylum-Ascomycota|class-Dothideomycetes	class	Dothideomycetes	147541	0.7189	31.7401	9	12519
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales	order	Capnodiales	134362	0.7189	31.7401	9	12519
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae	family	Cladosporiaceae	452563	0.7189	22.8442	9	12519
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae|genus-Cladosporium	genus	Cladosporium	5498	0.7189	17.9249	9	12519
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae|genus-Cladosporium|species-Cladosporium_sphaerospermum	species	Cladosporium sphaerospermum	92950	0.7189	23.2023	9	12519
+class-Choanoflagellata	class	Choanoflagellata	28009	0.722	31.8776	6	8310
+class-Choanoflagellata|order-Craspedida	order	Craspedida	1924738	0.722	31.8776	6	8310
+class-Choanoflagellata|order-Craspedida|family-Salpingoecidae	family	Salpingoecidae	81529	0.722	22.9431	6	8310
+class-Choanoflagellata|order-Craspedida|family-Salpingoecidae|genus-Monosiga	genus	Monosiga	81525	0.722	18.0026	6	8310
+class-Choanoflagellata|order-Craspedida|family-Salpingoecidae|genus-Monosiga|species-Monosiga_brevicollis	species	Monosiga brevicollis	81824	0.722	23.3028	6	8310
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	0.0145	0.6399	4	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	0.0145	0.6399	4	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae	family	Chloropicaceae	2302913	0.0145	0.4606	4	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.0145	0.3614	4	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	0.0145	0.4678	4	275974
+class-Bigyra	class	Bigyra	2683628	0.1971	8.7041	10	50724
+class-Bigyra|order-Bicosoecida	order	Bicosoecida	33651	0.1971	8.7041	10	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae	family	Cafeteriaceae	238884	0.1971	6.2645	10	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria	genus	Cafeteria	33652	0.1971	4.9155	10	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	species	Cafeteria roenbergensis	33653	0.1971	6.3627	10	50724

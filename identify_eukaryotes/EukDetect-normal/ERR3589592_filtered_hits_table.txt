@@ -1,0 +1,18 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Arcocellulus cornucervis	species	phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Arcocellulus|species-Arcocellulus_cornucervis	1155433	83	992	100.0%	53.39%	99.39%
+Bathycoccus prasinos	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	41875	123	8168	100.0%	85.0%	98.79%
+Aureococcus anophagefferens	species	class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus|species-Aureococcus_anophagefferens	44056	61	622	93.85%	45.71%	98.49%
+Ostreococcus lucimarinus CCE9901	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._'lucimarinus'	436017	91	813	79.82%	28.32%	99.75%
+Tetrahymena thermophila	species	phylum-Ciliophora|class-Oligohymenophorea|order-Hymenostomatida|family-Tetrahymenidae|genus-Tetrahymena|species-Tetrahymena_thermophila	5911	5	13	62.5%	12.27%	99.91%
+Triparma laevis	species	class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_laevis	1534972	22	78	61.11%	17.31%	99.38%
+Florenciella parvula	species	class-Dictyochophyceae|order-Florenciellales|genus-Florenciella|species-Florenciella_parvula	236787	38	80	52.05%	11.64%	99.6%
+Stramenopiles sp. TOSAG23-3	species	species-Stramenopiles_sp._TOSAG23-3	1735745	20	47	33.33%	15.42%	99.9%
+Micromonas	genus	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	38832	59	718	33.15%	9.02%	96.44%
+Micromonas pusilla	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_pusilla	38833	8	39	30.77%	8.25%	96.23%
+Phaeocystis antarctica	species	phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	33657	28	90	28.0%	11.35%	97.61%
+Eukaryota	superkingdom		2759	49	186	19.14%	12.87%	99.82%
+Minutocellus polymorphus	species	phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Minutocellus|species-Minutocellus_polymorphus	265543	22	97	14.77%	11.06%	97.1%
+Pycnococcus provasolii	species	phylum-Chlorophyta|family-Pycnococcaceae|genus-Pycnococcus|species-Pycnococcus_provasolii	41880	5	8	5.15%	9.03%	99.74%
+Meyerozyma	genus	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Meyerozyma	766728	5	10	3.82%	5.16%	99.89%
+Alexandrium tamarense	species	class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium|species-Alexandrium_tamarense	2926	2	92	1.42%	29.7%	96.7%
+Debaryomyces hansenii CBS767	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Debaryomyces|species-Debaryomyces_hansenii	284592	2	4	1.09%	9.92%	100.0%

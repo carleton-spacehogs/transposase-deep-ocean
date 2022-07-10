@@ -1,0 +1,35 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Mamiellales	13792	order	1	2	33.33%	21.79%	100.0%	6183
+Ostreococcus sp. SAG9	2590004	species	1	2	25.0%	10.65%	99.32%	6096
+Ostreococcus sp. SAG11	2590006	species	1	2	25.0%	14.94%	99.36%	5643
+Malassezia restricta	76775	species	37	96	24.67%	5.87%	99.25%	348317
+Bathycoccus sp. SAG4	2589999	species	1	1	14.29%	8.68%	100.0%	10392
+Ochroconis constricta UM 578	1442076	species	28	55	14.29%	6.07%	99.62%	370078
+unclassified Bathycoccus	2590008	genus	7	17	13.46%	8.26%	99.11%	95463
+Stramenopiles sp. TOSAG23-2	1735743	species	4	8	8.51%	12.74%	99.7%	66251
+Durinskia baltica	400756	species	11	30	7.8%	7.56%	99.42%	244301
+Pelagomonas calceolata	35677	species	6	16	7.79%	9.82%	98.43%	128353
+Thraustochytrium sp. ATCC 26185	672127	species	4	9	7.69%	8.62%	100.0%	71099
+Exophiala xenobiotica	348802	species	11	18	5.5%	4.38%	98.88%	372377
+Aurantiochytrium sp. T66	1749249	species	1	2	4.55%	14.04%	100.0%	29706
+Cyphellophora europaea CBS 101466	1220924	species	9	18	4.52%	6.84%	99.86%	391280
+Cadophora sp. DSE1049	1485229	species	8	9	3.86%	3.44%	97.5%	369337
+Porphyra purpurea	2787	species	1	1	3.12%	28.29%	99.01%	38656
+Thraustochytriaceae	33674	family	2	4	2.99%	11.39%	100.0%	81045
+Ostreococcus lucimarinus CCE9901	436017	species	3	6	2.63%	5.87%	99.81%	233346
+Cafeteria roenbergensis	33653	species	1	1	2.33%	7.93%	98.98%	50724
+Paraphysomonas bandaiensis	89770	species	2	3	2.25%	7.17%	99.65%	154847
+Monosiga brevicollis MX1	431895	species	2	3	2.22%	15.72%	98.9%	126657
+Hortaea werneckii EXF-2000	1157616	species	7	14	1.89%	3.93%	99.33%	717212
+Chloropicon mariensis	1606511	species	2	4	1.82%	3.91%	99.66%	157984
+Cladosporium sphaerospermum UM 843	1151026	species	3	6	1.48%	6.06%	98.9%	363001
+Malassezia globosa CBS 7966	425265	species	2	4	1.27%	9.67%	99.42%	332937
+Bathycoccus prasinos	41875	species	1	1	0.81%	3.02%	97.53%	229209
+Tetraselmis striata	3165	species	1	4	0.71%	8.89%	97.75%	255923
+Auxenochlorella protothecoides	3075	species	1	2	0.66%	10.93%	100.0%	300433
+Rhodotorula diobovata	5288	species	1	2	0.61%	2.73%	100.0%	358851
+Meyerozyma sp. JA9	2028340	species	1	2	0.58%	14.47%	99.46%	372451
+Candida parapsilosis	5480	species	1	2	0.58%	10.11%	100.0%	312010
+Candida sake	39397	species	1	2	0.56%	7.92%	98.36%	323512
+Debaryomyces hansenii CBS767	284592	species	1	2	0.55%	18.06%	98.15%	326457
+Lecanicillium sp. LEC01	2013060	species	1	2	0.49%	15.89%	100.0%	354158

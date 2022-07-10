@@ -1,0 +1,11 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae	family	Noelaerhabdaceae	418966	0.0363	3.0456	5	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa	genus	Gephyrocapsa	38816	0.0363	3.0456	5	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	species	Gephyrocapsa oceanica	38817	0.0363	0.2043	5	137559
+family-Colpodellaceae	family	Colpodellaceae	177937	0.8765	73.4411	10	11409
+family-Colpodellaceae|genus-Voromonas	genus	Voromonas	333132	0.8765	73.4411	10	11409
+family-Colpodellaceae|genus-Voromonas|species-Voromonas_pontica	species	Voromonas pontica	333133	0.8765	4.9256	10	11409
+class-Bolidophyceae|order-Parmales|family-Triparmaceae	family	Triparmaceae	722751	0.2806	23.5133	15	53452
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma	genus	Triparma	722752	0.2806	23.5133	15	53452
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_laevis	species	Triparma laevis	1534972	0.2179	1.2247	11	50473
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	16.6639	93.6454	1104	66251

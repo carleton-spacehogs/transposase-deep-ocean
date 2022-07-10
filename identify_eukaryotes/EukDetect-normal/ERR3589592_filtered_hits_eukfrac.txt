@@ -1,0 +1,29 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+species-Stramenopiles_sp._TOSAG23-3	species	Stramenopiles sp. TOSAG23-3	1735745	0.5835	0.9325	47	80549
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Minutocellus	genus	Minutocellus	265542	0.3782	0.5719	97	256500
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Minutocellus|species-Minutocellus_polymorphus	species	Minutocellus polymorphus	265543	0.3782	0.6044	97	256500
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Arcocellulus	genus	Arcocellulus	420263	9.2593	14.0023	992	107135
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Arcocellulus|species-Arcocellulus_cornucervis	species	Arcocellulus cornucervis	1155433	9.2593	14.7981	992	107135
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella	genus	Florenciella	236786	0.9011	1.3626	80	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella|species-Florenciella_parvula	species	Florenciella parvula	236787	0.9011	1.4401	80	88783
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma	genus	Triparma	722752	1.532	2.3168	81	52872
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_laevis	species	Triparma laevis	1534972	1.5454	2.4698	78	50473
+class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus	genus	Aureococcus	44055	7.2333	10.9385	622	85991
+class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus|species-Aureococcus_anophagefferens	species	Aureococcus anophagefferens	44056	7.2333	11.5602	622	85991
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Meyerozyma	genus	Meyerozyma	766728	0.5792	0.8759	10	17265
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Debaryomyces	genus	Debaryomyces	4958	1.2602	1.9058	4	3174
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Debaryomyces|species-Debaryomyces_hansenii	species	Debaryomyces hansenii	4959	1.2602	2.0141	4	3174
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium	genus	Alexandrium	2924	0.4742	0.7171	92	194024
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium|species-Alexandrium_tamarense	species	Alexandrium tamarense	2926	0.4742	0.7578	92	194024
+phylum-Ciliophora|class-Oligohymenophorea|order-Hymenostomatida|family-Tetrahymenidae|genus-Tetrahymena	genus	Tetrahymena	5890	0.8497	1.2849	13	15300
+phylum-Ciliophora|class-Oligohymenophorea|order-Hymenostomatida|family-Tetrahymenidae|genus-Tetrahymena|species-Tetrahymena_thermophila	species	Tetrahymena thermophila	5911	0.8497	1.3579	13	15300
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	3.5644	5.3902	772	216586
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_pusilla	species	Micromonas pusilla	38833	0.7848	1.2542	39	49695
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	3.7831	5.7209	813	214905
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._'lucimarinus'	species	Ostreococcus sp. 'lucimarinus'	242159	3.0308	4.8438	813	268246
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	35.6356	53.8896	8168	229209
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	35.6356	56.9522	8168	229209
+phylum-Chlorophyta|family-Pycnococcaceae|genus-Pycnococcus	genus	Pycnococcus	41879	0.0671	0.1015	8	119181
+phylum-Chlorophyta|family-Pycnococcaceae|genus-Pycnococcus|species-Pycnococcus_provasolii	species	Pycnococcus provasolii	41880	0.0671	0.1073	8	119181
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	0.6097	0.922	99	162370
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	species	Phaeocystis antarctica	33657	0.5679	0.9076	90	158488

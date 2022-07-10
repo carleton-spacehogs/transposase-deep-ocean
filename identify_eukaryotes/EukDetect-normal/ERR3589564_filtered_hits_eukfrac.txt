@@ -1,0 +1,44 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+species-Stramenopiles_sp._TOSAG23-3	species	Stramenopiles sp. TOSAG23-3	1735745	0.1986	1.4021	16	80549
+phylum-Bacillariophyta|class-Mediophyceae	class	Mediophyceae	589449	0.4785	4.6139	174	363635
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales	order	Cymatosirales	420262	0.4785	4.6139	174	363635
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Minutocellus	genus	Minutocellus	265542	0.0546	0.3645	14	256500
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Minutocellus|species-Minutocellus_polymorphus	species	Minutocellus polymorphus	265543	0.0546	0.3853	14	256500
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Arcocellulus	genus	Arcocellulus	420263	1.4934	9.9722	160	107135
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Arcocellulus|species-Arcocellulus_cornucervis	species	Arcocellulus cornucervis	1155433	1.4934	10.5415	160	107135
+class-Dictyochophyceae	class	Dictyochophyceae	39119	0.2703	2.6066	24	88783
+class-Dictyochophyceae|order-Florenciellales	order	Florenciellales	590977	0.2703	2.6066	24	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella	genus	Florenciella	236786	0.2703	1.805	24	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella|species-Florenciella_parvula	species	Florenciella parvula	236787	0.2703	1.9081	24	88783
+class-Bolidophyceae	class	Bolidophyceae	91989	1.1491	11.0805	58	50473
+class-Bolidophyceae|order-Parmales	order	Parmales	722750	1.1491	11.0805	58	50473
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma	genus	Triparma	722752	1.1491	7.6731	58	50473
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_laevis	species	Triparma laevis	1534972	1.1491	8.1112	58	50473
+class-Pelagophyceae	class	Pelagophyceae	35675	1.1048	10.6527	95	85991
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	1.1048	10.6527	95	85991
+class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus	genus	Aureococcus	44055	1.1048	7.3769	95	85991
+class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus|species-Aureococcus_anophagefferens	species	Aureococcus anophagefferens	44056	1.1048	7.7981	95	85991
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	2.182	21.0402	1166	534366
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	2.182	21.0402	1166	534366
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	0.6197	4.1382	68	109725
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_pusilla	species	Micromonas pusilla	38833	0.0805	0.5682	4	49695
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	2.0877	13.9402	408	195432
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._'lucimarinus'	species	Ostreococcus sp. 'lucimarinus'	242159	1.64	11.5764	408	248773
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	3.0104	20.1011	690	229209
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	3.0104	21.2487	690	229209
+phylum-Chordata|class-Appendicularia	class	Appendicularia	30302	0.5131	4.9477	53	103290
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	0.5131	4.9477	53	103290
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura	genus	Oikopleura	34763	0.5131	3.4263	53	103290
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_vanhoeffeni	species	Oikopleura vanhoeffeni	2056977	0.5131	3.6219	53	103290
+phylum-Ciliophora|class-Oligohymenophorea	class	Oligohymenophorea	6020	0.6536	6.3023	10	15300
+phylum-Ciliophora|class-Oligohymenophorea|order-Hymenostomatida	order	Hymenostomatida	31277	0.6536	6.3023	10	15300
+phylum-Ciliophora|class-Oligohymenophorea|order-Hymenostomatida|family-Tetrahymenidae|genus-Tetrahymena	genus	Tetrahymena	5890	0.6536	4.3643	10	15300
+phylum-Ciliophora|class-Oligohymenophorea|order-Hymenostomatida|family-Tetrahymenidae|genus-Tetrahymena|species-Tetrahymena_thermophila	species	Tetrahymena thermophila	5911	0.6536	4.6134	10	15300
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.5064	4.8832	83	163894
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	0.5064	4.8832	83	163894
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	0.5064	3.3816	83	163894
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	species	Phaeocystis antarctica	33657	0.4858	3.4293	77	158488
+class-Polycystinea	class	Polycystinea	65582	3.5129	33.8729	9	2562
+class-Polycystinea|order-Nassellaria	order	Nassellaria	278980	3.5129	33.8729	9	2562
+class-Polycystinea|order-Nassellaria|family-Plagiacanthidae|genus-Lithomelissa	genus	Lithomelissa	366587	3.5129	23.4567	9	2562
+class-Polycystinea|order-Nassellaria|family-Plagiacanthidae|genus-Lithomelissa|species-Lithomelissa_setosa	species	Lithomelissa setosa	1054399	3.5129	24.7959	9	2562

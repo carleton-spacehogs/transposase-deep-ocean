@@ -1,0 +1,15 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Mamiellales	order	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	13792	3	34	100.0%	28.68%	99.04%
+unclassified Bathycoccus	no rank	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	2590008	51	2020	98.08%	69.73%	98.31%
+Ostreococcus sp. SAG10	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._SAG10	2590005	24	261	96.0%	33.89%	99.52%
+Stramenopiles sp. TOSAG23-2	species	species-Stramenopiles_sp._TOSAG23-2	1735743	42	404	89.36%	42.25%	99.36%
+Bathycoccus sp. TOSAG39-1	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_sp._TOSAG39-1	1735750	11	294	84.62%	40.33%	98.39%
+unclassified Ostreococcus	no rank	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	2268852	10	74	83.33%	31.32%	99.79%
+Stramenopiles sp. TOSAG41-1	species	species-Stramenopiles_sp._TOSAG41-1	1735744	38	145	73.08%	21.94%	98.93%
+Prasinococcaceae	family	phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae	2201465	7	14	28.0%	7.01%	99.27%
+Phaeocystis globosa	species	phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_globosa	33658	19	48	16.38%	19.06%	99.13%
+Triparma pacifica	species	class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_pacifica	91992	5	12	8.93%	6.51%	99.89%
+Stramenopiles sp. TOSAG23-3	species	species-Stramenopiles_sp._TOSAG23-3	1735745	3	6	5.0%	8.19%	97.35%
+Prasinococcaceae sp. CCMP 1430	species	phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|species-Prasinococcaceae_sp._CCMP_1430	2489100	4	8	3.67%	6.27%	99.42%
+Chloropicon roscoffensis	species	phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	1461544	5	10	3.16%	8.97%	99.07%
+Neobodo designis	species	phylum-Euglenozoa|order-Kinetoplastida|family-Bodonidae|genus-Neobodo|species-Neobodo_designis	312471	2	4	3.03%	9.13%	97.99%
