@@ -1,0 +1,5 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Ostreococcus sp. SAG10	2590005	species	1	2	4.0%	7.9%	97.63%	56396
+Stramenopiles sp. TOSAG23-2	1735743	species	1	2	2.13%	2.2%	96.79%	66251
+unclassified Bathycoccus	2590008	genus	1	2	1.92%	4.31%	98.1%	95463
+Cladosporium sphaerospermum UM 843	1151026	species	2	3	0.99%	10.25%	99.21%	363001

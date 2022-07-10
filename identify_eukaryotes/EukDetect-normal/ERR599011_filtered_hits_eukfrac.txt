@@ -1,0 +1,12 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+species-Stramenopiles_sp._TOSAG41-1	species	Stramenopiles sp. TOSAG41-1	1735744	3.8822	94.0685	263	67745
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	0.1358	3.2917	9	66251
+class-Bolidophyceae	class	Bolidophyceae	91989	0.1456	15.2817	17	116728
+class-Bolidophyceae|order-Parmales	order	Parmales	722750	0.1456	15.2817	17	116728
+class-Bolidophyceae|order-Parmales|family-Triparmaceae	family	Triparmaceae	722751	0.1456	15.2817	17	116728
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma	genus	Triparma	722752	0.1456	15.2817	17	116728
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_pacifica	species	Triparma pacifica	91992	0.1089	2.6398	12	110146
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	0.8074	84.7183	7	8670
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	0.8074	84.7183	7	8670
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae	family	Mamiellaceae	41873	0.8074	84.7183	7	8670
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	0.8074	84.7183	7	8670

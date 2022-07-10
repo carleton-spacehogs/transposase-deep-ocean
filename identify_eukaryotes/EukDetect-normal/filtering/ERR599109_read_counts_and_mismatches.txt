@@ -1,0 +1,2 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+greenalgae-Ostreococcus_sp_SAG9-759498at2759-S1	2	170	0	170	3063	5.55	100.0

@@ -1,0 +1,6 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+greenalgae-Ostreococcus_sp_SAG10-426305at2759-S1	2	165	4	169	2139	7.9	97.63
+greenalgae-Bathycoccus_SPCollapse_SP3-3	2	155	3	158	3667	4.31	98.1
+fungi-Cladosporium_sphaerospermum_UM_843-976469at2759-S1	1	95	0	95	1116	8.51	100.0
+fungi-Cladosporium_sphaerospermum_UM_843-1010730at2759-S1	2	157	2	159	1362	11.67	98.74
+protist-Stramenopiles_sp_TOSAG23-2-156083at2759-S1	2	151	5	156	7107	2.2	96.79

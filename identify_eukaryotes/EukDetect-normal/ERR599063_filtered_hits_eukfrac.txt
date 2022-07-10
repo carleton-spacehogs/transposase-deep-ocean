@@ -1,0 +1,11 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+species-Stramenopiles_sp._TOSAG41-1	species	Stramenopiles sp. TOSAG41-1	1735744	0.31	44.4873	21	67745
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	0.1962	28.1608	13	66251
+class-Pelagophyceae	class	Pelagophyceae	35675	0.1324	65.6267	17	128353
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	0.1324	65.6267	17	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	0.1324	65.6267	17	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	0.1324	19.008	17	128353
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.0694	34.3733	11	158566
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	0.0694	34.3733	11	158566
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	0.0694	34.3733	11	158566
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_globosa	species	Phaeocystis globosa	33658	0.0581	8.3439	9	154798

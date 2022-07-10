@@ -1,0 +1,9 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Stramenopiles sp. TOSAG41-1	1735744	species	44	263	84.62%	30.2%	99.25%	67745
+Triparma pacifica	91992	species	6	12	10.71%	4.95%	99.5%	110146
+Stramenopiles sp. TOSAG23-2	1735743	species	5	9	10.64%	6.28%	98.95%	66251
+Triparma eleuthera	172717	species	3	5	4.11%	6.37%	99.76%	101435
+Cafeteria roenbergensis	33653	species	1	2	2.33%	3.87%	99.43%	50724
+Micromonas	38832	genus	4	7	2.25%	7.59%	98.78%	358692
+Arthropoda	6656	phylum	1	2	2.13%	14.41%	100.0%	60948
+Tyrophagus putrescentiae	59818	species	1	2	0.86%	3.5%	97.16%	241626

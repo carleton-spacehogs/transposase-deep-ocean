@@ -1,0 +1,6 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Ostreococcus sp. SAG10	2590005	species	2	4	8.0%	2.99%	99.39%	56396
+Malassezia restricta	76775	species	4	8	2.67%	2.83%	100.0%	348317
+unclassified Bathycoccus	2590008	genus	1	1	1.92%	4.29%	97.73%	95463
+Malassezia globosa CBS 7966	425265	species	1	1	0.64%	2.39%	100.0%	332937
+Micromonas	38832	genus	1	2	0.56%	3.01%	97.27%	358692

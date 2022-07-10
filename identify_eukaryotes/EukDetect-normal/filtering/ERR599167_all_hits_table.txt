@@ -1,0 +1,4 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Monosiga brevicollis MX1	431895	species	2	2	2.22%	9.57%	99.47%	126657
+Malassezia restricta	76775	species	1	1	0.67%	1.17%	100.0%	348317
+Cladosporium sphaerospermum UM 843	1151026	species	1	1	0.49%	2.24%	100.0%	363001

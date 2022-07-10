@@ -1,0 +1,5 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+fungi-Cladosporium_sphaerospermum_UM_843-166920at2759-S1	1	101	0	101	4506	2.24	100.0
+fungi-Malassezia_restricta-39650at2759-S1	1	86	0	86	7377	1.17	100.0
+protist-Monosiga_brevicollis_MX1-944899at2759-S1	1	99	0	99	1083	9.14	100.0
+protist-Monosiga_brevicollis_MX1-1014314at2759-S1	1	90	1	91	903	10.08	98.9

@@ -1,0 +1,14 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Chloropicon roscoffensis	1461544	species	23	47	14.56%	8.57%	99.43%	275974
+Cyphellophora europaea CBS 101466	1220924	species	8	16	4.02%	5.83%	99.93%	391280
+unclassified Bathycoccus	2590008	genus	2	3	3.85%	3.02%	98.18%	95463
+Stramenopiles sp. TOSAG23-2	1735743	species	1	4	2.13%	4.81%	97.95%	66251
+Stramenopiles sp. TOSAG41-1	1735744	species	1	1	1.92%	12.12%	100.0%	67745
+Thalassiosira oceanica	159749	species	1	2	1.02%	6.58%	98.48%	165190
+Tyrophagus putrescentiae	59818	species	1	1	0.86%	1.89%	98.0%	241626
+Chloropicon primus	1764295	species	1	2	0.72%	2.8%	97.8%	281336
+Tetraselmis striata	3165	species	1	1	0.71%	2.43%	97.94%	255923
+Malassezia restricta	76775	species	1	2	0.67%	14.3%	99.45%	348317
+Ochroconis constricta UM 578	1442076	species	1	2	0.51%	2.46%	99.48%	370078
+Exophiala xenobiotica	348802	species	1	2	0.5%	7.63%	100.0%	372377
+Cadophora sp. DSE1049	1485229	species	1	1	0.48%	2.75%	97.03%	369337

@@ -1,0 +1,16 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+fungi-Saccharomyces_cerevisiae_S288C-1370285at2759-S1	2	125	0	125	2520	4.96	100.0
+fungi-Saccharomyces_cerevisiae_S288C-625387at2759-S1	2	136	0	136	2016	6.75	100.0
+fungi-Saccharomyces_cerevisiae_S288C-918816at2759-S1	2	93	0	93	1782	5.22	100.0
+fungi-Saccharomyces_cerevisiae_S288C-1222562at2759-S1	1	88	0	88	921	9.55	100.0
+fungi-Saccharomyces_cerevisiae_S288C-1377237at2759-S1	4	132	0	132	1071	12.32	100.0
+fungi-Saccharomyces_cerevisiae_S288C-355408at2759-S1	2	138	0	138	2064	6.69	100.0
+fungi-Saccharomyces_cerevisiae_S288C-549762at2759-S1	2	128	0	128	1893	6.76	100.0
+fungi-Saccharomyces_cerevisiae_S288C-1217666at2759-S1	2	132	0	132	753	17.53	100.0
+fungi-Saccharomyces_cerevisiae_S288C-160593at2759-S1	2	128	0	128	7575	1.69	100.0
+fungi-Saccharomyces_cerevisiae_S288C-751335at2759-S1	4	159	0	159	2466	6.45	100.0
+fungi-Saccharomyces_cerevisiae_S288C-39650at2759-S1	2	132	0	132	6666	1.98	100.0
+fungi-Saccharomyces_cerevisiae_S288C-1405073at2759-S1	2	113	0	113	546	20.7	100.0
+fungi-Saccharomyces_cerevisiae_S288C-1182451at2759-S1	2	130	0	130	1194	10.89	100.0
+fungi-Saccharomyces_cerevisiae_S288C-1001705at2759-S1	4	323	0	323	1281	25.21	100.0
+fungi-Saccharomyces_cerevisiae_S288C-1248958at2759-S1	2	157	0	157	2883	5.45	100.0

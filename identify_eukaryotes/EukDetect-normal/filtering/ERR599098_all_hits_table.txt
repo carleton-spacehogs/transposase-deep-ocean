@@ -1,0 +1,12 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Stramenopiles sp. TOSAG41-1	1735744	species	29	85	55.77%	16.57%	99.1%	67745
+Pelagomonas calceolata	35677	species	35	177	45.45%	19.45%	98.69%	128353
+Chloropicon roscoffensis	1461544	species	29	68	18.35%	8.02%	99.3%	275974
+Stramenopiles sp. TOSAG23-2	1735743	species	6	11	12.77%	6.53%	98.34%	66251
+Triparma pacifica	91992	species	5	12	8.93%	5.66%	99.91%	110146
+Phaeocystis globosa	33658	species	10	17	8.62%	12.81%	98.9%	154798
+Triparma eleuthera	172717	species	3	8	4.11%	6.25%	99.08%	101435
+Prasinococcaceae sp. CCMP 1430	2489100	species	4	6	3.67%	5.56%	99.29%	225148
+Stramenopiles sp. TOSAG23-3	1735745	species	1	1	1.67%	8.21%	100.0%	80549
+Prasinoderma coloniale	156133	species	1	2	1.16%	8.14%	99.44%	155270
+Phaeocystis antarctica	33657	species	1	2	1.0%	10.47%	96.57%	158488

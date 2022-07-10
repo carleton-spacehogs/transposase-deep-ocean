@@ -1,0 +1,10 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+other_MGCollapse_EASP3-25	2	178	5	183	6081	3.01	97.27
+greenalgae-Ostreococcus_sp_SAG10-39650at2759-S1	2	151	1	152	8309	1.83	99.34
+greenalgae-Ostreococcus_sp_SAG10-1003258at2759-S1	2	177	1	178	2730	6.52	99.44
+greenalgae-Bathycoccus_SPCollapse_SP3-11	1	86	2	88	2049	4.29	97.73
+fungi-Malassezia_restricta-551907at2759-S1	2	113	0	113	6476	1.74	100.0
+fungi-Malassezia_restricta-325552at2759-S1	2	162	0	162	6468	2.5	100.0
+fungi-Malassezia_restricta-450058at2759-S1	2	184	0	184	3684	4.99	100.0
+fungi-Malassezia_restricta-176625at2759-S1	2	170	0	170	5628	3.02	100.0
+fungi-Malassezia_globosa_CBS_7966-1106766at2759-S1	1	78	0	78	3264	2.39	100.0
