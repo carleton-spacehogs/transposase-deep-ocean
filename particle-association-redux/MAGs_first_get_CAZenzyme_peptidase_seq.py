@@ -1,8 +1,10 @@
+#!/bin/python3
 import csv
 import glob
 import sys
 from first_get_CAZenzyme_and_peptidase import get_gene_amino_acid_base
 from first_get_CAZenzyme_and_peptidase import read_peptidase
+import os
 
 # working dir: /workspace/data/zhongj/Transposase_Project/particle_lifestyle/transposase-deep-ocean/particle-association-redux
 
@@ -33,9 +35,14 @@ def read_overview_2_agree(CAZ_f):
 def extract_CAZenzyme_sequences(overviews, aminoacids_fs):
 	check_sample_length(overviews, aminoacids_fs, "overview.txt", "uniInput")
 	for i in range(len(overviews)):
-		gene_id_set = read_overview_only_diamond(overviews[i])
-		subset_aa = get_gene_amino_acid_base(aminoacids_fs[i], gene_id_set, "only_diamond_CAZenzyme.faa")
-		print(f"write new file: {subset_aa}")
+		# gene_id_set = read_overview_only_diamond(overviews[i])
+		# subset_aa = get_gene_amino_acid_base(aminoacids_fs[i], gene_id_set, "only_diamond_CAZenzyme.faa")
+		gene_id_set = read_overview_2_agree(overviews[i])
+		subset_aa = get_gene_amino_acid_base(aminoacids_fs[i], gene_id_set, "only_CAZenzyme_tmp.faa", overwrite=True)
+		if os.path.getsize(subset_aa) != os.path.getsize(subset_aa.replace("_tmp","")):
+			print(f"{subset_aa} is different")
+		else:
+			os.remove(subset_aa)
 
 def extract_peptidase_sequences(blastps, aminoacids_fs):
 	check_sample_length(blastps, aminoacids_fs, "peptidase_diamond_unique.blastp", "uniInput")
@@ -48,6 +55,7 @@ def main():
 	ocean = sys.argv[1] # e.g. python3 MAGs_get_CAZenzyme_seq.py ARS
 	path = f"../../bins/{ocean}/TOBG_{ocean}-*/"
 	if ocean == "deep": path = "../../bins/deep/mp-deep_mag-*/"
+	# path = "../../bins/SP/TOBG_SP-4045/"
 
 	all_CAZ_overview = glob.glob(path + "overview.txt")
 	all_pep_blastres = glob.glob(path + "peptidase_diamond_unique.blastp")
@@ -56,8 +64,8 @@ def main():
 
 	extract_CAZenzyme_sequences(all_CAZ_overview, all_aminoacid_f)
 	print("done with CAZenzyme!!!")
-	extract_peptidase_sequences(all_pep_blastres, all_aminoacid_f)
-	print("done with peptidase!!!")
+	# extract_peptidase_sequences(all_pep_blastres, all_aminoacid_f)
+	# print("done with peptidase!!!")
 
 if __name__ == "__main__":
 	main()

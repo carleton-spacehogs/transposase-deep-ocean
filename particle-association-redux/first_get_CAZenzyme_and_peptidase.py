@@ -1,5 +1,6 @@
 import csv
 import glob
+import os
 from Bio import SeqIO
 
 # working dir: /workspace/data/zhongj/Transposase_Project/particle_lifestyle/transposase-deep-ocean/particle-association-redux
@@ -27,8 +28,11 @@ def read_peptidase(pep_f, split = True):
 		out.add(Gene_ID)
 	return out
 
-def get_gene_amino_acid_base(in_faa, gene_id_set, outfile, werid_split = False):
+def get_gene_amino_acid_base(in_faa, gene_id_set, outfile, werid_split = False, overwrite = False):
 	out_fname = in_faa.replace("uniInput", outfile)
+	if os.path.exists(out_fname) and not overwrite:
+		print(f"the file {out_fname} already exists, not overwritting it...")
+		return "------ no file --------"
 	# print(out_fname, in_faa)
 	with open(out_fname, 'w') as out_file:
 		fasta_seq = SeqIO.parse(open(in_faa), 'fasta')

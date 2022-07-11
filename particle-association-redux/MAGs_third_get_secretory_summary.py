@@ -5,7 +5,6 @@ import os
 from first_get_CAZenzyme_and_peptidase import read_peptidase
 from third_get_secretory_CAZenzyme import get_all_signalp
 from MAGs_first_get_CAZenzyme_peptidase_seq import read_overview_2_agree
-from MAGs_first_get_CAZenzyme_peptidase_seq import check_sample_length
 
 def clean_name(MAG_name):
 	if "mp-deep_mag-" in MAG_name:
@@ -21,16 +20,16 @@ def get_signalp_set(signalp_pos_f):
 	return signalp_set
 
 def count_signalp(signalp_pos_f):
-	signalp_count = 0
-	if os.path.exists(signalp_pos_f):
+	if not os.path.exists(signalp_pos_f):
+		print(f"can't find this file: {signalp_pos_f}")
+	else:
 		signalp_set = get_signalp_set(signalp_pos_f)
-		signalp_count = len(signalp_set)
-	return signalp_count
+		return len(signalp_set)
 
-def cal_percent(d,n): return 0 if n == 0 else d/n*100
+def cal_percent(d,n): return 0 if (n == 0 or not n or not d) else d/n*100
 
 def cal_CAZenzyme(overview_f):
-	signalp_pos_f = overview_f.replace("overview.txt", "two_agree_peptidase_gramPositive_summary.signalp5")
+	signalp_pos_f = overview_f.replace("overview.txt", "two_agree_CAZenzyme_gramPositive_summary.signalp5")
 	signalp_count = count_signalp(signalp_pos_f)
 	total_CAZ_count = len(read_overview_2_agree(overview_f))
 	return [signalp_count, cal_percent(signalp_count,total_CAZ_count)]
