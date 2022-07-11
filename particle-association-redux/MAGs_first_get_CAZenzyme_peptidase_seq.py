@@ -14,19 +14,26 @@ def check_sample_length(list1, list2, text1, text2):
 		print(set_2.difference(set_1))
 		exit(f"the length of the {text1} and {text2} do not match")
 
-def read_overview(CAZ_f):
+def read_overview_only_diamond(CAZ_f):
 	info = list(csv.reader(open(CAZ_f), delimiter='\t'))[1:]
 	out = set()
 	for l in info:
-		# if int(l[-1]) >= 2: # has have 2/3 tools agree -> only_CAZenzyme.faa
 		if l[-2].strip() != "-": # diamond recognizes it -> only_diamond_CAZenzyme.faa
+			out.add(l[0])
+	return out
+
+def read_overview_2_agree(CAZ_f):
+	info = list(csv.reader(open(CAZ_f), delimiter='\t'))[1:]
+	out = set()
+	for l in info:
+		if int(l[-1]) >= 2: # has have 2/3 tools agree -> only_CAZenzyme.faa
 			out.add(l[0])
 	return out
 
 def extract_CAZenzyme_sequences(overviews, aminoacids_fs):
 	check_sample_length(overviews, aminoacids_fs, "overview.txt", "uniInput")
 	for i in range(len(overviews)):
-		gene_id_set = read_overview(overviews[i])
+		gene_id_set = read_overview_only_diamond(overviews[i])
 		subset_aa = get_gene_amino_acid_base(aminoacids_fs[i], gene_id_set, "only_diamond_CAZenzyme.faa")
 		print(f"write new file: {subset_aa}")
 
