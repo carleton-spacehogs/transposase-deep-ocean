@@ -222,15 +222,14 @@ init_bins <- function(){
   malaspina_bins$g_depth <- "Deep\nMalaspina"
   malaspina_bins$is_deep_sea <- "deep_sea"
   malaspina_bins$size_fraction <- factor(malaspina_bins$size_fraction, levels = c("planktonic", "mixed", "particle"))
+  malaspina_bins$`Total ORFs` = as.numeric(malaspina_bins$`Total ORFs`)
   return(list(taxon, depth_comparisons, malaspina_bins, low_trans, high_trans))
 }
 
 init_MAGs_CAZenzyme_peptide = function(){
-  pa <- read_csv("../particle-association-redux/MAGs_CAZenzyme_and_peptidase_signalp_summary.csv")
-  "%/%" <- function(x,y) ifelse(y==0,1/max(pa$total_CAZ_count),base:::"/"(x,y))
-  pa$percent_CAZ = (pa$signal_CAZ_count %/% pa$total_CAZ_count)*100
-  pa$percent_pep = (pa$signal_pep_count %/% pa$total_pep_count)*100
-  pa$avg_percent = (pa$percent_CAZ + pa$percent_pep)/2
+  pa <- read_csv("../particle-association-redux/MAGs_two_agree_CAZenzyme_and_peptidase_signalp_summary.csv")
+  # "%/%" <- function(x,y) ifelse(y==0,1/max(pa$total_CAZ_count),base:::"/"(x,y))
+  pa$avg_percent_sect = (pa$percent_sect_CAZ + pa$percent_sect_pep)/2
   return(pa)
 }
 

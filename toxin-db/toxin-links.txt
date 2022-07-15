@@ -1,0 +1,15 @@
+https://bioinfo-mml.sjtu.edu.cn/TADB2/download/TADB2/20171013/protein/type_II_pro_T_exp.fas
+https://bioinfo-mml.sjtu.edu.cn/TADB2/download/TADB2/20171013/protein/type_II_pro_AT_exp.fas
+https://bioinfo-mml.sjtu.edu.cn/TADB2/download/TADB2/20171013/protein/type_II_pro_RE.fas
+https://bioinfo-mml.sjtu.edu.cn/TADB2/download/TADB2/20171013/protein/type_II_pro_T.fas
+https://bioinfo-mml.sjtu.edu.cn/TADB2/download/TADB2/20171013/protein/type_II_pro_AT.fas
+https://bioinfo-mml.sjtu.edu.cn/TADB2/download/TADB2/20171013/protein/type_II_pro_RE.fas
+https://bioinfo-mml.sjtu.edu.cn/TADB2/download/TADB2/20171013/protein/type_I_pro_T_exp.fas
+https://bioinfo-mml.sjtu.edu.cn/TADB2/download/TADB2/20171013/protein/type_I_pro_T.fas
+https://bioinfo-mml.sjtu.edu.cn/TADB2/download/TADB2/20171013/protein/type_III_pro_T.fas
+https://bioinfo-mml.sjtu.edu.cn/TADB2/download/TADB2/20171013/protein/type_IV_pro_T.fas
+https://bioinfo-mml.sjtu.edu.cn/TADB2/download/TADB2/20171013/protein/type_IV_pro_AT.fas
+https://bioinfo-mml.sjtu.edu.cn/TADB2/download/TADB2/20171013/protein/type_V_pro_T.fas
+https://bioinfo-mml.sjtu.edu.cn/TADB2/download/TADB2/20171013/protein/type_V_pro_AT.fas
+https://bioinfo-mml.sjtu.edu.cn/TADB2/download/TADB2/20171013/protein/type_VI_pro_T.fas
+https://bioinfo-mml.sjtu.edu.cn/TADB2/download/TADB2/20171013/protein/type_VI_pro_AT.fas

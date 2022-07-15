@@ -1,0 +1,16 @@
+grep "protein/type" TADB.html | awk -F"target" '{print $1}' | awk -F"href=" '{print $2}'
+
+# get toxin-links.txt
+
+while read link; do
+wget "$link"
+done < toxin-links.txt
+
+comb_f="all_toxin.fas"
+all_prot=$(ls *.fas | grep -v $comb_f)
+>$comb_f
+for f in $all_prot; do
+echo there are: $(grep -c ">" $f) genes in the file: $f
+cat $f >> $comb_f
+done
+

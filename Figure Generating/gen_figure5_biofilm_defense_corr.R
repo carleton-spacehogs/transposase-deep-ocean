@@ -32,34 +32,51 @@ bd_to_graph %>%
   geom_point(aes(color=size_fraction)) +
   theme_classic() +
   ylab("% DNA reads mapped to defense mechanism ORFs") +
-  xlab("% DNA reads mapped to secretory CAZenzyme") +
+  xlab("% DNA reads mapped to secretory CAZyme") +
   geom_smooth(method = "lm", se = F)  +
   theme()
 
 bd_to_graph %>%
   filter(!Layer_DNA %in% c("MIX",NA)) %>%
-  filter(!(Layer_DNA == "BAT" & size_fraction == "particle")) %>%
-  ggplot(aes(x=percent_sect_CAZ, y=log_dna_defense)) +
+  # filter(!(Layer_DNA == "BAT" & size_fraction == "particle")) %>%
+  ggplot(aes(x=log_dna_sect_CAZ, y=log_dna_trans, color=Layer_DNA)) +
   facet_wrap(~Layer_DNA, ncol = 2, scales = "free") + # 
-  scale_y_continuous(breaks = defense_scale, labels = defense_percent_scale) + # , limits=c(-2.3, -1.65) 
-  geom_point(aes(color=size_fraction)) +
+  # scale_y_continuous(breaks = defense_scale, labels = defense_percent_scale) + # , limits=c(-2.3, -1.65) 
+  geom_point() +
   theme_classic() +
-  ylab("% DNA reads mapped to defense mechanism ORFs") +
-  xlab("secretory CAZenzyme among all CAZenzyme (%)") +
+  ylab("% DNA reads mapped to transposase") +
+  # xlab("secretory CAZenzyme among all CAZenzyme (%)") +
+  xlab("% DNA reads mapped to CAZenzyme") +
   geom_smooth(method = "lm", se = F)  +
   theme()
 
 
 bd_to_graph %>%
   filter(!Layer_DNA %in% c("MIX",NA)) %>%
-  ggplot(aes(x=log_dna_sect_pep, y=log_dna_defense)) +
+  ggplot(aes(x=percent_sect_CAZ, y=log_dna_defense)) +
   facet_wrap(~Layer_DNA, ncol = 2) + # scales = "free"
   scale_y_continuous(breaks = defense_scale, labels = defense_percent_scale) + # , limits=c(-2.3, -1.65) 
   geom_point(aes(color=size_fraction)) +
   theme_classic() +
   ylab("% DNA reads mapped to defense mechanism ORFs") +
+  # xlab("abundance of secretory CAZyme in a metagenome") +
+  xlab("secretory CAZenzyme among all CAZyme (%)") +
   geom_smooth(method = "lm", se = F)  +
   theme()
+
+bd_to_graph %>%
+  ggplot(aes(x=DNA_sect_pep, y=percent_sect_pep))+
+  geom_point(aes(color=size_fraction, shape = Layer_DNA)) +
+  xlab("abundance of secretory peptidase in a metagenome") +
+  ylab("abundance of secretory peptidase in all peptidase")
+
+bd_to_graph %>%
+  ggplot(aes(x=log_dna_sect_CAZ, y=percent_sect_CAZ))+
+  geom_point(aes(color=size_fraction, shape = Layer_DNA)) +
+  xlab("abundance of secretory CAZyme in a metagenome") +
+  ylab("abundance of secretory CAZyme in all CAZyme")
+
+plot(DNA_sect_pep ~ percent_sect_pep, bd_to_graph)
 
 # used in gen_figure5_integron_finder_category_v2.R
 p_bd <- bd_to_graph %>%

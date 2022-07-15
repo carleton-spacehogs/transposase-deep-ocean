@@ -76,12 +76,14 @@ boxplot(log_euk_prop ~ Ocean, depth_cat, las = 3)
 depth_cat %>%
   filter(Layer_DNA != "MIX") %>%
   mutate(size2 = ifelse(filter_size %in% c("size0.22-1.6","size02-08"), 
-                        "planktonic", "particle")) %>%
+                        "planktonic", "particle"),
+         Depth = factor(Layer_DNA, levels = c("BAT", "MES", "DCM", "SRF"))) %>%
   # group_by(Layer_DNA, size2) %>% count()
-  ggplot(aes(x = log_euk_prop, y = Layer_DNA, fill = size2)) +
-  geom_boxplot() +
-  # geom_point(aes(color = filter_size)) +
-  xlab("Proportion of eukaryotic reads (log2)")
+  ggplot(aes(x = log_euk_prop, y = Depth)) +
+  geom_boxplot(aes(fill = filter_size)) +
+  # facet_wrap(~size2, ncol = 1)+
+  geom_point(aes(color = Ocean)) +
+  xlab("Proportion of eukaryotic reads (log10)")
 
 mala_cov %>%
   filter(filter_size == "size02-08") %>%
