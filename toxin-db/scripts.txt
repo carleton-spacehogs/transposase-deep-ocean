@@ -13,4 +13,3 @@ for f in $all_prot; do
 echo there are: $(grep -c ">" $f) genes in the file: $f
 cat $f >> $comb_f
 done
-

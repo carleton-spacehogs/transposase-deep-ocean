@@ -151,6 +151,35 @@ init_mala_cov <- function(){
   return(mala_cov)
 }
 
+init_MAGs_pnps_depths <- function(gene){
+  init_env()
+  defense="../toxin-db/all_oceans_defense_mech_depth_pnps.csv"
+  toxin="../toxin-db/all_oceans_toxin_depth_pnps.csv"
+  indi_toxin="../toxin-db/all_oceans_toxin_individual_depth_pnps.csv"
+  COG_toxin="../toxin-db/all_oceans_COG_toxin_depth_pnps.csv"
+  mobilome="../toxin-db/all_oceans_mobilome_depth_pnps.csv"
+  trans="../toxin-db/all_oceans_transposase_individual_depth_pnps.csv"
+  prep_pnps = function(filename){
+    g=read_csv(filename)
+    g$SRF_ratio = g$SRF_gene_median-g$SRF_bin_median
+    g$DCM_ratio = g$DCM_gene_median-g$DCM_bin_median
+    g$MES_ratio = g$MES_gene_median-g$MES_bin_median
+    g$BAT_ratio = g$deep_gene_median-g$deep_bin_median
+    return (g)
+  }
+  prep_pnps2 = function(filename){
+    g=read_csv(filename)
+    g$SRF_ratio = g$SRF_pnps-g$SRF_bin_median
+    g$DCM_ratio = g$DCM_pnps-g$DCM_bin_median
+    g$MES_ratio = g$MES_pnps-g$MES_bin_median
+    g$BAT_ratio = g$deep_pnps-g$deep_bin_median
+    return (g)  
+  }
+  return(list(prep_pnps(defense), prep_pnps(toxin), 
+              prep_pnps2(indi_toxin), prep_pnps(COG_toxin),
+              prep_pnps(mobilome), prep_pnps2(trans)))
+}
+  
 init_bins <- function(){
   init_env()
   c <- 0.0001 # for log(0)
