@@ -17,9 +17,11 @@ def merge_toxin(df, root, ocean):
 	df = df.merge(toxin, on="gene_callers_id", how = "left")
 	return df
 
-def merge_COG_function(df, root, ocean):
+def merge_COG_category(df, root, ocean):
 	base=f"{root}/{ocean}/all_bins_db"
 	COG_category = pd.read_csv(f"{base}/anvi_genes_COG_categories.tsv", sep = "\t").astype(str)
+	# print(COG_category)
+	# print(df)
 	df = df.merge(COG_category, on="gene_callers_id", how = "left")
 	return df
 
@@ -54,27 +56,28 @@ def MAG_base_pnps(root, ocean, depths):
 	bin_base = get_binning_info(root, ocean)
 	bin_base = merge_single_copy_gens(bin_base, root, ocean)
 	pnps = bin_base.merge(get_all_pnps(depths, root, ocean))
-	pnps = merge_COG_function(pnps, root, ocean)
+	pnps = merge_COG_category(pnps, root, ocean)
 	whole_MAG_pnps = pnps.groupby(['bin','sample_id','depth']).agg(
 		MAG_pnps_median=('pnps', np.nanmedian),
 		total_count=('pnps', np.size)
 	).reset_index()
-	scg_summary = get_pnps_summary(pnps, "scg", "scg")
-	out = whole_MAG_pnps.merge(scg_summary, on=["bin","sample_id"])
-	return out
-
-def get_res(ocean, depths):
-	root="/researchdrive/zhongj2/MAG_pnps_redux"
-	pnps = MAG_base_pnps(root, ocean, depths)
 	defense_pnps = pnps[pnps['category_accession'].str.contains("V", na=False)]
 	defense_summary = defense_pnps[["bin","sample_id","pnps"]].groupby(['bin','sample_id']).agg(
 		defense_pnps_median=('pnps', np.nanmedian),
 		defense_count=('pnps', np.size)
 	).reset_index()
+	scg_summary = get_pnps_summary(pnps, "scg", "scg")
+	out = whole_MAG_pnps.merge(scg_summary, on=["bin","sample_id"])
 	# toxin_summary = get_pnps_summary(pnps, "toxin_id", "toxin")
 	out = out.merge(defense_summary, on=["bin","sample_id"])
-	ocean_sum = out[(out.defense_count >= 5) & (out.scg_count >= 5)] # (out.toxin_count >= 5) &
+	return out
+
+def get_res(ocean, depths):
+	root="/researchdrive/zhongj2/MAG_pnps_redux"
+	pnps = MAG_base_pnps(root, ocean, depths)
+	ocean_sum = pnps[(pnps.defense_count >= 5) & (pnps.scg_count >= 5)] # (out.toxin_count >= 5) &
 	ocean_sum = ocean_sum[(ocean_sum.MAG_pnps_median > 0) & (ocean_sum.scg_pnps_median > 0)]
+	ocean_sum = ocean_sum.assign(ocean=ocean)
 	for scale in ['scg','MAG']:
 		ratio, denominator =f"ratio_all_{scale}", f"{scale}_pnps_median"
 		ocean_sum[ratio] = ocean_sum.apply(lambda row: row.defense_pnps_median / row[denominator], axis=1)
@@ -88,7 +91,7 @@ def main():
 	per_MAG_summary, scg_defense_pnps_summary = get_res(oceans[0], depths)
 	for ocean in oceans[1:]:
 		pMs, os=get_res(ocean, depths)
-		per_MAG_summary.append(pMs)
+		per_MAG_summary = per_MAG_summary.append(pMs)
 		scg_defense_pnps_summary = scg_defense_pnps_summary.merge(os, on="depth")
 
 	per_MAG_summary.to_csv(f"per_MAGs_pnps_summary.csv", index=False)
