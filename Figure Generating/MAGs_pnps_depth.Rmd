@@ -1,0 +1,74 @@
+---
+title: "pathway related analysis with MaAsLin on Sinha dataset"
+author: "Jimmy Zhong"
+date: "7/15/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
+source("./init_share.R")
+```
+
+```{r}
+pnps_melt = function(pnps_df, select_col){
+  return( reshape2::melt(pnps_df[select_col], id =c("bin"), value.name = c("diff")) )
+}
+
+g(defense_df, toxin_df, indi_toxin_df, GOC_toxin_df, mobilome_df, trans_df) %=% init_MAGs_pnps_depths()
+
+
+sel=c("bin","gene_callers_id","SRF_ratio", "DCM_ratio", "MES_ratio", "BAT_ratio")
+viz = reshape2::melt(indi_toxin_df[sel], id =c("bin","gene_callers_id"), value.name = c("diff"))
+viz$cat = paste(viz$bin, viz$gene_callers_id)
+viz %>%
+  filter(grepl("NAT",bin)) %>%
+  filter(diff < 0.2 & diff > -0.2) %>%
+  ggplot(aes(x=variable, y=diff))+
+  # geom_boxplot(outlier.shape = NA)+
+  geom_point(aes(colour = cat), alpha = 0.3)+
+  geom_line(aes(group = cat), alpha = 0.2) +
+  theme_classic()
+
+
+sel = c("bin", "SRF_ratio", "DCM_ratio", "MES_ratio", "BAT_ratio")
+pnps_melt(toxin_df, sel) %>%
+  # mutate(log_diff = log10(diff+10)) %>%
+  # filter(log_diff < 1.01 & log_diff > 0.99) %>%
+  filter(diff < 0.3 & diff > -0.3) %>%
+  ggplot(aes(x=variable, y=diff))+
+  # geom_boxplot(outlier.shape = NA)+
+  geom_point(aes(colour=bin), alpha = 0.3)+
+  geom_line(aes(group = bin, color = bin), alpha = 0.5) +
+  theme_classic()
+  # theme(legend.position="none")
+```
+
+```{r}
+toxin = read_csv("../toxin-db/all_oceans_toxin_pnps_per_sample.csv",
+                 col_types = cols(toxin_median = col_double(),
+                                  bin_median = col_double()))
+toxin = toxin %>% 
+  filter(!depth == "depth") %>%
+  mutate(depth = factor(depth, levels = c("SRF", "DCM", "MES", "deep"))) %>%
+  separate(col = cat, into = c("bin", "sample"), sep = ":")
+
+toxin$ratio = log(toxin$toxin_median) - log(toxin$bin_median)
+
+toxin %>%
+  filter(ratio < 2 & ratio > -2) %>%
+  ggplot(aes(x = depth, y = ratio)) +
+  geom_boxplot() +
+  geom_point(aes(colour=bin), alpha = 0.3)+
+  geom_line(aes(group = bin, color = bin), alpha = 0.5) +
+  theme(legend.position="none")
+
+toxin %>%
+  filter(toxin_median < 1) %>%
+  ggplot(aes(x = depth, y = bin_median)) +
+  geom_boxplot() +
+  # geom_point(aes(colour=bin), alpha = 0.3)+
+  # geom_line(aes(group = bin, color = bin), alpha = 0.5) +
+  theme(legend.position="none")
+
+```
