@@ -1,6 +1,6 @@
 import csv
 import pandas as pd
-from MAG_singleCopyGene_defense_pnps import MAG_base_pnps, get_binning_info
+from MAG_singleCopyGene_defense_pnps import MAG_base_pnps, get_binning_info, ocean_depths
 import numpy as np
 from Bio import SeqIO
 
@@ -21,18 +21,19 @@ def get_gene_length(root, ocean):
 	gene_length.columns = ["gene_callers_id", "length"]
 	return gene_length
 
-def gene_abun_base(ocean, depth, root):
+def gene_abun_base(ocean, depth, root, binning_delim):
+	binning_info = get_binning_info(root, ocean, delim = binning_delim)
 	abun_file = f"{root}/{ocean}/PROFILE-{depth}/all-GENE-COVERAGES.txt"
 	abun = pd.read_csv(abun_file, sep = "\t")
 	abun.rename(columns={"key":"gene_callers_id"}, inplace=True)
 	tmp = abun.drop(['gene_callers_id'], axis=1)
 	abun = abun[~(tmp < 0.01).all(axis=1)].astype(str)
-	abun = abun.merge(get_binning_info(root, ocean)[["gene_callers_id","bin"]], on = "gene_callers_id", how = "left")
+	abun = abun.merge(binning_info[["gene_callers_id","bin"]], on = "gene_callers_id", how = "left")
 	abun = abun.merge(get_gene_length(root, ocean), on = "gene_callers_id", how = "left")
 	return abun
 
-def cal_MAG_abundance(ocean, depth, root):
-	abun = gene_abun_base(ocean, depth, root)
+def cal_MAG_abundance(ocean, depth, root, binning_delim):
+	abun = gene_abun_base(ocean, depth, root, binning_delim)
 	abun_bp = abun.filter(regex='ERR|SRR').astype(float).multiply(abun.length, axis="index")
 	abun_bp2 = abun[["bin"]].join(abun_bp)
 	bin_sum = abun_bp2.groupby(['bin']).agg('sum').reset_index()
@@ -40,10 +41,10 @@ def cal_MAG_abundance(ocean, depth, root):
 	bin_sum.to_csv(f_name, index=False)
 	print(f"!!! -------- wrote {f_name} ----------")
 
-def cal_transposase_per_MAG(ocean, depth, root):
+def cal_transposase_per_MAG(ocean, depth, root, binning_delim):
 	trans=pd.read_csv(f"{root}/{ocean}/transposase_diamond_unique.blastp", sep = "\t", header=None).astype(str)[[1,0]]
 	trans.rename(columns={1:"gene_callers_id", 0:"transposase_id"}, inplace=True)
-	abun = gene_abun_base(ocean, depth, root)
+	abun = gene_abun_base(ocean, depth, root, binning_delim)
 	trans = trans.merge(abun, on = "gene_callers_id")
 	trans_bp = trans.filter(regex='ERR|SRR').astype(float).multiply(trans.length, axis="index")
 	trans_bp2 = trans[["bin"]].join(trans_bp)
@@ -75,17 +76,17 @@ def trans_scg_per_ocean(root, ocean, depths):
 	return pnps
 
 def main():
-	oceans = ["IN","SAT","NAT","SP","NP"]
-	depths = ["SRF", "DCM", "MES", "deep"]
+	o_depths = ocean_depths()
 	root="/researchdrive/zhongj2/MAG_pnps_redux"
-	for ocean in oceans:
-		for depth in depths:
-			# cal_MAG_abundance(ocean, depth, root)
-			cal_transposase_per_MAG(ocean, depth, root)
+	# for ocean, depths in o_depths.items():
+	# 	for depth in depths:
+	# 		cal_MAG_abundance(ocean, depth, root, binning_delim = " ")
+	# 		cal_transposase_per_MAG(ocean, depth, root, binning_delim = " ")
 
-	base = trans_scg_per_ocean(root, oceans[0], depths)
+	oceans = list(o_depths.keys())
+	base = trans_scg_per_ocean(root, oceans[0], o_depths[oceans[0]])
 	for ocean in oceans[1:]:
-		base = base.append(trans_scg_per_ocean(root, ocean, depths))
+		base = base.append(trans_scg_per_ocean(root, ocean, o_depths[ocean]))
 
 	f_name = f"transposase-abun-vs-scg-pnps.csv"
 	base.to_csv(f_name, index=False)

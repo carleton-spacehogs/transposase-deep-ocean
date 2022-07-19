@@ -4,8 +4,19 @@ import pandas as pd
 import sys
 import numpy as np
 
-def get_binning_info(root, ocean):
-	tmp = list(csv.reader(open(f"{root}/{ocean}/all_bins_db/gene_callers_id-contig.txt"), delimiter=' '))[1:]
+def ocean_depths():
+	depths1 = ["SRF", "DCM", "MES", "deep"]
+	depths2 = ["SRF", "DCM", "MES"]
+	depths3 = ["SRF", "DCM"]
+	ocean_depth ={"ARS": depths2, "CPC": depths2}
+	for ocean in ["RS", "MED", "EAC"]:
+		ocean_depth[ocean] = depths3
+	for ocean in ["IN","SAT","NAT","SP","NP"]:
+		ocean_depth[ocean] = depths1
+	return ocean_depth
+
+def get_binning_info(root, ocean, delim = " "):
+	tmp = list(csv.reader(open(f"{root}/{ocean}/all_bins_db/gene_callers_id-contig.txt"), delimiter=delim))[1:]
 	bin_info = [[l[0]] + l[1].split('_', 1) for l in tmp]
 	bin_info = pd.DataFrame(bin_info)
 	bin_info.columns = ["gene_callers_id", "bin", "contig"]
@@ -86,11 +97,12 @@ def get_res(ocean, depths):
 	return ocean_sum, pnps_ratio_summary
 
 def main():
-	oceans = ["IN","SAT","NAT","SP","NP"]
-	depths = ["SRF", "DCM", "MES", "deep"]
-	per_MAG_summary, scg_defense_pnps_summary = get_res(oceans[0], depths)
+	o_depths = ocean_depths()
+	oceans = list(o_depths.keys())
+	per_MAG_summary, scg_defense_pnps_summary = get_res(oceans[0], o_depths[oceans[0]])
 	for ocean in oceans[1:]:
-		pMs, os=get_res(ocean, depths)
+		print(ocean)
+		pMs, os=get_res(ocean, o_depths[ocean])
 		per_MAG_summary = per_MAG_summary.append(pMs)
 		scg_defense_pnps_summary = scg_defense_pnps_summary.merge(os, on="depth")
 

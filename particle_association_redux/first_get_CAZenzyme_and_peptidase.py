@@ -28,8 +28,9 @@ def read_peptidase(pep_f, split = True):
 		out.add(Gene_ID)
 	return out
 
-def get_gene_amino_acid_base(in_faa, gene_id_set, outfile, werid_split = False, overwrite = False):
-	out_fname = in_faa.replace("uniInput", outfile)
+def get_gene_amino_acid_base(in_faa, gene_id_set, outfile, werid_split = False, overwrite = False, protein_fname = "uniInput"):
+	# out_fname = in_faa.replace(protein_fname, outfile)
+	out_fname = outfile
 	if os.path.exists(out_fname) and not overwrite:
 		print(f"the file {out_fname} already exists, not overwritting it...")
 		return "------ no file --------"
