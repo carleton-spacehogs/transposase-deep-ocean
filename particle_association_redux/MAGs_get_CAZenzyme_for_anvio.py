@@ -12,8 +12,7 @@ def extract_CAZenzyme_sequences(ocean, root):
 	print(subset_aa)
 
 def main():
-	# oceans = ["NAT","SAT","IN","NP","SP","ARS","CPC"]
-	oceans = ["EAC","MED","RS"]
+	oceans = ["NAT","SAT","IN","NP","SP","ARS","CPC","EAC","MED","RS"]
 	root="/workspace/data/zhongj/MAG_CAZymes"
 	for ocean in oceans:
 		extract_CAZenzyme_sequences(ocean, root)
