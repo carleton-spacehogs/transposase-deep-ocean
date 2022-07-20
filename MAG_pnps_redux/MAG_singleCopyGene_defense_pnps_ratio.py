@@ -95,7 +95,7 @@ def MAG_base_pnps(root, ocean, depths):
 def get_res(ocean, depths):
 	root="/researchdrive/zhongj2/MAG_pnps_redux"
 	pnps = MAG_base_pnps(root, ocean, depths)
-	ocean_sum = pnps[(pnps.defense_count >= 5) & (pnps.scg_count >= 5)] # (out.toxin_count >= 5) &
+	ocean_sum = pnps[(pnps.scg_count >= 5)] # (out.toxin_count >= 5) & (pnps.defense_count >= 5) & 
 	ocean_sum = ocean_sum[(ocean_sum.MAG_pnps_median > 0) & (ocean_sum.scg_pnps_median > 0)]
 	ocean_sum = ocean_sum.assign(ocean=ocean)
 	for scale in ['scg','MAG']:
