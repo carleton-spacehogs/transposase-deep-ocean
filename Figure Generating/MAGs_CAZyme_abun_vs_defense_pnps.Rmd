@@ -11,7 +11,7 @@ source("./init_share.R")
 ```
 
 ```{r}
-raw = read_csv("../MAG_pnps_redux/diamond-only-CAZyme-abun-vs-defense-pnps.csv")
+raw = read_csv("../MAG_pnps_redux/signalCAZyme-abun-vs-genes-pnps.csv")
 raw["ocean"] = str_split_fixed(raw$bin, fixed("-"), 2)[, 1]
 fudge_CAZ_def = min(raw$signal_CAZyme_abun[raw$signal_CAZyme_abun>0])/2
 fudge_def_pnps = min(raw$defense_pnps_median[raw$defense_pnps_median>0])
@@ -23,11 +23,13 @@ CAZyme_defense = raw %>%
   mutate(signal_CAZ_norm=ifelse(signal_CAZyme_abun<=0,fudge_CAZ_def,signal_CAZyme_abun))%>%
   mutate(log_signal_CAZ = log10(signal_CAZ_norm)) %>%
   mutate(log_median_defense_pnps = log10(defense_pnps_median)) %>%
-  mutate(log_defense_scg_ratio = log((defense_pnps_median+fudge_def_pnps)/(scg_pnps_median + fudge_scg_pnps)))
+  mutate(log_defense_scg_ratio = log((defense_pnps_median+fudge_def_pnps)/(scg_pnps_median + fudge_scg_pnps))) # %>%
+  # mutate(trans_scg_ratio = transposase_pnps_median/scg_pnps_median) %>%
+  # mutate(trans_scg_ratio_log = log(trans_scg_ratio))
 
 CAZyme_defense %>%
   # filter(ocean %in% c("IN","NP","SP","NAT","SAT")) %>%
-  filter(!ocean %in% c("MED", "EAC", "RS")) %>%
+  # filter(!ocean %in% c("MED", "EAC", "RS")) %>%
   ggplot(aes(x=log_signal_CAZ, y=log_defense_scg_ratio)) +
   geom_point(alpha = 0.2) +
   geom_smooth(method = "lm")+

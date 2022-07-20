@@ -47,7 +47,7 @@ scg_trans3 %>%
   ggplot(aes(x=log_scg_pnps_median, y=trans_abun_norm)) +
   facet_wrap(~depth) +
   geom_point(aes(color = log(`complete genome size (Mbp)`)), alpha = 0.5) +
-  scale_color_viridis(option = "D")+
+  # scale_color_viridis(option = "D")+
   theme_classic()
 ```
 

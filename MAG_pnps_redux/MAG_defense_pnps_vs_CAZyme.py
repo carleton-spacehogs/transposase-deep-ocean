@@ -70,7 +70,7 @@ def main():
 	for ocean, depths in o_depths.items():
 		print(ocean)
 		base = base.append(defense_pnps_vs_CAZyme_per_ocean(root, ocean, depths))
-	f_name = f"singalCAZyme-abun-vs-genes-pnps.csv"
+	f_name = f"signalCAZyme-abun-vs-genes-pnps.csv"
 	base.to_csv(f_name, index=False)
 	print(f"!!!--------- wrote {f_name} ----------")
 

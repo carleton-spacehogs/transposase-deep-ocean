@@ -10,6 +10,53 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
 source("./init_share.R")
 ```
 
+## defense mechanisms genes have a lower pnps at the deep oceans
+```{r}
+MAG_sum = read_csv("../MAG_pnps_redux/per_MAGs_pnps_summary.csv")
+MAG_sum$depth = factor(MAG_sum$depth, levels = c("SRF","DCM","MES","deep"))
+MAG_sum$log_defense_over_scg_ratio = log(MAG_sum$ratio_all_scg)
+MAG_sum %>%
+  filter(ratio_all_scg < 5) %>%
+  filter(scg_count >= 11 & defense_count >= 11) %>%
+  ggplot(aes(y=fct_rev(depth), x=log_defense_over_scg_ratio)) +
+  facet_wrap(~ocean) +
+  geom_boxplot()
+```
+
+## now the transposases
+```{r}
+trans_sum = MAG_sum %>%
+  filter(transposase_count > 5) %>%
+  mutate(trans_scg_ratio = transposase_pnps_median/scg_pnps_median) %>%
+  filter(trans_scg_ratio < 20) %>%
+  mutate(trans_scg_ratio_log = log(trans_scg_ratio)) %>%
+  mutate(depth = factor(depth, levels = c("SRF","DCM","MES","deep")))
+
+trans_sum %>%
+  ggplot(aes(y=fct_rev(depth), x=trans_scg_ratio_log)) +
+  facet_wrap(~ocean) +
+  geom_boxplot() +
+  geom_point(aes(color = bin))
+
+trans_sum %>%
+  ggplot(aes(x=depth, y=trans_scg_ratio_log))+
+  # geom_boxplot(outlier.shape = NA)+
+  geom_point(aes(colour = bin), alpha = 0.3)+
+  geom_line(aes(group = bin), alpha = 0.2) +
+  theme_classic()
+```
+
+
+
+
+
+
+
+
+
+
+
+
 ```{r}
 pnps_melt = function(pnps_df, select_col){
   return( reshape2::melt(pnps_df[select_col], id =c("bin"), value.name = c("diff")) )
@@ -74,17 +121,6 @@ toxin %>%
 ```
 
 
-```{r}
-defense = read_csv("../MAG_pnps_redux/per_MAGs_pnps_summary.csv")
-defense$depth = factor(defense$depth, levels = c("SRF","DCM","MES","deep"))
-defense$log_defense_over_scg_ratio = log(defense$ratio_all_scg)
-defense %>%
-  filter(ratio_all_scg < 5) %>%
-  filter(scg_count >= 11 & defense_count >= 11) %>%
-  ggplot(aes(y=fct_rev(depth), x=log_defense_over_scg_ratio)) +
-  facet_wrap(~ocean) +
-  geom_boxplot()
-```
 
 
 
