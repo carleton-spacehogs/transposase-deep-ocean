@@ -1,5 +1,6 @@
 #!/bin/python3
 import csv
+from turtle import left
 import pandas as pd
 import sys
 import numpy as np
@@ -22,12 +23,7 @@ def get_binning_info(root, ocean, delim = " "):
 	bin_info.columns = ["gene_callers_id", "bin", "contig"]
 	return bin_info
 
-def merge_toxin(df, root, ocean):
-	toxin=pd.read_csv(f"{root}/{ocean}/toxin_diamond_unique.blastp", sep = "\t", header=None).astype(str)[[1,0]]
-	toxin.rename(columns={1:"gene_callers_id", 0:"toxin_id"}, inplace=True)
-	df = df.merge(toxin, on="gene_callers_id", how = "left")
-	return df
-
+# gene = "toxin", "transposase"
 def merge_blastp_f(df, root, ocean, gene):
 	gene_blastp=pd.read_csv(f"{root}/{ocean}/{gene}_diamond_unique.blastp", sep = "\t", header=None).astype(str)[[1,0]]
 	gene_blastp.rename(columns={1:"gene_callers_id", 0:f"{gene}_id"}, inplace=True)
@@ -86,10 +82,10 @@ def MAG_base_pnps(root, ocean, depths):
 	).reset_index()
 	scg_summary = get_pnps_summary(pnps, "scg", "scg")
 	trans_summary = get_pnps_summary(pnps, "transposase_id", "transposase")
-	out = whole_MAG_pnps.merge(scg_summary, on=["bin","sample_id"])
+	out = whole_MAG_pnps.merge(scg_summary, on=["bin","sample_id"], how = "left")
 	# toxin_summary = get_pnps_summary(pnps, "toxin_id", "toxin")
-	out = out.merge(defense_summary, on=["bin","sample_id"])
-	out = out.merge(trans_summary, on=["bin","sample_id"])
+	out = out.merge(defense_summary, on=["bin","sample_id"], how = "left")
+	out = out.merge(trans_summary, on=["bin","sample_id"], how = "left")
 	return out
 
 def get_res(ocean, depths):
