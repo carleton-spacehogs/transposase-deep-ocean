@@ -11,6 +11,50 @@ source("./init_share.R")
 ```
 
 ```{r}
+raw = read_csv("../MAG_pnps_redux/diamond-only-CAZyme-abun-vs-defense-pnps.csv")
+raw["ocean"] = str_split_fixed(raw$bin, fixed("-"), 2)[, 1]
+fudge_CAZ_def = min(raw$signal_CAZyme_abun[raw$signal_CAZyme_abun>0])/2
+fudge_def_pnps = min(raw$defense_pnps_median[raw$defense_pnps_median>0])
+fudge_scg_pnps = min(raw$scg_pnps_median[raw$scg_pnps_median>0])
+CAZyme_defense = raw %>%
+  filter(defense_count >= 11) %>%
+  filter(scg_count >= 11) %>%
+  mutate(depth = factor(depth, levels = c("SRF","DCM","MES","deep"))) %>%
+  mutate(signal_CAZ_norm=ifelse(signal_CAZyme_abun<=0,fudge_CAZ_def,signal_CAZyme_abun))%>%
+  mutate(log_signal_CAZ = log10(signal_CAZ_norm)) %>%
+  mutate(log_median_defense_pnps = log10(defense_pnps_median)) %>%
+  mutate(log_defense_scg_ratio = log((defense_pnps_median+fudge_def_pnps)/(scg_pnps_median + fudge_scg_pnps)))
+
+CAZyme_defense %>%
+  # filter(ocean %in% c("IN","NP","SP","NAT","SAT")) %>%
+  filter(!ocean %in% c("MED", "EAC", "RS")) %>%
+  ggplot(aes(x=log_signal_CAZ, y=log_defense_scg_ratio)) +
+  geom_point(alpha = 0.2) +
+  geom_smooth(method = "lm")+
+  facet_wrap(~depth, scale = "free")
+
+CAZyme_defense %>%
+  # filter(ocean %in% c("IN","NP","SP","NAT","SAT")) %>%
+  ggplot(aes(x=log_signal_CAZ, y=log_median_defense_pnps)) +
+  geom_point(alpha = 0.2) +
+  geom_smooth(method = "lm")+
+  facet_grid(depth~ocean, scale = "free")
+
+greatest16 = as.data.frame(sort(table(CAZyme_defense$bin), decreasing = TRUE)[1:16])$Var1
+
+CAZyme_defense %>%
+  filter(bin %in% greatest16) %>%
+  ggplot(aes(x=log_signal_CAZ, y=log_median_defense_pnps)) +
+  geom_point() +
+  geom_smooth(method = "lm")+
+  facet_wrap(~bin, scale = "free")
+
+CAZ.defense.lm = lm(log_median_defense_pnps~log_signal_CAZ,
+                    filter(CAZyme_defense, depth == "MES"))
+```
+
+
+```{r}
 pnps_melt = function(pnps_df, select_col){
   return( reshape2::melt(pnps_df[select_col], id =c("bin"), value.name = c("diff")) )
 }
@@ -74,17 +118,7 @@ toxin %>%
 ```
 
 
-```{r}
-defense = read_csv("../MAG_pnps_redux/per_MAGs_pnps_summary.csv")
-defense$depth = factor(defense$depth, levels = c("SRF","DCM","MES","deep"))
-defense$log_defense_over_scg_ratio = log(defense$ratio_all_scg)
-defense %>%
-  filter(ratio_all_scg < 5) %>%
-  filter(scg_count >= 11 & defense_count >= 11) %>%
-  ggplot(aes(y=fct_rev(depth), x=log_defense_over_scg_ratio)) +
-  facet_wrap(~ocean) +
-  geom_boxplot()
-```
+
 
 
 

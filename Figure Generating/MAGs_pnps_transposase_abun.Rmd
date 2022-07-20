@@ -8,7 +8,49 @@ output: html_document
 ```{r setup, include=FALSE}
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
 source("./init_share.R")
+g(bin_taxon, depth_comparisons, malaspina_bins, low_trans, high_trans) %=% init_bins()
 ```
+
+```{r}
+scg_trans = read_csv("../MAG_pnps_redux/transposase-abun-vs-scg-pnps.csv")
+scg_trans$depth = factor(scg_trans$depth, levels = c("SRF","DCM","MES","deep"))
+fudge_factor = min(scg_trans$Trans_abun[scg_trans$Trans_abun>0])/2
+
+scg_trans$trans_abun_norm = ifelse(scg_trans$Trans_abun <= 0, 
+                                   fudge_factor/2, scg_trans$Trans_abun)
+scg_trans$trans_abun_norm = log10(scg_trans$trans_abun_norm)
+scg_trans$log_scg_pnps_median = log10(scg_trans$scg_pnps_median)
+
+scg_trans2 = scg_trans %>% filter(scg_count > 11)
+
+bin_occur = as.data.frame(table(scg_trans2$bin))
+colnames(bin_occur) = c("bin", "Freq")
+bin_occur = bin_occur %>%
+  mutate(color_bin = ifelse(Freq > 3, as.character(bin), "other bins"))
+scg_trans2 = merge(scg_trans2, bin_occur, by = "bin")
+
+scg_trans2 %>%
+  mutate(color_bin = ifelse(Trans_abun <= 0, 
+                            "MAGs no transposase", color_bin)) %>%
+  filter(Freq > 3) %>%
+  filter(Trans_abun > 0) %>%
+  ggplot(aes(x=log_scg_pnps_median, y=trans_abun_norm)) +
+  facet_wrap(~depth, scale = "free_x") +
+  geom_point(aes(colour = color_bin), shape=19, alpha=0.8) +
+  geom_line(aes(group = color_bin, color = color_bin), 
+            alpha = 0.4) + # data = subset(scg_trans2, Trans_abun > 0 & Freq > 3)
+  theme_classic()
+
+
+scg_trans3 = merge(scg_trans2, bin_taxon[c("bin","complete genome size (Mbp)")], by = "bin")
+scg_trans3 %>%
+  ggplot(aes(x=log_scg_pnps_median, y=trans_abun_norm)) +
+  facet_wrap(~depth) +
+  geom_point(aes(color = log(`complete genome size (Mbp)`)), alpha = 0.5) +
+  scale_color_viridis(option = "D")+
+  theme_classic()
+```
+
 
 ```{r}
 pnps_melt = function(pnps_df, select_col){
@@ -71,19 +113,6 @@ toxin %>%
   # geom_line(aes(group = bin, color = bin), alpha = 0.5) +
   theme(legend.position="none")
 
-```
-
-
-```{r}
-defense = read_csv("../MAG_pnps_redux/per_MAGs_pnps_summary.csv")
-defense$depth = factor(defense$depth, levels = c("SRF","DCM","MES","deep"))
-defense$log_defense_over_scg_ratio = log(defense$ratio_all_scg)
-defense %>%
-  filter(ratio_all_scg < 5) %>%
-  filter(scg_count >= 11 & defense_count >= 11) %>%
-  ggplot(aes(y=fct_rev(depth), x=log_defense_over_scg_ratio)) +
-  facet_wrap(~ocean) +
-  geom_boxplot()
 ```
 
 
