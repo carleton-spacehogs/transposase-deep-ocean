@@ -28,11 +28,15 @@ def merge_toxin(df, root, ocean):
 	df = df.merge(toxin, on="gene_callers_id", how = "left")
 	return df
 
+def merge_blastp_f(df, root, ocean, gene):
+	gene_blastp=pd.read_csv(f"{root}/{ocean}/{gene}_diamond_unique.blastp", sep = "\t", header=None).astype(str)[[1,0]]
+	gene_blastp.rename(columns={1:"gene_callers_id", 0:f"{gene}_id"}, inplace=True)
+	df = df.merge(gene_blastp, on="gene_callers_id", how = "left")
+	return df
+
 def merge_COG_category(df, root, ocean):
 	base=f"{root}/{ocean}/all_bins_db"
 	COG_category = pd.read_csv(f"{base}/anvi_genes_COG_categories.tsv", sep = "\t").astype(str)
-	# print(COG_category)
-	# print(df)
 	df = df.merge(COG_category, on="gene_callers_id", how = "left")
 	return df
 
@@ -66,8 +70,11 @@ def get_pnps_summary(pnps_df, colname, gene_name):
 def MAG_base_pnps(root, ocean, depths):
 	bin_base = get_binning_info(root, ocean)
 	bin_base = merge_single_copy_gens(bin_base, root, ocean)
-	pnps = bin_base.merge(get_all_pnps(depths, root, ocean))
+	bin_base = merge_blastp_f(bin_base, root, ocean, "transposase")
+	all_pnps = get_all_pnps(depths, root, ocean)
+	pnps = bin_base.merge(all_pnps, on = "gene_callers_id")
 	pnps = merge_COG_category(pnps, root, ocean)
+	pnps.pnps = pnps.pnps.astype(float)
 	whole_MAG_pnps = pnps.groupby(['bin','sample_id','depth']).agg(
 		MAG_pnps_median=('pnps', np.nanmedian),
 		total_count=('pnps', np.size)
@@ -78,9 +85,11 @@ def MAG_base_pnps(root, ocean, depths):
 		defense_count=('pnps', np.size)
 	).reset_index()
 	scg_summary = get_pnps_summary(pnps, "scg", "scg")
+	trans_summary = get_pnps_summary(pnps, "transposase_id", "transposase")
 	out = whole_MAG_pnps.merge(scg_summary, on=["bin","sample_id"])
 	# toxin_summary = get_pnps_summary(pnps, "toxin_id", "toxin")
 	out = out.merge(defense_summary, on=["bin","sample_id"])
+	out = out.merge(trans_summary, on=["bin","sample_id"])
 	return out
 
 def get_res(ocean, depths):

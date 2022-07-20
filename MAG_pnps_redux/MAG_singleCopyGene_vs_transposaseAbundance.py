@@ -1,6 +1,6 @@
 import csv
 import pandas as pd
-from MAG_singleCopyGene_defense_pnps import MAG_base_pnps, get_binning_info, ocean_depths
+from MAG_singleCopyGene_defense_pnps_ratio import MAG_base_pnps, get_binning_info, ocean_depths
 import numpy as np
 from Bio import SeqIO
 
@@ -53,14 +53,14 @@ def cal_transposase_per_MAG(ocean, depth, root, binning_delim):
 	MAG_cov = trans_sum[["bin"]].merge(MAG_cov, on = "bin").reset_index()
 	prop_trans = trans_sum.filter(regex='ERR|SRR')/MAG_cov.filter(regex='ERR|SRR')
 	prop_trans = trans_sum[['bin']].join(prop_trans)
-	f_name = f"prop-transposase-{ocean}-{depth}.csv"
+	f_name = f"intermediate-files/prop-transposase-{ocean}-{depth}.csv"
 	prop_trans.to_csv(f_name, index=False)
 	print(f"!!! -------- wrote {f_name} ----------")
 
 def trans_scg_per_ocean(root, ocean, depths):
-	prop_trans = pd.read_csv(f"prop-transposase-{ocean}-{depths[0]}.csv")
-	for depth in depths[1:]:
-		pt = pd.read_csv(f"prop-transposase-{ocean}-{depth}.csv")
+	prop_trans = pd.DataFrame()
+	for depth in depths:
+		pt = pd.read_csv(f"intermediate-files/prop-transposase-{ocean}-{depth}.csv")
 		prop_trans = prop_trans.merge(pt, on = "bin", how = "outer")
 	prop_trans = prop_trans.fillna(0)
 	pnps = MAG_base_pnps(root, ocean, depths)
