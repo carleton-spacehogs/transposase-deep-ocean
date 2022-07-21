@@ -24,10 +24,10 @@ def get_binning_info(root, ocean, delim = " "):
 	return bin_info
 
 # gene = "toxin", "transposase"
-def merge_blastp_f(df, root, ocean, gene):
+def merge_blastp_f(df, root, ocean, gene, merge_method = "left"):
 	gene_blastp=pd.read_csv(f"{root}/{ocean}/{gene}_diamond_unique.blastp", sep = "\t", header=None).astype(str)[[1,0]]
 	gene_blastp.rename(columns={1:"gene_callers_id", 0:f"{gene}_id"}, inplace=True)
-	df = df.merge(gene_blastp, on="gene_callers_id", how = "left")
+	df = df.merge(gene_blastp, on="gene_callers_id", how = merge_method)
 	return df
 
 def merge_COG_category(df, root, ocean):
