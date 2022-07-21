@@ -28,7 +28,7 @@ for ocean, depths in o_depths.items():
 defense_integron = individual_defense_pnps.merge(integrons, on=["ocean", "gene_callers_id"], how = "left")
 
 concise = defense_integron[["gene_callers_id", "pnps", "ocean", "depth", "bin", "defense_count",
-"sample_id", "signal_CAZyme_abun","scg_pnps_median","ocean",'integron']]
+"sample_id", "signal_CAZyme_abun","scg_pnps_median",'integron']]
 
-individual_defense_pnps.to_csv(path_or_buf=f'individual_defense_pnps.csv', sep=',', index=False)
+concise.to_csv(path_or_buf=f'individual_defense_pnps.csv', sep=',', index=False)
 
