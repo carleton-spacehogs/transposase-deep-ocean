@@ -14,8 +14,8 @@ def extract_CAZenzyme_sequences(ocean, root):
 def main():
 	oceans = ["NAT","SAT","IN","NP","SP","ARS","CPC","EAC","MED","RS"]
 	root="/workspace/data/zhongj/MAG_CAZymes"
-	for ocean in oceans:
-		extract_CAZenzyme_sequences(ocean, root)
+	# for ocean in oceans:
+	extract_CAZenzyme_sequences("deep", root)
 
 if __name__ == "__main__":
 	main()

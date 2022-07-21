@@ -102,7 +102,21 @@ MAG_int_pnps2.columns = int_pnps_col
 
 MAG_int_pnps2 = MAG_int_pnps2.merge(bin_info, on=["bin","sample_id"])
 
-MAG_int_pnps2.to_csv(path_or_buf=f'MAG_integron_pnps.csv', sep=',', index=False)
+out = []
+for l in MAG_int_pnps2.values.tolist():
+	COG_category_pos = 11
+	COG_cate = l[COG_category_pos]
+	if "!!!" in COG_cate:
+		all_COG_cates = COG_cate.split("!!!")
+		for COG in all_COG_cates:
+			out.append( l[:COG_category_pos] + [COG] + l[COG_category_pos+1:] )
+	else:
+		out.append(l)
+
+MAG_int_pnps3 = pd.DataFrame(out)
+MAG_int_pnps2.columns = list(MAG_int_pnps2.columns)
+
+MAG_int_pnps3.to_csv(path_or_buf=f'MAG_integron_pnps.csv', sep=',', index=False)
 
 # if __name__ == "__main__":
 # 	main()
