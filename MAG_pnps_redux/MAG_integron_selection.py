@@ -114,7 +114,7 @@ for l in MAG_int_pnps2.values.tolist():
 		out.append(l)
 
 MAG_int_pnps3 = pd.DataFrame(out)
-MAG_int_pnps2.columns = list(MAG_int_pnps2.columns)
+MAG_int_pnps3.columns = list(MAG_int_pnps2.columns)
 
 MAG_int_pnps3.to_csv(path_or_buf=f'MAG_integron_pnps.csv', sep=',', index=False)
 
