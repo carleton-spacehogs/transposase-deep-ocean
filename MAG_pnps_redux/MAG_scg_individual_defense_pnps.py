@@ -11,10 +11,10 @@ def per_defense_ORFs_per_sample_pnps(ocean, root, depths, avail_MAG):
 	defense_pnps = defense_pnps.merge(avail_MAG, how = "inner", on = ["bin", "sample_id"]).reindex()
 	return defense_pnps
 
-def per_toxin_ORFs_per_sample_pnps(ocean, root, depths, avail_MAG):
+def per_gene_ORFs_per_sample_pnps(ocean, root, depths, avail_MAG, gene):
 	bin_info = get_binning_info(root, ocean)
 	all_pnps = get_all_pnps(depths, root, ocean)
-	toxin_pnps = merge_blastp_f(all_pnps, root, ocean, "toxin", merge_method = "inner")
+	toxin_pnps = merge_blastp_f(all_pnps, root, ocean, gene, merge_method = "inner")
 	toxin_pnps = toxin_pnps.merge(bin_info, on = "gene_callers_id")
 	toxin_pnps = toxin_pnps.merge(avail_MAG, how = "inner", on = ["bin", "sample_id"]).reindex()
 	return toxin_pnps
@@ -39,17 +39,27 @@ integrons = pd.read_csv("anvi_integrons_all_oceans.csv").astype(str)
 # "sample_id", "signal_CAZyme_abun","scg_pnps_median","scg_count",'integron']]
 # d_concise.to_csv(path_or_buf=f'individual_defense_pnps.csv', sep=',', index=False)
 
-# for toxin!!!
-individual_toxin_pnps = pd.DataFrame()
+# # for toxin!!!
+# individual_toxin_pnps = pd.DataFrame()
+# for ocean, depths in o_depths.items():
+# 	print(ocean)
+# 	ocean_toxin = per_gene_ORFs_per_sample_pnps(ocean, root, depths, avail_MAG, "toxin")
+# 	ocean_toxin["ocean"] = ocean
+# 	individual_toxin_pnps = individual_toxin_pnps.append(ocean_toxin)
+
+# t_concise = individual_toxin_pnps[["gene_callers_id", "pnps", "ocean", "depth", "bin", "defense_count", 
+# "sample_id", "signal_CAZyme_abun","scg_pnps_median","scg_count"]]
+# t_concise.to_csv(path_or_buf=f'individual_toxin_pnps.csv', sep=',', index=False)
+
+# for transposase
+individual_trans_pnps = pd.DataFrame()
 for ocean, depths in o_depths.items():
 	print(ocean)
-	ocean_toxin = per_toxin_ORFs_per_sample_pnps(ocean, root, depths, avail_MAG)
-	ocean_toxin["ocean"] = ocean
-	individual_toxin_pnps = individual_toxin_pnps.append(ocean_toxin)
+	ocean_trans = per_gene_ORFs_per_sample_pnps(ocean, root, depths, avail_MAG, "transposase")
+	ocean_trans["ocean"] = ocean
+	individual_trans_pnps = individual_trans_pnps.append(ocean_trans)
 
-t_concise = individual_toxin_pnps[["gene_callers_id", "pnps", "ocean", "depth", "bin", "defense_count", 
+trans_concise = individual_trans_pnps[["gene_callers_id", "pnps", "ocean", "depth", "bin", "defense_count", 
 "sample_id", "signal_CAZyme_abun","scg_pnps_median","scg_count"]]
-t_concise.to_csv(path_or_buf=f'individual_toxin_pnps.csv', sep=',', index=False)
-
-
+trans_concise.to_csv(path_or_buf=f'individual_transposase_pnps.csv', sep=',', index=False)
 
