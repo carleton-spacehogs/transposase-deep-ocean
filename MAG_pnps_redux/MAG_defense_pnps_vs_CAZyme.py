@@ -65,7 +65,7 @@ def main():
 	for ocean, depths in o_depths.items():
 		print(ocean)
 		loop_depth_CAZyme(ocean, depths, root)
-	
+
 	base=pd.DataFrame()
 	for ocean, depths in o_depths.items():
 		print(ocean)

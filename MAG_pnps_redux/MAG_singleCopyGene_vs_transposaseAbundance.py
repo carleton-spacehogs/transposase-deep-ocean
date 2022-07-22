@@ -37,7 +37,7 @@ def cal_MAG_abundance(ocean, depth, root, binning_delim):
 	abun_bp = abun.filter(regex='ERR|SRR').astype(float).multiply(abun.length, axis="index")
 	abun_bp2 = abun[["bin"]].join(abun_bp)
 	bin_sum = abun_bp2.groupby(['bin']).agg('sum').reset_index()
-	f_name = f"MAGs-coverage-{ocean}-{depth}.csv"
+	f_name = f"intermediate-files/MAGs-coverage-{ocean}-{depth}.csv"
 	bin_sum.to_csv(f_name, index=False)
 	print(f"!!! -------- wrote {f_name} ----------")
 
@@ -49,7 +49,7 @@ def cal_transposase_per_MAG(ocean, depth, root, binning_delim):
 	trans_bp = trans.filter(regex='ERR|SRR').astype(float).multiply(trans.length, axis="index")
 	trans_bp2 = trans[["bin"]].join(trans_bp)
 	trans_sum = trans_bp2.groupby(['bin']).agg('sum').reset_index()
-	MAG_cov = pd.read_csv(f"MAGs-coverage-{ocean}-{depth}.csv")
+	MAG_cov = pd.read_csv(f"intermediate-files/MAGs-coverage-{ocean}-{depth}.csv")
 	MAG_cov = trans_sum[["bin"]].merge(MAG_cov, on = "bin").reset_index()
 	prop_trans = trans_sum.filter(regex='ERR|SRR')/MAG_cov.filter(regex='ERR|SRR')
 	prop_trans = trans_sum[['bin']].join(prop_trans)
@@ -58,8 +58,8 @@ def cal_transposase_per_MAG(ocean, depth, root, binning_delim):
 	print(f"!!! -------- wrote {f_name} ----------")
 
 def trans_scg_per_ocean(root, ocean, depths):
-	prop_trans = pd.DataFrame()
-	for depth in depths:
+	prop_trans = pd.read_csv(f"intermediate-files/prop-transposase-{ocean}-{depths[0]}.csv")
+	for depth in depths[1:]:
 		pt = pd.read_csv(f"intermediate-files/prop-transposase-{ocean}-{depth}.csv")
 		prop_trans = prop_trans.merge(pt, on = "bin", how = "outer")
 	prop_trans = prop_trans.fillna(0)
@@ -67,26 +67,30 @@ def trans_scg_per_ocean(root, ocean, depths):
 	pnps = pnps[pnps.scg_count >= 5]
 	transposase_abundance_col = []
 	for index, row in pnps.iterrows():
-		MAG_abun = prop_trans[prop_trans.bin == row.bin][row.sample_id]
-		if MAG_abun.empty:
-			transposase_abundance_col.append(float(-1))
-		else:
-			transposase_abundance_col.append(float(MAG_abun))
+		col_sample_id = (row.sample_id).split("_")[1] if "_" in row.sample_id else row.sample_id
+		IN_SRRs = prop_trans.columns
+		MAG_abun = 0
+		if col_sample_id in IN_SRRs:
+			MAG_abun = prop_trans[prop_trans.bin == row.bin][col_sample_id]
+			if MAG_abun.empty:
+				MAG_abun = 0
+		transposase_abundance_col.append(float(MAG_abun))
 	pnps = pnps.assign(Trans_abun=transposase_abundance_col)
 	return pnps
 
 def main():
 	o_depths = ocean_depths()
 	root="/researchdrive/zhongj2/MAG_pnps_redux"
-	# for ocean, depths in o_depths.items():
-	# 	for depth in depths:
-	# 		cal_MAG_abundance(ocean, depth, root, binning_delim = " ")
-	# 		cal_transposase_per_MAG(ocean, depth, root, binning_delim = " ")
+	for ocean, depths in o_depths.items():
+		for depth in depths:
+			# cal_MAG_abundance(ocean, depth, root, binning_delim = " ")
+			# cal_transposase_per_MAG(ocean, depth, root, binning_delim = " ")
+			print("files are created already, but don't delete this...")
 
-	oceans = list(o_depths.keys())
-	base = trans_scg_per_ocean(root, oceans[0], o_depths[oceans[0]])
-	for ocean in oceans[1:]:
-		base = base.append(trans_scg_per_ocean(root, ocean, o_depths[ocean]))
+	base = pd.DataFrame()
+	for ocean, depths in o_depths.items():
+		print(ocean)
+		base = base.append(trans_scg_per_ocean(root, ocean, depths))
 
 	f_name = f"transposase-abun-vs-scg-pnps.csv"
 	base.to_csv(f_name, index=False)

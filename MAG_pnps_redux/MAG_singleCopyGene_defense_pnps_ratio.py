@@ -1,6 +1,5 @@
 #!/bin/python3
 import csv
-from turtle import left
 import pandas as pd
 import sys
 import numpy as np
@@ -16,11 +15,20 @@ def ocean_depths():
 		ocean_depth[ocean] = depths1
 	return ocean_depth
 
-def get_binning_info(root, ocean, delim = " "):
-	tmp = list(csv.reader(open(f"{root}/{ocean}/all_bins_db/gene_callers_id-contig.txt"), delimiter=delim))[1:]
+def get_bin_helper(fname):
+	tmp = list(csv.reader(open(fname), delimiter=" "))[1:]
 	bin_info = [[l[0]] + l[1].split('_', 1) for l in tmp]
 	bin_info = pd.DataFrame(bin_info)
 	bin_info.columns = ["gene_callers_id", "bin", "contig"]
+	return bin_info
+
+def get_binning_info(root, ocean, delim = " "):
+	bin_info = get_bin_helper(f"{root}/{ocean}/all_bins_db/gene_callers_id-contig.txt")
+	bin_info['source'] = 'tara'
+	if ocean in ["IN", "NP", "SP", "NAT", "SAT"]:
+		deep_bin = get_bin_helper(f"{root}/deep/all_bins_db/gene_callers_id-contig.txt")
+		deep_bin['source'] = 'malaspina'
+		bin_info = bin_info.append(deep_bin)
 	return bin_info
 
 # gene = "toxin", "transposase"
@@ -44,15 +52,25 @@ def merge_single_copy_gens(df, root, ocean):
 	out = df.merge(scg, on="gene_callers_id", how = "left")
 	return out
 
+def read_pnps(root, ocean, depth): # ocean and depth is reversed for the Malaspina deep ocean
+	cols = ["gene_callers_id", "pnps", "sample_id"]
+	depth_pnps = pd.read_csv(f"{root}/{ocean}/PROFILE-{depth}/all_MAGs_pnps/pNpS.txt", sep = "\t").astype(str)
+	depth_pnps = depth_pnps[depth_pnps['pNpS_gene_reference'].astype(float) < 5] # sanity check
+	depth_pnps.rename(columns= {"corresponding_gene_call":cols[0],"pNpS_gene_reference":"pnps"}, inplace=True)
+	return depth_pnps[cols]
+
 def get_all_pnps(depths, root, ocean):
-	cols = ["gene_callers_id", "pnps", "sample_id","depth"]
 	pnps_all_sam = pd.DataFrame()
 	for depth in depths:
-		depth_pnps = pd.read_csv(f"{root}/{ocean}/PROFILE-{depth}/all_MAGs_pnps/pNpS.txt", sep = "\t").astype(str)
-		depth_pnps = depth_pnps[depth_pnps['pNpS_gene_reference'].astype(float) < 5] # sanity check
-		depth_pnps['depth'] = str(depth)
-		depth_pnps.rename(columns= {"corresponding_gene_call":cols[0],"pNpS_gene_reference":"pnps"}, inplace=True)
-		pnps_all_sam = pnps_all_sam.append(depth_pnps[cols])
+		tara_MAGs_pnps = read_pnps(root, ocean, depth)
+		tara_MAGs_pnps['depth'] = str(depth)
+		tara_MAGs_pnps['source'] = 'tara'
+		pnps_all_sam = pnps_all_sam.append(tara_MAGs_pnps)
+		if depth == "deep":
+			deep_MAGs_pnps = read_pnps(root, ocean = depth, depth = ocean)
+			deep_MAGs_pnps['depth'] = str(depth)
+			deep_MAGs_pnps['source'] = 'malaspina'
+			pnps_all_sam = pnps_all_sam.append(deep_MAGs_pnps)
 	pnps_all_sam.sort_values(by=['gene_callers_id'])
 	return pnps_all_sam
 
@@ -68,7 +86,7 @@ def MAG_base_pnps(root, ocean, depths):
 	bin_base = merge_single_copy_gens(bin_base, root, ocean)
 	bin_base = merge_blastp_f(bin_base, root, ocean, "transposase")
 	all_pnps = get_all_pnps(depths, root, ocean)
-	pnps = bin_base.merge(all_pnps, on = "gene_callers_id")
+	pnps = all_pnps.merge(bin_base, on = ["gene_callers_id", 'source'], how = "left")
 	pnps = merge_COG_category(pnps, root, ocean)
 	pnps.pnps = pnps.pnps.astype(float)
 	whole_MAG_pnps = pnps.groupby(['bin','sample_id','depth']).agg(
@@ -109,7 +127,7 @@ def main():
 		print(ocean)
 		pMs, os=get_res(ocean, o_depths[ocean])
 		per_MAG_summary = per_MAG_summary.append(pMs)
-		scg_defense_pnps_summary = scg_defense_pnps_summary.merge(os, on="depth")
+		scg_defense_pnps_summary = scg_defense_pnps_summary.merge(os, on="depth", how = "outer")
 
 	per_MAG_summary.to_csv(f"per_MAGs_pnps_summary.csv", index=False)
 	out_f = f"per_oceans_scg_vs_defense_pnps_summary.csv"

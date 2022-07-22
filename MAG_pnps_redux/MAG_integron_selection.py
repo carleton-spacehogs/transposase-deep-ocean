@@ -1,5 +1,5 @@
 import pandas as pd
-from MAG_singleCopyGene_defense_pnps_ratio import ocean_depths, MAG_base_pnps, get_all_pnps
+from MAG_singleCopyGene_defense_pnps_ratio import ocean_depths, MAG_base_pnps, get_all_pnps, ocean_depths_with_deep
 
 def within(start1, start2, end1, end2):
 	if abs(int(start1)-int(start2)) < 100 and abs(int(end1)-int(end2)) < 100:
