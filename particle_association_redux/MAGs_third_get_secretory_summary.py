@@ -51,8 +51,8 @@ def cal_CAZenzyme(overview_f):
 	ORF_calls_f = overview_f.replace("overview.txt", "uniInput")
 	signalp_count = count_signalp(signalp_pos_f)
 	total_CAZ_count = len(read_overview_2_agree(overview_f))
-	signalp_bp, MAG_ORFs_bp, ORF_count = cal_length_signalp(signalp_pos_f, ORF_calls_f)
-	return [signalp_count, cal_percent(signalp_count,total_CAZ_count), signalp_bp, MAG_ORFs_bp, ORF_count]
+	signalp_bp, MAG_ORFs_aa, ORF_count = cal_length_signalp(signalp_pos_f, ORF_calls_f)
+	return [signalp_count, cal_percent(signalp_count,total_CAZ_count), signalp_bp, MAG_ORFs_aa, ORF_count]
 
 def cal_peptidase(overview_f):
 	signalp_pos_f = overview_f.replace("overview.txt", "diamond_peptidase_gramPositive_summary.signalp5")
@@ -76,7 +76,7 @@ def main():
 	oceans = ["ARS","CPC","deep","EAC","IN","MED","NAT","NP","RS","SAT","SP"]
 	CAZ_sum_f = "MAGs_two_agree_CAZyme_and_peptidase_signalp_summary.csv"
 	colnames = ["bin",
-	"signal_CAZ_count", "percent_sect_CAZ", "signal_CAZ_aa", "MAG_ORFs_aa", "ORF_count"
+	"signal_CAZ_count", "percent_sect_CAZ", "signal_CAZ_aa", "MAG_ORFs_aa", "ORF_count",
 	"signal_pep_count", "percent_sect_pep", "signal_pep_aa"]
 
 	with open(CAZ_sum_f, 'w') as a:

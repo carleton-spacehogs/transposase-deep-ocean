@@ -1,4 +1,4 @@
-bin,signal_CAZ_count,percent_sect_CAZ,signal_CAZ_aa,MAG_ORFs_aa,ORF_countsignal_pep_count,percent_sect_pep,signal_pep_aa
+bin,signal_CAZ_count,percent_sect_CAZ,signal_CAZ_aa,MAG_ORFs_aa,ORF_count,signal_pep_count,percent_sect_pep,signal_pep_aa
 ARS-1360,0,0,0,175065,627,3,13.043478260869565,1043
 ARS-125,0,0,0,308578,1047,10,23.809523809523807,4382
 ARS-13,6,24.0,3358,1116066,3438,61,39.61038961038961,32492
