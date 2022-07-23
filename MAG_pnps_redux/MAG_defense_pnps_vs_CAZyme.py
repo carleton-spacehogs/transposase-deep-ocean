@@ -2,7 +2,7 @@ import sys
 import pandas as pd
 sys.path.insert(0, '../particle_association_redux')
 from MAGs_first_get_CAZenzyme_peptidase_seq import read_overview_2_agree, read_overview_only_diamond
-from MAGs_third_get_secretory_summary import get_signalp_set
+from third_get_secretory_CAZenzyme import get_all_signalp
 from MAG_singleCopyGene_defense_pnps_ratio import ocean_depths, MAG_base_pnps
 from MAG_singleCopyGene_vs_transposaseAbundance import gene_abun_base
 
@@ -17,15 +17,31 @@ def merge_CAZyme(df, ocean):
 	mask = [gene_id in gene_id_set for gene_id in df.gene_callers_id]
 	return df[mask]
 
-def merge_signalp_CAZyme(df, ocean):
-	signal_CAZyme_pos = f"/workspace/data/zhongj/MAG_CAZymes/{ocean}-CAZenzyme_gramNeg_summary.signalp5"
-	signal_CAzyme_set = get_signalp_set(signal_CAZyme_pos)
-	mask = [gene_id in signal_CAzyme_set for gene_id in df.gene_callers_id]
-	return df[mask]
+def signalp_to_df_helper(signalp_pos_f, origin):
+	signalp_neg_f = signalp_pos_f.replace("gramPos", "gramNeg")
+	pos_signalp_list = get_all_signalp(signalp_pos_f)
+	neg_signalp_list = get_all_signalp(signalp_neg_f)
+	signalp_set = set(pos_signalp_list + neg_signalp_list)
+	signal_CAZyme_df = pd.DataFrame(list(signalp_set))
+	signal_CAZyme_df.columns = ["gene_callers_id"]
+	siganl_CAZyme_df = siganl_CAZyme_df.assign(source = origin)
+	return siganl_CAZyme_df
+
+def subset_signalp_CAZyme(df, ocean):
+	base = "/workspace/data/zhongj/MAG_CAZymes"
+	signal_CAZ_df = signalp_to_df_helper(f"{base}/{ocean}-CAZenzyme_gramPos_summary.signalp5", "tara")
+	if ocean in ['IN','NAT','SAT','SP','NP']:
+		deep_df = signalp_to_df_helper(f"{base}/deep-CAZenzyme_gramPos_summary.signalp5", "deep")
+		signal_CAZ_df = signal_CAZ_df.append(deep_df)
+	df = df.merge(signal_CAZ_df, on = ["gene_callers_id", "source"])
+	return df
 
 def cal_CAZyme_per_MAG(ocean, depth, root):
+	## gene_abun_base does not take in the tara abundance yet. 
+	## all the deep MAG coverage we see are from the gene_id_callers mapping to tara gene_id_callers,
+	## which is completely useless
 	all_gene_abun = gene_abun_base(ocean, depth, root, binning_delim = " ")
-	signal_CAZyme_abun = merge_signalp_CAZyme(all_gene_abun, ocean)
+	signal_CAZyme_abun = subset_signalp_CAZyme(all_gene_abun, ocean)
 	signal_CAZyme_abun.groupby(['bin']).agg('sum').reset_index()
 	CAZyme_bp = signal_CAZyme_abun.filter(regex='ERR|SRR').astype(float).multiply(signal_CAZyme_abun.length, axis="index")
 	CAZyme_bp2 = signal_CAZyme_abun[["bin"]].join(CAZyme_bp)

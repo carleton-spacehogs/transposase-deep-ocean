@@ -1,6 +1,6 @@
 import sys
 import pandas as pd
-from MAG_singleCopyGene_defense_pnps_ratio import ocean_depths, merge_COG_category, get_all_pnps, get_binning_info, merge_blastp_f, ocean_depths_with_deep
+from MAG_singleCopyGene_defense_pnps_ratio import ocean_depths, merge_COG_category, get_all_pnps, get_binning_info, merge_blastp_f
 
 def per_defense_ORFs_per_sample_pnps(ocean, root, depths, avail_MAG):
 	bin_info = get_binning_info(root, ocean)
@@ -53,14 +53,14 @@ trans_concise = individual_trans_pnps[["gene_callers_id", "pnps", "ocean", "dept
 trans_concise.to_csv(path_or_buf=f'individual_transposase_pnps.csv', sep=',', index=False)
 
 # # for toxin!!!
-individual_toxin_pnps = pd.DataFrame()
-for ocean, depths in o_depths.items():
-	print(ocean)
-	ocean_toxin = per_gene_ORFs_per_sample_pnps(ocean, root, depths, avail_MAG, "toxin")
-	ocean_toxin["ocean"] = ocean
-	individual_toxin_pnps = individual_toxin_pnps.append(ocean_toxin)
+# individual_toxin_pnps = pd.DataFrame()
+# for ocean, depths in o_depths.items():
+# 	print(ocean)
+# 	ocean_toxin = per_gene_ORFs_per_sample_pnps(ocean, root, depths, avail_MAG, "toxin")
+# 	ocean_toxin["ocean"] = ocean
+# 	individual_toxin_pnps = individual_toxin_pnps.append(ocean_toxin)
 
-t_concise = individual_toxin_pnps[["gene_callers_id", "pnps", "ocean", "depth", "bin", "defense_count", 
-"sample_id", "signal_CAZyme_abun","scg_pnps_median","scg_count"]]
-t_concise.to_csv(path_or_buf=f'individual_toxin_pnps.csv', sep=',', index=False)
+# t_concise = individual_toxin_pnps[["gene_callers_id", "pnps", "ocean", "depth", "bin", "defense_count", 
+# "sample_id", "Trans_abun","scg_pnps_median","scg_count"]]
+# t_concise.to_csv(path_or_buf=f'individual_toxin_pnps.csv', sep=',', index=False)
 
