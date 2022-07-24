@@ -38,14 +38,21 @@ def get_signalp_set(signalp_pos_f, MAG_name, MAG_phylum_dict):
 	domain, phylum = MAG_phylum_dict[MAG_name]
 	if domain == "Bacteria":
 		if phylum == "Actinobacteria" or phylum == "Firmicutes":
-			print("hitting gram positive bacteria!!!")
 			return set(get_all_signalp(signalp_pos_f))
 		else:
 			signalp_neg_f = signalp_pos_f.replace("gramPositive", "gramPositive")
 			return set(get_all_signalp(signalp_neg_f))
 	elif domain == "Archaea":
-		print("hitting Archaea!!!")
-		return give_all(signalp_pos_f)
+		pos_f = signalp_pos_f.split('/')[-1]
+		type_f = "peptidase" if "peptidase" in pos_f else "CAZyme"
+		psort_f = signalp_pos_f.replace(pos_f, f'signal-{type_f}_psortb_archaea.txt')
+		pred = list(csv.reader(open(psort_f), delimiter='\t'))[1:]
+		signal_CAZyme=set()
+		for l in pred:
+			if "Extracellular" == l[1]:
+				signal_CAZyme.add(l[0].strip())
+		print(f"Archaea MAG: {MAG_name} : {len(signal_CAZyme)} extracellular CAZyme")
+		return signal_CAZyme
 	else:
 		print(f"Non bacteria or archaea, it was: {domain}, just give you any predict I have")
 		return give_all(signalp_pos_f)
@@ -97,20 +104,23 @@ def cal_peptidase(overview_f, MAG_name, MAG_phylum_dict):
 def get_ocean_summary_count(ocean, MAG_phylum_dict):
 	ocean_summary = []
 	overviews = glob.glob(f"../../bins/{ocean}/*/overview.txt")
+	# archaea_file = open('archaea-MAGs.txt', 'a')
 	for ov in overviews:
 		MAG_name = clean_name(ov.split("/")[4])
 		if MAG_name in MAG_phylum_dict:
-			if MAG_phylum_dict[MAG_name][0] != "Archaea":
-				entire_row = [MAG_name] + cal_CAZyme(ov, MAG_name, MAG_phylum_dict) + cal_peptidase(ov, MAG_name, MAG_phylum_dict)
-				ocean_summary.append(entire_row)
+			domain = MAG_phylum_dict[MAG_name][0]
+			# 	archaea_file.write(MAG_name + '\n')
+			entire_row = [MAG_name, domain] + cal_CAZyme(ov, MAG_name, MAG_phylum_dict) + cal_peptidase(ov, MAG_name, MAG_phylum_dict)
+			ocean_summary.append(entire_row)
 		else:
 			print(f"the MAG {MAG_name} is not one we are insterested in")
+	# archaea_file.close()
 	return ocean_summary
 
 def main():
 	oceans = ["ARS","CPC","deep","EAC","IN","MED","NAT","NP","RS","SAT","SP"]
 	CAZ_sum_f = "MAGs_two_agree_CAZyme_and_peptidase_signalp_summary2.csv"
-	colnames = ["bin",
+	colnames = ["bin", "domain",
 	"signal_CAZ_count", "percent_sect_CAZ", "signal_CAZ_aa", "MAG_ORFs_aa", "ORF_count",
 	"signal_pep_count", "percent_sect_pep", "signal_pep_aa"]
 	MAG_phylum_dict = find_gram_positive_bact()
