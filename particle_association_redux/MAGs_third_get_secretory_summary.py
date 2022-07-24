@@ -5,7 +5,10 @@ import os
 from Bio import SeqIO
 from first_get_CAZenzyme_and_peptidase import read_peptidase
 from third_get_secretory_CAZenzyme import get_all_signalp
-from MAGs_first_get_CAZenzyme_peptidase_seq import read_overview_2_agree
+from MAGs_first_get_CAZenzyme_peptidase_seq import read_overview_2_agree, read_overview_only_diamond
+
+CAZyme_signal_pos = "two_agree_CAZenzyme_gramPositive_summary.signalp5"
+peptidase_signal_pos = "diamond_peptidase_gramPositive_summary.signalp5"
 
 def find_gram_positive_bact():
 	'''Actinobacteria- and Firmicutes-affiliated sequences were predicted under Gram-positive mode, while other bacterial sequences were predicted under Gram-negative mode. For archaeal sequences, PSORTb (3.0.2) (57) was used to predict the subcellular location, because SignalP (4.0) (56) does not support sequences of Archaea. (Zhao et al, 2020)'''
@@ -85,15 +88,16 @@ def cal_length_signalp(signalp_pos_f, ORF_calls_f, MAG_name, MAG_phylum_dict):
 def cal_percent(d,n): return 0 if (n == 0 or not n or not d) else d/n*100
 
 def cal_CAZyme(overview_f, MAG_name, MAG_phylum_dict):
-	signalp_pos_f = overview_f.replace("overview.txt", "two_agree_CAZenzyme_gramPositive_summary.signalp5")
+	signalp_pos_f = overview_f.replace("overview.txt", CAZyme_signal_pos)
 	ORF_calls_f = overview_f.replace("overview.txt", "uniInput")
 	signalp_count = count_signalp(signalp_pos_f, MAG_name, MAG_phylum_dict)
-	total_CAZ_count = len(read_overview_2_agree(overview_f))
+	# total_CAZ_count = len(read_overview_2_agree(overview_f))
+	total_CAZ_count = len(read_overview_only_diamond(overview_f))
 	signalp_bp, MAG_ORFs_aa, ORF_count = cal_length_signalp(signalp_pos_f, ORF_calls_f, MAG_name, MAG_phylum_dict)
 	return [signalp_count, cal_percent(signalp_count,total_CAZ_count), signalp_bp, MAG_ORFs_aa, ORF_count]
 
 def cal_peptidase(overview_f, MAG_name, MAG_phylum_dict):
-	signalp_pos_f = overview_f.replace("overview.txt", "diamond_peptidase_gramPositive_summary.signalp5")
+	signalp_pos_f = overview_f.replace("overview.txt", peptidase_signal_pos)
 	ORF_calls_f = overview_f.replace("overview.txt", "uniInput")
 	signalp_count = count_signalp(signalp_pos_f, MAG_name, MAG_phylum_dict)
 	blastp_f = overview_f.replace("overview.txt", "peptidase_diamond_unique.blastp")
@@ -113,13 +117,13 @@ def get_ocean_summary_count(ocean, MAG_phylum_dict):
 			entire_row = [MAG_name, domain] + cal_CAZyme(ov, MAG_name, MAG_phylum_dict) + cal_peptidase(ov, MAG_name, MAG_phylum_dict)
 			ocean_summary.append(entire_row)
 		else:
-			print(f"the MAG {MAG_name} is not one we are insterested in")
+			print(f"MAG {MAG_name} doesn't meet the >70 completeness and <10 containmination criteria")
 	# archaea_file.close()
 	return ocean_summary
 
 def main():
 	oceans = ["ARS","CPC","deep","EAC","IN","MED","NAT","NP","RS","SAT","SP"]
-	CAZ_sum_f = "MAGs_two_agree_CAZyme_and_peptidase_signalp_summary2.csv"
+	CAZ_sum_f = "MAGs_diamond_CAZyme_and_peptidase_signalp_summary.csv"
 	colnames = ["bin", "domain",
 	"signal_CAZ_count", "percent_sect_CAZ", "signal_CAZ_aa", "MAG_ORFs_aa", "ORF_count",
 	"signal_pep_count", "percent_sect_pep", "signal_pep_aa"]

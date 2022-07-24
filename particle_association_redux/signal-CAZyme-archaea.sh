@@ -14,12 +14,16 @@ for MAG in $archMAGs; do
 	fi
 	echo $MAG_folder
 	MAG_folder2=$root/bins/$ocean/$MAG_folder
-	res_dir=$demingr/res-peptidase/$MAG
+	res_dir=$demingr/res-CAZ-diamond/$MAG
 	mkdir $res_dir
+	$demingr/psortb -a --seq $MAG_folder2/only_diamond_CAZenzyme.faa --verbose --output terse --outdir $res_dir
+	cp $res_dir/*_psortb_archaea.txt $MAG_folder2/signal-diamond-CAZyme_psortb_archaea.txt
+
+	# $demingr/psortb -a --seq $MAG_folder2/only_diamond_peptidase.faa --verbose --output terse --outdir $res_dir
+	# cp $res_dir/*_psortb_archaea.txt $MAG_folder2/signal-peptidase_psortb_archaea.txt
+	
 	# $demingr/psortb -a --seq $MAG_folder2/only_CAZenzyme.faa --verbose --output terse --outdir $res_dir
-	$demingr/psortb -a --seq $MAG_folder2/only_diamond_peptidase.faa --verbose --output terse --outdir $res_dir
 	# cp $res_dir/*_psortb_archaea.txt $MAG_folder2/signal-CAZyme_psortb_archaea.txt
-	cp $res_dir/*_psortb_archaea.txt $MAG_folder2/signal-peptidase_psortb_archaea.txt
 done
 
 # /Accounts/zhongj2/psortb/bin/psort -a $root/bins/ARS/TOBG_ARS-1018/only_CAZenzyme.faa --output .
