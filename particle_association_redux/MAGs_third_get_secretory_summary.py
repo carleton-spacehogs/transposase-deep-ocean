@@ -17,8 +17,8 @@ def find_gram_positive_bact():
 		MAG_phylum[MAG_name] = [domain, phylum]
 	deep = list(csv.reader(open(f'{base}/malaspina_bin_taxon_over70complete.csv'), delimiter=','))[1:]
 	for l in deep:
-		MAG_name, domain, phylum = l[0], l[1], l[2]
-		MAG_phylum[MAG_name] = [domain, phylum] # .replace('mp-deep_mag-', 'deep_MAG_')
+		MAG_name, domain, phylum = l[0].replace("mp-deep_mag-","deep_MAG_"), l[1], l[2]
+		MAG_phylum[MAG_name] = [domain, phylum]
 	return MAG_phylum
 
 def clean_name(MAG_name):
