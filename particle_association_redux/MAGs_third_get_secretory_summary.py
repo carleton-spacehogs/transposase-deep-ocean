@@ -7,7 +7,8 @@ from first_get_CAZenzyme_and_peptidase import read_peptidase
 from third_get_secretory_CAZenzyme import get_all_signalp
 from MAGs_first_get_CAZenzyme_peptidase_seq import read_overview_2_agree, read_overview_only_diamond
 
-CAZyme_signal_pos = "two_agree_CAZenzyme_gramPositive_summary.signalp5"
+# CAZyme_signal_pos = "two_agree_CAZenzyme_gramPositive_summary.signalp5"
+CAZyme_signal_pos = "diamond_CAZenzyme_gramNegative_summary.signalp5"
 peptidase_signal_pos = "diamond_peptidase_gramPositive_summary.signalp5"
 
 def find_gram_positive_bact():
@@ -47,7 +48,8 @@ def get_signalp_set(signalp_pos_f, MAG_name, MAG_phylum_dict):
 			return set(get_all_signalp(signalp_neg_f))
 	elif domain == "Archaea":
 		pos_f = signalp_pos_f.split('/')[-1]
-		type_f = "peptidase" if "peptidase" in pos_f else "CAZyme"
+		# type_f = "peptidase" if "peptidase" in pos_f else "CAZyme"
+		type_f = "peptidase" if "peptidase" in pos_f else "diamond-CAZyme"
 		psort_f = signalp_pos_f.replace(pos_f, f'signal-{type_f}_psortb_archaea.txt')
 		pred = list(csv.reader(open(psort_f), delimiter='\t'))[1:]
 		signal_CAZyme=set()
@@ -117,7 +119,7 @@ def get_ocean_summary_count(ocean, MAG_phylum_dict):
 			entire_row = [MAG_name, domain] + cal_CAZyme(ov, MAG_name, MAG_phylum_dict) + cal_peptidase(ov, MAG_name, MAG_phylum_dict)
 			ocean_summary.append(entire_row)
 		else:
-			print(f"MAG {MAG_name} doesn't meet the >70 completeness and <10 containmination criteria")
+			print(f"MAG {MAG_name} fails the >70 completeness and <10 containmination criteria")
 	# archaea_file.close()
 	return ocean_summary
 
