@@ -100,8 +100,9 @@ def get_ocean_summary_count(ocean, MAG_phylum_dict):
 	for ov in overviews:
 		MAG_name = clean_name(ov.split("/")[4])
 		if MAG_name in MAG_phylum_dict:
-			entire_row = [MAG_name] + cal_CAZyme(ov, MAG_name, MAG_phylum_dict) + cal_peptidase(ov, MAG_name, MAG_phylum_dict)
-			ocean_summary.append(entire_row)
+			if MAG_phylum_dict[MAG_name][0] != "Archaea":
+				entire_row = [MAG_name] + cal_CAZyme(ov, MAG_name, MAG_phylum_dict) + cal_peptidase(ov, MAG_name, MAG_phylum_dict)
+				ocean_summary.append(entire_row)
 		else:
 			print(f"the MAG {MAG_name} is not one we are insterested in")
 	return ocean_summary
