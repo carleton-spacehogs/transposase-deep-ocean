@@ -137,8 +137,8 @@ tmp = merge_pnps_all(merged_integrons, o_depth, MAG_rt)
 MAG_int_pnps = merge_COG_cate(tmp, o_depth, MAG_rt)
 MAG_int_pnps.to_csv(path_or_buf=f'MAG_integron_pnps_all.csv', sep=',', index=False)
 
-bin_info = pd.read_csv("signalCAZyme-abun-vs-genes-pnps.csv").astype(str)
-MAG_int_pnps2 = MAG_int_pnps.merge(bin_info, on=["bin","sample_id"])
+bin_info = pd.read_csv("per_MAGs_pnps_summary.csv").astype(str).drop(["ocean",'ratio_all_scg','ratio_all_MAG','depth'],axis=1)
+MAG_int_pnps2 = MAG_int_pnps.merge(bin_info, on=["bin","sample_id"], how = "left")
 
 MAG_int_pnps2.to_csv(path_or_buf=f'MAG_integron_pnps_with_high_cov_bins.csv', sep=',', index=False)
 
