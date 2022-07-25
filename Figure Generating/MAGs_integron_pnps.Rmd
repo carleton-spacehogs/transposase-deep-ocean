@@ -1,0 +1,71 @@
+---
+title: "Analyzing pnps of integron contigs in MAGs"
+author: "Jimmy Zhong"
+date: "7/21/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
+source("./init_share.R")
+```
+
+```{r}
+raw = read_csv("../MAG_pnps_redux/MAG_integron_pnps_with_high_cov_bins.csv")
+
+raw = raw %>%
+  mutate(depth = factor(depth, levels = c("SRF","DCM","MES","deep"))) %>%
+  mutate(is_defense = ifelse(grepl("V", category_accession), "defense", "non-\ndefense"))%>%
+  filter(pnps < 4)
+
+raw_fudge_pnps = min(raw$pnps[raw$pnps>0])
+
+raw %>% 
+  filter(integron %in% c("complete","CALIN")) %>%
+  ggplot(aes(y=is_defense, # x=pnps, log(pnps + raw_fudge_pnps)
+             x=pnps)) +
+  geom_boxplot(outlier.shape = NA) +
+  xlab("pnps ratio of cassette genes in MAGs") +
+  # facet_wrap(~depth) +
+  geom_point(alpha = 0.2) +
+  stat_summary(fun.data = boxplot.give.nr, 
+               geom = "text", position=position_nudge(x = 0.05, y = 0.15))
+
+integrons = filter(raw, (!is.na(defense_count) & (!is.na(scg_count))))
+fudge_def = min(integrons$defense_pnps_median[integrons$defense_pnps_median>0])
+fudge_scg = min(integrons$scg_pnps_median[integrons$scg_pnps_median>0])
+fudge_pnps = min(integrons$pnps[integrons$pnps>0])
+
+integrons$defense_pnps_median = integrons$defense_pnps_median + fudge_def
+integrons$scg_pnps_median = integrons$scg_pnps_median + fudge_scg
+# integrons$pnps = integrons$pnps + fudge_pnps
+
+integrons = integrons %>% 
+  # filter(integron %in% c("complete","CALIN")) %>%
+  filter(scg_count >= 11) %>%
+  mutate(ratio_of_pnps = pnps/scg_pnps_median) %>%
+  mutate(sqrt_ratio = sqrt(ratio_of_pnps)) %>%
+  mutate(log_ratio = log((pnps + fudge_pnps)/scg_pnps_median))
+
+
+integrons %>%
+  # filter(integron %in% c("complete","CALIN")) %>%
+  filter(ratio_of_pnps < 15) %>%
+  ggplot(aes(y=is_defense, x=sqrt_ratio)) +
+  geom_boxplot(outlier.shape = NA) +
+  geom_point(alpha = 0.2) +
+  stat_summary(fun.data = boxplot.give.nr, 
+               geom = "text", position=position_nudge(x = 0.3, y = 0.15))
+
+wilcox.test(ratio_of_pnps~is_defense,integrons)
+wilcox.test(pnps~is_defense, raw)
+```
+
+
+```{r}
+all= read_csv("../MAG_pnps_redux/anvi_integrons_all_oceans.csv")
+all_genes = filter(all, integron != "In0")
+counts = table(all$COG_category)
+sort(counts)
+```
+

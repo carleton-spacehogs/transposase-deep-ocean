@@ -1,37 +1,98 @@
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
 source("./init_share.R")
 g(bin_taxon, depth_comparison, malaspina_bins, low_trans, high_trans) %=% init_bins()
-quantitative_particle_association = init_MAGs_CAZenzyme_peptide()
-quantitative_MAG_eukaryote = init_MAGs_eukaryote()
 
-selected <- c("bin","percent_trans", "log_percent_trans", "median_bin_pnps", "depth", 
-              "size_fraction", "complete genome size (Mbp)", "Class", "Genus","Order",
-              "Total ORFs")
+selected <- c("bin","percent_trans", "log_percent_trans", "depth",
+              "Class with more than 10 MAGs", "Class_25_MAGs", "Completeness",
+              "complete genome size (Mbp)", "Class", "Genus","Order", "Total ORFs")
+bin_taxon$Completeness = bin_taxon$`Percent Complete`
 
 all_x <- bin_taxon[selected] %>% filter(!is.na(depth)) 
-all_y <- malaspina_bins[selected] %>% filter(size_fraction != "error")
+all_y <- malaspina_bins[selected]
+all_p <- rbind(all_x, all_y)
 
-all_p <- rbind(all_x, all_y) # %>%
-#   mutate(log_bin_pnps = log10(median_bin_pnps)) %>%
-#   mutate(log_trans_graph = ifelse(percent_trans == 0, -2, log10(percent_trans))) %>%
-#   mutate(log_trans_reg = ifelse(percent_trans == 0, -5, log10(percent_trans)))
+MAGs_p = merge_MAGs_eukaryote(merge_MAGs_CAZyme_peptide(all_p))
+MAGs_p = filter(MAGs_p, eukarya_prop < 0.05)
 
-MAGs_p = merge(all_p, quantitative_particle_association, by = "bin")
+colourCount = length(unique(MAGs_p$Class_25_MAGs))
+getPalette = colorRampPalette(brewer.pal(9, "Set1"))
+MAGs_p %>%
+  # filter(log_abun_sect_CAZ > -8) %>%
+  ggplot(aes(x=log_abun_sect_CAZ, y=log(`complete genome size (Mbp)`))) +
+  facet_wrap(~depth) +
+  geom_smooth(method = "lm", se = T) +
+  # scale_color_manual(values = getPalette(colourCount)) +
+  scale_color_viridis(option = "A") +
+  geom_point(aes(color=log_percent_trans), alpha = 0.5) +
+  theme_classic()
 
-p_euk = merge(MAGs_p, quantitative_MAG_eukaryote, bu = "bin")
-p_euk$abundance_sect_CAZ = p_euk$signal_CAZ_count/p_euk$`Total ORFs`
-p_euk$abundance_sect_pep = p_euk$signal_pep_count/p_euk$`Total ORFs`
-p_euk$avg_sect_abundance = (p_euk$abundance_sect_CAZ + p_euk$abundance_sect_pep)/2
+regress_MAGs = MAGs_p %>%
+  filter(!is.na(Class)) %>%
+  filter(log_abun_sect_CAZ > -8) %>%
+  group_by(depth, Class) %>%
+  mutate(n = n()) %>%
+  filter(n > 11) %>%
+  select(c("bin", "Class", "depth"))
 
-plot(`complete genome size (Mbp)` ~ sqrt(percent_sect_CAZ), data = p_euk)
+MAGs_p2 = MAGs_p %>%
+  filter(Class %in% regress_MAGs$Class)
+
+MAGs_p %>%
+  ggplot(aes(x=log_abun_sect_CAZ, y=log(`complete genome size (Mbp)`))) +
+  facet_grid(depth~Class_25_MAGs) +
+  geom_smooth(method = "lm", se = T) +
+  scale_color_viridis(option = "A") +
+  geom_point(alpha = 0.3, aes(color = log_percent_trans))
+
+ggsave("per-taxon-CAZ-genomesize.pdf", plot = last_plot(),
+       height = 7, width = 18)
+
+# genome size (ORFs) compared to depth
+MAGs_p %>%
+  ggplot(aes(y=fct_rev(depth), x=log(`complete genome size (Mbp)`))) +
+  facet_wrap(~Class, scale = "free_x") +
+  # xlim(-1, max(MAGs_p$`complete genome size (Mbp)`)) +
+  geom_boxplot()
+
+pre_CAZ = lm(log(`complete genome size (Mbp)`) ~ Class + depth, data = MAGs_p)
+post_CAZ = lm(log(`complete genome size (Mbp)`) ~ Class + depth + 
+                log_abun_sect_CAZ, data = MAGs_p)
+anova(pre_CAZ, post_CAZ)
+
+get_r(pre_CAZ)
+get_r(post_CAZ)
+# > get_r(pre_CAZ)
+# [1] 0.4694659
+# > get_r(post_CAZ)
+# [1] 0.5516766
+
+# > get_r(pre_CAZ)
+# [1] 0.4694659
+# > get_r(post_CAZ)
+# [1] 0.5307099
+
+# > get_r(pre_CAZ)
+# [1] 0.4694659
+# > get_r(post_CAZ)
+# [1] 0.5220544
+
+trans1.lm = lm(log_percent_trans ~ depth + log_abun_sect_CAZ + 
+                log(`complete genome size (Mbp)`), data = MAGs_p)
+trans2.lm = lm(log_percent_trans ~ depth + log_abun_sect_CAZ + 
+                log(`complete genome size (Mbp)`) + Class, data = MAGs_p)
+summary(trans.lm)
+get_r(trans1.lm)
+get_r(trans2.lm)
+
+
+
+plot(`complete genome size (Mbp)` ~ log(abundance_sect_CAZ), data = p_euk)
 
 plot(log(`complete genome size (Mbp)`) ~ sqrt(percent_sect_CAZ), 
      data = filter(p_euk, eukarya_prop < 0.05))
 
 get_r(lm(log(`complete genome size (Mbp)`) ~ log(abundance_sect_CAZ + 0.0005),
          data = filter(p_euk, eukarya_prop < 0.05)))
-summary(lm(log(`complete genome size (Mbp)`) ~ Class + depth + log(abundance_sect_CAZ + 0.0005),
-           data = filter(p_euk, eukarya_prop < 0.05)))
 
 tmp <- all_p %>% group_by(Order, depth) %>%
   count() %>% filter(n > 5)

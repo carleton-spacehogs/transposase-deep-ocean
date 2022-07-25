@@ -14,14 +14,25 @@ g(bin_taxon, depth_comparisons, malaspina_bins, low_trans, high_trans) %=% init_
 ```{r}
 scg_trans = read_csv("../MAG_pnps_redux/transposase-abun-vs-scg-pnps.csv")
 scg_trans$depth = factor(scg_trans$depth, levels = c("SRF","DCM","MES","deep"))
-fudge_factor = min(scg_trans$Trans_abun[scg_trans$Trans_abun>0])/2
 
-scg_trans$trans_abun_norm = ifelse(scg_trans$Trans_abun <= 0, 
-                                   fudge_factor/2, scg_trans$Trans_abun)
-scg_trans$trans_abun_norm = log10(scg_trans$trans_abun_norm)
-scg_trans$log_scg_pnps_median = log10(scg_trans$scg_pnps_median)
+scg_trans2 = scg_trans %>% filter(scg_count >= 21)
+fudge_factor = min(scg_trans2$Trans_abun[scg_trans2$Trans_abun>0])
+scg_trans2$trans_abun_norm = ifelse(scg_trans2$Trans_abun <= 0, 
+                                   fudge_factor/2, scg_trans2$Trans_abun)
+scg_trans2$trans_abun_norm = log10(scg_trans2$trans_abun_norm)
+scg_trans2$log_scg_pnps_median = log10(scg_trans2$scg_pnps_median)
 
-scg_trans2 = scg_trans %>% filter(scg_count > 11)
+scg_trans %>%
+  # filter(trans_abun_norm > -5) %>%
+  filter(scg_pnps_median < 0.5) %>%
+  ggplot(aes(x=log_scg_pnps_median, y=trans_abun_norm )) +
+  geom_point(alpha = 0.3) +
+  facet_wrap(~depth) +
+  geom_smooth(method = "lm", se=F,
+              scg_trans=subset(scg_trans, trans_abun_norm > -4))
+
+
+
 
 bin_occur = as.data.frame(table(scg_trans2$bin))
 colnames(bin_occur) = c("bin", "Freq")

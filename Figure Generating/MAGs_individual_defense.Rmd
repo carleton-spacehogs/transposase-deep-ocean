@@ -1,0 +1,305 @@
+---
+title: "pathway related analysis with MaAsLin on Sinha dataset"
+author: "Jimmy Zhong"
+date: "7/15/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
+source("./init_share.R")
+```
+
+## defense mechanisms genes have a lower pnps at the deep oceans
+```{r}
+defense = read_csv("../MAG_pnps_redux/individual_defense_pnps.csv")
+# defense = defense[defense$scg_count >= 21, ] # all of them were over 11 scg
+scg_fudge = min(defense$scg_pnps_median[defense$scg_pnps_median>0])
+def_fudge = min(defense$pnps[defense$pnps>0])
+defense$scg_median_norm = defense$scg_pnps_median + scg_fudge
+defense$pnps_norm = defense$pnps + def_fudge
+defense$pnps_ratio = defense$pnps / defense$scg_median_norm
+
+defense_n = defense[defense$pnps_ratio < 15,] # & 1/20 < defense$pnps_ratio
+defense_n$log_ratio = log(defense_n$pnps_norm/defense_n$scg_median_norm)
+defense_n$sqrt_ratio = sqrt(defense_n$pnps_ratio)
+defense_n$depth = factor(defense_n$depth, levels = c("SRF","DCM", "MES", "deep"))
+
+defense_n %>%
+  filter(scg_count >=21) %>%
+  filter(!ocean %in% c("EAC", "MED", "RS")) %>%
+  mutate(sd = sd(sqrt_ratio)) %>%
+  ggplot(aes(y=fct_rev(depth), x=sqrt_ratio)) +
+  facet_wrap(~ocean, ncol = 2) +
+  geom_boxplot() +
+  stat_summary(fun.data = boxplot.give.nr, 
+               geom = "text", position=position_nudge(x = 0.15, y = 0)) 
+
+
+library(lme4)
+defense_mixed = lmer(sqrt_ratio ~ (1 | bin) + ocean + depth, data = defense_n)
+Anova(defense_mixed)
+
+defense_n %>%
+  filter(signal_CAZyme_abun < 0.02) %>%
+  filter(signal_CAZyme_abun > 0) %>%
+  # mutate(signal_CAZyme_abun = ifelse(signal_CAZyme_abun < 0, 0, signal_CAZyme_abun)) %>%
+  ggplot(aes(x = signal_CAZyme_abun, y = sqrt_ratio)) +
+  geom_point() +
+  geom_smooth(method = "lm")
+
+
+sort(table(defense_n$bin))
+
+# SP-351 -> 1 depth
+# NP-122, IN-924, NP-54, NP-55, NP-966, NAT-39-> only 2 depths
+# NAT-60, SAT-7, SAT-109 -> 3 depths...
+# IN-32!!! SP-56!!! SAT-1!!!
+
+# SP-246 -> too little gene_callers_id
+a_MAG = defense_n %>%
+  # filter(bin == "IN-32") %>% #
+  filter(bin == "NP-15") %>% # good, but only has 2 depths
+  mutate(gene_callers_id = factor(gene_callers_id)) %>%
+  group_by(gene_callers_id, depth) %>%
+  summarize(mean_ratio = mean(sqrt_ratio))
+
+a_MAG %>%
+  ggplot(aes(y=fct_rev(depth), x=mean_ratio, color = gene_callers_id)) +
+  geom_point(aes(color = gene_callers_id)) +
+  geom_line(aes(group = gene_callers_id),
+            alpha = 0.3)
+
+tmp = defense_n %>%
+  group_by(bin, depth) %>%
+  summarise(count = n()) %>%
+  filter(count > 0)
+sort(table(tmp$bin))
+
+# NAT-255   NAT-272    NAT-60     NP-15     SAT-1   SAT-109 
+#         3         3         3         3         3         3         3 
+#    SAT-46     SAT-7    SP-246     SP-56     IN-32 
+#         3         3         3         3         4 
+```
+
+## now the toxins
+```{r}
+toxin = read_csv("../MAG_pnps_redux/individual_toxin_pnps.csv")
+toxin = toxin[toxin$scg_count >= 21, ] # all of them were over 11 scg
+scg_fudge = min(toxin$scg_pnps_median[toxin$scg_pnps_median>0])
+def_fudge = min(toxin$pnps[toxin$pnps>0])
+toxin$scg_median_norm = toxin$scg_pnps_median + scg_fudge
+toxin$pnps_norm = toxin$pnps + def_fudge
+toxin$pnps_ratio = toxin$pnps_norm / toxin$scg_median_norm
+
+toxin_n = toxin[toxin$pnps_ratio < 20 & 1/20 < toxin$pnps_ratio,]
+toxin_n$log_ratio = log(toxin_n$pnps_ratio)
+toxin_n$depth = factor(toxin_n$depth, levels = rev(c("SRF","DCM", "MES", "deep")))
+
+toxin_n %>%
+  filter(!ocean %in% c("EAC", "MED", "RS")) %>%
+  ggplot(aes(y=depth, x=log_ratio)) +
+  facet_wrap(~ocean, ncol = 2) +
+  geom_boxplot()
+
+```
+
+
+## now the transposase
+```{r}
+trans = read_csv("../MAG_pnps_redux/individual_transposase_pnps.csv")
+scg_fudge = min(trans$scg_pnps_median[trans$scg_pnps_median>0])
+def_fudge = min(trans$pnps[trans$pnps>0])
+trans$scg_median_norm = trans$scg_pnps_median + scg_fudge
+trans$pnps_norm = trans$pnps + def_fudge
+trans$pnps_ratio = trans$pnps_norm / trans$scg_median_norm
+
+trans_n = trans[trans$pnps_ratio < 15,] # 20 & 1/20 < trans$pnps_ratio
+trans_n$log_ratio = log(trans_n$pnps_ratio)
+trans_n$sqrt_ratio = sqrt(trans_n$pnps_ratio)
+trans_n$depth = factor(trans_n$depth, levels = c("SRF","DCM", "MES", "deep"))
+
+trans_ns = filter(trans_n, !ocean %in% c("EAC", "MED", "RS", "ARS"))
+trans_ns %>%
+  # filter(scg_count > 15) %>%
+  ggplot(aes(y=fct_rev(depth), x=sqrt_ratio)) +
+  facet_wrap(~ocean, ncol = 3) +
+  geom_boxplot() + 
+  # geom_line(aes(group = bin2), alpha = 0.5) +
+  stat_summary(fun.data = boxplot.give.nr, 
+               geom = "text", position=position_nudge(x = 0.05, y = 0))
+
+summary(lm(sqrt_ratio ~ ocean + depth, data = trans_ns))
+
+
+sort(table(trans_n$bin))
+
+# NP-15... NAT-60... SAT-46 (better) ... 
+# IN-32!!!
+a_MAG = trans_ns %>%
+  filter(bin == "IN-32") %>%
+  # filter(bin == "NP-1") %>% # good, but only has 2 depths
+  mutate(gene_callers_id = factor(gene_callers_id)) %>%
+  group_by(depth, gene_callers_id) %>%
+  summarize(mean_ratio = mean(sqrt_ratio)) %>%
+  as.data.frame()
+
+a_MAG %>%
+  ggplot(aes(y=fct_rev(depth), x=mean_ratio, color = gene_callers_id)) +
+  geom_point(aes(color = gene_callers_id)) +
+  geom_line(aes(group = gene_callers_id),
+            alpha = 0.5)
+```
+
+## Anovas
+```{r}
+defense.pre.lm = lm(sqrt_ratio ~ ocean + bin, 
+           data = defense_n %>% filter(!ocean %in% c("EAC", "MED", "RS") ))
+defense.depth.lm = lm(sqrt_ratio ~ ocean + bin + depth,
+           data = defense_n %>% filter(!ocean %in% c("EAC", "MED", "RS") ))
+anova(defense.pre.lm, defense.depth.lm)
+
+trans.pre.lm = lm(sqrt_ratio ~ ocean + bin, data = trans_ns )
+trans.depth.lm = lm(sqrt_ratio ~ ocean + bin + depth, data = trans_ns )
+anova(trans.pre.lm, trans.depth.lm)
+
+trans %>% 
+  filter(scg_count >=21) %>%
+  filter(!ocean %in% c("EAC", "MED", "RS") ) %>% 
+  rstatix::wilcox_test(pnps_ratio ~ depth)
+
+# # A tibble: 6 x 9
+#   .y.        group1 group2    n1    n2 statistic        p    p.adj p.adj.signif
+# * <chr>      <chr>  <chr>  <int> <int>     <dbl>    <dbl>    <dbl> <chr>       
+# 1 pnps_ratio DCM    deep      62   406     16894 1.41e- 5 4.92e- 5 ****        
+# 2 pnps_ratio DCM    MES       62   391     13715 9.6 e- 2 9.6 e- 2 ns          
+# 3 pnps_ratio DCM    SRF       62    35       771 1.8 e- 2 3.7 e- 2 *           
+# 4 pnps_ratio deep   MES      406   391     56776 3.53e-12 2.12e-11 ****        
+# 5 pnps_ratio deep   SRF      406    35      2465 1.43e-10 7.15e-10 ****        
+# 6 pnps_ratio MES    SRF      391    35      3791 1.23e- 5 4.92e- 5 ****  
+
+defense %>% 
+  filter(scg_count >=21) %>%
+  filter(!ocean %in% c("EAC", "MED", "RS") ) %>% 
+  rstatix::wilcox_test(pnps_ratio ~ depth)
+# A tibble: 6 x 9
+#   .y.        group1 group2    n1    n2 statistic         p     p.adj p.adj.signif
+# * <chr>      <chr>  <chr>  <int> <int>     <dbl>     <dbl>     <dbl> <chr>       
+# 1 pnps_ratio DCM    deep    5327  6149  20972684 1.41e-148 7.05e-148 ****        
+# 2 pnps_ratio DCM    MES     5327  8330  24461069 4.53e- 24 9.06e- 24 ****        
+# 3 pnps_ratio DCM    SRF     5327  4472  11498208 3   e-  3 3   e-  3 **          
+# 4 pnps_ratio deep   MES     6149  8330  21438058 3.22e- 63 1.29e- 62 ****        
+# 5 pnps_ratio deep   SRF     6149  4472   9375846 6.71e-173 4.03e-172 ****        
+# 6 pnps_ratio MES    SRF     8330  4472  16083404 2.98e- 37 8.94e- 37 **** 
+```
+
+
+
+
+
+```{r}
+trans_sum = MAG_sum %>%
+  filter(transposase_count > 5) %>%
+  mutate(trans_scg_ratio = transposase_pnps_median/scg_pnps_median) %>%
+  filter(trans_scg_ratio < 20) %>%
+  mutate(trans_scg_ratio_log = log(trans_scg_ratio)) %>%
+  mutate(depth = factor(depth, levels = c("SRF","DCM","MES","deep")))
+
+trans_sum %>%
+  ggplot(aes(y=fct_rev(depth), x=trans_scg_ratio_log)) +
+  facet_wrap(~ocean) +
+  geom_boxplot() +
+  geom_point(aes(color = bin))
+
+trans_sum %>%
+  ggplot(aes(x=depth, y=trans_scg_ratio_log))+
+  # geom_boxplot(outlier.shape = NA)+
+  geom_point(aes(colour = bin), alpha = 0.3)+
+  geom_line(aes(group = bin), alpha = 0.2) +
+  theme_classic()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+```{r}
+pnps_melt = function(pnps_df, select_col){
+  return( reshape2::melt(pnps_df[select_col], id =c("bin"), value.name = c("diff")) )
+}
+
+g(defense_df, toxin_df, indi_toxin_df, GOC_toxin_df, mobilome_df, trans_df) %=% init_MAGs_pnps_depths()
+
+
+sel=c("bin","gene_callers_id","SRF_ratio", "DCM_ratio", "MES_ratio", "BAT_ratio")
+viz = reshape2::melt(indi_toxin_df[sel], id =c("bin","gene_callers_id"), value.name = c("diff"))
+viz$cat = paste(viz$bin, viz$gene_callers_id)
+viz %>%
+  filter(grepl("NAT",bin)) %>%
+  filter(diff < 0.2 & diff > -0.2) %>%
+  ggplot(aes(x=variable, y=diff))+
+  # geom_boxplot(outlier.shape = NA)+
+  geom_point(aes(colour = cat), alpha = 0.3)+
+  geom_line(aes(group = cat), alpha = 0.2) +
+  theme_classic()
+
+
+sel = c("bin", "SRF_ratio", "DCM_ratio", "MES_ratio", "BAT_ratio")
+pnps_melt(toxin_df, sel) %>%
+  # mutate(log_diff = log10(diff+10)) %>%
+  # filter(log_diff < 1.01 & log_diff > 0.99) %>%
+  filter(diff < 0.3 & diff > -0.3) %>%
+  ggplot(aes(x=variable, y=diff))+
+  # geom_boxplot(outlier.shape = NA)+
+  geom_point(aes(colour=bin), alpha = 0.3)+
+  geom_line(aes(group = bin, color = bin), alpha = 0.5) +
+  theme_classic()
+  # theme(legend.position="none")
+```
+
+```{r}
+toxin = read_csv("../toxin-db/all_oceans_toxin_pnps_per_sample.csv",
+                 col_types = cols(toxin_median = col_double(),
+                                  bin_median = col_double()))
+toxin = toxin %>% 
+  filter(!depth == "depth") %>%
+  mutate(depth = factor(depth, levels = c("SRF", "DCM", "MES", "deep"))) %>%
+  separate(col = cat, into = c("bin", "sample"), sep = ":")
+
+toxin$ratio = log(toxin$toxin_median) - log(toxin$bin_median)
+
+toxin %>%
+  filter(ratio < 2 & ratio > -2) %>%
+  ggplot(aes(x = depth, y = ratio)) +
+  geom_boxplot() +
+  geom_point(aes(colour=bin), alpha = 0.3)+
+  geom_line(aes(group = bin, color = bin), alpha = 0.5) +
+  theme(legend.position="none")
+
+toxin %>%
+  filter(toxin_median < 1) %>%
+  ggplot(aes(x = depth, y = bin_median)) +
+  geom_boxplot() +
+  # geom_point(aes(colour=bin), alpha = 0.3)+
+  # geom_line(aes(group = bin, color = bin), alpha = 0.5) +
+  theme(legend.position="none")
+
+```
+
+
+
+
+
+
+
+
+
+
+

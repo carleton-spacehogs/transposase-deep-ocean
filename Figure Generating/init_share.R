@@ -141,7 +141,6 @@ init_mala_cov <- function(){
   mala_cov$log_dna_sect_CAZ <- log10(mala_cov$DNA_sect_CAZ)
   mala_cov$log_dna_defense <- log10(mala_cov$DNA_Defense)
   mala_cov$log_dna_sect_pep <- log10(mala_cov$DNA_sect_pep)
-  hist(mala_cov$toxin_prop)
   mala_cov$Layer_DNA <- "BAT"
   mala_cov$is_MES = "MES, BAT"
   mala_cov$Depth <- mala_cov$Depth * (-1)
@@ -240,12 +239,17 @@ init_bins <- function(){
   
   tmp <- c(taxon[, "Class"], malaspina_bins[, "Class"])
   tmp<-tmp[!is.na(tmp)]
-  tmp2 <- as.data.frame(table(tmp)) %>% filter(Freq > 9)
+  tmp2 <- as.data.frame(table(tmp)) %>% filter(Freq >= 10)
+  tmp3 <- as.data.frame(table(tmp)) %>% filter(Freq >= 25)
   big_taxa <- tmp2[ , "tmp"]
   taxon$`Class with more than 10 MAGs` <- ifelse(is.na(taxon$Class), "Others Or Unknown",
                                           ifelse(taxon$Class %in% big_taxa, taxon$Class,"Others Or Unknown"))
   malaspina_bins$`Class with more than 10 MAGs` <- ifelse(is.na(malaspina_bins$Class), "Others Or Unknown",
                                           ifelse(malaspina_bins$Class %in% big_taxa, malaspina_bins$Class,"Others Or Unknown"))
+  taxon$Class_25_MAGs <- ifelse(is.na(taxon$Class), "Others Or Unknown",
+                                ifelse(taxon$Class %in% tmp3$tmp, taxon$Class,"Others Or Unknown"))
+  malaspina_bins$Class_25_MAGs <- ifelse(is.na(malaspina_bins$Class), "Others Or Unknown",
+                                ifelse(malaspina_bins$Class %in% tmp3$tmp, malaspina_bins$Class,"Others Or Unknown"))
   malaspina_bins$is_biofilm <- ifelse(malaspina_bins$biofilm_count > 0, "present", "absent")
   malaspina_bins$depth <- "BAT"
   malaspina_bins$g_depth <- "Deep\nMalaspina"
@@ -255,17 +259,23 @@ init_bins <- function(){
   return(list(taxon, depth_comparisons, malaspina_bins, low_trans, high_trans))
 }
 
-init_MAGs_CAZenzyme_peptide = function(){
-  pa <- read_csv("../particle-association-redux/MAGs_two_agree_CAZenzyme_and_peptidase_signalp_summary.csv")
-  # "%/%" <- function(x,y) ifelse(y==0,1/max(pa$total_CAZ_count),base:::"/"(x,y))
-  pa$avg_percent_sect = (pa$percent_sect_CAZ + pa$percent_sect_pep)/2
+merge_MAGs_CAZyme_peptide = function(bin_df){
+  pa <- read_csv("../particle_association_redux/MAGs_two_agree_CAZyme_and_peptidase_signalp_summary2.csv")
+  # pa <- read_csv("../particle_association_redux/MAGs_diamond_CAZyme_and_peptidase_signalp_summary.csv")
+  pa <- merge(all_p, pa, by = "bin")
+  pa[is.na(pa)] = 0
+  pa$abundance_sect_CAZ = pa$signal_CAZ_aa/pa$MAG_ORFs_aa
+  # pa$abundance_sect_CAZ = pa$signal_CAZ_count/pa$ORF_count
+  CAZ_abun_fudge = min(pa$abundance_sect_CAZ[pa$abundance_sect_CAZ>0])
+  pa$log_abun_sect_CAZ = log(pa$abundance_sect_CAZ + CAZ_abun_fudge)
   return(pa)
 }
 
-init_MAGs_eukaryote = function(){
+merge_MAGs_eukaryote = function(bin_df){
   euk = read_csv("../identify_eukaryotes/MAG_composition_summary.csv")
   euk_short = euk[c("bin","eukarya_prop")]
-  return(euk_short)
+  bin_df = merge(bin_df, euk_short, by = "bin")
+  return(bin_df)
 }
 
 init_integron <- function(){

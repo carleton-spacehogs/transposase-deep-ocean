@@ -13,34 +13,48 @@ source("./init_share.R")
 ```{r}
 raw = read_csv("../MAG_pnps_redux/signalCAZyme-abun-vs-genes-pnps.csv")
 raw["ocean"] = str_split_fixed(raw$bin, fixed("-"), 2)[, 1]
-fudge_CAZ_def = min(raw$signal_CAZyme_abun[raw$signal_CAZyme_abun>0])/2
-fudge_def_pnps = min(raw$defense_pnps_median[raw$defense_pnps_median>0])
-fudge_scg_pnps = min(raw$scg_pnps_median[raw$scg_pnps_median>0])
+raw = filter(raw, (!is.na(defense_count) & (!is.na(scg_count))))
+
+fudge_CAZ = min(raw$signal_CAZyme_abun[raw$signal_CAZyme_abun>0])
+fudge_def = min(raw$defense_pnps_median[raw$defense_pnps_median>0])
+fudge_scg = min(raw$scg_pnps_median[raw$scg_pnps_median>0])
+
+raw$defense_pnps_median = raw$defense_pnps_median + fudge_def
+raw$scg_pnps_median = raw$scg_pnps_median + fudge_scg
+
 CAZyme_defense = raw %>%
   filter(defense_count >= 11) %>%
   filter(scg_count >= 11) %>%
   mutate(depth = factor(depth, levels = c("SRF","DCM","MES","deep"))) %>%
-  mutate(signal_CAZ_norm=ifelse(signal_CAZyme_abun<=0,fudge_CAZ_def,signal_CAZyme_abun))%>%
-  mutate(log_signal_CAZ = log10(signal_CAZ_norm)) %>%
-  mutate(log_median_defense_pnps = log10(defense_pnps_median)) %>%
-  mutate(log_defense_scg_ratio = log((defense_pnps_median+fudge_def_pnps)/(scg_pnps_median + fudge_scg_pnps))) # %>%
-  # mutate(trans_scg_ratio = transposase_pnps_median/scg_pnps_median) %>%
-  # mutate(trans_scg_ratio_log = log(trans_scg_ratio))
+  mutate(norm_sigCAZ =
+     ifelse(signal_CAZyme_abun <= 0,fudge_CAZ,signal_CAZyme_abun+fudge_CAZ))%>%
+  mutate(log_signal_CAZ = log(norm_sigCAZ)) %>%
+  mutate(log_median_defense_pnps = log(defense_pnps_median)) %>%
+  mutate(def_scg_ratio = defense_pnps_median/scg_pnps_median) %>%
+  mutate(log_def_scg_ratio = log10(def_scg_ratio))
 
 CAZyme_defense %>%
-  # filter(ocean %in% c("IN","NP","SP","NAT","SAT")) %>%
+  filter(log_signal_CAZ > -9) %>%
+  filter(def_scg_ratio < 3.26) %>% # outliers
+  filter(ocean %in% c("IN","NP","SP","NAT","SAT")) %>%
   # filter(!ocean %in% c("MED", "EAC", "RS")) %>%
-  ggplot(aes(x=log_signal_CAZ, y=log_defense_scg_ratio)) +
+  ggplot(aes(x=log_signal_CAZ, y=defense_pnps_median/scg_pnps_median)) +
   geom_point(alpha = 0.2) +
   geom_smooth(method = "lm")+
   facet_wrap(~depth, scale = "free")
 
 CAZyme_defense %>%
-  # filter(ocean %in% c("IN","NP","SP","NAT","SAT")) %>%
-  ggplot(aes(x=log_signal_CAZ, y=log_median_defense_pnps)) +
+  filter(log_signal_CAZ > -10) %>%
+  filter(ocean %in% c("IN","NP","SP","NAT","SAT")) %>%
+  ggplot(aes(x=log_signal_CAZ, y=log_def_scg_ratio)) +
   geom_point(alpha = 0.2) +
   geom_smooth(method = "lm")+
   facet_grid(depth~ocean, scale = "free")
+
+summary(lm(log_def_scg_ratio~depth + ocean + log_signal_CAZ, 
+           data = CAZyme_defense %>%
+             filter(log_signal_CAZ > -9)))
+
 
 greatest16 = as.data.frame(sort(table(CAZyme_defense$bin), decreasing = TRUE)[1:16])$Var1
 
@@ -54,6 +68,41 @@ CAZyme_defense %>%
 CAZ.defense.lm = lm(log_median_defense_pnps~log_signal_CAZ,
                     filter(CAZyme_defense, depth == "MES"))
 ```
+
+
+
+```{r}
+raw = read_csv("../MAG_pnps_redux/signalCAZyme-abun-vs-genes-pnps.csv")
+raw["ocean"] = str_split_fixed(raw$bin, fixed("-"), 2)[, 1]
+raw = filter(raw, (!is.na(transposase_count) & (!is.na(scg_count))))
+
+fudge_trans = min(raw$transposase_pnps_median[raw$transposase_pnps_median>0])
+
+raw$transposase_pnps_median = raw$transposase_pnps_median + fudge_def
+raw$scg_pnps_median = raw$scg_pnps_median + fudge_scg
+
+CAZyme_transposase = raw %>%
+  filter(transposase_count >= 5) %>%
+  filter(scg_count >= 11) %>%
+  mutate(depth = factor(depth, levels = c("SRF","DCM","MES","deep"))) %>%
+  mutate(norm_sigCAZ =
+     ifelse(signal_CAZyme_abun <= 0,fudge_CAZ,signal_CAZyme_abun+fudge_CAZ))%>%
+  mutate(log_signal_CAZ = log(norm_sigCAZ)) %>%
+  mutate(log_median_trans_pnps = log(transposase_pnps_median)) %>%
+  mutate(log_def_scg_ratio = log10(transposase_pnps_median/scg_pnps_median))
+
+CAZyme_transposase %>%
+  filter(log_signal_CAZ > -9) %>%
+  # filter(ocean %in% c("IN","NP","SP","NAT","SAT")) %>%
+  # filter(!ocean %in% c("MED", "EAC", "RS")) %>%
+  ggplot(aes(x=log_signal_CAZ, y=log_def_scg_ratio)) +
+  geom_point(alpha = 0.2) +
+  geom_smooth(method = "lm")+
+  facet_wrap(~depth, scale = "free")
+
+```
+
+
 
 
 ```{r}
