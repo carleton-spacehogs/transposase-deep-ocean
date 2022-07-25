@@ -106,8 +106,6 @@ def COG_cate_helper(MAG_rt, ocean):
 		else:
 			out.append(l)
 	COG_out = pd.DataFrame(out)
-	print(COG_out)
-	print(COG_cate_df)
 	COG_out.columns = list(COG_cate_df.columns)
 	COG_out["ocean"] = ocean
 	return COG_out.astype(str)
@@ -132,9 +130,9 @@ for ocean in o_depth.keys():
 	ocean_integrons = merge_anvi_gene_call(MAG_rt, ocean, integron_dict)
 	merged_integrons = merged_integrons.append(ocean_integrons)
 
+merged_integrons = merge_COG_cate(merged_integrons, o_depth, MAG_rt)
 merged_integrons.to_csv(path_or_buf=f'anvi_integrons_all_oceans.csv', sep=',', index=False)
-tmp = merge_pnps_all(merged_integrons, o_depth, MAG_rt)
-MAG_int_pnps = merge_COG_cate(tmp, o_depth, MAG_rt)
+MAG_int_pnps = merge_pnps_all(merged_integrons, o_depth, MAG_rt)
 MAG_int_pnps.to_csv(path_or_buf=f'MAG_integron_pnps_all.csv', sep=',', index=False)
 
 bin_info = pd.read_csv("per_MAGs_pnps_summary.csv").astype(str).drop(["ocean",'ratio_all_scg','ratio_all_MAG','depth'],axis=1)
