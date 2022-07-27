@@ -1,0 +1,15 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Noctiluca scintillans	species	class-Dinophyceae|order-Noctilucales|family-Noctilucaceae|genus-Noctiluca|species-Noctiluca_scintillans	2966	75	1072	82.42%	27.76%	97.22%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	43	347	28.67%	11.47%	98.91%
+Chloropicon roscoffensis	species	phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	1461544	29	239	18.35%	20.33%	99.27%
+Tripos fusus	species	class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	2916	8	48	8.89%	12.91%	98.9%
+Hortaea werneckii EXF-2000	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	1157616	21	101	5.66%	8.79%	99.22%
+Stemphylium vesicarium	species	phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Pleosporaceae|genus-Stemphylium|species-Stemphylium_vesicarium	119933	8	50	3.85%	18.74%	99.74%
+Gephyrocapsa oceanica	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	38817	3	5	3.0%	7.91%	99.39%
+Pelagomonas calceolata	species	class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	35677	2	13	2.6%	24.05%	97.1%
+Candida parapsilosis	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida|species-Candida_parapsilosis	5480	4	5	2.33%	2.41%	100.0%
+Scrippsiella trochoidea	species	class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae|genus-Scrippsiella|species-Scrippsiella_trochoidea	71861	2	6	1.77%	14.74%	96.93%
+Cadophora sp. DSE1049	species	phylum-Ascomycota|class-Leotiomycetes|order-Helotiales|genus-Cadophora|species-Cadophora_sp._DSE1049	1485229	3	5	1.45%	3.13%	98.33%
+Candida sake	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|genus-Candida|species-Candida_sake	39397	2	4	1.11%	10.69%	99.67%
+Cyphellophora europaea CBS 101466	species	phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Cyphellophoraceae|genus-Cyphellophora|species-Cyphellophora_europaea	1220924	2	4	1.01%	9.39%	99.75%
+Cladosporium sphaerospermum UM 843	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae|genus-Cladosporium|species-Cladosporium_sphaerospermum	1151026	2	6	0.99%	11.84%	97.17%

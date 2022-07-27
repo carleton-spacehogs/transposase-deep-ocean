@@ -1,0 +1,68 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Noelaerhabdaceae	418966	family	1	2	100.0%	11.17%	98.4%	1683
+Oithona nana	136191	species	132	1724	88.59%	31.77%	97.93%	244880
+Prasinoderma singulare	676789	species	79	1355	86.81%	41.93%	99.28%	121534
+Corethron hystrix	216773	species	49	265	71.01%	26.23%	98.54%	86215
+Gephyrocapsa oceanica	38817	species	66	417	66.0%	27.05%	98.12%	137559
+Tripos fusus	2916	species	49	138	54.44%	14.29%	99.36%	132892
+Dinophysis acuminata	47934	species	50	136	53.19%	15.32%	98.82%	125543
+Thalassiosira oceanica	159749	species	49	180	50.0%	13.43%	98.25%	165190
+Pelagomonas calceolata	35677	species	37	260	48.05%	18.95%	98.33%	128353
+Chloropicon laureae	464258	species	25	67	44.64%	20.59%	99.16%	50762
+Emiliania huxleyi CCMP1516	280463	species	14	46	41.18%	11.1%	99.18%	44652
+Pelagodinium beii	43686	species	33	106	36.67%	13.47%	99.41%	127026
+Malassezia restricta	76775	species	50	148	33.33%	6.73%	99.15%	348317
+Pycnococcus provasolii	41880	species	28	101	28.87%	17.58%	99.42%	119181
+Bathycoccus sp. TOSAG39-1	1735750	species	3	6	23.08%	7.86%	99.81%	28758
+Pseudo-nitzschia heimii	476441	species	25	96	22.73%	17.53%	97.77%	176338
+Lithomelissa setosa	1054399	species	1	10	20.0%	71.52%	98.03%	2562
+Bathycoccus sp. SAG1	2589996	species	1	2	20.0%	14.02%	98.51%	5703
+Azadinium spinosum	632150	species	5	12	17.86%	15.88%	97.65%	41582
+Phaeocystis rex	1631189	species	6	13	15.38%	15.3%	97.2%	40152
+Prorocentrum cordatum	2364126	species	15	24	15.15%	10.69%	96.62%	135765
+Calcidiscus leptoporus	127549	species	12	31	14.12%	22.63%	99.68%	114854
+Leptocylindrus danicus	163516	species	23	73	12.43%	16.97%	98.03%	278595
+Chloropicon roscoffensis	1461544	species	17	34	10.76%	8.22%	99.06%	275974
+Pseudo-nitzschia arenysensis	697910	species	13	44	10.32%	12.01%	99.54%	204829
+Oikopleura dioica	34765	species	8	34	10.13%	6.18%	97.25%	176745
+Amoebophrya sp. AT5.2	1775427	species	2	4	9.09%	13.16%	98.93%	36997
+Brandtodinium nutricula	1333877	species	6	12	8.45%	9.04%	99.15%	88461
+Protoceratium reticulatum	133427	species	6	12	7.5%	16.59%	99.8%	112099
+unclassified Bathycoccus	2590008	genus	3	5	5.77%	7.48%	99.75%	95463
+Alexandrium catenella	2925	species	5	9	5.43%	14.37%	98.03%	112057
+Chaetoceros curvisetus	230516	species	2	4	4.17%	9.24%	98.72%	43877
+Phaeocystis antarctica	33657	species	4	10	4.0%	6.46%	97.4%	158488
+Ostreococcus sp. SAG10	2590005	species	1	2	4.0%	10.45%	100.0%	56396
+Gymnodinium catenatum	39447	species	5	10	3.91%	9.28%	99.57%	188671
+Phaeocystis globosa	33658	species	4	14	3.45%	21.2%	98.41%	154798
+Karlodinium veneficum	407301	species	3	4	3.41%	4.46%	97.7%	136208
+Malassezia globosa CBS 7966	425265	species	5	7	3.18%	5.13%	99.42%	332937
+Pelagococcus subviridis	35679	species	2	4	3.03%	8.14%	99.48%	79272
+Chloropicon mariensis	1606511	species	3	5	2.73%	9.05%	98.04%	157984
+Pseudo-nitzschia fraudulenta	183588	species	2	3	2.2%	8.53%	98.47%	108708
+Pseudo-nitzschia multistriata	183589	species	3	5	2.16%	6.07%	99.52%	275634
+Chaetoceros debilis	122233	species	3	4	2.04%	6.99%	98.76%	259523
+Wallemia ichthyophaga EXF-994	1299270	species	3	5	1.97%	6.23%	99.78%	324387
+Cadophora sp. DSE1049	1485229	species	4	8	1.93%	1.88%	98.29%	369337
+Scrippsiella trochoidea	71861	species	2	2	1.77%	13.84%	97.51%	163897
+Stramenopiles sp. TOSAG23-3	1735745	species	1	2	1.67%	22.35%	99.43%	80549
+Aureococcus anophagefferens	44056	species	1	2	1.54%	10.64%	99.34%	85991
+Meyerozyma	766728	genus	2	3	1.53%	8.01%	99.34%	218630
+Exophiala xenobiotica	348802	species	3	5	1.5%	5.01%	99.48%	372377
+Alternaria arborescens	156630	species	2	4	1.33%	4.41%	99.69%	303330
+Arcocellulus cornucervis	1155433	species	1	1	1.2%	13.52%	100.0%	107135
+Heterocapsa arctica	192219	species	1	1	1.19%	7.79%	97.03%	110745
+Debaryomyces hansenii CBS767	284592	species	2	4	1.09%	16.02%	100.0%	326457
+Erysiphe necator	52586	species	2	6	1.0%	19.55%	99.67%	330303
+Rhizosolenia setigera	3005	species	1	2	0.95%	25.2%	100.0%	165278
+Asterionellopsis glacialis	33640	species	1	2	0.91%	20.81%	98.01%	140981
+Thalassiothrix antarctica	1049557	species	1	2	0.86%	8.05%	96.39%	177575
+Bathycoccus prasinos	41875	species	1	1	0.81%	6.92%	100.0%	229209
+Malassezia sympodialis ATCC 42132	1230383	species	1	1	0.72%	8.57%	100.0%	313165
+Wallemia hederae	1540922	species	1	1	0.62%	3.16%	96.77%	336811
+Calocera viscosa TUFC12733	1330018	species	1	1	0.57%	2.44%	97.03%	364392
+Saccharomyces cerevisiae S288C	559292	species	1	2	0.55%	6.48%	100.0%	308302
+Linderina pennispora	61395	species	1	1	0.53%	2.64%	97.03%	349115
+Cladosporium phlei	1116209	species	1	2	0.5%	9.85%	96.03%	364263
+Penicillium roqueforti FM164	1365484	species	1	2	0.5%	17.86%	100.0%	351573
+Stemphylium vesicarium	119933	species	1	2	0.48%	12.16%	100.0%	369073

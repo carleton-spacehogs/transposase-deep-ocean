@@ -1,0 +1,23 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Oithona nana	species	phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	136191	122	3151	81.88%	21.42%	95.95%
+Corethron hystrix	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Corethrales|family-Corethraceae|genus-Corethron|species-Corethron_hystrix	216773	31	412	44.93%	31.42%	98.17%
+Oikopleura longicauda	species	phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	107032	28	671	38.36%	19.02%	96.8%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	53	518	35.33%	12.73%	98.69%
+Chloropicon roscoffensis	species	phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	1461544	49	602	31.01%	17.52%	98.73%
+Phaeocystis rex	species	phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_rex	1631189	9	58	23.08%	25.66%	99.11%
+Arthropoda	phylum	phylum-Arthropoda	6656	7	21	14.89%	15.79%	99.62%
+Acanthamoeba rhysodes	species	phylum-Discosea|order-Longamoebia|family-Acanthamoebidae|genus-Acanthamoeba|species-Acanthamoeba_rhysodes	32599	8	266	10.39%	12.83%	97.7%
+Tyrophagus putrescentiae	species	phylum-Arthropoda|class-Arachnida|order-Sarcoptiformes|family-Acaridae|genus-Tyrophagus|species-Tyrophagus_putrescentiae	59818	12	83	10.34%	12.28%	98.58%
+Acanthamoeba	genus	phylum-Discosea|order-Longamoebia|family-Acanthamoebidae|genus-Acanthamoeba	5754	8	56	7.62%	15.78%	99.04%
+Hortaea werneckii EXF-2000	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	1157616	28	200	7.55%	11.25%	98.53%
+Beroe forskalii	species	phylum-Ctenophora|class-Nuda|order-Beroida|family-Beroidae|genus-Beroe|species-Beroe_forskalii	140453	9	29	7.44%	6.52%	98.25%
+Brandtodinium nutricula	species	class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	1333877	5	12	7.04%	7.01%	99.02%
+Thalassiosira oceanica	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Thalassiosiraceae|genus-Thalassiosira|species-Thalassiosira_oceanica	159749	6	40	6.12%	15.5%	97.46%
+Saccharomyces cerevisiae S288C	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces|species-Saccharomyces_cerevisiae	559292	10	70	5.49%	17.29%	99.41%
+Pelagomonas calceolata	species	class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	35677	4	6	5.19%	11.77%	97.48%
+unclassified Bathycoccus	no rank	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	2590008	2	22	3.85%	9.39%	97.97%
+Prasinoderma singulare	species	phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinoderma|species-Prasinoderma_singulare	676789	3	13	3.3%	20.85%	99.67%
+Rhodotorula sp. FNED7-22	species	phylum-Basidiomycota|class-Microbotryomycetes|order-Sporidiobolales|family-Sporidiobolaceae|genus-Rhodotorula|species-Rhodotorula_sp._FNED7-22	1928479	2	48	3.23%	36.27%	99.57%
+Architeuthis dux	species	phylum-Mollusca|class-Cephalopoda|order-Teuthida|family-Architeuthidae|genus-Architeuthis|species-Architeuthis_dux	256136	3	6	2.04%	9.92%	97.46%
+Gephyrocapsa oceanica	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	38817	2	13	2.0%	12.75%	98.88%
+Ochroconis constricta UM 578	species	phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae|genus-Ochroconis|species-Ochroconis_constricta	1442076	2	20	1.02%	12.9%	99.26%

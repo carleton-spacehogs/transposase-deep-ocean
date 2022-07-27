@@ -1,0 +1,19 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Brandtodinium nutricula	species	class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	1333877	71	1384	100.0%	63.21%	99.05%
+Chloropicon mariensis	species	phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_mariensis	1606511	70	424	63.64%	19.7%	99.57%
+Alexandrium andersonii	species	class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium|species-Alexandrium_andersonii	327968	12	29	44.44%	20.49%	98.83%
+Tripos fusus	species	class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	2916	32	81	35.56%	11.38%	99.36%
+Prorocentrum cordatum	species	class-Dinophyceae|order-Prorocentrales|family-Prorocentraceae|genus-Prorocentrum|species-Prorocentrum_cordatum	2364126	26	62	26.26%	10.95%	96.83%
+Gephyrocapsa oceanica	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	38817	25	50	25.0%	10.41%	98.53%
+Phaeocystis globosa	species	phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_globosa	33658	20	73	17.24%	23.34%	98.73%
+Emiliania huxleyi CCMP1516	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania|species-Emiliania_huxleyi	280463	4	9	11.76%	6.45%	100.0%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	15	29	10.0%	5.48%	99.17%
+Phaeocystis antarctica	species	phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	33657	9	23	9.0%	11.02%	97.35%
+Pelagomonas calceolata	species	class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	35677	5	7	6.49%	7.75%	98.95%
+Pseudo-nitzschia heimii	species	phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Pseudo-nitzschia|species-Pseudo-nitzschia_heimii	476441	7	35	6.36%	30.79%	96.92%
+Thalassiosira oceanica	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Thalassiosiraceae|genus-Thalassiosira|species-Thalassiosira_oceanica	159749	5	16	5.1%	9.09%	97.59%
+Calcidiscus leptoporus	species	phylum-Haptista|class-Haptophyta|order-Coccolithales|family-Calcidiscaceae|genus-Calcidiscus|species-Calcidiscus_leptoporus	127549	4	5	4.71%	3.2%	96.74%
+Karlodinium veneficum	species	class-Dinophyceae|order-Gymnodiniales|family-Kareniaceae|genus-Karlodinium|species-Karlodinium_veneficum	407301	4	7	4.55%	16.23%	97.73%
+Oikopleura longicauda	species	phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	107032	3	6	4.11%	3.67%	98.27%
+Scrippsiella trochoidea	species	class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae|genus-Scrippsiella|species-Scrippsiella_trochoidea	71861	4	7	3.54%	18.12%	97.17%
+Oithona nana	species	phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	136191	3	6	2.01%	6.06%	97.05%

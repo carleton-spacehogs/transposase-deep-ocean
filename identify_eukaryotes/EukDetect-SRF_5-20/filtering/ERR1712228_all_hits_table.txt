@@ -1,0 +1,71 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Oikopleura albicans	2500139	species	51	583	54.26%	29.72%	98.69%	126693
+Amphilonche elongata	1127133	species	1	2	50.0%	9.83%	97.59%	2250
+Calcidiscus leptoporus	127549	species	40	357	47.06%	27.76%	99.55%	114854
+Lithomelissa setosa	1054399	species	2	11	40.0%	39.72%	98.35%	2562
+Bathycoccus sp. SAG1	2589996	species	2	6	40.0%	20.29%	99.73%	5703
+Malassezia restricta	76775	species	49	333	32.67%	11.44%	99.05%	348317
+Thalassionema frauenfeldii	186022	species	34	361	32.08%	18.97%	97.33%	154802
+Brandtodinium nutricula	1333877	species	21	254	29.58%	16.37%	99.18%	88461
+unclassified Ostreococcus	2268852	genus	3	9	25.0%	10.89%	98.61%	18843
+Hortaea werneckii EXF-2000	1157616	species	75	470	20.22%	13.58%	99.12%	717212
+Prorocentrum cordatum	2364126	species	20	38	20.2%	10.78%	96.51%	135765
+Tripos fusus	2916	species	15	69	16.67%	14.45%	98.82%	132892
+Oithona nana	136191	species	23	103	15.44%	16.06%	97.28%	244880
+Ostreococcus sp. SAG12	2590007	species	2	3	15.38%	7.45%	98.93%	29000
+Thalassiosira oceanica	159749	species	15	114	15.31%	13.7%	98.93%	165190
+Bathycoccus sp. SAG4	2589999	species	1	6	14.29%	48.51%	98.7%	10392
+Pelagomonas calceolata	35677	species	9	43	11.69%	16.08%	97.68%	128353
+Alexandrium minutum	39455	species	2	10	11.11%	34.84%	96.68%	15570
+Oikopleura longicauda	107032	species	7	75	9.59%	7.63%	96.53%	120130
+Chloropicon roscoffensis	1461544	species	15	222	9.49%	17.9%	99.11%	275974
+Pycnococcus provasolii	41880	species	9	43	9.28%	21.44%	99.53%	119181
+Gephyrocapsa oceanica	38817	species	9	33	9.0%	12.11%	98.3%	137559
+Macrobrachium nipponense	159736	species	6	45	8.7%	10.81%	97.37%	121287
+Chloropicon laureae	464258	species	4	10	7.14%	20.58%	99.09%	50762
+Malassezia globosa CBS 7966	425265	species	10	62	6.37%	9.94%	98.83%	332937
+Scyphosphaera apsteinii	418940	species	5	19	6.25%	17.32%	98.08%	113512
+Emiliania huxleyi CCMP1516	280463	species	2	4	5.88%	7.45%	98.69%	44652
+Caridina multidentata	293153	species	1	1	4.35%	8.88%	97.03%	20551
+Rhodotorula diobovata	5288	species	7	168	4.29%	13.77%	99.0%	358851
+Penaeus vannamei	6689	species	6	23	3.97%	9.54%	97.95%	236199
+Micromonas pusilla	38833	species	1	2	3.85%	24.6%	98.22%	49695
+unclassified Bathycoccus	2590008	genus	2	6	3.85%	15.61%	99.04%	95463
+Saccharomyces cerevisiae S288C	559292	species	7	19	3.85%	6.47%	99.27%	308302
+Chloropicon mariensis	1606511	species	4	48	3.64%	27.18%	97.89%	157984
+Rhodotorula sp. CCFEE 5036	1965284	species	3	11	3.45%	14.65%	100.0%	209302
+Phaeocystis rex	1631189	species	1	2	2.56%	2.36%	100.0%	40152
+Acanthamoeba polyphaga	5757	species	1	2	1.79%	4.78%	98.4%	76663
+Fritillaria borealis	2507563	species	1	1	1.59%	4.59%	97.03%	117198
+Skeletonema menzelii	216823	species	2	2	1.52%	5.67%	96.97%	226948
+Holothuria glaberrima	31192	species	1	5	1.47%	37.83%	96.7%	83715
+Portunus trituberculatus	210409	species	1	7	1.28%	57.62%	97.23%	126986
+Arcocellulus cornucervis	1155433	species	1	2	1.2%	7.55%	98.98%	107135
+Aspergillus sp. MA 6041	2153248	species	4	29	1.2%	14.1%	98.34%	605505
+Rhodotorula	5533	genus	1	1	1.18%	7.67%	100.0%	158633
+Prasinoderma coloniale	156133	species	1	1	1.16%	4.43%	96.91%	155270
+Rhodotorula sp. JG-1b	1305733	species	2	5	1.11%	6.24%	98.32%	395750
+Chloroparvula japonica	1411623	species	1	1	1.1%	9.37%	100.0%	149101
+Rhodotorula mucilaginosa	5537	species	1	4	1.06%	12.7%	100.0%	219600
+Bursaphelenchus xylophilus	6326	species	1	5	1.01%	2.73%	97.27%	159590
+Phaeocystis antarctica	33657	species	1	2	1.0%	13.61%	97.4%	158488
+Zoopage sp. CT-All	2364153	species	1	1	0.9%	1.45%	96.51%	230954
+Phaeocystis globosa	33658	species	1	2	0.86%	21.97%	100.0%	154798
+Basidioascus undulatus	1230402	species	1	1	0.74%	4.47%	95.92%	259870
+Penaeus monodon	6687	species	1	3	0.7%	6.05%	95.97%	223482
+Architeuthis dux	256136	species	1	1	0.68%	4.18%	96.91%	233481
+Minutocellus polymorphus	265543	species	1	2	0.67%	12.99%	96.23%	256500
+Bemisia tabaci	7038	species	1	1	0.61%	3.17%	96.15%	251012
+Filobasidium wieringae	104416	species	1	1	0.6%	10.26%	100.0%	364566
+Leucosporidium scottii	5278	species	1	1	0.59%	1.83%	98.97%	368693
+Cyberlindnera jadinii NRRL Y-1542	983966	species	1	2	0.58%	2.26%	100.0%	333761
+Naganishia albida	100951	species	1	20	0.57%	68.56%	99.6%	347277
+Micromonas	38832	genus	1	10	0.56%	39.69%	98.54%	358692
+Cladosporium cladosporioides	29917	species	1	1	0.56%	1.05%	95.77%	333901
+Knufia petricola	206542	species	1	13	0.51%	74.94%	99.83%	374300
+Leptoxyphium fumago	5474	species	1	1	0.5%	5.54%	96.84%	373358
+Exophiala xenobiotica	348802	species	1	10	0.5%	29.3%	100.0%	372377
+Cladosporium sphaerospermum UM 843	1151026	species	1	1	0.49%	5.57%	96.91%	363001
+Phialosimplex sp. HF37	1960876	species	1	2	0.49%	14.87%	96.91%	374233
+Talaromyces wortmannii	28567	species	1	1	0.48%	2.86%	95.6%	362892
+Cadophora sp. DSE1049	1485229	species	1	2	0.48%	20.3%	97.56%	369337

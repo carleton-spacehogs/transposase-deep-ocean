@@ -1,0 +1,48 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Thalassiosiraceae|genus-Thalassiosira	genus	Thalassiosira	35127	3.045	9.2185	503	165190
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Thalassiosiraceae|genus-Thalassiosira|species-Thalassiosira_oceanica	species	Thalassiosira oceanica	159749	3.045	9.8139	503	165190
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Leptocylindrales|family-Leptocylindraceae|genus-Leptocylindrus	genus	Leptocylindrus	163515	1.7624	5.3356	491	278595
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Leptocylindrales|family-Leptocylindraceae|genus-Leptocylindrus|species-Leptocylindrus_danicus	species	Leptocylindrus danicus	163516	1.7624	5.6802	491	278595
+phylum-Bacillariophyta|class-Fragilariophyceae|order-Thalassionemales|family-Thalassionemataceae|genus-Thalassionema	genus	Thalassionema	33648	0.6072	1.8383	94	154802
+phylum-Bacillariophyta|class-Fragilariophyceae|order-Thalassionemales|family-Thalassionemataceae|genus-Thalassionema|species-Thalassionema_frauenfeldii	species	Thalassionema frauenfeldii	186022	0.6072	1.9571	94	154802
+class-Chrysophyceae|order-Chromulinales|family-Paraphysomonadaceae|genus-Paraphysomonas	genus	Paraphysomonas	36769	0.2842	0.8603	44	154847
+class-Chrysophyceae|order-Chromulinales|family-Paraphysomonadaceae|genus-Paraphysomonas|species-Paraphysomonas_bandaiensis	species	Paraphysomonas bandaiensis	89770	0.2842	0.9158	44	154847
+class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus	genus	Aureococcus	44055	0.2326	0.7041	20	85991
+class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus|species-Aureococcus_anophagefferens	species	Aureococcus anophagefferens	44056	0.2326	0.7496	20	85991
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	0.2337	0.7076	30	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	0.2337	0.7533	30	128353
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania	genus	Emiliania	2902	1.6885	5.1118	29	17175
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania|species-Emiliania_huxleyi	species	Emiliania huxleyi	2903	1.6885	5.442	29	17175
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa	genus	Gephyrocapsa	38816	0.7488	2.2669	103	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	species	Gephyrocapsa oceanica	38817	0.7488	2.4133	103	137559
+phylum-Haptista|class-Haptophyta|order-Coccolithales|family-Calcidiscaceae|genus-Calcidiscus	genus	Calcidiscus	127548	4.632	14.023	532	114854
+phylum-Haptista|class-Haptophyta|order-Coccolithales|family-Calcidiscaceae|genus-Calcidiscus|species-Calcidiscus_leptoporus	species	Calcidiscus leptoporus	127549	4.632	14.9288	532	114854
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	0.1038	0.3142	33	317977
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	species	Phaeocystis antarctica	33657	0.0631	0.2034	10	158488
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_globosa	species	Phaeocystis globosa	33658	0.1034	0.3331	16	154798
+phylum-Chlorophyta|family-Pycnococcaceae|genus-Pycnococcus	genus	Pycnococcus	41879	0.1426	0.4318	17	119181
+phylum-Chlorophyta|family-Pycnococcaceae|genus-Pycnococcus|species-Pycnococcus_provasolii	species	Pycnococcus provasolii	41880	0.1426	0.4597	17	119181
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	1.8571	5.6223	545	293467
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	1.6741	5.3955	462	275974
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	1.0522	3.1855	19	18057
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae|genus-Cladosporium	genus	Cladosporium	5498	6.6138	20.0228	25	3780
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae|genus-Cladosporium|species-Cladosporium_sphaerospermum	species	Cladosporium sphaerospermum	92950	6.6138	21.3161	25	3780
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea	genus	Hortaea	91942	4.3954	13.3068	684	155617
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	species	Hortaea werneckii	91943	4.3954	14.1663	684	155617
+phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Pleosporaceae|genus-Alternaria	genus	Alternaria	5598	0.8128	2.4606	8	9843
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Trichomeriaceae|genus-Knufia	genus	Knufia	430999	0.0989	0.2993	37	374300
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Trichomeriaceae|genus-Knufia|species-Knufia_petricola	species	Knufia petricola	206542	0.0989	0.3186	37	374300
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces	genus	Saccharomyces	4930	1.2278	3.717	82	66787
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces|species-Saccharomyces_cerevisiae	species	Saccharomyces cerevisiae	4932	1.2278	3.9571	82	66787
+phylum-Basidiomycota|class-Mixiomycetes|order-Mixiales|family-Mixiaceae|genus-Mixia	genus	Mixia	34348	0.691	2.0919	141	204061
+phylum-Basidiomycota|class-Mixiomycetes|order-Mixiales|family-Mixiaceae|genus-Mixia|species-Mixia_osmundae	species	Mixia osmundae	34349	0.691	2.227	141	204061
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.3431	1.0388	133	387612
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.3244	1.0456	113	348317
+phylum-Basidiomycota|class-Tremellomycetes|order-Tremellales|family-Rhynchogastremataceae|genus-Papiliotrema	genus	Papiliotrema	189450	1.7105	5.1783	11	6431
+phylum-Basidiomycota|class-Tremellomycetes|order-Tremellales|family-Rhynchogastremataceae|genus-Papiliotrema|species-Papiliotrema_laurentii	species	Papiliotrema laurentii	5418	1.7105	5.5128	11	6431
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona	genus	Oithona	136190	0.0327	0.0989	8	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	species	Oithona nana	136191	0.0327	0.1053	8	244880
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos	genus	Tripos	2126447	0.4214	1.2757	56	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	species	Tripos fusus	2916	0.4214	1.3581	56	132892
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium	genus	Brandtodinium	1482939	0.2939	0.8898	26	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	species	Brandtodinium nutricula	1333877	0.2939	0.9473	26	88461

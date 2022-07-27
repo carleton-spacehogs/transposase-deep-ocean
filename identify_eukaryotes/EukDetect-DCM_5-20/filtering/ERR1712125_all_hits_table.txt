@@ -1,0 +1,57 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Mixia osmundae IAM 14324	764103	species	71	141	44.1%	5.99%	99.7%	315336
+Thalassiosira oceanica	159749	species	39	503	39.8%	21.1%	98.74%	165190
+Emiliania huxleyi CCMP1516	280463	species	12	29	35.29%	9.87%	99.41%	44652
+Calcidiscus leptoporus	127549	species	28	532	32.94%	37.28%	99.22%	114854
+Gephyrocapsa oceanica	38817	species	29	103	29.0%	13.53%	98.59%	137559
+Malassezia restricta	76775	species	37	113	24.67%	5.88%	99.07%	348317
+Leptocylindrus danicus	163516	species	41	491	22.16%	23.67%	97.92%	278595
+Chloropicon roscoffensis	1461544	species	35	462	22.15%	17.53%	99.06%	275974
+Hortaea werneckii EXF-2000	1157616	species	69	684	18.6%	17.91%	99.07%	717212
+Saccharomyces cerevisiae S288C	559292	species	32	82	17.58%	7.51%	99.76%	308302
+Thalassionema frauenfeldii	186022	species	13	94	12.26%	31.21%	97.86%	154802
+Aureococcus anophagefferens	44056	species	7	20	10.77%	13.38%	98.99%	85991
+Phaeocystis rex	1631189	species	4	7	10.26%	10.62%	99.0%	40152
+Tripos fusus	2916	species	8	56	8.89%	37.96%	99.5%	132892
+Pelagomonas calceolata	35677	species	6	30	7.79%	10.29%	97.76%	128353
+Ostreococcus sp. SAG12	2590007	species	1	2	7.69%	1.72%	100.0%	29000
+Bathycoccus sp. TOSAG39-1	1735750	species	1	2	7.69%	5.14%	95.19%	28758
+Voromonas pontica	333133	species	1	6	6.25%	43.2%	100.0%	11409
+Micromonas	38832	genus	9	19	5.06%	7.3%	98.64%	358692
+Phaeocystis antarctica	33657	species	5	10	5.0%	8.48%	96.74%	158488
+Chloropicon mariensis	1606511	species	5	34	4.55%	25.5%	98.73%	157984
+Phaeocystis globosa	33658	species	5	16	4.31%	16.33%	99.49%	154798
+Brandtodinium nutricula	1333877	species	3	26	4.23%	22.31%	99.23%	88461
+Pycnococcus provasolii	41880	species	4	17	4.12%	18.95%	98.75%	119181
+Malassezia globosa CBS 7966	425265	species	6	13	3.82%	3.67%	98.8%	332937
+Alexandrium andersonii	327968	species	1	1	3.7%	9.41%	97.92%	29644
+Paraphysomonas bandaiensis	89770	species	3	44	3.37%	46.2%	99.51%	154847
+Oithona nana	136191	species	5	8	3.36%	7.32%	98.11%	244880
+Chloropicon primus	1764295	species	4	47	2.9%	23.41%	99.72%	281336
+Malassezia sympodialis ATCC 42132	1230383	species	4	7	2.88%	4.87%	99.14%	313165
+Pseudo-nitzschia multistriata	183589	species	4	25	2.88%	11.24%	99.54%	275634
+Alternaria alternata complex	187734	species group	2	8	2.44%	5.3%	100.0%	165766
+Stramenopiles sp. TOSAG23-2	1735743	species	1	11	2.13%	61.46%	99.08%	66251
+Knufia petricola	206542	species	4	37	2.03%	16.9%	100.0%	374300
+unclassified Bathycoccus	2590008	genus	1	2	1.92%	9.71%	100.0%	95463
+Chloropicon laureae	464258	species	1	2	1.79%	13.51%	99.33%	50762
+Acanthamoeba polyphaga	5757	species	1	1	1.79%	4.24%	99.01%	76663
+Dracoamoeba jomungandri	2484127	species	1	4	1.75%	10.73%	100.0%	100170
+Cladosporium sphaerospermum UM 843	1151026	species	3	25	1.48%	29.23%	98.55%	363001
+Papiliotrema laurentii RY1	1354741	species	2	11	1.4%	10.96%	99.01%	273637
+Scyphosphaera apsteinii	418940	species	1	3	1.25%	9.52%	100.0%	113512
+Rhodotorula	5533	genus	1	1	1.18%	5.11%	97.75%	158633
+Prorocentrum cordatum	2364126	species	1	2	1.01%	7.91%	96.18%	135765
+Exophiala xenobiotica	348802	species	2	3	1.0%	5.42%	100.0%	372377
+Cutaneotrichosporon	1838142	genus	1	1	0.99%	8.23%	97.03%	239482
+Pseudo-nitzschia heimii	476441	species	1	34	0.91%	69.91%	97.15%	176338
+Asterionellopsis glacialis	33640	species	1	5	0.91%	15.01%	96.32%	140981
+Zoopage sp. CT-All	2364153	species	1	1	0.9%	1.45%	98.84%	230954
+Rhodotorula sp. JG-1b	1305733	species	1	6	0.56%	10.42%	97.9%	395750
+Stereum hirsutum FP-91666 SS1	721885	species	1	1	0.54%	3.35%	97.03%	348025
+Ophiostoma piceae UAMH 11346	1262450	species	1	2	0.51%	10.34%	98.51%	366608
+Eurotiomycetes sp.	1709936	species	1	13	0.51%	15.25%	98.25%	385143
+Stachybotrys chartarum	74722	species	1	2	0.5%	6.58%	100.0%	353446
+Leptoxyphium fumago	5474	species	1	1	0.5%	4.95%	97.65%	373358
+Aureobasidium subglaciale EXF-2481	1043005	species	1	2	0.5%	14.19%	97.71%	354039
+Aureobasidium melanogenum	46634	species	1	1	0.49%	34.71%	100.0%	367526

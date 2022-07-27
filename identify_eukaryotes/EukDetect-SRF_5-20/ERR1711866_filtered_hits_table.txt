@@ -1,0 +1,13 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Malassezia globosa CBS 7966	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_globosa	425265	36	88	22.93%	7.44%	98.97%
+Penicillium chrysogenum	species	phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae|genus-Penicillium|species-Penicillium_chrysogenum	5076	34	71	16.75%	10.04%	99.97%
+Aspergillus sydowii CBS 593.65	species	phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae|genus-Aspergillus|species-Aspergillus_sydowii	1036612	33	117	15.94%	11.68%	99.93%
+Brandtodinium nutricula	species	class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	1333877	5	9	7.04%	8.82%	99.75%
+Tripos fusus	species	class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	2916	6	9	6.67%	9.95%	99.74%
+Meyerozyma caribbica MG20W	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Meyerozyma|species-Meyerozyma_caribbica	1091232	3	5	6.67%	2.34%	99.75%
+Saccharomyces cerevisiae S288C	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces|species-Saccharomyces_cerevisiae	559292	8	14	4.4%	10.02%	99.83%
+Hortaea werneckii EXF-2000	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	1157616	13	25	3.5%	5.1%	99.27%
+Candida parapsilosis	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida|species-Candida_parapsilosis	5480	5	7	2.91%	7.28%	99.83%
+Effrenium voratum	species	class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Effrenium|species-Effrenium_voratum	2562239	3	7	2.88%	14.41%	98.01%
+Meyerozyma	genus	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Meyerozyma	766728	2	4	1.53%	6.17%	100.0%
+Ochroconis constricta UM 578	species	phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae|genus-Ochroconis|species-Ochroconis_constricta	1442076	2	6	1.02%	10.67%	99.11%

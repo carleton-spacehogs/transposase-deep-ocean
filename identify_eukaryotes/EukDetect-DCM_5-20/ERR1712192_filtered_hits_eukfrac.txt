@@ -1,0 +1,27 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa	genus	Gephyrocapsa	38816	0.2544	0.8716	35	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	species	Gephyrocapsa oceanica	38817	0.2544	0.8868	35	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania	genus	Emiliania	2902	0.311	1.0654	4	12861
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania|species-Emiliania_huxleyi	species	Emiliania huxleyi	2903	0.311	1.084	4	12861
+phylum-Haptista|class-Haptophyta|order-Coccolithales|family-Calcidiscaceae|genus-Calcidiscus	genus	Calcidiscus	127548	0.0697	0.2386	8	114854
+phylum-Haptista|class-Haptophyta|order-Coccolithales|family-Calcidiscaceae|genus-Calcidiscus|species-Calcidiscus_leptoporus	species	Calcidiscus leptoporus	127549	0.0697	0.2428	8	114854
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	1.3697	4.692	584	426370
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	1.4958	5.2132	521	348317
+phylum-Basidiomycota|class-Tremellomycetes|order-Tremellales|family-Bulleraceae|genus-Bullera	genus	Bullera	4970	0.0213	0.073	7	328465
+phylum-Basidiomycota|class-Tremellomycetes|order-Tremellales|family-Bulleraceae|genus-Bullera|species-Bullera_alba	species	Bullera alba	157611	0.0213	0.0743	7	328465
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea	genus	Hortaea	91942	1.8439	6.3163	21	11389
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	species	Hortaea werneckii	91943	1.8439	6.4265	21	11389
+phylum-Arthropoda|class-Hexanauplia|order-Calanoida|family-Calanidae|genus-Calanus	genus	Calanus	6836	23.1293	79.2305	34	1470
+phylum-Arthropoda|class-Hexanauplia|order-Calanoida|family-Calanidae|genus-Calanus|species-Calanus_sinicus	species	Calanus sinicus	114070	23.1293	80.6128	34	1470
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	0.112	0.3837	22	196419
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_bravo	species	Micromonas bravo	296588	0.0821	0.2861	15	182724
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	1.3748	4.7096	97	70554
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._'lucimarinus'	species	Ostreococcus sp. 'lucimarinus'	242159	0.7781	2.712	95	122089
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	0.0829	0.284	19	229209
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	0.0829	0.2889	19	229209
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinoderma	genus	Prasinoderma	156132	0.5431	1.8603	66	121534
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinoderma|species-Prasinoderma_singulare	species	Prasinoderma singulare	676789	0.5431	1.8927	66	121534
+phylum-Chlorophyta|family-Pycnococcaceae|genus-Pycnococcus	genus	Pycnococcus	41879	0.0336	0.115	4	119181
+phylum-Chlorophyta|family-Pycnococcaceae|genus-Pycnococcus|species-Pycnococcus_provasolii	species	Pycnococcus provasolii	41880	0.0336	0.117	4	119181
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	0.0467	0.1601	6	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	0.0467	0.1629	6	128353

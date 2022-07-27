@@ -1,0 +1,41 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Oikopleura longicauda	107032	species	72	5743	98.63%	52.52%	97.6%	120130
+Tripos fusus	2916	species	84	1583	93.33%	57.45%	99.17%	132892
+Calcidiscus leptoporus	127549	species	79	756	92.94%	40.28%	99.62%	114854
+Brandtodinium nutricula	1333877	species	55	251	77.46%	26.89%	99.24%	88461
+Amphilonche elongata	1127133	species	1	10	50.0%	32.8%	99.1%	2250
+Prasinoderma singulare	676789	species	39	122	42.86%	19.36%	99.58%	121534
+Calanus sinicus	114070	species	1	2	33.33%	36.29%	97.09%	1470
+Chloropicon roscoffensis	1461544	species	50	123	31.65%	10.15%	99.19%	275974
+Lithomelissa setosa	1054399	species	1	7	20.0%	35.99%	96.96%	2562
+Gephyrocapsa oceanica	38817	species	19	38	19.0%	12.18%	98.13%	137559
+Emiliania huxleyi CCMP1516	280463	species	6	11	17.65%	6.38%	99.88%	44652
+Pelagomonas calceolata	35677	species	13	34	16.88%	14.96%	98.83%	128353
+Amoebophrya sp. AT5.2	1775427	species	3	7	13.64%	12.61%	98.62%	36997
+Dinophysis acuminata	47934	species	12	24	12.77%	9.87%	97.5%	125543
+Protoceratium reticulatum	133427	species	9	20	11.25%	15.06%	98.0%	112099
+Prorocentrum cordatum	2364126	species	10	19	10.1%	9.56%	96.79%	135765
+Coccolithus braarudii	221442	species	7	13	9.46%	14.78%	100.0%	86189
+Hortaea werneckii EXF-2000	1157616	species	31	53	8.36%	5.86%	99.27%	717212
+Aureococcus anophagefferens	44056	species	4	7	6.15%	16.18%	99.71%	85991
+Pelagococcus subviridis	35679	species	4	7	6.06%	5.62%	97.24%	79272
+Phaeocystis antarctica	33657	species	5	13	5.0%	7.78%	96.89%	158488
+Alexandrium andersonii	327968	species	1	2	3.7%	12.46%	98.25%	29644
+Pseudo-nitzschia heimii	476441	species	4	8	3.64%	13.84%	97.42%	176338
+Azadinium spinosum	632150	species	1	2	3.57%	20.47%	97.03%	41582
+Rhodotorula diobovata	5288	species	5	10	3.07%	6.25%	99.89%	358851
+Bathycoccus prasinos	41875	species	3	5	2.44%	5.83%	98.97%	229209
+Pelagodinium beii	43686	species	2	4	2.22%	6.44%	98.69%	127026
+Alternaria atra	119953	species	2	2	1.06%	4.19%	100.0%	343025
+Scrippsiella trochoidea	71861	species	1	1	0.88%	7.25%	96.43%	163897
+Phaeocystis globosa	33658	species	1	2	0.86%	9.34%	99.5%	154798
+Alexandrium tamarense	2926	species	1	1	0.71%	7.9%	96.94%	194024
+Oithona nana	136191	species	1	2	0.67%	18.87%	97.51%	244880
+Malassezia restricta	76775	species	1	1	0.67%	1.83%	98.88%	348317
+Alternaria gaisen	167740	species	1	1	0.64%	2.2%	100.0%	317618
+Calocera viscosa TUFC12733	1330018	species	1	1	0.57%	2.44%	97.03%	364392
+Leptocylindrus danicus	163516	species	1	2	0.54%	5.63%	98.31%	278595
+Cladosporium phlei	1116209	species	1	2	0.5%	19.75%	97.03%	364263
+Exophiala xenobiotica	348802	species	1	2	0.5%	4.4%	100.0%	372377
+Stemphylium vesicarium	119933	species	1	2	0.48%	1.32%	100.0%	369073
+Rachicladosporium antarcticum	1507870	species	1	1	0.28%	4.4%	98.97%	682722

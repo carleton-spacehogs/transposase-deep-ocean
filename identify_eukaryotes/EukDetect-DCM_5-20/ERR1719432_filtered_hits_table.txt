@@ -1,0 +1,39 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Oithona nana	species	phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	136191	132	1724	88.59%	31.77%	97.93%
+Prasinoderma singulare	species	phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinoderma|species-Prasinoderma_singulare	676789	79	1355	86.81%	41.93%	99.28%
+Corethron hystrix	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Corethrales|family-Corethraceae|genus-Corethron|species-Corethron_hystrix	216773	49	265	71.01%	26.23%	98.54%
+Gephyrocapsa oceanica	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	38817	66	417	66.0%	27.05%	98.12%
+Tripos fusus	species	class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	2916	49	138	54.44%	14.29%	99.36%
+Dinophysis acuminata	species	class-Dinophyceae|order-Dinophysiales|family-Dinophysiaceae|genus-Dinophysis|species-Dinophysis_acuminata	47934	50	136	53.19%	15.32%	98.82%
+Thalassiosira oceanica	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Thalassiosiraceae|genus-Thalassiosira|species-Thalassiosira_oceanica	159749	49	180	50.0%	13.43%	98.25%
+Pelagomonas calceolata	species	class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	35677	37	260	48.05%	18.95%	98.33%
+Chloropicon laureae	species	phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_laureae	464258	25	67	44.64%	20.59%	99.16%
+Emiliania huxleyi CCMP1516	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania|species-Emiliania_huxleyi	280463	14	46	41.18%	11.1%	99.18%
+Pelagodinium beii	species	class-Dinophyceae|order-Suessiales|family-Suessiaceae|genus-Pelagodinium|species-Pelagodinium_beii	43686	33	106	36.67%	13.47%	99.41%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	50	148	33.33%	6.73%	99.15%
+Pycnococcus provasolii	species	phylum-Chlorophyta|family-Pycnococcaceae|genus-Pycnococcus|species-Pycnococcus_provasolii	41880	28	101	28.87%	17.58%	99.42%
+Bathycoccus sp. TOSAG39-1	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_sp._TOSAG39-1	1735750	3	6	23.08%	7.86%	99.81%
+Pseudo-nitzschia heimii	species	phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Pseudo-nitzschia|species-Pseudo-nitzschia_heimii	476441	25	96	22.73%	17.53%	97.77%
+Azadinium spinosum	species	class-Dinophyceae|order-Gonyaulacales|family-Amphidomataceae|genus-Azadinium|species-Azadinium_spinosum	632150	5	12	17.86%	15.88%	97.65%
+Phaeocystis rex	species	phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_rex	1631189	6	13	15.38%	15.3%	97.2%
+Prorocentrum cordatum	species	class-Dinophyceae|order-Prorocentrales|family-Prorocentraceae|genus-Prorocentrum|species-Prorocentrum_cordatum	2364126	15	24	15.15%	10.69%	96.62%
+Calcidiscus leptoporus	species	phylum-Haptista|class-Haptophyta|order-Coccolithales|family-Calcidiscaceae|genus-Calcidiscus|species-Calcidiscus_leptoporus	127549	12	31	14.12%	22.63%	99.68%
+Leptocylindrus danicus	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Leptocylindrales|family-Leptocylindraceae|genus-Leptocylindrus|species-Leptocylindrus_danicus	163516	23	73	12.43%	16.97%	98.03%
+Oikopleura dioica	species	phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_dioica	34765	8	34	10.13%	6.18%	97.25%
+Amoebophrya sp. AT5.2	species	class-Dinophyceae|order-Syndiniales|family-Amoebophryaceae|genus-Amoebophrya|species-Amoebophrya_sp._AT5.2	1775427	2	4	9.09%	13.16%	98.93%
+Brandtodinium nutricula	species	class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	1333877	6	12	8.45%	9.04%	99.15%
+Protoceratium reticulatum	species	class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Protoceratium|species-Protoceratium_reticulatum	133427	6	12	7.5%	16.59%	99.8%
+unclassified Bathycoccus	no rank	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	2590008	3	5	5.77%	7.48%	99.75%
+Alexandrium catenella	species	class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium|species-Alexandrium_catenella	2925	5	9	5.43%	14.37%	98.03%
+Chaetoceros curvisetus	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Chaetocerotales|family-Chaetocerotaceae|genus-Chaetoceros|species-Chaetoceros_curvisetus	230516	2	4	4.17%	9.24%	98.72%
+Gymnodinium catenatum	species	class-Dinophyceae|order-Gymnodiniales|family-Gymnodiniaceae|genus-Gymnodinium|species-Gymnodinium_catenatum	39447	5	10	3.91%	9.28%	99.57%
+Phaeocystis globosa	species	phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_globosa	33658	4	14	3.45%	21.2%	98.41%
+Karlodinium veneficum	species	class-Dinophyceae|order-Gymnodiniales|family-Kareniaceae|genus-Karlodinium|species-Karlodinium_veneficum	407301	3	4	3.41%	4.46%	97.7%
+Pelagococcus subviridis	species	class-Pelagophyceae|order-Pelagomonadales|genus-Pelagococcus|species-Pelagococcus_subviridis	35679	2	4	3.03%	8.14%	99.48%
+Chaetoceros debilis	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Chaetocerotales|family-Chaetocerotaceae|genus-Chaetoceros|species-Chaetoceros_debilis	122233	3	4	2.04%	6.99%	98.76%
+Wallemia ichthyophaga EXF-994	species	phylum-Basidiomycota|class-Wallemiomycetes|order-Wallemiales|family-Wallemiaceae|genus-Wallemia|species-Wallemia_ichthyophaga	1299270	3	5	1.97%	6.23%	99.78%
+Cadophora sp. DSE1049	species	phylum-Ascomycota|class-Leotiomycetes|order-Helotiales|genus-Cadophora|species-Cadophora_sp._DSE1049	1485229	4	8	1.93%	1.88%	98.29%
+Exophiala xenobiotica	species	phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala|species-Exophiala_xenobiotica	348802	3	5	1.5%	5.01%	99.48%
+Alternaria arborescens	species	phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Pleosporaceae|genus-Alternaria|species-Alternaria_arborescens	156630	2	4	1.33%	4.41%	99.69%
+Debaryomyces hansenii CBS767	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Debaryomyces|species-Debaryomyces_hansenii	284592	2	4	1.09%	16.02%	100.0%
+Erysiphe necator	species	phylum-Ascomycota|class-Leotiomycetes|order-Erysiphales|family-Erysiphaceae|genus-Erysiphe|species-Erysiphe_necator	52586	2	6	1.0%	19.55%	99.67%

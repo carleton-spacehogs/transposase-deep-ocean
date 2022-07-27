@@ -1,0 +1,18 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Brandtodinium nutricula	species	class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	1333877	65	543	91.55%	37.53%	99.24%
+Tripos fusus	species	class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	2916	44	131	48.89%	14.08%	99.14%
+Chloropicon roscoffensis	species	phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	1461544	48	325	30.38%	15.23%	99.1%
+Hortaea werneckii EXF-2000	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	1157616	82	223	22.1%	9.16%	99.2%
+Oikopleura longicauda	species	phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	107032	14	97	19.18%	9.24%	97.49%
+Prasinococcaceae	family	phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae	2201465	4	7	16.0%	20.35%	99.37%
+Azadinium spinosum	species	class-Dinophyceae|order-Gonyaulacales|family-Amphidomataceae|genus-Azadinium|species-Azadinium_spinosum	632150	4	6	14.29%	8.22%	97.1%
+Prorocentrum cordatum	species	class-Dinophyceae|order-Prorocentrales|family-Prorocentraceae|genus-Prorocentrum|species-Prorocentrum_cordatum	2364126	13	24	13.13%	10.57%	96.91%
+Gephyrocapsa oceanica	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	38817	12	22	12.0%	12.92%	98.28%
+Oithona nana	species	phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	136191	17	52	11.41%	11.14%	97.25%
+Prasinoderma singulare	species	phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinoderma|species-Prasinoderma_singulare	676789	8	14	8.79%	11.06%	99.84%
+Effrenium voratum	species	class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Effrenium|species-Effrenium_voratum	2562239	9	20	8.65%	11.38%	98.14%
+Durusdinium trenchii	species	class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Durusdinium|species-Durusdinium_trenchii	1381693	3	5	6.52%	13.24%	97.62%
+Pelagomonas calceolata	species	class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	35677	5	10	6.49%	10.52%	99.34%
+Rhodotorula diobovata	species	phylum-Basidiomycota|class-Microbotryomycetes|order-Sporidiobolales|family-Sporidiobolaceae|genus-Rhodotorula|species-Rhodotorula_diobovata	5288	6	13	3.68%	8.5%	99.81%
+Prasinococcaceae sp. CCMP 1430	species	phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|species-Prasinococcaceae_sp._CCMP_1430	2489100	4	7	3.67%	7.27%	99.63%
+Scrippsiella trochoidea	species	class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae|genus-Scrippsiella|species-Scrippsiella_trochoidea	71861	4	8	3.54%	16.7%	96.71%

@@ -1,0 +1,14 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Brandtodinium nutricula	species	class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	1333877	68	902	95.77%	47.11%	98.19%
+Tripos fusus	species	class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	2916	65	278	72.22%	19.76%	98.09%
+Oikopleura longicauda	species	phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	107032	26	1670	35.62%	15.68%	95.59%
+Pelagomonas calceolata	species	class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	35677	22	91	28.57%	15.85%	99.29%
+Prasinoderma singulare	species	phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinoderma|species-Prasinoderma_singulare	676789	12	30	13.19%	17.15%	99.78%
+Emiliania huxleyi CCMP1516	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania|species-Emiliania_huxleyi	280463	4	7	11.76%	12.96%	99.23%
+Protoceratium reticulatum	species	class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Protoceratium|species-Protoceratium_reticulatum	133427	9	16	11.25%	13.31%	99.74%
+Gephyrocapsa oceanica	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	38817	11	25	11.0%	11.76%	98.19%
+Thalassiosira oceanica	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Thalassiosiraceae|genus-Thalassiosira|species-Thalassiosira_oceanica	159749	8	14	8.16%	11.11%	98.11%
+Phaeocystis antarctica	species	phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	33657	8	21	8.0%	8.62%	97.57%
+Pelagococcus subviridis	species	class-Pelagophyceae|order-Pelagomonadales|genus-Pelagococcus|species-Pelagococcus_subviridis	35679	3	5	4.55%	2.3%	99.66%
+Pseudo-nitzschia heimii	species	phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Pseudo-nitzschia|species-Pseudo-nitzschia_heimii	476441	4	7	3.64%	9.05%	98.68%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	4	6	2.67%	4.4%	99.17%

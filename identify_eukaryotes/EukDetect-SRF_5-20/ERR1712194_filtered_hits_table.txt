@@ -1,0 +1,24 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Fragilariopsis kerguelensis	species	phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Fragilariopsis|species-Fragilariopsis_kerguelensis	186038	125	16134	82.78%	54.26%	97.55%
+Phaeocystis antarctica	species	phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	33657	62	3028	62.0%	35.94%	96.5%
+Pseudo-nitzschia heimii	species	phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Pseudo-nitzschia|species-Pseudo-nitzschia_heimii	476441	51	1378	46.36%	26.52%	97.19%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	68	191	45.33%	6.9%	99.26%
+Lithomelissa setosa	species	class-Polycystinea|order-Nassellaria|family-Plagiacanthidae|genus-Lithomelissa|species-Lithomelissa_setosa	1054399	2	42	40.0%	52.11%	98.2%
+Pelagococcus subviridis	species	class-Pelagophyceae|order-Pelagomonadales|genus-Pelagococcus|species-Pelagococcus_subviridis	35679	22	222	33.33%	17.09%	99.56%
+Chaetoceros debilis	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Chaetocerotales|family-Chaetocerotaceae|genus-Chaetoceros|species-Chaetoceros_debilis	122233	37	841	25.17%	25.2%	99.12%
+Prasinoderma singulare	species	phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinoderma|species-Prasinoderma_singulare	676789	17	127	18.68%	17.25%	99.38%
+Eucampia antarctica	species	phylum-Bacillariophyta|class-Mediophyceae|order-Hemiaulales|family-Hemiaulaceae|genus-Eucampia|species-Eucampia_antarctica	49252	13	284	17.81%	41.36%	98.83%
+Prorocentrum cordatum	species	class-Dinophyceae|order-Prorocentrales|family-Prorocentraceae|genus-Prorocentrum|species-Prorocentrum_cordatum	2364126	16	54	16.16%	12.12%	96.75%
+Gephyrocapsa oceanica	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	38817	12	24	12.0%	7.57%	98.62%
+Bathycoccus prasinos	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	41875	11	107	8.94%	13.09%	98.84%
+Emiliania huxleyi CCMP1516	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania|species-Emiliania_huxleyi	280463	2	7	5.88%	11.75%	99.41%
+Thalassiosira oceanica	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Thalassiosiraceae|genus-Thalassiosira|species-Thalassiosira_oceanica	159749	5	52	5.1%	9.31%	97.9%
+Proboscia alata	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Rhizosoleniales|family-Rhizosoleniaceae|genus-Proboscia|species-Proboscia_alata	216777	6	80	4.96%	17.93%	99.24%
+Haptolina ericina	species	phylum-Haptista|class-Haptophyta|order-Prymnesiales|family-Prymnesiaceae|genus-Haptolina|species-Haptolina_ericina	156174	2	7	3.7%	26.45%	100.0%
+Debaryomyces hansenii CBS767	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Debaryomyces|species-Debaryomyces_hansenii	284592	6	105	3.28%	25.16%	99.31%
+Thalassionema nitzschioides	species	phylum-Bacillariophyta|class-Fragilariophyceae|order-Thalassionemales|family-Thalassionemataceae|genus-Thalassionema|species-Thalassionema_nitzschioides	33649	3	22	2.73%	4.7%	99.41%
+Paraphysomonas bandaiensis	species	class-Chrysophyceae|order-Chromulinales|family-Paraphysomonadaceae|genus-Paraphysomonas|species-Paraphysomonas_bandaiensis	89770	2	76	2.25%	49.35%	98.92%
+Hortaea werneckii EXF-2000	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	1157616	8	33	2.16%	11.21%	99.14%
+Thalassiothrix antarctica	species	phylum-Bacillariophyta|class-Fragilariophyceae|order-Thalassionemales|family-Thalassionemataceae|genus-Thalassiothrix|species-Thalassiothrix_antarctica	1049557	2	19	1.72%	17.3%	97.67%
+Corethron pennatum	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Corethrales|family-Corethraceae|genus-Corethron|species-Corethron_pennatum	218684	2	5	1.68%	13.12%	98.7%
+Micromonas	genus	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	38832	2	9	1.12%	20.88%	96.98%

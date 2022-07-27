@@ -1,0 +1,102 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Pichia kluyveri	36015	species	68	1004	66.02%	24.44%	98.89%	170307
+Gymnodinium catenatum	39447	species	74	3751	57.81%	42.47%	98.71%	188671
+Malassezia restricta	76775	species	81	1246	54.0%	17.33%	98.44%	348317
+Amphilonche elongata	1127133	species	1	4	50.0%	13.38%	99.12%	2250
+Lithomelissa setosa	1054399	species	2	2	40.0%	22.37%	98.51%	2562
+Bathycoccus sp. SAG1	2589996	species	2	8	40.0%	23.77%	99.3%	5703
+Malassezia globosa CBS 7966	425265	species	61	546	38.85%	14.92%	98.65%	332937
+Pycnococcus provasolii	41880	species	35	256	36.08%	22.04%	99.41%	119181
+Emiliania huxleyi CCMP1516	280463	species	12	22	35.29%	8.45%	99.5%	44652
+Tripos fusus	2916	species	24	228	26.67%	28.78%	98.97%	132892
+Chloropicon laureae	464258	species	13	29	23.21%	18.06%	99.2%	50762
+Prasinoderma singulare	676789	species	20	113	21.98%	17.73%	99.56%	121534
+Alternaria sect. Alternaria	2499237	section	14	67	21.88%	26.21%	99.95%	83976
+Oithona nana	136191	species	31	140	20.81%	14.14%	97.21%	244880
+Arcocellulus cornucervis	1155433	species	16	55	19.28%	14.05%	98.67%	107135
+Amoebophrya sp. AT5.2	1775427	species	4	31	18.18%	37.39%	98.51%	36997
+Gephyrocapsa oceanica	38817	species	18	30	18.0%	10.23%	98.46%	137559
+unclassified Bathycoccus	2590008	genus	8	47	15.38%	8.77%	99.46%	95463
+Saccharomyces cerevisiae S288C	559292	species	28	94	15.38%	9.67%	99.65%	308302
+Oikopleura longicauda	107032	species	11	134	15.07%	11.71%	97.7%	120130
+Bathycoccus sp. SAG4	2589999	species	1	1	14.29%	9.12%	100.0%	10392
+Alternaria alternata complex	187734	species group	11	44	13.41%	9.99%	99.86%	165766
+Noctiluca scintillans	2966	species	11	45	12.09%	16.62%	97.95%	152611
+Pelagomonas calceolata	35677	species	9	46	11.69%	19.24%	98.91%	128353
+Hanseniaspora uvarum	29833	species	13	200	11.3%	12.19%	99.61%	220680
+Oikopleura albicans	2500139	species	8	26	8.51%	11.0%	99.43%	126693
+Ostreococcus sp. SAG10	2590005	species	2	3	8.0%	3.03%	97.58%	56396
+Pseudo-nitzschia fraudulenta	183588	species	7	36	7.69%	18.74%	99.64%	108708
+Bathycoccus sp. TOSAG39-1	1735750	species	1	2	7.69%	5.94%	99.0%	28758
+Starmerella bacillaris	1247836	species	8	50	7.21%	23.77%	99.48%	165674
+Cafeteria roenbergensis	33653	species	3	4	6.98%	9.69%	99.47%	50724
+Candida parapsilosis	5480	species	12	52	6.98%	14.12%	99.71%	312010
+Bathycoccus prasinos	41875	species	8	54	6.5%	11.12%	99.27%	229209
+Thalassiosira oceanica	159749	species	6	29	6.12%	16.99%	99.34%	165190
+Alternaria alternata	5599	species	4	37	5.97%	9.84%	99.51%	131319
+Alexandrium minutum	39455	species	1	1	5.56%	7.37%	98.0%	15570
+Aureobasidium	5579	genus	4	21	5.06%	9.8%	98.09%	123825
+Chloropicon roscoffensis	1461544	species	7	23	4.43%	8.89%	99.28%	275974
+Ostreococcus lucimarinus CCE9901	436017	species	5	24	4.39%	5.93%	99.54%	233346
+Rhizopus stolonifer B9770	1274793	species	7	14	4.22%	5.82%	99.29%	273299
+Chaetoceros curvisetus	230516	species	2	2	4.17%	12.8%	98.41%	43877
+[Nectria] haematococca mpVI 77-13-4	660122	no rank	8	28	3.92%	11.36%	100.0%	351719
+Stemphylium vesicarium	119933	species	8	46	3.85%	12.94%	99.95%	369073
+Oikopleura dioica	34765	species	3	49	3.8%	14.32%	95.9%	176745
+Azadinium spinosum	632150	species	1	2	3.57%	19.55%	96.37%	41582
+Exophiala xenobiotica	348802	species	7	18	3.5%	8.64%	97.22%	372377
+Alternaria gaisen	167740	species	5	14	3.21%	6.43%	98.11%	317618
+Brandtodinium nutricula	1333877	species	2	3	2.82%	12.16%	99.67%	88461
+Lanzia echinophila	1424426	species	4	34	2.58%	12.3%	99.86%	252608
+Corethron pennatum	218684	species	3	8	2.52%	5.68%	98.04%	169912
+Protoceratium reticulatum	133427	species	2	3	2.5%	13.98%	99.66%	112099
+Hanseniaspora osmophila	56408	species	4	44	2.5%	51.47%	99.9%	290761
+Calcidiscus leptoporus	127549	species	2	3	2.35%	20.77%	99.51%	114854
+Minutocellus polymorphus	265543	species	3	4	2.01%	2.48%	97.92%	256500
+Epicoccum nigrum	105696	species	4	7	1.96%	15.04%	98.29%	360210
+Hanseniaspora opuntiae	211096	species	2	4	1.82%	8.42%	100.0%	224750
+Aspergillus sp. MA 6041	2153248	species	6	25	1.8%	10.58%	100.0%	605505
+Debaryomyces hansenii CBS767	284592	species	3	9	1.64%	14.04%	99.7%	326457
+Eurotiomycetes sp.	1709936	species	3	30	1.52%	13.05%	98.97%	385143
+Alternaria tenuissima	119927	species	1	2	1.47%	4.28%	100.0%	128737
+Zygosaccharomyces rouxii	4956	species	1	5	1.47%	5.59%	99.59%	150972
+Hortaea werneckii EXF-2000	1157616	species	5	24	1.35%	35.88%	99.48%	717212
+[Candida] intermedia	45354	species	2	4	1.14%	6.21%	100.0%	350551
+Torulaspora delbrueckii	4950	species	2	2	1.14%	3.81%	99.01%	334643
+Knufia petricola	206542	species	2	3	1.02%	4.02%	100.0%	374300
+Cladosporium phlei	1116209	species	2	2	1.01%	9.74%	96.53%	364263
+Phaeocystis antarctica	33657	species	1	2	1.0%	1.62%	96.4%	158488
+Stemphylium lycopersici	183478	species	2	8	0.99%	5.45%	97.64%	365333
+Pyrenophora teres f. teres	97479	forma	2	6	0.99%	9.25%	98.7%	364472
+Skeletonema japonicum	267983	species	1	7	0.98%	37.09%	96.44%	151895
+Hanseniaspora singularis	572238	species	1	1	0.94%	3.23%	98.86%	214611
+Chloropicon mariensis	1606511	species	1	18	0.91%	36.67%	97.93%	157984
+Thalassiothrix antarctica	1049557	species	1	2	0.86%	10.63%	96.79%	177575
+Hanseniaspora clermontiae	211099	species	1	1	0.86%	3.74%	100.0%	239150
+Malassezia pachydermatis	77020	species	1	2	0.78%	3.39%	96.69%	324158
+Meyerozyma	766728	genus	1	2	0.76%	6.47%	100.0%	218630
+Didymella	55170	genus	1	2	0.76%	2.35%	97.73%	213550
+Chloropicon primus	1764295	species	1	2	0.72%	1.45%	97.33%	281336
+Alternaria arborescens	156630	species	1	4	0.67%	3.39%	98.64%	303330
+Pseudo-nitzschia pungens	37318	species	1	1	0.64%	8.23%	97.03%	279300
+[Candida] inconspicua	52247	species	1	1	0.62%	5.41%	97.03%	271554
+Skeletonema marinoi	267567	species	1	1	0.6%	0.94%	97.26%	330644
+Candida orthopsilosis Co 90-125	1136231	species	1	2	0.6%	4.42%	99.33%	306002
+Pichia membranifaciens NRRL Y-2026	763406	species	1	11	0.6%	27.55%	98.56%	330702
+Clavispora lusitaniae ATCC 42720	306902	species	1	5	0.58%	7.66%	95.83%	320224
+Rhizopus delemar RA 99-880	246409	species	1	33	0.56%	76.42%	96.96%	288123
+Puccinia graminis f. sp. tritici CRL 75-36-700-3	418459	no rank	1	3	0.55%	27.25%	98.88%	314038
+Fragilariopsis cylindrus CCMP1102	635003	species	1	24	0.55%	17.12%	99.24%	370513
+Leptocylindrus danicus	163516	species	1	21	0.54%	12.93%	98.6%	278595
+Saccharomyces paradoxus	27291	species	1	1	0.54%	5.82%	97.03%	307043
+Yarrowia lipolytica CLIB122	284591	species	1	9	0.53%	74.73%	99.71%	346692
+Symmetrospora coprosmae	69976	species	1	1	0.53%	21.03%	98.94%	420169
+Fusarium solani	169388	species	1	9	0.52%	8.32%	98.44%	338685
+Cladosporium sp. SL-16	2048672	species	1	2	0.5%	11.63%	97.33%	366513
+Leptosphaeria maculans JN3	985895	no rank	1	3	0.5%	9.31%	97.58%	364941
+Monilinia laxa	61186	species	1	3	0.49%	11.69%	100.0%	348135
+Rutstroemia sp. NJR-2017a BVV2	2070413	species	1	3	0.49%	4.36%	96.65%	356277
+Alternaria solani	48100	species	1	1	0.49%	13.91%	100.0%	353227
+Aspergillus glaucus CBS 516.65	1160497	species	1	2	0.48%	2.66%	100.0%	355278
+Rachicladosporium antarcticum	1507870	species	1	1	0.28%	4.49%	98.99%	682722
+Fusarium	5506	genus	1	6	0.17%	43.06%	100.0%	977082

@@ -1,0 +1,59 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Oithona nana	136191	species	122	3151	81.88%	21.42%	95.95%	244880
+Corethron hystrix	216773	species	31	412	44.93%	31.42%	98.17%	86215
+Oikopleura longicauda	107032	species	28	671	38.36%	19.02%	96.8%	120130
+Malassezia restricta	76775	species	53	518	35.33%	12.73%	98.69%	348317
+Chloropicon roscoffensis	1461544	species	49	602	31.01%	17.52%	98.73%	275974
+Phaeocystis rex	1631189	species	9	58	23.08%	25.66%	99.11%	40152
+Lithomelissa setosa	1054399	species	1	13	20.0%	68.54%	96.58%	2562
+Arthropoda	6656	phylum	7	21	14.89%	15.79%	99.62%	60948
+Acanthamoeba polyphaga	5757	species	6	62	10.71%	14.31%	96.6%	76663
+Acanthamoeba rhysodes	32599	species	8	266	10.39%	12.83%	97.7%	113910
+Tyrophagus putrescentiae	59818	species	12	83	10.34%	12.28%	98.58%	241626
+Acanthamoeba quina	211522	species	7	71	9.09%	15.95%	97.29%	117232
+Oikopleura dioica	34765	species	7	61	8.86%	10.94%	96.64%	176745
+Chloropicon primus	1764295	species	12	67	8.7%	15.82%	97.39%	281336
+Acanthamoeba	5754	genus	8	56	7.62%	15.78%	99.04%	134855
+Hortaea werneckii EXF-2000	1157616	species	28	200	7.55%	11.25%	98.53%	717212
+Beroe forskalii	140453	species	9	29	7.44%	6.52%	98.25%	220090
+Brandtodinium nutricula	1333877	species	5	12	7.04%	7.01%	99.02%	88461
+Malassezia globosa CBS 7966	425265	species	10	122	6.37%	12.74%	98.43%	332937
+Thalassiosira oceanica	159749	species	6	40	6.12%	15.5%	97.46%	165190
+Saccharomyces cerevisiae S288C	559292	species	10	70	5.49%	17.29%	99.41%	308302
+Pelagomonas calceolata	35677	species	4	6	5.19%	11.77%	97.48%	128353
+Acanthamoeba mauritaniensis	196912	species	4	22	5.19%	25.47%	100.0%	103226
+Acanthamoeba pearcei	65662	species	3	73	5.0%	40.54%	95.67%	66582
+Acanthamoeba palestinensis	28015	species	5	258	4.31%	18.59%	95.15%	150122
+unclassified Bathycoccus	2590008	genus	2	22	3.85%	9.39%	97.97%	95463
+Azadinium spinosum	632150	species	1	5	3.57%	37.72%	97.35%	41582
+Chloropicon laureae	464258	species	2	26	3.57%	29.95%	98.91%	50762
+Prasinoderma singulare	676789	species	3	13	3.3%	20.85%	99.67%	121534
+Rhodotorula sp. FNED7-22	1928479	species	2	48	3.23%	36.27%	99.57%	96261
+Acanthamoeba lugdunensis	61605	species	2	3	2.41%	14.15%	98.01%	108538
+Stramenopiles sp. TOSAG23-2	1735743	species	1	1	2.13%	6.89%	96.59%	66251
+Architeuthis dux	256136	species	3	6	2.04%	9.92%	97.46%	233481
+Phaeocystis antarctica	33657	species	2	2	2.0%	8.26%	97.67%	158488
+Gephyrocapsa oceanica	38817	species	2	13	2.0%	12.75%	98.88%	137559
+Thraustochytrium sp. ATCC 26185	672127	species	1	10	1.92%	23.46%	99.3%	71099
+Chloropicon mariensis	1606511	species	2	6	1.82%	9.24%	99.7%	157984
+Phaeocystis globosa	33658	species	2	4	1.72%	12.04%	99.01%	154798
+Acanthamoeba castellanii str. Neff	1257118	species	1	4	1.67%	12.89%	98.08%	75967
+Acanthamoeba healyi	65661	species	1	4	1.06%	3.32%	96.15%	140476
+Ochroconis constricta UM 578	1442076	species	2	20	1.02%	12.9%	99.26%	370078
+Prorocentrum cordatum	2364126	species	1	5	1.01%	39.34%	95.78%	135765
+Cladosporium phlei	1116209	species	2	3	1.01%	9.93%	96.67%	364263
+Acanthamoeba lenticulata	29196	species	1	86	0.98%	5.64%	94.74%	135987
+Pseudo-nitzschia heimii	476441	species	1	1	0.91%	7.65%	97.53%	176338
+Rhagoletis zephyria	28612	species	1	7	0.87%	31.71%	98.72%	219191
+Thalassiothrix antarctica	1049557	species	1	4	0.86%	14.84%	97.27%	177575
+Starmerella sorbosivorans	140312	species	1	4	0.83%	10.94%	100.0%	223125
+Candida metapsilosis	273372	species	1	2	0.78%	16.75%	99.02%	219526
+Bullera alba	157611	species	1	2	0.61%	5.81%	97.47%	328465
+Rhodotorula diobovata	5288	species	1	10	0.61%	11.78%	99.59%	358851
+Naganishia albida	100951	species	1	3	0.57%	11.2%	99.19%	347277
+Cladosporium cladosporioides	29917	species	1	7	0.56%	4.33%	96.65%	333901
+Leptoxyphium fumago	5474	species	1	1	0.5%	4.49%	96.1%	373358
+Acremonium chrysogenum ATCC 11550	857340	species	1	1	0.5%	1.11%	96.88%	352728
+Zymoseptoria tritici IPO323	336722	species	1	2	0.49%	7.03%	100.0%	359949
+Purpureocillium lilacinum	33203	species	1	2	0.49%	37.71%	99.49%	356037
+Aspergillus sydowii CBS 593.65	1036612	species	1	4	0.48%	7.65%	100.0%	361206

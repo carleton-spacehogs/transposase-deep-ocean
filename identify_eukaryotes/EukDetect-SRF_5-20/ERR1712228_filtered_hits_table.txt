@@ -1,0 +1,27 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Oikopleura albicans	species	phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_albicans	2500139	51	583	54.26%	29.72%	98.69%
+Calcidiscus leptoporus	species	phylum-Haptista|class-Haptophyta|order-Coccolithales|family-Calcidiscaceae|genus-Calcidiscus|species-Calcidiscus_leptoporus	127549	40	357	47.06%	27.76%	99.55%
+Lithomelissa setosa	species	class-Polycystinea|order-Nassellaria|family-Plagiacanthidae|genus-Lithomelissa|species-Lithomelissa_setosa	1054399	2	11	40.0%	39.72%	98.35%
+Bathycoccus sp. SAG1	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_sp._SAG1	2589996	2	6	40.0%	20.29%	99.73%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	49	333	32.67%	11.44%	99.05%
+Thalassionema frauenfeldii	species	phylum-Bacillariophyta|class-Fragilariophyceae|order-Thalassionemales|family-Thalassionemataceae|genus-Thalassionema|species-Thalassionema_frauenfeldii	186022	34	361	32.08%	18.97%	97.33%
+Brandtodinium nutricula	species	class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	1333877	21	254	29.58%	16.37%	99.18%
+unclassified Ostreococcus	no rank	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	2268852	3	9	25.0%	10.89%	98.61%
+Hortaea werneckii EXF-2000	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	1157616	75	470	20.22%	13.58%	99.12%
+Prorocentrum cordatum	species	class-Dinophyceae|order-Prorocentrales|family-Prorocentraceae|genus-Prorocentrum|species-Prorocentrum_cordatum	2364126	20	38	20.2%	10.78%	96.51%
+Tripos fusus	species	class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	2916	15	69	16.67%	14.45%	98.82%
+Oithona nana	species	phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	136191	23	103	15.44%	16.06%	97.28%
+Thalassiosira oceanica	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Thalassiosiraceae|genus-Thalassiosira|species-Thalassiosira_oceanica	159749	15	114	15.31%	13.7%	98.93%
+Pelagomonas calceolata	species	class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	35677	9	43	11.69%	16.08%	97.68%
+Alexandrium minutum	species	class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium|species-Alexandrium_minutum	39455	2	10	11.11%	34.84%	96.68%
+Chloropicon roscoffensis	species	phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	1461544	15	222	9.49%	17.9%	99.11%
+Pycnococcus provasolii	species	phylum-Chlorophyta|family-Pycnococcaceae|genus-Pycnococcus|species-Pycnococcus_provasolii	41880	9	43	9.28%	21.44%	99.53%
+Gephyrocapsa oceanica	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	38817	9	33	9.0%	12.11%	98.3%
+Macrobrachium nipponense	species	phylum-Arthropoda|class-Malacostraca|order-Decapoda|family-Palaemonidae|genus-Macrobrachium|species-Macrobrachium_nipponense	159736	6	45	8.7%	10.81%	97.37%
+Scyphosphaera apsteinii	species	phylum-Haptista|class-Haptophyta|order-Coccosphaerales|family-Pontosphaeraceae|genus-Scyphosphaera|species-Scyphosphaera_apsteinii	418940	5	19	6.25%	17.32%	98.08%
+Emiliania huxleyi CCMP1516	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania|species-Emiliania_huxleyi	280463	2	4	5.88%	7.45%	98.69%
+Rhodotorula diobovata	species	phylum-Basidiomycota|class-Microbotryomycetes|order-Sporidiobolales|family-Sporidiobolaceae|genus-Rhodotorula|species-Rhodotorula_diobovata	5288	7	168	4.29%	13.77%	99.0%
+Penaeus vannamei	species	phylum-Arthropoda|class-Malacostraca|order-Decapoda|family-Penaeidae|genus-Penaeus|species-Penaeus_vannamei	6689	6	23	3.97%	9.54%	97.95%
+Saccharomyces cerevisiae S288C	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces|species-Saccharomyces_cerevisiae	559292	7	19	3.85%	6.47%	99.27%
+unclassified Bathycoccus	no rank	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	2590008	2	6	3.85%	15.61%	99.04%
+Aspergillus sp. MA 6041	species	phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae|genus-Aspergillus|species-Aspergillus_sp._MA_6041	2153248	4	29	1.2%	14.1%	98.34%

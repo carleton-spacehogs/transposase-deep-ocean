@@ -1,0 +1,26 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Mixia osmundae IAM 14324	species	phylum-Basidiomycota|class-Mixiomycetes|order-Mixiales|family-Mixiaceae|genus-Mixia|species-Mixia_osmundae	764103	71	141	44.1%	5.99%	99.7%
+Thalassiosira oceanica	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Thalassiosiraceae|genus-Thalassiosira|species-Thalassiosira_oceanica	159749	39	503	39.8%	21.1%	98.74%
+Emiliania huxleyi CCMP1516	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania|species-Emiliania_huxleyi	280463	12	29	35.29%	9.87%	99.41%
+Calcidiscus leptoporus	species	phylum-Haptista|class-Haptophyta|order-Coccolithales|family-Calcidiscaceae|genus-Calcidiscus|species-Calcidiscus_leptoporus	127549	28	532	32.94%	37.28%	99.22%
+Gephyrocapsa oceanica	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	38817	29	103	29.0%	13.53%	98.59%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	37	113	24.67%	5.88%	99.07%
+Leptocylindrus danicus	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Leptocylindrales|family-Leptocylindraceae|genus-Leptocylindrus|species-Leptocylindrus_danicus	163516	41	491	22.16%	23.67%	97.92%
+Chloropicon roscoffensis	species	phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	1461544	35	462	22.15%	17.53%	99.06%
+Hortaea werneckii EXF-2000	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	1157616	69	684	18.6%	17.91%	99.07%
+Saccharomyces cerevisiae S288C	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces|species-Saccharomyces_cerevisiae	559292	32	82	17.58%	7.51%	99.76%
+Thalassionema frauenfeldii	species	phylum-Bacillariophyta|class-Fragilariophyceae|order-Thalassionemales|family-Thalassionemataceae|genus-Thalassionema|species-Thalassionema_frauenfeldii	186022	13	94	12.26%	31.21%	97.86%
+Aureococcus anophagefferens	species	class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus|species-Aureococcus_anophagefferens	44056	7	20	10.77%	13.38%	98.99%
+Tripos fusus	species	class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	2916	8	56	8.89%	37.96%	99.5%
+Pelagomonas calceolata	species	class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	35677	6	30	7.79%	10.29%	97.76%
+Micromonas	genus	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	38832	9	19	5.06%	7.3%	98.64%
+Phaeocystis antarctica	species	phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	33657	5	10	5.0%	8.48%	96.74%
+Phaeocystis globosa	species	phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_globosa	33658	5	16	4.31%	16.33%	99.49%
+Brandtodinium nutricula	species	class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	1333877	3	26	4.23%	22.31%	99.23%
+Pycnococcus provasolii	species	phylum-Chlorophyta|family-Pycnococcaceae|genus-Pycnococcus|species-Pycnococcus_provasolii	41880	4	17	4.12%	18.95%	98.75%
+Paraphysomonas bandaiensis	species	class-Chrysophyceae|order-Chromulinales|family-Paraphysomonadaceae|genus-Paraphysomonas|species-Paraphysomonas_bandaiensis	89770	3	44	3.37%	46.2%	99.51%
+Oithona nana	species	phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	136191	5	8	3.36%	7.32%	98.11%
+Alternaria alternata complex	species group	phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Pleosporaceae|genus-Alternaria	187734	2	8	2.44%	5.3%	100.0%
+Knufia petricola	species	phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Trichomeriaceae|genus-Knufia|species-Knufia_petricola	206542	4	37	2.03%	16.9%	100.0%
+Cladosporium sphaerospermum UM 843	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae|genus-Cladosporium|species-Cladosporium_sphaerospermum	1151026	3	25	1.48%	29.23%	98.55%
+Papiliotrema laurentii RY1	species	phylum-Basidiomycota|class-Tremellomycetes|order-Tremellales|family-Rhynchogastremataceae|genus-Papiliotrema|species-Papiliotrema_laurentii	1354741	2	11	1.4%	10.96%	99.01%

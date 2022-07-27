@@ -1,0 +1,34 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Noctiluca scintillans	2966	species	75	1072	82.42%	27.76%	97.22%	152611
+Malassezia restricta	76775	species	43	347	28.67%	11.47%	98.91%	348317
+Chloropicon roscoffensis	1461544	species	29	239	18.35%	20.33%	99.27%	275974
+Malassezia globosa CBS 7966	425265	species	19	101	12.1%	11.5%	98.72%	332937
+Tripos fusus	2916	species	8	48	8.89%	12.91%	98.9%	132892
+unclassified Ostreococcus	2268852	genus	1	2	8.33%	9.01%	99.5%	18843
+Hortaea werneckii EXF-2000	1157616	species	21	101	5.66%	8.79%	99.22%	717212
+Stemphylium vesicarium	119933	species	8	50	3.85%	18.74%	99.74%	369073
+Gephyrocapsa oceanica	38817	species	3	5	3.0%	7.91%	99.39%	137559
+Emiliania huxleyi CCMP1516	280463	species	1	1	2.94%	10.97%	97.03%	44652
+Pelagomonas calceolata	35677	species	2	13	2.6%	24.05%	97.1%	128353
+Candida parapsilosis	5480	species	4	5	2.33%	2.41%	100.0%	312010
+Scrippsiella trochoidea	71861	species	2	6	1.77%	14.74%	96.93%	163897
+Chloropicon primus	1764295	species	2	3	1.45%	12.67%	97.36%	281336
+Cadophora sp. DSE1049	1485229	species	3	5	1.45%	3.13%	98.33%	369337
+Oikopleura longicauda	107032	species	1	2	1.37%	1.33%	97.73%	120130
+Curvularia papendorfii	1537989	species	1	1	1.32%	3.35%	98.02%	193737
+Rhizopus stolonifer B9770	1274793	species	2	2	1.2%	3.34%	98.51%	273299
+Candida sake	39397	species	2	4	1.11%	10.69%	99.67%	323512
+Saccharomyces cerevisiae S288C	559292	species	2	3	1.1%	14.3%	100.0%	308302
+Cyphellophora europaea CBS 101466	1220924	species	2	4	1.01%	9.39%	99.75%	391280
+Exophiala xenobiotica	348802	species	2	2	1.0%	5.23%	99.43%	372377
+Cladosporium sphaerospermum UM 843	1151026	species	2	6	0.99%	11.84%	97.17%	363001
+Thalassionema frauenfeldii	186022	species	1	1	0.94%	2.61%	97.96%	154802
+Meyerozyma	766728	genus	1	2	0.76%	36.81%	100.0%	218630
+Alternaria gaisen	167740	species	1	1	0.64%	3.07%	98.02%	317618
+Rhodotorula diobovata	5288	species	1	3	0.61%	9.05%	99.46%	358851
+Rhodotorula sp. JG-1b	1305733	species	1	19	0.56%	63.69%	99.52%	395750
+Leptocylindrus danicus	163516	species	1	1	0.54%	14.64%	98.94%	278595
+Fusarium solani	169388	species	1	1	0.52%	1.92%	97.03%	338685
+Helotiales sp. F229	1967635	species	1	1	0.5%	7.78%	98.86%	364015
+[Nectria] haematococca mpVI 77-13-4	660122	no rank	1	1	0.49%	8.57%	100.0%	351719
+Lecanicillium sp. LEC01	2013060	species	1	2	0.49%	25.19%	98.99%	354158

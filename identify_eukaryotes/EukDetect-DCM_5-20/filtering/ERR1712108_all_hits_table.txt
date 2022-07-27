@@ -1,0 +1,46 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Malassezia restricta	76775	species	94	1685	62.67%	21.18%	98.48%	348317
+Monosiga brevicollis MX1	431895	species	12	50	13.33%	17.58%	99.2%	126657
+Acanthamoeba rhysodes	32599	species	9	118	11.69%	26.76%	98.63%	113910
+Cafeteria roenbergensis	33653	species	5	10	11.63%	9.16%	99.87%	50724
+Acanthamoeba mauritaniensis	196912	species	7	24	9.09%	18.56%	100.0%	103226
+Acanthamoeba pearcei	65662	species	4	46	6.67%	33.69%	96.57%	66582
+Acanthamoeba quina	211522	species	5	26	6.49%	16.64%	98.4%	117232
+Acanthamoeba	5754	genus	6	21	5.71%	23.07%	99.43%	134855
+Paraphysomonas bandaiensis	89770	species	5	22	5.62%	14.63%	99.69%	154847
+Acanthamoeba polyphaga	5757	species	3	13	5.36%	16.87%	98.4%	76663
+Aurantiochytrium sp. T66	1749249	species	1	3	4.55%	53.88%	99.28%	29706
+Thraustochytriaceae	33674	family	3	15	4.48%	23.31%	99.86%	81045
+Malassezia globosa CBS 7966	425265	species	7	17	4.46%	5.58%	98.8%	332937
+Hortaea werneckii EXF-2000	1157616	species	16	56	4.31%	7.78%	98.76%	717212
+Rhodotorula diobovata	5288	species	7	69	4.29%	10.19%	99.78%	358851
+Acanthamoeba palestinensis	28015	species	4	86	3.45%	17.99%	96.53%	150122
+Tripos fusus	2916	species	3	15	3.33%	13.17%	96.61%	132892
+Acanthamoeba castellanii str. Neff	1257118	species	2	9	3.33%	18.67%	97.58%	75967
+Rhodotorula sp. FNED7-22	1928479	species	2	9	3.23%	11.73%	99.26%	96261
+Cadophora sp. DSE1049	1485229	species	6	28	2.9%	7.4%	97.28%	369337
+Arthropoda	6656	phylum	1	1	2.13%	6.58%	100.0%	60948
+Chloropicon mariensis	1606511	species	2	12	1.82%	10.13%	99.75%	157984
+Cladosporium phlei	1116209	species	3	9	1.51%	9.46%	97.11%	364263
+Oikopleura albicans	2500139	species	1	5	1.06%	20.9%	96.84%	126693
+Ochroconis constricta UM 578	1442076	species	2	16	1.02%	17.0%	99.5%	370078
+Cyphellophora europaea CBS 101466	1220924	species	2	2	1.01%	1.72%	99.49%	391280
+Cladosporium sphaerospermum UM 843	1151026	species	2	6	0.99%	16.56%	100.0%	363001
+Acanthamoeba lenticulata	29196	species	1	29	0.98%	5.74%	95.31%	135987
+Aureobasidium melanogenum	46634	species	2	5	0.98%	13.4%	99.4%	367526
+Fusarium poae	36050	species	2	9	0.97%	30.04%	100.0%	350025
+Thalassionema frauenfeldii	186022	species	1	2	0.94%	20.65%	97.52%	154802
+Ostreococcus lucimarinus CCE9901	436017	species	1	2	0.88%	17.41%	100.0%	233346
+Didymella	55170	genus	1	7	0.76%	11.75%	97.27%	213550
+Cladosporium cladosporioides	29917	species	1	10	0.56%	5.69%	96.18%	333901
+Rhodotorula sp. JG-1b	1305733	species	1	3	0.56%	10.6%	99.59%	395750
+Linderina pennispora	61395	species	1	1	0.53%	2.3%	95.45%	349115
+Symmetrospora coprosmae	69976	species	1	2	0.53%	5.75%	98.47%	420169
+Knufia petricola	206542	species	1	7	0.51%	16.98%	98.15%	374300
+Cladosporium sp. SL-16	2048672	species	1	7	0.5%	64.9%	99.01%	366513
+Aureobasidium subglaciale EXF-2481	1043005	species	1	2	0.5%	9.0%	97.3%	354039
+Golovinomyces cichoracearum	62708	species	1	4	0.5%	27.24%	100.0%	315036
+Epicoccum nigrum	105696	species	1	2	0.49%	3.77%	96.36%	360210
+Stemphylium vesicarium	119933	species	1	1	0.48%	7.12%	100.0%	369073
+Aspergillus ruber CBS 135680	1388766	species	1	1	0.48%	5.72%	98.02%	374157
+Aspergillus sp. MA 6041	2153248	species	1	2	0.3%	2.64%	100.0%	605505

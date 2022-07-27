@@ -1,0 +1,28 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Malassezia restricta	76775	species	114	753	76.0%	18.27%	98.9%	348317
+Tripos fusus	2916	species	31	303	34.44%	28.73%	99.07%	132892
+Brandtodinium nutricula	1333877	species	13	84	18.31%	18.52%	99.46%	88461
+Tetrahymena thermophila	5911	species	1	3	12.5%	16.51%	96.9%	15300
+Oikopleura albicans	2500139	species	4	8	4.26%	17.72%	98.3%	126693
+Chloropicon roscoffensis	1461544	species	6	38	3.8%	30.32%	99.38%	275974
+Azadinium spinosum	632150	species	1	1	3.57%	8.77%	97.03%	41582
+Scrippsiella trochoidea	71861	species	4	13	3.54%	15.01%	97.38%	163897
+Oikopleura longicauda	107032	species	2	5	2.74%	4.58%	97.89%	120130
+Scyphosphaera apsteinii	418940	species	2	4	2.5%	16.74%	97.85%	113512
+Calcidiscus leptoporus	127549	species	2	13	2.35%	7.0%	100.0%	114854
+Rhodotorula diobovata	5288	species	3	17	1.84%	20.7%	99.79%	358851
+Aureobasidium melanogenum	46634	species	3	5	1.46%	2.88%	98.07%	367526
+Malassezia globosa CBS 7966	425265	species	2	4	1.27%	2.82%	97.08%	332937
+Karlodinium veneficum	407301	species	1	2	1.14%	25.04%	98.26%	136208
+Alternaria consortialis	230004	species	2	7	1.06%	18.8%	100.0%	350903
+Peniophora sp. CONT	1314672	species	2	2	1.03%	2.45%	97.81%	356854
+Gephyrocapsa oceanica	38817	species	1	2	1.0%	2.8%	99.49%	137559
+Cutaneotrichosporon	1838142	genus	1	1	0.99%	7.99%	96.94%	239482
+Lingulodinium polyedra	160621	species	1	2	0.92%	4.34%	100.0%	165396
+Chloropicon mariensis	1606511	species	1	1	0.91%	7.5%	98.99%	157984
+Hortaea werneckii EXF-2000	1157616	species	3	11	0.81%	6.62%	99.75%	717212
+Alexandrium tamarense	2926	species	1	2	0.71%	8.91%	98.44%	194024
+Saccharomyces cerevisiae S288C	559292	species	1	2	0.55%	5.49%	100.0%	308302
+Exophiala xenobiotica	348802	species	1	2	0.5%	3.7%	98.66%	372377
+[Nectria] haematococca mpVI 77-13-4	660122	no rank	1	2	0.49%	25.75%	100.0%	351719
+Eukaryota	2759	superkingdom	1	6	0.39%	8.41%	96.81%	467758

@@ -1,0 +1,51 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Malassezia restricta	76775	species	111	632	74.0%	14.75%	98.99%	348317
+Tripos fusus	2916	species	23	117	25.56%	16.44%	98.95%	132892
+Brandtodinium nutricula	1333877	species	14	218	19.72%	20.89%	98.51%	88461
+Hortaea werneckii EXF-2000	1157616	species	73	434	19.68%	12.78%	98.85%	717212
+Scrippsiella trochoidea	71861	species	20	70	17.7%	14.18%	98.19%	163897
+Alexandrium andersonii	327968	species	3	12	11.11%	26.64%	98.65%	29644
+Malassezia globosa CBS 7966	425265	species	9	31	5.73%	8.61%	98.76%	332937
+Alexandrium minutum	39455	species	1	2	5.56%	8.12%	95.74%	15570
+Oikopleura longicauda	107032	species	4	97	5.48%	10.79%	95.0%	120130
+Acanthamoeba polyphaga	5757	species	3	3	5.36%	6.68%	99.0%	76663
+Chloropicon mariensis	1606511	species	5	22	4.55%	25.19%	99.16%	157984
+Acanthamoeba quina	211522	species	3	9	3.9%	13.56%	97.33%	117232
+Azadinium spinosum	632150	species	1	4	3.57%	17.37%	97.72%	41582
+[Nectria] haematococca mpVI 77-13-4	660122	no rank	7	30	3.43%	26.43%	100.0%	351719
+Acanthamoeba pearcei	65662	species	2	5	3.33%	40.72%	98.93%	66582
+Prorocentrum cordatum	2364126	species	3	4	3.03%	11.52%	96.45%	135765
+Oithona nana	136191	species	4	10	2.68%	7.22%	97.09%	244880
+Durusdinium trenchii	1381693	species	1	2	2.17%	12.4%	99.01%	38336
+Gephyrocapsa oceanica	38817	species	2	7	2.0%	16.56%	99.55%	137559
+Acanthamoeba	5754	genus	2	7	1.9%	13.43%	98.92%	134855
+Kluyveromyces lactis	28985	species	3	26	1.84%	27.1%	99.93%	289364
+Acanthamoeba palestinensis	28015	species	2	14	1.72%	11.11%	97.51%	150122
+Acanthamoeba castellanii str. Neff	1257118	species	1	3	1.67%	30.51%	97.83%	75967
+Gonyaulax spinifera	66791	species	1	1	1.43%	33.33%	97.03%	72996
+Acanthamoeba mauritaniensis	196912	species	1	1	1.3%	11.88%	97.85%	103226
+Acanthamoeba rhysodes	32599	species	1	2	1.3%	12.05%	98.96%	113910
+Chloropicon roscoffensis	1461544	species	2	12	1.27%	12.12%	99.12%	275974
+Acanthamoeba lugdunensis	61605	species	1	1	1.2%	6.1%	100.0%	108538
+Calcidiscus leptoporus	127549	species	1	2	1.18%	13.29%	100.0%	114854
+Saccharomyces cerevisiae S288C	559292	species	2	5	1.1%	16.5%	99.24%	308302
+Fusarium solani	169388	species	2	26	1.03%	13.11%	97.99%	338685
+Acanthamoeba lenticulata	29196	species	1	3	0.98%	4.07%	97.35%	135987
+Effrenium voratum	2562239	species	1	1	0.96%	6.07%	97.03%	156738
+Lingulodinium polyedra	160621	species	1	1	0.92%	5.6%	97.03%	165396
+Vermamoeba vermiformis	5778	species	1	1	0.9%	5.37%	100.0%	195976
+Phaeocystis globosa	33658	species	1	2	0.86%	9.16%	98.98%	154798
+Gloeochaete wittrockiana	38269	species	1	2	0.83%	16.45%	96.77%	196258
+Andalucia godoyi	505711	species	1	1	0.78%	4.63%	96.74%	272062
+Malassezia pachydermatis	77020	species	1	2	0.78%	2.92%	97.12%	324158
+Ptychodera flava	63121	species	1	1	0.66%	8.33%	97.03%	239440
+Cyberlindnera jadinii NRRL Y-1542	983966	species	1	2	0.58%	2.72%	99.5%	333761
+Candida tropicalis MYA-3404	294747	species	1	3	0.58%	13.32%	98.71%	301112
+Candida sake	39397	species	1	2	0.56%	9.91%	100.0%	323512
+Chaetomium globosum CBS 148.51	306901	species	1	2	0.56%	19.22%	99.08%	338249
+Rhodotorula sp. JG-1b	1305733	species	1	1	0.56%	13.25%	100.0%	395750
+Leptoxyphium fumago	5474	species	1	3	0.5%	5.48%	97.87%	373358
+Phialosimplex sp. HF37	1960876	species	1	1	0.49%	6.82%	98.02%	374233
+Metarhizium acridum CQMa 102	655827	species	1	2	0.49%	3.38%	100.0%	346764
+Blumeria graminis f. sp. tritici	62690	species	1	18	0.48%	82.7%	99.49%	337764
+Byssochlamys spectabilis	264951	species	1	2	0.48%	9.56%	96.26%	356356

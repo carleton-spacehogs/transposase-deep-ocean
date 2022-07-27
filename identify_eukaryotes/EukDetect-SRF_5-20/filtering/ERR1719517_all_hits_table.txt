@@ -1,0 +1,45 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Brandtodinium nutricula	1333877	species	66	629	92.96%	40.92%	99.18%	88461
+Malassezia restricta	76775	species	85	357	56.67%	10.61%	98.7%	348317
+Oithona nana	136191	species	79	671	53.02%	18.96%	96.88%	244880
+Calcidiscus leptoporus	127549	species	44	189	51.76%	21.07%	99.53%	114854
+Amphilonche elongata	1127133	species	1	2	50.0%	5.74%	96.91%	2250
+Chloropicon laureae	464258	species	27	120	48.21%	26.69%	99.25%	50762
+Prorocentrum cordatum	2364126	species	42	173	42.42%	16.91%	96.52%	135765
+Tripos fusus	2916	species	35	92	38.89%	12.99%	99.31%	132892
+Gephyrocapsa oceanica	38817	species	27	75	27.0%	18.36%	98.5%	137559
+Paraphysomonas bandaiensis	89770	species	24	74	26.97%	10.87%	99.81%	154847
+Emiliania huxleyi CCMP1516	280463	species	6	12	17.65%	9.45%	99.83%	44652
+Prasinoderma singulare	676789	species	16	33	17.58%	13.35%	99.44%	121534
+Pelagomonas calceolata	35677	species	11	36	14.29%	12.26%	98.39%	128353
+Chloropicon mariensis	1606511	species	15	65	13.64%	23.94%	99.54%	157984
+Chloropicon primus	1764295	species	16	36	11.59%	6.25%	97.3%	281336
+Saccharomyces cerevisiae S288C	559292	species	14	29	7.69%	4.96%	99.84%	308302
+Malassezia globosa CBS 7966	425265	species	9	12	5.73%	6.36%	98.87%	332937
+Alexandrium minutum	39455	species	1	2	5.56%	37.02%	96.74%	15570
+Alexandrium andersonii	327968	species	1	2	3.7%	20.81%	99.28%	29644
+Azadinium spinosum	632150	species	1	2	3.57%	12.56%	98.39%	41582
+Hortaea werneckii EXF-2000	1157616	species	13	24	3.5%	7.1%	99.68%	717212
+Corethron hystrix	216773	species	2	3	2.9%	14.63%	98.01%	86215
+Gonyaulax spinifera	66791	species	2	3	2.86%	15.36%	97.0%	72996
+Chloropicon roscoffensis	1461544	species	4	6	2.53%	8.57%	98.93%	275974
+Rhodotorula diobovata	5288	species	4	6	2.45%	4.57%	100.0%	358851
+Cafeteria roenbergensis	33653	species	1	1	2.33%	7.19%	100.0%	50724
+Pseudo-nitzschia heimii	476441	species	2	4	1.82%	3.28%	97.48%	176338
+Acanthamoeba polyphaga	5757	species	1	2	1.79%	13.82%	97.47%	76663
+Alternaria alternata	5599	species	1	2	1.49%	8.54%	98.73%	131319
+Oikopleura longicauda	107032	species	1	19	1.37%	7.04%	98.5%	120130
+Acanthamoeba quina	211522	species	1	2	1.3%	11.2%	96.81%	117232
+Acanthamoeba rhysodes	32599	species	1	2	1.3%	11.73%	100.0%	113910
+Scyphosphaera apsteinii	418940	species	1	2	1.25%	1.72%	100.0%	113512
+Karlodinium veneficum	407301	species	1	2	1.14%	24.36%	99.47%	136208
+Alternaria consortialis	230004	species	2	4	1.06%	10.38%	99.74%	350903
+Knufia petricola	206542	species	2	3	1.02%	4.4%	100.0%	374300
+Phaeocystis antarctica	33657	species	1	1	1.0%	6.13%	96.67%	158488
+Phaeocystis globosa	33658	species	1	1	0.86%	5.66%	97.0%	154798
+Malassezia pachydermatis	77020	species	1	1	0.78%	2.8%	97.0%	324158
+Basidioascus undulatus	1230402	species	1	1	0.74%	4.2%	96.74%	259870
+Candida parapsilosis	5480	species	1	2	0.58%	32.61%	100.0%	312010
+Cladosporium cladosporioides	29917	species	1	2	0.56%	2.99%	100.0%	333901
+Saccharomyces jurei	1987369	species	1	2	0.56%	11.5%	96.97%	299227
+Saccharomyces paradoxus	27291	species	1	1	0.54%	4.57%	97.03%	307043

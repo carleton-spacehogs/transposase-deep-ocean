@@ -1,0 +1,27 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Oithona nana	species	phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	136191	111	2016	74.5%	23.35%	96.26%
+Hortaea werneckii EXF-2000	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	1157616	252	3800	67.92%	25.25%	99.07%
+Chloropicon mariensis	species	phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_mariensis	1606511	72	800	65.45%	32.78%	99.42%
+Prasinoderma singulare	species	phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinoderma|species-Prasinoderma_singulare	676789	53	237	58.24%	18.22%	99.44%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	87	680	58.0%	12.81%	98.94%
+Malassezia globosa CBS 7966	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_globosa	425265	84	640	53.5%	16.96%	99.25%
+Gephyrocapsa oceanica	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	38817	36	89	36.0%	11.93%	98.72%
+Pseudo-nitzschia heimii	species	phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Pseudo-nitzschia|species-Pseudo-nitzschia_heimii	476441	39	161	35.45%	13.37%	97.67%
+Emiliania huxleyi CCMP1516	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania|species-Emiliania_huxleyi	280463	10	19	29.41%	9.02%	99.5%
+Pelagomonas calceolata	species	class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	35677	18	70	23.38%	11.16%	99.08%
+Oikopleura longicauda	species	phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	107032	14	404	19.18%	16.42%	95.8%
+Corethron hystrix	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Corethrales|family-Corethraceae|genus-Corethron|species-Corethron_hystrix	216773	11	36	15.94%	13.45%	98.57%
+Thalassiosira oceanica	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Thalassiosiraceae|genus-Thalassiosira|species-Thalassiosira_oceanica	159749	13	34	13.27%	12.31%	97.34%
+Acanthamoeba rhysodes	species	phylum-Discosea|order-Longamoebia|family-Acanthamoebidae|genus-Acanthamoeba|species-Acanthamoeba_rhysodes	32599	7	92	9.09%	27.16%	98.08%
+Brandtodinium nutricula	species	class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	1333877	6	10	8.45%	7.94%	98.88%
+Arthropoda	phylum	phylum-Arthropoda	6656	2	6	4.26%	24.13%	99.25%
+Acanthamoeba	genus	phylum-Discosea|order-Longamoebia|family-Acanthamoebidae|genus-Acanthamoeba	5754	4	27	3.81%	29.51%	98.78%
+Ochroconis constricta UM 578	species	phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae|genus-Ochroconis|species-Ochroconis_constricta	1442076	7	32	3.57%	13.2%	98.79%
+Phaeocystis globosa	species	phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_globosa	33658	4	13	3.45%	21.68%	98.84%
+Tyrophagus putrescentiae	species	phylum-Arthropoda|class-Arachnida|order-Sarcoptiformes|family-Acaridae|genus-Tyrophagus|species-Tyrophagus_putrescentiae	59818	4	12	3.45%	14.38%	99.0%
+Wallemia mellicola CBS 633.66	species	phylum-Basidiomycota|class-Wallemiomycetes|order-Wallemiales|family-Wallemiaceae|genus-Wallemia|species-Wallemia_mellicola	671144	3	14	1.97%	4.66%	99.23%
+Ostreococcus lucimarinus CCE9901	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._'lucimarinus'	436017	2	4	1.75%	5.87%	99.72%
+Candida parapsilosis	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida|species-Candida_parapsilosis	5480	3	5	1.74%	10.93%	99.04%
+Aspergillus sp. MA 6041	species	phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae|genus-Aspergillus|species-Aspergillus_sp._MA_6041	2153248	4	8	1.2%	4.92%	99.86%
+Debaryomyces hansenii CBS767	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Debaryomyces|species-Debaryomyces_hansenii	284592	2	17	1.09%	37.2%	99.92%
+Preussia sp. BSL10	species	phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Sporormiaceae|genus-Preussia|species-Preussia_sp._BSL10	1712568	2	10	0.99%	26.3%	100.0%

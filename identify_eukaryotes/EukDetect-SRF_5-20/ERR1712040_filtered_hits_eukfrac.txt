@@ -1,0 +1,21 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Ascomycota|class-Dothideomycetes	class	Dothideomycetes	147541	0.4414	71.0423	9	20388
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales	order	Capnodiales	134362	0.4414	71.0423	9	20388
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae	family	Teratosphaeriaceae	668547	0.4414	71.0423	9	20388
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea	genus	Hortaea	91942	0.4414	71.0423	9	20388
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	species	Hortaea werneckii	91943	0.4414	71.0423	9	20388
+phylum-Arthropoda|class-Hexanauplia	class	Hexanauplia	72037	0.0163	2.6288	4	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida	order	Cyclopoida	84308	0.0163	2.6288	4	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae	family	Oithonidae	136189	0.0163	2.6288	4	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona	genus	Oithona	136190	0.0163	2.6288	4	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	species	Oithona nana	136191	0.0163	2.6288	4	244880
+class-Dinophyceae	class	Dinophyceae	2864	0.0678	10.9156	6	88461
+class-Dinophyceae|order-Peridiniales	order	Peridiniales	2910	0.0678	10.9156	6	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae	family	Endodiniaceae	1333875	0.0678	10.9156	6	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium	genus	Brandtodinium	1482939	0.0678	10.9156	6	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	species	Brandtodinium nutricula	1333877	0.0678	10.9156	6	88461
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.0958	15.4133	11	114854
+phylum-Haptista|class-Haptophyta|order-Coccolithales	order	Coccolithales	418917	0.0958	15.4133	11	114854
+phylum-Haptista|class-Haptophyta|order-Coccolithales|family-Calcidiscaceae	family	Calcidiscaceae	418931	0.0958	15.4133	11	114854
+phylum-Haptista|class-Haptophyta|order-Coccolithales|family-Calcidiscaceae|genus-Calcidiscus	genus	Calcidiscus	127548	0.0958	15.4133	11	114854
+phylum-Haptista|class-Haptophyta|order-Coccolithales|family-Calcidiscaceae|genus-Calcidiscus|species-Calcidiscus_leptoporus	species	Calcidiscus leptoporus	127549	0.0958	15.4133	11	114854

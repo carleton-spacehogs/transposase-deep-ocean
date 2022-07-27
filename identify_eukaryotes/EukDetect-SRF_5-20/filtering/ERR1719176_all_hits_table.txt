@@ -1,0 +1,64 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Calanus sinicus	114070	species	3	120	100.0%	42.65%	93.78%	1470
+Amphilonche elongata	1127133	species	2	131	100.0%	82.67%	98.01%	2250
+Brandtodinium nutricula	1333877	species	71	1023	100.0%	55.65%	99.07%	88461
+Noctiluca scintillans	2966	species	91	4581	100.0%	79.96%	99.17%	152611
+Calcidiscus leptoporus	127549	species	84	2390	98.82%	62.44%	99.4%	114854
+Oikopleura longicauda	107032	species	70	18016	95.89%	64.31%	94.37%	120130
+Tripos fusus	2916	species	86	10242	95.56%	91.73%	97.7%	132892
+Prasinoderma singulare	676789	species	70	452	76.92%	29.04%	99.66%	121534
+Protoceratium reticulatum	133427	species	58	257	72.5%	22.54%	98.34%	112099
+Chloropicon roscoffensis	1461544	species	110	664	69.62%	22.43%	99.13%	275974
+Gephyrocapsa oceanica	38817	species	55	149	55.0%	15.67%	98.4%	137559
+Dinophysis acuminata	47934	species	48	177	51.06%	16.97%	97.5%	125543
+Coccolithus braarudii	221442	species	35	103	47.3%	15.96%	99.67%	86189
+Pseudo-nitzschia australis	44445	species	54	282	33.96%	21.11%	99.8%	257043
+Aureococcus anophagefferens	44056	species	22	60	33.85%	13.63%	98.87%	85991
+Pelagomonas calceolata	35677	species	26	111	33.77%	16.17%	98.87%	128353
+Emiliania huxleyi CCMP1516	280463	species	11	32	32.35%	11.85%	99.56%	44652
+Prorocentrum cordatum	2364126	species	31	84	31.31%	12.93%	96.67%	135765
+Pseudo-nitzschia heimii	476441	species	30	83	27.27%	10.99%	98.5%	176338
+Lithomelissa setosa	1054399	species	1	15	20.0%	69.95%	97.54%	2562
+Hortaea werneckii EXF-2000	1157616	species	74	236	19.95%	10.89%	99.41%	717212
+Pelagodinium beii	43686	species	17	38	18.89%	8.78%	99.7%	127026
+Scrippsiella trochoidea	71861	species	21	43	18.58%	16.5%	97.4%	163897
+Phaeocystis globosa	33658	species	15	52	12.93%	27.82%	99.15%	154798
+Pelagococcus subviridis	35679	species	8	12	12.12%	6.93%	97.69%	79272
+Pseudo-nitzschia fraudulenta	183588	species	11	19	12.09%	13.66%	99.88%	108708
+Phaeocystis antarctica	33657	species	12	48	12.0%	12.18%	97.6%	158488
+Leptocylindrus danicus	163516	species	14	38	7.57%	12.78%	98.63%	278595
+Malassezia restricta	76775	species	11	25	7.33%	5.35%	98.73%	348317
+Bathycoccus prasinos	41875	species	9	17	7.32%	5.22%	99.12%	229209
+Azadinium spinosum	632150	species	2	3	7.14%	14.03%	96.46%	41582
+Chaetoceros affinis	426623	species	7	12	5.47%	9.26%	97.59%	197912
+Rhodotorula diobovata	5288	species	8	16	4.91%	10.64%	99.7%	358851
+Amoebophrya sp. AT5.2	1775427	species	1	2	4.55%	6.92%	98.5%	36997
+Karlodinium veneficum	407301	species	3	5	3.41%	8.88%	97.73%	136208
+Florenciella parvula	236787	species	2	2	2.74%	8.13%	97.03%	88783
+Alternaria alternata complex	187734	species group	2	3	2.44%	5.0%	100.0%	165766
+Monosiga brevicollis MX1	431895	species	2	4	2.22%	8.33%	99.1%	126657
+Stramenopiles sp. TOSAG23-2	1735743	species	1	1	2.13%	16.03%	100.0%	66251
+Alternaria arborescens	156630	species	3	6	2.0%	8.1%	100.0%	303330
+Malassezia globosa CBS 7966	425265	species	3	6	1.91%	4.8%	99.39%	332937
+Haptolina ericina	156174	species	1	2	1.85%	4.51%	100.0%	58551
+Pseudo-nitzschia arenysensis	697910	species	2	4	1.59%	11.79%	100.0%	204829
+Alternaria sect. Alternaria	2499237	section	1	2	1.56%	16.24%	100.0%	83976
+Exserohilum turcica Et28A	671987	species	3	6	1.5%	4.65%	99.83%	357925
+Alternaria alternata	5599	species	1	1	1.49%	5.46%	100.0%	131319
+Gonyaulax spinifera	66791	species	1	2	1.43%	10.0%	96.38%	72996
+Curvularia papendorfii	1537989	species	1	1	1.32%	3.35%	99.01%	193737
+Scyphosphaera apsteinii	418940	species	1	3	1.25%	11.06%	97.99%	113512
+Hemistasia phaeocysticola	1503927	species	1	2	1.16%	8.91%	97.1%	140855
+Pycnococcus provasolii	41880	species	1	2	1.03%	17.72%	100.0%	119181
+Lingulodinium polyedra	160621	species	1	2	0.92%	10.42%	100.0%	165396
+Ostreococcus lucimarinus CCE9901	436017	species	1	2	0.88%	2.81%	99.49%	233346
+Oithona nana	136191	species	1	2	0.67%	11.7%	96.73%	244880
+Rhizopus stolonifer B9770	1274793	species	1	2	0.6%	18.67%	99.33%	273299
+Calocera viscosa TUFC12733	1330018	species	1	1	0.57%	2.27%	96.81%	364392
+Meira nashicola	286112	species	1	2	0.55%	8.79%	99.42%	341159
+Alternaria atra	119953	species	1	2	0.53%	6.49%	100.0%	343025
+Ochroconis constricta UM 578	1442076	species	1	1	0.51%	3.17%	100.0%	370078
+Cladosporium phlei	1116209	species	1	2	0.5%	18.55%	96.73%	364263
+Venturia inaequalis	5025	species	1	1	0.49%	9.62%	100.0%	367209
+Pyrenochaeta sp. UM 256	1295359	species	1	2	0.48%	1.18%	97.06%	365660
+Stemphylium vesicarium	119933	species	1	2	0.48%	24.05%	100.0%	369073

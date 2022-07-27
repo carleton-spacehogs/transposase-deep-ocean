@@ -1,0 +1,38 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae	family	Chloropicaceae	2302913	2.9501	24.2691	652	221006
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	2.9501	24.2691	652	221006
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_laureae	species	Chloropicon laureae	464258	0.1182	1.0539	6	50762
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_mariensis	species	Chloropicon mariensis	1606511	3.8801	34.598	613	157984
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae	family	Ceratiaceae	39451	1.2491	10.2759	166	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos	genus	Tripos	2126447	1.2491	10.2759	166	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	species	Tripos fusus	2916	1.2491	11.1381	166	132892
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae	family	Malasseziaceae	742845	0.6992	5.7521	265	378992
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.6992	5.7521	265	378992
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.6488	5.7855	226	348317
+phylum-Basidiomycota|class-Cystobasidiomycetes|family-Symmetrosporaceae	family	Symmetrosporaceae	2212795	0.0167	0.1371	7	420169
+phylum-Basidiomycota|class-Cystobasidiomycetes|family-Symmetrosporaceae|genus-Symmetrospora	genus	Symmetrospora	1798808	0.0167	0.1371	7	420169
+phylum-Basidiomycota|class-Cystobasidiomycetes|family-Symmetrosporaceae|genus-Symmetrospora|species-Symmetrospora_coprosmae	species	Symmetrospora coprosmae	69976	0.0167	0.1486	7	420169
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae	family	Debaryomycetaceae	766764	1.5882	13.0655	8	5037
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Meyerozyma	genus	Meyerozyma	766728	1.5882	13.0655	8	5037
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae	family	Saccharomycetaceae	4893	0.9076	7.4659	14	15426
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces	genus	Saccharomyces	4930	0.9076	7.4659	14	15426
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces|species-Saccharomyces_cerevisiae	species	Saccharomyces cerevisiae	4932	0.9076	8.0924	14	15426
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae	family	Teratosphaeriaceae	668547	1.2685	10.4351	38	29957
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea	genus	Hortaea	91942	1.2685	10.4351	38	29957
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	species	Hortaea werneckii	91943	1.2685	11.3107	38	29957
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae	family	Cladosporiaceae	452563	0.6501	5.3479	4	6153
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae|genus-Cladosporium	genus	Cladosporium	5498	0.6501	5.3479	4	6153
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae|genus-Cladosporium|species-Cladosporium_sphaerospermum	species	Cladosporium sphaerospermum	92950	0.6501	5.7966	4	6153
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Ophiocordycipitaceae	family	Ophiocordycipitaceae	474942	0.1123	0.9242	40	356037
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Ophiocordycipitaceae|genus-Purpureocillium	genus	Purpureocillium	1052105	0.1123	0.9242	40	356037
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Ophiocordycipitaceae|genus-Purpureocillium|species-Purpureocillium_lilacinum	species	Purpureocillium lilacinum	33203	0.1123	1.0018	40	356037
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae	family	Oikopleuridae	41302	0.2061	1.6953	25	121309
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura	genus	Oikopleura	34763	0.2061	1.6953	25	121309
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	species	Oikopleura longicauda	107032	0.1998	1.7814	24	120130
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae	family	Oithonidae	136189	0.4043	3.3258	99	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona	genus	Oithona	136190	0.4043	3.3258	99	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	species	Oithona nana	136191	0.4043	3.6048	99	244880
+phylum-Discosea|order-Longamoebia|family-Acanthamoebidae	family	Acanthamoebidae	33677	2.1037	17.3062	543	258112
+phylum-Discosea|order-Longamoebia|family-Acanthamoebidae|genus-Acanthamoeba	genus	Acanthamoeba	5754	2.1037	17.3062	543	258112
+phylum-Discosea|order-Longamoebia|family-Acanthamoebidae|genus-Acanthamoeba|species-Acanthamoeba_mauritaniensis	species	Acanthamoeba mauritaniensis	196912	0.3197	2.8505	33	103226
+phylum-Discosea|order-Longamoebia|family-Acanthamoebidae|genus-Acanthamoeba|species-Acanthamoeba_rhysodes	species	Acanthamoeba rhysodes	32599	1.4397	12.8376	164	113910

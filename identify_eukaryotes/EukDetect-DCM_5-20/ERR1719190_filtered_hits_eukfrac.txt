@@ -1,0 +1,39 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.1599	3.1336	22	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales	order	Isochrysidales	73020	0.1599	1.4019	22	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	species	Gephyrocapsa oceanica	38817	0.1599	1.3801	22	137559
+class-Dinophyceae	class	Dinophyceae	2864	0.9727	19.0589	737	757671
+class-Dinophyceae|order-Gonyaulacales	order	Gonyaulacales	40984	0.7852	6.8829	137	174474
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	species	Tripos fusus	2916	0.9858	8.5066	131	132892
+class-Dinophyceae|order-Gonyaulacales|family-Amphidomataceae|genus-Azadinium|species-Azadinium_spinosum	species	Azadinium spinosum	632150	0.1443	1.2452	6	41582
+class-Dinophyceae|order-Peridiniales	order	Peridiniales	2910	6.1383	53.8056	543	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	species	Brandtodinium nutricula	1333877	6.1383	52.9704	543	88461
+class-Dinophyceae|order-Thoracosphaerales	order	Thoracosphaerales	33835	0.0488	0.4279	8	163897
+class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae|genus-Scrippsiella|species-Scrippsiella_trochoidea	species	Scrippsiella trochoidea	71861	0.0488	0.4212	8	163897
+class-Dinophyceae|order-Suessiales	order	Suessiales	89954	0.1282	1.1234	25	195074
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Durusdinium|species-Durusdinium_trenchii	species	Durusdinium trenchii	1381693	0.1304	1.1255	5	38336
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Effrenium|species-Effrenium_voratum	species	Effrenium voratum	2562239	0.1276	1.1011	20	156738
+class-Dinophyceae|order-Prorocentrales	order	Prorocentrales	2942	0.1768	1.5495	24	135765
+class-Dinophyceae|order-Prorocentrales|family-Prorocentraceae|genus-Prorocentrum|species-Prorocentrum_cordatum	species	Prorocentrum cordatum	2364126	0.1768	1.5255	24	135765
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	1.4159	27.743	527	372192
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	1.4159	12.4115	527	372192
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	1.1776	10.1625	325	275974
+phylum-Chlorophyta|class-Palmophyllophyceae	class	Palmophyllophyceae	2201463	0.1138	2.2294	41	360334
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales	order	Prasinococcales	485343	0.1138	0.9974	41	360334
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|species-Prasinococcaceae_sp._CCMP_1430	species	Prasinococcaceae sp. CCMP 1430	2489100	0.0311	0.2683	7	225148
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinoderma|species-Prasinoderma_singulare	species	Prasinoderma singulare	676789	0.1152	0.9941	14	121534
+phylum-Basidiomycota|class-Microbotryomycetes	class	Microbotryomycetes	162481	0.0388	0.7596	14	361134
+phylum-Basidiomycota|class-Microbotryomycetes|order-Sporidiobolales	order	Sporidiobolales	231213	0.0388	0.3398	14	361134
+phylum-Basidiomycota|class-Microbotryomycetes|order-Sporidiobolales|family-Sporidiobolaceae|genus-Rhodotorula|species-Rhodotorula_diobovata	species	Rhodotorula diobovata	5288	0.0362	0.3126	13	358851
+phylum-Ascomycota|class-Dothideomycetes	class	Dothideomycetes	147541	1.2184	23.8726	223	183027
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales	order	Capnodiales	134362	1.2184	10.6799	223	183027
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	species	Hortaea werneckii	91943	1.2184	10.5142	223	183027
+phylum-Arthropoda|class-Hexanauplia	class	Hexanauplia	72037	0.2123	4.1606	52	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida	order	Cyclopoida	84308	0.2123	1.8614	52	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	species	Oithona nana	136191	0.2123	1.8325	52	244880
+phylum-Chordata|class-Appendicularia	class	Appendicularia	30302	0.894	17.5158	140	156606
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	0.894	7.8361	140	156606
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	species	Oikopleura longicauda	107032	0.8075	6.968	97	120130
+class-Pelagophyceae	class	Pelagophyceae	35675	0.0779	1.5265	10	128353
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	0.0779	0.6829	10	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	0.0779	0.6723	10	128353

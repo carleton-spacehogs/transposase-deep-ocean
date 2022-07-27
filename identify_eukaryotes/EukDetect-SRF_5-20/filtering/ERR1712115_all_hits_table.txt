@@ -1,0 +1,69 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Oithona nana	136191	species	111	2016	74.5%	23.35%	96.26%	244880
+Hortaea werneckii EXF-2000	1157616	species	252	3800	67.92%	25.25%	99.07%	717212
+Chloropicon mariensis	1606511	species	72	800	65.45%	32.78%	99.42%	157984
+Prasinoderma singulare	676789	species	53	237	58.24%	18.22%	99.44%	121534
+Malassezia restricta	76775	species	87	680	58.0%	12.81%	98.94%	348317
+Malassezia globosa CBS 7966	425265	species	84	640	53.5%	16.96%	99.25%	332937
+Chloropicon roscoffensis	1461544	species	60	223	37.97%	11.37%	99.37%	275974
+Gephyrocapsa oceanica	38817	species	36	89	36.0%	11.93%	98.72%	137559
+Pseudo-nitzschia heimii	476441	species	39	161	35.45%	13.37%	97.67%	176338
+Emiliania huxleyi CCMP1516	280463	species	10	19	29.41%	9.02%	99.5%	44652
+Pelagomonas calceolata	35677	species	18	70	23.38%	11.16%	99.08%	128353
+Chloropicon laureae	464258	species	12	29	21.43%	18.38%	99.51%	50762
+Oikopleura longicauda	107032	species	14	404	19.18%	16.42%	95.8%	120130
+Chloropicon primus	1764295	species	25	64	18.12%	7.75%	97.5%	281336
+Corethron hystrix	216773	species	11	36	15.94%	13.45%	98.57%	86215
+Thalassiosira oceanica	159749	species	13	34	13.27%	12.31%	97.34%	165190
+Acanthamoeba mauritaniensis	196912	species	10	34	12.99%	18.18%	99.51%	103226
+Acanthamoeba polyphaga	5757	species	6	15	10.71%	10.58%	97.94%	76663
+Acanthamoeba quina	211522	species	8	30	10.39%	10.41%	97.88%	117232
+Acanthamoeba pearcei	65662	species	6	44	10.0%	32.5%	97.93%	66582
+Acanthamoeba rhysodes	32599	species	7	92	9.09%	27.16%	98.08%	113910
+Brandtodinium nutricula	1333877	species	6	10	8.45%	7.94%	98.88%	88461
+unclassified Ostreococcus	2268852	genus	1	2	8.33%	6.86%	100.0%	18843
+Acanthamoeba lugdunensis	61605	species	5	15	6.02%	16.26%	97.47%	108538
+Acanthamoeba castellanii str. Neff	1257118	species	3	17	5.0%	28.55%	97.92%	75967
+Arthropoda	6656	phylum	2	6	4.26%	24.13%	99.25%	60948
+Ostreococcus sp. SAG10	2590005	species	1	2	4.0%	11.45%	100.0%	56396
+Acanthamoeba	5754	genus	4	27	3.81%	29.51%	98.78%	134855
+Ochroconis constricta UM 578	1442076	species	7	32	3.57%	13.2%	98.79%	370078
+Phaeocystis globosa	33658	species	4	13	3.45%	21.68%	98.84%	154798
+Tyrophagus putrescentiae	59818	species	4	12	3.45%	14.38%	99.0%	241626
+Acanthamoeba palestinensis	28015	species	4	41	3.45%	17.43%	97.54%	150122
+Phaeocystis rex	1631189	species	1	2	2.56%	10.2%	96.92%	40152
+Malassezia sympodialis ATCC 42132	1230383	species	3	10	2.16%	15.51%	99.86%	313165
+Wallemia mellicola CBS 633.66	671144	species	3	14	1.97%	4.66%	99.23%	303670
+Trichophyton tonsurans CBS 112818	647933	species	1	13	1.92%	17.09%	98.52%	140650
+Scrippsiella trochoidea	71861	species	2	2	1.77%	13.94%	97.03%	163897
+Ostreococcus lucimarinus CCE9901	436017	species	2	4	1.75%	5.87%	99.72%	233346
+Candida parapsilosis	5480	species	3	5	1.74%	10.93%	99.04%	312010
+Cladosporium sphaerospermum UM 843	1151026	species	3	9	1.48%	14.2%	99.52%	363001
+Aspergillus sp. MA 6041	2153248	species	4	8	1.2%	4.92%	99.86%	605505
+Karlodinium veneficum	407301	species	1	2	1.14%	11.06%	98.01%	136208
+Debaryomyces hansenii CBS767	284592	species	2	17	1.09%	37.2%	99.92%	326457
+Phaeocystis antarctica	33657	species	1	3	1.0%	16.97%	96.97%	158488
+Preussia sp. BSL10	1712568	species	2	10	0.99%	26.3%	100.0%	356898
+Hypocreales	5125	order	1	1	0.98%	5.0%	99.01%	163251
+Acanthamoeba lenticulata	29196	species	1	10	0.98%	5.31%	96.95%	135987
+Hanseniaspora pseudoguilliermondii	332229	species	1	11	0.91%	40.6%	99.81%	223778
+Meyerozyma	766728	genus	1	2	0.76%	8.27%	99.43%	218630
+Malassezia dermatis	169489	species	1	2	0.74%	6.07%	100.0%	308173
+Limonomyces culmigenus	228944	species	1	1	0.72%	6.83%	97.03%	275377
+Bipolaris	33194	genus	1	2	0.67%	19.53%	100.0%	248936
+Rhodotorula diobovata	5288	species	1	5	0.61%	11.63%	99.58%	358851
+Pichia manshurica	121235	species	1	2	0.6%	9.44%	98.53%	301563
+Cladosporium cladosporioides	29917	species	1	22	0.56%	17.85%	99.83%	333901
+Saccharomyces jurei	1987369	species	1	1	0.56%	11.73%	97.03%	299227
+Saccharomyces cerevisiae S288C	559292	species	1	4	0.55%	14.14%	97.54%	308302
+Rhodotorula taiwanensis	741276	species	1	1	0.54%	6.04%	98.99%	385813
+Testicularia cyperi	1882483	species	1	1	0.51%	2.39%	97.5%	394536
+Leptoxyphium fumago	5474	species	1	7	0.5%	11.48%	95.43%	373358
+Cladosporium sp. SL-16	2048672	species	1	2	0.5%	4.98%	96.53%	366513
+Malassezia furfur	55194	species	1	3	0.5%	3.99%	97.91%	451087
+Exophiala xenobiotica	348802	species	1	2	0.5%	7.28%	100.0%	372377
+Peltaster fructicola	286661	species	1	1	0.49%	2.82%	96.05%	354125
+Purpureocillium lilacinum	33203	species	1	4	0.49%	34.37%	100.0%	356037
+Aureobasidium melanogenum	46634	species	1	2	0.49%	13.65%	95.92%	367526
+Lecanicillium sp. LEC01	2013060	species	1	1	0.49%	10.62%	98.02%	354158
+Coleophoma cylindrospora	1849047	species	1	1	0.48%	5.02%	95.95%	360186

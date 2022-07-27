@@ -1,0 +1,45 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.2213	1.1919	69	311738
+phylum-Haptista|class-Haptophyta|order-Isochrysidales	order	Isochrysidales	73020	0.2245	0.8438	32	142551
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa	genus	Gephyrocapsa	38816	0.1817	0.6201	25	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	species	Gephyrocapsa oceanica	38817	0.1817	0.6222	25	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania	genus	Emiliania	2902	1.4022	4.7848	7	4992
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania|species-Emiliania_huxleyi	species	Emiliania huxleyi	2903	1.4022	4.8006	7	4992
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	0.2187	0.8221	37	169187
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	0.2187	0.7462	37	169187
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	species	Phaeocystis antarctica	33657	0.1325	0.4536	21	158488
+class-Dinophyceae	class	Dinophyceae	2864	3.5867	19.3136	1196	333452
+class-Dinophyceae|order-Gonyaulacales	order	Gonyaulacales	40984	1.2	4.511	294	244991
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos	genus	Tripos	2126447	2.0919	7.1381	278	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	species	Tripos fusus	2916	2.0919	7.1617	278	132892
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Protoceratium	genus	Protoceratium	133426	0.1427	0.487	16	112099
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Protoceratium|species-Protoceratium_reticulatum	species	Protoceratium reticulatum	133427	0.1427	0.4886	16	112099
+class-Dinophyceae|order-Peridiniales	order	Peridiniales	2910	10.1966	38.3292	902	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium	genus	Brandtodinium	1482939	10.1966	34.7929	902	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	species	Brandtodinium nutricula	1333877	10.1966	34.908	902	88461
+phylum-Bacillariophyta|class-Coscinodiscophyceae	class	Coscinodiscophyceae	33836	0.0848	0.4564	14	165190
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales	order	Thalassiosirales	33847	0.0848	0.3186	14	165190
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Thalassiosiraceae|genus-Thalassiosira	genus	Thalassiosira	35127	0.0848	0.2892	14	165190
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Thalassiosiraceae|genus-Thalassiosira|species-Thalassiosira_oceanica	species	Thalassiosira oceanica	159749	0.0848	0.2901	14	165190
+phylum-Bacillariophyta|class-Bacillariophyceae	class	Bacillariophyceae	33849	0.0501	0.2696	9	179761
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales	order	Bacillariales	33851	0.0501	0.1882	9	179761
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Pseudo-nitzschia	genus	Pseudo-nitzschia	41953	0.0501	0.1708	9	179761
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Pseudo-nitzschia|species-Pseudo-nitzschia_heimii	species	Pseudo-nitzschia heimii	476441	0.0397	0.1359	7	176338
+class-Pelagophyceae	class	Pelagophyceae	35675	0.4624	2.4898	96	207625
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	0.4624	1.7381	96	207625
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	0.709	2.4192	91	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	0.709	2.4272	91	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagococcus	genus	Pelagococcus	35678	0.0631	0.2152	5	79272
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagococcus|species-Pelagococcus_subviridis	species	Pelagococcus subviridis	35679	0.0631	0.2159	5	79272
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.0172	0.0928	6	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.0172	0.0648	6	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.0172	0.0588	6	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.0172	0.059	6	348317
+phylum-Chordata|class-Appendicularia	class	Appendicularia	30302	13.9016	74.8568	1670	120130
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	13.9016	52.2564	1670	120130
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura	genus	Oikopleura	34763	13.9016	47.4353	1670	120130
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	species	Oikopleura longicauda	107032	13.9016	47.5921	1670	120130
+phylum-Chlorophyta|class-Palmophyllophyceae	class	Palmophyllophyceae	2201463	0.2468	1.3292	30	121534
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales	order	Prasinococcales	485343	0.2468	0.9279	30	121534
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinoderma	genus	Prasinoderma	156132	0.2468	0.8423	30	121534
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinoderma|species-Prasinoderma_singulare	species	Prasinoderma singulare	676789	0.2468	0.8451	30	121534

@@ -1,0 +1,35 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Chloropicon roscoffensis	1461544	species	137	3613	86.71%	46.24%	98.86%	275974
+Tripos fusus	2916	species	49	151	54.44%	15.83%	98.0%	132892
+Alexandrium andersonii	327968	species	14	32	51.85%	13.68%	98.9%	29644
+Prorocentrum cordatum	2364126	species	45	189	45.45%	14.64%	96.57%	135765
+Oithona nana	136191	species	65	380	43.62%	18.07%	96.95%	244880
+Oikopleura dioica	34765	species	33	802	41.77%	10.65%	95.51%	176745
+Chloropicon laureae	464258	species	22	74	39.29%	27.55%	99.37%	50762
+Oikopleura longicauda	107032	species	24	15934	32.88%	38.37%	91.23%	120130
+Brandtodinium nutricula	1333877	species	20	36	28.17%	11.84%	98.21%	88461
+Chloropicon mariensis	1606511	species	29	129	26.36%	20.36%	98.72%	157984
+Prasinoderma singulare	676789	species	21	56	23.08%	14.45%	99.5%	121534
+Pelagomonas calceolata	35677	species	12	83	15.58%	13.88%	98.4%	128353
+Gephyrocapsa oceanica	38817	species	12	24	12.0%	12.39%	99.57%	137559
+Pseudo-nitzschia heimii	476441	species	12	31	10.91%	18.38%	97.75%	176338
+Hortaea werneckii EXF-2000	1157616	species	30	70	8.09%	7.21%	99.23%	717212
+Effrenium voratum	2562239	species	7	12	6.73%	7.34%	98.39%	156738
+Chloropicon primus	1764295	species	9	20	6.52%	5.02%	97.84%	281336
+Phaeocystis antarctica	33657	species	6	10	6.0%	5.69%	97.28%	158488
+Scrippsiella trochoidea	71861	species	4	6	3.54%	9.73%	97.32%	163897
+Malassezia restricta	76775	species	5	9	3.33%	4.39%	99.05%	348317
+Phaeocystis globosa	33658	species	3	3	2.59%	9.89%	99.0%	154798
+Karlodinium veneficum	407301	species	2	4	2.27%	13.28%	98.63%	136208
+Pelagococcus subviridis	35679	species	1	2	1.52%	14.16%	96.35%	79272
+Gonyaulax spinifera	66791	species	1	1	1.43%	19.05%	97.0%	72996
+Malassezia globosa CBS 7966	425265	species	2	3	1.27%	3.29%	97.33%	332937
+Rhodotorula diobovata	5288	species	2	4	1.23%	2.6%	100.0%	358851
+Calcidiscus leptoporus	127549	species	1	1	1.18%	5.94%	96.97%	114854
+Bursaphelenchus xylophilus	6326	species	1	1	1.01%	1.98%	96.25%	159590
+Chaetoceros affinis	426623	species	1	2	0.78%	2.2%	98.01%	197912
+Alexandrium tamarense	2926	species	1	2	0.71%	66.01%	97.03%	194024
+Haemaphysalis longicornis	44386	species	1	1	0.59%	7.16%	96.88%	271183
+Calocera viscosa TUFC12733	1330018	species	1	1	0.57%	2.1%	96.55%	364392
+Lecanicillium psalliotae	73499	species	1	1	0.5%	4.3%	95.96%	341989
+Byssochlamys sp. IMV 00045	2562440	species	1	2	0.32%	5.86%	96.79%	541072

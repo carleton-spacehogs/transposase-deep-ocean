@@ -1,0 +1,16 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Oithona nana	species	phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	136191	87	738	58.39%	19.61%	96.63%
+Oikopleura albicans	species	phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_albicans	2500139	29	126	30.85%	20.8%	97.67%
+Brandtodinium nutricula	species	class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	1333877	18	467	25.35%	30.37%	98.97%
+Calcidiscus leptoporus	species	phylum-Haptista|class-Haptophyta|order-Coccolithales|family-Calcidiscaceae|genus-Calcidiscus|species-Calcidiscus_leptoporus	127549	20	134	23.53%	24.19%	99.72%
+Gloeochaete wittrockiana	species	class-Glaucocystophyceae|order-Gloeochaetales|family-Gloeochaetaceae|genus-Gloeochaete|species-Gloeochaete_wittrockiana	38269	13	58	10.83%	20.56%	97.14%
+Hortaea werneckii EXF-2000	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	1157616	38	185	10.24%	12.29%	99.25%
+Alexandrium andersonii	species	class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium|species-Alexandrium_andersonii	327968	2	4	7.41%	4.72%	97.98%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	11	51	7.33%	9.57%	99.32%
+Scrippsiella trochoidea	species	class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae|genus-Scrippsiella|species-Scrippsiella_trochoidea	71861	8	17	7.08%	14.41%	98.82%
+Scyphosphaera apsteinii	species	phylum-Haptista|class-Haptophyta|order-Coccosphaerales|family-Pontosphaeraceae|genus-Scyphosphaera|species-Scyphosphaera_apsteinii	418940	5	21	6.25%	19.97%	98.7%
+Effrenium voratum	species	class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Effrenium|species-Effrenium_voratum	2562239	4	12	3.85%	12.54%	98.06%
+Acanthamoeba rhysodes	species	phylum-Discosea|order-Longamoebia|family-Acanthamoebidae|genus-Acanthamoeba|species-Acanthamoeba_rhysodes	32599	2	8	2.6%	19.99%	99.02%
+Acanthamoeba palestinensis	species	phylum-Discosea|order-Longamoebia|family-Acanthamoebidae|genus-Acanthamoeba|species-Acanthamoeba_palestinensis	28015	2	9	1.72%	12.16%	97.66%
+Phialosimplex sp. HF37	species	phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae|genus-Phialosimplex|species-Phialosimplex_sp._HF37	1960876	2	5	0.98%	10.62%	98.1%
+[Nectria] haematococca mpVI 77-13-4	no rank	phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Nectriaceae|genus-Fusarium|species-[Nectria]_haematococca	660122	2	5	0.98%	29.05%	100.0%

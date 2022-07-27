@@ -1,0 +1,62 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Noelaerhabdaceae	418966	family	1	2	100.0%	11.94%	99.0%	1683
+Oithona nana	136191	species	149	78614	100.0%	88.96%	93.18%	244880
+Oikopleura dioica	34765	species	30	1280	37.97%	13.59%	95.34%	176745
+Emiliania huxleyi CCMP1516	280463	species	10	13	29.41%	9.49%	99.52%	44652
+Dinophysis acuminata	47934	species	22	67	23.4%	10.83%	98.39%	125543
+Calcidiscus leptoporus	127549	species	16	109	18.82%	22.0%	99.3%	114854
+Gephyrocapsa oceanica	38817	species	17	35	17.0%	8.78%	98.39%	137559
+Malassezia restricta	76775	species	24	86	16.0%	10.87%	98.95%	348317
+Chloropicon roscoffensis	1461544	species	18	45	11.39%	8.11%	99.02%	275974
+Scrippsiella trochoidea	71861	species	11	36	9.73%	15.75%	98.72%	163897
+Tripos fusus	2916	species	8	32	8.89%	15.6%	99.11%	132892
+Prasinoderma singulare	676789	species	8	15	8.79%	10.59%	99.63%	121534
+Chloropicon laureae	464258	species	4	5	7.14%	14.42%	99.01%	50762
+Stemphylium vesicarium	119933	species	14	44	6.73%	12.33%	99.91%	369073
+Malassezia globosa CBS 7966	425265	species	9	37	5.73%	12.47%	99.07%	332937
+Aureobasidium	5579	genus	4	8	5.06%	11.98%	99.74%	123825
+Alternaria sect. Alternaria	2499237	section	3	6	4.69%	8.99%	100.0%	83976
+Tyrophagus putrescentiae	59818	species	4	9	3.45%	4.85%	98.24%	241626
+Melampsora larici-populina 98AG31	747676	species	6	20	3.41%	13.78%	98.81%	324644
+Pelagodinium beii	43686	species	3	9	3.33%	18.55%	99.12%	127026
+Alternaria alternata	5599	species	2	19	2.99%	16.05%	99.91%	131319
+Alternaria tenuissima	119927	species	2	14	2.94%	14.61%	100.0%	128737
+Epicoccum nigrum	105696	species	5	10	2.45%	7.84%	99.25%	360210
+Alexandrium catenella	2925	species	2	5	2.17%	17.6%	98.09%	112057
+Leptocylindrus danicus	163516	species	4	19	2.16%	38.22%	98.01%	278595
+Stramenopiles sp. TOSAG23-2	1735743	species	1	1	2.13%	11.65%	100.0%	66251
+Pycnococcus provasolii	41880	species	2	3	2.06%	20.61%	99.33%	119181
+Effrenium voratum	2562239	species	2	4	1.92%	8.56%	97.44%	156738
+unclassified Bathycoccus	2590008	genus	1	6	1.92%	12.93%	100.0%	95463
+Rhodotorula sp. FNED7-22	1928479	species	1	12	1.61%	41.54%	100.0%	96261
+Aureobasidium pullulans EXF-150	1043002	species	2	8	1.6%	8.69%	99.66%	234543
+Cladosporium phlei	1116209	species	3	5	1.51%	14.2%	97.22%	364263
+Oikopleura longicauda	107032	species	1	2	1.37%	2.96%	99.49%	120130
+Pelagomonas calceolata	35677	species	1	2	1.3%	2.93%	98.33%	128353
+Protoceratium reticulatum	133427	species	1	3	1.25%	13.69%	100.0%	112099
+Rhodotorula sp. CCFEE 5036	1965284	species	1	2	1.15%	0.99%	100.0%	209302
+Karlodinium veneficum	407301	species	1	4	1.14%	23.6%	97.36%	136208
+Saccharomyces cerevisiae S288C	559292	species	2	6	1.1%	6.23%	99.67%	308302
+Thalassiosira oceanica	159749	species	1	1	1.02%	15.88%	100.0%	165190
+Exophiala xenobiotica	348802	species	2	7	1.0%	15.31%	96.89%	372377
+[Nectria] haematococca mpVI 77-13-4	660122	no rank	2	6	0.98%	9.24%	100.0%	351719
+Phaeocystis globosa	33658	species	1	1	0.86%	15.1%	100.0%	154798
+Bathycoccus prasinos	41875	species	1	1	0.81%	2.7%	99.01%	229209
+Pseudo-nitzschia arenysensis	697910	species	1	6	0.79%	36.41%	98.79%	204829
+Fusarium sp. AF-4	1325735	species	1	1	0.75%	4.27%	100.0%	265969
+Scenedesmus sp. NREL 46B-D3	2650976	species	1	1	0.72%	3.48%	99.0%	242615
+Botrytis	33196	genus	1	7	0.71%	33.49%	100.0%	220563
+Alternaria arborescens	156630	species	1	1	0.67%	1.89%	98.78%	303330
+Alternaria gaisen	167740	species	1	2	0.64%	6.67%	100.0%	317618
+Rhodotorula diobovata	5288	species	1	3	0.61%	12.99%	99.25%	358851
+Candida dubliniensis CD36	573826	species	1	1	0.59%	5.48%	97.03%	272972
+Puccinia sorghi	27349	species	1	5	0.58%	12.95%	100.0%	302937
+Cyberlindnera jadinii NRRL Y-1542	983966	species	1	2	0.58%	7.86%	100.0%	333761
+Debaryomyces hansenii CBS767	284592	species	1	1	0.55%	15.96%	100.0%	326457
+Linderina pennispora	61395	species	1	3	0.53%	3.35%	96.09%	349115
+Eurotiomycetes sp.	1709936	species	1	1	0.51%	2.9%	98.02%	385143
+Knufia petricola	206542	species	1	1	0.51%	13.23%	100.0%	374300
+Leptoxyphium fumago	5474	species	1	2	0.5%	8.86%	96.05%	373358
+Golovinomyces cichoracearum	62708	species	1	2	0.5%	4.27%	96.67%	315036
+Paradendryphiella salina	179392	species	1	1	0.49%	10.62%	98.02%	360928
+Stemphylium lycopersici	183478	species	1	4	0.49%	4.12%	99.35%	365333

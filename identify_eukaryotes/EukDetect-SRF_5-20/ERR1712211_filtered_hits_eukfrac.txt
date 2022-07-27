@@ -1,0 +1,50 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.0363	0.6072	5	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales	order	Isochrysidales	73020	0.0363	0.2924	5	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa	genus	Gephyrocapsa	38816	0.0363	0.2614	5	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	species	Gephyrocapsa oceanica	38817	0.0363	0.2641	5	137559
+class-Dinophyceae	class	Dinophyceae	2864	2.5056	41.8575	1126	449400
+class-Dinophyceae|order-Gonyaulacales	order	Gonyaulacales	40984	0.3612	2.9054	48	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos	genus	Tripos	2126447	0.3612	2.5976	48	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	species	Tripos fusus	2916	0.3612	2.6239	48	132892
+class-Dinophyceae|order-Thoracosphaerales	order	Thoracosphaerales	33835	0.0366	0.2945	6	163897
+class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae|genus-Scrippsiella	genus	Scrippsiella	54902	0.0366	0.2633	6	163897
+class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae|genus-Scrippsiella|species-Scrippsiella_trochoidea	species	Scrippsiella trochoidea	71861	0.0366	0.2659	6	163897
+class-Dinophyceae|order-Noctilucales	order	Noctilucales	2964	7.0244	56.5032	1072	152611
+class-Dinophyceae|order-Noctilucales|family-Noctilucaceae|genus-Noctiluca	genus	Noctiluca	2965	7.0244	50.518	1072	152611
+class-Dinophyceae|order-Noctilucales|family-Noctilucaceae|genus-Noctiluca|species-Noctiluca_scintillans	species	Noctiluca scintillans	2966	7.0244	51.0292	1072	152611
+phylum-Ascomycota|class-Saccharomycetes	class	Saccharomycetes	4891	0.0142	0.2366	9	635522
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales	order	Saccharomycetales	4892	0.0142	0.1139	9	635522
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|genus-Candida	genus	Candida	5475	0.0124	0.0889	4	323512
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|genus-Candida|species-Candida_sake	species	Candida sake	39397	0.0124	0.0898	4	323512
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida	genus	Candida	1535326	0.016	0.1152	5	312010
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida|species-Candida_parapsilosis	species	Candida parapsilosis	5480	0.016	0.1164	5	312010
+phylum-Ascomycota|class-Leotiomycetes	class	Leotiomycetes	147548	0.0135	0.2262	5	369337
+phylum-Ascomycota|class-Leotiomycetes|order-Helotiales	order	Helotiales	5178	0.0135	0.1089	5	369337
+phylum-Ascomycota|class-Leotiomycetes|order-Helotiales|genus-Cadophora	genus	Cadophora	210567	0.0135	0.0974	5	369337
+phylum-Ascomycota|class-Leotiomycetes|order-Helotiales|genus-Cadophora|species-Cadophora_sp._DSE1049	species	Cadophora sp. DSE1049	1485229	0.0135	0.0983	5	369337
+phylum-Ascomycota|class-Dothideomycetes	class	Dothideomycetes	147541	0.3652	6.1009	157	429903
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales	order	Capnodiales	134362	1.759	14.1491	107	60830
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea	genus	Hortaea	91942	1.7829	12.8225	101	56648
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	species	Hortaea werneckii	91943	1.7829	12.9523	101	56648
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae|genus-Cladosporium	genus	Cladosporium	5498	1.4347	10.3182	6	4182
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae|genus-Cladosporium|species-Cladosporium_sphaerospermum	species	Cladosporium sphaerospermum	92950	1.4347	10.4226	6	4182
+phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales	order	Pleosporales	92860	0.1355	1.0897	50	369073
+phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Pleosporaceae|genus-Stemphylium	genus	Stemphylium	95729	0.1355	0.9743	50	369073
+phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Pleosporaceae|genus-Stemphylium|species-Stemphylium_vesicarium	species	Stemphylium vesicarium	119933	0.1355	0.9842	50	369073
+phylum-Ascomycota|class-Eurotiomycetes	class	Eurotiomycetes	147545	0.9483	15.8424	4	4218
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales	order	Chaetothyriales	34395	0.9483	7.6281	4	4218
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Cyphellophoraceae|genus-Cyphellophora	genus	Cyphellophora	226991	0.9483	6.8201	4	4218
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Cyphellophoraceae|genus-Cyphellophora|species-Cyphellophora_europaea	species	Cyphellophora europaea	293227	0.9483	6.8891	4	4218
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	1.1312	18.8981	448	396030
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	1.1312	9.0994	448	396030
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	1.1312	8.1356	448	396030
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.9962	7.2371	347	348317
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	0.8703	14.5391	242	278065
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	0.8703	7.0006	242	278065
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.8703	6.259	242	278065
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	0.866	6.2913	239	275974
+class-Pelagophyceae	class	Pelagophyceae	35675	0.1013	1.692	13	128353
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	0.1013	0.8147	13	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	0.1013	0.7284	13	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	0.1013	0.7358	13	128353

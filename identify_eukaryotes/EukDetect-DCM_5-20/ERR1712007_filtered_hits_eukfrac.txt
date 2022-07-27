@@ -1,0 +1,79 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.8762	1.4125	72	82169
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_laureae	species	Chloropicon laureae	464258	0.5713	0.9872	29	50762
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	0.4262	0.6871	112	262775
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	0.2356	0.4071	54	229209
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	0.9635	1.5533	27	28022
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._'lucimarinus'	species	Ostreococcus sp. 'lucimarinus'	242159	0.3341	0.5773	24	71830
+phylum-Chlorophyta|family-Pycnococcaceae|genus-Pycnococcus	genus	Pycnococcus	41879	2.148	3.4627	256	119181
+phylum-Chlorophyta|family-Pycnococcaceae|genus-Pycnococcus|species-Pycnococcus_provasolii	species	Pycnococcus provasolii	41880	2.148	3.7116	256	119181
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinoderma	genus	Prasinoderma	156132	0.9298	1.4989	113	121534
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinoderma|species-Prasinoderma_singulare	species	Prasinoderma singulare	676789	0.9298	1.6066	113	121534
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala	genus	Exophiala	5583	0.0483	0.0779	18	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala|species-Exophiala_xenobiotica	species	Exophiala xenobiotica	348802	0.0483	0.0835	18	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae|genus-Aspergillus	genus	Aspergillus	5052	0.044	0.071	27	613056
+phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae|genus-Aspergillus|species-Aspergillus_sp._MA_6041	species	Aspergillus sp. MA 6041	2153248	0.0413	0.0713	25	605505
+phylum-Ascomycota|class-Eurotiomycetes|species-Eurotiomycetes_sp.	species	Eurotiomycetes sp.	1709936	0.0779	0.1346	30	385143
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Nectriaceae|genus-Fusarium	genus	Fusarium	5506	1.9529	3.1482	43	22018
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Nectriaceae|genus-Fusarium|species-[Nectria]_haematococca	species	[Nectria] haematococca	140110	1.6693	2.8845	28	16773
+phylum-Ascomycota|class-Leotiomycetes|order-Helotiales|family-Rutstroemiaceae|genus-Lanzia	genus	Lanzia	54683	0.1346	0.217	34	252608
+phylum-Ascomycota|class-Leotiomycetes|order-Helotiales|family-Rutstroemiaceae|genus-Lanzia|species-Lanzia_echinophila	species	Lanzia echinophila	1424426	0.1346	0.2326	34	252608
+phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Pleosporaceae|genus-Alternaria	genus	Alternaria	5598	0.8529	1.3748	169	198159
+phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Pleosporaceae|genus-Alternaria|species-Alternaria_alternata	species	Alternaria alternata	5599	0.2818	0.4869	37	131319
+phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Pleosporaceae|genus-Pyrenophora	genus	Pyrenophora	5027	2.4125	3.8891	6	2487
+phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Pleosporaceae|genus-Pyrenophora|species-Pyrenophora_teres	species	Pyrenophora teres	53485	2.4125	4.1687	6	2487
+phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Pleosporaceae|genus-Stemphylium	genus	Stemphylium	95729	0.1442	0.2324	54	374501
+phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Pleosporaceae|genus-Stemphylium|species-Stemphylium_vesicarium	species	Stemphylium vesicarium	119933	0.1246	0.2154	46	369073
+phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Didymellaceae|genus-Epicoccum	genus	Epicoccum	104397	0.0194	0.0313	7	360210
+phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Didymellaceae|genus-Epicoccum|species-Epicoccum_nigrum	species	Epicoccum nigrum	105696	0.0194	0.0336	7	360210
+phylum-Ascomycota|class-Dothideomycetes|order-Dothideales|family-Saccotheciaceae|genus-Aureobasidium	genus	Aureobasidium	5579	1.7048	2.7483	21	12318
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea	genus	Hortaea	91942	6.3593	10.2515	24	3774
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	species	Hortaea werneckii	91943	6.3593	10.9884	24	3774
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycodaceae|genus-Hanseniaspora	genus	Hanseniaspora	29832	1.0661	1.7185	250	234510
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycodaceae|genus-Hanseniaspora|species-Hanseniaspora_uvarum	species	Hanseniaspora uvarum	29833	0.9063	1.566	200	220680
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Metschnikowiaceae|genus-Clavispora	genus	Clavispora	36910	0.0114	0.0184	4	350551
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Metschnikowiaceae|genus-Clavispora|species-[Candida]_intermedia	species	[Candida] intermedia	45354	0.0114	0.0197	4	350551
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Pichiaceae|genus-Pichia	genus	Pichia	4919	5.8581	9.4435	1016	173436
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Pichiaceae|genus-Pichia|species-Pichia_kluyveri	species	Pichia kluyveri	36015	5.8952	10.1865	1004	170307
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Debaryomyces	genus	Debaryomyces	4958	1.8892	3.0454	9	4764
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Debaryomyces|species-Debaryomyces_hansenii	species	Debaryomyces hansenii	4959	1.8892	3.2643	9	4764
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida	genus	Candida	1535326	0.1712	0.276	54	315400
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida|species-Candida_parapsilosis	species	Candida parapsilosis	5480	0.1667	0.288	52	312010
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces	genus	Saccharomyces	4930	1.66	2.676	95	57229
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces|species-Saccharomyces_cerevisiae	species	Saccharomyces cerevisiae	4932	1.6938	2.9268	94	55495
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|genus-Starmerella	genus	Starmerella	75735	0.3018	0.4865	50	165674
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|genus-Starmerella|species-Starmerella_bacillaris	species	Starmerella bacillaris	1247836	0.3018	0.5215	50	165674
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	3.5903	5.7877	1794	499683
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	3.5772	6.1811	1246	348317
+phylum-Mucoromycota|class-Mucoromycetes|order-Mucorales|family-Rhizopodaceae|genus-Rhizopus	genus	Rhizopus	4842	0.9586	1.5454	14	14604
+phylum-Mucoromycota|class-Mucoromycetes|order-Mucorales|family-Rhizopodaceae|genus-Rhizopus|species-Rhizopus_stolonifer	species	Rhizopus stolonifer	4846	0.9586	1.6565	14	14604
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura	genus	Oikopleura	34763	1.5346	2.4739	209	136188
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	species	Oikopleura longicauda	107032	1.1155	1.9274	134	120130
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona	genus	Oithona	136190	0.5717	0.9216	140	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	species	Oithona nana	136191	0.5717	0.9879	140	244880
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Thalassiosiraceae|genus-Thalassiosira	genus	Thalassiosira	35127	0.1756	0.283	29	165190
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Thalassiosiraceae|genus-Thalassiosira|species-Thalassiosira_oceanica	species	Thalassiosira oceanica	159749	0.1756	0.3033	29	165190
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Corethrales|family-Corethraceae|genus-Corethron	genus	Corethron	49242	0.0471	0.0759	8	169912
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Corethrales|family-Corethraceae|genus-Corethron|species-Corethron_pennatum	species	Corethron pennatum	218684	0.0471	0.0814	8	169912
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Pseudo-nitzschia	genus	Pseudo-nitzschia	41953	0.3366	0.5426	37	109935
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Pseudo-nitzschia|species-Pseudo-nitzschia_fraudulenta	species	Pseudo-nitzschia fraudulenta	183588	0.3312	0.5722	36	108708
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Minutocellus	genus	Minutocellus	265542	0.0156	0.0251	4	256500
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Minutocellus|species-Minutocellus_polymorphus	species	Minutocellus polymorphus	265543	0.0156	0.0269	4	256500
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Arcocellulus	genus	Arcocellulus	420263	0.5134	0.8276	55	107135
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Arcocellulus|species-Arcocellulus_cornucervis	species	Arcocellulus cornucervis	1155433	0.5134	0.8871	55	107135
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	0.3584	0.5777	46	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	0.3584	0.6193	46	128353
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria	genus	Cafeteria	33652	0.0789	0.1271	4	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	species	Cafeteria roenbergensis	33653	0.0789	0.1363	4	50724
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania	genus	Emiliania	2902	0.9299	1.4991	22	23658
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania|species-Emiliania_huxleyi	species	Emiliania huxleyi	2903	0.9299	1.6068	22	23658
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa	genus	Gephyrocapsa	38816	0.2181	0.3516	30	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	species	Gephyrocapsa oceanica	38817	0.2181	0.3768	30	137559
+class-Dinophyceae|order-Noctilucales|family-Noctilucaceae|genus-Noctiluca	genus	Noctiluca	2965	0.2949	0.4753	45	152611
+class-Dinophyceae|order-Noctilucales|family-Noctilucaceae|genus-Noctiluca|species-Noctiluca_scintillans	species	Noctiluca scintillans	2966	0.2949	0.5095	45	152611
+class-Dinophyceae|order-Gymnodiniales|family-Gymnodiniaceae|genus-Gymnodinium	genus	Gymnodinium	2955	19.8812	32.0494	3751	188671
+class-Dinophyceae|order-Gymnodiniales|family-Gymnodiniaceae|genus-Gymnodinium|species-Gymnodinium_catenatum	species	Gymnodinium catenatum	39447	19.8812	34.3531	3751	188671
+class-Dinophyceae|order-Syndiniales|family-Amoebophryaceae|genus-Amoebophrya	genus	Amoebophrya	88551	0.8379	1.3507	31	36997
+class-Dinophyceae|order-Syndiniales|family-Amoebophryaceae|genus-Amoebophrya|species-Amoebophrya_sp._AT5.2	species	Amoebophrya sp. AT5.2	1775427	0.8379	1.4478	31	36997
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos	genus	Tripos	2126447	1.7157	2.7658	228	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	species	Tripos fusus	2916	1.7157	2.9646	228	132892

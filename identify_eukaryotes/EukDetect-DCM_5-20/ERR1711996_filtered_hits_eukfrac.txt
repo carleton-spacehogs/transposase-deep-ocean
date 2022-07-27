@@ -1,0 +1,47 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.2019	4.7604	37	183300
+phylum-Haptista|class-Haptophyta|order-Isochrysidales	order	Isochrysidales	73020	0.1916	4.2889	27	140955
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa	genus	Gephyrocapsa	38816	0.1599	2.3307	22	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	species	Gephyrocapsa oceanica	38817	0.1599	3.0724	22	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania	genus	Emiliania	2902	1.4723	21.4561	5	3396
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania|species-Emiliania_huxleyi	species	Emiliania huxleyi	2903	1.4723	28.2846	5	3396
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	0.2362	5.2876	10	42345
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	0.2362	3.4415	10	42345
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_rex	species	Phaeocystis rex	1631189	0.1743	3.3492	7	40152
+class-Dinophyceae	class	Dinophyceae	2864	0.0527	1.2422	7	132892
+class-Dinophyceae|order-Gonyaulacales	order	Gonyaulacales	40984	0.0527	1.1794	7	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos	genus	Tripos	2126447	0.0527	0.7676	7	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	species	Tripos fusus	2916	0.0527	1.0119	7	132892
+phylum-Bacillariophyta|class-Coscinodiscophyceae	class	Coscinodiscophyceae	33836	0.0242	0.5711	4	165190
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales	order	Thalassiosirales	33847	0.0242	0.5422	4	165190
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Thalassiosiraceae|genus-Thalassiosira	genus	Thalassiosira	35127	0.0242	0.3529	4	165190
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Thalassiosiraceae|genus-Thalassiosira|species-Thalassiosira_oceanica	species	Thalassiosira oceanica	159749	0.0242	0.4652	4	165190
+class-Pelagophyceae	class	Pelagophyceae	35675	0.2493	5.8796	32	128353
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	0.2493	5.5822	32	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	0.2493	3.6332	32	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	0.2493	4.7895	32	128353
+phylum-Ascomycota|class-Dothideomycetes	class	Dothideomycetes	147541	0.0294	0.693	11	374353
+phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales	order	Pleosporales	92860	0.0294	0.6579	11	374353
+phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Pleosporaceae|genus-Alternaria	genus	Alternaria	5598	0.947	13.8002	5	5280
+phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Pleosporaceae|genus-Stemphylium	genus	Stemphylium	95729	0.0163	0.2369	6	369073
+phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Pleosporaceae|genus-Stemphylium|species-Stemphylium_vesicarium	species	Stemphylium vesicarium	119933	0.0163	0.3123	6	369073
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.3192	7.5283	124	388441
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.3192	7.1476	124	388441
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.3192	4.6521	124	388441
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.2297	4.4123	80	348317
+phylum-Chordata|class-Appendicularia	class	Appendicularia	30302	2.1658	51.0754	264	121897
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	2.1658	48.4926	264	121897
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura	genus	Oikopleura	34763	2.1658	31.5616	264	121897
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	species	Oikopleura longicauda	107032	1.8563	35.6616	223	120130
+phylum-Arthropoda|class-Hexanauplia	class	Hexanauplia	72037	0.0898	2.1187	22	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida	order	Cyclopoida	84308	0.0898	2.0116	22	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona	genus	Oithona	136190	0.0898	1.3092	22	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	species	Oithona nana	136191	0.0898	1.7259	22	244880
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	0.0957	2.2561	28	292689
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	0.0957	2.142	28	292689
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.0957	1.3941	28	292689
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	0.0471	0.9049	13	275974
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	1.0124	23.8753	100	98776
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	1.0124	22.668	100	98776
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	1.0337	15.064	99	95773
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._SAG10	species	Ostreococcus sp. SAG10	2590005	0.8334	16.0102	47	56396

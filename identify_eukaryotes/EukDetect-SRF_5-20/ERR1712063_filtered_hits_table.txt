@@ -1,0 +1,56 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Oithona nana	species	phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	136191	123	1663	82.55%	35.46%	99.08%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	99	878	66.0%	21.15%	98.86%
+Alternaria sect. Alternaria	section	phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Pleosporaceae|genus-Alternaria	2499237	41	416	64.06%	37.16%	99.98%
+Stemphylium vesicarium	species	phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Pleosporaceae|genus-Stemphylium|species-Stemphylium_vesicarium	119933	129	1161	62.02%	28.4%	99.9%
+Alternaria alternata complex	species group	phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Pleosporaceae|genus-Alternaria	187734	43	189	52.44%	15.54%	99.92%
+Alternaria tenuissima	species	phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Pleosporaceae|genus-Alternaria|species-Alternaria_tenuissima	119927	27	117	39.71%	19.02%	99.78%
+Tripos fusus	species	class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	2916	26	136	28.89%	20.25%	99.51%
+Oikopleura longicauda	species	phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	107032	21	1322	28.77%	17.56%	95.55%
+Debaryomyces hansenii CBS767	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Debaryomyces|species-Debaryomyces_hansenii	284592	44	244	24.04%	21.3%	99.78%
+Alternaria alternata	species	phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Pleosporaceae|genus-Alternaria|species-Alternaria_alternata	5599	16	137	23.88%	15.09%	99.68%
+Melampsora larici-populina 98AG31	species	phylum-Basidiomycota|class-Pucciniomycetes|order-Pucciniales|family-Melampsoraceae|genus-Melampsora|species-Melampsora_larici-populina	747676	39	151	22.16%	15.27%	99.84%
+[Nectria] haematococca mpVI 77-13-4	no rank	phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Nectriaceae|genus-Fusarium|species-[Nectria]_haematococca	660122	35	122	17.16%	14.44%	99.94%
+Partenskyella glossopodia	species	phylum-Cercozoa|class-Chlorarachniophyceae|genus-Partenskyella|species-Partenskyella_glossopodia	552666	10	41	16.67%	20.12%	99.54%
+Licmophora paradoxa	species	phylum-Bacillariophyta|class-Fragilariophyceae|order-Licmophorales|family-Licmophoraceae|genus-Licmophora|species-Licmophora_paradoxa	515479	5	21	15.62%	24.38%	99.23%
+Epicoccum nigrum	species	phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Didymellaceae|genus-Epicoccum|species-Epicoccum_nigrum	105696	31	137	15.2%	15.13%	99.1%
+Leptocylindrus danicus	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Leptocylindrales|family-Leptocylindraceae|genus-Leptocylindrus|species-Leptocylindrus_danicus	163516	26	116	14.05%	17.3%	99.05%
+Aureobasidium	genus	phylum-Ascomycota|class-Dothideomycetes|order-Dothideales|family-Saccotheciaceae|genus-Aureobasidium	5579	11	71	13.92%	26.54%	99.19%
+Pseudoperonospora cubensis	species	class-Oomycetes|order-Peronosporales|family-Peronosporaceae|genus-Pseudoperonospora|species-Pseudoperonospora_cubensis	143453	6	20	12.0%	25.26%	99.89%
+Thecamonas trahens ATCC 50062	species	family-Apusomonadidae|genus-Thecamonas|species-Thecamonas_trahens	461836	6	18	9.09%	12.81%	99.68%
+Gephyrocapsa oceanica	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	38817	9	28	9.0%	13.89%	98.82%
+Emiliania huxleyi CCMP1516	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania|species-Emiliania_huxleyi	280463	3	4	8.82%	13.92%	98.85%
+Phaeomonas parva	species	class-Pinguiophyceae|order-Pinguiochrysidales|family-Pinguiochrysidaceae|genus-Phaeomonas|species-Phaeomonas_parva	124430	7	14	8.54%	12.84%	98.32%
+Cladosporium phlei	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae|genus-Cladosporium|species-Cladosporium_phlei	1116209	17	56	8.54%	19.1%	96.95%
+Naegleria gruberi	species	phylum-Heterolobosea|family-Vahlkampfiidae|genus-Naegleria|species-Naegleria_gruberi	5762	7	29	8.54%	15.36%	99.67%
+Cyclotella meneghiniana	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Stephanodiscaceae|genus-Cyclotella|species-Cyclotella_meneghiniana	29205	10	53	8.06%	10.72%	99.15%
+Thalassionema frauenfeldii	species	phylum-Bacillariophyta|class-Fragilariophyceae|order-Thalassionemales|family-Thalassionemataceae|genus-Thalassionema|species-Thalassionema_frauenfeldii	186022	7	15	6.6%	12.35%	98.18%
+[Candida] intermedia	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Metschnikowiaceae|genus-Clavispora|species-[Candida]_intermedia	45354	11	30	6.29%	7.25%	99.09%
+Rhizopus stolonifer B9770	species	phylum-Mucoromycota|class-Mucoromycetes|order-Mucorales|family-Rhizopodaceae|genus-Rhizopus|species-Rhizopus_stolonifer	1274793	8	25	4.82%	12.15%	99.95%
+Saccharomyces cerevisiae S288C	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces|species-Saccharomyces_cerevisiae	559292	8	12	4.4%	6.8%	99.61%
+Brandtodinium nutricula	species	class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	1333877	3	10	4.23%	15.08%	99.43%
+Candida parapsilosis	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida|species-Candida_parapsilosis	5480	6	36	3.49%	17.48%	99.62%
+Pseudoperonospora	genus	class-Oomycetes|order-Peronosporales|family-Peronosporaceae|genus-Pseudoperonospora	143452	2	5	3.45%	29.46%	99.3%
+Lotharella oceanica	species	phylum-Cercozoa|class-Chlorarachniophyceae|genus-Lotharella|species-Lotharella_oceanica	641309	2	10	3.28%	21.41%	99.6%
+Amphiprora paludosa	species	phylum-Bacillariophyta|class-Bacillariophyceae|order-Naviculales|family-Amphipleuraceae|genus-Amphiprora|species-Amphiprora_paludosa	265537	3	6	3.09%	12.73%	98.68%
+Rhodotorula diobovata	species	phylum-Basidiomycota|class-Microbotryomycetes|order-Sporidiobolales|family-Sporidiobolaceae|genus-Rhodotorula|species-Rhodotorula_diobovata	5288	4	23	2.45%	16.35%	99.49%
+Oidium neolycopersici	species	phylum-Ascomycota|class-Leotiomycetes|order-Erysiphales|family-Erysiphaceae|genus-Oidium|species-Oidium_neolycopersici	212602	5	14	2.44%	18.33%	99.18%
+Aureobasidium pullulans EXF-150	species	phylum-Ascomycota|class-Dothideomycetes|order-Dothideales|family-Saccotheciaceae|genus-Aureobasidium|species-Aureobasidium_pullulans	1043002	3	11	2.4%	10.92%	98.35%
+Chaetoceros affinis	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Chaetocerotales|family-Chaetocerotaceae|genus-Chaetoceros|species-Chaetoceros_affinis	426623	3	8	2.34%	12.93%	99.5%
+Pelagodinium beii	species	class-Dinophyceae|order-Suessiales|family-Suessiaceae|genus-Pelagodinium|species-Pelagodinium_beii	43686	2	5	2.22%	14.46%	99.8%
+Botrytis	genus	phylum-Ascomycota|class-Leotiomycetes|order-Helotiales|family-Sclerotiniaceae|genus-Botrytis	33196	3	6	2.13%	13.1%	100.0%
+Symmetrospora coprosmae	species	phylum-Basidiomycota|class-Cystobasidiomycetes|family-Symmetrosporaceae|genus-Symmetrospora|species-Symmetrospora_coprosmae	69976	4	8	2.12%	15.78%	98.86%
+Ustilago bromivora	species	phylum-Basidiomycota|class-Ustilaginomycetes|order-Ustilaginales|family-Ustilaginaceae|genus-Ustilago|species-Ustilago_bromivora	307758	4	16	2.11%	13.68%	100.0%
+Prasinococcus capsulatus	species	phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinococcus|species-Prasinococcus_capsulatus	156131	3	9	2.07%	7.55%	99.72%
+Phaeosphaeria sp. H6.2b	species	phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Phaeosphaeriaceae|genus-Phaeosphaeria|species-Phaeosphaeria_sp._H6.2b	2304319	4	18	1.98%	19.74%	99.58%
+Stachybotrys chlorohalonata IBT 40285	species	phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Stachybotryaceae|genus-Stachybotrys|species-Stachybotrys_chlorohalonata	1283841	4	19	1.94%	22.2%	100.0%
+Acaromyces ingoldii	species	phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales|family-Cryptobasidiaceae|genus-Acaromyces|species-Acaromyces_ingoldii	215250	3	6	1.69%	11.01%	97.67%
+Coniosporium apollinis CBS 100218	species	phylum-Ascomycota|class-Dothideomycetes|genus-Coniosporium|species-Coniosporium_apollinis	1168221	3	10	1.52%	31.83%	98.25%
+Knufia petricola	species	phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Trichomeriaceae|genus-Knufia|species-Knufia_petricola	206542	3	12	1.52%	14.13%	100.0%
+Cadophora sp. DSE1049	species	phylum-Ascomycota|class-Leotiomycetes|order-Helotiales|genus-Cadophora|species-Cadophora_sp._DSE1049	1485229	3	4	1.45%	2.0%	98.24%
+Lanzia echinophila	species	phylum-Ascomycota|class-Leotiomycetes|order-Helotiales|family-Rutstroemiaceae|genus-Lanzia|species-Lanzia_echinophila	1424426	2	12	1.29%	24.77%	99.35%
+Filobasidium wieringae	species	phylum-Basidiomycota|class-Tremellomycetes|order-Filobasidiales|family-Filobasidiaceae|genus-Filobasidium|species-Filobasidium_wieringae	104416	2	6	1.19%	21.11%	100.0%
+Hortaea werneckii EXF-2000	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	1157616	4	23	1.08%	13.2%	99.4%
+Extubocellulus spinifer	species	phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Extubocellulus|species-Extubocellulus_spinifer	265572	2	10	1.03%	11.91%	98.14%
+Aspergillus glaucus CBS 516.65	species	phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae|genus-Aspergillus|species-Aspergillus_glaucus	1160497	2	5	0.97%	12.32%	100.0%
+Fusarium solani species complex	species group	phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Nectriaceae|genus-Fusarium	232080	2	5	0.58%	21.56%	98.95%

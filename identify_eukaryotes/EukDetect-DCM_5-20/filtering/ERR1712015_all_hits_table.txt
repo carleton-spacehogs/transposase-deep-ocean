@@ -1,0 +1,22 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Oikopleura longicauda	107032	species	21	108	28.77%	9.19%	98.02%	120130
+Emiliania huxleyi CCMP1516	280463	species	9	17	26.47%	7.41%	99.68%	44652
+Gephyrocapsa oceanica	38817	species	23	46	23.0%	9.18%	98.86%	137559
+Malassezia restricta	76775	species	19	45	12.67%	4.55%	99.35%	348317
+Tetrahymena thermophila	5911	species	1	1	12.5%	4.1%	97.94%	15300
+Ostreococcus sp. SAG10	2590005	species	2	3	8.0%	7.76%	99.01%	56396
+Stramenopiles sp. TOSAG23-2	1735743	species	1	2	2.13%	2.98%	99.21%	66251
+Oithona nana	136191	species	3	6	2.01%	6.44%	97.33%	244880
+Oikopleura dioica	34765	species	1	5	1.27%	10.58%	98.4%	176745
+Malassezia globosa CBS 7966	425265	species	2	4	1.27%	4.6%	100.0%	332937
+Alternaria alternata complex	187734	species group	1	2	1.22%	7.46%	100.0%	165766
+Leptocylindrus danicus	163516	species	2	4	1.08%	2.96%	97.74%	278595
+Phaeocystis antarctica	33657	species	1	1	1.0%	2.23%	97.03%	158488
+Micromonas bravo	296588	species	1	2	0.85%	4.11%	99.48%	182724
+Malassezia dermatis	169489	species	1	1	0.74%	1.7%	100.0%	308173
+Prasinococcus capsulatus	156131	species	1	1	0.69%	4.43%	100.0%	248645
+Alternaria gaisen	167740	species	1	1	0.64%	1.12%	100.0%	317618
+Batrachochytrium salamandrivorans	1357716	species	1	1	0.59%	3.81%	97.7%	292885
+Blattella germanica	6973	species	1	1	0.58%	11.7%	96.51%	257349
+Candida parapsilosis	5480	species	1	2	0.58%	7.06%	100.0%	312010
+Micromonas	38832	genus	1	4	0.56%	8.46%	100.0%	358692

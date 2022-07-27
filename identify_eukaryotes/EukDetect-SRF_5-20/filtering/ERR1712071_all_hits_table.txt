@@ -1,0 +1,97 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Filobasidium wieringae	104416	species	123	2643	73.21%	24.26%	99.32%	364566
+Aurelia aurita	6145	species	65	1371	49.24%	29.88%	98.91%	200451
+Fritillaria borealis	2507563	species	23	443	36.51%	9.94%	95.94%	117198
+Hortaea werneckii EXF-2000	1157616	species	130	955	35.04%	17.81%	99.2%	717212
+Gephyrocapsa oceanica	38817	species	35	234	35.0%	19.74%	98.3%	137559
+Oikopleura dioica	34765	species	25	473	31.65%	7.56%	96.32%	176745
+Emiliania huxleyi CCMP1516	280463	species	10	36	29.41%	12.1%	99.68%	44652
+Debaryomyces hansenii CBS767	284592	species	50	429	27.32%	20.9%	99.72%	326457
+Phaeocystis antarctica	33657	species	26	148	26.0%	15.48%	98.17%	158488
+Malassezia restricta	76775	species	31	138	20.67%	8.19%	98.85%	348317
+Lithomelissa setosa	1054399	species	1	7	20.0%	75.9%	98.35%	2562
+Mesodinium pulex	283647	species	1	3	20.0%	22.0%	100.0%	6352
+Acanthamoeba mauritaniensis	196912	species	15	90	19.48%	21.49%	99.89%	103226
+Acanthamoeba rhysodes	32599	species	14	221	18.18%	15.63%	98.65%	113910
+Pycnococcus provasolii	41880	species	14	71	14.43%	31.75%	99.35%	119181
+Aureobasidium	5579	genus	11	75	13.92%	19.25%	99.39%	123825
+Fragilariopsis kerguelensis	186038	species	21	89	13.91%	15.07%	99.47%	252214
+Pseudo-nitzschia fraudulenta	183588	species	10	51	10.99%	21.84%	98.68%	108708
+Knufia petricola	206542	species	20	142	10.15%	26.78%	99.84%	374300
+Arcocellulus cornucervis	1155433	species	8	27	9.64%	10.53%	99.06%	107135
+Thalassiosira oceanica	159749	species	9	43	9.18%	11.58%	97.83%	165190
+Acanthamoeba polyphaga	5757	species	5	11	8.93%	15.07%	98.24%	76663
+Acanthamoeba pearcei	65662	species	5	109	8.33%	40.73%	95.65%	66582
+Acanthamoeba	5754	genus	8	78	7.62%	32.94%	99.32%	134855
+Saccharomyces cerevisiae S288C	559292	species	12	76	6.59%	14.01%	99.33%	308302
+Acanthamoeba quina	211522	species	5	33	6.49%	13.34%	97.45%	117232
+Dinophysis acuminata	47934	species	6	25	6.38%	11.22%	98.77%	125543
+Voromonas pontica	333133	species	1	8	6.25%	58.75%	100.0%	11409
+Pelagodinium beii	43686	species	5	49	5.56%	18.61%	99.23%	127026
+Acanthamoeba castellanii str. Neff	1257118	species	3	16	5.0%	14.18%	98.61%	75967
+Aureobasidium pullulans EXF-150	1043002	species	6	12	4.8%	8.91%	99.62%	234543
+Rhizosolenia setigera	3005	species	5	19	4.76%	12.62%	98.55%	165278
+Alternaria sect. Alternaria	2499237	section	3	6	4.69%	21.49%	100.0%	83976
+Acanthamoeba palestinensis	28015	species	5	85	4.31%	18.18%	96.08%	150122
+Chaetoceros debilis	122233	species	6	41	4.08%	32.96%	99.38%	259523
+Bathycoccus prasinos	41875	species	5	14	4.07%	6.9%	98.91%	229209
+Coccolithus braarudii	221442	species	3	11	4.05%	17.26%	100.0%	86189
+Prasinococcaceae	2201465	family	1	2	4.0%	23.63%	99.46%	36508
+Malassezia globosa CBS 7966	425265	species	6	15	3.82%	15.75%	98.57%	332937
+Acanthamoeba lugdunensis	61605	species	3	8	3.61%	24.15%	98.24%	108538
+Pyramimonas obovata	1411642	species	4	27	3.51%	35.7%	99.47%	138365
+Stramenopiles sp. TOSAG23-3	1735745	species	2	7	3.33%	27.85%	99.79%	80549
+Aureobasidium sp. FSWF8-4	1928478	species	4	14	3.28%	12.48%	99.87%	225141
+Cladosporium phlei	1116209	species	6	13	3.02%	7.0%	97.87%	364263
+Alexandrium tamarense	2926	species	4	16	2.84%	11.83%	97.46%	194024
+Oikopleura longicauda	107032	species	2	13	2.74%	3.83%	95.4%	120130
+Phaeocystis globosa	33658	species	3	8	2.59%	13.84%	97.63%	154798
+Nephroselmis pyriformis	156128	species	2	11	2.5%	10.48%	99.1%	94224
+Meyerozyma caribbica MG20W	1091232	species	1	2	2.22%	10.4%	99.11%	140144
+Attheya septentrionalis	420275	species	2	4	2.08%	9.37%	98.13%	133632
+Prorocentrum cordatum	2364126	species	2	4	2.02%	11.56%	96.68%	135765
+Aurelia aurita complex sp. Pacific	2496131	species	2	15	1.87%	38.02%	97.26%	153573
+Rhizopus stolonifer B9770	1274793	species	3	8	1.81%	5.73%	98.38%	273299
+Aspergillus sp. MA 6041	2153248	species	6	12	1.8%	6.4%	100.0%	605505
+Haptolina brevifila	156173	species	1	1	1.64%	9.44%	99.0%	79918
+Leptocylindrus danicus	163516	species	3	5	1.62%	10.05%	97.3%	278595
+Debaryomyces fabryi	58627	species	3	8	1.62%	6.02%	97.41%	335800
+Rhodotorula sp. FNED7-22	1928479	species	1	1	1.61%	5.5%	100.0%	96261
+Alternaria alternata	5599	species	1	4	1.49%	21.72%	100.0%	131319
+Minutocellus polymorphus	265543	species	2	8	1.34%	6.08%	99.64%	256500
+Curvularia papendorfii	1537989	species	1	1	1.32%	3.35%	100.0%	193737
+Wallemia mellicola CBS 633.66	671144	species	2	8	1.32%	15.99%	99.83%	303670
+Pseudo-nitzschia australis	44445	species	2	14	1.26%	35.85%	99.74%	257043
+Pichia occidentalis	54552	species	2	2	1.17%	2.09%	99.5%	324638
+Tripos fusus	2916	species	1	2	1.11%	15.71%	100.0%	132892
+Prasinoderma singulare	676789	species	1	7	1.1%	13.2%	100.0%	121534
+Debaryomyces subglobosus	522693	species	2	25	1.09%	16.53%	97.52%	318060
+Rhodotorula mucilaginosa	5537	species	1	1	1.06%	5.25%	100.0%	219600
+Acanthamoeba healyi	65661	species	1	2	1.06%	2.07%	96.58%	140476
+Eurotiomycetes sp.	1709936	species	2	6	1.02%	6.73%	97.99%	385143
+Cladosporium sphaerospermum UM 843	1151026	species	2	12	0.99%	7.33%	98.93%	363001
+Hypocreales	5125	order	1	1	0.98%	4.9%	98.99%	163251
+Acanthamoeba lenticulata	29196	species	1	35	0.98%	5.04%	96.26%	135987
+Prasinococcaceae sp. CCMP 1430	2489100	species	1	2	0.92%	1.43%	100.0%	225148
+Thalassiosira minuscula	385413	species	1	1	0.79%	9.76%	100.0%	220844
+Meyerozyma	766728	genus	1	9	0.76%	40.17%	100.0%	218630
+Papiliotrema laurentii RY1	1354741	species	1	6	0.7%	77.4%	98.84%	273637
+Alternaria arborescens	156630	species	1	8	0.67%	10.32%	98.21%	303330
+Rhodotorula diobovata	5288	species	1	4	0.61%	8.66%	100.0%	358851
+Candida parapsilosis	5480	species	1	1	0.58%	6.73%	100.0%	312010
+Kwoniella shandongensis	1734106	species	1	1	0.57%	3.79%	98.02%	340416
+Cladosporium cladosporioides	29917	species	1	12	0.56%	7.29%	99.59%	333901
+Rhodotorula sp. JG-1b	1305733	species	1	1	0.56%	3.94%	98.89%	395750
+Amphibalanus amphitrite	1232801	species	1	1	0.55%	12.9%	97.03%	332840
+Yarrowia bubula	1402413	species	1	1	0.55%	6.23%	100.0%	331922
+Debaryomyces prosopidis	148098	species	1	1	0.54%	3.07%	97.03%	318322
+Mucor ambiguus	91626	species	1	1	0.53%	5.45%	98.95%	321759
+Leptoxyphium fumago	5474	species	1	1	0.5%	4.14%	97.18%	373358
+Ramularia collo-cygni	112498	species	1	2	0.5%	8.7%	100.0%	364238
+Aureobasidium subglaciale EXF-2481	1043005	species	1	2	0.5%	15.0%	97.3%	354039
+Claviceps purpurea 20.1	1111077	species	1	2	0.5%	24.24%	100.0%	351866
+Pseudevernia furfuracea	136282	species	1	1	0.5%	22.9%	97.03%	360431
+Exophiala mesophila	212818	species	1	2	0.49%	13.77%	98.02%	381342
+Aureobasidium melanogenum	46634	species	1	1	0.49%	1.92%	96.97%	367526
+Lecanicillium sp. LEC01	2013060	species	1	2	0.49%	25.6%	98.11%	354158
+Penicillium griseofulvum	5078	species	1	2	0.48%	4.72%	98.08%	359535

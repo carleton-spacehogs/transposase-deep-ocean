@@ -1,0 +1,45 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+class-Dinophyceae	class	Dinophyceae	2864	0.5102	18.5053	367	719335
+class-Dinophyceae|order-Gonyaulacales	order	Gonyaulacales	40984	0.3324	5.7123	58	174474
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae	family	Ceratiaceae	39451	0.3913	6.497	52	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos	genus	Tripos	2126447	0.3913	6.497	52	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	species	Tripos fusus	2916	0.3913	6.5106	52	132892
+class-Dinophyceae|order-Gonyaulacales|family-Amphidomataceae	family	Amphidomataceae	1123714	0.1443	2.3958	6	41582
+class-Dinophyceae|order-Gonyaulacales|family-Amphidomataceae|genus-Azadinium	genus	Azadinium	632149	0.1443	2.3958	6	41582
+class-Dinophyceae|order-Gonyaulacales|family-Amphidomataceae|genus-Azadinium|species-Azadinium_spinosum	species	Azadinium spinosum	632150	0.1443	2.4008	6	41582
+class-Dinophyceae|order-Thoracosphaerales	order	Thoracosphaerales	33835	0.1647	2.8308	27	163897
+class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae	family	Thoracosphaeraceae	1691972	0.1647	2.7353	27	163897
+class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae|genus-Scrippsiella	genus	Scrippsiella	54902	0.1647	2.7353	27	163897
+class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae|genus-Scrippsiella|species-Scrippsiella_trochoidea	species	Scrippsiella trochoidea	71861	0.1647	2.741	27	163897
+class-Dinophyceae|order-Peridiniales	order	Peridiniales	2910	2.9165	50.1162	258	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae	family	Endodiniaceae	1333875	2.9165	48.4257	258	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium	genus	Brandtodinium	1482939	2.9165	48.4257	258	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	species	Brandtodinium nutricula	1333877	2.9165	48.527	258	88461
+class-Dinophyceae|order-Prorocentrales	order	Prorocentrales	2942	0.0442	0.7594	6	135765
+class-Dinophyceae|order-Prorocentrales|family-Prorocentraceae	family	Prorocentraceae	2943	0.0442	0.7338	6	135765
+class-Dinophyceae|order-Prorocentrales|family-Prorocentraceae|genus-Prorocentrum	genus	Prorocentrum	2944	0.0442	0.7338	6	135765
+class-Dinophyceae|order-Prorocentrales|family-Prorocentraceae|genus-Prorocentrum|species-Prorocentrum_cordatum	species	Prorocentrum cordatum	2364126	0.0442	0.7353	6	135765
+class-Dinophyceae|order-Suessiales	order	Suessiales	89954	0.1148	1.9734	18	156738
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae	family	Symbiodiniaceae	252141	0.1148	1.9068	18	156738
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Effrenium	genus	Effrenium	2562238	0.1148	1.9068	18	156738
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Effrenium|species-Effrenium_voratum	species	Effrenium voratum	2562239	0.1148	1.9108	18	156738
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.0815	2.9553	29	355922
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.0815	1.4001	29	355922
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae	family	Malasseziaceae	742845	0.0815	1.3529	29	355922
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.0815	1.3529	29	355922
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.0689	1.1464	24	348317
+phylum-Ascomycota|class-Dothideomycetes	class	Dothideomycetes	147541	1.0569	38.3366	8	7569
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales	order	Capnodiales	134362	1.0569	18.1619	8	7569
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae	family	Teratosphaeriaceae	668547	1.0569	17.5493	8	7569
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea	genus	Hortaea	91942	1.0569	17.5493	8	7569
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	species	Hortaea werneckii	91943	1.0569	17.586	8	7569
+phylum-Chordata|class-Appendicularia	class	Appendicularia	30302	0.0916	3.3213	11	120130
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	0.0916	1.5734	11	120130
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae	family	Oikopleuridae	41302	0.0916	1.5204	11	120130
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura	genus	Oikopleura	34763	0.0916	1.5204	11	120130
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	species	Oikopleura longicauda	107032	0.0916	1.5236	11	120130
+phylum-Arthropoda|class-Hexanauplia	class	Hexanauplia	72037	1.0168	36.8815	249	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida	order	Cyclopoida	84308	1.0168	17.4726	249	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae	family	Oithonidae	136189	1.0168	16.8832	249	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona	genus	Oithona	136190	1.0168	16.8832	249	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	species	Oithona nana	136191	1.0168	16.9185	249	244880

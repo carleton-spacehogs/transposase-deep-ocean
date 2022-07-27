@@ -1,0 +1,53 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Calcidiscus leptoporus	127549	species	61	1377	71.76%	35.96%	99.16%	114854
+Tripos fusus	2916	species	62	1601	68.89%	44.93%	98.96%	132892
+Lithomelissa setosa	1054399	species	2	16	40.0%	55.02%	98.12%	2562
+Chloropicon roscoffensis	1461544	species	60	688	37.97%	25.43%	99.07%	275974
+Brandtodinium nutricula	1333877	species	26	1082	36.62%	28.93%	98.12%	88461
+Prasinoderma singulare	676789	species	27	227	29.67%	31.07%	99.58%	121534
+Oikopleura longicauda	107032	species	19	401	26.03%	9.71%	96.21%	120130
+Scyphosphaera apsteinii	418940	species	20	107	25.0%	16.39%	99.55%	113512
+Chloropicon laureae	464258	species	14	84	25.0%	34.51%	99.17%	50762
+Pelagomonas calceolata	35677	species	17	71	22.08%	11.27%	96.99%	128353
+Chloropicon mariensis	1606511	species	21	149	19.09%	30.4%	98.29%	157984
+Prorocentrum cordatum	2364126	species	18	78	18.18%	17.58%	96.4%	135765
+Emiliania huxleyi CCMP1516	280463	species	5	29	14.71%	9.27%	99.52%	44652
+Malassezia restricta	76775	species	20	93	13.33%	8.39%	99.36%	348317
+Gephyrocapsa oceanica	38817	species	12	83	12.0%	16.63%	98.57%	137559
+unclassified Bathycoccus	2590008	genus	5	20	9.62%	12.64%	99.2%	95463
+Pycnococcus provasolii	41880	species	9	26	9.28%	22.75%	99.71%	119181
+Bathycoccus sp. TOSAG39-1	1735750	species	1	1	7.69%	7.75%	98.89%	28758
+Malassezia globosa CBS 7966	425265	species	11	50	7.01%	11.79%	98.54%	332937
+Oikopleura albicans	2500139	species	6	8	6.38%	10.31%	99.39%	126693
+Hortaea werneckii EXF-2000	1157616	species	23	123	6.2%	9.53%	98.83%	717212
+Alexandrium minutum	39455	species	1	3	5.56%	19.99%	97.42%	15570
+Bathycoccus prasinos	41875	species	6	46	4.88%	11.47%	99.1%	229209
+Karlodinium veneficum	407301	species	4	17	4.55%	15.94%	97.59%	136208
+Amoebophrya sp. AT5.2	1775427	species	1	4	4.55%	45.1%	97.28%	36997
+Alexandrium andersonii	327968	species	1	6	3.7%	21.76%	100.0%	29644
+Azadinium spinosum	632150	species	1	5	3.57%	23.63%	96.31%	41582
+Pseudo-nitzschia arenysensis	697910	species	4	22	3.17%	8.24%	99.69%	204829
+Pelagococcus subviridis	35679	species	2	2	3.03%	9.94%	96.98%	79272
+Phaeocystis antarctica	33657	species	3	6	3.0%	4.34%	97.51%	158488
+Scrippsiella trochoidea	71861	species	3	11	2.65%	17.45%	96.94%	163897
+Phaeocystis rex	1631189	species	1	4	2.56%	24.18%	97.21%	40152
+Rhodotorula	5533	genus	2	8	2.35%	40.25%	99.31%	158633
+Hanseniaspora uvarum	29833	species	2	4	1.74%	5.6%	100.0%	220680
+Phaeocystis globosa	33658	species	2	3	1.72%	9.31%	99.34%	154798
+Diploscapter coronatus	288516	species	3	6	1.36%	10.85%	98.74%	372041
+Arcocellulus cornucervis	1155433	species	1	4	1.2%	21.89%	97.46%	107135
+Thalassiosira oceanica	159749	species	1	1	1.02%	6.35%	98.02%	165190
+Hypocreales	5125	order	1	4	0.98%	17.26%	100.0%	163251
+Oidium heveae	299130	species	2	4	0.98%	8.07%	97.4%	336881
+Thalassionema frauenfeldii	186022	species	1	14	0.94%	15.02%	97.41%	154802
+Zoopage sp. CT-All	2364153	species	1	1	0.9%	1.37%	96.3%	230954
+Karenia brevis	156230	species	1	1	0.8%	10.56%	98.96%	187718
+Alexandrium tamarense	2926	species	1	1	0.71%	12.13%	96.3%	194024
+Trichosporon faecale	82510	species	1	1	0.67%	4.82%	100.0%	319143
+Rhodotorula diobovata	5288	species	1	2	0.61%	6.76%	100.0%	358851
+Leptoxyphium fumago	5474	species	1	1	0.5%	5.89%	96.04%	373358
+Cyphellophora europaea CBS 101466	1220924	species	1	6	0.5%	66.88%	100.0%	391280
+Cladosporium sp. SL-16	2048672	species	1	2	0.5%	5.26%	100.0%	366513
+Cladosporium phlei	1116209	species	1	2	0.5%	24.36%	98.01%	364263
+Cytospora leucostoma	1230097	species	1	1	0.5%	4.67%	97.03%	359071
+Aspergillus sp. MA 6041	2153248	species	1	3	0.3%	40.48%	100.0%	605505

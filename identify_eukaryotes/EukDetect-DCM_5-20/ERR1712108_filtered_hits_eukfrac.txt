@@ -1,0 +1,43 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+class-Dinophyceae|order-Gonyaulacales	order	Gonyaulacales	40984	0.1129	0.5869	15	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos	genus	Tripos	2126447	0.1129	0.7218	15	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	species	Tripos fusus	2916	0.1129	0.7847	15	132892
+phylum-Basidiomycota|class-Microbotryomycetes|order-Sporidiobolales	order	Sporidiobolales	231213	0.2208	1.1479	81	366882
+phylum-Basidiomycota|class-Microbotryomycetes|order-Sporidiobolales|family-Sporidiobolaceae|genus-Rhodotorula	genus	Rhodotorula	5533	0.2208	1.4119	81	366882
+phylum-Basidiomycota|class-Microbotryomycetes|order-Sporidiobolales|family-Sporidiobolaceae|genus-Rhodotorula|species-Rhodotorula_diobovata	species	Rhodotorula diobovata	5288	0.1923	1.3368	69	358851
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	4.6277	24.0606	1702	367784
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	4.6277	29.5951	1702	367784
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	4.8375	33.6321	1685	348317
+phylum-Ascomycota|class-Dothideomycetes|order-Dothideales	order	Dothideales	5014	0.0136	0.0707	5	367526
+phylum-Ascomycota|class-Dothideomycetes|order-Dothideales|family-Saccotheciaceae|genus-Aureobasidium	genus	Aureobasidium	5579	0.0136	0.087	5	367526
+phylum-Ascomycota|class-Dothideomycetes|order-Dothideales|family-Saccotheciaceae|genus-Aureobasidium|species-Aureobasidium_melanogenum	species	Aureobasidium melanogenum	46634	0.0136	0.0946	5	367526
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales	order	Capnodiales	134362	0.1918	0.9973	78	406625
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea	genus	Hortaea	91942	1.4179	9.068	56	39494
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	species	Hortaea werneckii	91943	1.4179	9.8579	56	39494
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae|genus-Cladosporium	genus	Cladosporium	5498	0.0599	0.3832	22	367131
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae|genus-Cladosporium|species-Cladosporium_phlei	species	Cladosporium phlei	1116209	0.0247	0.1718	9	364263
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales	order	Venturiales	1111111	3.4254	17.8095	16	4671
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae|genus-Ochroconis	genus	Ochroconis	227045	3.4254	21.906	16	4671
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae|genus-Ochroconis|species-Ochroconis_constricta	species	Ochroconis constricta	227046	3.4254	23.8143	16	4671
+phylum-Ascomycota|class-Leotiomycetes|order-Helotiales	order	Helotiales	5178	0.0758	0.3942	28	369337
+phylum-Ascomycota|class-Leotiomycetes|order-Helotiales|genus-Cadophora	genus	Cadophora	210567	0.0758	0.4848	28	369337
+phylum-Ascomycota|class-Leotiomycetes|order-Helotiales|genus-Cadophora|species-Cadophora_sp._DSE1049	species	Cadophora sp. DSE1049	1485229	0.0758	0.5271	28	369337
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales	order	Hypocreales	5125	0.0257	0.1337	9	350025
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Nectriaceae|genus-Fusarium	genus	Fusarium	5506	0.0257	0.1644	9	350025
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Nectriaceae|genus-Fusarium|species-Fusarium_poae	species	Fusarium poae	36050	0.0257	0.1788	9	350025
+class-Choanoflagellata|order-Craspedida	order	Craspedida	1924738	2.8068	14.5932	50	17814
+class-Choanoflagellata|order-Craspedida|family-Salpingoecidae|genus-Monosiga	genus	Monosiga	81525	2.8068	17.9499	50	17814
+class-Choanoflagellata|order-Craspedida|family-Salpingoecidae|genus-Monosiga|species-Monosiga_brevicollis	species	Monosiga brevicollis	81824	2.8068	19.5136	50	17814
+class-Chrysophyceae|order-Chromulinales	order	Chromulinales	96792	0.1421	0.7387	22	154847
+class-Chrysophyceae|order-Chromulinales|family-Paraphysomonadaceae|genus-Paraphysomonas	genus	Paraphysomonas	36769	0.1421	0.9086	22	154847
+class-Chrysophyceae|order-Chromulinales|family-Paraphysomonadaceae|genus-Paraphysomonas|species-Paraphysomonas_bandaiensis	species	Paraphysomonas bandaiensis	89770	0.1421	0.9878	22	154847
+class-Bigyra|order-Labyrinthulomycetes	order	Labyrinthulomycetes	35131	4.8828	25.387	15	3072
+class-Bigyra|order-Bicosoecida	order	Bicosoecida	33651	0.1971	1.025	10	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria	genus	Cafeteria	33652	0.1971	1.2608	10	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	species	Cafeteria roenbergensis	33653	0.1971	1.3706	10	50724
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	0.076	0.3949	12	157984
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.076	0.4858	12	157984
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_mariensis	species	Chloropicon mariensis	1606511	0.076	0.5281	12	157984
+phylum-Discosea|order-Longamoebia	order	Longamoebia	1485168	2.4351	12.6605	372	152768
+phylum-Discosea|order-Longamoebia|family-Acanthamoebidae|genus-Acanthamoeba	genus	Acanthamoeba	5754	2.4351	15.5727	372	152768
+phylum-Discosea|order-Longamoebia|family-Acanthamoebidae|genus-Acanthamoeba|species-Acanthamoeba_rhysodes	species	Acanthamoeba rhysodes	32599	1.0359	7.2019	118	113910

@@ -1,0 +1,33 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Haptista	phylum	Haptista	2608109	0.3972	26.4629	63	158592
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.3972	26.4629	63	158592
+phylum-Haptista|class-Haptophyta|order-Isochrysidales	order	Isochrysidales	73020	0.3972	26.4629	63	158592
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae	family	Noelaerhabdaceae	418966	0.3972	26.4629	63	158592
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa	genus	Gephyrocapsa	38816	0.3344	14.8851	46	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	species	Gephyrocapsa oceanica	38817	0.3344	15.1331	46	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania	genus	Emiliania	2902	0.8083	35.9775	17	21033
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania|species-Emiliania_huxleyi	species	Emiliania huxleyi	2903	0.8083	36.577	17	21033
+phylum-Basidiomycota	phylum	Basidiomycota	5204	0.138	9.1947	50	362253
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.138	9.1947	50	362253
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.138	9.1947	50	362253
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae	family	Malasseziaceae	742845	0.138	9.1947	50	362253
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.138	6.1439	50	362253
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.1292	5.8465	45	348317
+phylum-Chordata	phylum	Chordata	7711	0.927	61.7538	113	121897
+phylum-Chordata|class-Appendicularia	class	Appendicularia	30302	0.927	61.7538	113	121897
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	0.927	61.7538	113	121897
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae	family	Oikopleuridae	41302	0.927	61.7538	113	121897
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura	genus	Oikopleura	34763	0.927	41.2638	113	121897
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	species	Oikopleura longicauda	107032	0.899	40.6848	108	120130
+phylum-Arthropoda	phylum	Arthropoda	6656	0.0245	1.6322	6	244880
+phylum-Arthropoda|class-Hexanauplia	class	Hexanauplia	72037	0.0245	1.6322	6	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida	order	Cyclopoida	84308	0.0245	1.6322	6	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae	family	Oithonidae	136189	0.0245	1.6322	6	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona	genus	Oithona	136190	0.0245	1.0906	6	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	species	Oithona nana	136191	0.0245	1.1088	6	244880
+phylum-Bacillariophyta	phylum	Bacillariophyta	2836	0.0144	0.9565	4	278595
+phylum-Bacillariophyta|class-Coscinodiscophyceae	class	Coscinodiscophyceae	33836	0.0144	0.9565	4	278595
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Leptocylindrales	order	Leptocylindrales	163513	0.0144	0.9565	4	278595
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Leptocylindrales|family-Leptocylindraceae	family	Leptocylindraceae	163514	0.0144	0.9565	4	278595
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Leptocylindrales|family-Leptocylindraceae|genus-Leptocylindrus	genus	Leptocylindrus	163515	0.0144	0.6391	4	278595
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Leptocylindrales|family-Leptocylindraceae|genus-Leptocylindrus|species-Leptocylindrus_danicus	species	Leptocylindrus danicus	163516	0.0144	0.6498	4	278595

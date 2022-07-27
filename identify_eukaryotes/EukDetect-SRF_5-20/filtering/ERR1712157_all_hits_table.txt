@@ -1,0 +1,50 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Moesziomyces antarcticus T-34	1151754	species	1	12	100.0%	90.14%	100.0%	558
+Chloropicon mariensis	1606511	species	87	7327	79.09%	53.91%	98.35%	157984
+Moesziomyces antarcticus	84753	species	121	1733	60.5%	24.54%	99.67%	385953
+Prasinococcaceae	2201465	family	13	125	52.0%	15.62%	99.3%	36508
+Chloropicon roscoffensis	1461544	species	69	1963	43.67%	18.91%	98.47%	275974
+Oikopleura dioica	34765	species	27	577	34.18%	8.46%	95.77%	176745
+Hortaea werneckii EXF-2000	1157616	species	123	1470	33.15%	19.42%	98.82%	717212
+Pelagomonas calceolata	35677	species	25	394	32.47%	15.3%	96.5%	128353
+Chloropicon laureae	464258	species	15	177	26.79%	45.81%	99.25%	50762
+Chloropicon primus	1764295	species	34	249	24.64%	14.19%	97.11%	281336
+Pseudo-nitzschia heimii	476441	species	26	192	23.64%	18.32%	97.12%	176338
+Malassezia restricta	76775	species	31	139	20.67%	6.89%	98.96%	348317
+Prasinoderma coloniale	156133	species	17	63	19.77%	13.47%	99.29%	155270
+Oikopleura longicauda	107032	species	14	1080	19.18%	21.1%	93.94%	120130
+Prasinococcaceae sp. CCMP 1430	2489100	species	17	142	15.6%	13.02%	98.93%	225148
+Gephyrocapsa oceanica	38817	species	12	35	12.0%	14.06%	99.16%	137559
+Emiliania huxleyi CCMP1516	280463	species	4	11	11.76%	9.62%	98.77%	44652
+Cladosporium sphaerospermum UM 843	1151026	species	23	272	11.33%	24.87%	99.62%	363001
+Malassezia globosa CBS 7966	425265	species	17	78	10.83%	8.16%	98.97%	332937
+Ochroconis constricta UM 578	1442076	species	21	383	10.71%	33.88%	99.51%	370078
+Brandtodinium nutricula	1333877	species	6	69	8.45%	24.68%	99.21%	88461
+Alexandrium andersonii	327968	species	2	2	7.41%	6.44%	99.5%	29644
+Phaeocystis globosa	33658	species	6	58	5.17%	32.58%	98.77%	154798
+Phaeocystis rex	1631189	species	2	8	5.13%	16.93%	96.7%	40152
+Moesziomyces aphidis DSM 70725	1391700	species	10	260	5.1%	8.24%	97.5%	388390
+Prorocentrum cordatum	2364126	species	5	8	5.05%	11.69%	97.22%	135765
+Venturia inaequalis	5025	species	10	124	4.9%	37.48%	99.5%	367209
+Tripos fusus	2916	species	4	69	4.44%	37.21%	98.97%	132892
+Scrippsiella trochoidea	71861	species	4	6	3.54%	7.04%	96.67%	163897
+Phaeocystis antarctica	33657	species	3	5	3.0%	4.96%	97.63%	158488
+Rhodotorula diobovata	5288	species	4	73	2.45%	25.78%	99.45%	358851
+unclassified Moesziomyces	2617889	genus	2	5	2.15%	6.07%	97.33%	188875
+Stramenopiles sp. TOSAG23-2	1735743	species	1	13	2.13%	49.07%	98.91%	66251
+Thalassiosira oceanica	159749	species	2	3	2.04%	12.84%	96.2%	165190
+Candida parapsilosis	5480	species	3	26	1.74%	16.81%	99.6%	312010
+Karlodinium veneficum	407301	species	1	2	1.14%	23.12%	97.44%	136208
+Cladosporium cladosporioides	29917	species	2	10	1.13%	4.33%	98.5%	333901
+Prasinoderma singulare	676789	species	1	2	1.1%	5.54%	100.0%	121534
+Moesziomyces sp. F5C1	2039272	species	1	4	0.93%	6.82%	97.26%	212156
+Dikarya	451864	subkingdom	1	1	0.87%	35.09%	96.0%	179167
+Candida metapsilosis	273372	species	1	1	0.78%	8.29%	98.02%	219526
+Clavispora lusitaniae ATCC 42720	306902	species	1	1	0.58%	5.57%	100.0%	320224
+Rhodotorula sp. JG-1b	1305733	species	1	7	0.56%	10.6%	98.76%	395750
+Linderina pennispora	61395	species	1	6	0.53%	4.0%	96.08%	349115
+Knufia petricola	206542	species	1	16	0.51%	73.87%	100.0%	374300
+Leptoxyphium fumago	5474	species	1	2	0.5%	6.12%	95.24%	373358
+Penicillium nalgiovense	60175	species	1	1	0.48%	2.77%	100.0%	361128
+Aspergillus sp. MA 6041	2153248	species	1	2	0.3%	1.85%	100.0%	605505
+Rachicladosporium antarcticum	1507870	species	1	1	0.28%	4.17%	98.91%	682722

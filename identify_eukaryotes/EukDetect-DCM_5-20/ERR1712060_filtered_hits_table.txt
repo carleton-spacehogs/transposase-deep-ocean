@@ -1,0 +1,26 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Calcidiscus leptoporus	species	phylum-Haptista|class-Haptophyta|order-Coccolithales|family-Calcidiscaceae|genus-Calcidiscus|species-Calcidiscus_leptoporus	127549	61	1377	71.76%	35.96%	99.16%
+Tripos fusus	species	class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	2916	62	1601	68.89%	44.93%	98.96%
+Lithomelissa setosa	species	class-Polycystinea|order-Nassellaria|family-Plagiacanthidae|genus-Lithomelissa|species-Lithomelissa_setosa	1054399	2	16	40.0%	55.02%	98.12%
+Chloropicon roscoffensis	species	phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	1461544	60	688	37.97%	25.43%	99.07%
+Brandtodinium nutricula	species	class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	1333877	26	1082	36.62%	28.93%	98.12%
+Prasinoderma singulare	species	phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinoderma|species-Prasinoderma_singulare	676789	27	227	29.67%	31.07%	99.58%
+Oikopleura longicauda	species	phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	107032	19	401	26.03%	9.71%	96.21%
+Scyphosphaera apsteinii	species	phylum-Haptista|class-Haptophyta|order-Coccosphaerales|family-Pontosphaeraceae|genus-Scyphosphaera|species-Scyphosphaera_apsteinii	418940	20	107	25.0%	16.39%	99.55%
+Pelagomonas calceolata	species	class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	35677	17	71	22.08%	11.27%	96.99%
+Prorocentrum cordatum	species	class-Dinophyceae|order-Prorocentrales|family-Prorocentraceae|genus-Prorocentrum|species-Prorocentrum_cordatum	2364126	18	78	18.18%	17.58%	96.4%
+Emiliania huxleyi CCMP1516	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania|species-Emiliania_huxleyi	280463	5	29	14.71%	9.27%	99.52%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	20	93	13.33%	8.39%	99.36%
+Gephyrocapsa oceanica	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	38817	12	83	12.0%	16.63%	98.57%
+unclassified Bathycoccus	no rank	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	2590008	5	20	9.62%	12.64%	99.2%
+Pycnococcus provasolii	species	phylum-Chlorophyta|family-Pycnococcaceae|genus-Pycnococcus|species-Pycnococcus_provasolii	41880	9	26	9.28%	22.75%	99.71%
+Hortaea werneckii EXF-2000	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	1157616	23	123	6.2%	9.53%	98.83%
+Bathycoccus prasinos	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	41875	6	46	4.88%	11.47%	99.1%
+Karlodinium veneficum	species	class-Dinophyceae|order-Gymnodiniales|family-Kareniaceae|genus-Karlodinium|species-Karlodinium_veneficum	407301	4	17	4.55%	15.94%	97.59%
+Pseudo-nitzschia arenysensis	species	phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Pseudo-nitzschia|species-Pseudo-nitzschia_arenysensis	697910	4	22	3.17%	8.24%	99.69%
+Phaeocystis antarctica	species	phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	33657	3	6	3.0%	4.34%	97.51%
+Scrippsiella trochoidea	species	class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae|genus-Scrippsiella|species-Scrippsiella_trochoidea	71861	3	11	2.65%	17.45%	96.94%
+Rhodotorula	genus	phylum-Basidiomycota|class-Microbotryomycetes|order-Sporidiobolales|family-Sporidiobolaceae|genus-Rhodotorula	5533	2	8	2.35%	40.25%	99.31%
+Hanseniaspora uvarum	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycodaceae|genus-Hanseniaspora|species-Hanseniaspora_uvarum	29833	2	4	1.74%	5.6%	100.0%
+Diploscapter coronatus	species	phylum-Nematoda|class-Chromadorea|order-Rhabditida|family-Rhabditidae|genus-Diploscapter|species-Diploscapter_coronatus	288516	3	6	1.36%	10.85%	98.74%
+Oidium heveae	species	phylum-Ascomycota|class-Leotiomycetes|order-Erysiphales|family-Erysiphaceae|genus-Oidium|species-Oidium_heveae	299130	2	4	0.98%	8.07%	97.4%

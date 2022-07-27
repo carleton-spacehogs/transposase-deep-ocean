@@ -1,0 +1,15 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Alexandrium andersonii	327968	species	2	2	7.41%	5.74%	98.9%	29644
+Calcidiscus leptoporus	127549	species	5	11	5.88%	8.57%	99.78%	114854
+Brandtodinium nutricula	1333877	species	4	6	5.63%	8.75%	98.82%	88461
+Oithona nana	136191	species	3	4	2.01%	9.29%	98.3%	244880
+Scrippsiella trochoidea	71861	species	2	3	1.77%	10.88%	100.0%	163897
+Hortaea werneckii EXF-2000	1157616	species	6	9	1.62%	4.02%	99.39%	717212
+Oikopleura longicauda	107032	species	1	8	1.37%	6.5%	98.37%	120130
+Adineta ricciae	249248	species	1	1	1.35%	6.77%	98.02%	137960
+Tripos fusus	2916	species	1	2	1.11%	4.48%	99.5%	132892
+Effrenium voratum	2562239	species	1	2	0.96%	7.92%	98.38%	156738
+Gloeochaete wittrockiana	38269	species	1	2	0.83%	10.2%	99.33%	196258
+Malassezia restricta	76775	species	1	1	0.67%	9.67%	97.03%	348317
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	5.6%	98.63%	332937
+Exophiala xenobiotica	348802	species	1	2	0.5%	3.12%	100.0%	372377

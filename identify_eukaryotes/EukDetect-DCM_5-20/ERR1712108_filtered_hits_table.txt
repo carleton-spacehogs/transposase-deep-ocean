@@ -1,0 +1,17 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	94	1685	62.67%	21.18%	98.48%
+Monosiga brevicollis MX1	species	class-Choanoflagellata|order-Craspedida|family-Salpingoecidae|genus-Monosiga|species-Monosiga_brevicollis	431895	12	50	13.33%	17.58%	99.2%
+Acanthamoeba rhysodes	species	phylum-Discosea|order-Longamoebia|family-Acanthamoebidae|genus-Acanthamoeba|species-Acanthamoeba_rhysodes	32599	9	118	11.69%	26.76%	98.63%
+Cafeteria roenbergensis	species	class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	33653	5	10	11.63%	9.16%	99.87%
+Acanthamoeba	genus	phylum-Discosea|order-Longamoebia|family-Acanthamoebidae|genus-Acanthamoeba	5754	6	21	5.71%	23.07%	99.43%
+Paraphysomonas bandaiensis	species	class-Chrysophyceae|order-Chromulinales|family-Paraphysomonadaceae|genus-Paraphysomonas|species-Paraphysomonas_bandaiensis	89770	5	22	5.62%	14.63%	99.69%
+Thraustochytriaceae	family	class-Bigyra|order-Labyrinthulomycetes|family-Thraustochytriaceae	33674	3	15	4.48%	23.31%	99.86%
+Hortaea werneckii EXF-2000	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	1157616	16	56	4.31%	7.78%	98.76%
+Rhodotorula diobovata	species	phylum-Basidiomycota|class-Microbotryomycetes|order-Sporidiobolales|family-Sporidiobolaceae|genus-Rhodotorula|species-Rhodotorula_diobovata	5288	7	69	4.29%	10.19%	99.78%
+Tripos fusus	species	class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	2916	3	15	3.33%	13.17%	96.61%
+Cadophora sp. DSE1049	species	phylum-Ascomycota|class-Leotiomycetes|order-Helotiales|genus-Cadophora|species-Cadophora_sp._DSE1049	1485229	6	28	2.9%	7.4%	97.28%
+Chloropicon mariensis	species	phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_mariensis	1606511	2	12	1.82%	10.13%	99.75%
+Cladosporium phlei	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae|genus-Cladosporium|species-Cladosporium_phlei	1116209	3	9	1.51%	9.46%	97.11%
+Ochroconis constricta UM 578	species	phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae|genus-Ochroconis|species-Ochroconis_constricta	1442076	2	16	1.02%	17.0%	99.5%
+Aureobasidium melanogenum	species	phylum-Ascomycota|class-Dothideomycetes|order-Dothideales|family-Saccotheciaceae|genus-Aureobasidium|species-Aureobasidium_melanogenum	46634	2	5	0.98%	13.4%	99.4%
+Fusarium poae	species	phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Nectriaceae|genus-Fusarium|species-Fusarium_poae	36050	2	9	0.97%	30.04%	100.0%

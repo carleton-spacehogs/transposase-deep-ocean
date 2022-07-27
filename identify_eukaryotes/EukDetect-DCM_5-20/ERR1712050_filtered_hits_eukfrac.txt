@@ -1,0 +1,59 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+class-Dinophyceae|order-Gonyaulacales	order	Gonyaulacales	40984	0.8003	6.0741	131	163694
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae	family	Gonyaulacaceae	33834	0.4545	3.3153	14	30802
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium	genus	Alexandrium	2924	0.4545	2.8781	14	30802
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium|species-Alexandrium_andersonii	species	Alexandrium andersonii	327968	0.4048	2.535	12	29644
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae	family	Ceratiaceae	39451	0.8804	6.4218	117	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos	genus	Tripos	2126447	0.8804	5.5749	117	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	species	Tripos fusus	2916	0.8804	5.5135	117	132892
+class-Dinophyceae|order-Thoracosphaerales	order	Thoracosphaerales	33835	0.4271	3.2417	70	163897
+class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae	family	Thoracosphaeraceae	1691972	0.4271	3.1153	70	163897
+class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae|genus-Scrippsiella	genus	Scrippsiella	54902	0.4271	2.7044	70	163897
+class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae|genus-Scrippsiella|species-Scrippsiella_trochoidea	species	Scrippsiella trochoidea	71861	0.4271	2.6747	70	163897
+class-Dinophyceae|order-Peridiniales	order	Peridiniales	2910	2.4644	18.7046	218	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae	family	Endodiniaceae	1333875	2.4644	17.9752	218	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium	genus	Brandtodinium	1482939	2.4644	15.6046	218	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	species	Brandtodinium nutricula	1333877	2.4644	15.4328	218	88461
+class-Dinophyceae|order-Prorocentrales	order	Prorocentrales	2942	0.0295	0.2236	4	135765
+class-Dinophyceae|order-Prorocentrales|family-Prorocentraceae	family	Prorocentraceae	2943	0.0295	0.2149	4	135765
+class-Dinophyceae|order-Prorocentrales|family-Prorocentraceae|genus-Prorocentrum	genus	Prorocentrum	2944	0.0295	0.1866	4	135765
+class-Dinophyceae|order-Prorocentrales|family-Prorocentraceae|genus-Prorocentrum|species-Prorocentrum_cordatum	species	Prorocentrum cordatum	2364126	0.0295	0.1845	4	135765
+phylum-Haptista|class-Haptophyta|order-Isochrysidales	order	Isochrysidales	73020	0.0509	0.3862	7	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae	family	Noelaerhabdaceae	418966	0.0509	0.3712	7	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa	genus	Gephyrocapsa	38816	0.0509	0.3222	7	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	species	Gephyrocapsa oceanica	38817	0.0509	0.3187	7	137559
+phylum-Discosea|order-Longamoebia	order	Longamoebia	1485168	0.1671	1.2682	47	281288
+phylum-Discosea|order-Longamoebia|family-Acanthamoebidae	family	Acanthamoebidae	33677	0.1671	1.2188	47	281288
+phylum-Discosea|order-Longamoebia|family-Acanthamoebidae|genus-Acanthamoeba	genus	Acanthamoeba	5754	0.1671	1.058	47	281288
+phylum-Discosea|order-Longamoebia|family-Acanthamoebidae|genus-Acanthamoeba|species-Acanthamoeba_quina	species	Acanthamoeba quina	211522	0.0768	0.4808	9	117232
+phylum-Discosea|order-Longamoebia|family-Acanthamoebidae|genus-Acanthamoeba|species-Acanthamoeba_palestinensis	species	Acanthamoeba palestinensis	28015	0.0933	0.584	14	150122
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	1.7895	13.5827	665	371603
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae	family	Malasseziaceae	742845	1.7895	13.053	665	371603
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	1.7895	11.3316	665	371603
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	1.8144	11.3627	632	348317
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales	order	Capnodiales	134362	2.5931	19.6816	434	167368
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae	family	Teratosphaeriaceae	668547	2.5931	18.9141	434	167368
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea	genus	Hortaea	91942	2.5931	16.4198	434	167368
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	species	Hortaea werneckii	91943	2.5931	16.239	434	167368
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales	order	Hypocreales	5125	3.6898	28.0057	56	15177
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Nectriaceae	family	Nectriaceae	110618	3.6898	26.9135	56	15177
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Nectriaceae|genus-Fusarium	genus	Fusarium	5506	3.6898	23.3642	56	15177
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Nectriaceae|genus-Fusarium|species-[Nectria]_haematococca	species	[Nectria] haematococca	140110	3.9573	24.7819	30	7581
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales	order	Saccharomycetales	4892	0.1063	0.8065	31	291746
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae	family	Saccharomycetaceae	4893	0.1063	0.775	31	291746
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Kluyveromyces	genus	Kluyveromyces	4910	0.0899	0.569	26	289364
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Kluyveromyces|species-Kluyveromyces_lactis	species	Kluyveromyces lactis	28985	0.0899	0.5627	26	289364
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces	genus	Saccharomyces	4930	2.0991	13.2916	5	2382
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces|species-Saccharomyces_cerevisiae	species	Saccharomyces cerevisiae	4932	2.0991	13.1453	5	2382
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	0.8075	6.1286	97	120130
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae	family	Oikopleuridae	41302	0.8075	5.8896	97	120130
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura	genus	Oikopleura	34763	0.8075	5.1129	97	120130
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	species	Oikopleura longicauda	107032	0.8075	5.0566	97	120130
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida	order	Cyclopoida	84308	0.0408	0.3099	10	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae	family	Oithonidae	136189	0.0408	0.2979	10	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona	genus	Oithona	136190	0.0408	0.2586	10	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	species	Oithona nana	136191	0.0408	0.2557	10	244880
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	0.209	1.5864	34	162670
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae	family	Chloropicaceae	2302913	0.209	1.5245	34	162670
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.209	1.3235	34	162670
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_mariensis	species	Chloropicon mariensis	1606511	0.1393	0.8721	22	157984

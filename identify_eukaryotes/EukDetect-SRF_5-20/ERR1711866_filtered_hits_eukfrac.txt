@@ -1,0 +1,45 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Ascomycota|class-Saccharomycetes	class	Saccharomycetes	4891	0.0865	3.7371	30	346651
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales	order	Saccharomycetales	4892	0.0865	2.4415	30	346651
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae	family	Debaryomycetaceae	766764	0.0478	1.0152	16	334975
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Meyerozyma	genus	Meyerozyma	766728	0.3919	6.3211	9	22965
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Meyerozyma|species-Meyerozyma_caribbica	species	Meyerozyma caribbica	66948	0.2903	4.2407	5	17223
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida	genus	Candida	1535326	0.0224	0.3619	7	312010
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida|species-Candida_parapsilosis	species	Candida parapsilosis	5480	0.0224	0.3277	7	312010
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae	family	Saccharomycetaceae	4893	1.199	25.4848	14	11676
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces	genus	Saccharomyces	4930	1.199	19.3399	14	11676
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces|species-Saccharomyces_cerevisiae	species	Saccharomyces cerevisiae	4932	1.199	17.5149	14	11676
+phylum-Ascomycota|class-Eurotiomycetes	class	Eurotiomycetes	147545	0.5276	22.7834	258	488996
+phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales	order	Eurotiales	5042	0.5276	14.8847	258	488996
+phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae	family	Aspergillaceae	1131492	0.5276	11.214	258	488996
+phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae|genus-Aspergillus	genus	Aspergillus	5052	1.4517	23.4148	184	126750
+phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae|genus-Aspergillus|species-Aspergillus_sydowii	species	Aspergillus sydowii	75750	2.245	32.7935	117	52116
+phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae|genus-Penicillium	genus	Penicillium	5073	0.2043	3.2949	74	362246
+phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae|genus-Penicillium|species-Penicillium_chrysogenum	species	Penicillium chrysogenum	5076	0.1974	2.8834	71	359693
+phylum-Ascomycota|class-Dothideomycetes	class	Dothideomycetes	147541	0.6825	29.4706	31	45423
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales	order	Capnodiales	134362	0.6224	17.5602	25	40164
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae	family	Teratosphaeriaceae	668547	0.6224	13.2297	25	40164
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea	genus	Hortaea	91942	0.6224	10.0397	25	40164
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	species	Hortaea werneckii	91943	0.6224	9.0924	25	40164
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales	order	Venturiales	1111111	1.1409	32.1865	6	5259
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae	family	Sympoventuriaceae	1111112	1.1409	24.2491	6	5259
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae|genus-Ochroconis	genus	Ochroconis	227045	1.1409	18.4021	6	5259
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae|genus-Ochroconis|species-Ochroconis_constricta	species	Ochroconis constricta	227046	1.1409	16.6656	6	5259
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.953	41.1537	146	153196
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.953	26.8863	146	153196
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae	family	Malasseziaceae	742845	0.953	20.256	146	153196
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.953	15.3718	146	153196
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_globosa	species	Malassezia globosa	76773	0.9142	13.3541	88	96259
+class-Dinophyceae	class	Dinophyceae	2864	0.0661	2.8553	25	378091
+class-Dinophyceae|order-Gonyaulacales	order	Gonyaulacales	40984	0.0677	1.9106	9	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae	family	Ceratiaceae	39451	0.0677	1.4394	9	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos	genus	Tripos	2126447	0.0677	1.0924	9	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	species	Tripos fusus	2916	0.0677	0.9893	9	132892
+class-Dinophyceae|order-Peridiniales	order	Peridiniales	2910	0.1017	2.8702	9	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae	family	Endodiniaceae	1333875	0.1017	2.1624	9	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium	genus	Brandtodinium	1482939	0.1017	1.641	9	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	species	Brandtodinium nutricula	1333877	0.1017	1.4862	9	88461
+class-Dinophyceae|order-Suessiales	order	Suessiales	89954	0.0447	1.2599	7	156738
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae	family	Symbiodiniaceae	252141	0.0447	0.9492	7	156738
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Effrenium	genus	Effrenium	2562238	0.0447	0.7204	7	156738
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Effrenium|species-Effrenium_voratum	species	Effrenium voratum	2562239	0.0447	0.6524	7	156738

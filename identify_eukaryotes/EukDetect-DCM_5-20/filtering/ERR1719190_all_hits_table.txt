@@ -1,0 +1,35 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Brandtodinium nutricula	1333877	species	65	543	91.55%	37.53%	99.24%	88461
+Tripos fusus	2916	species	44	131	48.89%	14.08%	99.14%	132892
+Chloropicon mariensis	1606511	species	40	163	36.36%	15.95%	99.18%	157984
+Chloropicon roscoffensis	1461544	species	48	325	30.38%	15.23%	99.1%	275974
+Hortaea werneckii EXF-2000	1157616	species	82	223	22.1%	9.16%	99.2%	717212
+Chloropicon laureae	464258	species	12	32	21.43%	21.36%	99.55%	50762
+Lithomelissa setosa	1054399	species	1	13	20.0%	67.61%	97.92%	2562
+Oikopleura longicauda	107032	species	14	97	19.18%	9.24%	97.49%	120130
+Prasinococcaceae	2201465	family	4	7	16.0%	20.35%	99.37%	36508
+Oikopleura albicans	2500139	species	15	35	15.96%	12.31%	97.72%	126693
+Azadinium spinosum	632150	species	4	6	14.29%	8.22%	97.1%	41582
+Prorocentrum cordatum	2364126	species	13	24	13.13%	10.57%	96.91%	135765
+Gephyrocapsa oceanica	38817	species	12	22	12.0%	12.92%	98.28%	137559
+Oithona nana	136191	species	17	52	11.41%	11.14%	97.25%	244880
+Prasinoderma singulare	676789	species	8	14	8.79%	11.06%	99.84%	121534
+Effrenium voratum	2562239	species	9	20	8.65%	11.38%	98.14%	156738
+Durusdinium trenchii	1381693	species	3	5	6.52%	13.24%	97.62%	38336
+Pelagomonas calceolata	35677	species	5	10	6.49%	10.52%	99.34%	128353
+Oikopleura dioica	34765	species	5	8	6.33%	3.84%	97.24%	176745
+Prasinoderma coloniale	156133	species	5	13	5.81%	9.23%	98.87%	155270
+Rhodotorula diobovata	5288	species	6	13	3.68%	8.5%	99.81%	358851
+Prasinococcaceae sp. CCMP 1430	2489100	species	4	7	3.67%	7.27%	99.63%	225148
+Scrippsiella trochoidea	71861	species	4	8	3.54%	16.7%	96.71%	163897
+Emiliania huxleyi CCMP1516	280463	species	1	2	2.94%	14.55%	98.92%	44652
+Chloropicon primus	1764295	species	4	7	2.9%	3.55%	98.04%	281336
+Stramenopiles sp. TOSAG23-2	1735743	species	1	2	2.13%	18.42%	99.0%	66251
+Pelagococcus subviridis	35679	species	1	1	1.52%	6.41%	95.65%	79272
+Gonyaulax spinifera	66791	species	1	1	1.43%	12.78%	98.97%	72996
+Phaeocystis antarctica	33657	species	1	2	1.0%	13.82%	96.41%	158488
+Phaeocystis globosa	33658	species	1	2	0.86%	20.47%	100.0%	154798
+Malassezia globosa CBS 7966	425265	species	1	1	0.64%	5.94%	98.9%	332937
+Rhodotorula sp. JG-1b	1305733	species	1	1	0.56%	4.34%	100.0%	395750
+Leptocylindrus danicus	163516	species	1	2	0.54%	9.41%	100.0%	278595
+Phialosimplex sp. HF37	1960876	species	1	2	0.49%	23.79%	97.74%	374233

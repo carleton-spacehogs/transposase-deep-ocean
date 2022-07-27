@@ -1,0 +1,56 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+class-Dinophyceae	class	Dinophyceae	2864	1.0383	29.2994	400	385250
+class-Dinophyceae|order-Gonyaulacales	order	Gonyaulacales	40984	2.28	33.493	303	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae	family	Ceratiaceae	39451	2.28	33.493	303	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos	genus	Tripos	2126447	2.28	33.493	303	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	species	Tripos fusus	2916	2.28	33.4412	303	132892
+class-Dinophyceae|order-Peridiniales	order	Peridiniales	2910	0.9496	13.9488	84	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae	family	Endodiniaceae	1333875	0.9496	13.9488	84	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium	genus	Brandtodinium	1482939	0.9496	13.9488	84	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	species	Brandtodinium nutricula	1333877	0.9496	13.9273	84	88461
+class-Dinophyceae|order-Thoracosphaerales	order	Thoracosphaerales	33835	0.0793	1.1652	13	163897
+class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae	family	Thoracosphaeraceae	1691972	0.0793	1.1652	13	163897
+class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae|genus-Scrippsiella	genus	Scrippsiella	54902	0.0793	1.1652	13	163897
+class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae|genus-Scrippsiella|species-Scrippsiella_trochoidea	species	Scrippsiella trochoidea	71861	0.0793	1.1634	13	163897
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	2.1144	59.6668	757	358017
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	2.1144	31.06	757	358017
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae	family	Malasseziaceae	742845	2.1144	31.06	757	358017
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	2.1144	31.06	757	358017
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	2.1618	31.7072	753	348317
+phylum-Basidiomycota|class-Microbotryomycetes	class	Microbotryomycetes	162481	0.0474	1.3368	17	358851
+phylum-Basidiomycota|class-Microbotryomycetes|order-Sporidiobolales	order	Sporidiobolales	231213	0.0474	0.6959	17	358851
+phylum-Basidiomycota|class-Microbotryomycetes|order-Sporidiobolales|family-Sporidiobolaceae	family	Sporidiobolaceae	1799696	0.0474	0.6959	17	358851
+phylum-Basidiomycota|class-Microbotryomycetes|order-Sporidiobolales|family-Sporidiobolaceae|genus-Rhodotorula	genus	Rhodotorula	5533	0.0474	0.6959	17	358851
+phylum-Basidiomycota|class-Microbotryomycetes|order-Sporidiobolales|family-Sporidiobolaceae|genus-Rhodotorula|species-Rhodotorula_diobovata	species	Rhodotorula diobovata	5288	0.0474	0.6948	17	358851
+phylum-Ascomycota|class-Dothideomycetes	class	Dothideomycetes	147541	0.0315	0.8886	23	730423
+phylum-Ascomycota|class-Dothideomycetes|order-Dothideales	order	Dothideales	5014	0.0136	0.1998	5	367526
+phylum-Ascomycota|class-Dothideomycetes|order-Dothideales|family-Saccotheciaceae	family	Saccotheciaceae	1570301	0.0136	0.1998	5	367526
+phylum-Ascomycota|class-Dothideomycetes|order-Dothideales|family-Saccotheciaceae|genus-Aureobasidium	genus	Aureobasidium	5579	0.0136	0.1998	5	367526
+phylum-Ascomycota|class-Dothideomycetes|order-Dothideales|family-Saccotheciaceae|genus-Aureobasidium|species-Aureobasidium_melanogenum	species	Aureobasidium melanogenum	46634	0.0136	0.1995	5	367526
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales	order	Capnodiales	134362	0.9171	13.4722	11	11994
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae	family	Teratosphaeriaceae	668547	0.9171	13.4722	11	11994
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea	genus	Hortaea	91942	0.9171	13.4722	11	11994
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	species	Hortaea werneckii	91943	0.9171	13.4514	11	11994
+phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales	order	Pleosporales	92860	0.0199	0.293	7	350903
+phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Pleosporaceae	family	Pleosporaceae	28556	0.0199	0.293	7	350903
+phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Pleosporaceae|genus-Alternaria	genus	Alternaria	5598	0.0199	0.293	7	350903
+phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Pleosporaceae|genus-Alternaria|species-Alternaria_consortialis	species	Alternaria consortialis	230004	0.0199	0.2926	7	350903
+phylum-Chordata|class-Appendicularia	class	Appendicularia	30302	0.0971	2.7389	13	133940
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	0.0971	1.4257	13	133940
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae	family	Oikopleuridae	41302	0.0971	1.4257	13	133940
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura	genus	Oikopleura	34763	0.0971	1.4257	13	133940
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_albicans	species	Oikopleura albicans	2500139	0.0631	0.9261	8	126693
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	0.1406	3.9689	39	277294
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	0.1406	2.066	39	277294
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae	family	Chloropicaceae	2302913	0.1406	2.066	39	277294
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.1406	2.066	39	277294
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	0.1377	2.0195	38	275974
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.0744	2.1007	17	228366
+phylum-Haptista|class-Haptophyta|order-Coccosphaerales	order	Coccosphaerales	73027	0.0352	0.5176	4	113512
+phylum-Haptista|class-Haptophyta|order-Coccosphaerales|family-Pontosphaeraceae	family	Pontosphaeraceae	418939	0.0352	0.5176	4	113512
+phylum-Haptista|class-Haptophyta|order-Coccosphaerales|family-Pontosphaeraceae|genus-Scyphosphaera	genus	Scyphosphaera	2134067	0.0352	0.5176	4	113512
+phylum-Haptista|class-Haptophyta|order-Coccosphaerales|family-Pontosphaeraceae|genus-Scyphosphaera|species-Scyphosphaera_apsteinii	species	Scyphosphaera apsteinii	418940	0.0352	0.5168	4	113512
+phylum-Haptista|class-Haptophyta|order-Coccolithales	order	Coccolithales	418917	0.1132	1.6627	13	114854
+phylum-Haptista|class-Haptophyta|order-Coccolithales|family-Calcidiscaceae	family	Calcidiscaceae	418931	0.1132	1.6627	13	114854
+phylum-Haptista|class-Haptophyta|order-Coccolithales|family-Calcidiscaceae|genus-Calcidiscus	genus	Calcidiscus	127548	0.1132	1.6627	13	114854
+phylum-Haptista|class-Haptophyta|order-Coccolithales|family-Calcidiscaceae|genus-Calcidiscus|species-Calcidiscus_leptoporus	species	Calcidiscus leptoporus	127549	0.1132	1.6601	13	114854

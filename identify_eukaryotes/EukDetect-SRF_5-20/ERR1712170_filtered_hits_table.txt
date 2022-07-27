@@ -1,0 +1,22 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	91	797	60.67%	19.57%	98.92%
+Paraphysomonas bandaiensis	species	class-Chrysophyceae|order-Chromulinales|family-Paraphysomonadaceae|genus-Paraphysomonas|species-Paraphysomonas_bandaiensis	89770	33	210	37.08%	17.74%	99.57%
+Knufia petricola	species	phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Trichomeriaceae|genus-Knufia|species-Knufia_petricola	206542	24	83	12.18%	13.06%	99.85%
+Scrippsiella trochoidea	species	class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae|genus-Scrippsiella|species-Scrippsiella_trochoidea	71861	13	47	11.5%	16.93%	98.79%
+Oikopleura longicauda	species	phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	107032	6	294	8.22%	15.17%	95.31%
+Oithona nana	species	phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	136191	10	55	6.71%	16.84%	96.7%
+Rhizosolenia setigera	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Rhizosoleniales|family-Rhizosoleniaceae|genus-Rhizosolenia|species-Rhizosolenia_setigera	3005	7	23	6.67%	16.87%	99.09%
+Pseudo-nitzschia arenysensis	species	phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Pseudo-nitzschia|species-Pseudo-nitzschia_arenysensis	697910	8	21	6.35%	12.24%	97.95%
+Exophiala mesophila	species	phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala|species-Exophiala_mesophila	212818	9	27	4.43%	12.17%	97.24%
+Hortaea werneckii EXF-2000	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	1157616	16	60	4.31%	7.59%	99.28%
+Micromonas	genus	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	38832	7	23	3.93%	6.34%	99.56%
+Thalassionema frauenfeldii	species	phylum-Bacillariophyta|class-Fragilariophyceae|order-Thalassionemales|family-Thalassionemataceae|genus-Thalassionema|species-Thalassionema_frauenfeldii	186022	4	5	3.77%	6.16%	97.29%
+Karlodinium veneficum	species	class-Dinophyceae|order-Gymnodiniales|family-Kareniaceae|genus-Karlodinium|species-Karlodinium_veneficum	407301	3	6	3.41%	16.49%	97.5%
+Micromonas bravo	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_bravo	296588	3	6	2.54%	9.07%	97.52%
+Acartia fossae	species	phylum-Arthropoda|class-Hexanauplia|order-Calanoida|family-Acartiidae|genus-Acartia|species-Acartia_fossae	1453877	4	12	2.2%	12.5%	97.02%
+Gephyrocapsa oceanica	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	38817	2	4	2.0%	22.92%	99.74%
+Rhodotorula sp. JG-1b	species	phylum-Basidiomycota|class-Microbotryomycetes|order-Sporidiobolales|family-Sporidiobolaceae|genus-Rhodotorula|species-Rhodotorula_sp._JG-1b	1305733	3	13	1.67%	17.15%	98.93%
+Aureobasidium melanogenum	species	phylum-Ascomycota|class-Dothideomycetes|order-Dothideales|family-Saccotheciaceae|genus-Aureobasidium|species-Aureobasidium_melanogenum	46634	3	10	1.46%	21.06%	99.87%
+Chloropicon primus	species	phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_primus	1764295	2	9	1.45%	11.51%	98.58%
+Candida orthopsilosis Co 90-125	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida|species-Candida_orthopsilosis	1136231	2	9	1.19%	39.31%	99.39%
+Eurotiomycetes sp.	species	phylum-Ascomycota|class-Eurotiomycetes|species-Eurotiomycetes_sp.	1709936	2	9	1.02%	5.88%	97.79%

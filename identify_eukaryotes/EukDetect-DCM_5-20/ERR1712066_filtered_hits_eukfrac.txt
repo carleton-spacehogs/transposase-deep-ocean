@@ -1,0 +1,58 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+class-Dinophyceae|order-Gonyaulacales	order	Gonyaulacales	40984	0.1639	1.0769	5	30505
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae	family	Gonyaulacaceae	33834	0.1639	1.0769	5	30505
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium	genus	Alexandrium	2924	0.1639	1.0769	5	30505
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium|species-Alexandrium_andersonii	species	Alexandrium andersonii	327968	0.1349	0.7775	4	29644
+class-Dinophyceae|order-Peridiniales	order	Peridiniales	2910	5.2792	34.6853	467	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae	family	Endodiniaceae	1333875	5.2792	34.6853	467	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium	genus	Brandtodinium	1482939	5.2792	34.6853	467	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	species	Brandtodinium nutricula	1333877	5.2792	30.417	467	88461
+class-Dinophyceae|order-Thoracosphaerales	order	Thoracosphaerales	33835	0.1037	0.6815	17	163897
+class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae	family	Thoracosphaeraceae	1691972	0.1037	0.6815	17	163897
+class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae|genus-Scrippsiella	genus	Scrippsiella	54902	0.1037	0.6815	17	163897
+class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae|genus-Scrippsiella|species-Scrippsiella_trochoidea	species	Scrippsiella trochoidea	71861	0.1037	0.5976	17	163897
+class-Dinophyceae|order-Suessiales	order	Suessiales	89954	0.0766	0.503	12	156738
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae	family	Symbiodiniaceae	252141	0.0766	0.503	12	156738
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Effrenium	genus	Effrenium	2562238	0.0766	0.503	12	156738
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Effrenium|species-Effrenium_voratum	species	Effrenium voratum	2562239	0.0766	0.4411	12	156738
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.1729	1.1361	64	370134
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae	family	Malasseziaceae	742845	0.1729	1.1361	64	370134
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.1729	1.1361	64	370134
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.1464	0.8436	51	348317
+phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales	order	Eurotiales	5042	0.0134	0.0878	5	374233
+phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae	family	Aspergillaceae	1131492	0.0134	0.0878	5	374233
+phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae|genus-Phialosimplex	genus	Phialosimplex	743109	0.0134	0.0878	5	374233
+phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae|genus-Phialosimplex|species-Phialosimplex_sp._HF37	species	Phialosimplex sp. HF37	1960876	0.0134	0.077	5	374233
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales	order	Capnodiales	134362	1.9935	13.098	185	92800
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae	family	Teratosphaeriaceae	668547	1.9935	13.098	185	92800
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea	genus	Hortaea	91942	1.9935	13.098	185	92800
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	species	Hortaea werneckii	91943	1.9935	11.4861	185	92800
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales	order	Hypocreales	5125	1.2793	8.4054	6	4690
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Nectriaceae	family	Nectriaceae	110618	1.2793	8.4054	6	4690
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Nectriaceae|genus-Fusarium	genus	Fusarium	5506	1.2793	8.4054	6	4690
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Nectriaceae|genus-Fusarium|species-[Nectria]_haematococca	species	[Nectria] haematococca	140110	3.8226	22.0248	5	1308
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	1.3979	9.1842	190	135923
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae	family	Oikopleuridae	41302	1.3979	9.1842	190	135923
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura	genus	Oikopleura	34763	1.3979	9.1842	190	135923
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_albicans	species	Oikopleura albicans	2500139	0.9945	5.7302	126	126693
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida	order	Cyclopoida	84308	3.0137	19.8008	738	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae	family	Oithonidae	136189	3.0137	19.8008	738	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona	genus	Oithona	136190	3.0137	19.8008	738	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	species	Oithona nana	136191	3.0137	17.3642	738	244880
+phylum-Discosea|order-Longamoebia	order	Longamoebia	1485168	0.0789	0.5185	21	266113
+phylum-Discosea|order-Longamoebia|family-Acanthamoebidae	family	Acanthamoebidae	33677	0.0789	0.5185	21	266113
+phylum-Discosea|order-Longamoebia|family-Acanthamoebidae|genus-Acanthamoeba	genus	Acanthamoeba	5754	0.0789	0.5185	21	266113
+phylum-Discosea|order-Longamoebia|family-Acanthamoebidae|genus-Acanthamoeba|species-Acanthamoeba_palestinensis	species	Acanthamoeba palestinensis	28015	0.06	0.3454	9	150122
+phylum-Discosea|order-Longamoebia|family-Acanthamoebidae|genus-Acanthamoeba|species-Acanthamoeba_rhysodes	species	Acanthamoeba rhysodes	32599	0.0702	0.4046	8	113910
+class-Glaucocystophyceae|order-Gloeochaetales	order	Gloeochaetales	38262	0.2955	1.9417	58	196258
+class-Glaucocystophyceae|order-Gloeochaetales|family-Gloeochaetaceae	family	Gloeochaetaceae	38266	0.2955	1.9417	58	196258
+class-Glaucocystophyceae|order-Gloeochaetales|family-Gloeochaetaceae|genus-Gloeochaete	genus	Gloeochaete	38268	0.2955	1.9417	58	196258
+class-Glaucocystophyceae|order-Gloeochaetales|family-Gloeochaetaceae|genus-Gloeochaete|species-Gloeochaete_wittrockiana	species	Gloeochaete wittrockiana	38269	0.2955	1.7028	58	196258
+phylum-Haptista|class-Haptophyta|order-Coccosphaerales	order	Coccosphaerales	73027	0.185	1.2155	21	113512
+phylum-Haptista|class-Haptophyta|order-Coccosphaerales|family-Pontosphaeraceae	family	Pontosphaeraceae	418939	0.185	1.2155	21	113512
+phylum-Haptista|class-Haptophyta|order-Coccosphaerales|family-Pontosphaeraceae|genus-Scyphosphaera	genus	Scyphosphaera	2134067	0.185	1.2155	21	113512
+phylum-Haptista|class-Haptophyta|order-Coccosphaerales|family-Pontosphaeraceae|genus-Scyphosphaera|species-Scyphosphaera_apsteinii	species	Scyphosphaera apsteinii	418940	0.185	1.0659	21	113512
+phylum-Haptista|class-Haptophyta|order-Coccolithales	order	Coccolithales	418917	1.1667	7.6655	134	114854
+phylum-Haptista|class-Haptophyta|order-Coccolithales|family-Calcidiscaceae	family	Calcidiscaceae	418931	1.1667	7.6655	134	114854
+phylum-Haptista|class-Haptophyta|order-Coccolithales|family-Calcidiscaceae|genus-Calcidiscus	genus	Calcidiscus	127548	1.1667	7.6655	134	114854
+phylum-Haptista|class-Haptophyta|order-Coccolithales|family-Calcidiscaceae|genus-Calcidiscus|species-Calcidiscus_leptoporus	species	Calcidiscus leptoporus	127549	1.1667	6.7222	134	114854

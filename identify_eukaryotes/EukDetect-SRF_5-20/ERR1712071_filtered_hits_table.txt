@@ -1,0 +1,44 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Filobasidium wieringae	species	phylum-Basidiomycota|class-Tremellomycetes|order-Filobasidiales|family-Filobasidiaceae|genus-Filobasidium|species-Filobasidium_wieringae	104416	123	2643	73.21%	24.26%	99.32%
+Aurelia aurita	species	phylum-Cnidaria|class-Scyphozoa|order-Semaeostomeae|family-Ulmaridae|genus-Aurelia|species-Aurelia_aurita	6145	65	1371	49.24%	29.88%	98.91%
+Fritillaria borealis	species	phylum-Chordata|class-Appendicularia|order-Copelata|family-Fritillariidae|genus-Fritillaria|species-Fritillaria_borealis	2507563	23	443	36.51%	9.94%	95.94%
+Hortaea werneckii EXF-2000	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	1157616	130	955	35.04%	17.81%	99.2%
+Gephyrocapsa oceanica	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	38817	35	234	35.0%	19.74%	98.3%
+Oikopleura dioica	species	phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_dioica	34765	25	473	31.65%	7.56%	96.32%
+Emiliania huxleyi CCMP1516	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania|species-Emiliania_huxleyi	280463	10	36	29.41%	12.1%	99.68%
+Debaryomyces hansenii CBS767	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Debaryomyces|species-Debaryomyces_hansenii	284592	50	429	27.32%	20.9%	99.72%
+Phaeocystis antarctica	species	phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	33657	26	148	26.0%	15.48%	98.17%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	31	138	20.67%	8.19%	98.85%
+Acanthamoeba mauritaniensis	species	phylum-Discosea|order-Longamoebia|family-Acanthamoebidae|genus-Acanthamoeba|species-Acanthamoeba_mauritaniensis	196912	15	90	19.48%	21.49%	99.89%
+Acanthamoeba rhysodes	species	phylum-Discosea|order-Longamoebia|family-Acanthamoebidae|genus-Acanthamoeba|species-Acanthamoeba_rhysodes	32599	14	221	18.18%	15.63%	98.65%
+Pycnococcus provasolii	species	phylum-Chlorophyta|family-Pycnococcaceae|genus-Pycnococcus|species-Pycnococcus_provasolii	41880	14	71	14.43%	31.75%	99.35%
+Aureobasidium	genus	phylum-Ascomycota|class-Dothideomycetes|order-Dothideales|family-Saccotheciaceae|genus-Aureobasidium	5579	11	75	13.92%	19.25%	99.39%
+Fragilariopsis kerguelensis	species	phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Fragilariopsis|species-Fragilariopsis_kerguelensis	186038	21	89	13.91%	15.07%	99.47%
+Pseudo-nitzschia fraudulenta	species	phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Pseudo-nitzschia|species-Pseudo-nitzschia_fraudulenta	183588	10	51	10.99%	21.84%	98.68%
+Knufia petricola	species	phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Trichomeriaceae|genus-Knufia|species-Knufia_petricola	206542	20	142	10.15%	26.78%	99.84%
+Arcocellulus cornucervis	species	phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Arcocellulus|species-Arcocellulus_cornucervis	1155433	8	27	9.64%	10.53%	99.06%
+Thalassiosira oceanica	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Thalassiosiraceae|genus-Thalassiosira|species-Thalassiosira_oceanica	159749	9	43	9.18%	11.58%	97.83%
+Acanthamoeba	genus	phylum-Discosea|order-Longamoebia|family-Acanthamoebidae|genus-Acanthamoeba	5754	8	78	7.62%	32.94%	99.32%
+Saccharomyces cerevisiae S288C	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces|species-Saccharomyces_cerevisiae	559292	12	76	6.59%	14.01%	99.33%
+Dinophysis acuminata	species	class-Dinophyceae|order-Dinophysiales|family-Dinophysiaceae|genus-Dinophysis|species-Dinophysis_acuminata	47934	6	25	6.38%	11.22%	98.77%
+Pelagodinium beii	species	class-Dinophyceae|order-Suessiales|family-Suessiaceae|genus-Pelagodinium|species-Pelagodinium_beii	43686	5	49	5.56%	18.61%	99.23%
+Aureobasidium pullulans EXF-150	species	phylum-Ascomycota|class-Dothideomycetes|order-Dothideales|family-Saccotheciaceae|genus-Aureobasidium|species-Aureobasidium_pullulans	1043002	6	12	4.8%	8.91%	99.62%
+Rhizosolenia setigera	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Rhizosoleniales|family-Rhizosoleniaceae|genus-Rhizosolenia|species-Rhizosolenia_setigera	3005	5	19	4.76%	12.62%	98.55%
+Alternaria sect. Alternaria	section	phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Pleosporaceae|genus-Alternaria	2499237	3	6	4.69%	21.49%	100.0%
+Chaetoceros debilis	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Chaetocerotales|family-Chaetocerotaceae|genus-Chaetoceros|species-Chaetoceros_debilis	122233	6	41	4.08%	32.96%	99.38%
+Bathycoccus prasinos	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	41875	5	14	4.07%	6.9%	98.91%
+Coccolithus braarudii	species	phylum-Haptista|class-Haptophyta|order-Coccolithales|family-Coccolithaceae|genus-Coccolithus|species-Coccolithus_braarudii	221442	3	11	4.05%	17.26%	100.0%
+Pyramimonas obovata	species	phylum-Chlorophyta|order-Pyramimonadales|family-Pyramimonadaceae|genus-Pyramimonas|species-Pyramimonas_obovata	1411642	4	27	3.51%	35.7%	99.47%
+Stramenopiles sp. TOSAG23-3	species	species-Stramenopiles_sp._TOSAG23-3	1735745	2	7	3.33%	27.85%	99.79%
+Aureobasidium sp. FSWF8-4	species	phylum-Ascomycota|class-Dothideomycetes|order-Dothideales|family-Saccotheciaceae|genus-Aureobasidium|species-Aureobasidium_sp._FSWF8-4	1928478	4	14	3.28%	12.48%	99.87%
+Cladosporium phlei	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae|genus-Cladosporium|species-Cladosporium_phlei	1116209	6	13	3.02%	7.0%	97.87%
+Alexandrium tamarense	species	class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium|species-Alexandrium_tamarense	2926	4	16	2.84%	11.83%	97.46%
+Nephroselmis pyriformis	species	phylum-Chlorophyta|class-Nephroselmidophyceae|order-Nephroselmidales|family-Nephroselmidaceae|genus-Nephroselmis|species-Nephroselmis_pyriformis	156128	2	11	2.5%	10.48%	99.1%
+Attheya septentrionalis	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Chaetocerotales|family-Attheyaceae|genus-Attheya|species-Attheya_septentrionalis	420275	2	4	2.08%	9.37%	98.13%
+Prorocentrum cordatum	species	class-Dinophyceae|order-Prorocentrales|family-Prorocentraceae|genus-Prorocentrum|species-Prorocentrum_cordatum	2364126	2	4	2.02%	11.56%	96.68%
+Rhizopus stolonifer B9770	species	phylum-Mucoromycota|class-Mucoromycetes|order-Mucorales|family-Rhizopodaceae|genus-Rhizopus|species-Rhizopus_stolonifer	1274793	3	8	1.81%	5.73%	98.38%
+Aspergillus sp. MA 6041	species	phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae|genus-Aspergillus|species-Aspergillus_sp._MA_6041	2153248	6	12	1.8%	6.4%	100.0%
+Leptocylindrus danicus	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Leptocylindrales|family-Leptocylindraceae|genus-Leptocylindrus|species-Leptocylindrus_danicus	163516	3	5	1.62%	10.05%	97.3%
+Minutocellus polymorphus	species	phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Minutocellus|species-Minutocellus_polymorphus	265543	2	8	1.34%	6.08%	99.64%
+Wallemia mellicola CBS 633.66	species	phylum-Basidiomycota|class-Wallemiomycetes|order-Wallemiales|family-Wallemiaceae|genus-Wallemia|species-Wallemia_mellicola	671144	2	8	1.32%	15.99%	99.83%
+Eurotiomycetes sp.	species	phylum-Ascomycota|class-Eurotiomycetes|species-Eurotiomycetes_sp.	1709936	2	6	1.02%	6.73%	97.99%
