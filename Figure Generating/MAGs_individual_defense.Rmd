@@ -34,8 +34,24 @@ defense_n %>%
   geom_boxplot() +
   stat_summary(fun.data = boxplot.give.nr, 
                geom = "text", position=position_nudge(x = 0.15, y = 0)) 
+```
+
+## only about the MAG scg
+```{r}
+only_scg_MAGs = unique(defense[c('depth','scg_pnps_median','scg_count')])
+only_scg_MAGs %>%
+  mutate(depth = factor(depth, levels = rev(c("SRF","DCM", "MES", "deep")))) %>%
+  filter(scg_count >=21) %>%
+  ggplot(aes(y=depth, x=scg_pnps_median)) +
+  geom_boxplot(outlier.color = NA) +
+  geom_jitter(alpha = 0.05) +
+  xlab("SCG median pnps in MAGs") +
+  stat_summary(fun.data = boxplot.give.nr, 
+               geom = "text", position=position_nudge(x = 0.15, y = 0))
+```
 
 
+```{r}
 library(lme4)
 defense_mixed = lmer(sqrt_ratio ~ (1 | bin) + ocean + depth, data = defense_n)
 Anova(defense_mixed)
