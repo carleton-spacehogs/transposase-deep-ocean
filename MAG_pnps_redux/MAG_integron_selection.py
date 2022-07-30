@@ -1,5 +1,6 @@
 import pandas as pd
 import csv
+import math
 from MAG_singleCopyGene_defense_pnps_ratio import ocean_depths, MAG_base_pnps, get_all_pnps, get_binning_info
 
 deep_oceans = ["IN","NAT","SAT","NP","SP"]
@@ -20,8 +21,7 @@ def determine_if_integron(integron_dict, MAG_contig, MAG_start, MAG_end):
 				return g_type
 	return "non_integron"
 
-def integron_dict_helper(integron_rt, ocean, integron_dict):
-	int_f =f"{integron_rt}/{ocean}/all_bins_db/Results_Integron_Finder_{ocean}_all_bins/all_integron.txt"
+def integron_dict_helper(int_f, integron_dict):
 	intgron_f = pd.read_csv(int_f,comment="#",sep="\t")
 	integrons = intgron_f[["ID_replicon","pos_beg","pos_end","type"]].dropna()
 	integrons_2D = integrons.values.tolist()
@@ -38,9 +38,11 @@ def integron_dict_helper(integron_rt, ocean, integron_dict):
 def get_integron_dict(integron_rt, ocean):
 	# int_f =f"{integron_rt}/{ocean}.integrons"
 	ocean_integrons = {}
-	ocean_integrons = integron_dict_helper(integron_rt, ocean, ocean_integrons)
+	int_f =f"{integron_rt}/{ocean}/all_bins_db/Results_Integron_Finder_{ocean}_all_bins/all_integron.txt"
+	ocean_integrons = integron_dict_helper(int_f, ocean_integrons)
 	if ocean in deep_oceans:
-		ocean_integrons = integron_dict_helper(integron_rt, "deep", ocean_integrons)
+		int_f =f"{integron_rt}/deep/all_bins_db/Results_Integron_Finder_deep_all_bins/all_integron.txt"
+		ocean_integrons = integron_dict_helper(int_f, ocean_integrons)
 	return ocean_integrons
 
 def full_binning_info_helper(fname, source):
@@ -59,10 +61,9 @@ def get_full_binning_info(root, ocean):
 		bin_info = bin_info.append(deep_bin)
 	return bin_info
 
-def merge_anvi_gene_call(MAG_rt, ocean, integron_dict):
-	MAG = get_full_binning_info(MAG_rt, ocean)
-	MAG_2D = MAG.values.tolist()
-	int_cols = list(MAG.columns) + ["integron", "ocean"]
+def merge_anvi_gene_call(anvi_contig_gene_caller_df, ocean, integron_dict):
+	MAG_2D = anvi_contig_gene_caller_df.values.tolist()
+	int_cols = list(anvi_contig_gene_caller_df.columns) + ["integron", "ocean"]
 	MAG_integrons = []
 	for l in MAG_2D:
 		contig, start, stop = l[1:4]
@@ -87,17 +88,9 @@ def merge_pnps_all(df, o_depth, MAG_rt):
 	MAG_int_pnps = merged_integrons_str.merge(all_pnps, on=["gene_callers_id","ocean","source"])
 	return MAG_int_pnps
 
-def COG_cate_helper(MAG_rt, ocean):
-	tail="all_bins_db/anvi_genes_COG_categories.tsv"
-	COG_cate_df = pd.read_csv(f"{MAG_rt}/{ocean}/{tail}", sep = "\t")
-	COG_cate_df['source'] = 'tara'
-	if ocean in deep_oceans:
-		deep_COG_cate = pd.read_csv(f"{MAG_rt}/deep/{tail}", sep = "\t")
-		deep_COG_cate["source"] = "malaspina"
-		COG_cate_df = COG_cate_df.append(deep_COG_cate)
+def explode_COG(df, COG_category_pos):
 	out = []
-	for l in COG_cate_df.values.tolist():
-		COG_category_pos = 2
+	for l in df.astype(str).values.tolist():
 		COG_cate = l[COG_category_pos]
 		if "!!!" in COG_cate:
 			all_COG_cates = COG_cate.split("!!!")
@@ -106,9 +99,19 @@ def COG_cate_helper(MAG_rt, ocean):
 		else:
 			out.append(l)
 	COG_out = pd.DataFrame(out)
-	COG_out.columns = list(COG_cate_df.columns)
-	COG_out["ocean"] = ocean
-	return COG_out.astype(str)
+	COG_out.columns = list(df.columns)
+	return COG_out
+
+def COG_cate_helper(MAG_rt, ocean):
+	tail="all_bins_db/anvi_genes_COG_categories.tsv"
+	COG_cate_df = pd.read_csv(f"{MAG_rt}/{ocean}/{tail}", sep = "\t")
+	COG_cate_df['source'] = 'tara'
+	if ocean in deep_oceans:
+		deep_COG_cate = pd.read_csv(f"{MAG_rt}/deep/{tail}", sep = "\t")
+		deep_COG_cate["source"] = "malaspina"
+		COG_cate_df = COG_cate_df.append(deep_COG_cate)
+	COG_cate_df["ocean"] = ocean
+	return COG_cate_df.astype(str)
 
 def merge_COG_cate(df, o_depth, MAG_rt):
 	all_COG_cate = pd.DataFrame()
@@ -118,29 +121,31 @@ def merge_COG_cate(df, o_depth, MAG_rt):
 	df = df.merge(all_COG_cate, on=["gene_callers_id","ocean","source"], how = "left")
 	return df
 
-# main():
-o_depth = ocean_depths()
-MAG_rt="/researchdrive/zhongj2/MAG_pnps_redux"
-# integron_rt="/researchdrive/zhongj2/integron_finder_tara_contig"
+def main():
+	o_depth = ocean_depths()
+	MAG_rt="/researchdrive/zhongj2/MAG_pnps_redux"
+	# integron_rt="/researchdrive/zhongj2/integron_finder_tara_contig"
 
-merged_integrons = pd.DataFrame()
-for ocean in o_depth.keys():
-	print(ocean)
-	integron_dict = get_integron_dict(MAG_rt, ocean)
-	ocean_integrons = merge_anvi_gene_call(MAG_rt, ocean, integron_dict)
-	merged_integrons = merged_integrons.append(ocean_integrons)
+	merged_integrons = pd.DataFrame()
+	for ocean in o_depth.keys(): # ["ARS", "RS"]
+		print(ocean)
+		integron_dict = get_integron_dict(MAG_rt, ocean)
+		anvi_contig_gene_caller_df = get_full_binning_info(MAG_rt, ocean)
+		ocean_integrons = merge_anvi_gene_call(anvi_contig_gene_caller_df, ocean, integron_dict)
+		merged_integrons = merged_integrons.append(ocean_integrons)
 
-merged_integrons = merge_COG_cate(merged_integrons, o_depth, MAG_rt)
-merged_integrons.to_csv(path_or_buf=f'anvi_integrons_all_oceans.csv', sep=',', index=False)
-MAG_int_pnps = merge_pnps_all(merged_integrons, o_depth, MAG_rt)
-MAG_int_pnps.to_csv(path_or_buf=f'MAG_integron_pnps_all.csv', sep=',', index=False)
+	merged_integrons = merge_COG_cate(merged_integrons, o_depth, MAG_rt)
+	merged_integrons = explode_COG(merged_integrons, 10)
+	merged_integrons.to_csv(path_or_buf=f'anvi_integrons_all_oceans.csv', sep=',', index=False)
+	MAG_int_pnps = merge_pnps_all(merged_integrons, o_depth, MAG_rt)
+	MAG_int_pnps.to_csv(path_or_buf=f'MAG_integron_pnps_all.csv', sep=',', index=False)
 
-bin_info = pd.read_csv("per_MAGs_pnps_summary.csv").astype(str).drop(["ocean",'ratio_all_scg','ratio_all_MAG','depth'],axis=1)
-MAG_int_pnps2 = MAG_int_pnps.merge(bin_info, on=["bin","sample_id"], how = "left")
+	bin_info = pd.read_csv("per_MAGs_pnps_summary.csv").astype(str).drop(["ocean",'ratio_all_scg','ratio_all_MAG','depth'],axis=1)
+	MAG_int_pnps2 = MAG_int_pnps.merge(bin_info, on=["bin","sample_id"], how = "left")
 
-MAG_int_pnps2.to_csv(path_or_buf=f'MAG_integron_pnps_with_high_cov_bins.csv', sep=',', index=False)
+	MAG_int_pnps2.to_csv(path_or_buf=f'MAG_integron_pnps_with_high_cov_bins.csv', sep=',', index=False)
 
-# if __name__ == "__main__":
-# 	main()
+if __name__ == "__main__":
+	main()
 
 
