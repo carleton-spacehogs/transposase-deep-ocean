@@ -1,5 +1,4 @@
 #!/bin/python3
-from email.charset import add_charset
 import sys
 import pandas as pd
 sys.path.insert(0, '../MAG_pnps_redux')
@@ -13,6 +12,9 @@ Written by Jimmy Zhong at Carleton College, MN, working under Professor Rika And
 Spacehog Bioinformaitcs lab, July 30th 2022.
 '''
 deep_rt = "/researchdrive/zhongj2/deep_ocean_bins/"
+anvio_db_dir="/researchdrive/zhongj2/Tara_Oceans_Bins"
+o_depth = ocean_depths()
+oceans = list(o_depth.keys()) + ["deep"]
 
 def get_anvi_db(root, ocean):
 	gene_call_f = f"{root}/{ocean}_bins_v2/all-gene-calls.txt"
@@ -30,10 +32,7 @@ def get_anvi_COG(root, ocean):
 	category.drop(columns = ['source','e_value'], inplace = True)
 	return category
 
-o_depth = ocean_depths()
-oceans = list(o_depth.keys()) + ["deep"]
 integron_dir="/researchdrive/zhongj2/integron_finder_tara_contig"
-anvio_db_dir="/researchdrive/zhongj2/Tara_Oceans_Bins"
 
 merged_integrons = pd.DataFrame()
 for ocean in oceans:
@@ -52,7 +51,3 @@ merged_integrons = merged_integrons[merged_integrons.integron.str.contains("CALI
 functional_integrons = merged_integrons[merged_integrons.function != "nan"]
 functional_integrons.to_csv("metagenome-integron-with-COG-functions.csv",sep=',', index=False)
 
-
-# pattern = "nan|Function unknown|General function prediction only"
-# merged_integrons[~merged_integrons.function.str.contains(pattern)] # 7966
-# merged_integrons[merged_integrons.function.str.contains("Defense mechanisms")] # 734
