@@ -2,10 +2,10 @@
 n=8
 prefix=/workspace/data/zhongj/Transposase_Project/particle_lifestyle/OM-RGC_v2_reference_pieces
 dbdir=/workspace/data/zhongj/Transposase_Project/particle_lifestyle/db
-pieces=$(echo {m..p})
+pieces=$(echo {o..o})
 # pieces=$(ls $prefix/p_*s.fna) # opqrstuvwxyz
 for p in $pieces; do
-	sample=p_d${p}
+	sample=p_c${p}
 	# sample=${p#"${prefix}/"}
 	# sample=${sample%%.fna}
 	echo $sample

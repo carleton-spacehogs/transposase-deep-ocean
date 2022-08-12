@@ -35,9 +35,14 @@ for ocean, depths in o_depths.items():
 	ocean_defense["ocean"] = ocean
 	individual_defense_pnps = individual_defense_pnps.append(ocean_defense)
 
-defense_integron = individual_defense_pnps.merge(integrons, on=["ocean", "gene_callers_id"], how = "left")
-d_concise = defense_integron[["gene_callers_id", "pnps", "ocean", "depth", "bin", "defense_count", 
-"sample_id", "Trans_abun","scg_pnps_median","scg_count",'integron']]
+id_col = ["ocean", "gene_callers_id"]
+integron_tmp = integrons[ id_col + ["integron"] ]
+
+out_col = ["gene_callers_id", "pnps", "ocean", "depth", "bin", "defense_count","sample_id",
+"Trans_abun","scg_pnps_median","scg_count","MAG_pnps_median","total_count"]
+
+defense_integron = individual_defense_pnps.merge(integron_tmp, on=id_col, how = "left")
+d_concise = defense_integron[ out_col + ['integron'] ]
 d_concise.to_csv(path_or_buf=f'individual_defense_pnps.csv', sep=',', index=False)
 
 # for transposase
@@ -48,8 +53,7 @@ for ocean, depths in o_depths.items():
 	ocean_trans["ocean"] = ocean
 	individual_trans_pnps = individual_trans_pnps.append(ocean_trans)
 
-trans_concise = individual_trans_pnps[["gene_callers_id", "pnps", "ocean", "depth", "bin", "defense_count", 
-"sample_id", "Trans_abun","scg_pnps_median","scg_count"]]
+trans_concise = individual_trans_pnps[out_col]
 trans_concise.to_csv(path_or_buf=f'individual_transposase_pnps.csv', sep=',', index=False)
 
 # # for toxin!!!
