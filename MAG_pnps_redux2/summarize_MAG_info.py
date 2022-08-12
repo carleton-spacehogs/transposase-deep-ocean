@@ -57,12 +57,12 @@ def get_all_pnps(depths, root, ocean):
 	pnps_all_sam.sort_values(by=['gene_callers_id'])
 	return pnps_all_sam
 
-def get_pnps_summary(pnps_df, colname, gene_name):
-	gene_pnps = pnps_df[~pnps_df[colname].isnull()]
-	summary = gene_pnps[["bin","sample_id","pnps"]].groupby(['bin','sample_id']).agg(
-		median=('pnps', np.nanmedian),count=('pnps', np.size)).reset_index()
-	summary.rename(columns={"median":f"{gene_name}_pnps_median","count":f"{gene_name}_count"}, inplace=True)
-	return summary
+# def get_pnps_summary(pnps_df, colname, gene_name):
+# 	gene_pnps = pnps_df[~pnps_df[colname].isnull()]
+# 	summary = gene_pnps[["bin","sample_id","pnps"]].groupby(['bin','sample_id']).agg(
+# 		median=('pnps', np.nanmedian),count=('pnps', np.size)).reset_index()
+# 	summary.rename(columns={"median":f"{gene_name}_pnps_median","count":f"{gene_name}_count"}, inplace=True)
+# 	return summary
 
 def MAG_base_pnps(root, ocean, depths):
 	bin_base = get_binning_info(root, ocean)
@@ -71,14 +71,15 @@ def MAG_base_pnps(root, ocean, depths):
 	all_pnps = get_all_pnps(depths, root, ocean)
 	pnps = all_pnps.merge(bin_base, on = ["gene_callers_id","source"], how = "left")
 	pnps.pnps = pnps.pnps.astype(float)
-	whole_MAG_pnps = pnps.groupby(['bin','sample_id','depth']).agg(
+	whole_MAG_pnps = pnps.groupby(['bin','sample_id']).agg(
 		MAG_pnps_median=('pnps', np.nanmedian),
 		total_count=('pnps', np.size)
 	).reset_index()
-	scg_summary = get_pnps_summary(pnps, "scg", "scg")
-	trans_summary = get_pnps_summary(pnps, "transposase_id", "transposase")
+	scg_summary = pnps[~pnps.scg.isnull()].groupby(['bin','sample_id']).agg(
+		scg_pnps_median=('pnps', np.nanmedian),
+		scg_count=('pnps', np.size)
+	).reset_index()
 	out = whole_MAG_pnps.merge(scg_summary, on=["bin","sample_id"], how = "left")
-	out = out.merge(trans_summary, on=["bin","sample_id"], how = "left")
 	return out
 
 def main():
@@ -87,7 +88,7 @@ def main():
 	final_out = "MAG_info_db/MAG_all.csv"
 	for ocean, depths in MAG_db.items():
 		ocean_db = MAG_base_pnps(data_root, ocean, depths)
-		# ocean_db.to_csv(f"MAG_info_db/MAG_{ocean}.csv", index=False)
+		ocean_db.to_csv(f"MAG_info_db/MAG_{ocean}.csv", index=False)
 		all_MAG = all_MAG.append(ocean_db)
 
 	all_MAG.to_csv(final_out, index=False)
@@ -95,11 +96,4 @@ def main():
 
 if __name__ == "__main__":
 	main()
-
-
-
-
-
-
-for db in MAG_db:
 
