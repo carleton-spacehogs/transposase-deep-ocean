@@ -12,7 +12,8 @@ def ocean_depths():
 	for ocean in ["RS", "MED", "EAC"]:
 		ocean_depth[ocean] = depths3
 	for ocean in ["IN","SAT","NAT","SP","NP"]:
-		ocean_depth[ocean] = depths1
+		# ocean_depth[ocean] = depths1
+		ocean_depth[ocean] = depths2
 	return ocean_depth
 
 def get_bin_helper(fname):
