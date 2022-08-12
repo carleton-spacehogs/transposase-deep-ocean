@@ -71,7 +71,8 @@ def MAG_base_pnps(root, ocean, depths):
 	all_pnps = get_all_pnps(depths, root, ocean)
 	pnps = all_pnps.merge(bin_base, on = ["gene_callers_id","source"], how = "left")
 	pnps.pnps = pnps.pnps.astype(float)
-	whole_MAG_pnps = pnps.groupby(['bin','sample_id']).agg(
+	# include depth so it will appears in the output
+	whole_MAG_pnps = pnps.groupby(['bin','sample_id',"depth"]).agg(
 		MAG_pnps_median=('pnps', np.nanmedian),
 		total_count=('pnps', np.size)
 	).reset_index()
