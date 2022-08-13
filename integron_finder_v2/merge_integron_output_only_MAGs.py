@@ -43,6 +43,10 @@ for ocean in oceans:
 merged_integrons = merged_integrons[merged_integrons.integron.str.contains("CALIN|complete")]
 merged_integrons.to_csv("MAG-integron-all.csv",sep=',', index=False)
 
-functional_integrons = merged_integrons[merged_integrons.function != "nan"]
-functional_integrons.to_csv("metagenome-integron-with-COG-functions.csv",sep=',', index=False)
+# functional_integrons = merged_integrons[merged_integrons.function != "nan"]
+# functional_integrons.to_csv("metagenome-integron-with-COG-functions.csv",sep=',', index=False)
 
+# def get_binning_info(root, ocean):
+# 	bin_info = get_bin_helper(f"{root}/{ocean}/all_bins_db/gene_callers_id-contig.txt")
+# 	bin_info['ocean'] = ocean
+# 	return bin_info[['gene_callers_id','ocean','bin']]
