@@ -83,6 +83,9 @@ def MAG_base_pnps(root, ocean, depths):
 	out = whole_MAG_pnps.merge(scg_summary, on=["bin","sample_id"], how = "left")
 	return out
 
+scg_pnps = pnps[~pnps.scg.isnull()]
+scg_pnps[(scg_pnps.sample_id == 'SRR3962773') & (scg_pnps.bin == "deep-0592")]
+
 def main():
 	MAG_db = MAG_db_fun()
 	all_MAG = pd.DataFrame()
