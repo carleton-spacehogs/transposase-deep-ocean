@@ -33,6 +33,7 @@ for ocean in ["IN", "SAT", "NAT", "SP", "NP"]:
 	for l in all_pnps:
 		area_id = f"{ocean}-{l[0]}"
 		if area_id in integron_anvi_id:
+			l[2] = l[2].split("_")[1] # NP_SRR3965585
 			new_row = l + [ocean, "deep"] + integron_anvi_id[area_id]
 			pnps_integron.append(new_row)
 
