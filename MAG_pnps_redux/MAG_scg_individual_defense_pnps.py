@@ -3,6 +3,14 @@ import pandas as pd
 from MAG_singleCopyGene_defense_pnps_ratio import merge_COG_category
 from utils import get_bin_helper, read_pnps, MAG_db_fun, has_deep, data_root, merge_blastp_f
 
+def add_integrons(df):
+	integrons = pd.read_csv("../integron_finder_v2/MAG-integron-all.csv").astype(str)
+	integrons['source'] = "malaspina"
+	integrons.loc[integrons['ocean'] != 'deep', 'source'] = 'tara-' + integrons['ocean']
+	integron_tmp = integrons[["source", "gene_callers_id", "integron"]]
+	df_integron = df.merge(integron_tmp, on=["source", "gene_callers_id"], how = "left")
+	return df_integron
+
 def get_all_pnps_v2(depths, root, ocean):
 	pnps_all_sam = pd.DataFrame()
 	if ocean == "deep":
@@ -13,7 +21,7 @@ def get_all_pnps_v2(depths, root, ocean):
 	else:
 		for depth in depths:
 			tara_MAGs_pnps = read_pnps(root, ocean, depth)
-			tara_MAGs_pnps[['depth', 'ocean', 'source']] = [depth, ocean, 'tara']
+			tara_MAGs_pnps[['depth', 'ocean', 'source']] = [depth, ocean, 'tara-' + ocean]
 			pnps_all_sam = pnps_all_sam.append(tara_MAGs_pnps)
 	pnps_all_sam.sort_values(by=['gene_callers_id'])
 	return pnps_all_sam
@@ -37,12 +45,6 @@ def per_gene_ORFs_per_sample_pnps(ocean, root, depths, MAG_db, gene):
 	gene_pnps = gene_pnps.merge(MAG_db, how = "inner", on = ["bin", "sample_id", "depth"]).reindex()
 	return gene_pnps
 
-def add_integrons(id_col, df):
-	integrons = pd.read_csv("../integron_finder_v2/MAG-integron-all.csv").astype(str)
-	integron_tmp = integrons[ id_col + ["integron"] ]
-	df_integron = df.merge(integron_tmp, on=id_col, how = "left")
-	return df_integron
-
 o_depths = MAG_db_fun()
 root="/researchdrive/zhongj2/MAG_pnps_redux"
 id_col = ["ocean", "gene_callers_id"]
@@ -58,7 +60,7 @@ for ocean, depths in o_depths.items():
 	ocean_defense = per_category_ORFs_per_sample_pnps(ocean, data_root, depths, all_MAG_pnps, "V")
 	individual_defense_pnps = individual_defense_pnps.append(ocean_defense)
 
-defense_integron = add_integrons(id_col, individual_defense_pnps)
+defense_integron = add_integrons(individual_defense_pnps)
 defense_integron[out_col].to_csv(path_or_buf=f'individual_defense_pnps.csv', sep=',', index=False)
 
 # for the signal tranductions
@@ -68,7 +70,7 @@ for ocean, depths in o_depths.items():
 	ocean_signal = per_category_ORFs_per_sample_pnps(ocean, data_root, depths, all_MAG_pnps, "T")
 	individual_signal_pnps = individual_signal_pnps.append(ocean_signal)
 
-signal_integron = add_integrons(id_col, individual_signal_pnps)
+signal_integron = add_integrons(individual_signal_pnps)
 signal_integron[out_col].to_csv(path_or_buf=f'individual_signal_pnps.csv', sep=',', index=False)
 
 # for transposase
@@ -78,7 +80,7 @@ for ocean, depths in o_depths.items():
 	ocean_trans = per_gene_ORFs_per_sample_pnps(ocean, root, depths, all_MAG_pnps, "transposase")
 	individual_trans_pnps = individual_trans_pnps.append(ocean_trans)
 
-trans_integron = add_integrons(id_col, individual_trans_pnps)
+trans_integron = add_integrons(individual_trans_pnps)
 trans_integron[out_col].to_csv(path_or_buf=f'individual_transposase_pnps.csv', sep=',', index=False)
 
 # for toxin!!!
@@ -88,5 +90,5 @@ for ocean, depths in o_depths.items():
 	ocean_toxin = per_gene_ORFs_per_sample_pnps(ocean, root, depths, all_MAG_pnps, "toxin")
 	individual_toxin_pnps = individual_toxin_pnps.append(ocean_toxin)
 
-toxin_integron = add_integrons(id_col, individual_toxin_pnps)
+toxin_integron = add_integrons(individual_toxin_pnps)
 toxin_integron[out_col].to_csv(path_or_buf=f'individual_toxin_pnps.csv', sep=',', index=False)
