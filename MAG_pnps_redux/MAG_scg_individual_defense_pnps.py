@@ -77,6 +77,9 @@ genes_stream_line(utils.data_root, per_category_ORFs_per_sample_pnps, "V", f'{pn
 # for the signal tranductions
 genes_stream_line(utils.data_root, per_category_ORFs_per_sample_pnps, "T", f'{pnps_out}/signal_transduction.csv')
 
+# for Carbohydrate metabolism and transport
+genes_stream_line(utils.data_root, per_category_ORFs_per_sample_pnps, "G", f'{pnps_out}/carbohydrate_metabolism.csv')
+
 # for the sectory genes (biofilms)
 genes_stream_line(utils.data_root, secreting_ORFs_per_sample_pnps, "CAZyme", f'{pnps_out}/secretory_CAZyme.csv')
 genes_stream_line(utils.data_root, secreting_ORFs_per_sample_pnps, "peptidase", f'{pnps_out}/secretory_peptidase.csv')
