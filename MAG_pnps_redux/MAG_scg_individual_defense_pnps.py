@@ -90,7 +90,7 @@ for ocean, depths in o_depths.items():
 	individual_secret_pnps = individual_secret_pnps.append(ocean_secret)
 
 secret_integron = add_integrons(individual_secret_pnps)
-secret_integron[out_col].to_csv(path_or_buf=f'individual_secretary_pnps.csv', sep=',', index=False)
+secret_integron[out_col].to_csv(path_or_buf=f'individual_secretory_pnps.csv', sep=',', index=False)
 
 # for transposase
 individual_trans_pnps = pd.DataFrame()
