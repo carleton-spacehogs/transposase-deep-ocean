@@ -8,14 +8,12 @@ def get_all_pnps_v2(depths, root, ocean):
 	if ocean == "deep":
 		for reg in has_deep:
 			mala_MAGs_pnps = read_pnps(root, ocean, reg)
-			mala_MAGs_pnps['depth'] = 'deep'
-			mala_MAGs_pnps['source'] = 'malaspina'
+			mala_MAGs_pnps[['depth', 'ocean', 'source']] = ['deep', reg, 'malaspina']
 			pnps_all_sam = pnps_all_sam.append(mala_MAGs_pnps)
 	else:
 		for depth in depths:
 			tara_MAGs_pnps = read_pnps(root, ocean, depth)
-			tara_MAGs_pnps['depth'] = str(depth)
-			tara_MAGs_pnps['source'] = 'tara'
+			tara_MAGs_pnps[['depth', 'ocean', 'source']] = [depth, ocean, 'tara']
 			pnps_all_sam = pnps_all_sam.append(tara_MAGs_pnps)
 	pnps_all_sam.sort_values(by=['gene_callers_id'])
 	return pnps_all_sam
@@ -45,6 +43,9 @@ def add_integrons(id_col, df):
 
 o_depths = MAG_db_fun()
 root="/researchdrive/zhongj2/MAG_pnps_redux"
+id_col = ["ocean", "gene_callers_id"]
+out_col = ["gene_callers_id", "pnps", "ocean", "depth", "bin","sample_id",
+"scg_pnps_median","scg_count","MAG_pnps_median","total_count", 'integron']
 
 all_MAG_pnps = pd.read_csv("MAG_info_db/MAG_all.csv")
 
@@ -53,12 +54,7 @@ individual_defense_pnps = pd.DataFrame()
 for ocean, depths in o_depths.items():
 	print(ocean)
 	ocean_defense = per_defense_ORFs_per_sample_pnps(ocean, data_root, depths, all_MAG_pnps)
-	ocean_defense["ocean"] = ocean
 	individual_defense_pnps = individual_defense_pnps.append(ocean_defense)
-
-id_col = ["ocean", "gene_callers_id"]
-out_col = ["gene_callers_id", "pnps", "ocean", "depth", "bin","sample_id",
-"scg_pnps_median","scg_count","MAG_pnps_median","total_count", 'integron']
 
 defense_integron = add_integrons(id_col, individual_defense_pnps)
 defense_integron[out_col].to_csv(path_or_buf=f'individual_defense_pnps.csv', sep=',', index=False)
@@ -68,7 +64,6 @@ individual_trans_pnps = pd.DataFrame()
 for ocean, depths in o_depths.items():
 	print(ocean)
 	ocean_trans = per_gene_ORFs_per_sample_pnps(ocean, root, depths, all_MAG_pnps, "transposase")
-	ocean_trans["ocean"] = ocean
 	individual_trans_pnps = individual_trans_pnps.append(ocean_trans)
 
 trans_integron = add_integrons(id_col, individual_trans_pnps)
@@ -79,7 +74,6 @@ individual_toxin_pnps = pd.DataFrame()
 for ocean, depths in o_depths.items():
 	print(ocean)
 	ocean_toxin = per_gene_ORFs_per_sample_pnps(ocean, root, depths, all_MAG_pnps, "toxin")
-	ocean_toxin["ocean"] = ocean
 	individual_toxin_pnps = individual_toxin_pnps.append(ocean_toxin)
 
 toxin_integron = add_integrons(id_col, individual_toxin_pnps)
