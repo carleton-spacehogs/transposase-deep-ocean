@@ -31,7 +31,7 @@ for ocean, depths in ocean_depths().items():
 for ocean in ["IN", "SAT", "NAT", "SP", "NP"]:
 	all_pnps = read_pnps(MAG_rt, "deep", ocean).values.tolist()
 	for l in all_pnps:
-		area_id = f"{ocean}-{l[0]}"
+		area_id = f"deep-{l[0]}"
 		if area_id in integron_anvi_id:
 			l[2] = l[2].split("_")[1] # NP_SRR3965585
 			new_row = l + [ocean, "deep"] + integron_anvi_id[area_id]

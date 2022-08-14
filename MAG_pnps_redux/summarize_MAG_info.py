@@ -1,7 +1,7 @@
 import csv
 import pandas as pd
 import numpy as np
-from utils import MAG_db_fun, data_root
+from utils import MAG_db_fun, data_root, read_pnps
 
 MAG_db_col = ["bin", "sample_id", "depth", "source", "scg_pnps_median","scg_count","MAG_pnps_median","total_count"]
 
@@ -31,13 +31,6 @@ def merge_single_copy_gens(df, root, ocean):
 	scg = scg[["gene_callers_id","scg"]]
 	out = df.merge(scg, on="gene_callers_id", how = "left")
 	return out
-
-def read_pnps(root, ocean, depth): # ocean and depth is reversed for the Malaspina deep ocean
-	cols = ["gene_callers_id", "pnps", "sample_id"]
-	depth_pnps = pd.read_csv(f"{root}/{ocean}/PROFILE-{depth}/all_MAGs_pnps/pNpS.txt", sep = "\t").astype(str)
-	depth_pnps = depth_pnps[depth_pnps['pNpS_gene_reference'].astype(float) < 5] # sanity check
-	depth_pnps.rename(columns= {"corresponding_gene_call":cols[0],"pNpS_gene_reference":"pnps"}, inplace=True)
-	return depth_pnps[cols]
 
 def get_all_pnps(depths, root, ocean):
 	pnps_all_sam = pd.DataFrame()

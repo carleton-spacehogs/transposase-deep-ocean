@@ -1,70 +1,86 @@
 import sys
 import pandas as pd
-from MAG_singleCopyGene_defense_pnps_ratio import ocean_depths, merge_COG_category, get_all_pnps, get_binning_info, merge_blastp_f
+from MAG_singleCopyGene_defense_pnps_ratio import merge_COG_category, get_binning_info
+from utils import get_bin_helper, read_pnps, MAG_db_fun, has_deep, data_root, merge_blastp_f
 
-def per_defense_ORFs_per_sample_pnps(ocean, root, depths, avail_MAG):
-	bin_info = get_binning_info(root, ocean)
-	all_pnps = get_all_pnps(depths, root, ocean)
+def get_all_pnps_v2(depths, root, ocean):
+	pnps_all_sam = pd.DataFrame()
+	if ocean == "deep":
+		for reg in has_deep:
+			mala_MAGs_pnps = read_pnps(root, ocean, reg)
+			mala_MAGs_pnps['depth'] = 'deep'
+			mala_MAGs_pnps['source'] = 'malaspina'
+			pnps_all_sam = pnps_all_sam.append(mala_MAGs_pnps)
+	else:
+		for depth in depths:
+			tara_MAGs_pnps = read_pnps(root, ocean, depth)
+			tara_MAGs_pnps['depth'] = str(depth)
+			tara_MAGs_pnps['source'] = 'tara'
+			pnps_all_sam = pnps_all_sam.append(tara_MAGs_pnps)
+	pnps_all_sam.sort_values(by=['gene_callers_id'])
+	return pnps_all_sam
+
+def per_defense_ORFs_per_sample_pnps(ocean, root, depths, MAG_db):
+	bin_info = get_bin_helper(f"{root}/{ocean}/all_bins_db/gene_callers_id-contig.txt")
+	all_pnps = get_all_pnps_v2(depths, root, ocean)
 	all_pnps = merge_COG_category(all_pnps, root, ocean)
 	defense_pnps = all_pnps[all_pnps['category_accession'].str.contains("V", na=False)]
-	defense_pnps = defense_pnps.merge(bin_info, on = ["gene_callers_id", 'source'])
-	defense_pnps = defense_pnps.merge(avail_MAG, how = "inner", on = ["bin", "sample_id"]).reindex()
+	defense_pnps = defense_pnps.merge(bin_info, on="gene_callers_id")
+	defense_pnps = defense_pnps.merge(MAG_db, how = "inner", on = ["bin", "sample_id", "depth"]).reindex()
 	return defense_pnps
 
-def per_gene_ORFs_per_sample_pnps(ocean, root, depths, avail_MAG, gene):
-	bin_info = get_binning_info(root, ocean)
-	all_pnps = get_all_pnps(depths, root, ocean)
-	toxin_pnps = merge_blastp_f(all_pnps, root, ocean, gene, merge_method = "inner")
-	toxin_pnps = toxin_pnps.merge(bin_info, on = ["gene_callers_id", 'source'])
-	toxin_pnps = toxin_pnps.merge(avail_MAG, how = "inner", on = ["bin", "sample_id"]).reindex()
-	return toxin_pnps
+def per_gene_ORFs_per_sample_pnps(ocean, root, depths, MAG_db, gene):
+	bin_info = get_bin_helper(f"{root}/{ocean}/all_bins_db/gene_callers_id-contig.txt")
+	all_pnps = get_all_pnps_v2(depths, root, ocean)
+	gene_pnps = merge_blastp_f(all_pnps, root, ocean, gene, merge_method = "inner")
+	gene_pnps = gene_pnps.merge(bin_info, on = "gene_callers_id")
+	gene_pnps = gene_pnps.merge(MAG_db, how = "inner", on = ["bin", "sample_id", "depth"]).reindex()
+	return gene_pnps
 
-o_depths = ocean_depths()
+def add_integrons(id_col, df):
+	integrons = pd.read_csv("../integron_finder_v2/MAG-integron-all.csv").astype(str)
+	integron_tmp = integrons[ id_col + ["integron"] ]
+	df_integron = df.merge(integron_tmp, on=id_col, how = "left")
+	return df_integron
+
+o_depths = MAG_db_fun()
 root="/researchdrive/zhongj2/MAG_pnps_redux"
 
-# all_MAG_pnps = pd.read_csv("signalCAZyme-abun-vs-genes-pnps.csv")
-all_MAG_pnps = pd.read_csv("transposase-abun-vs-scg-pnps.csv")
-avail_MAG = all_MAG_pnps[all_MAG_pnps.scg_count >= 11].astype(str).drop("depth", axis = 1)
-integrons = pd.read_csv("anvi_integrons_all_oceans.csv").astype(str)
+all_MAG_pnps = pd.read_csv("MAG_info_db/MAG_all.csv")
 
 # for the defense mechansims
 individual_defense_pnps = pd.DataFrame()
 for ocean, depths in o_depths.items():
 	print(ocean)
-	ocean_defense = per_defense_ORFs_per_sample_pnps(ocean, root, depths, avail_MAG)
+	ocean_defense = per_defense_ORFs_per_sample_pnps(ocean, data_root, depths, all_MAG_pnps)
 	ocean_defense["ocean"] = ocean
 	individual_defense_pnps = individual_defense_pnps.append(ocean_defense)
 
 id_col = ["ocean", "gene_callers_id"]
-integron_tmp = integrons[ id_col + ["integron"] ]
+out_col = ["gene_callers_id", "pnps", "ocean", "depth", "bin","sample_id",
+"scg_pnps_median","scg_count","MAG_pnps_median","total_count", 'integron']
 
-out_col = ["gene_callers_id", "pnps", "ocean", "depth", "bin", "defense_count","sample_id",
-"Trans_abun","scg_pnps_median","scg_count","MAG_pnps_median","total_count"]
-
-defense_integron = individual_defense_pnps.merge(integron_tmp, on=id_col, how = "left")
-d_concise = defense_integron[ out_col + ['integron'] ]
-d_concise.to_csv(path_or_buf=f'individual_defense_pnps.csv', sep=',', index=False)
+defense_integron = add_integrons(id_col, individual_defense_pnps)
+defense_integron[out_col].to_csv(path_or_buf=f'individual_defense_pnps.csv', sep=',', index=False)
 
 # for transposase
 individual_trans_pnps = pd.DataFrame()
 for ocean, depths in o_depths.items():
 	print(ocean)
-	ocean_trans = per_gene_ORFs_per_sample_pnps(ocean, root, depths, avail_MAG, "transposase")
+	ocean_trans = per_gene_ORFs_per_sample_pnps(ocean, root, depths, all_MAG_pnps, "transposase")
 	ocean_trans["ocean"] = ocean
 	individual_trans_pnps = individual_trans_pnps.append(ocean_trans)
 
-trans_concise = individual_trans_pnps[out_col]
-trans_concise.to_csv(path_or_buf=f'individual_transposase_pnps.csv', sep=',', index=False)
+trans_integron = add_integrons(id_col, individual_trans_pnps)
+trans_integron[out_col].to_csv(path_or_buf=f'individual_transposase_pnps.csv', sep=',', index=False)
 
-# # for toxin!!!
-# individual_toxin_pnps = pd.DataFrame()
-# for ocean, depths in o_depths.items():
-# 	print(ocean)
-# 	ocean_toxin = per_gene_ORFs_per_sample_pnps(ocean, root, depths, avail_MAG, "toxin")
-# 	ocean_toxin["ocean"] = ocean
-# 	individual_toxin_pnps = individual_toxin_pnps.append(ocean_toxin)
+# for toxin!!!
+individual_toxin_pnps = pd.DataFrame()
+for ocean, depths in o_depths.items():
+	print(ocean)
+	ocean_toxin = per_gene_ORFs_per_sample_pnps(ocean, root, depths, all_MAG_pnps, "toxin")
+	ocean_toxin["ocean"] = ocean
+	individual_toxin_pnps = individual_toxin_pnps.append(ocean_toxin)
 
-# t_concise = individual_toxin_pnps[["gene_callers_id", "pnps", "ocean", "depth", "bin", "defense_count", 
-# "sample_id", "Trans_abun","scg_pnps_median","scg_count"]]
-# t_concise.to_csv(path_or_buf=f'individual_toxin_pnps.csv', sep=',', index=False)
-
+toxin_integron = add_integrons(id_col, individual_toxin_pnps)
+toxin_integron[out_col].to_csv(path_or_buf=f'individual_toxin_pnps.csv', sep=',', index=False)

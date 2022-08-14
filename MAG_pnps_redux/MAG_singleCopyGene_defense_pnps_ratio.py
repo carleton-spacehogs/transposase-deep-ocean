@@ -3,6 +3,7 @@ import csv
 import pandas as pd
 import sys
 import numpy as np
+from utils import read_pnps, get_bin_helper, merge_blastp_f
 
 def ocean_depths():
 	depths1 = ["SRF", "DCM", "MES", "deep"]
@@ -16,13 +17,6 @@ def ocean_depths():
 		# ocean_depth[ocean] = depths2
 	return ocean_depth
 
-def get_bin_helper(fname):
-	tmp = list(csv.reader(open(fname), delimiter=" "))[1:]
-	bin_info = [[l[0]] + l[1].split('_', 1) for l in tmp]
-	bin_info = pd.DataFrame(bin_info)
-	bin_info.columns = ["gene_callers_id", "bin", "contig"]
-	return bin_info
-
 def get_binning_info(root, ocean, delim = " "):
 	bin_info = get_bin_helper(f"{root}/{ocean}/all_bins_db/gene_callers_id-contig.txt")
 	bin_info['source'] = 'tara'
@@ -31,13 +25,6 @@ def get_binning_info(root, ocean, delim = " "):
 		deep_bin['source'] = 'malaspina'
 		bin_info = bin_info.append(deep_bin)
 	return bin_info
-
-# gene = "toxin", "transposase"
-def merge_blastp_f(df, root, ocean, gene, merge_method = "left"):
-	gene_blastp=pd.read_csv(f"{root}/{ocean}/{gene}_diamond_unique.blastp", sep = "\t", header=None).astype(str)[[1,0]]
-	gene_blastp.rename(columns={1:"gene_callers_id", 0:f"{gene}_id"}, inplace=True)
-	df = df.merge(gene_blastp, on="gene_callers_id", how = merge_method)
-	return df
 
 def merge_COG_category(df, root, ocean):
 	base=f"{root}/{ocean}/all_bins_db"
@@ -52,13 +39,6 @@ def merge_single_copy_gens(df, root, ocean):
 	scg = scg[["gene_callers_id","scg"]]
 	out = df.merge(scg, on="gene_callers_id", how = "left")
 	return out
-
-def read_pnps(root, ocean, depth): # ocean and depth is reversed for the Malaspina deep ocean
-	cols = ["gene_callers_id", "pnps", "sample_id"]
-	depth_pnps = pd.read_csv(f"{root}/{ocean}/PROFILE-{depth}/all_MAGs_pnps/pNpS.txt", sep = "\t").astype(str)
-	depth_pnps = depth_pnps[depth_pnps['pNpS_gene_reference'].astype(float) < 5] # sanity check
-	depth_pnps.rename(columns= {"corresponding_gene_call":cols[0],"pNpS_gene_reference":"pnps"}, inplace=True)
-	return depth_pnps[cols]
 
 def get_all_pnps(depths, root, ocean):
 	pnps_all_sam = pd.DataFrame()
