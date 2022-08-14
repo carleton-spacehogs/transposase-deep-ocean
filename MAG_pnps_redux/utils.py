@@ -60,11 +60,15 @@ def get_signal_set(pos_f):
 	signalp_set = set(pos_signalp_list + neg_signalp_list)
 	return signalp_set
 
-def signalp_to_df_helper(source):
-	CAZyme_set = get_signal_set(f"{signal_root}/{source}-CAZenzyme_gramPos_summary.signalp5")
-	peptidase_set = get_signal_set(f"{data_root}/{source}/peptidase_gramPos_summary.signalp5")
-	signalp_set = peptidase_set.union(CAZyme_set)
-	signal_CAZyme_df = pd.DataFrame(list(signalp_set))
-	signal_CAZyme_df.columns = ["gene_callers_id"]
-	return signal_CAZyme_df
+def signalp_to_df_helper(source, gene):
+	read_f = "null"
+	if gene == "CAZyme":
+		read_f = f"{signal_root}/{source}-CAZenzyme_gramPos_summary.signalp5"
+	if gene == "peptidase":
+		read_f = f"{data_root}/{source}/peptidase_gramPos_summary.signalp5"
+	gene_set = get_signal_set(read_f)
+	signal_gene_df = pd.DataFrame(list(gene_set))
+	# signalp_set = peptidase_set.union(CAZyme_set)
+	signal_gene_df.columns = ["gene_callers_id"]
+	return signal_gene_df
 

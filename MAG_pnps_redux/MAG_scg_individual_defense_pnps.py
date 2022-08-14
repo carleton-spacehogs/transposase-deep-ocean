@@ -45,69 +45,45 @@ def per_gene_ORFs_per_sample_pnps(ocean, root, depths, MAG_db, gene):
 	gene_pnps = gene_pnps.merge(MAG_db, how = "inner", on = ["bin", "sample_id", "depth"]).reindex()
 	return gene_pnps
 
-def secreting_ORFs_per_sample_pnps(ocean, root, depths, MAG_db):
+# gene: CAZyme, peptidase
+def secreting_ORFs_per_sample_pnps(ocean, root, depths, MAG_db, gene):
 	bin_info = utils.get_bin_helper(f"{root}/{ocean}/all_bins_db/gene_callers_id-contig.txt")
-	secret_CAZ_df = utils.signalp_to_df_helper(ocean)
+	secret_CAZ_df = utils.signalp_to_df_helper(ocean, gene)
 	secret_info = secret_CAZ_df.merge(bin_info, on = "gene_callers_id")
 	all_pnps = get_all_pnps_v2(depths, root, ocean)
 	secret_pnps = secret_info.merge(all_pnps, on="gene_callers_id")
 	secret_pnps = secret_pnps.merge(MAG_db, how = "inner", on = ["bin", "sample_id", "depth"]).reindex()
 	return secret_pnps
 
-o_depths = utils.MAG_db_fun()
-
-id_col = ["ocean", "gene_callers_id"]
 out_col = ["gene_callers_id", "pnps", "ocean", "depth", "bin","sample_id",
 "scg_pnps_median","scg_count","MAG_pnps_median","total_count", 'integron']
 
-all_MAG_pnps = pd.read_csv("MAG_info_db/MAG_all.csv")
+def genes_stream_line(root, funct, custom_str, outfile):
+	individual_gene_pnps = pd.DataFrame()
+	o_depths = utils.MAG_db_fun()
+	all_MAG_pnps = pd.read_csv("MAG_info_db/MAG_all.csv")
+	for ocean, depths in o_depths.items():
+		print(ocean)
+		ocean_gene = funct(ocean, root, depths, all_MAG_pnps, custom_str)
+		individual_gene_pnps = individual_gene_pnps.append(ocean_gene)
+	gene_integron = add_integrons(individual_gene_pnps)
+	gene_integron[out_col].to_csv(path_or_buf=outfile, sep=',', index=False)
+
+pnps_out = "individual_genes_pnps"
 
 # for the defense mechansims
-individual_defense_pnps = pd.DataFrame()
-for ocean, depths in o_depths.items():
-	print(ocean)
-	ocean_defense = per_category_ORFs_per_sample_pnps(ocean, utils.data_root, depths, all_MAG_pnps, "V")
-	individual_defense_pnps = individual_defense_pnps.append(ocean_defense)
-
-defense_integron = add_integrons(individual_defense_pnps)
-defense_integron[out_col].to_csv(path_or_buf=f'individual_defense_pnps.csv', sep=',', index=False)
+genes_stream_line(utils.data_root, per_category_ORFs_per_sample_pnps, "V", f'{pnps_out}/defense.csv')
 
 # for the signal tranductions
-individual_signal_pnps = pd.DataFrame()
-for ocean, depths in o_depths.items():
-	print(ocean)
-	ocean_signal = per_category_ORFs_per_sample_pnps(ocean, utils.data_root, depths, all_MAG_pnps, "T")
-	individual_signal_pnps = individual_signal_pnps.append(ocean_signal)
-
-signal_integron = add_integrons(individual_signal_pnps)
-signal_integron[out_col].to_csv(path_or_buf=f'individual_signal_pnps.csv', sep=',', index=False)
+genes_stream_line(utils.data_root, per_category_ORFs_per_sample_pnps, "T", f'{pnps_out}/signal_transduction.csv')
 
 # for the sectory genes (biofilms)
-individual_secret_pnps = pd.DataFrame()
-for ocean, depths in o_depths.items():
-	print(ocean)
-	ocean_secret = secreting_ORFs_per_sample_pnps(ocean, utils.data_root, depths, all_MAG_pnps)
-	individual_secret_pnps = individual_secret_pnps.append(ocean_secret)
-
-secret_integron = add_integrons(individual_secret_pnps)
-secret_integron[out_col].to_csv(path_or_buf=f'individual_secretory_pnps.csv', sep=',', index=False)
+genes_stream_line(utils.data_root, secreting_ORFs_per_sample_pnps, "CAZyme", f'{pnps_out}/secretory_CAZyme.csv')
+genes_stream_line(utils.data_root, secreting_ORFs_per_sample_pnps, "peptidase", f'{pnps_out}/secretory_peptidase.csv')
 
 # for transposase
-individual_trans_pnps = pd.DataFrame()
-for ocean, depths in o_depths.items():
-	print(ocean)
-	ocean_trans = per_gene_ORFs_per_sample_pnps(ocean, utils.data_root, depths, all_MAG_pnps, "transposase")
-	individual_trans_pnps = individual_trans_pnps.append(ocean_trans)
-
-trans_integron = add_integrons(individual_trans_pnps)
-trans_integron[out_col].to_csv(path_or_buf=f'individual_transposase_pnps.csv', sep=',', index=False)
+genes_stream_line(utils.data_root, per_gene_ORFs_per_sample_pnps, "transposase", f'{pnps_out}/transposase.csv')
 
 # for toxin!!!
-individual_toxin_pnps = pd.DataFrame()
-for ocean, depths in o_depths.items():
-	print(ocean)
-	ocean_toxin = per_gene_ORFs_per_sample_pnps(ocean, utils.data_root, depths, all_MAG_pnps, "toxin")
-	individual_toxin_pnps = individual_toxin_pnps.append(ocean_toxin)
+genes_stream_line(utils.data_root, per_gene_ORFs_per_sample_pnps, "toxin", f'{pnps_out}/toxin.csv')
 
-toxin_integron = add_integrons(individual_toxin_pnps)
-toxin_integron[out_col].to_csv(path_or_buf=f'individual_toxin_pnps.csv', sep=',', index=False)
