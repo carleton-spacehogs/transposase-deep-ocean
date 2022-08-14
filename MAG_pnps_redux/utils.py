@@ -53,11 +53,17 @@ def merge_blastp_f(df, root, ocean, gene, merge_method = "left"):
 	df = df.merge(gene_blastp, on="gene_callers_id", how = merge_method)
 	return df
 
-def signalp_to_df_helper(signalp_pos_f):
-	signalp_neg_f = signalp_pos_f.replace("gramPos", "gramNeg")
-	pos_signalp_list = get_all_signalp(signalp_pos_f)
-	neg_signalp_list = get_all_signalp(signalp_neg_f)
+def get_signal_set(pos_f):
+	neg_f = pos_f.replace("gramPos", "gramNeg")
+	pos_signalp_list = get_all_signalp(pos_f)
+	neg_signalp_list = get_all_signalp(neg_f)
 	signalp_set = set(pos_signalp_list + neg_signalp_list)
+	return signalp_set
+
+def signalp_to_df_helper(source):
+	CAZyme_set = get_signal_set(f"{signal_root}/{source}-CAZenzyme_gramPos_summary.signalp5")
+	peptidase_set = get_signal_set(f"{data_root}/{source}/peptidase_gramPos_summary.signalp5")
+	signalp_set = peptidase_set.union(CAZyme_set)
 	signal_CAZyme_df = pd.DataFrame(list(signalp_set))
 	signal_CAZyme_df.columns = ["gene_callers_id"]
 	return signal_CAZyme_df

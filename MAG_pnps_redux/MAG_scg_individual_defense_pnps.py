@@ -47,7 +47,7 @@ def per_gene_ORFs_per_sample_pnps(ocean, root, depths, MAG_db, gene):
 
 def secreting_ORFs_per_sample_pnps(ocean, root, depths, MAG_db):
 	bin_info = utils.get_bin_helper(f"{root}/{ocean}/all_bins_db/gene_callers_id-contig.txt")
-	secret_CAZ_df = utils.signalp_to_df_helper(f"{utils.signal_root}/{ocean}-CAZenzyme_gramPos_summary.signalp5")
+	secret_CAZ_df = utils.signalp_to_df_helper(ocean)
 	secret_info = secret_CAZ_df.merge(bin_info, on = "gene_callers_id")
 	all_pnps = get_all_pnps_v2(depths, root, ocean)
 	secret_pnps = secret_info.merge(all_pnps, on="gene_callers_id")
