@@ -2,9 +2,9 @@ import sys
 import pandas as pd
 sys.path.insert(0, '../particle_association_redux')
 from MAGs_first_get_CAZenzyme_peptidase_seq import read_overview_2_agree, read_overview_only_diamond
-from third_get_secretory_CAZenzyme import get_all_signalp
 from MAG_singleCopyGene_defense_pnps_ratio import ocean_depths, MAG_base_pnps
 from MAG_singleCopyGene_vs_transposaseAbundance import gene_abun_base
+from utils import signalp_to_df_helper
 
 # change read_overview_2_agree -> read_overview_only_diamond
 # prop-CAZyme-{ocean}.csv -> prop-diamond-only-CAZyme-{ocean}.csv
@@ -16,16 +16,6 @@ def merge_CAZyme(df, ocean):
 	gene_id_set = read_overview_only_diamond(CAZyme_overview)
 	mask = [gene_id in gene_id_set for gene_id in df.gene_callers_id]
 	return df[mask]
-
-def signalp_to_df_helper(signalp_pos_f, origin):
-	signalp_neg_f = signalp_pos_f.replace("gramPos", "gramNeg")
-	pos_signalp_list = get_all_signalp(signalp_pos_f)
-	neg_signalp_list = get_all_signalp(signalp_neg_f)
-	signalp_set = set(pos_signalp_list + neg_signalp_list)
-	signal_CAZyme_df = pd.DataFrame(list(signalp_set))
-	signal_CAZyme_df.columns = ["gene_callers_id"]
-	siganl_CAZyme_df = siganl_CAZyme_df.assign(source = origin)
-	return siganl_CAZyme_df
 
 def subset_signalp_CAZyme(df, ocean):
 	base = "/workspace/data/zhongj/MAG_CAZymes"
