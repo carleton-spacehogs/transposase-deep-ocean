@@ -11,33 +11,52 @@ summary <- init_integron_category()
 # Mediterrean total: 3818905, COG: 2270527 -> rate: 0.5945
 # Red sea total: 1988319, COG: 1145209 -> rate: 0.57597
 
+# source, total_cassettes, functional_cassettes
+# total            25178   9929 -> 39.4%
+# ARS               2417   840
+# CPC               2194   747
+# EAC               1680   677
+# IN                 687   271
+# MED                907   442
+# NAT               1679   861
+# NP                2701   1051
+# RS                 509   267
+# SAT               4205   1757
+# SP                5174   1110
+# deep              3025   1206 -> 40.0%
+
 graphing <- summary %>%
+  filter(integron_prop > 0.001) %>%
+  arrange(integron_prop) %>%
   mutate(integron_val_rank = integron_prop) %>%
-  
-  filter(COG_function != "total") %>%
   select(-c("integron_count", "normal_count")) %>%
   reshape2::melt(id.vars=c("COG_function","integron_val_rank"),
-    variable.names = c("integron_prop", "normal_prop"))
+                 variable.names = c("integron_prop", "normal_prop"))
 graphing$type <- factor(graphing$variable,levels = c("normal_prop", "integron_prop"))
 
-num_cassette <- as.character(summary[summary$COG_function == "~Total","integron_count"])
+num_cassette <- as.character(sum(summary$integron_count))
 cas_legend <- sprintf("Cassette ORFs (n = %s)      ", num_cassette)
 nor_legend <- expression(paste("all other ORFs in", italic("Tara"), " Oceans"))
-out_category <- c("~Total")
 
-p_cassette_category <- graphing %>% 
-  filter(!COG_function %in% out_category) %>%
-  ggplot(aes(fill=type, y=value, 
-             x=reorder(COG_function, desc(integron_val_rank)))) + # SORT
+out_category <- c("Chromatin structure and dynamics",
+                  "Cytoskeleton",
+                  "Extracellular structures") # because they don't exist in integrons
+
+integron_order = rev(arrange(summary, integron_prop)$COG_function)
+
+# p_cassette_category <- 
+graphing %>% 
+  # filter(!COG_function %in% out_category) %>%
+  mutate(COG_function = factor(COG_function, levels = integron_order)) %>%
+  ggplot(aes(fill=type, y=value, x=COG_function)) + # SORT
   geom_bar(position="dodge", stat="identity") + 
   coord_flip(ylim = c(0, 0.15), clip = "off") +
   ylab("Proprotion to total ORF calls") + 
-  # coord_cartesian(ylim = c(0, 0.15), clip = "off") +
   theme_classic() +
   guides(fill = guide_legend(reverse = TRUE, title = "COG gene-calls for:")) +
   scale_fill_manual(values=c("dark gray", "orange"), 
                     labels = c(nor_legend, cas_legend)) +
-  annotate(geom="text", x=20.6, y=0.108, size = 3.3,
+  annotate(geom="text", x=18.6, y=0.108, size = 3.3,
            label="& Malaspina metagenomes") +
   theme(legend.position = c(0.65, 0.93),
         axis.title.y=element_blank(),

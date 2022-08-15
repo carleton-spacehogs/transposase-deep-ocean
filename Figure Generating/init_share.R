@@ -34,12 +34,13 @@ boxplot.give.nr <- function(x){
 
 filter_outliers <- function(df, colname){
   b <- colname
-  out <- boxplot(df[,b])$out
+  out <- boxplot.stats(df[,b])$out
+  print(out)
   if (length(out) == 0){
     return(df) 
   } else {
     # need to use get() because this is a dynamic variable
-    return(filter(df, get(b) < max(out) && get(b) > min(out)))
+    return(filter(df, !get(b) %in% out))
   }
 }
 
@@ -135,18 +136,18 @@ init_individual_metagenomes <- function(){
 init_mala_cov <- function(){
   init_env()
   mala_cov <- read_csv("data/Malaspina-genes-coverage.csv")
-  mala_cov$log_dna_trans <- log10(mala_cov$DNA_Transposase)
-  mala_cov$log_dna_biofilm <- log10(mala_cov$DNA_Biofilm)
-  mala_cov$log_dna_defense <- log10(mala_cov$DNA_Defense)
-  mala_cov$log_dna_sect_CAZ <- log10(mala_cov$DNA_sect_CAZ)
-  mala_cov$log_dna_defense <- log10(mala_cov$DNA_Defense)
-  mala_cov$log_dna_sect_pep <- log10(mala_cov$DNA_sect_pep)
-  mala_cov$Layer_DNA <- "BAT"
-  mala_cov$is_MES = "MES, BAT"
-  mala_cov$Depth <- mala_cov$Depth * (-1)
-  mala_cov$percent_sect_CAZ = mala_cov$DNA_sect_CAZ/mala_cov$DNA_CAZenzyme*100
-  mala_cov$percent_sect_pep = mala_cov$DNA_sect_pep/mala_cov$DNA_peptidase*100
-  mala_cov$avg_percent = (mala_cov$percent_sect_CAZ + mala_cov$percent_sect_pep)/2
+  mala_cov = mala_cov %>%
+    mutate( log_dna_trans = log10(DNA_Transposase),
+      log_dna_biofilm = log10(DNA_Biofilm),
+      log_dna_defense = log10(DNA_Defense),
+      log_dna_sect_CAZ = log(DNA_sect_CAZ),
+      log_dna_sect_pep = log(DNA_sect_pep),
+      Layer_DNA = "BAT",
+      is_MES = "MES, BAT",
+      Depth = Depth * (-1),
+      percent_dna_sect_CAZ = DNA_sect_CAZ/DNA_CAZenzyme * 100,
+      percent_dna_sect_pep = DNA_sect_pep/DNA_peptidase * 100,
+      percent_dna_sect_CAZpep = (DNA_sect_CAZ + DNA_sect_pep)/(DNA_CAZenzyme + DNA_peptidase) * 100 )
   return(mala_cov)
 }
 
@@ -316,7 +317,8 @@ init_integron <- function(){
 }
 
 init_integron_category <- function(){
-  summary <- read_csv("data/tara_malaspina_integron_func_category_count.csv")
+  # summary <- read_csv("data/tara_malaspina_integron_func_category_count.csv")
+  summary = read_csv('../integron_finder_v2/integron_known_COG_category_summary.csv')
   
   col1 <- c('Secondary metabolites biosynthesis, transport and catabolism',
             "Posttranslational modification, protein turnover, chaperones", 
@@ -332,7 +334,6 @@ init_integron_category <- function(){
   for (r in 1:nrow(replace)){
     summary$COG_function <- gsub(replace[r,1],replace[r,2],summary$COG_function)
   }
-  
   return(summary)
 }
 
@@ -347,15 +348,19 @@ init_transposase_in_bins <- function(){
 init_tara_md = function(factorize = TRUE){
   DNA_Metadata <- read_excel("data/DNA_Location_Metadata.xlsx")
   DNA_Metadata$Depth <- as.numeric(DNA_Metadata$Depth_DNA)
+  
   RNA_Metadata <- read_excel("data/RNA_Location_Metadata.xlsx")
-  RNA_Metadata <- filter(RNA_Metadata, Depth_RNA != "NA")
-  RNA_Metadata$Depth <- as.numeric(RNA_Metadata$Depth_RNA)
-  RNA_Metadata <- RNA_Metadata %>% mutate(Layer_RNA = ifelse(Layer_RNA != "MIX", Layer_RNA,
-                                                             ifelse(Depth_RNA <= 120, "DCM", "MES")))
+  RNA_Metadata = RNA_Metadata %>% mutate(
+    Depth = as.numeric(Depth_RNA),
+    Layer_RNA = ifelse(Layer_RNA != "MIX", Layer_RNA,
+                ifelse(Depth_RNA <= 120, "DCM", "MES"))) %>% 
+    filter(Depth_RNA != "NA") 
+  
   if (factorize){
-    DNA_Metadata$Layer_DNA <- factor(DNA_Metadata$Layer_DNA, levels = c("SRF", "DCM", "MIX", "MES"))
-    DNA_Metadata$Ocean_short<-factor(DNA_Metadata$Ocean_short)
-    DNA_Metadata$upper_size_dna <- factor(DNA_Metadata$upper_size_dna, levels = c("1.6", "3"))
+    DNA_Metadata = DNA_Metadata %>% mutate(
+      Layer_DNA = factor(Layer_DNA, levels = c("SRF", "DCM", "MIX", "MES")),
+      Ocean_short = factor(Ocean_short),
+      upper_size_dna = factor(upper_size_dna, levels = c("1.6", "3")))
     RNA_Metadata$Layer_RNA <- factor(RNA_Metadata$Layer_RNA, levels = c("SRF", "DCM", "MES"))
     RNA_Metadata$upper_size_rna <- factor(RNA_Metadata$upper_size_rna, levels = c("1.6", "3")) 
   }
@@ -364,47 +369,53 @@ init_tara_md = function(factorize = TRUE){
 
 init_tara <- function(){
   init_env()
-  DNA_cov <- read_excel("data/DNA_Biofilm_Trans_Defense_Coverage.xlsx")
-  DNA_cov$log_dna_biofilm <- log10(DNA_cov$DNA_Biofilm)
-  DNA_cov$log_dna_trans <- log10(DNA_cov$DNA_Transposase)
-  DNA_cov$log_dna_defense <- log10(DNA_cov$DNA_Defense)
-  DNA_cov$percent_sect_CAZ = DNA_cov$DNA_sect_CAZ/DNA_cov$DNA_CAZenzyme*100
-  DNA_cov$log_dna_sect_CAZ = log10(DNA_cov$DNA_sect_CAZ)
-  DNA_cov$percent_sect_pep = DNA_cov$DNA_sect_pep/DNA_cov$DNA_peptidase*100
-  DNA_cov$log_dna_sect_pep = log10(DNA_cov$DNA_sect_pep)
-  DNA_cov$avg_percent = (DNA_cov$percent_sect_CAZ + DNA_cov$percent_sect_pep)/2
-  
-  RNA_cov <- read_excel("data/RNA_Biofilm_Trans_Defense_Coverage.xlsx")
-  RNA_cov$log_rna_biofilm <- log10(RNA_cov$RNA_Biofilm)
-  RNA_cov$log_rna_trans <- log10(RNA_cov$RNA_Transposase)
-  RNA_cov$log_rna_defense <- log10(RNA_cov$RNA_Defense)
-  RNA_cov$percent_sect_CAZ = RNA_cov$RNA_sect_CAZ/RNA_cov$RNA_CAZenzyme*100
-  RNA_cov$log_percent_sect_CAZ = log10(RNA_cov$percent_sect_CAZ)
-  RNA_cov$log_rna_sect_CAZ = log(RNA_cov$RNA_sect_CAZ)
-  RNA_cov$percent_sect_pep = RNA_cov$RNA_sect_pep/RNA_cov$RNA_peptidase*100
-  RNA_cov$log_percent_sect_pep = log10(RNA_cov$percent_sect_pep)
-  RNA_cov$log_rna_sect_pep = log(RNA_cov$RNA_sect_pep)
-  RNA_cov$avg_percent = (RNA_cov$percent_sect_CAZ + RNA_cov$percent_sect_pep)/2
-  
-  
-  DNA_RNA_connector <- read_excel("data/DNA_RNA_connector.xlsx")
+  DNA_cov = read_excel("data/DNA_Biofilm_Trans_Defense_Coverage.xlsx")
+  RNA_cov = read_excel("data/RNA_Biofilm_Trans_Defense_Coverage.xlsx")
 
   g(DNA_Metadata, RNA_Metadata) %=% init_tara_md()
   DNA_tara <- merge(x=DNA_Metadata, y=DNA_cov, by ='connector_DNA', all = TRUE)
   RNA_tara <- merge(x=RNA_Metadata, y=RNA_cov, by ='connector_RNA', all = TRUE)
   
-  DNA_Merged <- merge(x=DNA_RNA_connector, y=DNA_tara, by = 'connector_DNA', all = FALSE)
-  DNA_RNA_tara <- merge(x=DNA_Merged, y=RNA_tara, by ='connector_RNA', all = FALSE)
-  
-  DNA_RNA_tara$biofilm_exp_rate <- DNA_RNA_tara$RNA_Biofilm/DNA_RNA_tara$DNA_Biofilm
-  DNA_RNA_tara$trans_exp_rate <- DNA_RNA_tara$RNA_Trans/DNA_RNA_tara$DNA_Transposase
-  DNA_RNA_tara$defense_exp_rate <- DNA_RNA_tara$RNA_Defense/DNA_RNA_tara$DNA_Defense
-  
-  rm(DNA_cov, RNA_cov, DNA_Merged, DNA_RNA_connector, DNA_Metadata, RNA_Metadata)
-  
   depth_comparisons <- list( c("SRF", "DCM"), c("DCM", "MES"), c("SRF", "MES") )
-  DNA_tara <- mutate(DNA_tara, is_MES = ifelse(Layer_DNA == "MES", "MES, BAT", 
-                                               ifelse(Layer_DNA == "MIX", "MIX", "SRF, DCM")))
+  
+  DNA_tara = DNA_tara %>% mutate(
+    log_dna_trans = log10(DNA_Transposase),
+    log_dna_biofilm = log10(DNA_Biofilm),
+    log_dna_defense = log10(DNA_Defense),
+    log_dna_sect_CAZ = log10(DNA_sect_CAZ),
+    log_dna_sect_pep = log10(DNA_sect_pep),
+    log_dna_sect_CAZpep = log10(DNA_sect_CAZ + DNA_sect_pep),
+    percent_dna_sect_CAZ = DNA_sect_CAZ/DNA_CAZenzyme*100,
+    percent_dna_sect_pep = DNA_sect_pep/DNA_peptidase*100,
+    percent_dna_sect_CAZpep = (DNA_sect_CAZ + DNA_sect_pep)/
+      (DNA_CAZenzyme + DNA_peptidase) * 100,
+    is_MES = ifelse(Layer_DNA == "MES", "MES, BAT", 
+             ifelse(Layer_DNA == "MIX", "MIX", "SRF, DCM")))
+  
+  RNA_tara = RNA_tara %>% mutate(
+    log_rna_trans = log10(RNA_Transposase),
+    log_rna_biofilm = log10(RNA_Biofilm),
+    log_rna_defense = log10(RNA_Defense),
+    log_rna_sect_CAZ = log10(RNA_sect_CAZ),
+    log_rna_sect_pep = log10(RNA_sect_pep),
+    log_rna_sect_CAZpep = log10(RNA_sect_CAZ + RNA_sect_pep),
+    percent_rna_sect_CAZ = RNA_sect_CAZ/RNA_CAZenzyme*100,
+    percent_rna_sect_pep = RNA_sect_pep/RNA_peptidase*100,
+    percent_rna_sect_CAZpep  = (RNA_sect_CAZ + RNA_sect_pep)/
+      (RNA_CAZenzyme + RNA_peptidase) * 100)
+  
+  DNA_RNA_connector = read_excel("data/DNA_RNA_connector.xlsx")
+  tmp = merge(x=DNA_RNA_connector, y=DNA_tara, by = 'connector_DNA', all = FALSE)
+  tmp = tmp[ ,!(colnames(tmp) %in% c("ENA_Run_ID", "Depth"))] # have it in RNA
+  DNA_RNA_tara = merge(x=tmp, y=RNA_tara, by ='connector_RNA', all = FALSE)
+  DNA_RNA_tara = DNA_RNA_tara[ ,!grepl("sum|read", colnames(DNA_RNA_tara))]
+  
+  DNA_RNA_tara %>% mutate(
+    trans_exp_rate = RNA_Transposase/DNA_Transposase,
+    CAZ_exp_rate = RNA_sect_CAZ/DNA_sect_CAZ,
+    pep_exp_rate = RNA_sect_pep/DNA_sect_pep,
+    CAZpep_exp_rate = (RNA_sect_CAZ + RNA_sect_pep)/(DNA_sect_CAZ + DNA_sect_pep),
+    defense_exp_rate = RNA_Defense/DNA_Defense)
   
   return(list(DNA_tara, RNA_tara, DNA_RNA_tara, depth_comparisons))
 }

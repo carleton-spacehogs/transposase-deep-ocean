@@ -8,28 +8,38 @@ output: html_document
 ```{r setup, include=FALSE}
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
 source("./init_share.R")
+init_env()
 ```
 
 ```{r}
-raw = read_csv("../MAG_pnps_redux/MAG_integron_pnps_with_high_cov_bins.csv")
+raw = read_csv("../MAG_pnps_redux/MAG_integron_pnps_all_v2.csv")
 
-raw = raw %>%
-  mutate(depth = factor(depth, levels = c("SRF","DCM","MES","deep"))) %>%
-  mutate(is_defense = ifelse(grepl("V", category_accession), "defense", "non-\ndefense"))%>%
-  filter(pnps < 4)
+raw2 = raw %>%
+  # filter(total_count > 10) %>%
+  mutate(depth = factor(depth, levels = rev(c("SRF","DCM","MES","deep"))),
+         norm_pnps = pnps/MAG_pnps_median) %>%
+         # norm_pnps = pnps/scg_pnps_median) %>%
+  mutate(has_fun = ifelse(COG_accession == "nan", "no", "yes"),
+    type = ifelse( COG_accession == "nan", "no\nfunction",
+           ifelse( grepl("V", COG_accession), "defense",
+           ifelse( grepl("T", COG_accession), "signal T", 
+           "other COG"))))
 
-raw_fudge_pnps = min(raw$pnps[raw$pnps>0])
-
-raw %>% 
-  filter(integron %in% c("complete","CALIN")) %>%
-  ggplot(aes(y=is_defense, # x=pnps, log(pnps + raw_fudge_pnps)
-             x=pnps)) +
+raw2 %>%
+  filter(COG_accession != "nan") %>%
+  ggplot(aes(y=depth, # x=pnps, log(pnps + raw_fudge_pnps)
+             x=sqrt(norm_pnps))) +
   geom_boxplot(outlier.shape = NA) +
-  xlab("pnps ratio of cassette genes in MAGs") +
+  # xlab("pnps ratio of cassette genes in MAGs") +
   # facet_wrap(~depth) +
   geom_point(alpha = 0.2) +
   stat_summary(fun.data = boxplot.give.nr, 
                geom = "text", position=position_nudge(x = 0.05, y = 0.15))
+
+tmp1 = raw2[raw2$is_defense == "defense",]
+tmp2 = raw2[raw2$is_defense == "non-\ndefense",]
+wilcox.test(tmp1$pnps, tmp2$pnps)
+
 
 integrons = filter(raw, (!is.na(defense_count) & (!is.na(scg_count))))
 fudge_def = min(integrons$defense_pnps_median[integrons$defense_pnps_median>0])

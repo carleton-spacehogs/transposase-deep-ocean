@@ -8,19 +8,20 @@ output: html_document
 ```{r setup, include=FALSE}
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
 source("./init_share.R")
+init_env()
 ```
 
 ## defense mechanisms genes have a lower pnps at the deep oceans
 ```{r}
-defense = read_csv("../MAG_pnps_redux/individual_defense_pnps.csv")
-# defense = defense[defense$scg_count >= 21, ] # all of them were over 11 scg
+tmp = read_csv("../MAG_pnps_redux/individual_genes_pnps/defense.csv")
+defense = tmp[tmp$scg_count >= 21 & !is.na(tmp$scg_pnps_median), ]
 scg_fudge = min(defense$scg_pnps_median[defense$scg_pnps_median>0])
 def_fudge = min(defense$pnps[defense$pnps>0])
 defense$scg_median_norm = defense$scg_pnps_median + scg_fudge
 defense$pnps_norm = defense$pnps + def_fudge
 defense$pnps_ratio = defense$pnps / defense$scg_median_norm
 
-defense_n = defense[defense$pnps_ratio < 15,] # & 1/20 < defense$pnps_ratio
+defense_n = defense[defense$pnps_ratio < 10,] # & 1/20 < defense$pnps_ratio
 defense_n$log_ratio = log(defense_n$pnps_norm/defense_n$scg_median_norm)
 defense_n$sqrt_ratio = sqrt(defense_n$pnps_ratio)
 defense_n$depth = factor(defense_n$depth, levels = c("SRF","DCM", "MES", "deep"))
@@ -28,7 +29,6 @@ defense_n$depth = factor(defense_n$depth, levels = c("SRF","DCM", "MES", "deep")
 defense_n %>%
   filter(scg_count >=21) %>%
   filter(!ocean %in% c("EAC", "MED", "RS")) %>%
-  mutate(sd = sd(sqrt_ratio)) %>%
   ggplot(aes(y=fct_rev(depth), x=sqrt_ratio)) +
   facet_wrap(~ocean, ncol = 2) +
   geom_boxplot() +
@@ -36,18 +36,76 @@ defense_n %>%
                geom = "text", position=position_nudge(x = 0.15, y = 0)) 
 ```
 
+
+## defense mechanisms genes have a lower pnps at the deep oceans
+```{r}
+defense = read_csv("../MAG_pnps_redux/individual_genes_pnps/defense.csv")
+defense2 = defense %>%
+  filter(total_count >= 100) %>%
+  mutate(pnps_norm = pnps/MAG_pnps_median) %>%
+  filter(pnps_norm < 10) %>%
+  filter(!ocean %in% c("EAC", "MED", "RS")) %>% #no MES or deep samples
+  mutate(sqrt_ratio = sqrt(pnps_norm),
+         depth = factor(depth, levels = c("SRF","DCM", "MES", "deep")))
+
+defense2 %>%
+  ggplot(aes(y=fct_rev(depth), x=sqrt(pnps_norm))) +
+  facet_wrap(~ocean, ncol = 2) +
+  geom_boxplot() +
+  stat_summary(fun.data = boxplot.give.nr, 
+               geom = "text", position=position_nudge(x = 0.15, y = 0)) 
+```
+
+
+
 ## only about the MAG scg
 ```{r}
-only_scg_MAGs = unique(defense[c('depth','scg_pnps_median','scg_count')])
-only_scg_MAGs %>%
-  mutate(depth = factor(depth, levels = rev(c("SRF","DCM", "MES", "deep")))) %>%
-  filter(scg_count >=21) %>%
-  ggplot(aes(y=depth, x=scg_pnps_median)) +
-  geom_boxplot(outlier.color = NA) +
-  geom_jitter(alpha = 0.05) +
-  xlab("SCG median pnps in MAGs") +
+MAG_baseline = read_csv("../MAG_pnps_redux/MAG_info_db/MAG_all.csv")%>%
+  mutate(depth = factor(depth, levels = c("SRF","DCM", "MES", "deep")))
+
+deep_scg = filter(MAG_baseline, depth == "deep")
+SRF_scg = filter(MAG_baseline, depth == "SRF")
+MES_scg = filter(MAG_baseline, depth == "MES")
+
+MAG_baseline %>%
+  filter(scg_count > 2) %>%
+  ggplot(aes(y = sqrt(scg_pnps_median), x=scg_count)) +
+  facet_wrap(~depth) +
+  geom_point() +
+  geom_smooth()
+
+MAG_baseline %>%
+  filter(total_count > 100) %>%
+  ggplot(aes(y = sqrt(MAG_pnps_median), x=total_count)) +
+  facet_wrap(~depth) +
+  geom_point() +
+  geom_smooth()
+
+MAG_baseline %>%
+  filter(total_count >= 100 & scg_count >= 21) %>%
+  mutate(scg_total_ratio = scg_pnps_median/MAG_pnps_median) %>%
+  ggplot(aes(y=fct_rev(depth), x=scg_total_ratio)) +
+  geom_boxplot() +
   stat_summary(fun.data = boxplot.give.nr, 
-               geom = "text", position=position_nudge(x = 0.15, y = 0))
+               geom = "text", position=position_nudge(x = 0, y = 0))
+
+
+MAG_bl_graph = MAG_baseline %>%
+  select(c("scg_pnps_median","MAG_pnps_median","total_count","depth")) %>%
+  # filter(scg_count > 11) %>%
+  # reshape2::melt(id=c("depth","scg_count"), value.name = "pnps") %>%
+  reshape2::melt(id=c("depth","total_count"), value.name = "pnps") %>%
+  filter(total_count >= 50) %>%
+  mutate(depth = factor(depth, levels = rev(c("SRF","DCM", "MES", "deep"))))
+
+MAG_bl_graph %>%
+  ggplot(aes(y=depth, x=pnps, fill=variable)) +
+  geom_boxplot(outlier.color = NA) +
+  # geom_jitter(alpha = 0.05, width = 0, height = 0.2, aes(color = variable)) +
+  xlab("SCG median pnps in MAGs") +
+  coord_cartesian(xlim = c(0, 1)) +
+  stat_summary(fun.data = boxplot.give.nr, 
+               geom = "text", position=position_nudge(x = 0.2, y = 0))
 ```
 
 
@@ -100,52 +158,51 @@ sort(table(tmp$bin))
 
 ## now the toxins
 ```{r}
-toxin = read_csv("../MAG_pnps_redux/individual_toxin_pnps.csv")
-toxin = toxin[toxin$scg_count >= 21, ] # all of them were over 11 scg
-scg_fudge = min(toxin$scg_pnps_median[toxin$scg_pnps_median>0])
-def_fudge = min(toxin$pnps[toxin$pnps>0])
-toxin$scg_median_norm = toxin$scg_pnps_median + scg_fudge
-toxin$pnps_norm = toxin$pnps + def_fudge
-toxin$pnps_ratio = toxin$pnps_norm / toxin$scg_median_norm
+toxin = read_csv("../MAG_pnps_redux/individual_genes_pnps/secretory_peptidase.csv")
+toxin2 = toxin %>%
+  filter(total_count >= 100) %>%
+  mutate(pnps_norm = pnps/MAG_pnps_median) %>%
+  filter(!ocean %in% c("EAC", "MED", "RS")) %>% #no MES or deep samples
+  mutate(sqrt_ratio = sqrt(pnps_norm),
+         depth = factor(depth, levels = c("SRF","DCM", "MES", "deep")))
 
-toxin_n = toxin[toxin$pnps_ratio < 20 & 1/20 < toxin$pnps_ratio,]
-toxin_n$log_ratio = log(toxin_n$pnps_ratio)
-toxin_n$depth = factor(toxin_n$depth, levels = rev(c("SRF","DCM", "MES", "deep")))
-
-toxin_n %>%
-  filter(!ocean %in% c("EAC", "MED", "RS")) %>%
-  ggplot(aes(y=depth, x=log_ratio)) +
+toxin2 %>%
+  ggplot(aes(y=fct_rev(depth), x=sqrt(pnps_norm))) +
   facet_wrap(~ocean, ncol = 2) +
-  geom_boxplot()
-
+  geom_boxplot() +
+  stat_summary(fun.data = boxplot.give.nr, 
+               geom = "text", position=position_nudge(x = 0.15, y = 0)) 
 ```
 
 
 ## now the transposase
 ```{r}
-trans = read_csv("../MAG_pnps_redux/individual_transposase_pnps.csv")
+trans = read_csv("../MAG_pnps_redux/individual_genes_pnps/transposase.csv")
 scg_fudge = min(trans$scg_pnps_median[trans$scg_pnps_median>0])
 def_fudge = min(trans$pnps[trans$pnps>0])
 trans$scg_median_norm = trans$scg_pnps_median + scg_fudge
 trans$pnps_norm = trans$pnps + def_fudge
-trans$pnps_ratio = trans$pnps_norm / trans$scg_median_norm
+trans$pnps_ratio1 = trans$pnps_norm / trans$scg_pnps_median
+trans$pnps_ratio2 = trans$pnps_norm / trans$MAG_pnps_median
 
-trans_n = trans[trans$pnps_ratio < 15,] # 20 & 1/20 < trans$pnps_ratio
-trans_n$log_ratio = log(trans_n$pnps_ratio)
-trans_n$sqrt_ratio = sqrt(trans_n$pnps_ratio)
+trans_n$sqrt_ratio1 = sqrt(trans_n$pnps_ratio1)
+trans_n$sqrt_ratio2 = sqrt(trans_n$pnps_ratio2)
 trans_n$depth = factor(trans_n$depth, levels = c("SRF","DCM", "MES", "deep"))
 
 trans_ns = filter(trans_n, !ocean %in% c("EAC", "MED", "RS", "ARS"))
-trans_ns %>%
-  # filter(scg_count > 15) %>%
-  ggplot(aes(y=fct_rev(depth), x=sqrt_ratio)) +
-  facet_wrap(~ocean, ncol = 3) +
-  geom_boxplot() + 
-  # geom_line(aes(group = bin2), alpha = 0.5) +
+trans_n %>%
+  filter(ocean %in% c("IN","NAT","SAT","SP","NP","CPC","ARS")) %>%
+  filter(pnps_ratio2 < 10) %>%
+  filter(total_count > 100) %>%
+  ggplot(aes(y=fct_rev(depth), x=sqrt_ratio2)) +
+  theme_classic() +
+  # facet_wrap(~ocean, ncol = 3) +
+  geom_boxplot(outlier.shape = NA) +
+  geom_jitter(aes(color = ocean), alpha = 0.3) +
   stat_summary(fun.data = boxplot.give.nr, 
-               geom = "text", position=position_nudge(x = 0.05, y = 0))
+               geom = "text", position=position_nudge(x = 0, y = 0))
 
-summary(lm(sqrt_ratio ~ ocean + depth, data = trans_ns))
+summary(lm(sqrt_ratio2 ~ ocean + depth, data = trans_ns))
 
 
 sort(table(trans_n$bin))
@@ -281,15 +338,25 @@ pnps_melt(toxin_df, sel) %>%
 ```
 
 ```{r}
-toxin = read_csv("../toxin-db/all_oceans_toxin_pnps_per_sample.csv",
-                 col_types = cols(toxin_median = col_double(),
-                                  bin_median = col_double()))
-toxin = toxin %>% 
-  filter(!depth == "depth") %>%
-  mutate(depth = factor(depth, levels = c("SRF", "DCM", "MES", "deep"))) %>%
-  separate(col = cat, into = c("bin", "sample"), sep = ":")
+toxin = read_csv("../MAG_pnps_redux/individual_toxin_pnps.csv")
 
-toxin$ratio = log(toxin$toxin_median) - log(toxin$bin_median)
+
+
+toxin2 = toxin %>%
+  filter(total_count >= 100) %>%
+  mutate(pnps_norm = pnps/MAG_pnps_median) %>%
+  # filter(pnps_norm < 10) %>%
+  filter(!ocean %in% c("EAC", "MED", "RS")) %>% #no MES or deep samples
+  mutate(sqrt_ratio = sqrt(pnps_norm),
+         depth = factor(depth, levels = c("SRF","DCM", "MES", "deep")))
+
+defense2 %>%
+  ggplot(aes(y=fct_rev(depth), x=log(pnps_norm))) +
+  facet_wrap(~ocean, ncol = 2) +
+  geom_boxplot() +
+  stat_summary(fun.data = boxplot.give.nr, 
+               geom = "text", position=position_nudge(x = 0.15, y = 0)) 
+
 
 toxin %>%
   filter(ratio < 2 & ratio > -2) %>%
