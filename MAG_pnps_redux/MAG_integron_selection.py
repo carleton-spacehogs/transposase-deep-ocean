@@ -16,23 +16,23 @@ def determine_if_integron(integron_dict, MAG_contig, MAG_start, MAG_end):
 	if MAG_contig in integron_dict:
 		integron_list = integron_dict[MAG_contig]
 		for integron in integron_list:
-			beg, end, g_type = integron
+			beg, end, g_type, annotation = integron
 			if within(MAG_start, beg, MAG_end, end):
-				return g_type
-	return "non_integron"
+				return g_type, annotation
+	return "non_integron", "non_integron"
 
 def integron_dict_helper(int_f, integron_dict):
 	intgron_f = pd.read_csv(int_f,comment="#",sep="\t")
-	integrons = intgron_f[["ID_replicon","pos_beg","pos_end","type"]].dropna()
+	integrons = intgron_f[["ID_replicon","pos_beg","pos_end","type","annotation"]].dropna()
 	integrons_2D = integrons.values.tolist()
 	for l in integrons_2D:
-		contig, start, stop, gene_type = l
+		contig, start, stop, gene_type, annotation = l
 		if start >= stop: 
 			exit(f"error while parsing: {int_f} --- start later than stop")
 		if contig in integron_dict:
-			integron_dict[str(contig)].append([int(start), int(stop), str(gene_type)])
+			integron_dict[str(contig)].append([int(start), int(stop), str(gene_type), annotation])
 		else:
-			integron_dict[str(contig)] = [[int(start), int(stop), str(gene_type)]]
+			integron_dict[str(contig)] = [[int(start), int(stop), str(gene_type), annotation]]
 	return integron_dict
 
 def get_integron_dict(integron_rt, ocean):
@@ -63,7 +63,7 @@ def get_full_binning_info(root, ocean):
 
 def merge_anvi_gene_call(anvi_contig_gene_caller_df, ocean, integron_dict):
 	MAG_2D = anvi_contig_gene_caller_df.values.tolist()
-	int_cols = list(anvi_contig_gene_caller_df.columns) + ["integron", "ocean"]
+	int_cols = list(anvi_contig_gene_caller_df.columns) + ["integron", "ocean", "annotation"]
 	MAG_integrons = []
 	for l in MAG_2D:
 		contig, start, stop = l[1:4]
@@ -72,9 +72,9 @@ def merge_anvi_gene_call(anvi_contig_gene_caller_df, ocean, integron_dict):
 			print(f"{contig}, {start}, {stop}")
 			print(f"error while parsing: {ocean} --- start later than stop")
 		else:
-			is_integron = determine_if_integron(integron_dict, contig, start, stop)
+			is_integron, annotation = determine_if_integron(integron_dict, contig, start, stop)
 			if not is_integron == "non_integron":
-				MAG_integrons.append(l + [is_integron, ocean])
+				MAG_integrons.append(l + [is_integron, ocean, annotation])
 	MAG_integrons_df = pd.DataFrame(MAG_integrons, columns=int_cols)
 	return MAG_integrons_df
 
