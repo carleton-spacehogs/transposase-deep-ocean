@@ -11,7 +11,7 @@ However, it has helper function that led to the right thing in
 integrons = list(csv.reader(open("../integron_finder_v2/MAG-integron-all.csv")))
 integron_anvi_id = {}
 for l in integrons:
-	anvi_id, ocean, COG_accession, COG_function = l[0], l[-3], l[-2], l[-1]
+	anvi_id, ocean, COG_accession, COG_function = l[0], l[-4], l[-2], l[-1]
 	MAG_name = l[1].split('_', 1)[0]
 	integron_anvi_id[f"{ocean}-{anvi_id}"] = [MAG_name,COG_accession,COG_function]
 
@@ -33,7 +33,8 @@ for ocean in ["IN", "SAT", "NAT", "SP", "NP"]:
 	for l in all_pnps:
 		area_id = f"deep-{l[0]}"
 		if area_id in integron_anvi_id:
-			l[2] = l[2].split("_")[1] # NP_SRR3965585
+			# print("I am here" + str(l))
+			# l[2] = l[2].split("_")[1] # NP_SRR3965585
 			new_row = l + [ocean, "deep"] + integron_anvi_id[area_id]
 			pnps_integron.append(new_row)
 

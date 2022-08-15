@@ -37,10 +37,12 @@ for ocean in oceans:
 	anvi_COG_category = get_anvi_COG(MAG_dir, ocean)
 	integrons = merge_anvi_gene_call(anvi_contig_gene_caller_df, ocean, integron_dict)
 	integrons = integrons.merge(anvi_COG_category, on="gene_callers_id", how = "left")
-	integrons = explode_COG(integrons, 10)
+	integrons = explode_COG(integrons, 11)
 	merged_integrons = merged_integrons.append(integrons)
 
-merged_integrons = merged_integrons[merged_integrons.integron.str.contains("CALIN|complete")]
+merged_integrons = merged_integrons[(merged_integrons.annotation == "protein") &
+	(merged_integrons.integron.str.contains("CALIN|complete"))]
+
 merged_integrons.to_csv("MAG-integron-all.csv",sep=',', index=False)
 
 # functional_integrons = merged_integrons[merged_integrons.function != "nan"]
