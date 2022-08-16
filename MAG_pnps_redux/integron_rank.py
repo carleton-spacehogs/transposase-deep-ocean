@@ -56,5 +56,5 @@ for i in range(len(bin_sample_pairs)):
 	out.append(Ol + bl+ [rank, total])
 
 out_df = pd.DataFrame(out)
-out_df.columns = ORF_info + bin_info + ["total_pnps", "rank"]
+out_df.columns = ORF_info + bin_info + ["rank", "total_pnps"]
 out_df.to_csv(path_or_buf="MAG_integron_pnps_rank.csv", index=False)

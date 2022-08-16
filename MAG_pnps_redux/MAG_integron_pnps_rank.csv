@@ -1,4 +1,4 @@
-gene_callers_id,pnps,COG_accession,COG_category,sample_id,bin,ocean,depth,total_pnps,rank
+gene_callers_id,pnps,COG_accession,COG_category,sample_id,bin,ocean,depth,rank,total_pnps
 60550,3.8967608162778182,,,ERR315856,MED-668,MED,DCM,148,2722
 61659,0.8183343962640095,Q,"Secondary metabolites biosynthesis, transport and catabolism",ERR315856,MED-668,MED,DCM,1224,2722
 61661,0.9174475299621122,E,Amino acid transport and metabolism,ERR315856,MED-668,MED,DCM,1089,2722
