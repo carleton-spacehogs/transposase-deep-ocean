@@ -72,3 +72,21 @@ def signalp_to_df_helper(source, gene):
 	signal_gene_df.columns = ["gene_callers_id"]
 	return signal_gene_df
 
+
+class ranking:
+	def __init__(self, pnps_list):
+		self.init_pnps_ranking(pnps_list)
+	def init_pnps_ranking(self, pnps_list):
+		clean_list = []
+		for i in pnps_list:
+			if i != "nan":
+				clean_list.append(float(i))
+		clean_list.sort(reverse=True)
+		print(f"there are -- {len(clean_list)} -- pnps in this MAG-sample pair")
+		self.decreasing_pnps = clean_list
+	def find_pnps_ranking(self, this_pnps):
+		this_pnps = float(this_pnps)
+		for i in range(len(self.decreasing_pnps)):
+			if this_pnps >= self.decreasing_pnps[i]:
+				return i+1, len(self.decreasing_pnps)
+		return len(self.decreasing_pnps), len(self.decreasing_pnps)
