@@ -36,12 +36,12 @@ integrons = pd.read_csv("MAG_integron_pnps_all_v2.csv")
 ORF_info = ["gene_callers_id","pnps","COG_accession","COG_category"]
 bin_info = ["sample_id","bin","ocean","depth"]
 integrons = integrons.sort_values(by=['sample_id','bin'])[ORF_info + bin_info]
+visited = {}
 
-out = []
 bin_sample_pairs = integrons[bin_info].values.tolist()
 ORF_pnps = integrons[ORF_info].values.tolist()
 
-visited = {}
+out = []
 for i in range(len(bin_sample_pairs)):
 	bl, Ol = bin_sample_pairs[i], ORF_pnps[i]
 	pari_name = "??".join(bl) # random separator to make sure the has work
@@ -53,8 +53,8 @@ for i in range(len(bin_sample_pairs)):
 		bin_sample_pnps = bin_sample_ranker(sample_id=bl[0], bin=bl[1], ocean=bl[2], depth=bl[3])
 		visited[pari_name] = bin_sample_pnps
 	rank, total = bin_sample_pnps.find_pnps_ranking(sample_id=bl[0], bin=bl[1], this_pnps=Ol[1])
-	out.append(bl + Ol + [rank, total])
+	out.append(Ol + bl+ [rank, total])
 
 out_df = pd.DataFrame(out)
 out_df.columns = ORF_info + bin_info + ["total_pnps", "rank"]
-out_df.to_csv(path_or_buf="MAG_integron_pnps_ranking.csv", index=False)
+out_df.to_csv(path_or_buf="MAG_integron_pnps_rank.csv", index=False)
