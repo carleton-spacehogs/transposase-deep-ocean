@@ -94,7 +94,7 @@ sec_pep_dict = get_CAZyme_dict(f"{base1}/peptidase/deep_secretory_peptidase.txt"
 all_dict = [trans_dict, defense_dict, signalT_dict, toxin_dict, replication_dict,
 			all_CAZ_dict, sec_CAZ_dict, all_pep_dict, sec_pep_dict]
 
-cols = "Transposase,Defense,SingalT,ToxinAntiT,replication,CAZyme,sect_CAZ,peptidase,sect_pep".split(",")
+cols = "Transposase,Defense,SingalT,ToxinAntiT,replication,CAZyme,secretory_CAZyme,peptidase,secretory_peptidase".split(",")
 cols_dna = ["DNA_"+ x for x in cols]
 
 print("finish parsing dictionaries")
