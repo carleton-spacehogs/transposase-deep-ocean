@@ -72,7 +72,6 @@ def signalp_to_df_helper(source, gene):
 	signal_gene_df.columns = ["gene_callers_id"]
 	return signal_gene_df
 
-
 class ranking:
 	def __init__(self, pnps_list):
 		self.init_pnps_ranking(pnps_list)
