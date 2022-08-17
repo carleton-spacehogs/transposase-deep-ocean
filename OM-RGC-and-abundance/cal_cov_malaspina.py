@@ -90,11 +90,21 @@ all_CAZ_dict = get_CAZyme_dict(f"{base1}/CAZyme/deep_CAZenzyme_anvigeneID.txt", 
 sec_CAZ_dict = get_CAZyme_dict(f"{base1}/CAZyme/deep_secretory_CAZenzyme.txt", anvi_gene_call)
 all_pep_dict = get_CAZyme_dict(f"{base1}/peptidase/deep_peptidase_anvigeneID.txt", anvi_gene_call)
 sec_pep_dict = get_CAZyme_dict(f"{base1}/peptidase/deep_secretory_peptidase.txt", anvi_gene_call)
+amino_dict = get_COG_gene_dict(anvi_category, "Amino acid transport and metabolism", anvi_gene_call)
+lipid_dict = get_COG_gene_dict(anvi_category, "Lipid transport and metabolism", anvi_gene_call)
+coenzyme_dict = get_COG_gene_dict(anvi_category, "Coenzyme transport and metabolism", anvi_gene_call)
+cwall_dict = get_COG_gene_dict(anvi_category, "Cell wall", anvi_gene_call)
+energy_dict = get_COG_gene_dict(anvi_category, "Energy production and conversion", anvi_gene_call)
 
 all_dict = [trans_dict, defense_dict, signalT_dict, toxin_dict, replication_dict,
-			all_CAZ_dict, sec_CAZ_dict, all_pep_dict, sec_pep_dict]
+			all_CAZ_dict, sec_CAZ_dict, all_pep_dict, sec_pep_dict,
+			amino_dict,lipid_dict,coenzyme_dict,cwall_dict,energy_dict]
 
-cols = "Transposase,Defense,SingalT,ToxinAntiT,replication,CAZyme,secretory_CAZyme,peptidase,secretory_peptidase".split(",")
+str1 = "Transposase,Defense,SingalT,ToxinAntiT,replication,CAZyme,secretory_CAZyme,peptidase,secretory_peptidase"
+str2 = "Amino_acid_transport_and_metabolism,Lipid_transport_and_metabolism,Coenzyme_transport_and_metabolism"
+str3 = "Cell_wall,Energy_production_and_conversion"
+
+cols = f"{str1},{str2},{str3}".split(",")
 cols_dna = ["DNA_"+ x for x in cols]
 
 print("finish parsing dictionaries")
@@ -111,7 +121,11 @@ out_f = 'Malaspina-genes-coverage.csv'
 metadata.to_csv(out_f, index=False)
 
 # for things in the future:
+# amino_dict = get_COG_gene_dict(anvi_category, "Amino acid transport and metabolism", anvi_gene_call)
+
+out_f = 'Malaspina-genes-coverage.csv'
 metadata = pd.read_csv(out_f)
-metadata = streamline_gene(new_dict, "your new name", metadata)
+metadata = streamline_gene(amino_dict, "DNA_Amino_acid_transport_and_metabolism", metadata)
+
 metadata.to_csv(out_f, index=False)
 
