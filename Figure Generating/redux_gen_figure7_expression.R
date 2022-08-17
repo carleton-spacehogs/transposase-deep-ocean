@@ -75,7 +75,19 @@ exp_defense <- gen_plot("defense", c(-3, -2.699, -2.398, -2.097),
                         c("0.1%", "0.2%", "0.4%","0.8%"),
                         3, "gray", "red", 0.1, 0.1)
 
-gen_plot("sect_CAZpep", c(-3, -2.699, -2.398, -2.097),
+gen_plot("signalT", c(-3, -2.699, -2.398, -2.097),
+         c("0.1%", "0.2%", "0.4%","0.8%"),
+         3, "gray", "red", 0.1, 0.1)
+
+gen_plot("coenzyme", c(-3, -2.699, -2.398, -2.097),
+         c("0.1%", "0.2%", "0.4%","0.8%"),
+         3, "gray", "red", 0.1, 0.1)
+
+gen_plot("energyPC", c(-3, -2.699, -2.398, -2.097),
+         c("0.1%", "0.2%", "0.4%","0.8%"),
+         3, "gray", "red", 0.1, 0.1)
+
+gen_plot("replication", c(-3, -2.699, -2.398, -2.097),
          c("0.1%", "0.2%", "0.4%","0.8%"),
          3, "gray", "red", 0.1, 0.1)
 
@@ -127,23 +139,24 @@ ggsave("F7_DNA-RNA-ratio_target-genes.pdf",
        height = 4.3,
        width = 7.5)
 
-for (g in c("biofilm", "defense", "trans")){
-  DNA_exp <- paste(g,"exp_rate", sep="_")
-  print(DNA_exp)
-  dcm<-DNA_RNA%>%filter(Layer_RNA == "DCM")
-  srf<-DNA_RNA%>%filter(Layer_RNA == "SRF")
-  mes<-DNA_RNA%>%filter(Layer_RNA == "MES")
-  srf_data <- less_than(srf[,c(DNA_exp)],out_exp)
-  dcm_data <- less_than(dcm[,c(DNA_exp)],out_exp)
-  mes_data <- less_than(mes[,c(DNA_exp)],out_exp)
-  print(paste("SRF vs MES, P:", t.test(srf_data, mes_data)$p.value))
-  print(paste("SRF vs DCM, P:", t.test(srf_data, dcm_data)$p.value))
-}
+expressions = colnames(DNA_RNA)[grep("exp", colnames(DNA_RNA))]
+
+exp_melted = DNA_RNA[c("Layer_DNA", expressions)] %>%
+  reshape2::melt(id_var = "Layer_DNA") %>%
+  as.data.frame()
+
+colnames(exp_melted) = c("depth", "gene_type", "exp_rate")
+
+exp_stats = exp_melted %>%
+  group_by(gene_type) %>%
+  wilcox_test(exp_rate~depth) %>%
+  adjust_pvalue(method = "BH") %>%
+  add_significance() 
+  
 
 
 
-
-
+print("done")
 
 
 

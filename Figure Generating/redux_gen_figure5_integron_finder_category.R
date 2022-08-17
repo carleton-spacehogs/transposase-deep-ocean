@@ -25,6 +25,10 @@ summary <- init_integron_category()
 # SP                5174   1110
 # deep              3025   1206 -> 40.0%
 
+# COG_integrons[COG_integrons.function == "nan"] # 16177 rows, 16177/25178 = 0.6425054
+# COG_integrons['function'] = COG_integrons.function.str.replace(pattern, "Function unknown", regex=True)
+# COG_integrons[COG_integrons.function == "Function unknown"] # 17439 rows, 17439/25178 = 0.69262848518
+
 graphing <- summary %>%
   filter(integron_prop > 0.001) %>%
   arrange(integron_prop) %>%
@@ -38,9 +42,7 @@ num_cassette <- as.character(sum(summary$integron_count))
 cas_legend <- sprintf("Cassette ORFs (n = %s)      ", num_cassette)
 nor_legend <- expression(paste("all other ORFs in", italic("Tara"), " Oceans"))
 
-out_category <- c("Chromatin structure and dynamics",
-                  "Cytoskeleton",
-                  "Extracellular structures") # because they don't exist in integrons
+out_category <- c("Chromatin structure and dynamics") # because there is only 1 in integrons
 
 integron_order = rev(arrange(summary, integron_prop)$COG_function)
 
@@ -75,3 +77,25 @@ ggsave("F5_cassette-COG-cateogory_biofilm-vs-defense.pdf",
        plot = last_plot(),
        height = 8,
        width = 8)
+
+total = sum(summary$integron_count) + sum(summary$normal_count)
+integron_total = sum(summary$integron_count)
+
+options(scipen = 0)
+COG_enrichment.stat = apply(summary, 1, function(row){
+  group1 = integron_total
+  int_count = as.numeric(row["integron_count"])
+  nor_count = as.numeric(row["normal_count"])
+  group2 = int_count + nor_count
+  # test for over-representation (enrichment)
+  p.val = phyper(int_count-1, group2, total-group2, group1,lower.tail= FALSE)
+  return(p.val)
+})
+
+
+summary.stats = summary %>%
+  mutate(p.val = COG_enrichment.stat) %>%
+  adjust_pvalue(method = "BH") %>%
+  add_significance() 
+
+

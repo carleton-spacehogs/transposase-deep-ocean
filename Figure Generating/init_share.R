@@ -179,12 +179,19 @@ init_MAGs_pnps_depths <- function(gene){
               prep_pnps2(indi_toxin), prep_pnps(COG_toxin),
               prep_pnps(mobilome), prep_pnps2(trans)))
 }
-  
+
+merge_MAGs_eukaryote = function(bin_df){
+  euk = read_csv("../identify_eukaryotes/MAG_composition_summary.csv")
+  euk_short = euk[c("bin","eukarya_prop")]
+  bin_df = merge(bin_df, euk_short, by = "bin")
+  return(bin_df)
+}
+
 init_bins <- function(){
   init_env()
-  c <- 0.0001 # for log(0)
-  # low_trans <- c("Flavobacteria","Acidimicrobidae","novelClass_E",
-  #                "Gemmatimonadetes","SAR202-2","Marinisomatia")
+  sel_col = c("bin","Class", "Order", "Family", "complete_genome_size", #"Genus", "Species", 
+              "percent_trans", "percent_defense", "Total ORFs", "depth")
+  
   # from bin_taxon_genomesize_statistics.R
   low_trans <- c("Flavobacteria","Acidimicrobidae","novelClass_E", 
                  "Verrucomicrobia","SAR202-2","Opitutae")
@@ -192,91 +199,52 @@ init_bins <- function(){
                   "Betaproteobacteria","Deltaproteobacteria")
   taxon <- read_csv("data/bin_taxon.csv")
   origin <- read_csv("../MAG-related/Tara_bins_origin.csv")[,c("bin","depth","size_fraction")]
-  taxon <- merge(origin, taxon, by = "bin")
-  # COG_diversity <- read_csv("data/tara_bin_COG_diversity2.csv")
-  taxon$depth <- factor(taxon$depth, levels = c("SRF", "DCM", "MES"))
-  taxon$`transposase gene calls in genome (%)` <- taxon$percent_trans
-  taxon$`biofilm gene calls in genome (%)` <- taxon$percent_biofilm
-  taxon$`defense mechanisms gene calls in genome (%)` <- taxon$percent_defense
-  taxon$log_complete_bin_size <- log10(taxon$`complete genome size (Mbp)` + c)
-  taxon$log_percent_trans <- log10(taxon$percent_trans + c)
-  taxon$log_percent_biofilm <- log10(taxon$percent_biofilm + c)
-  taxon$complete_ORF_count <- taxon$`Total ORFs`/taxon$`Percent Complete`*100
-  taxon <- taxon %>% mutate(is_deep_sea = ifelse(depth == "unsure", "unsure", ifelse(depth == "MES", "deep_sea", "SRF&DCM")))
-  taxon$is_biofilm <- ifelse(taxon$biofilm_count > 0, "present", "absent")
-  taxon$is_tara <- "Tara"
-  taxon$graphing_log_trans <- ifelse(taxon$log_percent_trans < -9, -2.5, taxon$log_percent_trans)
-  taxon$graphing_log_biofilm <- ifelse(taxon$log_percent_biofilm < -9, -2.5, taxon$log_percent_biofilm)
-  taxon$class_trans <- ifelse(taxon$Class %in% low_trans, "low",
-                            ifelse(taxon$Class %in% high_trans, "high", "normal"))
-  taxon$class_trans <- factor(taxon$class_trans, levels = c("high", "normal", "low"))
-  taxon$Class <- gsub('Verrucomicrobiae', 'Verrucomicrobia', taxon$Class)
+  taxon = merge(origin, taxon, by = "bin")
   
-  pn_ps_bins <- read_csv("data/bin_median_pnps.csv")
-  pn_ps_bins <- pn_ps_bins %>% filter(count >= 100)
-  taxon <- merge(taxon, pn_ps_bins, by="bin", all.x = TRUE)
-  # taxon <- merge(taxon, COG_diversity, by="bin", all.x = TRUE)
-  taxon$log_median_bin_pnps <- log10(taxon$median_bin_pnps)
-  taxon$size_fraction <- factor(taxon$size_fraction, levels = c("planktonic", "mixed", "particle"))
+  # pn_ps_bins <- read_csv("data/bin_median_pnps.csv")
+  # pn_ps_bins <- pn_ps_bins %>% filter(count >= 100)
+  # taxon <- merge(taxon, pn_ps_bins, by="bin", all.x = TRUE)
+  # taxon$log_median_bin_pnps <- log10(taxon$median_bin_pnps)
+  # taxon$size_fraction <- factor(taxon$size_fraction, levels = c("planktonic", "mixed", "particle"))
+
+  malaspina_bins = read_csv("data/malaspina_bin_taxon_over70complete.csv")
+  # pn_ps_malaspina_bins <- read_csv("data/malaspina_bin_median_pnps.csv")
+  gene_abun = read_csv("data/Malaspina_origin_biofilm_trans_TA_each_bin.csv")
+  malaspina_bins$bin = gsub('mp-deep_mag-', 'deep_MAG_', malaspina_bins$magId)
+  malaspina_bins = merge(malaspina_bins, gene_abun, by="bin", all.x = TRUE)
+  malaspina_bins$depth = "BAT"
   
-  depth_comparisons <- list(c("DCM", "MES"), c("SRF", "DCM"), c("SRF", "MES") )
+  all_MAGs = rbind(taxon[sel_col], malaspina_bins[sel_col])
+  all_MAGs$Class = gsub('Acidimicrobiia', 'Acidimicrobidae',
+                   gsub('Verrucomicrobiae', 'Verrucomicrobia', all_MAGs$Class))
   
-  malaspina_bins <- read_csv("data/malaspina_bin_taxon_over70complete.csv")
-  pn_ps_malaspina_bins <- read_csv("data/malaspina_bin_median_pnps.csv")
-  malaspina_bins_trans_biofilm_TA <- read_csv("data/Malaspina_origin_biofilm_trans_TA_each_bin.csv")
-  malaspina_bins$bin <- gsub('mp-deep_mag-', 'deep_MAG_', malaspina_bins$magId)
-  malaspina_bins <- merge(malaspina_bins, pn_ps_malaspina_bins, by="bin", all.x = TRUE)
-  malaspina_bins <- merge(malaspina_bins, malaspina_bins_trans_biofilm_TA, by="bin", all.x = TRUE)
-  malaspina_bins$log_percent_trans <- log10(malaspina_bins$percent_trans + c)
-  malaspina_bins$log_percent_biofilm <- log10(malaspina_bins$percent_biofilm + c)
-  malaspina_bins$log_median_bin_pnps <- log10(malaspina_bins$median_bin_pnps)
-  malaspina_bins$graphing_log_trans <- ifelse(malaspina_bins$log_percent_trans < -9, -2.5, malaspina_bins$log_percent_trans)
-  malaspina_bins$graphing_log_biofilm <- ifelse(malaspina_bins$log_percent_biofilm < -9, -2.5, malaspina_bins$log_percent_biofilm)
-  malaspina_bins$Class <- gsub('Acidimicrobiia', 'Acidimicrobidae', malaspina_bins$Class)
-  malaspina_bins$Class <- gsub('Verrucomicrobiae', 'Verrucomicrobia', malaspina_bins$Class)
-  malaspina_bins$class_trans <- ifelse(malaspina_bins$Class %in% low_trans, "low",
-                              ifelse(malaspina_bins$Class %in% high_trans, "high", "normal"))
-  malaspina_bins$class_trans <- factor(malaspina_bins$class_trans, levels = c("high", "normal", "low"))
+  Class_count = table(all_MAGs$Class[!is.na(all_MAGs$Class)])
+  big_taxa = Class_count[Class_count >= 10]
+  trans_fudge = min(all_MAGs$percent_trans[all_MAGs$percent_trans > 0])
   
-  tmp <- c(taxon[, "Class"], malaspina_bins[, "Class"])
-  tmp<-tmp[!is.na(tmp)]
-  tmp2 <- as.data.frame(table(tmp)) %>% filter(Freq >= 10)
-  tmp3 <- as.data.frame(table(tmp)) %>% filter(Freq >= 25)
-  big_taxa <- tmp2[ , "tmp"]
-  taxon$`Class with more than 10 MAGs` <- ifelse(is.na(taxon$Class), "Others Or Unknown",
-                                          ifelse(taxon$Class %in% big_taxa, taxon$Class,"Others Or Unknown"))
-  malaspina_bins$`Class with more than 10 MAGs` <- ifelse(is.na(malaspina_bins$Class), "Others Or Unknown",
-                                          ifelse(malaspina_bins$Class %in% big_taxa, malaspina_bins$Class,"Others Or Unknown"))
-  taxon$Class_25_MAGs <- ifelse(is.na(taxon$Class), "Others Or Unknown",
-                                ifelse(taxon$Class %in% tmp3$tmp, taxon$Class,"Others Or Unknown"))
-  malaspina_bins$Class_25_MAGs <- ifelse(is.na(malaspina_bins$Class), "Others Or Unknown",
-                                ifelse(malaspina_bins$Class %in% tmp3$tmp, malaspina_bins$Class,"Others Or Unknown"))
-  malaspina_bins$is_biofilm <- ifelse(malaspina_bins$biofilm_count > 0, "present", "absent")
-  malaspina_bins$depth <- "BAT"
-  malaspina_bins$g_depth <- "Deep\nMalaspina"
-  malaspina_bins$is_deep_sea <- "deep_sea"
-  malaspina_bins$size_fraction <- factor(malaspina_bins$size_fraction, levels = c("planktonic", "mixed", "particle"))
-  malaspina_bins$`Total ORFs` = as.numeric(malaspina_bins$`Total ORFs`)
-  return(list(taxon, depth_comparisons, malaspina_bins, low_trans, high_trans))
+  all_MAGs = all_MAGs %>% mutate(
+    log_percent_trans = log10(percent_trans + trans_fudge),
+    large_classes = ifelse(is.na(Class), "Others Or Unknown",
+                    ifelse(Class %in% names(big_taxa), Class,"Others Or Unknown")),
+    class_trans = ifelse(Class %in% low_trans, "low",
+                  ifelse(Class %in% high_trans, "high", "normal")),
+    depth = factor(gsub("unsure", "MIXED", depth),
+                   levels = c("SRF", "DCM", "MIXED", "MES", "BAT")),
+    `Total ORFs` = as.numeric(`Total ORFs`)
+  )
+  all_MAGs = merge_MAGs_eukaryote(all_MAGs)
+  return(list(all_MAGs, low_trans, high_trans))
 }
 
 merge_MAGs_CAZyme_peptide = function(bin_df){
-  pa <- read_csv("../particle_association_redux/MAGs_two_agree_CAZyme_and_peptidase_signalp_summary2.csv")
-  # pa <- read_csv("../particle_association_redux/MAGs_diamond_CAZyme_and_peptidase_signalp_summary.csv")
-  pa <- merge(all_p, pa, by = "bin")
+  pa <- read_csv("../particle_association_redux/MAGs_diamond_secretory_CAZyme_peptidase.csv")
   pa[is.na(pa)] = 0
-  pa$abundance_sect_CAZ = pa$signal_CAZ_aa/pa$MAG_ORFs_aa
-  # pa$abundance_sect_CAZ = pa$signal_CAZ_count/pa$ORF_count
-  CAZ_abun_fudge = min(pa$abundance_sect_CAZ[pa$abundance_sect_CAZ>0])
-  pa$log_abun_sect_CAZ = log(pa$abundance_sect_CAZ + CAZ_abun_fudge)
+  pa <- merge(bin_df, pa, by = "bin")
+  pa = pa %>% mutate( percent_sect_CAZpep =
+    (signal_CAZ_count + signal_pep_count)/(total_CAZ_count + total_pep_count) * 100,                 
+    percent_sect_CAZ = signal_CAZ_count/total_CAZ_count * 100,
+    percent_sect_pep = signal_pep_count/total_pep_count * 100)
   return(pa)
-}
-
-merge_MAGs_eukaryote = function(bin_df){
-  euk = read_csv("../identify_eukaryotes/MAG_composition_summary.csv")
-  euk_short = euk[c("bin","eukarya_prop")]
-  bin_df = merge(bin_df, euk_short, by = "bin")
-  return(bin_df)
 }
 
 init_integron <- function(){
@@ -369,8 +337,8 @@ init_tara_md = function(factorize = TRUE){
 
 init_tara <- function(){
   init_env()
-  DNA_cov = read_excel("data/DNA_Biofilm_Trans_Defense_Coverage.xlsx")
-  RNA_cov = read_excel("data/RNA_Biofilm_Trans_Defense_Coverage.xlsx")
+  DNA_cov = read_csv("data/tara_DNA_genes_abundance.csv")
+  RNA_cov = read_csv("data/tara_RNA_genes_abundance.csv")
 
   g(DNA_Metadata, RNA_Metadata) %=% init_tara_md()
   DNA_tara <- merge(x=DNA_Metadata, y=DNA_cov, by ='connector_DNA', all = TRUE)
@@ -378,31 +346,40 @@ init_tara <- function(){
   
   depth_comparisons <- list( c("SRF", "DCM"), c("DCM", "MES"), c("SRF", "MES") )
   
+  # 'transposase', 'all_peptidase', 'CAZenzyme', 'secretory_CAZenzyme', 'secretory_peptidase',
+  # 'Lipid_transport_and_metabolism', 'Coenzyme_transport_and_metabolism', 'Signal_transduction_mechanisms', 'Defense_mechanisms'
+  
   DNA_tara = DNA_tara %>% mutate(
-    log_dna_trans = log10(DNA_Transposase),
-    log_dna_biofilm = log10(DNA_Biofilm),
-    log_dna_defense = log10(DNA_Defense),
-    log_dna_sect_CAZ = log10(DNA_sect_CAZ),
-    log_dna_sect_pep = log10(DNA_sect_pep),
-    log_dna_sect_CAZpep = log10(DNA_sect_CAZ + DNA_sect_pep),
-    percent_dna_sect_CAZ = DNA_sect_CAZ/DNA_CAZenzyme*100,
-    percent_dna_sect_pep = DNA_sect_pep/DNA_peptidase*100,
-    percent_dna_sect_CAZpep = (DNA_sect_CAZ + DNA_sect_pep)/
-      (DNA_CAZenzyme + DNA_peptidase) * 100,
+    log_dna_trans = log10(DNA_transposase),
+    log_dna_defense = log10(DNA_Defense_mechanisms),
+    log_dna_signalT = log10(DNA_Signal_transduction_mechanisms),
+    log_dna_lipidTM = log10(DNA_Lipid_transport_and_metabolism),
+    log_dna_coenzyme = log10(DNA_Coenzyme_transport_and_metabolism),
+    log_dna_energyPC = log10(DNA_Energy_production_and_conversion),
+    log_dna_replication = log10(DNA_Replication_recombination_and_repair),
+    log_dna_sect_CAZ = log10(DNA_secretory_CAZenzyme),
+    log_dna_sect_pep = log10(DNA_secretory_peptidase),
+    percent_dna_sect_CAZ = DNA_secretory_CAZenzyme/DNA_CAZenzyme*100,
+    percent_dna_sect_pep = DNA_secretory_peptidase/DNA_all_peptidase*100,
+    percent_dna_sect_CAZpep = (DNA_secretory_CAZenzyme + DNA_secretory_peptidase)/
+      (DNA_all_peptidase + DNA_CAZenzyme) * 100,
     is_MES = ifelse(Layer_DNA == "MES", "MES, BAT", 
              ifelse(Layer_DNA == "MIX", "MIX", "SRF, DCM")))
   
   RNA_tara = RNA_tara %>% mutate(
-    log_rna_trans = log10(RNA_Transposase),
-    log_rna_biofilm = log10(RNA_Biofilm),
-    log_rna_defense = log10(RNA_Defense),
-    log_rna_sect_CAZ = log10(RNA_sect_CAZ),
-    log_rna_sect_pep = log10(RNA_sect_pep),
-    log_rna_sect_CAZpep = log10(RNA_sect_CAZ + RNA_sect_pep),
-    percent_rna_sect_CAZ = RNA_sect_CAZ/RNA_CAZenzyme*100,
-    percent_rna_sect_pep = RNA_sect_pep/RNA_peptidase*100,
-    percent_rna_sect_CAZpep  = (RNA_sect_CAZ + RNA_sect_pep)/
-      (RNA_CAZenzyme + RNA_peptidase) * 100)
+    log_rna_trans = log10(RNA_transposase),
+    log_rna_defense = log10(RNA_Defense_mechanisms),
+    log_rna_signalT = log10(RNA_Signal_transduction_mechanisms),
+    log_rna_lipidTM = log10(RNA_Lipid_transport_and_metabolism),
+    log_rna_coenzyme = log10(RNA_Coenzyme_transport_and_metabolism),
+    log_rna_energyPC = log10(RNA_Energy_production_and_conversion),
+    log_rna_replication = log10(RNA_Replication_recombination_and_repair),
+    log_rna_sect_CAZ = log10(RNA_secretory_CAZenzyme),
+    log_rna_sect_pep = log10(RNA_secretory_peptidase),
+    percent_rna_sect_CAZ = RNA_secretory_CAZenzyme/RNA_CAZenzyme*100,
+    percent_rna_sect_pep = RNA_secretory_peptidase/RNA_all_peptidase*100,
+    percent_rna_sect_CAZpep = (RNA_secretory_CAZenzyme + RNA_secretory_peptidase)/
+      (RNA_all_peptidase + RNA_CAZenzyme) * 100)
   
   DNA_RNA_connector = read_excel("data/DNA_RNA_connector.xlsx")
   tmp = merge(x=DNA_RNA_connector, y=DNA_tara, by = 'connector_DNA', all = FALSE)
@@ -410,12 +387,16 @@ init_tara <- function(){
   DNA_RNA_tara = merge(x=tmp, y=RNA_tara, by ='connector_RNA', all = FALSE)
   DNA_RNA_tara = DNA_RNA_tara[ ,!grepl("sum|read", colnames(DNA_RNA_tara))]
   
-  DNA_RNA_tara %>% mutate(
-    trans_exp_rate = RNA_Transposase/DNA_Transposase,
-    CAZ_exp_rate = RNA_sect_CAZ/DNA_sect_CAZ,
-    pep_exp_rate = RNA_sect_pep/DNA_sect_pep,
-    CAZpep_exp_rate = (RNA_sect_CAZ + RNA_sect_pep)/(DNA_sect_CAZ + DNA_sect_pep),
-    defense_exp_rate = RNA_Defense/DNA_Defense)
+  DNA_RNA_tara = DNA_RNA_tara %>% mutate(
+    trans_exp_rate = RNA_transposase/DNA_transposase,
+    sect_CAZ_exp_rate = RNA_secretory_CAZenzyme/DNA_secretory_CAZenzyme,
+    sect_pep_exp_rate = RNA_secretory_peptidase/DNA_secretory_peptidase,
+    defense_exp_rate = RNA_Defense_mechanisms/DNA_Defense_mechanisms,
+    signalT_exp_rate = RNA_Signal_transduction_mechanisms/DNA_Signal_transduction_mechanisms,
+    lipidTM_exp_rate = RNA_Lipid_transport_and_metabolism/DNA_Lipid_transport_and_metabolism,
+    energyPC_exp_rate = RNA_Energy_production_and_conversion/DNA_Energy_production_and_conversion,
+    replication_exp_rate = RNA_Replication_recombination_and_repair/DNA_Replication_recombination_and_repair,
+    coenzyme_exp_rate = RNA_Coenzyme_transport_and_metabolism/DNA_Coenzyme_transport_and_metabolism)
   
   return(list(DNA_tara, RNA_tara, DNA_RNA_tara, depth_comparisons))
 }

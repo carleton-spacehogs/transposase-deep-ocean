@@ -1,4 +1,4 @@
-﻿magId,domain,phylum,Class,Order,Family,Genus,Species,Completeness,Contamination,genomeSize,contigCount,N50,meanContigLen,minContigLen,maxContigLen,complete genome size (Mbp),is_tara
+﻿magId,domain,phylum,Class,Order,Family,Genus,Species,Completeness,Contamination,genomeSize,contigCount,N50,meanContigLen,minContigLen,maxContigLen,complete_genome_size,is_tara
 mp-deep_mag-0478,Bacteria,Eremiobacterota,UBP9,UBA4705,undef,undef,undef,94.44,9.26,8141299,599,22161,13591,2002,140601,8.620604617,Deep_Malaspina
 mp-deep_mag-0126,Bacteria,Proteobacteria,Gammaproteobacteria,Pseudomonadales,Halomonadaceae,Halomonas,Halomonas aquamarina,77.24,9.19,2635615,391,9638,6741,2008,53096,3.412241067,Deep_Malaspina
 mp-deep_mag-0166,Bacteria,Proteobacteria,Alphaproteobacteria,Rhizobiales,Rhizobiaceae,Ahrensia,Ahrensia sp002706335,99.57,9.11,5189477,63,131301,82373,3723,324979,5.211888119,Deep_Malaspina

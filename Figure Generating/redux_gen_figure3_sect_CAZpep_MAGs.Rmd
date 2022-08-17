@@ -1,0 +1,160 @@
+---
+title: "Particle associated lifestyle and genome size and depths of MAGs"
+author: "Jimmy Zhong"
+date: "8/16/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
+source("./init_share.R")
+g(all_MAGs, low_trans, high_trans) %=% init_bins()
+MAGs_p = merge_MAGs_CAZyme_peptide(all_MAGs)
+MAGs_p = filter(MAGs_p, eukarya_prop < 0.05)
+```
+
+## Could be useful for coloring the Class taxon?
+```{r}
+colourCount = length(unique(MAGs_p$large_classes))
+getPalette = colorRampPalette(brewer.pal(colourCount, "Set1"))
+```
+
+## Particle-associated MAGs tend to have bigger genomes
+
+Bigger genomes is associated with higher proportion of transposases in MAGs.
+Both showed in this figure (part C?), and also in the integron finder paper, and
+the Touchon paper: Causes of Insertion Sequences Abundance in Prokaryotic Genomes.
+
+The lighter color toward the top of the graph demostrate that.
+
+```{r}
+MAGs_p %>%
+  ggplot(aes(x=percent_sect_CAZpep, y=log(complete_genome_size))) +
+  # facet_wrap(~depth) +
+  geom_smooth(method = "lm", se = T) +
+  scale_color_viridis(option = "D") +
+  geom_point(aes(color=log_percent_trans), alpha = 0.5) +
+  theme_classic()
+
+```
+
+
+## Deep ocean MAGs are more particle-associated
+
+Despite large differences between taxonomic groups, we will see a general
+trend of high proportion of secretory CAZyme and peptidase among all CAZyme
+and peptidase across different depths.
+
+Notice that the mostly planktonic classes, Acidimicrobidae and SAR202-2,
+are low in this particle-association scale. And the mostly biofilm classes,
+such as Planctomycetia and Verrucomicrobia, are high in this scale.
+
+Acidimicrobidae:
+- Genomes of planktonic Acidimicrobiales: widening horizons for marine Actinobacteria by metagenomics
+
+SAR202-2: Planktonic
+- Fig 5: Particle-association lifestyle is a phylogenetically
+conserved trait in bathypelagic prokaryotes
+
+Planctomycetia:
+- Planctomycetes dominate biofilms on surfaces of the kelp Laminaria hyperborea
+- Planctomycetes and macroalgae, a striking association
+
+Verrucomicrobia:
+Fig 5: Particle-association lifestyle is a phylogenetically
+conserved trait in bathypelagic prokaryotes
+
+Can be both particle-associated and free-living, still have high secretory CAZyme because they are polysaccharide degrading:
+Verrucomicrobia Are Candidates for Polysaccharide-Degrading Bacterioplankton in an Arctic Fjord of Svalbard: predominantly heterotrophic, carbohydrate-degrading metabolism
+
+```{r}
+MAGs_p2 = MAGs_p %>%
+  group_by(Class, depth) %>%
+  mutate(n = n()) %>%
+  filter(n >= 5)
+
+MAGs_p2 %>%
+  ggplot(aes(x=percent_sect_CAZpep, y=fct_rev(depth))) +
+  geom_boxplot(outlier.alpha = 0.3, alpha = 0.5) +
+  facet_wrap(~large_classes) +
+  labs(x = "secretory CAZyme and peptidase ORFs (%)",
+       y = "Depth") +
+  theme_classic() +
+  stat_summary(fun.data = boxplot.give.nr, 
+               geom = "text", position=position_nudge(x = 15, y = 0))
+
+ggsave("redux_out/per-class-depth-secretory-percent.pdf", plot = last_plot(),
+       height = 6, width = 8)
+```
+
+*The stats supporting more particle-associated MAGs in deep ocean*
+```{r}
+MAGs_p.stat = MAGs_p2 %>% filter(large_classes != "Others Or Unknown")
+pre_CAZ = lm(percent_sect_CAZpep ~ Class, data = MAGs_p.stat)
+post_CAZ = lm(percent_sect_CAZpep ~ Class + depth, data = MAGs_p.stat)
+anova(pre_CAZ, post_CAZ)
+summary(post_CAZ)
+```
+
+
+## In each Class and each depth, particle-association correlates with larger genomes
+
+15 lower limit: The Spearman's Rank Correlation test can only be used if
+there are at least 10 (ideally at least 15-15) pairs of data.
+
+All significant correlation between %-secretory CAZyme and peptidase are positive.
+
+```{r}
+taxa_cor = MAGs_p %>%
+  group_by(large_classes, depth) %>%
+  mutate(n = n()) %>%
+  filter(n >= 15) %>%
+  summarize(p.val = cor.test(percent_sect_CAZpep, complete_genome_size, method = "spearman")$p.val,
+            estimate = cor.test(percent_sect_CAZpep, complete_genome_size, method = "spearman")$estimate,
+            count = n()) %>%
+  adjust_pvalue(method = "BH") %>%
+  add_significance()
+
+sign_sort = rbind(taxa_cor[taxa_cor$p.val.adj.signif != "ns", ],
+                  taxa_cor[taxa_cor$p.val.adj.signif == "ns", ]) 
+
+sign_sort = sign_sort %>%
+  # mutate(p_text = round(p.val.adj, 4)) %>%
+  select(c("large_classes","depth","estimate","count","p.val.adj","p.val.adj.signif"))
+
+colnames(sign_sort) = c("class", "depth", "correlation estimate", "count", "adjusted p-value", "significance")
+write.csv(sign_sort,"redux_out/per-class-depth-sect-gsize-corr.csv", row.names = FALSE)
+```
+
+
+## The stats section!!!
+
+The addition of CAZpep increase R by
+
+Without class: 0.09112616 -> 0.2313076
+With class: 0.469 -> 0.501
+
+```{r}
+pre_CAZ = lm(log(complete_genome_size) ~ depth + Class, data = MAGs_p)
+post_CAZ = lm(log(complete_genome_size) ~ depth + Class +
+                percent_sect_CAZpep, data = MAGs_p)
+anova(pre_CAZ, post_CAZ)
+
+get_r(pre_CAZ)
+get_r(post_CAZ)
+```
+
+
+```{r}
+trans1.lm = lm(log_percent_trans ~ depth + percent_sect_CAZpep + 
+                log(complete_genome_size), data = MAGs_p)
+trans2.lm = lm(log_percent_trans ~ depth + percent_sect_CAZpep + 
+                log(complete_genome_size) + Class, data = MAGs_p)
+summary(trans2.lm)
+get_r(trans1.lm)
+get_r(trans2.lm)
+```
+
+
+
+
