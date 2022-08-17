@@ -32,7 +32,7 @@ raw2 %>%
              x=sqrt(norm_pnps))) +
   geom_boxplot(outlier.shape = NA) +
   # xlab("pnps ratio of cassette genes in MAGs") +
-  # facet_wrap(~depth) +
+  facet_wrap(~ocean) +
   geom_point(alpha = 0.2) +
   stat_summary(fun.data = boxplot.give.nr, 
                geom = "text", position=position_nudge(x = 0.05, y = 0.15))

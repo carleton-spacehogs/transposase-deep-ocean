@@ -117,6 +117,34 @@ g = function(...) {
   return(List)
 }
 
+get_logs = function(df, name_vct1, name_vct2, DNA_or_RNA){
+  if (length(name_vct1) != length(name_vct2)) {
+    print("error, 2 name vectors must have the same lenght")
+    return("error")
+  }
+  for (i in 1:length(name_vct1)){
+    old = paste(toupper(DNA_or_RNA), name_vct1[i], sep="_")
+    new = paste("log", tolower(DNA_or_RNA), name_vct2[i], sep="_")
+    df[new] = log2(df[old])
+  }
+  return(df)
+}
+
+get_CAZpep_percent = function(df, DNA_or_RNA){
+  sect_CAZ = paste(toupper(DNA_or_RNA), "secretory_CAZyme", sep="_")
+  sect_pep = paste(toupper(DNA_or_RNA), "secretory_peptidase", sep="_")
+  total_CAZ = paste(toupper(DNA_or_RNA), "CAZyme", sep="_")
+  total_pep = paste(toupper(DNA_or_RNA), "peptidase", sep="_")
+  prop_CAZ = paste("percent", tolower(DNA_or_RNA), "sect_CAZ", sep="_")
+  prop_pep = paste("percent", tolower(DNA_or_RNA), "sect_pep", sep="_")
+  prop_both = paste("percent", tolower(DNA_or_RNA), "sect_CAZpep", sep="_")
+  
+  df[prop_CAZ] = df[sect_CAZ]/df[total_CAZ] * 100
+  df[prop_pep] = df[sect_pep]/df[total_pep] * 100
+  df[prop_both] = (df[sect_CAZ]+df[sect_pep])/(df[total_CAZ] + df[total_pep]) * 100
+  return(df)
+}
+
 init_individual_metagenomes <- function(){
   init_env()
   SRF <- read_csv("data/trans_biofilm_defense_and_normal_pnps_SRF_all.csv")
@@ -133,21 +161,19 @@ init_individual_metagenomes <- function(){
   return(list(all))
 }
 
+newvct = c("trans","defense","signalT","replication","sect_CAZ","sect_pep")
+
 init_mala_cov <- function(){
   init_env()
-  mala_cov <- read_csv("data/Malaspina-genes-coverage.csv")
+  mala_cov = read_csv("../OM-RGC-and-abundance/Malaspina-genes-coverage.csv")
+  oldvct1 = c("Transposase","Defense","SingalT","replication","secretory_CAZyme","secretory_peptidase")
+  mala_cov = get_logs(mala_cov, oldvct1, newvct, "DNA")
+  mala_cov = get_CAZpep_percent(mala_cov, "DNA")
+  
   mala_cov = mala_cov %>%
-    mutate( log_dna_trans = log10(DNA_Transposase),
-      log_dna_biofilm = log10(DNA_Biofilm),
-      log_dna_defense = log10(DNA_Defense),
-      log_dna_sect_CAZ = log(DNA_sect_CAZ),
-      log_dna_sect_pep = log(DNA_sect_pep),
-      Layer_DNA = "BAT",
+    mutate(Layer_DNA = "BAT",
       is_MES = "MES, BAT",
-      Depth = Depth * (-1),
-      percent_dna_sect_CAZ = DNA_sect_CAZ/DNA_CAZenzyme * 100,
-      percent_dna_sect_pep = DNA_sect_pep/DNA_peptidase * 100,
-      percent_dna_sect_CAZpep = (DNA_sect_CAZ + DNA_sect_pep)/(DNA_CAZenzyme + DNA_peptidase) * 100 )
+      Depth = Depth * (-1))
   return(mala_cov)
 }
 
@@ -337,49 +363,33 @@ init_tara_md = function(factorize = TRUE){
 
 init_tara <- function(){
   init_env()
+  oldvct2 = c("transposase","Defense_mechanisms","Signal_transduction_mechanisms",
+              "Replication_recombination_and_repair","secretory_CAZyme","secretory_peptidase")
   DNA_cov = read_csv("data/tara_DNA_genes_abundance.csv")
+  # oldvct2 = colnames(DNA_cov)[grep("DNA_", colnames(DNA_cov))]
+  # oldvct2 = gsub("DNA_", "", oldvct2)
+  DNA_cov = get_logs(DNA_cov, oldvct2, newvct, "DNA")
+  DNA_cov = get_CAZpep_percent(DNA_cov, "DNA")
+  
   RNA_cov = read_csv("data/tara_RNA_genes_abundance.csv")
+  RNA_cov = get_logs(RNA_cov, oldvct2, newvct, "RNA")
+  RNA_cov = get_CAZpep_percent(RNA_cov, "RNA")
 
   g(DNA_Metadata, RNA_Metadata) %=% init_tara_md()
   DNA_tara <- merge(x=DNA_Metadata, y=DNA_cov, by ='connector_DNA', all = TRUE)
   RNA_tara <- merge(x=RNA_Metadata, y=RNA_cov, by ='connector_RNA', all = TRUE)
   
-  depth_comparisons <- list( c("SRF", "DCM"), c("DCM", "MES"), c("SRF", "MES") )
-  
-  # 'transposase', 'all_peptidase', 'CAZenzyme', 'secretory_CAZenzyme', 'secretory_peptidase',
-  # 'Lipid_transport_and_metabolism', 'Coenzyme_transport_and_metabolism', 'Signal_transduction_mechanisms', 'Defense_mechanisms'
-  
   DNA_tara = DNA_tara %>% mutate(
-    log_dna_trans = log10(DNA_transposase),
-    log_dna_defense = log10(DNA_Defense_mechanisms),
-    log_dna_signalT = log10(DNA_Signal_transduction_mechanisms),
     log_dna_lipidTM = log10(DNA_Lipid_transport_and_metabolism),
     log_dna_coenzyme = log10(DNA_Coenzyme_transport_and_metabolism),
     log_dna_energyPC = log10(DNA_Energy_production_and_conversion),
-    log_dna_replication = log10(DNA_Replication_recombination_and_repair),
-    log_dna_sect_CAZ = log10(DNA_secretory_CAZenzyme),
-    log_dna_sect_pep = log10(DNA_secretory_peptidase),
-    percent_dna_sect_CAZ = DNA_secretory_CAZenzyme/DNA_CAZenzyme*100,
-    percent_dna_sect_pep = DNA_secretory_peptidase/DNA_all_peptidase*100,
-    percent_dna_sect_CAZpep = (DNA_secretory_CAZenzyme + DNA_secretory_peptidase)/
-      (DNA_all_peptidase + DNA_CAZenzyme) * 100,
     is_MES = ifelse(Layer_DNA == "MES", "MES, BAT", 
              ifelse(Layer_DNA == "MIX", "MIX", "SRF, DCM")))
   
   RNA_tara = RNA_tara %>% mutate(
-    log_rna_trans = log10(RNA_transposase),
-    log_rna_defense = log10(RNA_Defense_mechanisms),
-    log_rna_signalT = log10(RNA_Signal_transduction_mechanisms),
     log_rna_lipidTM = log10(RNA_Lipid_transport_and_metabolism),
     log_rna_coenzyme = log10(RNA_Coenzyme_transport_and_metabolism),
-    log_rna_energyPC = log10(RNA_Energy_production_and_conversion),
-    log_rna_replication = log10(RNA_Replication_recombination_and_repair),
-    log_rna_sect_CAZ = log10(RNA_secretory_CAZenzyme),
-    log_rna_sect_pep = log10(RNA_secretory_peptidase),
-    percent_rna_sect_CAZ = RNA_secretory_CAZenzyme/RNA_CAZenzyme*100,
-    percent_rna_sect_pep = RNA_secretory_peptidase/RNA_all_peptidase*100,
-    percent_rna_sect_CAZpep = (RNA_secretory_CAZenzyme + RNA_secretory_peptidase)/
-      (RNA_all_peptidase + RNA_CAZenzyme) * 100)
+    log_rna_energyPC = log10(RNA_Energy_production_and_conversion))
   
   DNA_RNA_connector = read_excel("data/DNA_RNA_connector.xlsx")
   tmp = merge(x=DNA_RNA_connector, y=DNA_tara, by = 'connector_DNA', all = FALSE)
@@ -389,7 +399,7 @@ init_tara <- function(){
   
   DNA_RNA_tara = DNA_RNA_tara %>% mutate(
     trans_exp_rate = RNA_transposase/DNA_transposase,
-    sect_CAZ_exp_rate = RNA_secretory_CAZenzyme/DNA_secretory_CAZenzyme,
+    sect_CAZ_exp_rate = RNA_secretory_CAZyme/DNA_secretory_CAZyme,
     sect_pep_exp_rate = RNA_secretory_peptidase/DNA_secretory_peptidase,
     defense_exp_rate = RNA_Defense_mechanisms/DNA_Defense_mechanisms,
     signalT_exp_rate = RNA_Signal_transduction_mechanisms/DNA_Signal_transduction_mechanisms,
@@ -398,5 +408,5 @@ init_tara <- function(){
     replication_exp_rate = RNA_Replication_recombination_and_repair/DNA_Replication_recombination_and_repair,
     coenzyme_exp_rate = RNA_Coenzyme_transport_and_metabolism/DNA_Coenzyme_transport_and_metabolism)
   
-  return(list(DNA_tara, RNA_tara, DNA_RNA_tara, depth_comparisons))
+  return(list(DNA_tara, RNA_tara, DNA_RNA_tara))
 }

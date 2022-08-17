@@ -28,14 +28,40 @@ the Touchon paper: Causes of Insertion Sequences Abundance in Prokaryotic Genome
 The lighter color toward the top of the graph demostrate that.
 
 ```{r}
-MAGs_p %>%
-  ggplot(aes(x=percent_sect_CAZpep, y=log(complete_genome_size))) +
-  # facet_wrap(~depth) +
+genome.size_particle.association = MAGs_p %>%
+  ggplot(aes(x=percent_sect_CAZpep, y=log2(complete_genome_size))) +
+  facet_wrap(~depth, ncol= 1) +
   geom_smooth(method = "lm", se = T) +
+  labs(x = "secretory CAZyme & peptidase (%)",
+       y = "MAG complete genome size (Mbp)") +
   scale_color_viridis(option = "D") +
-  geom_point(aes(color=log_percent_trans), alpha = 0.5) +
+  geom_point(aes(color=log_percent_trans), alpha = 0.5, size = 1) +
   theme_classic()
 
+size_bin = cut(MAGs_p$complete_genome_size, breaks = c(0,2,3,4,5,20))
+tmp = gsub("5-20", ">5",
+  gsub(",", "-",
+  gsub(']','', fixed=TRUE,
+  gsub('(','', fixed=TRUE, size_bin))))
+
+genome.size_trans.abun = MAGs_p %>%
+  mutate(size_bin = factor(tmp, levels=c("0-2","2-3","3-4","4-5",">5"))) %>%
+  ggplot(aes(x=size_bin, y=percent_trans)) + 
+  geom_boxplot(outlier.alpha = 0.2) +
+  stat_summary(fun.data = boxplot.give.n, geom = "text", 
+               position=position_nudge(x = 0, y = 0.3)) + 
+  facet_wrap(~depth, ncol= 1) +
+  coord_cartesian(ylim = c(0,0.8)) +
+  ylab("transposase ORF in MAGs (%)") +
+  xlab("complete genome size (Mbp)") +
+  theme_classic() +
+  theme(legend.position = "none")
+
+ggarrange(genome.size_particle.association,
+          genome.size_trans.abun, ncol = 2, widths = c(5,3.5))
+
+ggsave("redux_out/F3_MAG_transposase_genome_size_v2.pdf", plot = last_plot(),
+       height = 8, width = 6)
 ```
 
 

@@ -1,6 +1,6 @@
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
 source("./init_share.R")
-summary <- init_integron_category()
+summary = init_integron_category()
 
 # total 1225 cassette "proteins" from Malaspina, 7294 from Tara Oceans metagenomes.
 # 359 cassette from Malaspina receive COG function calls, compared to 1951 from Tara.

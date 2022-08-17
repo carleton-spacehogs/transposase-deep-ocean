@@ -1,6 +1,6 @@
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
 source("./init_share.R")
-g(DNA_tara, RNA_tara, DNA_RNA_tara, depth_comparison) %=% init_tara()
+g(DNA_tara, RNA_tara, DNA_RNA_tara) %=% init_tara()
 options(scipen=10000)
 
 DNA_RNA_tara <- DNA_RNA_tara %>%filter(Layer_DNA %in% c("SRF", "DCM", "MES"))
