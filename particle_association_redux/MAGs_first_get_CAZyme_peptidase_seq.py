@@ -2,8 +2,8 @@
 import csv
 import glob
 import sys
-from first_get_CAZenzyme_and_peptidase import get_gene_amino_acid_base
-from first_get_CAZenzyme_and_peptidase import read_peptidase
+from first_get_CAZyme_and_peptidase import get_gene_amino_acid_base
+from first_get_CAZyme_and_peptidase import read_peptidase
 import os
 
 # working dir: /workspace/data/zhongj/Transposase_Project/particle_lifestyle/transposase-deep-ocean/particle-association-redux

@@ -34,8 +34,6 @@ def read_pnps_v2(pnps_f):
 	return sample_pnps, pnps_colname
 
 def ocean_integron_contig(ocean):
-	# ocean="IN"
-	ocean="SP"
 	base=f"/researchdrive/zhongj2/Tara_Oceans_Bins/{ocean}_bins_v2"
 	anvio_db=f"{base}/all-gene-calls.txt"
 	cog_category=f"{base}/all-COG-categories.txt"
@@ -71,7 +69,11 @@ def ocean_integron_contig(ocean):
 	integron_contig_df.to_csv(f'per_contig_integron/{ocean}.csv', index=False)
 	print(f"I got a total of: {len(set(integron_contig_df.contig.values.tolist()))} integrons in {ocean}")
 
+# oceans that are done:
 # ocean_integron_contig("IN")
 # ocean_integron_contig("deep")
-ocean_integron_contig("SP")
+
+# oceans still ongoing:
+# ocean_integron_contig("SP")
+ocean_integron_contig("NP")
 
