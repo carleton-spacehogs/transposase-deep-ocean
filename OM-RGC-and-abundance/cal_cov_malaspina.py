@@ -96,6 +96,13 @@ coenzyme_dict = get_COG_gene_dict(anvi_category, "Coenzyme transport and metabol
 cwall_dict = get_COG_gene_dict(anvi_category, "Cell wall", anvi_gene_call)
 energy_dict = get_COG_gene_dict(anvi_category, "Energy production and conversion", anvi_gene_call)
 
+cmobility_dict = get_COG_gene_dict(anvi_category, "Cell motility", anvi_gene_call)
+extstruct_dict = get_COG_gene_dict(anvi_category, "Extracellular structures", anvi_gene_call)
+cytoskeleton_dict = get_COG_gene_dict(anvi_category, "Cytoskeleton", anvi_gene_call)
+carbohydrate_dict = get_COG_gene_dict(anvi_category, "Carbohydrate transport and metabolism", anvi_gene_call)
+inorgalIon_dict = get_COG_gene_dict(anvi_category, "Inorganic ion transport and metabolism", anvi_gene_call)
+nucl_dict = get_COG_gene_dict(anvi_category, "Nucleotide transport and metabolism", anvi_gene_call)
+
 all_dict = [trans_dict, defense_dict, signalT_dict, toxin_dict, replication_dict,
 			all_CAZ_dict, sec_CAZ_dict, all_pep_dict, sec_pep_dict,
 			amino_dict,lipid_dict,coenzyme_dict,cwall_dict,energy_dict]
@@ -123,9 +130,28 @@ metadata.to_csv(out_f, index=False)
 # for things in the future:
 # amino_dict = get_COG_gene_dict(anvi_category, "Amino acid transport and metabolism", anvi_gene_call)
 
+cmobility_dict = get_COG_gene_dict(anvi_category, "Cell motility", anvi_gene_call)
+extstruct_dict = get_COG_gene_dict(anvi_category, "Extracellular structures", anvi_gene_call)
+cytoskeleton_dict = get_COG_gene_dict(anvi_category, "Cytoskeleton", anvi_gene_call)
+carbohydrate_dict = get_COG_gene_dict(anvi_category, "Carbohydrate transport and metabolism", anvi_gene_call)
+inorgalIon_dict = get_COG_gene_dict(anvi_category, "Inorganic ion transport and metabolism", anvi_gene_call)
+nucl_dict = get_COG_gene_dict(anvi_category, "Nucleotide transport and metabolism", anvi_gene_call)
+
 out_f = 'Malaspina-genes-coverage.csv'
 metadata = pd.read_csv(out_f)
-metadata = streamline_gene(all_pep_dict, "DNA_peptidase", metadata)
-metadata = streamline_gene(all_CAZ_dict, "DNA_CAZyme", metadata)
+
+dicts =[cmobility_dict, extstruct_dict, cytoskeleton_dict, carbohydrate_dict,
+		inorgalIon_dict, nucl_dict]
+
+w_cols = ["Cell_motility", "Extracellular_struct", "Cytoskeleton", "Carbohydrate_TM", "Inorganic_ion_TM", "Nucleotide_TM"]
+words = ["DNA_"+ x for x in w_cols]
+
+for i in range(len(dicts)):
+	print("doing " + words[i])
+	metadata = streamline_gene(dicts[i], words[i], metadata)
+
+# metadata = streamline_gene(extstruct_dict, "DNA_CAZyme", metadata)
+# metadata = streamline_gene(cytoskeleton_dict, "DNA_peptidase", metadata)
+
 
 metadata.to_csv(out_f, index=False)

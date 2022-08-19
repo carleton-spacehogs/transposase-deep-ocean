@@ -39,7 +39,7 @@ def get_gene_specific_ref(gene_id_set, gene_name):
 
 def get_gene_specific_ref_through_COG(search_string):
 	cog_out = set()
-	cogfile = open(f'{github_dir}/COG_numbers_categories_annotations.txt', 'r')
+	cogfile = open(f'../COG_numbers_categories_annotations.txt', 'r')
 	for line in cogfile:
 		columns = line.split('\t')
 		cog_number, cog_category = columns[0], columns[2]
@@ -111,17 +111,18 @@ def serialize(gene_length_dict, gene_name):
 
 def serialized_COG_category(COG_category):
 	COG_length_dict = get_gene_specific_ref_through_COG(COG_category)
-	print("done with dict")
+	print(f"done with dict, there are {len(COG_length_dict)} COG genes")
 	serialize(COG_length_dict, COG_category)
 
 def serialized_genes(gene_id_set, gene_name):
 	gene_length_dict = get_gene_specific_ref(gene_id_set, gene_name)
-	print("done with dict")
+	print(f"done with dict, there are {len(gene_length_dict)} genes")
 	serialize(gene_length_dict, gene_name)
 
 def merge_abun_helper(gene, DNA_or_RNA):
 	base = pd.read_csv(f"{base1}/prop_{DNA_or_RNA}_reads_mapped_back_{gene}.csv")
 	base = base[["sample", "prop_reads_mapped_back_genes"]]
+	gene = gene.replace("transport_and_metabolism", "TM")
 	base.columns = [f"connector_{DNA_or_RNA}", f"{DNA_or_RNA}_{gene}"]
 	return base
 
@@ -153,14 +154,14 @@ serialized_genes(pep_id_set, "peptidase")
 
 COG_list = ["Lipid_transport_and_metabolism", "Coenzyme_transport_and_metabolism", "Signal_transduction_mechanisms", 
 "Defense_mechanisms", "Energy_production_and_conversion", "Replication_recombination_and_repair", "Cell_wall",
-"Amino_acid_transport_and_metabolism"]
+"Amino_acid_transport_and_metabolism","Cell_motility", "Extracellular_struct", "Cytoskeleton",
+"Carbohydrate_transport_and_metabolism", "Inorganic_ion_transport_and_metabolism", "Nucleotide_transport_and_metabolism"]
+
 for COG_category in COG_list:
 	print("doing: " + COG_category)
 	serialized_COG_category(COG_category)
 
 all_genes = single_genes + COG_list
-
-# github_dir = "/workspace/data/zhongj/Transposase_Project/particle_lifestyle/transposase-deep-ocean/"
 DNA_merged = merge_abundance(all_genes, "DNA")
 DNA_merged.to_csv(f"../Figure Generating/data/tara_DNA_genes_abundance.csv", index=False)
 RNA_merged = merge_abundance(all_genes, "RNA")

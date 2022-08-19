@@ -4,7 +4,7 @@ import pandas as pd
 import sys
 import numpy as np
 sys.path.insert(0, '../particle_association_redux')
-from third_get_secretory_CAZenzyme import get_all_signalp
+from third_get_secretory_CAZyme import get_all_signalp
 
 depths2 = ["SRF", "DCM"]
 depths3 = ["SRF", "DCM", "MES"]
