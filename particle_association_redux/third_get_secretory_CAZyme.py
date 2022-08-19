@@ -154,36 +154,35 @@ def filter_deep_CAZpep_without_taxon(old_CAZpep, norm_CAZpep, domain_dict):
 	intersect.to_csv(norm_CAZpep, index=False, header=None)
 
 def main():
-CAZ_signalp_outfiles = glob.glob("../../OM-RGC_CAZyme_signalp/*_summary.signalp5")
-pep_signalp_outfiles = glob.glob("../../OM-RGC_peptidase_signalp/*_summary.signalp5")
+	CAZ_signalp_outfiles = glob.glob("../../OM-RGC_CAZyme_signalp/*_summary.signalp5")
+	pep_signalp_outfiles = glob.glob("../../OM-RGC_peptidase_signalp/*_summary.signalp5")
 
-signal_CAZ_with_source = get_signalp_with_domain(CAZ_signalp_outfiles)
-signal_pep_with_source = get_signalp_with_domain(pep_signalp_outfiles)
-print("start reading the big OM-RGC reference")
-signal_domain_dict = get_OM_RGC_domain_dict(signal_CAZ_with_source, signal_pep_with_source)
+	signal_CAZ_with_source = get_signalp_with_domain(CAZ_signalp_outfiles)
+	signal_pep_with_source = get_signalp_with_domain(pep_signalp_outfiles)
+	print("start reading the big OM-RGC reference")
+	signal_domain_dict = get_OM_RGC_domain_dict(signal_CAZ_with_source, signal_pep_with_source)
 
-get_secretory_file("secretory_CAZyme.txt", signal_CAZ_with_source, signal_domain_dict)
-get_secretory_file("secretory_peptidase.txt", signal_pep_with_source, signal_domain_dict)
+	get_secretory_file("secretory_CAZyme.txt", signal_CAZ_with_source, signal_domain_dict)
+	get_secretory_file("secretory_peptidase.txt", signal_pep_with_source, signal_domain_dict)
 
-# deep ocean
-deep_CAZ_signalp_f = glob.glob("../../deep_metagenome/deep_CAZyme_*_summary.signalp5")
-deep_pep_signalp_f = glob.glob("../../deep_metagenome/deep_peptidase_*_summary.signalp5")
-deep_signal_CAZ = get_signalp_with_domain(deep_CAZ_signalp_f)
-deep_signal_pep = get_signalp_with_domain(deep_pep_signalp_f)
-deep_domain_dict = get_deep_OM_RGC_domain() # it's a small reference, don't need to select
+	# deep ocean
+	deep_CAZ_signalp_f = glob.glob("../../deep_metagenome/deep_CAZyme_*_summary.signalp5")
+	deep_pep_signalp_f = glob.glob("../../deep_metagenome/deep_peptidase_*_summary.signalp5")
+	deep_signal_CAZ = get_signalp_with_domain(deep_CAZ_signalp_f)
+	deep_signal_pep = get_signalp_with_domain(deep_pep_signalp_f)
+	deep_domain_dict = get_deep_OM_RGC_domain() # it's a small reference, don't need to select
 
-get_secretory_file("deep_secretory_CAZyme.txt", deep_signal_CAZ, deep_domain_dict)
-get_secretory_file("deep_secretory_peptidase.txt", deep_signal_pep, deep_domain_dict)
+	get_secretory_file("deep_secretory_CAZyme.txt", deep_signal_CAZ, deep_domain_dict)
+	get_secretory_file("deep_secretory_peptidase.txt", deep_signal_pep, deep_domain_dict)
 
-'''some secretory CAZyme does not have a taxon origin, so they were not counted as signal molecule
-need to account for the lost that from the total CAZyme, too. '''
+	'''some secretory CAZyme does not have a taxon origin, so they were not counted as signal molecule
+	need to account for the lost that from the total CAZyme, too. '''
+	base3=f"{base2}/deep_metagenome_transposase_BLAST"
+	filter_deep_CAZpep_without_taxon(f"{base3}/CAZyme/deep_CAZyme_anvigeneID.txt", f"{base3}/all-CAZyme-norm.txt", deep_domain_dict)
+	filter_deep_CAZpep_without_taxon(f"{base3}/peptidase/deep_peptidase_anvigeneID.txt", f"{base3}/all-peptidase-norm.txt", deep_domain_dict)
 
-base3=f"{base2}/deep_metagenome_transposase_BLAST"
-filter_deep_CAZpep_without_taxon(f"{base3}/CAZyme/deep_CAZyme_anvigeneID.txt", f"{base3}/all-CAZyme-norm.txt", deep_domain_dict)
-filter_deep_CAZpep_without_taxon(f"{base3}/peptidase/deep_peptidase_anvigeneID.txt", f"{base3}/all-peptidase-norm.txt", deep_domain_dict)
-
-filter_deep_CAZpep_without_taxon(f"{base1}/all_CAZyme.txt", f"{base1}/all_CAZyme_norm.txt", signal_domain_dict)
-filter_deep_CAZpep_without_taxon(f"{base1}/all_peptidase.txt", f"{base1}/all_peptidase_norm.txt", signal_domain_dict)
+	filter_deep_CAZpep_without_taxon(f"{base1}/all_CAZyme.txt", f"{base1}/all_CAZyme_norm.txt", signal_domain_dict)
+	filter_deep_CAZpep_without_taxon(f"{base1}/all_peptidase.txt", f"{base1}/all_peptidase_norm.txt", signal_domain_dict)
 
 if __name__ == "__main__":
 	main()
