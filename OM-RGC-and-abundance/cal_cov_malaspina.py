@@ -112,6 +112,8 @@ str2 = "Amino_acid_transport_and_metabolism,Lipid_transport_and_metabolism,Coenz
 str3 = "Cell_wall,Energy_production_and_conversion"
 
 cols = f"{str1},{str2},{str3}".split(",")
+cols += ["Cell_motility", "Extracellular_struct", "Cytoskeleton", "Carbohydrate_TM", "Inorganic_ion_TM", "Nucleotide_TM"]
+cols += ["Chromatin_structure_and_dynamics", "Cell_cycle_control", "Intracellular_trafficking", "Secondary_metabolites"]
 cols_dna = ["DNA_"+ x for x in cols]
 
 print("finish parsing dictionaries")
@@ -130,28 +132,23 @@ metadata.to_csv(out_f, index=False)
 # for things in the future:
 # amino_dict = get_COG_gene_dict(anvi_category, "Amino acid transport and metabolism", anvi_gene_call)
 
-cmobility_dict = get_COG_gene_dict(anvi_category, "Cell motility", anvi_gene_call)
-extstruct_dict = get_COG_gene_dict(anvi_category, "Extracellular structures", anvi_gene_call)
-cytoskeleton_dict = get_COG_gene_dict(anvi_category, "Cytoskeleton", anvi_gene_call)
-carbohydrate_dict = get_COG_gene_dict(anvi_category, "Carbohydrate transport and metabolism", anvi_gene_call)
-inorgalIon_dict = get_COG_gene_dict(anvi_category, "Inorganic ion transport and metabolism", anvi_gene_call)
-nucl_dict = get_COG_gene_dict(anvi_category, "Nucleotide transport and metabolism", anvi_gene_call)
+chrotid_dict = get_COG_gene_dict(anvi_category, "Chromatin structure and dynamics", anvi_gene_call)
+ccycle_dict = get_COG_gene_dict(anvi_category, "Cell cycle control", anvi_gene_call)
+intracellular_dict = get_COG_gene_dict(anvi_category, "Intracellular trafficking", anvi_gene_call)
+sec_metabolite_dict = get_COG_gene_dict(anvi_category, "Secondary metabolites", anvi_gene_call)
 
 out_f = 'Malaspina-genes-coverage.csv'
 metadata = pd.read_csv(out_f)
 
-dicts =[cmobility_dict, extstruct_dict, cytoskeleton_dict, carbohydrate_dict,
-		inorgalIon_dict, nucl_dict]
+# dicts =[chrotid_dict, ccycle_dict, intracellular_dict, sec_metabolite_dict]
+# w_cols = ["Chromatin_structure_and_dynamics", "Cell_cycle_control", "Intracellular_trafficking", "Secondary_metabolites"]
+# words = ["DNA_"+ x for x in w_cols]
 
-w_cols = ["Cell_motility", "Extracellular_struct", "Cytoskeleton", "Carbohydrate_TM", "Inorganic_ion_TM", "Nucleotide_TM"]
-words = ["DNA_"+ x for x in w_cols]
-
-for i in range(len(dicts)):
-	print("doing " + words[i])
-	metadata = streamline_gene(dicts[i], words[i], metadata)
+# for i in range(len(dicts)):
+# 	print("doing " + words[i])
+# 	metadata = streamline_gene(dicts[i], words[i], metadata)
 
 # metadata = streamline_gene(extstruct_dict, "DNA_CAZyme", metadata)
 # metadata = streamline_gene(cytoskeleton_dict, "DNA_peptidase", metadata)
-
 
 metadata.to_csv(out_f, index=False)

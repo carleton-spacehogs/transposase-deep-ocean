@@ -155,7 +155,7 @@ serialized_genes(pep_id_set, "peptidase")
 COG_list = ["Lipid_transport_and_metabolism", "Coenzyme_transport_and_metabolism", "Signal_transduction_mechanisms", 
 "Defense_mechanisms", "Energy_production_and_conversion", "Replication_recombination_and_repair", "Cell_wall",
 "Amino_acid_transport_and_metabolism","Cell_motility", "Extracellular_struct", "Cytoskeleton",
-"Carbohydrate_transport_and_metabolism", "Inorganic_ion_transport_and_metabolism", "Nucleotide_transport_and_metabolism"]
+"Carbohydrate_transport_and_metabolism", "Inorganic_ion_transport_and_metabolism", "Nucleotide_transport_and_metabolism","Chromatin_structure_and_dynamics", "Cell_cycle_control", "Intracellular_trafficking", "Secondary_metabolites"]
 
 for COG_category in COG_list:
 	print("doing: " + COG_category)
