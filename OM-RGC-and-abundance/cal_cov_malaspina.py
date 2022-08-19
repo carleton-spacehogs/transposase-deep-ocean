@@ -125,7 +125,7 @@ metadata.to_csv(out_f, index=False)
 
 out_f = 'Malaspina-genes-coverage.csv'
 metadata = pd.read_csv(out_f)
-metadata = streamline_gene(sec_pep_dict, "DNA_peptidase", metadata)
+metadata = streamline_gene(all_pep_dict, "DNA_peptidase", metadata)
 metadata = streamline_gene(all_CAZ_dict, "DNA_CAZyme", metadata)
 
 metadata.to_csv(out_f, index=False)
