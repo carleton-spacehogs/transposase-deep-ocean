@@ -107,13 +107,14 @@ all_dict = [trans_dict, defense_dict, signalT_dict, toxin_dict, replication_dict
 			all_CAZ_dict, sec_CAZ_dict, all_pep_dict, sec_pep_dict,
 			amino_dict,lipid_dict,coenzyme_dict,cwall_dict,energy_dict]
 
-str1 = "Transposase,Defense_mechanisms,Signal_transduction_mechanisms,ToxinAntiT"
+str1 = "transposase,Defense_mechanisms,Signal_transduction_mechanisms,ToxinAntiT"
 str2 = "Replication_recombination_and_repair,CAZyme,secretory_CAZyme,peptidase,secretory_peptidase"
 str3 = "Amino_acid_TM,Lipid_TM,Coenzyme_TM,Cell_wall,Energy_production_and_conversion"
 
 cols = f"{str1},{str2},{str3}".split(",")
 cols += ["Cell_motility", "Extracellular_struct", "Cytoskeleton", "Carbohydrate_TM", "Inorganic_ion_TM", "Nucleotide_TM"]
 cols += ["Chromatin_structure_and_dynamics", "Cell_cycle_control", "Intracellular_trafficking", "Secondary_metabolites"]
+cols += ["Translation_ribosomal_structure", "Transcription", "Posttranslational_modification", "Mobilome_prophages_transposons"]
 cols_dna = ["DNA_"+ x for x in cols]
 
 print("finish parsing dictionaries")
@@ -132,17 +133,16 @@ metadata.to_csv(out_f, index=False)
 # for things in the future:
 # amino_dict = get_COG_gene_dict(anvi_category, "Amino acid transport and metabolism", anvi_gene_call)
 
-chrotid_dict = get_COG_gene_dict(anvi_category, "Chromatin structure and dynamics", anvi_gene_call)
-ccycle_dict = get_COG_gene_dict(anvi_category, "Cell cycle control", anvi_gene_call)
-intracellular_dict = get_COG_gene_dict(anvi_category, "Intracellular trafficking", anvi_gene_call)
-sec_metabolite_dict = get_COG_gene_dict(anvi_category, "Secondary metabolites", anvi_gene_call)
-
 out_f = 'Malaspina-genes-coverage.csv'
 metadata = pd.read_csv(out_f)
 
-# dicts =[chrotid_dict, ccycle_dict, intracellular_dict, sec_metabolite_dict]
-# w_cols = ["Chromatin_structure_and_dynamics", "Cell_cycle_control", "Intracellular_trafficking", "Secondary_metabolites"]
-# words = ["DNA_"+ x for x in w_cols]
+w_cols = ["Translation_ribosomal_structure", "Transcription", "Posttranslational_modification", "Mobilome_prophages_transposons"]
+words = ["DNA_"+ x for x in w_cols]
+w_cols2 = ['Translation, ribosomal structure', "Transcription", "Posttranslational modification","Mobilome: prophages, transposons"]
+for i in range(len(w_cols2)):
+	COG_dict = get_COG_gene_dict(anvi_category, w_cols2[i], anvi_gene_call)
+	print(len(COG_dict))
+	metadata = streamline_gene(COG_dict, words[i], metadata)
 
 # for i in range(len(dicts)):
 # 	print("doing " + words[i])
