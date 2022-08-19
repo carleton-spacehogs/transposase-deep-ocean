@@ -3,7 +3,6 @@ import pandas as pd
 import csv
 import glob
 sys.path.insert(0, '../MAG_pnps_redux')
-from MAG_integron_selection import explode_COG, integron_dict_helper, merge_anvi_gene_call
 
 output_col = ["contig","ocean","gene_callers_id","is_integron","COG_accession","COG_category"]
 oceans=["IN", "SAT", "NAT", "SP", "NP", "CPC", "ARS", "RS", "EAC", "MED", "deep"]
@@ -72,8 +71,9 @@ def ocean_integron_contig(ocean):
 # oceans that are done:
 # ocean_integron_contig("IN")
 # ocean_integron_contig("deep")
+# ocean_integron_contig("SP")
 
 # oceans still ongoing:
-ocean_integron_contig("SP")
+ocean_integron_contig("NAT")
 # ocean_integron_contig("NP")
 

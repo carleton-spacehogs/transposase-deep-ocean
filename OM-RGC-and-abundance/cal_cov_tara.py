@@ -165,9 +165,10 @@ for COG_category in COG_list:
 
 all_genes = single_genes + COG_list
 DNA_merged = merge_abundance(all_genes, "DNA")
-DNA_merged.to_csv(f"../Figure Generating/data/tara_DNA_genes_abundance.csv", index=False)
+# DNA_merged.to_csv(f"../Figure Generating/data/tara_DNA_genes_abundance.csv", index=False)
+DNA_merged.to_csv(f"tara_DNA_genes_abundance.csv", index=False)
 RNA_merged = merge_abundance(all_genes, "RNA")
-RNA_merged.to_csv(f"../Figure Generating/data/tara_RNA_genes_abundance.csv", index=False)
+RNA_merged.to_csv(f"tara_RNA_genes_abundance.csv", index=False)
 
 # DNA
 # subset_coverage_rows(biofilm_length_dict, "biofilm", "OM-RGC_v2_gene_profile_metaG.tsv", "DNA")
