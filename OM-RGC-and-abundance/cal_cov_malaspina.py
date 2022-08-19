@@ -47,7 +47,7 @@ def get_COG_gene_dict(cog_file, keyword, anvi_gene_call):
 			defense_dict[l[0]] = abs(int(l[3])-int(l[2]))
 	return defense_dict
 
-def get_CAZyme_dict(anvio_call_id, anvi_gene_call):
+def get_CAZpep_dict(anvio_call_id, anvi_gene_call):
 	gene_dict = {}
 	gene_id = set(line.strip() for line in open(anvio_call_id))
 	for l in anvi_gene_call:
@@ -86,10 +86,10 @@ defense_dict = get_COG_gene_dict(anvi_category, "Defense mechanisms", anvi_gene_
 signalT_dict = get_COG_gene_dict(anvi_category, "Signal transduction mechanisms", anvi_gene_call)
 replication_dict = get_COG_gene_dict(anvi_category, "Replication, recombination and repair", anvi_gene_call)
 toxin_dict = get_COG_gene_dict(f"{base}/all-anvi-cog-function.tsv", "toxin", anvi_gene_call)
-all_CAZ_dict = get_CAZyme_dict(f"{base1}/all-CAZyme-norm.txt", anvi_gene_call)
-sec_CAZ_dict = get_CAZyme_dict(f"{base1}/deep_secretory_CAZyme.txt", anvi_gene_call)
-all_pep_dict = get_CAZyme_dict(f"{base1}/all-peptidase-norm.txt", anvi_gene_call)
-sec_pep_dict = get_CAZyme_dict(f"{base1}/deep_secretory_peptidase.txt", anvi_gene_call)
+all_CAZ_dict = get_CAZpep_dict(f"{base1}/all-CAZyme-norm.txt", anvi_gene_call)
+sec_CAZ_dict = get_CAZpep_dict(f"{base1}/deep_secretory_CAZyme.txt", anvi_gene_call)
+all_pep_dict = get_CAZpep_dict(f"{base1}/all-peptidase-norm.txt", anvi_gene_call)
+sec_pep_dict = get_CAZpep_dict(f"{base1}/deep_secretory_peptidase.txt", anvi_gene_call)
 amino_dict = get_COG_gene_dict(anvi_category, "Amino acid transport and metabolism", anvi_gene_call)
 lipid_dict = get_COG_gene_dict(anvi_category, "Lipid transport and metabolism", anvi_gene_call)
 coenzyme_dict = get_COG_gene_dict(anvi_category, "Coenzyme transport and metabolism", anvi_gene_call)
@@ -129,31 +129,3 @@ metadata = streamline_gene(all_pep_dict, "DNA_peptidase", metadata)
 metadata = streamline_gene(all_CAZ_dict, "DNA_CAZyme", metadata)
 
 metadata.to_csv(out_f, index=False)
-
-'''
->>> metadata.DNA_secretory_peptidase
-0     0.003236
-1     0.002906
-2     0.003133
-3     0.003917
-4     0.005460
-5     0.004241
-6     0.003242
-7     0.001678
-8     0.003528
-9     0.003090
-
-
->>> metadata.DNA_secretory_CAZyme
-0     0.002117
-1     0.001789
-2     0.002203
-3     0.002781
-4     0.003505
-5     0.002835
-6     0.002224
-7     0.001167
-8     0.002408
-9     0.002132
-10    0.001877
-'''

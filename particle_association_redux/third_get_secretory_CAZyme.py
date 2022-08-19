@@ -147,8 +147,8 @@ def filter_deep_CAZpep_without_taxon(old_CAZpep, norm_CAZpep, domain_dict):
 # 		out_file.write(out_lines)
 
 def filter_deep_CAZpep_without_taxon(old_CAZpep, norm_CAZpep, domain_dict):
-	gene_id_df = pd.read_csv(old_CAZpep, header=None)
-	avail_df = pd.DataFrame(list(domain_dict.keys()))
+	gene_id_df = pd.read_csv(old_CAZpep, header=None).astype(str)
+	avail_df = pd.DataFrame(list(domain_dict.keys())).astype(str)
 	print("done reading files, merging")
 	intersect = gene_id_df.merge(avail_df, on=0, how="inner")
 	intersect.to_csv(norm_CAZpep, index=False, header=None)
