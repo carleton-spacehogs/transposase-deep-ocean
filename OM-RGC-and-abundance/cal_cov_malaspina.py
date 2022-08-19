@@ -107,10 +107,11 @@ all_dict = [trans_dict, defense_dict, signalT_dict, toxin_dict, replication_dict
 			all_CAZ_dict, sec_CAZ_dict, all_pep_dict, sec_pep_dict,
 			amino_dict,lipid_dict,coenzyme_dict,cwall_dict,energy_dict]
 
-str1 = "Transposase,Defense,SingalT,ToxinAntiT,replication,CAZyme,secretory_CAZyme,peptidase,secretory_peptidase"
-str2 = "Amino_acid_TM,Lipid_TM,Coenzyme_TM,Cell_wall,Energy_production_and_conversion"
+str1 = "Transposase,Defense_mechanisms,Signal_transduction_mechanisms,ToxinAntiT"
+str2 = "Replication_recombination_and_repair,CAZyme,secretory_CAZyme,peptidase,secretory_peptidase"
+str3 = "Amino_acid_TM,Lipid_TM,Coenzyme_TM,Cell_wall,Energy_production_and_conversion"
 
-cols = f"{str1},{str2}".split(",")
+cols = f"{str1},{str2},{str3}".split(",")
 cols += ["Cell_motility", "Extracellular_struct", "Cytoskeleton", "Carbohydrate_TM", "Inorganic_ion_TM", "Nucleotide_TM"]
 cols += ["Chromatin_structure_and_dynamics", "Cell_cycle_control", "Intracellular_trafficking", "Secondary_metabolites"]
 cols_dna = ["DNA_"+ x for x in cols]
