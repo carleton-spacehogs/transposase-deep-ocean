@@ -1,0 +1,252 @@
+---
+title: "Graph metagenomic particle association and transposase abundance"
+author: "Jimmy Zhong"
+date: "8/19/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
+source("./init_share.R")
+g(DNA_tara, RNA_tara, DNA_RNA_tara) %=% init_tara()
+mala_cov <- init_mala_cov()
+mala_cov$size_fraction <- ifelse(mala_cov$lower_filter_size == "0.2", "planktonic", "particle")
+DNA_tara$size_fraction <- ifelse(DNA_tara$upper_size_dna == "1.6", "planktonic", "particle")
+```
+
+## Will worry about scales later
+```{r}
+trans_RNA_scale <- c(-4.5, -4, -3.5, -3)
+trans_RNA_percent_scale <- c("0.003", "0.010", "0.032", "0.100")
+trans_scale <- c(-2.5, -3, -3.5, -4, -4.5)
+trans_percent_scale <- c("0.316", "0.100", "0.032", "0.01", "0.003")
+CAZ_percent_scale <- c(0.8, 0.4, 0.2, 0.1)
+CAZ_scale <- log10(CAZ_percent_scale/100)
+```
+
+## Data preparations
+```{r}
+DNA_RNA_tara_g = DNA_RNA_tara %>%
+  mutate(DNA_trans_percent = DNA_transposase * 100) %>%
+  filter(Layer_RNA != "MIX")
+
+pt_sel_col <- c("log_dna_trans", "log_dna_defense","DNA_transposase",
+                "log_dna_sect_CAZ","log_dna_sect_pep","percent_dna_sect_CAZpep",
+                "Ocean_DNA", "Layer_DNA", "Oxygen_DNA", "size_fraction")
+
+tmp = rbind(mala_cov[,pt_sel_col], DNA_tara[,pt_sel_col])
+pt_to_graph = tmp %>%
+  mutate(DNA_trans_percent = DNA_transposase * 100) %>%
+  filter(Layer_DNA != "MIX") %>%
+  mutate(Depth = factor(Layer_DNA, levels = c("SRF","DCM","MES","BAT")))
+```
+
+
+## RNA particle association to transposase abundance
+```{r}
+ann_text = data.frame(percent_rna_sect_CAZpep = 20, DNA_trans_percent = 0.05,
+           label = "No metatranscriptome\nsamples available",
+           Layer_RNA = factor("BAT",levels = c("SRF", "DCM", "MES", "BAT")))
+
+DNA_RNA_tara_g %>%
+  ggplot(aes(x=percent_rna_sect_CAZpep, y=DNA_trans_percent)) +
+  # scale_y_continuous(breaks = trans_scale, labels = trans_percent_scale) +
+  scale_color_brewer(palette="Set1")+
+  facet_wrap(~Layer_RNA, ncol = 2) +
+  geom_point(aes(color = Ocean)) + 
+  scale_y_log10() +
+  theme_classic() +
+  labs( y = "Transposase gene abundance (%)",
+        x = "Secretory CAZyme and peptidase transcript (%)") +
+  geom_smooth(method = "lm", se = T) +
+  geom_text(data = ann_text,label=ann_text$label)
+  # theme(legend.position = "none")
+
+ggsave("redux_out/sectCAZpep_transpose_RNA.pdf",
+       plot = last_plot(), width = 6.5, height = 5) 
+```
+
+## DNA particle assocation to transpoase abundance
+```{r}
+pt_to_graph %>%
+  ggplot(aes(x=percent_dna_sect_CAZpep, y=DNA_trans_percent)) +
+  # scale_y_continuous(breaks = trans_scale, labels = trans_percent_scale) +
+  scale_color_brewer(palette="Set1")+
+  facet_wrap(~Depth) + # , scales = "free_y"
+  geom_point(aes(color = Ocean_DNA)) + 
+  theme_classic() +
+  scale_y_log10() +
+  labs( color = "Ocean", 
+    y = "Transposase gene abundance (%)",
+    x = "Secretory CAZyme and peptidase genes (%)") +
+  geom_smooth(method = "lm", se = T)  +
+  theme() # legend.position = "none"
+
+ggsave("redux_out/sectCAZpep_transpose_DNA.pdf",
+       plot = last_plot(), width = 6.5, height = 5)
+```
+
+## stats section for particle-assocation transposase correlation
+
+The anova for RNA is not that strong: 0.02635
+But it is stronger for the DNA: 9.231e-11
+
+> get_r(DNA.corr.particle) - get_r(DNA.corr.depth)
+[1] 0.0675714
+> get_r(DNA.corr.particle)
+[1] 0.6697395
+> get_r(DNA.corr.depth)
+[1] 0.6021681
+
+```{r}
+RNA.corr.depth = lm(log_dna_trans~Layer_RNA, DNA_RNA_tara_g )
+RNA.corr.particle = lm(log_dna_trans~Layer_RNA + percent_rna_sect_CAZpep, DNA_RNA_tara_g )
+anova(RNA.corr.depth, RNA.corr.particle)
+
+DNA.corr.depth = lm(log_dna_trans~Depth, pt_to_graph )
+DNA.corr.particle = lm(log_dna_trans~Depth + log(percent_dna_sect_CAZpep), pt_to_graph )
+anova(DNA.corr.depth, DNA.corr.particle)
+```
+
+## Passing the normality test
+```{r}
+shapiro.test(resid(RNA.corr.depth))
+shapiro.test(resid(RNA.corr.particle))
+
+shapiro.test(resid(DNA.corr.depth))
+shapiro.test(resid(DNA.corr.particle))
+```
+
+## Show that deep oceans rely more on particle-associated lifestyle (RNA)
+```{r}
+RNA_tara_g = RNA_tara %>%
+  filter(Layer_RNA != "MIX") %>%
+  mutate(Depth = factor(Layer_RNA, levels = c("BAT","MES","DCM","SRF")))
+
+secretory_rna.test <- RNA_tara_g %>%
+  rstatix::wilcox_test(percent_rna_sect_CAZpep ~ Layer_RNA) %>%
+  adjust_pvalue(method = "BH") %>%
+  add_significance() %>%
+  add_xy_position() %>%
+  mutate(xmin = xmin + 1, xmax = xmax + 1) # for the empty BAT group
+
+secretory_rna.test$y.position = c(31, 33.3, 10)
+
+ann_text2 = data.frame(percent_rna_sect_CAZpep = 21,
+  label = "Metatranscriptome samples unavailable",
+  Depth = factor("BAT",levels = c("BAT","MES","DCM","SRF")))
+
+set.seed(33)
+
+RNA_particle_depth = RNA_tara_g %>%
+  ggplot(aes(x=Depth, y=percent_rna_sect_CAZpep)) + 
+  geom_boxplot(outlier.colour = NA) +
+  geom_jitter(aes(color=Ocean),
+              width = 0.2, height = 0, size = 1) +
+  stat_pvalue_manual(secretory_rna.test, label = "p.adj.signif", 
+                     tip.length = 0.01, hide.ns = TRUE)+ 
+  scale_color_brewer(palette="Set1")+
+  ylab("secretory CAZyme and peptidase transcript (%)") +
+  scale_x_discrete(drop=FALSE) +
+  theme_classic() + 
+  theme(axis.title.y = element_blank()) +
+  geom_text(data = ann_text2,label=ann_text2$label) +
+  coord_flip()
+```
+
+## Show that deep oceans rely more on particle-associated lifestyle (DNA)
+```{r}
+secretory_dna.test = pt_to_graph %>%
+  mutate(Depth = fct_rev(Depth)) %>% 
+  rstatix::wilcox_test(percent_dna_sect_CAZpep ~ Depth) %>%
+  adjust_pvalue(method = "BH") %>%
+  add_significance() %>%
+  add_xy_position()
+
+secretory_dna.test$y.position = c(31.7, 33, 34.3, 29, 30.2, 10.0)
+
+set.seed(33)
+DNA_particle_depth = pt_to_graph %>%
+  mutate(Depth = fct_rev(Depth)) %>% 
+  ggplot(aes(x=Depth, y=percent_dna_sect_CAZpep))+ 
+  geom_boxplot(outlier.colour = NA) +
+  geom_jitter(aes(color=Ocean_DNA),
+              width = 0.2, height = 0, size = 1) +
+  stat_pvalue_manual(secretory_dna.test, label = "p.adj.signif", 
+                     tip.length = 0.01, hide.ns = TRUE)+ 
+  scale_color_brewer(palette="Set1")+
+  ylab("secretory CAZyme and peptidase genes (%)") +
+  theme_classic() + 
+  theme(axis.title.y = element_blank(),
+        # axis.text.y = element_blank(),
+        legend.position = "none") +
+  coord_flip()
+
+ggarrange(DNA_particle_depth, RNA_particle_depth,
+          labels = c("A", "B"), ncol = 2, nrow = 1,
+          widths = c(0.4, 0.55))
+
+ggsave("redux_out/sectCAZpep_increase_depth.pdf",
+       plot = last_plot(), width = 10, height = 3)
+```
+
+## Arctic Ocean have higher secretory CAZyme peptidase percentage
+
+Have to do log transformation to make sure that both groups have
+normal distributions.
+
+RNA p-val = 1.037e-09
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ -0.3011970 -0.1680382
+sample estimates:
+mean of x mean of y 
+ 2.862235  3.096852 
+ 
+** the difference is around 26.4% in RNA **
+> exp(3.096852-2.862235)
+[1] 1.264424
+
+** 95% CI ** 
+> exp(0.3011970)
+[1] 1.351476
+> exp(0.1680382)
+[1] 1.182982
+
+
+```{r}
+RNA.arctic = RNA_tara_g[c("percent_rna_sect_CAZpep", "Ocean")] %>%
+  mutate(is_arctic = ifelse(Ocean == "Arctic Ocean", "Arctic", "Non-arctic"))
+
+RNA.arctic = log(RNA_tara_g[RNA_tara_g$Ocean == "Arctic Ocean",
+                        "percent_rna_sect_CAZpep"])
+RNA.non.arctic = log(RNA_tara_g[RNA_tara_g$Ocean != "Arctic Ocean",
+                        "percent_rna_sect_CAZpep"])
+
+# normality assumption met
+shapiro.test(RNA.non.arctic)
+shapiro.test(RNA.arctic)
+# equal variance not met
+var.test(RNA.non.arctic, RNA.arctic)
+# do t test
+t.test(RNA.non.arctic, RNA.arctic, var.equal = FALSE)
+```
+
+## Now do the same thing for DNA
+
+Can't get the normality assumption to work...
+Go with non parametric
+
+```{r}
+DNA.arctic = pt_to_graph[pt_to_graph$Ocean_DNA == "Arctic",]$percent_dna_sect_CAZpep
+DNA.non.arctic = pt_to_graph[pt_to_graph$Ocean_DNA != "Arctic",]$percent_dna_sect_CAZpep
+
+# normality assumption met
+shapiro.test(DNA.arctic)
+shapiro.test(DNA.non.arctic)
+
+wilcox.test(DNA.arctic, DNA.non.arctic)
+wilcox.test(RNA.arctic, RNA.non.arctic)
+```
+
+

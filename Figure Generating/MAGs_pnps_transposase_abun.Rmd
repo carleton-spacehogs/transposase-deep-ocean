@@ -11,28 +11,56 @@ source("./init_share.R")
 g(bin_taxon, depth_comparisons, malaspina_bins, low_trans, high_trans) %=% init_bins()
 ```
 
+## Find specific MAGs that are present everywhere
 ```{r}
 scg_trans = read_csv("../MAG_pnps_redux/transposase-abun-vs-scg-pnps.csv")
+
+scg_trans %>% 
+  filter(total_count > 50 & transposase_count > 0) %>%
+  group_by(bin) %>%
+  summarize(count = n()) %>%
+  filter(count >= 14)
+```
+
+  bin       count
+1 deep-0293    18
+2 deep-0592    14
+3 IN-32        14
+4 NP-15        21
+
+These are the only ones
+
+## Do NP-15
+```{r}
+MAG.reg = filter(scg_trans, total_count > 50 & bin == "IN-32")
+
+cor.test(MAG.reg$Trans_abun, MAG.reg$MAG_pnps_median, method = "sp")
+
+NP_15.reg %>%
+  ggplot(aes(x = log(MAG_pnps_median), y = Trans_abun)) +
+  geom_point()
+```
+
+
+
+```{r}
 scg_trans$depth = factor(scg_trans$depth, levels = c("SRF","DCM","MES","deep"))
 
 scg_trans2 = scg_trans %>% filter(scg_count >= 21)
-fudge_factor = min(scg_trans2$Trans_abun[scg_trans2$Trans_abun>0])
-scg_trans2$trans_abun_norm = ifelse(scg_trans2$Trans_abun <= 0, 
-                                   fudge_factor/2, scg_trans2$Trans_abun)
-scg_trans2$trans_abun_norm = log10(scg_trans2$trans_abun_norm)
-scg_trans2$log_scg_pnps_median = log10(scg_trans2$scg_pnps_median)
+trans_fudge = min(scg_trans2$Trans_abun[scg_trans2$Trans_abun>0])
 
-scg_trans %>%
-  # filter(trans_abun_norm > -5) %>%
-  filter(scg_pnps_median < 0.5) %>%
-  ggplot(aes(x=log_scg_pnps_median, y=trans_abun_norm )) +
+scg_trans2 = scg_trans2 %>%
+  mutate(trans_abun_log = log(Trans_abun + trans_fudge),
+         scg_pnps_norm = sqrt(scg_pnps_median))
+
+scg_trans2 %>%
+  ggplot(aes(x=scg_pnps_norm, y=trans_abun_log )) +
   geom_point(alpha = 0.3) +
   facet_wrap(~depth) +
-  geom_smooth(method = "lm", se=F,
-              scg_trans=subset(scg_trans, trans_abun_norm > -4))
+  geom_smooth(method = "lm", se=F)
 
 
-
+scg_trans=subset(scg_trans, trans_abun_norm > -4)
 
 bin_occur = as.data.frame(table(scg_trans2$bin))
 colnames(bin_occur) = c("bin", "Freq")
@@ -51,8 +79,11 @@ scg_trans2 %>%
   geom_line(aes(group = color_bin, color = color_bin), 
             alpha = 0.4) + # data = subset(scg_trans2, Trans_abun > 0 & Freq > 3)
   theme_classic()
+```
 
 
+
+```{r}
 scg_trans3 = merge(scg_trans2, bin_taxon[c("bin","complete genome size (Mbp)")], by = "bin")
 scg_trans3 %>%
   ggplot(aes(x=log_scg_pnps_median, y=trans_abun_norm)) +
@@ -96,38 +127,6 @@ pnps_melt(toxin_df, sel) %>%
   theme_classic()
   # theme(legend.position="none")
 ```
-
-```{r}
-toxin = read_csv("../toxin-db/all_oceans_toxin_pnps_per_sample.csv",
-                 col_types = cols(toxin_median = col_double(),
-                                  bin_median = col_double()))
-toxin = toxin %>% 
-  filter(!depth == "depth") %>%
-  mutate(depth = factor(depth, levels = c("SRF", "DCM", "MES", "deep"))) %>%
-  separate(col = cat, into = c("bin", "sample"), sep = ":")
-
-toxin$ratio = log(toxin$toxin_median) - log(toxin$bin_median)
-
-toxin %>%
-  filter(ratio < 2 & ratio > -2) %>%
-  ggplot(aes(x = depth, y = ratio)) +
-  geom_boxplot() +
-  geom_point(aes(colour=bin), alpha = 0.3)+
-  geom_line(aes(group = bin, color = bin), alpha = 0.5) +
-  theme(legend.position="none")
-
-toxin %>%
-  filter(toxin_median < 1) %>%
-  ggplot(aes(x = depth, y = bin_median)) +
-  geom_boxplot() +
-  # geom_point(aes(colour=bin), alpha = 0.3)+
-  # geom_line(aes(group = bin, color = bin), alpha = 0.5) +
-  theme(legend.position="none")
-
-```
-
-
-
 
 
 

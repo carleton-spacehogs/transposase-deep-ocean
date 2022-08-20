@@ -161,13 +161,29 @@ init_individual_metagenomes <- function(){
   return(list(all))
 }
 
-newvct = c("trans","defense","signalT","replication","sect_CAZ","sect_pep")
+# newvct = c("trans","defense","signalT","replication","sect_CAZ","sect_pep","aminoTM",
+#            "lipidTM","coenzyme","energyPC","cellWall")
+
+newvct = c("trans", "CAZyme", "peptidase", "sect_CAZ", "sect_pep",
+"Lipid_TM", "Coenzyme_TM", "Signal_transduction_mechanisms", 
+"defense", "Energy_production_and_conversion", "Replication_recombination_and_repair", "Cell_wall",
+"Amino_acid_TM","Cell_motility", "Extracellular_struct", "Cytoskeleton",
+"Carbohydrate_TM", "Inorganic_ion_TM", "Nucleotide_TM",
+"Chromatin_structure_and_dynamics", "Cell_cycle_control", "Intracellular_trafficking", "Secondary_metabolites", 
+"Translation_ribosomal_structure", "Transcription", "Posttranslational_modification", "Mobilome_prophages_transposons")
+
+oldvct = c("transposase", "CAZyme", "peptidase", "secretory_CAZyme", "secretory_peptidase",
+"Lipid_TM", "Coenzyme_TM", "Signal_transduction_mechanisms", 
+"Defense_mechanisms", "Energy_production_and_conversion", "Replication_recombination_and_repair", "Cell_wall",
+"Amino_acid_TM","Cell_motility", "Extracellular_struct", "Cytoskeleton",
+"Carbohydrate_TM", "Inorganic_ion_TM", "Nucleotide_TM",
+"Chromatin_structure_and_dynamics", "Cell_cycle_control", "Intracellular_trafficking", "Secondary_metabolites", 
+"Translation_ribosomal_structure", "Transcription", "Posttranslational_modification", "Mobilome_prophages_transposons")
 
 init_mala_cov <- function(){
   init_env()
   mala_cov = read_csv("../OM-RGC-and-abundance/Malaspina-genes-coverage.csv")
-  oldvct1 = c("Transposase","Defense","SingalT","replication","secretory_CAZyme","secretory_peptidase")
-  mala_cov = get_logs(mala_cov, oldvct1, newvct, "DNA")
+  mala_cov = get_logs(mala_cov, oldvct, newvct, "DNA")
   mala_cov = get_CAZpep_percent(mala_cov, "DNA")
   
   mala_cov = mala_cov %>%
@@ -227,12 +243,6 @@ init_bins <- function(){
   origin <- read_csv("../MAG-related/Tara_bins_origin.csv")[,c("bin","depth","size_fraction")]
   taxon = merge(origin, taxon, by = "bin")
   
-  # pn_ps_bins <- read_csv("data/bin_median_pnps.csv")
-  # pn_ps_bins <- pn_ps_bins %>% filter(count >= 100)
-  # taxon <- merge(taxon, pn_ps_bins, by="bin", all.x = TRUE)
-  # taxon$log_median_bin_pnps <- log10(taxon$median_bin_pnps)
-  # taxon$size_fraction <- factor(taxon$size_fraction, levels = c("planktonic", "mixed", "particle"))
-
   malaspina_bins = read_csv("data/malaspina_bin_taxon_over70complete.csv")
   # pn_ps_malaspina_bins <- read_csv("data/malaspina_bin_median_pnps.csv")
   gene_abun = read_csv("data/Malaspina_origin_biofilm_trans_TA_each_bin.csv")
@@ -322,7 +332,7 @@ init_integron_category <- function(){
             "transport and metabolism")
   col2 <- c("Secondary metabolites...", "Posttranslational modification...",
             "Intracellular trafficking...", "Cell cycle control...",
-            "Translation, ribosomal structure...", "TM*")
+            "Translation, ribosomal structure...", "T.M.")
   replace <- data.frame(col1, col2)
   
   for (r in 1:nrow(replace)){
@@ -363,16 +373,12 @@ init_tara_md = function(factorize = TRUE){
 
 init_tara <- function(){
   init_env()
-  oldvct2 = c("transposase","Defense_mechanisms","Signal_transduction_mechanisms",
-              "Replication_recombination_and_repair","secretory_CAZyme","secretory_peptidase")
-  DNA_cov = read_csv("data/tara_DNA_genes_abundance.csv")
-  # oldvct2 = colnames(DNA_cov)[grep("DNA_", colnames(DNA_cov))]
-  # oldvct2 = gsub("DNA_", "", oldvct2)
-  DNA_cov = get_logs(DNA_cov, oldvct2, newvct, "DNA")
+  DNA_cov = read_csv("../OM-RGC-and-abundance/tara_DNA_genes_abundance.csv")
+  DNA_cov = get_logs(DNA_cov, oldvct, newvct, "DNA")
   DNA_cov = get_CAZpep_percent(DNA_cov, "DNA")
   
-  RNA_cov = read_csv("data/tara_RNA_genes_abundance.csv")
-  RNA_cov = get_logs(RNA_cov, oldvct2, newvct, "RNA")
+  RNA_cov = read_csv("../OM-RGC-and-abundance/tara_RNA_genes_abundance.csv")
+  RNA_cov = get_logs(RNA_cov, oldvct, newvct, "RNA")
   RNA_cov = get_CAZpep_percent(RNA_cov, "RNA")
 
   g(DNA_Metadata, RNA_Metadata) %=% init_tara_md()
@@ -380,16 +386,8 @@ init_tara <- function(){
   RNA_tara <- merge(x=RNA_Metadata, y=RNA_cov, by ='connector_RNA', all = TRUE)
   
   DNA_tara = DNA_tara %>% mutate(
-    log_dna_lipidTM = log10(DNA_Lipid_transport_and_metabolism),
-    log_dna_coenzyme = log10(DNA_Coenzyme_transport_and_metabolism),
-    log_dna_energyPC = log10(DNA_Energy_production_and_conversion),
     is_MES = ifelse(Layer_DNA == "MES", "MES, BAT", 
              ifelse(Layer_DNA == "MIX", "MIX", "SRF, DCM")))
-  
-  RNA_tara = RNA_tara %>% mutate(
-    log_rna_lipidTM = log10(RNA_Lipid_transport_and_metabolism),
-    log_rna_coenzyme = log10(RNA_Coenzyme_transport_and_metabolism),
-    log_rna_energyPC = log10(RNA_Energy_production_and_conversion))
   
   DNA_RNA_connector = read_excel("data/DNA_RNA_connector.xlsx")
   tmp = merge(x=DNA_RNA_connector, y=DNA_tara, by = 'connector_DNA', all = FALSE)
@@ -403,10 +401,10 @@ init_tara <- function(){
     sect_pep_exp_rate = RNA_secretory_peptidase/DNA_secretory_peptidase,
     defense_exp_rate = RNA_Defense_mechanisms/DNA_Defense_mechanisms,
     signalT_exp_rate = RNA_Signal_transduction_mechanisms/DNA_Signal_transduction_mechanisms,
-    lipidTM_exp_rate = RNA_Lipid_transport_and_metabolism/DNA_Lipid_transport_and_metabolism,
+    lipidTM_exp_rate = RNA_Lipid_TM/DNA_Lipid_TM,
     energyPC_exp_rate = RNA_Energy_production_and_conversion/DNA_Energy_production_and_conversion,
     replication_exp_rate = RNA_Replication_recombination_and_repair/DNA_Replication_recombination_and_repair,
-    coenzyme_exp_rate = RNA_Coenzyme_transport_and_metabolism/DNA_Coenzyme_transport_and_metabolism)
+    coenzyme_exp_rate = RNA_Coenzyme_TM/DNA_Coenzyme_TM)
   
   return(list(DNA_tara, RNA_tara, DNA_RNA_tara))
 }
