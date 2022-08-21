@@ -130,21 +130,10 @@ out_f = 'Malaspina-genes-coverage.csv'
 metadata.to_csv(out_f, index=False)
 
 # for things in the future:
-# amino_dict = get_COG_gene_dict(anvi_category, "Amino acid transport and metabolism", anvi_gene_call)
-
 out_f = 'Malaspina-genes-coverage.csv'
 metadata = pd.read_csv(out_f)
 
-w_cols = ["Translation_ribosomal_structure", "Transcription", "Posttranslational_modification", "Mobilome_prophages_transposons"]
-words = ["DNA_"+ x for x in w_cols]
-w_cols2 = ['Translation, ribosomal structure', "Transcription", "Posttranslational modification","Mobilome: prophages, transposons"]
-
-metadata = streamline_gene(COG_dict, "DNA_Posttranslational_modification", metadata)
-# for i in range(len(dicts)):
-# 	print("doing " + words[i])
-# 	metadata = streamline_gene(dicts[i], words[i], metadata)
-
-# metadata = streamline_gene(extstruct_dict, "DNA_CAZyme", metadata)
-# metadata = streamline_gene(cytoskeleton_dict, "DNA_peptidase", metadata)
+biofilm_dict = get_target_gene_dict(f"{base1}/deep_anvi-genecall_biofilm.blastp")
+metadata = streamline_gene(biofilm_dict, "DNA_biofilm", metadata)
 
 metadata.to_csv(out_f, index=False)

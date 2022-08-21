@@ -133,17 +133,15 @@ def merge_abundance(all_genes, DNA_or_RNA):
 		base = base.merge(appending, on = f"connector_{DNA_or_RNA}")
 	return base
 
-# biofilm_id_set = get_id("OM-RGC_v2_Reference_Pieces/Biofilm_BLAST_Result/merge_Biofilm_hits_no_BapA.txt")
-# biofilm_length_dict = get_gene_specific_ref(biofilm_id_set, "biofilm")
-
+biofilm_id_set = get_id(f"{base1}/OM-RGC_v2_Reference_Pieces/Biofilm_BLAST_Result/merge_Biofilm_hits_no_BapA.txt")
 trans_id_set = get_id(f"{base1}/OM-RGC_v2_Reference_Pieces/Transposase_BLAST_Result/merged_Transposase_hits.txt")
 CAZ_id_set = get_id_v2(f"{base1}/all_CAZyme_norm.txt")
 pep_id_set = get_id_v2(f"{base1}/all_peptidase_norm.txt")
 sect_CAZ_id_set = get_id_v2(f"{base1}/secretory_CAZyme.txt")
 sect_pep_id_set = get_id_v2(f"{base1}/secretory_peptidase.txt")
 
-single_genes = ["transposase", "CAZyme", "peptidase", "secretory_CAZyme", "secretory_peptidase"]
-gene_ide_set = [trans_id_set, CAZ_id_set, pep_id_set, sect_CAZ_id_set, sect_pep_id_set]
+single_genes = ["biofilm", "transposase", "CAZyme", "peptidase", "secretory_CAZyme", "secretory_peptidase"]
+gene_ide_set = [biofilm_id_set, trans_id_set, CAZ_id_set, pep_id_set, sect_CAZ_id_set, sect_pep_id_set]
 
 for i in range(len(single_genes)):
 	print("doing: " + single_genes[i])

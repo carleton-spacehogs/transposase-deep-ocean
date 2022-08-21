@@ -72,8 +72,10 @@ def ocean_integron_contig(ocean):
 # ocean_integron_contig("IN")
 # ocean_integron_contig("deep")
 # ocean_integron_contig("SP")
+# ocean_integron_contig("NP")
+ocean_integron_contig("CPC")
 
 # oceans still ongoing:
-ocean_integron_contig("NAT")
-# ocean_integron_contig("NP")
+# ocean_integron_contig("NAT")
+
 
