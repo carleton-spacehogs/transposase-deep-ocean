@@ -193,6 +193,20 @@ init_mala_cov <- function(){
   return(mala_cov)
 }
 
+# assume the dataframe to be DNA_RNA_tara
+get_expression = function(df, name_vct = oldvct){
+  for (i in 1:length(name_vct)){
+    DNA = paste0("DNA_", name_vct[i])
+    RNA = paste0("RNA_", name_vct[i])
+    expression = paste0(name_vct[i], "_exp")
+    print(DNA)
+    print(RNA)
+    df[expression] = df[RNA]/df[DNA]
+  }
+  return(df)
+}
+
+
 init_MAGs_pnps_depths <- function(gene){
   init_env()
   defense="../toxin-db/all_oceans_defense_mech_depth_pnps.csv"
@@ -325,14 +339,20 @@ init_integron_category <- function(){
   summary = read_csv('../integron_finder_v2/integron_known_COG_category_summary.csv')
   
   col1 <- c('Secondary metabolites biosynthesis, transport and catabolism',
+            "Mobilome: prophages, transposons",
             "Posttranslational modification, protein turnover, chaperones", 
             "Intracellular trafficking, secretion, and vesicular transport",
             "Cell cycle control, cell division, chromosome partitioning",
-            "Translation, ribosomal structure and biogenesis",
-            "transport and metabolism")
-  col2 <- c("Secondary metabolites...", "Posttranslational modification...",
-            "Intracellular trafficking...", "Cell cycle control...",
-            "Translation, ribosomal structure...", "T.M.")
+            "Replication, recombination and repair",
+            "Translation, ribosomal structure and biogenesis")
+  # col2 <- c("Secondary metabolites...", "Posttranslational modification...",
+  #           "Intracellular trafficking...", "Cell cycle control...",
+  #           "Translation, ribosomal structure...", "T.M.")
+  col2 <- c("Secondary metabolites", "Mobilome prophages transposons",
+            "Posttranslational modification",
+            "Intracellular trafficking", "Cell cycle control",
+            "Replication recombination and repair",
+            "Translation, ribosomal structure")
   replace <- data.frame(col1, col2)
   
   for (r in 1:nrow(replace)){
@@ -394,17 +414,6 @@ init_tara <- function(){
   tmp = tmp[ ,!(colnames(tmp) %in% c("ENA_Run_ID", "Depth"))] # have it in RNA
   DNA_RNA_tara = merge(x=tmp, y=RNA_tara, by ='connector_RNA', all = FALSE)
   DNA_RNA_tara = DNA_RNA_tara[ ,!grepl("sum|read", colnames(DNA_RNA_tara))]
-  
-  DNA_RNA_tara = DNA_RNA_tara %>% mutate(
-    trans_exp_rate = RNA_transposase/DNA_transposase,
-    sect_CAZ_exp_rate = RNA_secretory_CAZyme/DNA_secretory_CAZyme,
-    sect_pep_exp_rate = RNA_secretory_peptidase/DNA_secretory_peptidase,
-    defense_exp_rate = RNA_Defense_mechanisms/DNA_Defense_mechanisms,
-    signalT_exp_rate = RNA_Signal_transduction_mechanisms/DNA_Signal_transduction_mechanisms,
-    lipidTM_exp_rate = RNA_Lipid_TM/DNA_Lipid_TM,
-    energyPC_exp_rate = RNA_Energy_production_and_conversion/DNA_Energy_production_and_conversion,
-    replication_exp_rate = RNA_Replication_recombination_and_repair/DNA_Replication_recombination_and_repair,
-    coenzyme_exp_rate = RNA_Coenzyme_TM/DNA_Coenzyme_TM)
   
   return(list(DNA_tara, RNA_tara, DNA_RNA_tara))
 }

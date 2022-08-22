@@ -19,6 +19,15 @@ colourCount = length(unique(MAGs_p$large_classes))
 getPalette = colorRampPalette(brewer.pal(colourCount, "Set1"))
 ```
 
+## Deep Ocean MAGs have more secretory genes
+The answer is no
+```{r}
+MAGs_p %>%
+  ggplot(aes(y=depth, x=percent_sect_CAZpep)) +
+  geom_boxplot()
+```
+
+
 ## Particle-associated MAGs tend to have bigger genomes
 
 Bigger genomes is associated with higher proportion of transposases in MAGs.
@@ -45,7 +54,8 @@ tmp = gsub("5-20", ">5",
   gsub('(','', fixed=TRUE, size_bin))))
 
 genome.size_trans.abun = MAGs_p %>%
-  mutate(size_bin = factor(tmp, levels=c("0-2","2-3","3-4","4-5",">5"))) %>%
+  mutate(size_bin = 
+    factor(tmp, levels=c("0-2","2-3","3-4","4-5",">5"))) %>%
   ggplot(aes(x=size_bin, y=percent_trans)) + 
   geom_boxplot(outlier.alpha = 0.2) +
   stat_summary(fun.data = boxplot.give.n, geom = "text", 
@@ -60,7 +70,7 @@ genome.size_trans.abun = MAGs_p %>%
 ggarrange(genome.size_particle.association,
           genome.size_trans.abun, ncol = 2, widths = c(5,3.5))
 
-ggsave("redux_out/F3_MAG_transposase_genome_size_v2.pdf", plot = last_plot(),
+ggsave("redux_out/F3_MAG_transposase_genome_size_v2.pdf",
        height = 8, width = 6)
 ```
 

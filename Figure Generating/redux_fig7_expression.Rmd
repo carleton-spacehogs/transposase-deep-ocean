@@ -1,0 +1,283 @@
+---
+title: "Graph metagenomic expression ratio"
+author: "Jimmy Zhong"
+date: "8/21/2022"
+output: html_document
+---
+
+## Initialization
+```{r}
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
+source("./init_share.R")
+g(DNA_tara, RNA_tara, DNA_RNA_tara) %=% init_tara()
+# options(scipen=10000)
+
+DNA_RNA = DNA_RNA_tara %>%
+  filter(Ocean_DNA != "Arctic") %>%
+  filter(Layer_RNA %in% c("SRF", "DCM", "MES")) %>%
+  get_expression()
+```
+
+## Looking at expression rate
+```{r}
+gene_col =c("secretory_CAZyme", "secretory_peptidase", "transposase",
+            "Carbohydrate_TM", "Amino_acid_TM", 
+            "Mobilome_prophages_transposons", "Coenzyme_TM",
+            "Defense_mechanisms", "Signal_transduction_mechanisms")
+# exp_col = paste0(gene_col, "_exp")
+# dna_col = paste0("DNA_", gene_col)
+
+exp_col = colnames(DNA_RNA)[grepl("_exp", colnames(DNA_RNA))]
+
+pre.melt = function(DNA_RNA, in_cols, type = "exp") {
+  target = DNA_RNA[in_cols]
+  target$sample = DNA_RNA$connector_DNA
+  target$depth = factor(DNA_RNA$Layer_RNA,
+     levels = c("MES","DCM","SRF"))
+  if (type == 'exp') {
+    colnames(target) = gsub(" exp", "",gsub("_"," ", colnames(target)))
+  } else if (type == 'DNA') {
+    colnames(target) = gsub("_", " ", gsub("DNA_", "", colnames(target)))
+  }
+  target.melt = target %>%
+    reshape2::melt(id.var = c("depth", "sample"))
+  return(target.melt)
+}
+
+base.col = c("depth", "sample", "gene")
+exp.melt = pre.melt(DNA_RNA, exp_col, "exp")
+colnames(exp.melt) = c(base.col, "expression")
+
+exp.stats = exp.melt %>%
+  group_by(gene) %>%
+  wilcox_test(expression~depth) %>%
+  adjust_pvalue(method = "BH") %>%
+  filter(p.adj < 0.05) %>%
+  add_significance() %>% 
+  add_xy_position() %>%
+  mutate(y.position = log2(y.position))
+
+sig_gene = unique(exp.stats$gene)
+
+exp.melt %>%
+  # filter(gene %in% sig_gene) %>%
+  filter(expression < 12) %>% # an extreme outlier for transposase, SRFs
+  ggplot(aes(y = expression, x = depth)) +
+  facet_wrap(~gene) +
+  scale_y_continuous(trans = "log2",
+    labels = function(x) ifelse(x == 0, "0", x)) +
+  geom_boxplot(outlier.shape = NA) +
+  geom_jitter(alpha = 0.12, width = 0.2) +
+  stat_pvalue_manual(exp.stats, tip.length = 0.01,
+    label = "p.adj.signif", hide.ns = TRUE ) +
+  coord_flip() +
+  theme_classic() +
+  theme(axis.title.y = element_blank())
+
+ggsave("redux_out/gene_expression_ratios.pdf")
+```
+
+```{r}
+DNAs = colnames(DNA_RNA)[grepl("DNA_", colnames(DNA_RNA))]
+RNAs = colnames(DNA_RNA)[grepl("RNA_", colnames(DNA_RNA))]
+
+tmp = cbind(DNA_RNA$Ocean_DNA, rowSums(DNA_RNA[DNAs]), rowSums(DNA_RNA[RNAs]))
+
+```
+
+
+```{r}
+gen_plot <- function(gene_name, log_scale, percent_scale, upscale, 
+                     DNA_color, RNA_color, txt_top, txt_bot){
+  log_scale <- log_scale + upscale
+  DNA_gene <- paste("log_dna",gene_name, sep="_")
+  RNA_gene <- paste("log_rna",gene_name, sep="_")
+  tmp1 <- DNA_RNA[,c(DNA_gene, "Layer_RNA")]
+  tmp2 <- DNA_RNA[,c(RNA_gene, "Layer_RNA")]
+  tmp1$type <- "DNA"
+  tmp2$type <- "RNA"
+  
+  tmp1 <- filter_outliers(tmp1, DNA_gene)
+  tmp2 <- filter_outliers(tmp2, RNA_gene)
+  
+  g_cols <- c("log_abundance", "depth", "type")
+  DNA_RNA_bar <- rbind(`colnames<-`(tmp1, g_cols),
+                       `colnames<-`(tmp2, g_cols))
+  
+  sum_bar <- DNA_RNA_bar %>% 
+    group_by(type, depth) %>% 
+    summarise(median_abun = median(log_abundance) + upscale, 
+    mean_abun = mean(log_abundance),
+    lower = quantile(log_abundance, probs = c(.25)) + upscale, 
+    upper = quantile(log_abundance, probs = c(.75)) + upscale)
+  
+  x_max <- max(max(DNA_RNA[,c(DNA_gene)]), max(DNA_RNA[,c(RNA_gene)]))+ upscale
+  labD = "DNA"
+  labR = "RNA"
+  
+  p <- ggplot(sum_bar, aes(y=fct_rev(depth), x=median_abun, fill=fct_rev(type))) + 
+    geom_bar(stat="identity", position=position_dodge()) +
+    # scale_x_continuous(breaks = log_scale, labels = percent_scale) +# 
+    geom_errorbar(aes(xmin=lower, xmax=upper), width=.2,
+                  position=position_dodge(.9)) + 
+    scale_fill_manual(values = c("DNA" = DNA_color, "RNA" = RNA_color))+
+    annotate(geom="text", x=x_max*txt_top, y=3.25, label=labD) + 
+    annotate(geom="text", x=x_max*txt_bot, y=2.8, label=labR) + 
+    theme_classic() +
+    
+    theme(axis.title.y = element_blank(),
+          legend.position = "none")
+  
+  if (gene_name == "trans") {
+    return(p + xlab("% reads mapped to transposases"))
+  } else if (gene_name == "defense") {
+    return(p + xlab("% reads mapped to defense mechanism ORFs"))
+  } else if (gene_name == "biofilm"){
+    p <- p + xlab("% reads mapped to biofilm ORFs")
+    p <- p + scale_y_discrete(labels=c("MES  \n(n = 22)",
+                                       "DCM  \n(n = 36)",
+                                       "SRF   \n(n = 64)"))
+  }
+  return(p)
+}
+```
+
+## Using the function
+```{r}
+exp_biofilm <- gen_plot("biofilm", c(-4.301, -4, -3.698, -3.3979),
+                        c("0.005%", "0.01%", "0.02%", "0.04%"), 4.3,
+                        "gray", "green", 0.54, 0.44)
+
+exp_trans <- gen_plot("trans", c(-4.523, -4, -3.523, -3, -2.523), 
+                      c("0.003%", "0.01%", "0.03%", "0.10%","0.3%"),
+                      4.52, "gray", "light blue", 0.54, 0.46)
+
+exp_defense <- gen_plot("defense", c(-3, -2.699, -2.398, -2.097),
+                        c("0.1%", "0.2%", "0.4%","0.8%"),
+                        3, "gray", "red", 0.1, 0.1)
+
+gen_plot("signalT", c(-3, -2.699, -2.398, -2.097),
+         c("0.1%", "0.2%", "0.4%","0.8%"),
+         3, "gray", "red", 0.1, 0.1)
+
+gen_plot("coenzyme", c(-3, -2.699, -2.398, -2.097),
+         c("0.1%", "0.2%", "0.4%","0.8%"),
+         3, "gray", "red", 0.1, 0.1)
+
+gen_plot("energyPC", c(-3, -2.699, -2.398, -2.097),
+         c("0.1%", "0.2%", "0.4%","0.8%"),
+         3, "gray", "red", 0.1, 0.1)
+
+gen_plot("replication", c(-3, -2.699, -2.398, -2.097),
+         c("0.1%", "0.2%", "0.4%","0.8%"),
+         3, "gray", "red", 0.1, 0.1)
+```
+
+
+## Marking ranks are not too useful
+```{r}
+pre.melt = function(DNA_RNA, in_cols) {
+  target = DNA_RNA[c("connector_DNA", in_cols)]
+  target$depth = factor(DNA_RNA$Layer_RNA,
+     levels = c("MES","DCM","SRF"))
+  target.melt = target %>%
+    reshape2::melt(id.var = c("depth", "connector_DNA"))
+  return(target.melt)
+}
+
+base.col = c("depth", "connector_DNA", "gene")
+
+exp.melt = pre.melt(DNA_RNA, exp_col)
+colnames(exp.melt) = c(base.col, "expression")
+exp.melt$gene = gsub(" exp", "",gsub("_"," ", exp.melt$gene))
+
+
+abun.melt = pre.melt(DNA_RNA, dna_col)
+colnames(abun.melt) = c(base.col, "abundance")
+abun.melt$gene = gsub("_", " ", gsub("DNA_", "", abun.melt$gene))
+abun.melt = abun.melt %>%
+  group_by(gene) %>%
+  mutate(group_rank = order(abundance, decreasing=TRUE)) %>%
+  mutate(group_rank = as.numeric(group_rank))
+
+exp.stats = exp.melt %>%
+  group_by(gene) %>%
+  wilcox_test(expression~depth) %>%
+  adjust_pvalue(method = "BH") %>%
+  add_significance() %>% 
+  add_xy_position() %>%
+  mutate(y.position = log2(y.position))
+
+exp.abun.melt = merge(exp.melt, abun.melt, by = base.col)
+
+ggplot(exp.abun.melt, aes(y = group_rank, x = depth)) +
+  facet_wrap(~gene) +
+  # scale_y_continuous(trans = "log2",
+  #   labels = function(x) ifelse(x == 0, "0", x)) +
+  geom_boxplot(outlier.shape = NA) +
+  geom_jitter(aes(color = group_rank), size = 1, alpha = 0.5) +
+  scale_color_gradient2(low="blue", mid="white", high="red",
+                        midpoint = 63) +
+  stat_pvalue_manual(exp.stats, tip.length = 0.01,
+    label = "p.adj.signif", hide.ns = TRUE ) +
+  coord_flip() +
+  theme_classic() +
+  theme(axis.title.y = element_blank())
+
+```
+
+
+
+
+
+
+
+
+sel_cols = c("biofilm_exp_rate", "defense_exp_rate", "trans_exp_rate", "Layer_RNA")
+melted <- DNA_RNA[, sel_cols] %>%
+  `colnames<-`(c("Biofilm", "Defense mech.", "Transposase", "Depth")) %>%
+  reshape2::melt(id.vars=c('Depth'),var='Gene')
+
+library(ggpubr)
+library(rstatix)
+melted$Depth <- fct_rev(melted$Depth)
+melted$log_exp <- log10(melted$value)
+
+# three gene's expression looks very normal with log transform
+# hist((filter(melted, Gene == "Biofilm"))$log_exp) 
+
+stat.test <- melted %>%
+  group_by(Gene) %>%
+  t_test(log_exp~Depth) %>%
+  add_significance("p") %>% 
+  add_xy_position()
+stat.test2 <- filter(stat.test, group1 =="MES")
+stat.test2$y.position <- log10(c(3.2, 3.8, 1.9, 1.2, 5.6, 25)) # bio, def, trans
+
+exp_summary <- melted %>% # 
+  ggplot(aes(x=Depth, y=value, fill = Gene)) +
+  scale_fill_manual(values = c("green", "red","light blue"))+
+  facet_wrap(~ Gene, ncol = 3, scales = "free_x") +
+  geom_boxplot(outlier.colour = "gray") +
+  stat_pvalue_manual(stat.test2, label = "p.signif", tip.length = 0.01) +
+  ylab("RNA/DNA ratio (%RNA / %DNA per sample)") +
+  scale_y_log10() +
+  theme_classic() +
+  theme(legend.position = "none",
+        axis.title.y=element_blank()) +
+  coord_flip() 
+
+ggarrange(nrow = 2, ncol = 1,
+  ggarrange(exp_biofilm, exp_defense, widths = c(0.5,0.46), labels = c("A","B"), ncol = 2),
+  ggarrange(exp_trans, exp_summary, widths = c(0.4,0.6), labels = c("C","D"), ncol = 2))
+
+ggsave("F7_DNA-RNA-ratio_target-genes.png", 
+       plot = last_plot(),
+       height = 4.3,
+       width = 7.5)
+ggsave("F7_DNA-RNA-ratio_target-genes.pdf", 
+       plot = last_plot(),
+       height = 4.3,
+       width = 7.5)
+
+

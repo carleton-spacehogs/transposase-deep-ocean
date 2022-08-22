@@ -12,6 +12,8 @@ g(DNA_tara, RNA_tara, DNA_RNA_tara) %=% init_tara()
 mala_cov = init_mala_cov()
 mala_cov$size_fraction <- ifelse(mala_cov$lower_filter_size == "0.2", "planktonic", "particle")
 DNA_tara$size_fraction <- ifelse(DNA_tara$upper_size_dna == "1.6", "planktonic", "particle")
+
+DNA_tara$sample = DNA_tara$ENA_Run_ID
 ```
 
 ## Worry about scaling later
@@ -27,64 +29,391 @@ CAZ_scale <- log2(CAZ_percent_scale/100)
 ```{r}
 sel = colnames(mala_cov)[grep("log_dna", colnames(mala_cov))]
 sel = sel[!grepl("CAZ|pep|log_dna_trans", sel)]
-independent_var = c("percent_dna_sect_CAZpep","Layer_DNA","Ocean_DNA")
+independent_var = c("percent_dna_sect_CAZpep","Layer_DNA",
+                    "sample","Ocean_DNA","DNA_biofilm")
 sel2 = c(sel, independent_var)
-
-bd_to_graph <- rbind(mala_cov[sel2], DNA_tara[sel2])
-bd_to_graph$Layer_DNA <- factor(bd_to_graph$Layer_DNA, levels = c("SRF","DCM","MES","BAT"))
-
-bd_melt = bd_to_graph %>%
-  filter(Ocean_DNA != "Arctic") %>%
-  filter(!is.na(Layer_DNA)) %>%
-  reshape2::melt(id.var = independent_var) %>%
-  mutate(value = as.numeric(value))
-
-colnames(bd_melt) = c(independent_var, "COG", "COG_abun")
-
-# see each correlation
-bd_melt %>%
-  ggplot(aes(x = percent_dna_sect_CAZpep, y = COG_abun)) +
-  facet_wrap(~COG, scale = "free_y") +
-  geom_point(aes(color = Layer_DNA)) +
-  geom_smooth(method = "lm", se = T)
 ```
 
 ## statistics on correlations
+
 ```{r}
 sel.cor = colnames(DNA_tara)[grep("DNA", colnames(DNA_tara))]
-sel.cor2 = c(sel.cor[11:32], independent_var)
+all_COGs = sel.cor[12:33]
+sel.cor2 = c(all_COGs, independent_var)
 
-COG.corr <- rbind(mala_cov[sel.cor2], DNA_tara[sel.cor2]) #  %>%
-  filter(Ocean_DNA != "Arctic")
+# rownames(DNA_tara) %in% tara_out,
+# COG.corr <- rbind(mala_cov[ mala_cov$sample != "SRR3963805", sel.cor2],
+#                   DNA_tara[ rownames(DNA_tara) %in% tara_out, sel.cor2])
+
+COG.corr = rbind(mala_cov[sel.cor2], DNA_tara[sel.cor2])
 COG.corr$Layer_DNA <- factor(COG.corr$Layer_DNA, levels = c("SRF","DCM","MES","BAT"))
+```
+
+From the exploratory plot above (the lowest purple dot),
+and also looking at the total coverage of all COG categories,
+the deep ocean sample SRR3963805 is an outlier.
+
+27 SRR3963658        0.3049604
+28 SRR3963622        0.5036739
+29 SRR3963805     ** 0.1071551 **
+30 SRR3963804        0.2472688
+31 SRR3963571        0.3097788
+
+# need to normalize the COG abundance of each category by the sum COG category abundance
+
+> range(sum.COG$COG_sum_coverage)
+[1] 0.1071551 0.5800349
+
+```{r}
+mala_COG_sum = rowSums(mala_cov[all_COGs])
+tara_COG_sum = rowSums(DNA_tara[all_COGs])
+
+sum.COG = data.frame(c(mala_cov$sample, DNA_tara$sample),
+                     c(mala_COG_sum, tara_COG_sum))
+colnames(sum.COG) = c("sample", "COG_sum_coverage")
+# boxplot(sum.COG$COG_sum_coverage)
+```
+
+```{r}
+# there is significant correlation for both of them
+cor.test(log(mala_cov$DNA_biofilm), mala_COG_sum)
+cor.test(log(DNA_tara$DNA_biofilm), tara_COG_sum)
+
+# there is no correlation for neither of them
+cor.test(mala_cov$percent_dna_sect_CAZpep, mala_COG_sum)
+cor.test(DNA_tara$percent_dna_sect_CAZpep, tara_COG_sum)
+
+# add it to COG.corr
+COG_sum_coverage = c(mala_COG_sum, tara_COG_sum)
+COG.corr = cbind(COG.corr, COG_sum_coverage)
+independent_var = c(independent_var, "COG_sum_coverage")
+
+COG.corr = COG.corr %>% 
+  filter(Ocean_DNA != "Arctic" & !is.na(Layer_DNA))
 
 COG.melt = COG.corr %>%
   reshape2::melt(id.var = independent_var)
 colnames(COG.melt) = c(independent_var,"COG","COG_abun")
 ```
 
-
-## Lienar regresssion based correlation looks good!
+## Spearman correlation
 ```{r}
-base_info = COG.corr[independent_var]
+# 
+COG.stats = COG.melt %>%
+  filter(!is.na(Layer_DNA)) %>%
+  filter(COG != "DNA_Chromatin_structure_and_dynamics") %>%
+  group_by(COG, Layer_DNA) %>%
+  summarize(p.val = cor.test(percent_dna_sect_CAZpep, 
+    COG_abun/COG_sum_coverage, method = "spearman")$p.val,
+            estimate = cor.test(percent_dna_sect_CAZpep,
+    COG_abun/COG_sum_coverage, method = "spearman")$estimate,
+            count = n()) %>%
+  adjust_pvalue(method = "BY") %>%
+  add_significance(cutpoints = c(0, 0.001, 0.01, 0.05, 1),
+    symbols = c("***", "**", "*", ""))
+
+COG.stats2 = COG.stats %>%
+  filter(p.val.adj < 0.05) %>%
+  arrange(COG, Layer_DNA)
+
+sig_COG = unique(COG.stats2$COG)
+```
+
+## Doing the heatmap
+
+Some colnames preparation
+```{r}
+col_to_index = function(df, index_col){
+  return(df %>% remove_rownames %>% column_to_rownames(var=index_col))
+}
+
+cast_long_list = function(corr_long_list, var1, var2, value) {
+  estimate_2d = reshape2::dcast(corr_long_list,
+                                paste(var1,var2,sep="~"),value.var=value)
+  rownames_tmp = unlist(estimate_2d[var1])
+  estimate_2d = col_to_index(estimate_2d, var1)
+  if (value == "estimate") {
+    estimate_2d = estimate_2d %>% apply(2, as.numeric) 
+  }
+  rownames(estimate_2d) = rownames_tmp
+  return(estimate_2d)
+}
+
+COG.graph = COG.stats[COG.stats$COG %in% sig_COG, ]
+
+# COG.graph = COG.stats
+
+COG.corr.2D = cast_long_list(COG.graph, "COG", "Layer_DNA", "estimate")
+
+old_names = rownames(COG.corr.2D)
+pretty = gsub("TM", "transport and metabolism", 
+         gsub("_", " ", 
+         gsub("DNA_", "", old_names)))
+
+pretty = gsub("Cell wall", "Cell wall/membrane/envelope biogenesis", pretty)
+pretty = gsub("lular struct", "lular structures", pretty)
+pretty = gsub("Translation ribosomal structure", "Translation, ribosomal structure", pretty)
+
+rownames(COG.corr.2D) = pretty
+
+for (i in 1:length(old_names)){
+  COG.graph$COG = gsub(old_names[i], pretty[i], COG.graph$COG)  
+}
+```
+
+Get the clustering
+```{r}
+library("ggdendro")
+COG_dendro = as.dendrogram(hclust(d = dist(x = COG.corr.2D)))
+dendro_graph = ggdendrogram(data = COG_dendro, rotate = FALSE) + 
+  coord_flip() +
+  scale_x_continuous(expand = c(0,0)) +
+  scale_y_reverse() +
+  theme_dendro()
+
+blank_plot = ggplot() + theme_void()
+left = ggarrange(blank_plot, dendro_graph, blank_plot, 
+                  heights = c(0.03, 0.8, 0.05), ncol = 1)
+
+integron_order = rownames(COG.corr.2D)[order.dendrogram(COG_dendro)]
+```
+
+Doing the heatmap
+```{r}
+COG_ggheatmap = COG.graph %>%
+  mutate(COG = factor(COG, levels = integron_order),
+         Depth = factor(Layer_DNA, levels = c("SRF","DCM","MES","BAT"))) %>%
+  ggplot(aes(x=Depth, y=COG)) + 
+  geom_tile(aes(fill=estimate)) +
+  scale_fill_gradient2(low="blue", mid="white", high="red") +
+  geom_text(aes(label=p.val.adj.signif), color="black", size=3) +
+  theme_classic() +
+  labs(fill = "COG correlation with\nsecretory CAZyme & \npeptidase genes (%)") +
+  scale_y_discrete(position = "right") + 
+  theme (axis.text.x = element_text(angle = 270, vjust = 0.5, size = 10),
+         axis.title.x = element_blank(), # ggtext::element_markdown(),
+         legend.background = element_rect(fill="transparent",
+                                          color="transparent"),
+         axis.title.y = element_blank(),
+         axis.text.y = element_blank(),
+         axis.line.y = element_blank(),
+         legend.title=element_text(size=10),
+         # legend.key.size = unit(0.4, "cm"),
+         legend.position = c(5.8, 0.8)) 
+```
+
+
+Combining the heatmap with the graph *p_cassette_category* from
+*redux_fig5_integron_finder_category.R*
+```{r}
+ggarrange(left, COG_ggheatmap, p_cassette_category, 
+          ncol = 3, widths=c(0.5,1,5)) # , labels = c("A", "B")
+
+ggsave("redux_out/linking_COG_integron_corr.pdf",
+       width = 8, height = 5.5)
+```
+
+# Supplementary scatter plot: see each correlation
+```{r}
+simplify = function(vec){
+  vec = gsub("transport and metabolism", "T.M.", vec)
+  vec = gsub("structure", "struct", vec)
+  vec = gsub(" prophages transposons", "", vec)
+  vec = gsub("wall/membrane/envelope biogenesis", "wall", vec)
+  vec = gsub("transduction mechanisms", "transduction", vec)
+  vec = gsub("Replication recombination and repair",
+             "Replication", vec)
+  vec = gsub("Translation, ribosomal struct", "Translation", vec)
+  vec = gsub("Energy production and conversion", "Energy", vec)
+  return(vec)
+}
+
+pt.COG.graph = COG.melt %>% 
+  filter(!is.na(Layer_DNA))
+
+for (i in 1:length(old_names)){
+  pt.COG.graph$COG = gsub(old_names[i], pretty[i], pt.COG.graph$COG)  
+}
+
+integron_order_sim = rev(simplify(integron_order))
+
+pt.COG.graph = pt.COG.graph %>%
+  filter(COG %in% integron_order) %>%
+  mutate(COG2 = factor(simplify(COG), levels = integron_order_sim),
+    COG_percent_abun = COG_abun/COG_sum_coverage * 100)
+
+# out = c("Intracellular trafficking", "Secondary metabolites")
+
+pt.COG.graph %>%
+  # filter(!COG2 %in% out) %>%
+  ggplot(aes(x = percent_dna_sect_CAZpep, y = COG_percent_abun)) +
+  facet_wrap(~COG2, scale = "free_y", ncol = 4) +
+  geom_point(aes(color = Layer_DNA), size = 1) +
+  scale_y_sqrt() +
+  labs(color = "Depth",
+       y = "COG abundance in all COG categories (%)",
+       x = "Secretory CAZyme and peptidase (%)") +
+  theme_classic()
+
+ggsave("redux_out/particle-COG-association2.pdf",
+       width = 9.5, height = 9)
+```
+
+
+
+## Exploring from this point, not acutally used
+
+## Can't really do linear regression
+
+The normality of residual assumption does not meet.
+
+```{r}
 out = c()
-for (COG in sel.cor2[grepl("DNA_", sel.cor2)]) {
+# I don't have Chromatin_structure in my integrons, don't care about it.
+for (COG in all_COGs[all_COGs != "DNA_Chromatin_structure_and_dynamics"]) {
   print(COG)
-  y_info = cbind(COG.corr[c(COG, "percent_dna_sect_CAZpep","Layer_DNA")])
-  y_info['COG_log'] = log2(COG.corr[COG])
-  depth.lm = lm(formula=COG_log ~ Layer_DNA, data = y_info)
-  depth.CAZpep.lm = lm(formula=COG_log ~ Layer_DNA + percent_dna_sect_CAZpep, data = y_info)
+  y_info = cbind(COG.corr[c(COG, independent_var)])
+  # y_info['COG_log'] = log2(COG.corr[COG])
+  y_info['COG_log'] = log(COG.corr[COG]/COG.corr$COG_sum_coverage)
+  depth.lm = lm(formula=COG_log ~ Layer_DNA + Ocean_DNA, data = y_info)
+  depth.CAZpep.lm = lm(formula=COG_log ~ Layer_DNA + Ocean_DNA + log(percent_dna_sect_CAZpep), data = y_info)
+  print(shapiro.test(depth.CAZpep.lm$residuals))
   p.val = anova(depth.lm, depth.CAZpep.lm)$`Pr(>F)`[2]
-  out = rbind(out, c(COG, p.val, 
-                     depth.CAZpep.lm$coefficients['percent_dna_sect_CAZpep']))
+  out = rbind(out, c(COG, p.val,
+        depth.CAZpep.lm$coefficients['log(percent_dna_sect_CAZpep)']))
 }
 
 out = as.data.frame(out)
 colnames(out) = c("COG", "p.val", "coefficient")
+
+# I can't really assume that different COGs are independent,
+# so I can't use BH p.value adjust
 out$p.val = as.numeric(out$p.val)
+out$p.val.adj = p.adjust(out$p.val)
 
 out2 = out %>%
-  adjust_pvalue(method = "BH") %>%
+  arrange(coefficient) %>%
+  add_significance(output.col = "signif")
+
+out_display = out2 %>%
+  mutate(COG_category = gsub("DNA_", "", out2$COG)) %>%
+  filter(p.val.adj < 0.05) %>%
+  select(COG_category, p.val.adj, coefficient, signif) %>%
+  mutate(coefficient = round(as.numeric(coefficient), 4))
+
+# write.csv(out_display,"redux_out/particle-COG-corr.csv", row.names = FALSE)
+```
+
+> out_display
+                           COG_category    p.val.adj coefficient signif
+1        Signal_transduction_mechanisms 1.539041e-15      0.0476   ****
+2                         Cell_motility 2.141125e-08      0.0414   ****
+3                    Defense_mechanisms 3.967492e-04      0.0227    ***
+4        Mobilome_prophages_transposons 3.967492e-04      0.0502    ***
+5                         Transcription 1.231117e-03      0.0220     **
+6                  Extracellular_struct 1.344853e-03      0.0335     **
+7                          Cytoskeleton 2.004871e-02      0.0308      *
+8                             Cell_wall 9.377067e-02      0.0147     ns
+
+## Plotting the COG categories that have correlations across depths
+```{r}
+col_COG = c("DNA_Signal_transduction_mechanisms", "DNA_Cell_motility",
+"DNA_Defense_mechanisms", "DNA_Mobilome_prophages_transposons",
+"DNA_Transcription", "DNA_Extracellular_struct", "DNA_Cytoskeleton")
+
+sel3 = c(col_COG, independent_var)
+COG_viz = rbind(mala_cov[sel3], DNA_tara[sel3])
+
+viz_melt = COG_viz %>%
+  filter(Layer_DNA != "MIX") %>%
+  reshape2::melt(id.var = independent_var) %>%
+  mutate(COG_abun = as.numeric(value)) %>%
+  mutate(log_abun = log2(COG_abun) ) %>%
+  select(c(independent_var,"variable","log_abun","COG_abun")) %>%
+  mutate(Layer_DNA = factor(Layer_DNA,
+    levels=c("SRF","DCM","MES","BAT")))
+
+# install.packages("ggh4x")
+# library("ggh4x")
+
+viz_melt$COG = viz_melt$variable
+pretty_COG=c("Signal Transduction", "Cell motility", "Defense Mechanism", 
+             "Mobilome", "Transcription","Extracellular structures",
+             "Cytoskeleton")
+for (i in 1:length(col_COG)){
+  viz_melt$COG = gsub(col_COG[i],pretty_COG[i], viz_melt$COG)
+}
+viz_melt$COG = factor(viz_melt$COG, levels = pretty_COG)
+```
+
+# see each correlation
+```{r}
+viz_melt %>%
+  ggplot(aes(x = percent_dna_sect_CAZpep,
+             y = COG_abun * 100)) +
+  # facet_grid2(Layer_DNA~COG,
+  #             scales = "free_y",
+  #             independent = "y") + 
+  facet_wrap(~COG, scales = "free_y", ncol = 4)+
+  scale_y_log10()+
+  geom_point(aes(color = Layer_DNA), size = 1) + # aes(color = Ocean_DNA)
+  # geom_smooth(method = "lm", se = T) + 
+  labs(color = "Depth",
+       y = "Gene abundance of COG category (%)",
+       x = "Secretory CAZyme and peptidase (%)") +
+  theme_classic() +
+  theme(legend.position = c(0.87, 0.25))
+
+# ggsave(filename = "redux_out/particle-COG-association.pdf",
+#        last_plot(), width = 8.5, height = 4.5)
+```
+
+## Biofilm special
+```{r}
+melt.biofilm = merge(viz_melt, sum.COG, by = "sample") 
+
+melt.biofilm = melt.biofilm %>%
+  mutate(percent_COG = COG_abun/COG_sum_coverage)
+
+melt.biofilm %>%
+  ggplot(aes(x = DNA_biofilm * 10000,
+             y = percent_COG)) +
+  facet_wrap(~COG, scales = "free_y", ncol = 4)+
+  # scale_y_log10()+
+  scale_x_log10()+
+  geom_point(aes(color = Layer_DNA), size = 1) + # aes(color = Ocean_DNA)
+  labs(color = "Depth",
+       y = "Gene abundance of COG category (%)",
+       x = "Biofilm gene abundance (% * 100)") +
+  theme_classic() +
+  theme(legend.position = c(0.87, 0.25))
+
+# ggsave(filename = "redux_out/particle-COG-association.pdf",
+#        last_plot(), width = 8.5, height = 4.5)
+```
+
+## Stats on biofilm
+```{r}
+out.biofilm = c()
+for (COG in all_COGs) {
+  print(COG)
+  y_info = cbind(COG.corr[c(COG, independent_var)])
+  y_info['COG_log'] = log2(COG.corr[COG])
+  y_info['log_biofilm'] = log2(COG.corr['DNA_biofilm'])
+  depth.lm = lm(COG_log ~ Layer_DNA, data = y_info)
+  biofilm.lm = lm(COG_log ~ Layer_DNA + log_biofilm, data = y_info)
+  p.val = anova(depth.lm, biofilm.lm)$`Pr(>F)`[2]
+  out.biofilm = rbind(out.biofilm, c(COG, p.val,
+                      biofilm.lm$coefficients['log_biofilm']))
+}
+
+out.biofilm = as.data.frame(out.biofilm)
+colnames(out.biofilm) = c("COG", "p.val", "coefficient")
+
+out$p.val = as.numeric(out$p.val)
+out$p.val.adj = p.adjust(out$p.val)
+
+out2 = out %>%
   arrange(p.val.adj) %>%
   add_significance()
 
@@ -93,98 +422,6 @@ out_display = out2 %>%
          signif = p.val.adj.signif) %>%
   select(COG_category, p.val.adj, coefficient, signif) %>%
   mutate(coefficient = round(as.numeric(coefficient), 4))
-```
-
-> out_display
-                           COG_category    p.val.adj coefficient signif
-1        Signal_transduction_mechanisms 4.839823e-07      0.0478   ****
-2                         Cell_motility 3.027711e-03      0.0357     **
-3                    Defense_mechanisms 1.319531e-02      0.0258      *
-4                             Cell_wall 1.167937e-01      0.0192     ns
-5                         Transcription 1.167937e-01      0.0191     ns
-
-> out_display
-                           COG_category    p.val.adj coefficient signif
-1        Signal_transduction_mechanisms 1.539041e-15      0.0476   ****
-2                         Cell_motility 1.121542e-08      0.0414   ****
-3                    Defense_mechanisms 1.108282e-04      0.0227    ***
-4        Mobilome_prophages_transposons 1.108282e-04      0.0502    ***
-5                  Extracellular_struct 2.900663e-04      0.0335    ***
-6                         Transcription 2.900663e-04      0.0220    ***
-7                          Cytoskeleton 3.938139e-03      0.0308     **
-8                             Cell_wall 1.719129e-02      0.0147      *
-9             Intracellular_trafficking 9.665419e-02      0.0115     ns
-10       Posttranslational_modification 1.075020e-01      0.0111     ns
-
-
-## Plotting the COG categories that have correlations across depths
-```{r}
-col_COG = c("DNA_Signal_transduction_mechanisms",
-"DNA_Defense_mechanisms","DNA_Cell_motility")
-
-sel3 = c(col_COG, independent_var)
-COG_viz = rbind(mala_cov[sel3], DNA_tara[sel3]) %>%
-  filter(Ocean_DNA != "Arctic")
-
-viz_melt = COG_viz %>%
-  filter(Layer_DNA != "MIX") %>%
-  reshape2::melt(id.var = independent_var) %>%
-  mutate(COG_abun = as.numeric(value)) %>%
-  # mutate(log_abun = log2(COG_abun) ) %>%
-  select(c(independent_var,"variable","log_abun","COG_abun"))
-
-# install.packages("ggh4x")
-library("ggh4x")
-
-viz_melt$COG = viz_melt$variable
-pretty_COG=c("Signal Transduction", "Defense Mechanism", "Cell motility")
-for (i in 1:length(col_COG)){
-  viz_melt$COG = gsub(col_COG[i],pretty_COG[i], viz_melt$COG)
-}
-
-# see each correlation
-viz_melt %>%
-  mutate(Layer_DNA = factor(Layer_DNA,
-    levels=c("SRF","DCM","MES","BAT"))) %>%
-  ggplot(aes(x = percent_dna_sect_CAZpep,
-             y = COG_abun * 100)) +
-  facet_grid2(Layer_DNA~COG,
-              scales = "free_y",
-              independent = "y") + 
-  scale_y_log10()+
-  geom_point(aes(color = Ocean_DNA)) + # aes(color = Ocean_DNA)
-  geom_smooth(method = "lm", se = T) + 
-  labs(color = "Ocean",
-       y = "Gene abundance of COG category (%)",
-       x = "Secretory CAZyme and peptidase (%)") +
-  theme_bw()
-
-ggsave(filename = "redux_out/particle-COG-association-DNA.pdf",
-       last_plot(), width = 7, height = 6)
-```
-
-
-## Exploring from this point, not acutally used
-
-## Spearman correlation
-
-There are too many depths, a little too noisy
-```{r}
-COG.stats = COG.melt %>%
-  filter(Layer_DNA != "MIX") %>%
-  group_by(COG, Layer_DNA) %>%
-  summarize(p.val = cor.test(percent_dna_sect_CAZpep, 
-                             COG_abun, method = "spearman")$p.val,
-            estimate = cor.test(percent_dna_sect_CAZpep,
-                             COG_abun, method = "spearman")$estimate,
-            count = n()) %>%
-  adjust_pvalue(method = "BH")
-
-COG.stats$p.adj = p.adjust(COG.stats$p.val) 
-
-COG.stats = COG.stats %>%
-  add_significance() %>%
-  filter(p.val.adj < 0.05)
 ```
 
 ## Plotting the COG categories that have correlations across depths
@@ -226,5 +463,22 @@ RNA_viz_melt %>%
 
 rowSums(DNA_tara[sel.cor[11:32]])
 rowSums(mala_cov[sel.cor[11:32]])
+
+
+
+
+COG_heatmap = pheatmap(mat = COG.corr.2D,
+         display_numbers = COG.stars,
+         cluster_cols = F,
+         cluster_rows = T,
+         show_rownames = T,
+         show_colnames = T,
+         legend = T,
+         # fontsize = ,
+         # cellwidth = 6.5, cellheight = 6.5,
+         scale = "none")
+
+integron_order = rownames(COG.corr.2D[COG_heatmap$tree_row[["order"]],])
+gg_COG_heatmap = ggplotify::as.ggplot(COG_heatmap)
 ```
 

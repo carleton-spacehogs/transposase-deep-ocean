@@ -27,20 +27,36 @@ CAZ_scale <- log10(CAZ_percent_scale/100)
 ## Data preparations
 ```{r}
 DNA_RNA_tara_g = DNA_RNA_tara %>%
+  filter(Ocean != "Arctic Ocean") %>%
   mutate(DNA_trans_percent = DNA_transposase * 100) %>%
   filter(Layer_RNA != "MIX")
 
 pt_sel_col <- c("log_dna_trans", "log_dna_defense","DNA_transposase",
-                "log_dna_sect_CAZ","log_dna_sect_pep","percent_dna_sect_CAZpep",
+                "log_dna_sect_CAZ","log_dna_sect_pep",
+                "DNA_CAZyme","DNA_peptidase",
+                "percent_dna_sect_CAZpep","percent_dna_sect_CAZ",
+                "percent_dna_sect_pep",
                 "Ocean_DNA", "Layer_DNA", "Oxygen_DNA", "size_fraction")
 
 tmp = rbind(mala_cov[,pt_sel_col], DNA_tara[,pt_sel_col])
 pt_to_graph = tmp %>%
   mutate(DNA_trans_percent = DNA_transposase * 100) %>%
-  filter(Layer_DNA != "MIX") %>%
+  filter(Layer_DNA != "MIX" & Ocean_DNA != "Arctic") %>%
   mutate(Depth = factor(Layer_DNA, levels = c("SRF","DCM","MES","BAT")))
 ```
 
+> summary(pt_to_graph$DNA_peptidase)
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+0.004958 0.026718 0.029942 0.029231 0.034359 0.046223 
+> summary(pt_to_graph$DNA_CAZyme)
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+0.004601 0.015382 0.018450 0.018156 0.020963 0.029557
+> sd(pt_to_graph$DNA_CAZyme)
+[1] 0.004086007
+> sd(pt_to_graph$DNA_peptidase)
+[1] 0.00777566
+
+The total abundance of CAZyme and peptidase are similar in magnitude
 
 ## RNA particle association to transposase abundance
 ```{r}
@@ -70,7 +86,6 @@ ggsave("redux_out/sectCAZpep_transpose_RNA.pdf",
 ```{r}
 pt_to_graph %>%
   ggplot(aes(x=percent_dna_sect_CAZpep, y=DNA_trans_percent)) +
-  # scale_y_continuous(breaks = trans_scale, labels = trans_percent_scale) +
   scale_color_brewer(palette="Set1")+
   facet_wrap(~Depth) + # , scales = "free_y"
   geom_point(aes(color = Ocean_DNA)) + 
@@ -86,17 +101,182 @@ ggsave("redux_out/sectCAZpep_transpose_DNA.pdf",
        plot = last_plot(), width = 6.5, height = 5)
 ```
 
+
+## indiviudal CAZyme and peptidase
+
+Correlation with transposase abundance (DNA and RNA)
+```{r}
+gen_corr_shared = function(g) {
+  g = g + theme_classic() + 
+    scale_y_continuous(trans = "log10",
+                       limits = c(0.001, 1.2),
+                       labels = function(x) ifelse(x == 0, "0", x)) +
+    scale_color_brewer(palette="Set1") +
+    geom_smooth(method = "lm", se = T) +
+    labs( color = "Depth",
+      y = "Transposase gene abundance (%)") +
+    stat_cor(method = "spearman",
+             cor.coef.name = "rho")
+  return(g)
+}
+
+gen_RNA_corr = function(x_var, gene){
+  g = DNA_RNA_tara_g %>%
+  ggplot(aes_string(x=x_var, y="DNA_trans_percent")) +
+  geom_point(aes(color = Layer_RNA)) + 
+  xlab(sprintf("Secretory %s transcripts (%%)", gene))
+  g = gen_corr_shared(g)
+  return(g)
+}
+
+gen_DNA_corr = function(x_var, gene){
+  g = pt_to_graph %>%
+  ggplot(aes_string(x=x_var, y="DNA_trans_percent")) +
+  geom_point(aes(color = Depth)) + 
+  xlab(sprintf("Secretory %s genes (%%)", gene))
+  g = gen_corr_shared(g)
+  return(g)
+}
+
+CAZ_RNA = gen_RNA_corr("percent_rna_sect_CAZ", "CAZyme") +
+  theme(legend.position = "none") + 
+  scale_x_log10()
+
+pep_RNA = gen_RNA_corr("percent_rna_sect_pep", "peptidase") +
+  theme( axis.title.y = element_blank() )
+
+CAZ_DNA = gen_DNA_corr("percent_dna_sect_CAZ", "CAZyme") +
+  theme(legend.position = "none")
+
+pep_DNA = gen_DNA_corr("percent_dna_sect_pep", "peptidase") +
+  theme( axis.title.y = element_blank() )
+
+ggarrange(CAZ_DNA, pep_DNA, CAZ_RNA, pep_RNA,
+          labels = c("A", "B", "C", "D"),
+          ncol = 2, nrow = 2, widths = c(0.45, 0.55))
+
+ggsave("redux_out/CAZyme_peptidase_separate_corr.pdf",
+       width = 8, height = 7)
+```
+
+## Show that deep oceans rely more on particle-associated lifestyle (RNA)
+```{r}
+RNA_tara_g = RNA_tara %>%
+  filter(Layer_RNA != "MIX" & Ocean != "Arctic Ocean") %>%
+  mutate(Depth = factor(Layer_RNA, levels = c("BAT","MES","DCM","SRF")))
+
+gen_depth_shared = function(data, data.test) {
+  g = ggplot(data, aes(x=Depth, y=cur_var)) + 
+    geom_boxplot(outlier.colour = NA) +
+    geom_jitter(aes(color=Ocean), alpha = 0.7,
+                width = 0.2, height = 0, size = 1) +
+    stat_pvalue_manual(data.test, label = "p.adj.signif", 
+                       tip.length = 0.01, hide.ns = TRUE)+ 
+    scale_color_brewer(palette="Set1") +
+    theme_classic() + 
+    theme(axis.title.y = element_blank()) +
+    coord_flip()
+  return(g)
+}
+
+
+gen_RNA_depth = function(x_var, position_vec, text_pos){
+  RNA_tara_g['cur_var'] = RNA_tara_g[x_var]
+  secretory_rna.test <- RNA_tara_g %>%
+  rstatix::wilcox_test(cur_var ~ Layer_RNA) %>%
+  adjust_pvalue(method = "BH") %>%
+  add_significance() %>%
+  add_xy_position() %>%
+  mutate(xmin = xmin + 1, xmax = xmax + 1) # for the empty BAT group
+  
+  secretory_rna.test$y.position = position_vec
+  
+  ann_text2 = data.frame(cur_var = text_pos,
+    label = "Metatranscriptome samples unavailable",
+    Depth = factor("BAT",levels = c("BAT","MES","DCM","SRF")))
+  
+  set.seed(33)
+
+  RNA_particle = gen_depth_shared(RNA_tara_g, secretory_rna.test) +
+    scale_x_discrete(drop=FALSE) +
+    geom_text(data = ann_text2,label=ann_text2$label)
+  return(RNA_particle)
+}
+
+# Maybe I don't need this?
+# gen_RNA_depth("percent_rna_sect_CAZpep", c(31, 33.3, 29.7), 21) +
+#   ylab("secretory CAZyme and peptidase transcript (%)")
+
+CAZ_RNA_depth = gen_RNA_depth("percent_rna_sect_CAZ",
+  c(14.5, 16, 13), 11) +
+  ylab("secretory CAZyme transcript (%)") +
+  theme(legend.position = "none")
+
+pep_RNA_depth = gen_RNA_depth("percent_rna_sect_pep", c(51, 53, 47), 32) +
+  ylab("secretory peptidase transcript (%)") +
+  theme(legend.position = "none")
+```
+
+## Show that deep oceans rely more on particle-associated lifestyle (DNA)
+```{r}
+gen_DNA_depth = function(x_var, position_vec, seed = 33){
+  pt_to_graph['cur_var'] = pt_to_graph[x_var]
+  secretory_dna.test = pt_to_graph %>%
+  mutate(Depth = fct_rev(Depth)) %>% 
+  rstatix::wilcox_test(cur_var ~ Depth) %>%
+  adjust_pvalue(method = "BH") %>%
+  add_significance() %>%
+  add_xy_position()
+
+  secretory_dna.test$y.position = position_vec
+
+  set.seed(seed)
+  DNA_particle = pt_to_graph %>%
+    mutate(Depth = fct_rev(Depth),
+           Ocean = Ocean_DNA) %>% 
+    gen_depth_shared(secretory_dna.test)
+  return(DNA_particle)
+}
+
+# gen_DNA_depth("percent_dna_sect_CAZpep",
+#               c(31.7, 33, 34.3, 29, 30.2, 10.0)) +
+#   ylab("secretory CAZyme and peptidase genes (%)")
+
+CAZ_DNA_depth = gen_DNA_depth("percent_dna_sect_CAZ",
+  c(21, 22, 23, 19, 20, 10.0), seed = 44) +
+  ylab("secretory CAZyme genes (%)") +
+  theme(legend.position = "none")
+
+pep_DNA_depth = gen_DNA_depth("percent_dna_sect_pep",
+                  c(38, 39, 40, 35, 36, 10)) +
+                  ylab("secretory peptidase genes (%)")
+
+blank_plot = ggplot() + theme_void()
+
+ggarrange( nrow = 2,
+ggarrange( CAZ_DNA_depth, pep_DNA_depth, ncol = 2,
+      labels = c("A","B"), widths = c(0.4, 0.55)),
+ggarrange( CAZ_RNA_depth, pep_RNA_depth, blank_plot, ncol = 3,
+      labels = c("C","D"), widths = c(0.4, 0.4, 0.15)))
+
+ggsave("redux_out/sectCAZpep_increase_depth.pdf",
+       plot = last_plot(), width = 9, height = 5.5)
+```
+
+## Individual CAZyme and peptidase correlation with depth
+
+
 ## stats section for particle-assocation transposase correlation
 
-The anova for RNA is not that strong: 0.02635
+The anova for RNA is insignificant: 0.8823
 But it is stronger for the DNA: 9.231e-11
 
 > get_r(DNA.corr.particle) - get_r(DNA.corr.depth)
-[1] 0.0675714
+[1] 0.06233815
 > get_r(DNA.corr.particle)
-[1] 0.6697395
+[1] 0.7128721
 > get_r(DNA.corr.depth)
-[1] 0.6021681
+[1] 0.6505339
 
 ```{r}
 RNA.corr.depth = lm(log_dna_trans~Layer_RNA, DNA_RNA_tara_g )
@@ -117,78 +297,7 @@ shapiro.test(resid(DNA.corr.depth))
 shapiro.test(resid(DNA.corr.particle))
 ```
 
-## Show that deep oceans rely more on particle-associated lifestyle (RNA)
-```{r}
-RNA_tara_g = RNA_tara %>%
-  filter(Layer_RNA != "MIX") %>%
-  mutate(Depth = factor(Layer_RNA, levels = c("BAT","MES","DCM","SRF")))
 
-secretory_rna.test <- RNA_tara_g %>%
-  rstatix::wilcox_test(percent_rna_sect_CAZpep ~ Layer_RNA) %>%
-  adjust_pvalue(method = "BH") %>%
-  add_significance() %>%
-  add_xy_position() %>%
-  mutate(xmin = xmin + 1, xmax = xmax + 1) # for the empty BAT group
-
-secretory_rna.test$y.position = c(31, 33.3, 10)
-
-ann_text2 = data.frame(percent_rna_sect_CAZpep = 21,
-  label = "Metatranscriptome samples unavailable",
-  Depth = factor("BAT",levels = c("BAT","MES","DCM","SRF")))
-
-set.seed(33)
-
-RNA_particle_depth = RNA_tara_g %>%
-  ggplot(aes(x=Depth, y=percent_rna_sect_CAZpep)) + 
-  geom_boxplot(outlier.colour = NA) +
-  geom_jitter(aes(color=Ocean),
-              width = 0.2, height = 0, size = 1) +
-  stat_pvalue_manual(secretory_rna.test, label = "p.adj.signif", 
-                     tip.length = 0.01, hide.ns = TRUE)+ 
-  scale_color_brewer(palette="Set1")+
-  ylab("secretory CAZyme and peptidase transcript (%)") +
-  scale_x_discrete(drop=FALSE) +
-  theme_classic() + 
-  theme(axis.title.y = element_blank()) +
-  geom_text(data = ann_text2,label=ann_text2$label) +
-  coord_flip()
-```
-
-## Show that deep oceans rely more on particle-associated lifestyle (DNA)
-```{r}
-secretory_dna.test = pt_to_graph %>%
-  mutate(Depth = fct_rev(Depth)) %>% 
-  rstatix::wilcox_test(percent_dna_sect_CAZpep ~ Depth) %>%
-  adjust_pvalue(method = "BH") %>%
-  add_significance() %>%
-  add_xy_position()
-
-secretory_dna.test$y.position = c(31.7, 33, 34.3, 29, 30.2, 10.0)
-
-set.seed(33)
-DNA_particle_depth = pt_to_graph %>%
-  mutate(Depth = fct_rev(Depth)) %>% 
-  ggplot(aes(x=Depth, y=percent_dna_sect_CAZpep))+ 
-  geom_boxplot(outlier.colour = NA) +
-  geom_jitter(aes(color=Ocean_DNA),
-              width = 0.2, height = 0, size = 1) +
-  stat_pvalue_manual(secretory_dna.test, label = "p.adj.signif", 
-                     tip.length = 0.01, hide.ns = TRUE)+ 
-  scale_color_brewer(palette="Set1")+
-  ylab("secretory CAZyme and peptidase genes (%)") +
-  theme_classic() + 
-  theme(axis.title.y = element_blank(),
-        # axis.text.y = element_blank(),
-        legend.position = "none") +
-  coord_flip()
-
-ggarrange(DNA_particle_depth, RNA_particle_depth,
-          labels = c("A", "B"), ncol = 2, nrow = 1,
-          widths = c(0.4, 0.55))
-
-ggsave("redux_out/sectCAZpep_increase_depth.pdf",
-       plot = last_plot(), width = 10, height = 3)
-```
 
 ## Arctic Ocean have higher secretory CAZyme peptidase percentage
 
