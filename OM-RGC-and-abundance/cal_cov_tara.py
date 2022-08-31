@@ -5,7 +5,6 @@ import operator
 
 base1="/researchdrive/zhongj2/BLAST_tara_OM-RGC_v2"
 base2="/researchdrive/zhongj2/Tara_metatranscriptomic"
-reference = list(csv.reader(open(f"{base1}/OM-RGC_v2.tsv"), delimiter='\t'))
 
 def get_id_v2(ID_list):
 	gene_id = set()
@@ -26,7 +25,7 @@ def get_id(blast_file):
 		biofilm_id.add(OMRGC_ID)
 	return biofilm_id
 
-def get_gene_specific_ref(gene_id_set, gene_name):
+def get_gene_specific_ref(gene_id_set, gene_name, reference):
 	out = []
 	gene_length_dict = {}
 	for line in reference:
@@ -37,7 +36,7 @@ def get_gene_specific_ref(gene_id_set, gene_name):
 	# with open(f"{gene_name}_OMRGC_ID_length.csv", 'w') as f:f.write("\n".join(out))
 	return gene_length_dict
 
-def get_gene_specific_ref_through_COG(search_string):
+def get_gene_specific_ref_through_COG(search_string, reference):
 	cog_out = set()
 	cogfile = open(f'../COG_numbers_categories_annotations.txt', 'r')
 	for line in cogfile:
@@ -109,13 +108,13 @@ def serialize(gene_length_dict, gene_name):
 	RNA_category_prop = cal_prop_reads_mapped(RNA_category_sum, gene_name, "RNA")
 	print(RNA_category_prop)
 
-def serialized_COG_category(COG_category):
-	COG_length_dict = get_gene_specific_ref_through_COG(COG_category)
+def serialized_COG_category(COG_category, reference):
+	COG_length_dict = get_gene_specific_ref_through_COG(COG_category, reference)
 	print(f"done with dict, there are {len(COG_length_dict)} COG genes")
 	serialize(COG_length_dict, COG_category)
 
-def serialized_genes(gene_id_set, gene_name):
-	gene_length_dict = get_gene_specific_ref(gene_id_set, gene_name)
+def serialized_genes(gene_id_set, gene_name, reference):
+	gene_length_dict = get_gene_specific_ref(gene_id_set, gene_name, reference)
 	print(f"done with dict, there are {len(gene_length_dict)} genes")
 	serialize(gene_length_dict, gene_name)
 
@@ -133,22 +132,7 @@ def merge_abundance(all_genes, DNA_or_RNA):
 		base = base.merge(appending, on = f"connector_{DNA_or_RNA}")
 	return base
 
-biofilm_id_set = get_id(f"{base1}/OM-RGC_v2_Reference_Pieces/Biofilm_BLAST_Result/merge_Biofilm_hits_no_BapA.txt")
-trans_id_set = get_id(f"{base1}/OM-RGC_v2_Reference_Pieces/Transposase_BLAST_Result/merged_Transposase_hits.txt")
-CAZ_id_set = get_id_v2(f"{base1}/all_CAZyme_norm.txt")
-pep_id_set = get_id_v2(f"{base1}/all_peptidase_norm.txt")
-sect_CAZ_id_set = get_id_v2(f"{base1}/secretory_CAZyme.txt")
-sect_pep_id_set = get_id_v2(f"{base1}/secretory_peptidase.txt")
-
 single_genes = ["biofilm", "transposase", "CAZyme", "peptidase", "secretory_CAZyme", "secretory_peptidase"]
-gene_ide_set = [biofilm_id_set, trans_id_set, CAZ_id_set, pep_id_set, sect_CAZ_id_set, sect_pep_id_set]
-
-for i in range(len(single_genes)):
-	print("doing: " + single_genes[i])
-	serialized_genes(gene_ide_set[i], single_genes[i])
-
-serialized_genes(CAZ_id_set, "CAZyme")
-serialized_genes(pep_id_set, "peptidase")
 
 COG_list = ["Lipid_transport_and_metabolism", "Coenzyme_transport_and_metabolism", "Signal_transduction_mechanisms", 
 "Defense_mechanisms", "Energy_production_and_conversion", "Replication_recombination_and_repair", "Cell_wall",
@@ -157,16 +141,34 @@ COG_list = ["Lipid_transport_and_metabolism", "Coenzyme_transport_and_metabolism
 "Chromatin_structure_and_dynamics", "Cell_cycle_control", "Intracellular_trafficking", "Secondary_metabolites", 
 "Translation_ribosomal_structure", "Transcription", "Posttranslational_modification", "Mobilome_prophages_transposons"]
 
-for COG_category in COG_list:
-	print("doing: " + COG_category)
-	serialized_COG_category(COG_category)
+def main():
+	reference = list(csv.reader(open(f"{base1}/OM-RGC_v2.tsv"), delimiter='\t'))
+	biofilm_id_set = get_id(f"{base1}/OM-RGC_v2_Reference_Pieces/Biofilm_BLAST_Result/merge_Biofilm_hits_no_BapA.txt")
+	trans_id_set = get_id(f"{base1}/OM-RGC_v2_Reference_Pieces/Transposase_BLAST_Result/merged_Transposase_hits.txt")
+	CAZ_id_set = get_id_v2(f"{base1}/all_CAZyme_norm.txt")
+	pep_id_set = get_id_v2(f"{base1}/all_peptidase_norm.txt")
+	sect_CAZ_id_set = get_id_v2(f"{base1}/secretory_CAZyme.txt")
+	sect_pep_id_set = get_id_v2(f"{base1}/secretory_peptidase.txt")
 
-all_genes = single_genes + COG_list
-DNA_merged = merge_abundance(all_genes, "DNA")
-# DNA_merged.to_csv(f"../Figure Generating/data/tara_DNA_genes_abundance.csv", index=False)
-DNA_merged.to_csv(f"tara_DNA_genes_abundance.csv", index=False)
-RNA_merged = merge_abundance(all_genes, "RNA")
-RNA_merged.to_csv(f"tara_RNA_genes_abundance.csv", index=False)
+	gene_ide_set = [biofilm_id_set, trans_id_set, CAZ_id_set, pep_id_set, sect_CAZ_id_set, sect_pep_id_set]
+
+	for i in range(len(single_genes)):
+		print("doing: " + single_genes[i])
+		serialized_genes(gene_ide_set[i], single_genes[i], reference)
+
+	serialized_genes(CAZ_id_set, "CAZyme", reference)
+	serialized_genes(pep_id_set, "peptidase", reference)
+
+	for COG_category in COG_list:
+		print("doing: " + COG_category)
+		serialized_COG_category(COG_category, reference)
+
+	all_genes = single_genes + COG_list
+	DNA_merged = merge_abundance(all_genes, "DNA")
+	# DNA_merged.to_csv(f"../Figure Generating/data/tara_DNA_genes_abundance.csv", index=False)
+	DNA_merged.to_csv(f"tara_DNA_genes_abundance.csv", index=False)
+	RNA_merged = merge_abundance(all_genes, "RNA")
+	RNA_merged.to_csv(f"tara_RNA_genes_abundance.csv", index=False)
 
 # DNA
 # subset_coverage_rows(biofilm_length_dict, "biofilm", "OM-RGC_v2_gene_profile_metaG.tsv", "DNA")
@@ -184,3 +186,5 @@ RNA_merged.to_csv(f"tara_RNA_genes_abundance.csv", index=False)
 # transposase_sum = cal_sum_num_reads_mapped("transposase", "RNA")
 # transposase_prop = cal_prop_reads_mapped(transposase_sum, "transposase", "RNA")
 
+if __name__ == "__main__":
+	main()

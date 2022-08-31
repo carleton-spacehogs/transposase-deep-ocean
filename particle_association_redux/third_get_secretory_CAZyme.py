@@ -78,10 +78,11 @@ query=${base}/deep_metagenome_transposase_BLAST/deep_anvi-genecall.fasta
 diamond blastx -d $db -q $query --threads 20 --evalue 0.00001 --more-sensitive -o ${base}/OM-RGC-reference/db_vs_anvio.blastx
 cat db_vs_anvio.blastx | sort -k11 | sort -u -k1,1 > db_vs_anvio_unique2.blastx
 '''
-def get_deep_OM_RGC_domain():
+
+def deep_OM_RGC_domain_base():
 	db_file = f"{base2}/OM-RGC-reference/M-geneDB.v1_1115269-seqs_full-header-annotation.txt"
 	db = list(csv.reader(open(db_file), delimiter='_'))
-	out, domain_dict = [], {}
+	out = []
 	for l in db:
 		gene_ID = f"{l[0]}_{l[1]}"
 		if len(l) > 11:
@@ -94,6 +95,11 @@ def get_deep_OM_RGC_domain():
 					out.append([gene_ID, "gramNeg"])
 	ref_source = pd.DataFrame(out)
 	ref_source.columns = ["ref","source"]
+	return ref_source
+
+def get_deep_OM_RGC_domain(): # now deprecated
+	ref_source = deep_OM_RGC_domain_base()
+	domain_dict = {}
 	blast_match = pd.read_csv(f"{base2}/OM-RGC-reference/db_vs_anvio_unique2.blastx", sep="\t", header=None)
 	blast_match = blast_match[[0,1]]
 	blast_match.columns = ["anvi_id", "ref"]
@@ -102,6 +108,7 @@ def get_deep_OM_RGC_domain():
 		domain_dict[str(l[0])] = l[1]
 	return domain_dict
 
+
 def get_secretory_file(outfile, signal_with_source, gene_ID_domain_dict):
 	secretory_ID = []
 	for tuple in signal_with_source:
@@ -109,9 +116,7 @@ def get_secretory_file(outfile, signal_with_source, gene_ID_domain_dict):
 		if gene_ID in gene_ID_domain_dict and gene_ID_domain_dict[gene_ID] == source: # arch/gramPos/gramNeg matches!
 			secretory_ID.append([gene_ID, source])
 	secretory_df = pd.DataFrame(secretory_ID).astype("str")
-	print(secretory_df)
 	secretory_df.columns = ["gene_ID", "taxon"]
-	print(secretory_df)
 	secretory_df.to_csv(path_or_buf=outfile, index=False)
 	if "deep" in outfile:
 		secretory_df["gene_ID"].to_csv(f"{base2}/deep_metagenome_transposase_BLAST/{outfile}", index=False)
@@ -166,20 +171,28 @@ def main():
 	get_secretory_file("secretory_peptidase.txt", signal_pep_with_source, signal_domain_dict)
 
 	# deep ocean
-	deep_CAZ_signalp_f = glob.glob("../../deep_metagenome/deep_CAZyme_*_summary.signalp5")
-	deep_pep_signalp_f = glob.glob("../../deep_metagenome/deep_peptidase_*_summary.signalp5")
+	# deep_CAZ_signalp_f = glob.glob("../../deep_metagenome/deep_CAZyme_*_summary.signalp5")
+	# deep_pep_signalp_f = glob.glob("../../deep_metagenome/deep_peptidase_*_summary.signalp5")
+	# deep_signal_CAZ = get_signalp_with_domain(deep_CAZ_signalp_f)
+	# deep_signal_pep = get_signalp_with_domain(deep_pep_signalp_f)
+	# deep_domain_dict = get_deep_OM_RGC_domain() # it's a small reference, don't need to select
+
+	deep_CAZ_signalp_f = glob.glob("../../deep-OM-RGC/CAZyme_*_summary.signalp5")
+	deep_pep_signalp_f = glob.glob("../../deep-OM-RGC/peptidase_*_summary.signalp5")
 	deep_signal_CAZ = get_signalp_with_domain(deep_CAZ_signalp_f)
 	deep_signal_pep = get_signalp_with_domain(deep_pep_signalp_f)
-	deep_domain_dict = get_deep_OM_RGC_domain() # it's a small reference, don't need to select
+	deep_domain = deep_OM_RGC_domain_base()
+	deep_dom_dict = { l[0]:l[1] for l in deep_domain[["ref","source"]].values.tolist() }
 
-	get_secretory_file("deep_secretory_CAZyme.txt", deep_signal_CAZ, deep_domain_dict)
-	get_secretory_file("deep_secretory_peptidase.txt", deep_signal_pep, deep_domain_dict)
+	get_secretory_file("deep_secretory_CAZyme.txt", deep_signal_CAZ, deep_dom_dict)
+	get_secretory_file("deep_secretory_peptidase.txt", deep_signal_pep, deep_dom_dict)
 
 	'''some secretory CAZyme does not have a taxon origin, so they were not counted as signal molecule
 	need to account for the lost that from the total CAZyme, too. '''
-	base3=f"{base2}/deep_metagenome_transposase_BLAST"
-	filter_deep_CAZpep_without_taxon(f"{base3}/CAZyme/deep_CAZyme_anvigeneID.txt", f"{base3}/all-CAZyme-norm.txt", deep_domain_dict)
-	filter_deep_CAZpep_without_taxon(f"{base3}/peptidase/deep_peptidase_anvigeneID.txt", f"{base3}/all-peptidase-norm.txt", deep_domain_dict)
+	# already done under the new OM-RGC based reference
+	# base3=f"{base2}/deep_metagenome_transposase_BLAST"
+	# filter_deep_CAZpep_without_taxon(f"{base3}/CAZyme/deep_CAZyme_anvigeneID.txt", f"{base3}/all-CAZyme-norm.txt", deep_domain_dict)
+	# filter_deep_CAZpep_without_taxon(f"{base3}/peptidase/deep_peptidase_anvigeneID.txt", f"{base3}/all-peptidase-norm.txt", deep_domain_dict)
 
 	filter_deep_CAZpep_without_taxon(f"{base1}/all_CAZyme.txt", f"{base1}/all_CAZyme_norm.txt", signal_domain_dict)
 	filter_deep_CAZpep_without_taxon(f"{base1}/all_peptidase.txt", f"{base1}/all_peptidase_norm.txt", signal_domain_dict)

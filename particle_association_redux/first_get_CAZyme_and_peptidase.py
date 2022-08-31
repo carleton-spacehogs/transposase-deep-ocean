@@ -1,19 +1,21 @@
 import csv
 import glob
 import os
+import pandas as pd
 from Bio import SeqIO
 
 # working dir: /workspace/data/zhongj/Transposase_Project/particle_lifestyle/transposase-deep-ocean/particle-association-redux
 
 e_cutoff = float(1e-10)
 
-def read_CAZ(CAZ_f):
+def read_CAZ(CAZ_f, split = True):
 	info = list(csv.reader(open(CAZ_f), delimiter='\t'))[1:]
 	out = set()
 	for l in info:
 		if float(l[-2]) > e_cutoff:
 			continue # filter out things more than e-val cutoff
 		Gene_ID = l[0].split("_")[0]
+		if not split: Gene_ID = l[0]
 		out.add(Gene_ID)
 	return out
 
@@ -81,17 +83,42 @@ def main():
 	get_gene_amino_acid(all_aminoacid_f, peptiase_id_set, "only_peptidase.faa")
 
 	# for deep Malaspina
-	f3='deep_peptidase_anvigeneID.txt'
-	root='/researchdrive/zhongj2/deep_ocean_bins/deep_metagenome_transposase_BLAST/'
-	all_aminoacid_f = root+'CAZenzyme/uniInput'
-	pep_f = root + "peptidase/deep-peptidase-anvigeneID.txt"
-	out_f = "../peptidase/deep_only_peptidase.faa"
-	clean_pep = read_peptidase(pep_f)
-	with open(f3, 'w') as c:
-		for Gene_ID in clean_pep:
+	# f3='deep_peptidase_anvigeneID.txt'
+	# root='/researchdrive/zhongj2/deep_ocean_bins/deep_metagenome_transposase_BLAST/'
+	# all_aminoacid_f = root+'CAZenzyme/uniInput'
+	# pep_f = root + "peptidase/deep-peptidase-anvigeneID.txt"
+	# out_f = "../peptidase/deep_only_peptidase.faa"
+	# clean_pep = read_peptidase(pep_f)
+	# with open(f3, 'w') as c:
+	# 	for Gene_ID in clean_pep:
+	# 		c.write("%s\n" % Gene_ID)
+	# peptiase_id_set = set(line.strip() for line in open(f3))
+	# get_gene_amino_acid_base(all_aminoacid_f, peptiase_id_set, out_f, werid_split = True)
+
+	root='/researchdrive/zhongj2/deep_ocean_bins/OM-RGC-reference/'
+	all_aminoacid_f = root + 'CAZyme-protein/uniInput'
+	pep_f = root + "diamond-blastp/peptidase_diamond.blastp"
+	CAZ_f = root + "CAZyme-protein/diamond.out"
+	ref = pd.read_csv(root + "geneDB-annotation.csv")
+	taxon_defined_id = ref[ref['taxonomy'].str.contains("Bacteria|Archaea")].id.values.tolist()
+	taxon_defined_id = set(taxon_defined_id)
+
+with open('deep_peptidase_ID.txt', 'w') as c:
+	for Gene_ID in read_peptidase(pep_f, split = False):
+		if Gene_ID in taxon_defined_id:
 			c.write("%s\n" % Gene_ID)
-	peptiase_id_set = set(line.strip() for line in open(f3))
-	get_gene_amino_acid_base(all_aminoacid_f, peptiase_id_set, out_f, werid_split = True)
+
+with open('deep_CAZyme_ID.txt', 'w') as c:
+	for Gene_ID in read_CAZ(CAZ_f, split = False):
+		if Gene_ID in taxon_defined_id:
+			c.write("%s\n" % Gene_ID)
+
+peptidase_id_set = set(line.strip() for line in open('deep_peptidase_ID.txt'))
+CAZyme_id_set = set(line.strip() for line in open('deep_CAZyme_ID.txt'))
+get_gene_amino_acid_base(all_aminoacid_f, peptiase_id_set,
+outfile= "../../deep-OM-RGC/norm-peptidase.faa", werid_split = False)
+get_gene_amino_acid_base(all_aminoacid_f, CAZyme_id_set,
+outfile= "../../deep-OM-RGC/norm-CAZyme.faa", werid_split = False)
 
 if __name__ == "__main__":
 	main()
