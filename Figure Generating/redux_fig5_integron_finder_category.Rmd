@@ -50,25 +50,6 @@ https://stats.stackexchange.com/questions/369006/statistical-test-for-comparing-
 integron_total = sum(summary$integron_count)
 norm_total = sum(summary$normal_count)
 
-# COG_enrichment.stat = t(apply(summary, 1, function(r){
-#   group1 = integron_total
-#   int_count = as.numeric(r["integron_count"])
-#   nor_count = as.numeric(r["normal_count"])
-#   group2 = int_count + nor_count
-#   p.val = prop.test(x = c(int_count, integron_total), 
-#                     n = c(nor_count, norm_total))$p.val
-#   return(c(r['COG_function'], p.val))
-# }))
-# 
-# colnames(COG_enrichment.stat) = c("COG","p.val")
-# COG_enrichment.stat = COG_enrichment.stat %>%
-#   as.data.frame() %>%
-#   adjust_pvalue(method = "BY") %>%
-#   add_significance()
-# 
-# rownames(COG_enrichment.stat) = COG_enrichment.stat$COG
-# COG_sig = COG_enrichment.stat[integron_order, ]
-
 COG_enrichment.stat = t(apply(summary, 1, function(r){
   group1 = integron_total
   int_count = as.numeric(r["integron_count"])
@@ -92,13 +73,14 @@ enrich = enrich %>%
   add_significance(cutpoints = c(0, 0.05, 1),
                    symbols = c("*","")) %>%
   filter(p.val < 0.5)
+```
 
+## Needs redux_fig5_biofilm_defense_corr
+```{r}
 rownames(enrich) = enrich$COG
 COG_sig = enrich[integron_order, ]$p.val.adj.signif
 integron_order2 = paste(integron_order, COG_sig, sep = "")
-```
 
-```{r}
 graphing = summary[summary$COG_function %in% integron_order, ]
 rownames(graphing) = graphing$COG_function
 graphing = graphing[integron_order, ]
@@ -115,12 +97,12 @@ nor_legend = "all ORFs in metagenomes"
 
 ## REQUIRE redux_fig5_biofilm_defense_corr.Rmd
 ```{r}
-p_cassette_category <- g.melt %>% 
+p_cassette_category = g.melt %>% 
   mutate(COG = factor(COG,levels=integron_order2))%>%
   ggplot(aes(fill=type, y=value, x=COG)) +
   geom_bar(position="dodge", stat="identity", width = 0.66) + 
   coord_flip(ylim = c(0, 0.15), clip = "off") +
-  ylab("Proprotion to total ORF calls") + 
+  ylab("Proprotion to total ORF calls\n\n") + 
   theme_classic() +
   guides(fill = guide_legend(reverse = TRUE, title = "COG gene-calls for:")) +
   scale_fill_manual(values=c("dark gray", "orange"), 

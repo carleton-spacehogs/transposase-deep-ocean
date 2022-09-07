@@ -1,0 +1,125 @@
+---
+title: "Particle associated lifestyle and genome size and depths of MAGs"
+author: "Jimmy Zhong"
+date: "8/16/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
+source("./init_share.R")
+g(all_MAGs, low_trans, high_trans) %=% init_bins()
+all_MAGs = merge_MAGs_CAZyme_peptide(all_MAGs)
+MAGs_p = filter(all_MAGs, eukarya_prop < 0.05 & depth != "MIXED")
+```
+
+```{r}
+MAGs_p$log_percent_trans = log(MAGs_p$percent_trans + get.fudge(MAGs_p, "percent_trans"))
+MAGs_p$log_sect_CAZ = log(MAGs_p$percent_sect_CAZ + get.fudge(MAGs_p, "percent_sect_CAZ"))
+MAGs_p$log_sect_pep = log(MAGs_p$percent_sect_pep + get.fudge(MAGs_p, "percent_sect_pep"))
+MAGs_p$log_genome_size = log(MAGs_p$complete_genome_size)
+
+bi_depth = c("Shadow (SRF, DCM)", "Deep (MES, BAT)")
+
+MAGs_p = MAGs_p %>%
+  mutate(is_deep = ifelse(depth %in% c("SRF", "DCM"), bi_depth[1], bi_depth[2])) %>%
+  mutate(is_deep = factor(is_deep, levels = bi_depth))
+
+t.obj = t.test(log_genome_size~is_deep, MAGs_p)
+
+1/exp(t.obj$conf.int)
+```
+
+## Spearman correlation in each depth
+```{r}
+get.depth.trans.corr = function(xvar, yvar = "percent_trans"){
+  tmp = MAGs_p[c("is_deep", xvar, yvar)]
+  colnames(tmp) = c("depth", "var1", "var2")
+  tmp %>%
+    group_by(depth)%>%
+    summarize(p.val = suppressWarnings(cor.test(var1, var2, method = "spearman")$p.val),
+      estimate = suppressWarnings(cor.test(var1, var2, method = "spearman")$estimate),
+      count = n()) %>%
+    adjust_pvalue(method = "BH") %>%
+    as.data.frame()
+}
+
+cor.test(MAGs_p$percent_trans, MAGs_p$percent_sect_CAZ, method = "spearman")
+cor.test(MAGs_p$percent_trans, MAGs_p$percent_sect_pep, method = "spearman")
+
+get.depth.trans.corr("complete_genome_size")
+
+depth.CAZ = get.depth.trans.corr("percent_sect_CAZ")
+depth.pep = get.depth.trans.corr("percent_sect_pep")
+sel = c("depth", "count", "p.val", "estimate")
+merge.CAZpep = merge(depth.CAZ[sel], depth.pep[sel], by = c("depth", "count"))
+```
+
+```{r}
+get.depth.trans.corr(xvar = "percent_sect_CAZ", yvar = "complete_genome_size")
+get.depth.trans.corr(xvar = "percent_sect_pep", yvar = "complete_genome_size")
+```
+
+
+## addition of models
+```{r}
+depth.lm = lm(log_percent_trans~depth, data=MAGs_p)
+depth.C.lm = update(depth.lm, .~. + log_sect_CAZ)
+depth.CP.lm = update(depth.C.lm, .~. + log_sect_pep)
+depth.CP.gz.lm = update(depth.CP.lm, .~. + log_genome_size)
+depth.CP.gz.tax.lm = update(depth.CP.gz.lm, .~. + Class)
+
+r.sqrt = c(get_r(depth.lm), get_r(depth.C.lm), 
+  get_r(depth.CP.lm), get_r(depth.CP.gz.lm), get_r(depth.CP.gz.tax.lm))
+
+shapiro.test(resid(depth.CP.gz.tax.lm))
+reg.aov = as.data.frame(anova(depth.CP.gz.tax.lm)[1:5, ])
+
+explain.var = c("Depth (SRF/DCM/MES/BAT)", "Secretory CAZyme (%)",
+"Secretory Peptidase (%)", "Complete Genome Size (Mbp)", "Taxonomy (Class)")
+
+rownames(reg.aov) = explain.var
+reg.aov['idx'] = explain.var
+
+reg.aov2 = reg.aov[c("idx","Df", "Sum Sq", "Pr(>F)")]
+reg.aov2$`Sum Sq` = round(reg.aov2$`Sum Sq`, 2)
+reg.aov2$`Pr(>F)` = ifelse(reg.aov2$`Pr(>F)` < 0.00001, "< 1e-14", 
+                           round(reg.aov2$`Pr(>F)`, 5))
+
+colnames(reg.aov2) = c("Explanatory Variables", "Df",
+                       "Explained Sum of Squares", "P for F-test")
+
+reg.aov2$`Cumulative R^2` = round(r.sqrt, 3)
+
+write.csv(reg.aov2, file = "out/Table2-MAGs-reg.csv", row.names = FALSE)
+write.csv(reg.aov2, file = paste0(googleDrive.loc, "/Table2-MAGs-reg.csv"),
+          row.names = FALSE)
+```
+
+
+
+
+
+```{r}
+taxa_cor = MAGs_p %>%
+  group_by(large_classes, depth) %>%
+  mutate(n = n()) %>%
+  filter(n >= 15) %>%
+  summarize(p.val = cor.test(percent_sect_CAZpep, complete_genome_size, method = "spearman")$p.val,
+            estimate = cor.test(percent_sect_CAZpep, complete_genome_size, method = "spearman")$estimate,
+            count = n()) %>%
+  adjust_pvalue(method = "BH") %>%
+  add_significance()
+
+sign_sort = rbind(taxa_cor[taxa_cor$p.val.adj.signif != "ns", ],
+                  taxa_cor[taxa_cor$p.val.adj.signif == "ns", ]) 
+
+sign_sort = sign_sort %>%
+  # mutate(p_text = round(p.val.adj, 4)) %>%
+  select(c("large_classes","depth","estimate","count","p.val.adj","p.val.adj.signif"))
+
+colnames(sign_sort) = c("class", "depth", "correlation estimate", "count", "adjusted p-value", "significance")
+write.csv(sign_sort,"redux_out/per-class-depth-sect-gsize-corr.csv", row.names = FALSE)
+```
+
+

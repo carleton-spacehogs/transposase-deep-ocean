@@ -22,14 +22,28 @@ trans_scale <- c(-2.5, -3, -3.5, -4, -4.5)
 trans_percent_scale <- c("0.316", "0.100", "0.032", "0.01", "0.003")
 CAZ_percent_scale <- c(0.8, 0.4, 0.2, 0.1)
 CAZ_scale <- log10(CAZ_percent_scale/100)
+
+# BAT.sample.size = mala_cov[c('sample', 'lower_filter_size')]
+# BAT.sample.size$filter_size = ifelse(
+#   BAT.sample.size$lower_filter_size == 0.2, "0.2-0.8", "0.8-5.0")
+# 
+# BAT.sample.size = filter(BAT.sample.size, filter_size == "0.2-0.8")
+# 
+# BAT.COG.corr = COG.corr[COG.corr$Layer_DNA == "BAT", ]
+# BAT.COG.corr = merge(BAT.COG.corr, BAT.sample.size, on = "sample")
+# tara.COG.corr = COG.corr[COG.corr$Layer_DNA != "BAT", ]
 ```
 
 ## Data preparations
 ```{r}
 DNA_RNA_tara_g = DNA_RNA_tara %>%
-  filter(Ocean != "Arctic Ocean") %>%
-  mutate(DNA_trans_percent = DNA_transposase * 100) %>%
-  filter(Layer_RNA != "MIX")
+  filter(Layer_RNA != "MIX" & Ocean != "Arctic Ocean") %>%
+  mutate(DNA_trans_percent = DNA_transposase * 100)
+
+RNA_tara_g = RNA_tara %>%
+  filter(Layer_RNA != "MIX" & Ocean != "Arctic Ocean") %>%
+  mutate(RNA_trans_percent = RNA_transposase * 100) %>%
+  mutate(Depth = factor(Layer_RNA, levels = c("BAT","MES","DCM","SRF")))
 
 pt_sel_col <- c("log_dna_trans", "log_dna_defense","DNA_transposase",
                 "log_dna_sect_CAZ","log_dna_sect_pep",
@@ -37,8 +51,9 @@ pt_sel_col <- c("log_dna_trans", "log_dna_defense","DNA_transposase",
                 "percent_dna_sect_CAZpep","percent_dna_sect_CAZ",
                 "percent_dna_sect_pep",
                 "Ocean_DNA", "Layer_DNA", "Oxygen_DNA", "size_fraction")
+#  !mala_cov$sample %in% BAT.sample.size$sample
 
-tmp = rbind(mala_cov[,pt_sel_col], DNA_tara[,pt_sel_col])
+tmp = rbind(mala_cov[ ,pt_sel_col], DNA_tara[,pt_sel_col])
 pt_to_graph = tmp %>%
   mutate(DNA_trans_percent = DNA_transposase * 100) %>%
   filter(Layer_DNA != "MIX" & Ocean_DNA != "Arctic") %>%
@@ -78,7 +93,8 @@ DNA_RNA_tara_g %>%
   geom_text(data = ann_text,label=ann_text$label)
   # theme(legend.position = "none")
 
-ggsave("redux_out/sectCAZpep_transpose_RNA.pdf",
+## supplementary figure 1
+ggsave("out/sectCAZpep_transpose_RNA.pdf",
        plot = last_plot(), width = 6.5, height = 5) 
 ```
 
@@ -97,7 +113,8 @@ pt_to_graph %>%
   geom_smooth(method = "lm", se = T)  +
   theme() # legend.position = "none"
 
-ggsave("redux_out/sectCAZpep_transpose_DNA.pdf",
+## supplementary figure 2
+ggsave("out/sectCAZpep_transpose_DNA.pdf",
        plot = last_plot(), width = 6.5, height = 5)
 ```
 
@@ -106,64 +123,75 @@ ggsave("redux_out/sectCAZpep_transpose_DNA.pdf",
 
 Correlation with transposase abundance (DNA and RNA)
 ```{r}
-gen_corr_shared = function(g) {
+gen_corr_shared = function(g, gene, type) {
   g = g + theme_classic() + 
     scale_y_continuous(trans = "log10",
-                       limits = c(0.001, 1.2),
+                       limits = c(min(RNA_tara_g$RNA_trans_percent)*0.99,
+                                  1.2),
                        labels = function(x) ifelse(x == 0, "0", x)) +
     scale_color_brewer(palette="Set1") +
-    geom_smooth(method = "lm", se = T) +
+    # geom_smooth(method = "lm", se = T) +
+    stat_cor(method = "spearman", cor.coef.name = "rho") +
+    # stat_poly_eq(formula = y ~ x, aes(label = paste(..eq.label.., 
+    #                 ..rr.label.., sep = "~~~")), parse=TRUE) + 
     labs( color = "Depth",
-      y = "Transposase gene abundance (%)") +
-    stat_cor(method = "spearman",
-             cor.coef.name = "rho")
+          x = sprintf("Secretory %s %ss (%%)", gene, type),
+          y = sprintf("Transposase\n%s abundance (%%)", type))
+    
   return(g)
 }
 
-gen_RNA_corr = function(x_var, gene){
-  g = DNA_RNA_tara_g %>%
-  ggplot(aes_string(x=x_var, y="DNA_trans_percent")) +
-  geom_point(aes(color = Layer_RNA)) + 
-  xlab(sprintf("Secretory %s transcripts (%%)", gene))
-  g = gen_corr_shared(g)
+gen_RNA_corr = function(x_var, gene, type){
+  g = RNA_tara_g %>%
+  ggplot(aes_string(x=x_var, y="RNA_trans_percent")) +
+    geom_point(aes(color = Layer_RNA)) + 
+    scale_x_log10()
+  g = gen_corr_shared(g, gene, type)
   return(g)
 }
 
-gen_DNA_corr = function(x_var, gene){
+gen_DNA_corr = function(x_var, gene, type){
   g = pt_to_graph %>%
-  ggplot(aes_string(x=x_var, y="DNA_trans_percent")) +
-  geom_point(aes(color = Depth)) + 
-  xlab(sprintf("Secretory %s genes (%%)", gene))
-  g = gen_corr_shared(g)
+    ggplot(aes_string(x=x_var, y="DNA_trans_percent")) +
+    geom_point(aes(color = Depth))
+  g = gen_corr_shared(g, gene, type)
   return(g)
 }
 
-CAZ_RNA = gen_RNA_corr("percent_rna_sect_CAZ", "CAZyme") +
-  theme(legend.position = "none") + 
-  scale_x_log10()
-
-pep_RNA = gen_RNA_corr("percent_rna_sect_pep", "peptidase") +
-  theme( axis.title.y = element_blank() )
-
-CAZ_DNA = gen_DNA_corr("percent_dna_sect_CAZ", "CAZyme") +
+CAZ_RNA = gen_RNA_corr("percent_rna_sect_CAZ", "CAZyme", "transcript") +
   theme(legend.position = "none")
 
-pep_DNA = gen_DNA_corr("percent_dna_sect_pep", "peptidase") +
+pep_RNA = gen_RNA_corr("percent_rna_sect_pep", "peptidase", "transcript") +
+  theme( axis.title.y = element_blank() )
+
+CAZ_DNA = gen_DNA_corr("percent_dna_sect_CAZ", "CAZyme", "gene") +
+  theme(legend.position = "none")
+
+pep_DNA = gen_DNA_corr("percent_dna_sect_pep", "peptidase", "gene") +
   theme( axis.title.y = element_blank() )
 
 ggarrange(CAZ_DNA, pep_DNA, CAZ_RNA, pep_RNA,
           labels = c("A", "B", "C", "D"),
           ncol = 2, nrow = 2, widths = c(0.45, 0.55))
 
-ggsave("redux_out/CAZyme_peptidase_separate_corr.pdf",
-       width = 8, height = 7)
+ggsave(paste0(googleDrive.loc, "/Figure2_CAZyme_peptidase_separate_corr.pdf"),
+       plot = last_plot(), width = 7, height = 5.6)
+
+ggsave("out/CAZyme_peptidase_separate_corr.pdf",
+       width = 7, height = 5.6)
 ```
 
 ## Show that deep oceans rely more on particle-associated lifestyle (RNA)
 ```{r}
-RNA_tara_g = RNA_tara %>%
-  filter(Layer_RNA != "MIX" & Ocean != "Arctic Ocean") %>%
-  mutate(Depth = factor(Layer_RNA, levels = c("BAT","MES","DCM","SRF")))
+RNA_tara_g %>%
+  ggplot(aes(x = percent_rna_sect_pep, y= log_rna_trans)) +
+  geom_point(aes(color = Layer_RNA)) +
+  scale_x_log10() +
+  facet_wrap(~Ocean) +
+  geom_smooth(method = "lm", se = F)
+
+summary(lm(log_dna_trans~Depth + Ocean + Oxygen_DNA, pt_to_graph))
+summary(lm(log_dna_trans~Depth + Ocean + Oxygen_DNA, DNA_RNA_tara))
 
 gen_depth_shared = function(data, data.test) {
   g = ggplot(data, aes(x=Depth, y=cur_var)) + 
@@ -178,7 +206,6 @@ gen_depth_shared = function(data, data.test) {
     coord_flip()
   return(g)
 }
-
 
 gen_RNA_depth = function(x_var, position_vec, text_pos){
   RNA_tara_g['cur_var'] = RNA_tara_g[x_var]
@@ -238,10 +265,6 @@ gen_DNA_depth = function(x_var, position_vec, seed = 33){
   return(DNA_particle)
 }
 
-# gen_DNA_depth("percent_dna_sect_CAZpep",
-#               c(31.7, 33, 34.3, 29, 30.2, 10.0)) +
-#   ylab("secretory CAZyme and peptidase genes (%)")
-
 CAZ_DNA_depth = gen_DNA_depth("percent_dna_sect_CAZ",
   c(21, 22, 23, 19, 20, 10.0), seed = 44) +
   ylab("secretory CAZyme genes (%)") +
@@ -254,17 +277,15 @@ pep_DNA_depth = gen_DNA_depth("percent_dna_sect_pep",
 blank_plot = ggplot() + theme_void()
 
 ggarrange( nrow = 2,
-ggarrange( CAZ_DNA_depth, pep_DNA_depth, ncol = 2,
-      labels = c("A","B"), widths = c(0.4, 0.55)),
-ggarrange( CAZ_RNA_depth, pep_RNA_depth, blank_plot, ncol = 3,
-      labels = c("C","D"), widths = c(0.4, 0.4, 0.15)))
+  ggarrange( CAZ_DNA_depth, pep_DNA_depth, ncol = 2,
+        labels = c("A","B"), widths = c(0.4, 0.55)),
+  ggarrange( CAZ_RNA_depth, pep_RNA_depth, blank_plot, ncol = 3,
+        labels = c("C","D"), widths = c(0.4, 0.4, 0.15)))
 
-ggsave("redux_out/sectCAZpep_increase_depth.pdf",
+## supplementary figure 3
+ggsave("out/sectCAZpep_increase_depth.pdf",
        plot = last_plot(), width = 9, height = 5.5)
 ```
-
-## Individual CAZyme and peptidase correlation with depth
-
 
 ## stats section for particle-assocation transposase correlation
 
@@ -279,24 +300,51 @@ But it is stronger for the DNA: 9.231e-11
 [1] 0.6505339
 
 ```{r}
-RNA.corr.depth = lm(log_dna_trans~Layer_RNA, DNA_RNA_tara_g )
-RNA.corr.particle = lm(log_dna_trans~Layer_RNA + percent_rna_sect_CAZpep, DNA_RNA_tara_g )
-anova(RNA.corr.depth, RNA.corr.particle)
+reg.stats = function(big_df, depth, feature, trans) {
+  tmp_df = big_df[c(feature, depth, "Ocean", trans)]
+  colnames(tmp_df) = c("feature", "depth", "ocean", "trans")
+  corr.depth = lm(trans~depth, tmp_df)
+  corr.particle = lm(trans~depth + feature, tmp_df)
+  print(summary(corr.particle))
+  ano_obj = anova(corr.depth, corr.particle)
+  
+  n_row = data.frame(feature = feature,
+     sample.n = nrow(tmp_df),
+     depth.norm = shapiro.test(resid(corr.depth))$p.val,
+     feature.norm = shapiro.test(resid(corr.particle))$p.val,
+     depth.R = get_r(corr.depth), 
+     feature.R = get_r(corr.particle),
+     p.val = ano_obj$`Pr(>F)`[2])
+  return(n_row)
+}
 
-DNA.corr.depth = lm(log_dna_trans~Depth, pt_to_graph )
-DNA.corr.particle = lm(log_dna_trans~Depth + log(percent_dna_sect_CAZpep), pt_to_graph )
-anova(DNA.corr.depth, DNA.corr.particle)
+cols = c("log_dna_trans","Depth","Ocean_DNA", "Layer_DNA")
+tmp = rbind(DNA_tara[cols], mala_cov[cols])
+tmp = tmp[tmp$Ocean_DNA != "Arctic", ]
+
+summary(lm(log_dna_trans~Layer_DNA, tmp ))
+summary(lm(log_dna_trans~Depth, pt_to_graph))
+
+# DNA_RNA_tara_g$Depth = DNA_RNA_tara_g$Layer_RNA
+# DNA_RNA_tara_g$log_percent_CAZ = log(DNA_RNA_tara_g$percent_rna_sect_CAZ)
+pt_to_graph$Ocean = pt_to_graph$Ocean_DNA
+RNA_tara_g$log_percent_CAZ = log(RNA_tara_g$percent_rna_sect_CAZ)
+RNA_tara_g$log_percent_pep = log(RNA_tara_g$percent_rna_sect_pep)
+reg1 = reg.stats(pt_to_graph[!is.na(pt_to_graph$Oxygen_DNA), ],
+                 "Layer_DNA", "Oxygen_DNA", "log_dna_trans")
+reg2 = reg.stats(pt_to_graph, "Layer_DNA", "percent_dna_sect_CAZ", "log_dna_trans")
+reg3 = reg.stats(pt_to_graph, "Layer_DNA", "percent_dna_sect_pep", "log_dna_trans")
+reg4 = reg.stats(RNA_tara_g, "Layer_RNA", "log_percent_CAZ", "log_rna_trans")
+reg5 = reg.stats(RNA_tara_g, "Layer_RNA", "log_percent_pep", "log_rna_trans")
+
+CAZpep.reg = rbind(reg1, reg2, reg3, reg4, reg5) %>%
+  adjust_pvalue(method = "BY")
+
+write.csv(CAZpep.reg, file = "redux_out/regression-results.csv")
+# DNA.corr.depth = lm(log_dna_trans~Depth, pt_to_graph )
+# DNA.corr.particle = lm(log_dna_trans~Depth + log(percent_dna_sect_CAZpep), pt_to_graph )
+# anova(DNA.corr.depth, DNA.corr.particle)
 ```
-
-## Passing the normality test
-```{r}
-shapiro.test(resid(RNA.corr.depth))
-shapiro.test(resid(RNA.corr.particle))
-
-shapiro.test(resid(DNA.corr.depth))
-shapiro.test(resid(DNA.corr.particle))
-```
-
 
 
 ## Arctic Ocean have higher secretory CAZyme peptidase percentage

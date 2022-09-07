@@ -1,0 +1,58 @@
+
+## Oxygen DNA and RNA
+
+```{r}
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
+source("./init_share.R")
+g(DNA_tara, RNA_tara, DNA_RNA_tara) %=% init_tara()
+mala_cov <- init_mala_cov()
+```
+
+```{r}
+oxy_sel_col = c("DNA_transposase", "Ocean_DNA", "Layer_DNA", "Oxygen_DNA")
+oxy_to_graph = rbind(mala_cov[,oxy_sel_col], DNA_tara[,oxy_sel_col])
+oxy_to_graph$Layer_DNA <- factor(oxy_to_graph$Layer_DNA, levels = c("SRF","DCM","MES","BAT"))
+```
+
+
+# supplementary figure 2
+```{r}
+oxy_share = function(g) {
+  g = g + labs(color="Ocean") +
+    scale_y_continuous(trans = 'log10', 
+                       labels = function(x) ifelse(x == 0, "0", x)) +
+    theme_classic() +
+    xlab(expression(paste("Dissolved Oxygen (", mu, "mol/Kg)"))) +
+    scale_color_brewer(palette="Set1")+
+    geom_smooth(method = "lm", se = T)
+  return(g)
+}
+
+oxy_DNA = oxy_to_graph %>%
+  filter(Layer_DNA != "MIX" & 
+         Ocean_DNA != "Arctic" &
+         !is.na(Oxygen_DNA) ) %>%
+  ggplot(aes(x=Oxygen_DNA, y=DNA_transposase*100)) +
+  facet_wrap(~Layer_DNA, nrow = 2) + # scales = "free"
+  geom_point(aes(color = Ocean_DNA)) + 
+  ylab("Transposase gene abundance (%)") +
+  theme() #legend.position = "none"
+
+oxy_share(oxy_DNA)
+
+ggsave("redux_out/S2_oxygen_transposase_corr.pdf", 
+       plot = last_plot(), width = 5.5, height = 4)
+```
+
+
+```{r}
+oxy_RNA = RNA_tara %>%
+  filter(Layer_RNA != "MIX" & Ocean != "Arctic Ocean") %>%
+  ggplot(aes(x=Oxygen_RNA, y=RNA_transposase * 100)) +
+  facet_wrap(~Layer_RNA, nrow = 2) + # scales = "free"
+  geom_point(aes(color = Ocean)) + 
+  ylab("Transposase transcript abundance (%)") +
+  theme() #legend.position = "none"
+
+oxy_share(oxy_RNA)
+```

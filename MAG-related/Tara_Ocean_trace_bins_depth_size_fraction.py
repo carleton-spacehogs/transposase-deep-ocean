@@ -104,8 +104,8 @@ for MAG_row in bin_coverages[1:]:
 	sum_normalized_depth = [a / b for a, b in zip(sum_row_depth, normaling_factor)]
 	sum_nor_size = [a / b for a, b in zip(sum_row_size, nor_fac_size)]
 
-	# out_row.append(get_depth(sum_normalized_depth))
-	out_row.append(get_depth2(sum_row_depth, normaling_factor))
+	out_row.append(get_depth(sum_normalized_depth))
+	# out_row.append(get_depth2(sum_row_depth, normaling_factor))
 	out_row.append(get_size(sum_nor_size))
 
 	out_row.extend(sum_normalized_depth)

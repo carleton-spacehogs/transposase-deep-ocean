@@ -1,0 +1,6 @@
+"Explanatory Variables","Df","Explained Sum of Squares","P for F-test","Cumulative R^2"
+"Depth (SRF/DCM/MES/BAT)",3,808.12,"< 1e-14",0.343
+"Secretory CAZyme (%)",1,49.15,"< 1e-14",0.368
+"Secretory Peptidase (%)",1,11.55,"1e-04",0.37
+"Complete Genome Size (Mbp)",1,442.93,"< 1e-14",0.53
+"Taxonomy (Class)",68,249.19,"< 1e-14",0.643

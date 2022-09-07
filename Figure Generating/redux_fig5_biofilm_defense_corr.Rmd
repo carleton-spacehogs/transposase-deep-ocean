@@ -13,6 +13,7 @@ mala_cov = init_mala_cov()
 mala_cov$size_fraction <- ifelse(mala_cov$lower_filter_size == "0.2", "planktonic", "particle")
 DNA_tara$size_fraction <- ifelse(DNA_tara$upper_size_dna == "1.6", "planktonic", "particle")
 
+mala_cov = mala_cov[ mala_cov$size_fraction == "planktonic", ]
 DNA_tara$sample = DNA_tara$ENA_Run_ID
 ```
 
@@ -30,23 +31,17 @@ CAZ_scale <- log2(CAZ_percent_scale/100)
 sel = colnames(mala_cov)[grep("log_dna", colnames(mala_cov))]
 sel = sel[!grepl("CAZ|pep|log_dna_trans", sel)]
 independent_var = c("percent_dna_sect_CAZpep","Layer_DNA",
-                    "sample","Ocean_DNA","DNA_biofilm")
+  "percent_dna_sect_pep", "percent_dna_sect_CAZ",
+  "sample","Ocean_DNA","DNA_biofilm")
 sel2 = c(sel, independent_var)
-```
 
-## statistics on correlations
-
-```{r}
 sel.cor = colnames(DNA_tara)[grep("DNA", colnames(DNA_tara))]
 all_COGs = sel.cor[12:33]
 sel.cor2 = c(all_COGs, independent_var)
 
-# rownames(DNA_tara) %in% tara_out,
-# COG.corr <- rbind(mala_cov[ mala_cov$sample != "SRR3963805", sel.cor2],
-#                   DNA_tara[ rownames(DNA_tara) %in% tara_out, sel.cor2])
-
+d_level = c("SRF","DCM","MES","BAT")
 COG.corr = rbind(mala_cov[sel.cor2], DNA_tara[sel.cor2])
-COG.corr$Layer_DNA <- factor(COG.corr$Layer_DNA, levels = c("SRF","DCM","MES","BAT"))
+COG.corr$Layer_DNA <- factor(COG.corr$Layer_DNA, levels = d_level)
 ```
 
 From the exploratory plot above (the lowest purple dot),
@@ -71,8 +66,8 @@ tara_COG_sum = rowSums(DNA_tara[all_COGs])
 sum.COG = data.frame(c(mala_cov$sample, DNA_tara$sample),
                      c(mala_COG_sum, tara_COG_sum))
 colnames(sum.COG) = c("sample", "COG_sum_coverage")
-# boxplot(sum.COG$COG_sum_coverage)
 ```
+
 
 ```{r}
 # there is significant correlation for both of them
@@ -96,27 +91,76 @@ COG.melt = COG.corr %>%
 colnames(COG.melt) = c(independent_var,"COG","COG_abun")
 ```
 
+```{r}
+gen_plot = function(df, fea1){
+  g = ggplot(df, aes_string(x = fea1, y = "COG_sum_coverage")) +
+    geom_point() + # aes(color = filter_size)
+    stat_cor(method = "spearman", cor.coef.name = "rho") +
+    geom_smooth(method = "lm") +
+    theme_classic()
+}
+
+BAT.COG.corr = COG.corr[COG.corr$Layer_DNA == "BAT", ]
+tara.COG.corr = COG.corr[COG.corr$Layer_DNA != "BAT", ]
+
+CAZ.BAT = gen_plot(BAT.COG.corr, "log(percent_dna_sect_CAZ)")
+pep.BAT = gen_plot(BAT.COG.corr, "log(percent_dna_sect_pep)")
+
+ggarrange(CAZ.BAT, pep.BAT)
+
+CAZ.tara = gen_plot(tara.COG.corr, "log(percent_dna_sect_CAZ)")
+pep.tara = gen_plot(tara.COG.corr, "log(percent_dna_sect_pep)")
+
+ggarrange(CAZ.tara, pep.tara)
+```
+
+
 ## Spearman correlation
 ```{r}
-# 
-COG.stats = COG.melt %>%
-  filter(!is.na(Layer_DNA)) %>%
-  filter(COG != "DNA_Chromatin_structure_and_dynamics") %>%
-  group_by(COG, Layer_DNA) %>%
-  summarize(p.val = cor.test(percent_dna_sect_CAZpep, 
-    COG_abun/COG_sum_coverage, method = "spearman")$p.val,
-            estimate = cor.test(percent_dna_sect_CAZpep,
-    COG_abun/COG_sum_coverage, method = "spearman")$estimate,
+get_COG_corr = function(COG.melt, feature) {
+  tmp = COG.melt
+  tmp['fea'] = COG.melt[feature]
+
+  tmp = tmp %>%
+    filter(!is.na(Layer_DNA)) %>%
+    filter(COG != "DNA_Chromatin_structure_and_dynamics") %>%
+    mutate(COG_prop = COG_abun, #/COG_sum_coverage,
+           is_deep = ifelse(Layer_DNA == "BAT", "BAT", "tara"))
+  
+  COG.stats = tmp %>%
+  # group_by(COG) %>%
+  group_by(COG, is_deep) %>%
+  summarize(p.val = cor.test(fea, COG_prop, method = "spearman")$p.val,
+            estimate = cor.test(fea, COG_prop, method = "sp")$estimate,
             count = n()) %>%
   adjust_pvalue(method = "BY") %>%
   add_significance(cutpoints = c(0, 0.001, 0.01, 0.05, 1),
     symbols = c("***", "**", "*", ""))
+  return(COG.stats)
+}
 
-COG.stats2 = COG.stats %>%
-  filter(p.val.adj < 0.05) %>%
-  arrange(COG, Layer_DNA)
+COG.stats1 = get_COG_corr(COG.melt, "percent_dna_sect_pep")
+COG.stats2 = get_COG_corr(COG.melt, "percent_dna_sect_CAZ")
 
-sig_COG = unique(COG.stats2$COG)
+# COG.stats1$Depth = "peptidase"
+# COG.stats2$Depth = "CAZyme"
+
+COG.stats.pep = COG.stats1 %>%
+  arrange(COG, is_deep) %>% #,Layer_DNA
+  mutate(Depth = paste0("pep-", is_deep))
+  # paste0("pep-", Layer_DNA)
+
+COG.stats.CAZ = COG.stats2 %>%
+  arrange(COG) %>% #,Layer_DNA
+  mutate(Depth = paste0("CAZ-", is_deep))
+
+COG.stats.comb = rbind(COG.stats.CAZ, COG.stats.pep)
+COG.stats.comb$Depth = factor(COG.stats.comb$Depth,
+    levels = c("CAZ-BAT","CAZ-tara", "pep-BAT", "pep-tara"))
+
+# COG.stats.comb = rbind(COG.stats1, COG.stats2)
+
+sig_COG = unique(COG.stats.comb[COG.stats.comb$p.val.adj < 0.05, ]$COG)
 ```
 
 ## Doing the heatmap
@@ -139,11 +183,11 @@ cast_long_list = function(corr_long_list, var1, var2, value) {
   return(estimate_2d)
 }
 
-COG.graph = COG.stats[COG.stats$COG %in% sig_COG, ]
+COG.graph = COG.stats.comb[COG.stats.comb$COG %in% sig_COG, ]
 
 # COG.graph = COG.stats
 
-COG.corr.2D = cast_long_list(COG.graph, "COG", "Layer_DNA", "estimate")
+COG.corr.2D = cast_long_list(COG.graph, "COG", "Depth", "estimate")
 
 old_names = rownames(COG.corr.2D)
 pretty = gsub("TM", "transport and metabolism", 
@@ -169,20 +213,18 @@ dendro_graph = ggdendrogram(data = COG_dendro, rotate = FALSE) +
   coord_flip() +
   scale_x_continuous(expand = c(0,0)) +
   scale_y_reverse() +
-  theme_dendro()
+  theme_dendro() +
+  theme(plot.margin = margin(t = 5, b = 5, r = 0, l = 5))
 
-blank_plot = ggplot() + theme_void()
-left = ggarrange(blank_plot, dendro_graph, blank_plot, 
-                  heights = c(0.03, 0.8, 0.05), ncol = 1)
-
+blank_plot = ggplot() + theme_void() +
+  theme(plot.margin = margin(t = 5, b = 5, r = 0, l = 5))
 integron_order = rownames(COG.corr.2D)[order.dendrogram(COG_dendro)]
 ```
 
 Doing the heatmap
 ```{r}
 COG_ggheatmap = COG.graph %>%
-  mutate(COG = factor(COG, levels = integron_order),
-         Depth = factor(Layer_DNA, levels = c("SRF","DCM","MES","BAT"))) %>%
+  mutate(COG = factor(COG, levels = integron_order)) %>%
   ggplot(aes(x=Depth, y=COG)) + 
   geom_tile(aes(fill=estimate)) +
   scale_fill_gradient2(low="blue", mid="white", high="red") +
@@ -198,18 +240,22 @@ COG_ggheatmap = COG.graph %>%
          axis.text.y = element_blank(),
          axis.line.y = element_blank(),
          legend.title=element_text(size=10),
-         # legend.key.size = unit(0.4, "cm"),
-         legend.position = c(5.8, 0.8)) 
+         plot.margin = margin(t = 5, b = 5, r = 0, l = 0),
+         # legend.key.size = unit(0.45, "cm"),
+         legend.position = c(5.15, 0.8)) 
 ```
 
 
 Combining the heatmap with the graph *p_cassette_category* from
 *redux_fig5_integron_finder_category.R*
 ```{r}
+left = ggarrange(blank_plot, dendro_graph, blank_plot, 
+                  heights = c(0.02, 0.8, 0.11), ncol = 1)
+
 ggarrange(left, COG_ggheatmap, p_cassette_category, 
           ncol = 3, widths=c(0.5,1,5)) # , labels = c("A", "B")
 
-ggsave("redux_out/linking_COG_integron_corr.pdf",
+ggsave("redux_out/link-pure-COG-prop-with-integron.pdf",
        width = 8, height = 5.5)
 ```
 
@@ -239,29 +285,81 @@ integron_order_sim = rev(simplify(integron_order))
 
 pt.COG.graph = pt.COG.graph %>%
   filter(COG %in% integron_order) %>%
-  mutate(COG2 = factor(simplify(COG), levels = integron_order_sim),
+  mutate(is_deep = ifelse(Layer_DNA == "BAT", "BAT", "no"),
+    COG2 = factor(simplify(COG), levels = integron_order_sim),
+    COG_abun = COG_abun * 100,
     COG_percent_abun = COG_abun/COG_sum_coverage * 100)
 
-# out = c("Intracellular trafficking", "Secondary metabolites")
+# no significantly different between integron and normal
+# metagenomes
+out = c("Intracellular trafficking", "Secondary metabolites",
+        "cell cycle control")
 
-pt.COG.graph %>%
-  # filter(!COG2 %in% out) %>%
-  ggplot(aes(x = percent_dna_sect_CAZpep, y = COG_percent_abun)) +
+gen_COG_graph = function(fea1, fea2){
+  pt.COG.graph %>%
+  filter(!COG2 %in% out) %>%
+  ggplot(aes_string(x = fea1, y = fea2,
+             color = "is_deep")) +
   facet_wrap(~COG2, scale = "free_y", ncol = 4) +
-  geom_point(aes(color = Layer_DNA), size = 1) +
+  geom_point(aes(shape = Layer_DNA), size = 1) +
+  geom_smooth(method = "lm", se = F) +
   scale_y_sqrt() +
-  labs(color = "Depth",
-       y = "COG abundance in all COG categories (%)",
-       x = "Secretory CAZyme and peptidase (%)") +
+  labs(shape = "Depth",
+       color = "Is BAT") +
   theme_classic()
+}
 
-ggsave("redux_out/particle-COG-association2.pdf",
+gen_COG_graph("percent_dna_sect_CAZ", "COG_abun") +
+  ylab("COG category abundance (%)") + 
+  xlab("Secretory CAZyme (%)")
+
+# ggsave("out/particle-COG-association-CAZ.pdf",
+ggsave("out/particle-COG-raw-prop-association-CAZ.pdf",
+       width = 9.5, height = 9)
+
+gen_COG_graph("percent_dna_sect_pep", "COG_abun") +
+  ylab("COG category abundance (%)") + 
+  xlab("Secretory peptidase (%)")
+
+# ggsave("out/particle-COG-association-pep.pdf",
+ggsave("out/particle-COG-raw-prop-association-pep.pdf",
        width = 9.5, height = 9)
 ```
 
 
 
 ## Exploring from this point, not acutally used
+
+```{r}
+library(vegan)
+
+in_pcoa = COG.corr[all_COGs]
+# in_pcoa = in_pcoa/(c(mala_COG_sum, tara_COG_sum))
+rownames(in_pcoa) = COG.corr$sample
+md_pcoa = COG.corr[independent_var]
+rownames(md_pcoa) = COG.corr$sample
+
+COG.bray = vegdist(in_pcoa)
+COG.b.pcoa = cmdscale(COG.bray, k = (nrow(COG.corr[all_COGs]) - 1), 
+                      eig = TRUE)
+pcoa_p = data.frame(PC1 = COG.b.pcoa$points[,1],
+                    PC2 = COG.b.pcoa$points[,2])
+
+pcoa_p = merge(pcoa_p, md_pcoa, by=0) #work-in metadata
+
+#viz
+pcoa_p %>%
+  ggplot(aes(x = PC1, y = PC2)) + 
+  geom_point(aes(color = Layer_DNA)) +
+  theme_classic() +
+  labs(color = "Depth")
+  
+ggsave("out/PCoA_COGs_pure_prop_depth.pdf",
+       width = 4.5, height = 4)
+```
+
+
+
 
 ## Can't really do linear regression
 

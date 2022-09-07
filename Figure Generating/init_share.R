@@ -23,6 +23,8 @@ init_env <- function(){
   getwd()
 }
 
+googleDrive.loc = "G:/My Drive/Rika SpaceHog Lab - Jimmy's Transposase Notebook (2020-2022)/Transposase-MS-v2"
+
 boxplot.give.n <- function(x){ return(c(y = mean(x), label = length(x)))}
 boxplot.give.nr <- function(x){ 
   if (length(x)==522366) {
@@ -30,6 +32,12 @@ boxplot.give.nr <- function(x){
   } else {
     return(c(y = mean(x), label = signif(length(x), 4)))
   }
+}
+
+get.fudge = function(df, var){
+  vec = unlist(df[var])
+  vec = vec[!is.na(vec)]
+  return(min(vec[vec > 0]))
 }
 
 filter_outliers <- function(df, colname){
@@ -61,7 +69,8 @@ less_than <- function(vct, upper) {
   return (out)
 }
 
-get_r <- function(reglm) {return(summary(reglm)$r.squared)}
+get_r <- function(reglm) {return(unlist(summary(reglm)['r.squared']))}
+
 get_rp <- function(reglm) {
   r <- summary(reglm)$r.squared
   p <- rev(anova(reglm)$`Pr(>F)`)[2]
@@ -183,6 +192,7 @@ oldvct = c("transposase", "CAZyme", "peptidase", "secretory_CAZyme", "secretory_
 init_mala_cov <- function(){
   init_env()
   mala_cov = read_csv("../OM-RGC-and-abundance/Malaspina-genes-coverage.csv")
+  # mala_cov = read_csv("../OM-RGC-and-abundance/Malaspina-genes-coverage-OM-RGC.csv")
   mala_cov = get_logs(mala_cov, oldvct, newvct, "DNA")
   mala_cov = get_CAZpep_percent(mala_cov, "DNA")
   
@@ -245,7 +255,7 @@ merge_MAGs_eukaryote = function(bin_df){
 
 init_bins <- function(){
   init_env()
-  sel_col = c("bin","Class", "Order", "Family", "complete_genome_size", #"Genus", "Species", 
+  sel_col = c("bin", "Class", "Order", "Family", "complete_genome_size", #"Genus", "Species", 
               "percent_trans", "percent_defense", "Total ORFs", "depth")
   
   # from bin_taxon_genomesize_statistics.R
@@ -253,8 +263,8 @@ init_bins <- function(){
                  "Verrucomicrobia","SAR202-2","Opitutae")
   high_trans <- c("Alphaproteobacteria","Gammaproteobacteria",
                   "Betaproteobacteria","Deltaproteobacteria")
-  taxon <- read_csv("data/bin_taxon.csv")
-  origin <- read_csv("../MAG-related/Tara_bins_origin.csv")[,c("bin","depth","size_fraction")]
+  taxon = read_csv("data/bin_taxon.csv")
+  origin = read_csv("../MAG-related/Tara_bins_origin.csv")[,c("bin","depth","size_fraction")]
   taxon = merge(origin, taxon, by = "bin")
   
   malaspina_bins = read_csv("data/malaspina_bin_taxon_over70complete.csv")
@@ -270,16 +280,14 @@ init_bins <- function(){
   
   Class_count = table(all_MAGs$Class[!is.na(all_MAGs$Class)])
   big_taxa = Class_count[Class_count >= 10]
-  trans_fudge = min(all_MAGs$percent_trans[all_MAGs$percent_trans > 0])
   
   all_MAGs = all_MAGs %>% mutate(
-    log_percent_trans = log10(percent_trans + trans_fudge),
     large_classes = ifelse(is.na(Class), "Others Or Unknown",
                     ifelse(Class %in% names(big_taxa), Class,"Others Or Unknown")),
     class_trans = ifelse(Class %in% low_trans, "low",
                   ifelse(Class %in% high_trans, "high", "normal")),
-    depth = factor(gsub("unsure", "MIXED", depth),
-                   levels = c("SRF", "DCM", "MIXED", "MES", "BAT")),
+    depth = factor(depth, # gsub("unsure", "MIXED", depth),
+                   levels = c("SRF", "DCM", "MES", "BAT")),
     `Total ORFs` = as.numeric(`Total ORFs`)
   )
   all_MAGs = merge_MAGs_eukaryote(all_MAGs)
