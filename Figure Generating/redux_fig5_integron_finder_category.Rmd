@@ -50,6 +50,9 @@ https://stats.stackexchange.com/questions/369006/statistical-test-for-comparing-
 integron_total = sum(summary$integron_count)
 norm_total = sum(summary$normal_count)
 
+summary$enrichement = summary$integron_prop/summary$normal_prop
+sum2 = arrange(summary, enrichement)
+
 COG_enrichment.stat = t(apply(summary, 1, function(r){
   group1 = integron_total
   int_count = as.numeric(r["integron_count"])
@@ -58,27 +61,29 @@ COG_enrichment.stat = t(apply(summary, 1, function(r){
   p.val1 = phyper(int_count, nor_count, norm_total-nor_count, integron_total, lower.tail= FALSE)
   # test for over-representation (enrichment)
   p.val2 = phyper(int_count-1, nor_count, norm_total-nor_count, integron_total, lower.tail= TRUE)
-  return(c(r['COG_function'], p.val1, p.val2))
+  return(c(r['COG_function'], p.val1, p.val2, r["integron_count"]))
 }))
 
+en.cols = c("COG_function", "integron_count")
 enrich = COG_enrichment.stat %>%
   as.data.frame() %>%
-  reshape2::melt(id.var = "COG_function") %>%
-  select(c("COG_function", "value"))
+  reshape2::melt(id.var = en.cols) %>%
+  select(c(en.cols, "value"))
 
-colnames(enrich) = c("COG","p.val")
+colnames(enrich) = c(en.cols,"p.val")
 enrich = enrich %>%
-  mutate(p.val = as.numeric(p.val)) %>%
+  mutate(p.val = as.numeric(p.val), integron_count = as.numeric(integron_count)) %>%
   adjust_pvalue(method = "BY") %>%
   add_significance(cutpoints = c(0, 0.05, 1),
                    symbols = c("*","")) %>%
-  filter(p.val < 0.5)
+  filter(p.val < 0.5 & integron_count >= 50)
 ```
 
 ## Needs redux_fig5_biofilm_defense_corr
 ```{r}
 rownames(enrich) = enrich$COG
 COG_sig = enrich[integron_order, ]$p.val.adj.signif
+COG_sig[is.na(COG_sig)] = ""
 integron_order2 = paste(integron_order, COG_sig, sep = "")
 
 graphing = summary[summary$COG_function %in% integron_order, ]
@@ -102,7 +107,7 @@ p_cassette_category = g.melt %>%
   ggplot(aes(fill=type, y=value, x=COG)) +
   geom_bar(position="dodge", stat="identity", width = 0.66) + 
   coord_flip(ylim = c(0, 0.15), clip = "off") +
-  ylab("Proprotion to total ORF calls\n\n") + 
+  ylab("Proprotion to total ORF calls\n") + 
   theme_classic() +
   guides(fill = guide_legend(reverse = TRUE, title = "COG gene-calls for:")) +
   scale_fill_manual(values=c("dark gray", "orange"), 

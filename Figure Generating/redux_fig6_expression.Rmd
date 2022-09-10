@@ -13,58 +13,125 @@ g(DNA_tara, RNA_tara, DNA_RNA_tara) %=% init_tara()
 # options(scipen=10000)
 
 DNA_RNA = DNA_RNA_tara %>%
-  filter(Ocean_DNA != "Arctic") %>%
   filter(Layer_RNA %in% c("SRF", "DCM", "MES")) %>%
   get_expression()
 ```
 
-## Looking at expression rate
 ```{r}
-gene_col =c("secretory_CAZyme", "secretory_peptidase", "transposase",
-            "Carbohydrate_TM", "Amino_acid_TM", 
-            "Mobilome_prophages_transposons", "Coenzyme_TM",
-            "Defense_mechanisms", "Signal_transduction_mechanisms")
-# exp_col = paste0(gene_col, "_exp")
-# dna_col = paste0("DNA_", gene_col)
+dna_cols = colnames(DNA_RNA)[grepl("DNA_", colnames(DNA_RNA))]
+COG.dna_cols = dna_cols[7:28]
+DNA.COG.sum = rowSums(DNA_RNA[COG.dna_cols])
 
-exp_col = colnames(DNA_RNA)[grepl("_exp", colnames(DNA_RNA))]
+COG.rna_cols = gsub("DNA", "RNA", COG.dna_cols)
+RNA.COG.sum = rowSums(DNA_RNA[COG.rna_cols])
 
-pre.melt = function(DNA_RNA, in_cols, type = "exp") {
-  target = DNA_RNA[in_cols]
-  target$sample = DNA_RNA$connector_DNA
-  target$depth = factor(DNA_RNA$Layer_RNA,
-     levels = c("MES","DCM","SRF"))
-  if (type == 'exp') {
-    colnames(target) = gsub(" exp", "",gsub("_"," ", colnames(target)))
-  } else if (type == 'DNA') {
-    colnames(target) = gsub("_", " ", gsub("DNA_", "", colnames(target)))
-  }
-  target.melt = target %>%
-    reshape2::melt(id.var = c("depth", "sample"))
-  return(target.melt)
+check.df = data.frame(DNA_RNA[c('connector_DNA','Ocean_DNA', "Layer_RNA")], DNA.COG.sum, RNA.COG.sum)
+check.df$ratio = check.df$RNA.COG.sum / check.df$DNA.COG.sum
+
+ggplot(check.df, aes(y = Ocean_DNA, x = ratio)) +
+  geom_boxplot() +
+  geom_point()
+
+boxplot(ratio~Layer_RNA, check.df)
+```
+
+
+## Looking at expression rate
+
+## Run this for integron-enriched COGs
+```{r}
+gene_col =c("Extracellular_struct", "Mobilome_prophages_transposons",
+            "Defense_mechanisms", "Replication_recombination_and_repair",
+            "Signal_transduction_mechanisms", "Transcription",
+            "Cell_motility", "transposase")
+
+pretty.exp = c("Extracellular structures", "Mobilome...",
+  "Defense mechanisms", "Replication...", "Signal transduction",
+  "Transcription", "Cell motility", "Transposase")
+
+out.f = "/Figure6-integron-COGs-expression-ratios.pdf"
+height = 3
+sig.bar.pos = log10(c(5, 7,
+                     2.5, 3.4,
+                     1.1, 1.3,
+                     1.1, 1.5,
+                     2.2, 3,
+                     3, 4,
+                     7,10,17))
+```
+
+
+## Run this for others COGs
+```{r}
+gene_col = c("Lipid_TM", "Coenzyme_TM",
+             "Energy_production_and_conversion", "Cell_wall",
+             "Amino_acid_TM", "Cytoskeleton", "Inorganic_ion_TM",
+             "Nucleotide_TM", "Chromatin_structure_and_dynamics",
+             "Cell_cycle_control", "Intracellular_trafficking",
+             "Translation_ribosomal_structure", "Carbohydrate_TM", 
+             "Posttranslational_modification", "Secondary_metabolites")
+
+pretty.exp = c("Lipid T.M.", "Coenzyme T.M.",
+               "Energy production...", "Cell wall",
+                "Amino acid T.M.", "Cytoskeleton", "Inorganic ion T.M.",
+               "Nucleotide T.M.", "Chromatin structure...",
+               "Cell cycle control", "Intracellular trafficking",
+               "Translation ribosomal...", "Carbohydrate T.M.", 
+               "Posttranslational...", "Secondary metabolites")
+
+out.f = "/Figure6-other-COGs-expression-ratios.pdf"
+height = 6
+sig.bar.pos = log10(c(1.2, 1.6,
+                     1.1,
+                     1.1, 1.5,
+                     3, 4, 6.5,
+                     3, 4,
+                     2.5, 3.5, 6,
+                     3, 4,
+                     5, 6,
+                     2.7,
+                     2.5, 3.5,
+                     1.3))
+```
+
+
+```{r}
+exp_cols = paste0(gene_col, "_exp")
+
+DNA_RNA$depth = factor(DNA_RNA$Layer_RNA, levels = c("MES","DCM","SRF"))
+base.cols = c("depth", "connector_DNA", "percent_dna_sect_CAZ", "percent_dna_sect_pep")
+target = DNA_RNA[c(base.cols, exp_cols)]
+exp.melt = target %>% reshape2::melt(id.var = base.cols)
+colnames(exp.melt) = c(base.col, "gene", "expression")
+
+old.gene = unique(exp.melt$gene)
+exp.melt$pretty.gene = exp.melt$gene
+for (g in 1:length(old.gene)) {
+  exp.melt$pretty.gene = gsub(old.gene[g], pretty.exp[g], exp.melt$pretty.gene)
 }
 
-base.col = c("depth", "sample", "gene")
-exp.melt = pre.melt(DNA_RNA, exp_col, "exp")
-colnames(exp.melt) = c(base.col, "expression")
+exp.melt$pretty.gene = factor(exp.melt$pretty.gene, levels = pretty.exp)
+```
 
+
+# actual graphing
+```{r}
 exp.stats = exp.melt %>%
-  group_by(gene) %>%
-  wilcox_test(expression~depth) %>%
+  group_by(pretty.gene) %>%
+  t_test(expression~depth) %>%
+  # wilcox_test(expression~depth) %>%
   adjust_pvalue(method = "BH") %>%
   filter(p.adj < 0.05) %>%
   add_significance() %>% 
-  add_xy_position() %>%
-  mutate(y.position = log2(y.position))
+  add_xy_position()
 
-sig_gene = unique(exp.stats$gene)
+exp.stats$y.position = sig.bar.pos
 
 exp.melt %>%
-  # filter(gene %in% sig_gene) %>%
-  filter(expression < 12) %>% # an extreme outlier for transposase, SRFs
+  # filter(expression < 12) %>% # an extreme outlier for transposase, SRFs
   ggplot(aes(y = expression, x = depth)) +
-  facet_wrap(~gene) +
-  scale_y_continuous(trans = "log2",
+  facet_wrap(~pretty.gene, scales = "free_x", ncol = 4) + # 
+  scale_y_continuous(trans = "log10",
     labels = function(x) ifelse(x == 0, "0", x)) +
   geom_boxplot(outlier.shape = NA) +
   geom_jitter(alpha = 0.12, width = 0.2) +
@@ -72,17 +139,41 @@ exp.melt %>%
     label = "p.adj.signif", hide.ns = TRUE ) +
   coord_flip() +
   theme_classic() +
+  ylab("RNA/DNA ratio (transcript / gene abundance(%) per sample)") +
   theme(axis.title.y = element_blank())
 
-ggsave("redux_out/gene_expression_ratios.pdf")
+ggsave(paste0("out", out.f), height = height, width = 7)
+ggsave(paste0(googleDrive.loc, out.f), width = 7, height = height)
 ```
+
+
+## direct correlation between partcle association and genes, not too useful
+```{r}
+exp.melt %>%
+  filter(expression < 12) %>% # an extreme outlier for transposase, SRFs
+  ggplot(aes(y = expression, x = percent_dna_sect_CAZ)) +
+  facet_wrap(~gene) +
+  # scale_y_continuous(trans = "log10", labels = function(x) ifelse(x == 0, "0", x)) +
+  geom_smooth(method = "lm", se = T, color = "orange") +
+  geom_jitter(alpha = 0.12, width = 0.2) +
+  theme_classic() +
+  stat_cor(method = "spearman", cor.coef.name = "rho") +
+  theme(axis.title.y = element_blank())
+ggsave("old graphs/gene-expression-ratios-CAZ.pdf", height = 8, width =10)
+```
+
+
+
+
+
+
+
 
 ```{r}
 DNAs = colnames(DNA_RNA)[grepl("DNA_", colnames(DNA_RNA))]
 RNAs = colnames(DNA_RNA)[grepl("RNA_", colnames(DNA_RNA))]
 
 tmp = cbind(DNA_RNA$Ocean_DNA, rowSums(DNA_RNA[DNAs]), rowSums(DNA_RNA[RNAs]))
-
 ```
 
 
