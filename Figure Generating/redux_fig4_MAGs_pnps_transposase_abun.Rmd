@@ -77,8 +77,8 @@ pnps.match2 = pnps.match %>%
 depth.t = table(pnps.match2$depth)
 MAGs.t = table(unique(pnps.match[c("bin","depth")])$depth)
 depth.str = as.character(pnps.match2$depth)
-depth.counts = paste("   ", depth.str, "(n =", depth.t[depth.str],
-                     ",", MAGs.t[depth.str], "MAGs) ")
+depth.counts = paste0("    ", depth.str, " (n = ", depth.t[depth.str],
+                     ", ", MAGs.t[depth.str], " MAGs)")
 pnps.match2$depth = depth.counts
 depth.c = unique(depth.counts)
 
@@ -104,14 +104,14 @@ pnps.b = pnps.match2 %>%
   theme(axis.title.x = ggtext::element_markdown(),
         axis.title.y = element_blank())
 
-ggarrange(pnps.b, pnps.a, ncol = 1, heights = c(1,3),
+ggarrange(pnps.b, pnps.a, ncol = 1, heights = c(1,2.8),
           labels = c("A", "B"))
 
 ggsave("out/F4_MAG-trans-median-pnps.pdf",
-       height = 7, width = 5)
+       height = 6, width = 5)
 
 ggsave(paste0(googleDrive.loc, "/Figure4_MAG-trans-median-pnps.pdf"),
-       plot = last_plot(), height = 7, width = 5)
+       plot = last_plot(), height = 6, width = 5)
 ```  
 
 
@@ -122,6 +122,9 @@ BAT = pnps.match[pnps.match$depth == "BAT", ]
 
 wilcox.test(SRF.DCM$MAG_pnps_median, MES$MAG_pnps_median)
 wilcox.test(MES$MAG_pnps_median, BAT$MAG_pnps_median)
+
+median(MES$MAG_pnps_median)/median(SRF.DCM$MAG_pnps_median)
+MES.shallow.test = t.test(log(MES$MAG_pnps_median), log(SRF.DCM$MAG_pnps_median))
 
 cor.test(pnps.match$percent_trans, pnps.match$MAG_pnps_median, method = "spearman")
 ```

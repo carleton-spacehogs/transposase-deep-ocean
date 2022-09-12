@@ -11,20 +11,21 @@ source("./init_share.R")
 g(all_MAGs, low_trans, high_trans) %=% init_bins()
 all_MAGs = merge_MAGs_CAZyme_peptide(all_MAGs)
 MAGs_p = filter(all_MAGs, eukarya_prop < 0.05 & depth != "MIXED")
-```
-
-```{r}
-MAGs_p$log_percent_trans = log(MAGs_p$percent_trans + get.fudge(MAGs_p, "percent_trans"))
-MAGs_p$log_sect_CAZ = log(MAGs_p$percent_sect_CAZ + get.fudge(MAGs_p, "percent_sect_CAZ"))
-MAGs_p$log_sect_pep = log(MAGs_p$percent_sect_pep + get.fudge(MAGs_p, "percent_sect_pep"))
-MAGs_p$log_genome_size = log(MAGs_p$complete_genome_size)
 
 bi_depth = c("Shadow (SRF, DCM)", "Deep (MES, BAT)")
 
-MAGs_p = MAGs_p %>%
-  mutate(is_deep = ifelse(depth %in% c("SRF", "DCM"), bi_depth[1], bi_depth[2])) %>%
+MAGs_p = MAGs_p %>% mutate(
+  trans_fudge = percent_trans + get.fudge(MAGs_p, "percent_trans"),
+  log_percent_trans = log(trans_fudge),
+  log_sect_CAZ = log(percent_sect_CAZ + get.fudge(MAGs_p, "percent_sect_CAZ")),
+  log_sect_pep = log(percent_sect_pep + get.fudge(MAGs_p, "percent_sect_CAZ")),
+  log_genome_size = log(complete_genome_size),
+  is_deep = ifelse(depth %in% c("SRF", "DCM"), bi_depth[1], bi_depth[2])
+) %>%
   mutate(is_deep = factor(is_deep, levels = bi_depth))
+```
 
+```{r}
 t.obj = t.test(log_genome_size~is_deep, MAGs_p)
 
 1/exp(t.obj$conf.int)
@@ -63,41 +64,52 @@ get.depth.trans.corr(xvar = "percent_sect_pep", yvar = "complete_genome_size")
 
 ## addition of models
 ```{r}
-depth.lm = lm(log_percent_trans~depth, data=MAGs_p)
-depth.C.lm = update(depth.lm, .~. + log_sect_CAZ)
-depth.CP.lm = update(depth.C.lm, .~. + log_sect_pep)
+MAGs_p.s = MAGs_p[!is.na(MAGs_p$percent_sect_pep), ]
+MAGs_p.s$Class[is.na(MAGs_p.s$Class)] = "others"
+
+depth.lm = lm(log_percent_trans~depth, data=MAGs_p.s)
+depth.gz.lm = update(depth.lm, .~. + log_genome_size)
+depth.CP.lm = update(depth.lm, .~. + log_sect_CAZ + log_sect_pep)
 depth.CP.gz.lm = update(depth.CP.lm, .~. + log_genome_size)
+# depth.CP.gz.lm2 = update(depth.CP.gz.lm, .~. + I(log_genome_size^3))
 depth.CP.gz.tax.lm = update(depth.CP.gz.lm, .~. + Class)
 
+get.lm.stats = function(lm1, lm2) {
+  F.val = anova(lm1, lm2)$`Pr(>F)`[2]
+  r.sqrt = get_r(lm2)
+  return(c(F.val, r.sqrt))
+}
+
+get_r(depth.lm)
+get.lm.stats(depth.lm, depth.gz.lm)
+```
+
+```{r}
 r.sqrt = c(get_r(depth.lm), get_r(depth.C.lm), 
   get_r(depth.CP.lm), get_r(depth.CP.gz.lm), get_r(depth.CP.gz.tax.lm))
 
 shapiro.test(resid(depth.CP.gz.tax.lm))
 reg.aov = as.data.frame(anova(depth.CP.gz.tax.lm)[1:5, ])
 
-explain.var = c("Depth (SRF/DCM/MES/BAT)", "Secretory CAZyme (%)",
+explain.var = c("Depth", "Secretory CAZyme (%)",
 "Secretory Peptidase (%)", "Complete Genome Size (Mbp)", "Taxonomy (Class)")
 
 rownames(reg.aov) = explain.var
 reg.aov['idx'] = explain.var
 
-reg.aov2 = reg.aov[c("idx","Df", "Sum Sq", "Pr(>F)")]
-reg.aov2$`Sum Sq` = round(reg.aov2$`Sum Sq`, 2)
-reg.aov2$`Pr(>F)` = ifelse(reg.aov2$`Pr(>F)` < 0.00001, "< 1e-14", 
+reg.aov2 = reg.aov[c("idx", "Pr(>F)")]
+# reg.aov2$`Sum Sq` = round(reg.aov2$`Sum Sq`, 2)
+reg.aov2$`Pr(>F)` = ifelse(reg.aov2$`Pr(>F)` < 0.00001, "< 1e-10", 
                            round(reg.aov2$`Pr(>F)`, 5))
 
-colnames(reg.aov2) = c("Explanatory Variables", "Df",
-                       "Explained Sum of Squares", "P for F-test")
+colnames(reg.aov2) = c("Explanatory Variables", "P for F-test")
 
 reg.aov2$`Cumulative R^2` = round(r.sqrt, 3)
 
-write.csv(reg.aov2, file = "out/Table2-MAGs-reg.csv", row.names = FALSE)
-write.csv(reg.aov2, file = paste0(googleDrive.loc, "/Table2-MAGs-reg.csv"),
+write.csv(reg.aov2, file = "out/Table1-MAGs-reg.csv", row.names = FALSE)
+write.csv(reg.aov2, file = paste0(googleDrive.loc, "/Table1-MAGs-reg-raw.csv"),
           row.names = FALSE)
 ```
-
-
-
 
 
 ```{r}
@@ -122,4 +134,39 @@ colnames(sign_sort) = c("class", "depth", "correlation estimate", "count", "adju
 write.csv(sign_sort,"redux_out/per-class-depth-sect-gsize-corr.csv", row.names = FALSE)
 ```
 
+
+# sample size
+# Analysis of small sample size studies using nonparametric bootstrap test with pooled resampling method
+
+```{r}
+# which taxa class is transposase enriched?
+MAGs.t = MAGs_p
+MAGs.t$Class[is.na(MAGs.t$Class)] = "other"
+# MAGs.t = MAGs_p[MAGs.t$Class != "other", ]
+
+big_taxa = MAGs.t %>% 
+  group_by(Class) %>%
+  summarise(count = n()) %>%
+  filter(count >= 10) %>%
+  drop_na()
+
+out.df = data.frame()
+for (taxa in big_taxa$Class){
+  cur = MAGs.t[MAGs.t$Class==taxa, 'trans_fudge']
+  other = MAGs.t[MAGs.t$Class!=taxa, 'trans_fudge']
+  res = suppressWarnings(wilcox.test(cur, other))
+  direction = "more"
+  if (median(cur) < median(other)){
+    direction = "less"
+  }
+  row = c(taxa, res$p.value, direction)
+  out.df = rbind(out.df, row)
+}
+
+colnames(out.df) = c("class", "p.value", "direction")
+
+adjust_pvalue(out.df) %>%
+  arrange(direction) %>%
+  filter(p.value.adj < 0.05)
+```
 

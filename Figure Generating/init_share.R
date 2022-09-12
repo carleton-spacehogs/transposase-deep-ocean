@@ -257,12 +257,7 @@ init_bins <- function(){
   init_env()
   sel_col = c("bin", "Class", "Order", "Family", "complete_genome_size", #"Genus", "Species", 
               "percent_trans", "percent_defense", "Total ORFs", "depth")
-  
-  # from bin_taxon_genomesize_statistics.R
-  low_trans <- c("Flavobacteria","Acidimicrobidae","novelClass_E", 
-                 "Verrucomicrobia","SAR202-2","Opitutae")
-  high_trans <- c("Alphaproteobacteria","Gammaproteobacteria",
-                  "Betaproteobacteria","Deltaproteobacteria")
+
   taxon = read_csv("data/bin_taxon.csv")
   origin = read_csv("../MAG-related/Tara_bins_origin.csv")[,c("bin","depth","size_fraction")]
   taxon = merge(origin, taxon, by = "bin")
@@ -284,8 +279,6 @@ init_bins <- function(){
   all_MAGs = all_MAGs %>% mutate(
     large_classes = ifelse(is.na(Class), "Others Or Unknown",
                     ifelse(Class %in% names(big_taxa), Class,"Others Or Unknown")),
-    class_trans = ifelse(Class %in% low_trans, "low",
-                  ifelse(Class %in% high_trans, "high", "normal")),
     depth = factor(depth, # gsub("unsure", "MIXED", depth),
                    levels = c("SRF", "DCM", "MES", "BAT")),
     `Total ORFs` = as.numeric(`Total ORFs`)
@@ -302,6 +295,7 @@ merge_MAGs_CAZyme_peptide = function(bin_df){
     (signal_CAZ_count + signal_pep_count)/(total_CAZ_count + total_pep_count) * 100,                 
     percent_sect_CAZ = signal_CAZ_count/total_CAZ_count * 100,
     percent_sect_pep = signal_pep_count/total_pep_count * 100)
+  pa$percent_sect_pep[is.na(pa$percent_sect_pep)] = 0 # no peptidase at all
   return(pa)
 }
 

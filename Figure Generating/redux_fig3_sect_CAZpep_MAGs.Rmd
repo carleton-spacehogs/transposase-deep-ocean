@@ -16,7 +16,7 @@ MAGs_p$CAZ_fudge = MAGs_p$percent_sect_CAZ + get.fudge(MAGs_p, "percent_sect_CAZ
 MAGs_p$pep_fudge = MAGs_p$percent_sect_pep + get.fudge(MAGs_p, "percent_sect_pep")
 MAGs_p$trans_fudge = MAGs_p$percent_trans + get.fudge(MAGs_p, "percent_trans")
 
-bi_depth = c("Shadow (SRF, DCM)", "Deep (MES, BAT)")
+bi_depth = c("Shallow (SRF, DCM)", "Deep (MES, BAT)")
 
 MAGs_p = MAGs_p %>%
   mutate(is_deep = ifelse(depth %in% c("SRF", "DCM"), bi_depth[1], bi_depth[2])) %>%
@@ -50,18 +50,6 @@ MAGs.melt = MAGs_p[c(id.col, c("CAZ_fudge", "percent_sect_pep"))] %>%
   reshape2::melt(id = id.col) %>%
   mutate(gene = ifelse(variable == "CAZ_fudge", "CAZyme", "peptidase"))
 
-# genome.size_particle = MAGs.melt %>%
-#   ggplot(aes(x=value, y=complete_genome_size)) +
-#   geom_smooth(method = "lm", se = T) +
-#   scale_color_viridis(option = "H",
-#                       breaks = trans_scale, labels = trans_scale,
-#                       name = "Transposase abundance (%)", trans = "log") +
-#   geom_point(aes(color = trans_fudge), alpha = 0.4, size = 0.7) +
-#   facet_wrap(~gene, ncol = 1) +
-#   xlab("secretory CAZyme/peptidase (%)\n") +
-#   stat_cor(method = "spearman", cor.coef.name = "rho") +
-#   scale_x_log10()
-
 genome.size_particle = MAGs.melt %>%
   ggplot(aes(x=value, y=complete_genome_size)) +
   geom_smooth(method = "lm", se = T) +
@@ -74,20 +62,6 @@ genome.size_particle = MAGs.melt %>%
   xlab("secretory CAZyme/peptidase (%)") +
   stat_cor(method = "spearman", cor.coef.name = "rho", size = 3)
 
-
-MAGs.melt %>%
-  ggplot(aes(x=value, y=log(trans_fudge))) +
-  geom_smooth(method = "lm", se = T) +
-  scale_color_viridis(option = "H",
-                      breaks = trans_scale, labels = trans_scale,
-                      name = "\nTransposase abundance (%)", trans = "log") +
-  scale_x_log10() +
-  facet_grid(is_deep~gene) +
-  geom_jitter(aes(color = trans_fudge), alpha = 0.4, size = 0.7) +
-  xlab("secretory CAZyme/peptidase (%)") +
-  stat_cor(method = "spearman", cor.coef.name = "rho", size = 3)
-
-
 genome.size_particle = left.shared(genome.size_particle) +
   theme(legend.position="top",
         legend.direction = "horizontal")  + 
@@ -96,6 +70,60 @@ genome.size_particle = left.shared(genome.size_particle) +
                                  barlenght = 0.8,
                                  barwidth = 10))
 ```
+
+```{r}
+size_CAZ = cut(MAGs_p$CAZ_fudge, breaks = c(-1, 10, 20, 100))
+size_pep = cut(MAGs_p$percent_sect_pep, breaks = c(-1, 20, 40, 100))
+
+x.gsub = function(vec) {return (gsub(",", "-",
+  gsub(']','', fixed=TRUE, gsub('-1', '0', 
+  gsub('(','', fixed=TRUE, vec))))) }
+
+size_CAZ = x.gsub(size_CAZ)
+size_pep = x.gsub(size_pep)
+
+MAGs_p$`MAG CAZyme` = size_CAZ
+MAGs_p$`MAG peptidase` = size_pep
+
+MAGs.melt = MAGs_p[c(id.col, c("MAG CAZyme", "MAG peptidase"))] %>% 
+  reshape2::melt(id = id.col) %>%
+  mutate(gene = variable,
+         percent.CAZ.pep = value)
+
+gs.particle.stats = MAGs.melt %>%
+  group_by(is_deep, gene) %>%
+  wilcox_test(complete_genome_size~percent.CAZ.pep) %>%
+  adjust_pvalue(method = "BY") %>%
+  filter(p.adj < 0.05) %>%
+  add_significance()
+
+gs.particle.stats$xmin = c(1,1,1,1,2,1,1,1,1,2)
+gs.particle.stats$xmax = c(2,3,2,3,3,2,3,2,3,3)
+gs.particle.stats$y.position = log10(c(10,12,9,11,14.5,10,12,11,13.5,17.5) )
+
+genome.size_particle = MAGs.melt %>% # 
+  ggplot(aes(x=percent.CAZ.pep, y=complete_genome_size)) +
+  geom_boxplot(outlier.shape = NA, varwidth = TRUE) +
+  scale_color_viridis(option = "H",
+                      breaks = trans_scale, labels = trans_scale,
+                      name = "\nTransposase abundance (%)", trans = "log") +
+  facet_grid(is_deep~gene, scale = "free_x") +
+  geom_jitter(aes(color = trans_fudge), alpha = 0.4, size = 0.7, width = 0.15) +
+  xlab("secretory CAZyme/peptidase (%)") +
+  stat_pvalue_manual(gs.particle.stats, tip.length = 0.01,
+    label = "p.adj.signif", hide.ns = TRUE )
+
+genome.size_particle = left.shared(genome.size_particle) +
+  theme(legend.position="top",
+        legend.direction = "horizontal")  + 
+  guides(color = guide_colourbar(title.position = "top",
+                                 label.hjust = 0.5,
+                                 barlenght = 0.8,
+                                 barwidth = 10)) +
+  stat_summary(fun.data = boxplot.give.nr, 
+               geom = "text", position=position_nudge(x = 0, y = 0.3))
+```
+
 
 ## bigger geneome, more transposases
 ```{r}
@@ -133,22 +161,11 @@ MAGs_p = MAGs_p %>%
    ifelse(depth == "MES", depth.c[3], depth.c[4] )))) %>%
   mutate(depth.count = factor(depth.count, levels = rev(depth.c)))
 
-aov.res = aov(complete_genome_size~depth.count, data = MAGs_p)
-letters.df = data.frame(multcompLetters(TukeyHSD(aov.res)$depth.count[,4])$Letters)
-
-colnames(letters.df)[1] = "Letter"
-letters.df$depth.count = rownames(letters.df)
-
-placement = MAGs_p %>%
-  group_by(depth.count) %>%
-  summarise(y.pos = quantile(complete_genome_size)[4])
-
-letters.df = left_join(letters.df, placement) 
-
 depth_genome.size = MAGs_p %>%
   ggplot(aes(y=complete_genome_size, x=depth.count)) +
   geom_boxplot(outlier.alpha = 0.2) +
-  geom_text(data = letters.df, aes(x = depth.count, y = y.pos, label = Letter),
+  geom_text(data = letters.df, 
+            aes(x = depth.count, y = y.pos, label = Letter),
             size = 4, color = "black", hjust = -0.4, vjust = -0.4) +
   coord_flip()
 
@@ -160,13 +177,13 @@ depth_genome.size = left.shared(depth_genome.size) +
 ```{r}
 left = ggarrange(depth_genome.size, genome.size_particle,
                  labels = c("A", "B"),
-                 ncol = 1, heights = c(2.7,7))
+                 ncol = 1, heights = c(2.3,7))
 
 ggarrange(left, genome.size_trans.abun,
-          labels = c("", "C"), ncol = 2, widths = c(8,5))
+          labels = c("", "C"), ncol = 2, widths = c(8, 5))
 
 ggsave("out/F3_MAG_transposase_genome_size_v2.pdf",
-       height = 8, width = 6)
+       height = 8, width = 7)
 
 ggsave(paste0(googleDrive.loc, "/Figure3_MAG_transposase_genome_size.pdf"),
        plot = last_plot(), height = 8, width = 7)
@@ -200,21 +217,56 @@ conserved trait in bathypelagic prokaryotes
 Can be both particle-associated and free-living, still have high secretory CAZyme because they are polysaccharide degrading:
 Verrucomicrobia Are Candidates for Polysaccharide-Degrading Bacterioplankton in an Arctic Fjord of Svalbard: predominantly heterotrophic, carbohydrate-degrading metabolism
 
+# Class particle association
+```{r}
+class.median = MAGs_p %>%
+  filter(!is.na(percent_sect_pep)) %>%
+  group_by(Class) %>%
+  mutate(n = n()) %>%
+  filter(n >= 10 & !Class == "Others Or Unknown" & !Class == "other") %>%
+  summarise(median_CAZ = mean(percent_sect_CAZ),
+            median_pep = mean(percent_sect_pep)) %>%
+  arrange(median_CAZ + median_pep)
+```
+
 ```{r}
 MAGs_p2 = MAGs_p %>%
-  group_by(Class, depth) %>%
-  mutate(n = n()) %>%
-  filter(n >= 5)
+  filter(Class %in% class.median$Class) %>%
+  mutate(Class = factor(Class, levels = class.median$Class),
+          CAZyme = percent_sect_CAZ,
+          peptidase = percent_sect_pep)
+
+id.v2 = c(id.col, "Class")
+tax.melt = MAGs_p2[c(id.v2, c("CAZyme", "peptidase"))] %>% 
+  reshape2::melt(id = id.v2) %>%
+  mutate(gene = variable,
+         percent.CAZ.pep = value)
+
+tax.melt %>%
+  add_count(.,Class) %>% 
+  group_by(Class) %>% 
+  mutate(n=ifelse(row_number(n)!=1,NA,n)) %>%
+  ggplot(aes(x=percent.CAZ.pep, y=gene)) +
+  geom_boxplot(outlier.alpha = 0.3, alpha = 0.5) +
+  facet_wrap(~Class, ncol = 4) +
+  labs(x = "secretory CAZyme/peptidase ORFs (%)") +
+  theme_classic() +
+  theme(axis.title.y = element_blank()) +
+  # geom_jitter(aes(color = log(trans_fudge))) +
+  geom_text(aes(label=n, x =65, y = 1.5),size=3)
+
+ggsave("out/S5-class-secretory-CAZyme-peptidase.pdf",
+       height = 4, width = 7)
 
 MAGs_p2 %>%
-  ggplot(aes(x=percent_sect_CAZpep, y=fct_rev(depth))) +
-  geom_boxplot(outlier.alpha = 0.3, alpha = 0.5) +
-  facet_wrap(~large_classes) +
-  labs(x = "secretory CAZyme and peptidase ORFs (%)",
-       y = "Depth") +
+  ggplot(aes(y = fct_rev(Class), x = trans_fudge)) +
+  geom_boxplot() +
+  scale_x_log10() +
+  labs(x = "transposase ORF in MAGs (%)",
+       y = "class") +
   theme_classic() +
   stat_summary(fun.data = boxplot.give.nr, 
-               geom = "text", position=position_nudge(x = 15, y = 0))
+               geom = "text", position=position_nudge(x = 0.05, y = 0))
 
 ggsave("redux_out/per-class-depth-secretory-percent.pdf", plot = last_plot(),
        height = 6, width = 8)
@@ -258,4 +310,27 @@ colnames(sign_sort) = c("class", "depth", "correlation estimate", "count", "adju
 write.csv(sign_sort,"redux_out/per-class-depth-sect-gsize-corr.csv", row.names = FALSE)
 ```
 
+## genome size and transposase abundance via cut
+```{r}
+MAGs_p %>%
+  ggplot(aes(x=complete_genome_size, y=percent_trans)) + 
+  geom_point(alpha = 0.3, size = 1) +
+  stat_cor(method = "spearman", cor.coef.name = "rho",
+           label.x.npc = 0,
+           label.y.npc = 0.5, 
+           aes(label = paste(..r.label.., ..p.., sep = "~"))) +
+    # aes(label = paste(..r.label.., cut(..p.., 
+    # breaks = c(-Inf, 0.0001, 0.001, 0.01, 0.05, Inf),
+    # labels = c("'****'", "'***'", "'**'", "'*'", "'ns'")),
+    # sep = "~"))) +
+  facet_wrap(~depth, ncol= 1) +
+  coord_cartesian(ylim = c(0,0.8)) +
+  ylab("transposase ORF in MAGs (%)") +
+  xlab("complete genome size (Mbp)") +
+  theme_classic() +
+  geom_smooth(se = T, method = "lm", formula = y ~ x + I(x^2)) +
+  # scale_x_continuous(limits = c(1, 15), trans = "log10") +
+  # scale_x_log10() +
+  theme(legend.position = "none")
 
+```

@@ -14,26 +14,6 @@ mala_cov$size_fraction <- ifelse(mala_cov$lower_filter_size == "0.2", "planktoni
 DNA_tara$size_fraction <- ifelse(DNA_tara$upper_size_dna == "1.6", "planktonic", "particle")
 ```
 
-## Will worry about scales later
-```{r}
-trans_RNA_scale <- c(-4.5, -4, -3.5, -3)
-trans_RNA_percent_scale <- c("0.003", "0.010", "0.032", "0.100")
-trans_scale <- c(-2.5, -3, -3.5, -4, -4.5)
-trans_percent_scale <- c("0.316", "0.100", "0.032", "0.01", "0.003")
-CAZ_percent_scale <- c(0.8, 0.4, 0.2, 0.1)
-CAZ_scale <- log10(CAZ_percent_scale/100)
-
-# BAT.sample.size = mala_cov[c('sample', 'lower_filter_size')]
-# BAT.sample.size$filter_size = ifelse(
-#   BAT.sample.size$lower_filter_size == 0.2, "0.2-0.8", "0.8-5.0")
-# 
-# BAT.sample.size = filter(BAT.sample.size, filter_size == "0.2-0.8")
-# 
-# BAT.COG.corr = COG.corr[COG.corr$Layer_DNA == "BAT", ]
-# BAT.COG.corr = merge(BAT.COG.corr, BAT.sample.size, on = "sample")
-# tara.COG.corr = COG.corr[COG.corr$Layer_DNA != "BAT", ]
-```
-
 ## Data preparations
 ```{r}
 DNA_RNA_tara_g = DNA_RNA_tara %>%
@@ -51,7 +31,6 @@ pt_sel_col <- c("log_dna_trans", "log_dna_defense","DNA_transposase",
                 "percent_dna_sect_CAZpep","percent_dna_sect_CAZ",
                 "percent_dna_sect_pep",
                 "Ocean_DNA", "Layer_DNA", "Oxygen_DNA", "size_fraction")
-#  !mala_cov$sample %in% BAT.sample.size$sample
 
 tmp = rbind(mala_cov[ ,pt_sel_col], DNA_tara[,pt_sel_col])
 pt_to_graph = tmp %>%
@@ -75,47 +54,58 @@ The total abundance of CAZyme and peptidase are similar in magnitude
 
 ## RNA particle association to transposase abundance
 ```{r}
-ann_text = data.frame(percent_rna_sect_CAZpep = 20, DNA_trans_percent = 0.05,
+ann_text = data.frame(percent_rna_sect_CAZ = 20, DNA_trans_percent = 0.05,
            label = "No metatranscriptome\nsamples available",
            Layer_RNA = factor("BAT",levels = c("SRF", "DCM", "MES", "BAT")))
 
-DNA_RNA_tara_g %>%
-  ggplot(aes(x=percent_rna_sect_CAZpep, y=DNA_trans_percent)) +
-  # scale_y_continuous(breaks = trans_scale, labels = trans_percent_scale) +
+RNA_tara_g %>%
+  ggplot(aes(x=percent_rna_sect_pep, y=RNA_transposase)) +
   scale_color_brewer(palette="Set1")+
+  stat_cor(method = "spearman", cor.coef.name = "rho") +
   facet_wrap(~Layer_RNA, ncol = 2) +
   geom_point(aes(color = Ocean)) + 
   scale_y_log10() +
   theme_classic() +
   labs( y = "Transposase gene abundance (%)",
         x = "Secretory CAZyme and peptidase transcript (%)") +
-  geom_smooth(method = "lm", se = T) +
-  geom_text(data = ann_text,label=ann_text$label)
+  geom_smooth(method = "lm", se = T)
+  # geom_text(data = ann_text,label=ann_text$label)
   # theme(legend.position = "none")
 
 ## supplementary figure 1
-ggsave("out/sectCAZpep_transpose_RNA.pdf",
-       plot = last_plot(), width = 6.5, height = 5) 
+# ggsave("out/sectCAZpep_transpose_RNA.pdf",
+#        plot = last_plot(), width = 6.5, height = 5) 
 ```
 
 ## DNA particle assocation to transpoase abundance
 ```{r}
-pt_to_graph %>%
-  ggplot(aes(x=percent_dna_sect_CAZpep, y=DNA_trans_percent)) +
+id.col = c("Depth", "Ocean_DNA", "DNA_trans_percent")
+pt.depth.melt = pt_to_graph[c(id.col, "percent_dna_sect_CAZ",
+                              "percent_dna_sect_pep")] %>%
+  reshape2::melt(id = id.col)
+
+pt.depth.melt %>%
+  mutate(gene = ifelse(variable == "percent_dna_sect_CAZ", "CAZyme", "peptidase")) %>%
+  ggplot(aes(x=value, y=DNA_trans_percent)) +
   scale_color_brewer(palette="Set1")+
-  facet_wrap(~Depth) + # , scales = "free_y"
+  facet_grid(Depth ~ gene, scale = "free_x") +
   geom_point(aes(color = Ocean_DNA)) + 
-  theme_classic() +
+  stat_cor(method = "spearman", cor.coef.name = "rho",
+           aes(label = paste(..r.label.., cut(..p.., 
+    breaks = c(-Inf, 0.0001, 0.001, 0.01, 0.05, Inf),
+    labels = c("'****'", "'***'", "'**'", "'*'", "'ns'")), 
+    sep = "~"))) +
+  theme_bw() +
   scale_y_log10() +
   labs( color = "Ocean", 
     y = "Transposase gene abundance (%)",
-    x = "Secretory CAZyme and peptidase genes (%)") +
+    x = "Secretory CAZyme/peptidase genes (%)") +
   geom_smooth(method = "lm", se = T)  +
-  theme() # legend.position = "none"
+  theme()
 
 ## supplementary figure 2
 ggsave("out/sectCAZpep_transpose_DNA.pdf",
-       plot = last_plot(), width = 6.5, height = 5)
+       plot = last_plot(), width = 6.5, height = 8)
 ```
 
 
@@ -132,12 +122,9 @@ gen_corr_shared = function(g, gene, type) {
     scale_color_brewer(palette="Set1") +
     # geom_smooth(method = "lm", se = T) +
     stat_cor(method = "spearman", cor.coef.name = "rho") +
-    # stat_poly_eq(formula = y ~ x, aes(label = paste(..eq.label.., 
-    #                 ..rr.label.., sep = "~~~")), parse=TRUE) + 
     labs( color = "Depth",
           x = sprintf("Secretory %s %ss (%%)", gene, type),
           y = sprintf("Transposase\n%s abundance (%%)", type))
-    
   return(g)
 }
 
@@ -334,16 +321,20 @@ reg1 = reg.stats(pt_to_graph[!is.na(pt_to_graph$Oxygen_DNA), ],
                  "Layer_DNA", "Oxygen_DNA", "log_dna_trans")
 reg2 = reg.stats(pt_to_graph, "Layer_DNA", "percent_dna_sect_CAZ", "log_dna_trans")
 reg3 = reg.stats(pt_to_graph, "Layer_DNA", "percent_dna_sect_pep", "log_dna_trans")
-reg4 = reg.stats(RNA_tara_g, "Layer_RNA", "log_percent_CAZ", "log_rna_trans")
-reg5 = reg.stats(RNA_tara_g, "Layer_RNA", "log_percent_pep", "log_rna_trans")
+RNA_tara.oxy = RNA_tara_g[!is.na(RNA_tara_g$Oxygen_RNA), ]
+reg4 = reg.stats(RNA_tara.oxy, "Layer_RNA", "Oxygen_RNA", "log_rna_trans")
+reg5 = reg.stats(RNA_tara_g, "Layer_RNA", "log_percent_CAZ", "log_rna_trans")
+reg6 = reg.stats(RNA_tara_g, "Layer_RNA", "log_percent_pep", "log_rna_trans")
 
-CAZpep.reg = rbind(reg1, reg2, reg3, reg4, reg5) %>%
+CAZpep.reg = rbind(reg1, reg2, reg3, reg4, reg5, reg6) %>%
   adjust_pvalue(method = "BY")
 
 write.csv(CAZpep.reg, file = "redux_out/regression-results.csv")
-# DNA.corr.depth = lm(log_dna_trans~Depth, pt_to_graph )
-# DNA.corr.particle = lm(log_dna_trans~Depth + log(percent_dna_sect_CAZpep), pt_to_graph )
-# anova(DNA.corr.depth, DNA.corr.particle)
+
+# ggplot(RNA_tara.oxy, aes(x = Oxygen_RNA, y = log_rna_trans)) +
+#   geom_point() +
+#   facet_wrap(~Layer_RNA)
+# cor.test(RNA_tara.oxy$Oxygen_RNA, RNA_tara.oxy$log_rna_trans, method = "sp")
 ```
 
 
@@ -407,3 +398,22 @@ wilcox.test(RNA.arctic, RNA.non.arctic)
 ```
 
 
+## Will worry about scales later
+```{r}
+trans_RNA_scale <- c(-4.5, -4, -3.5, -3)
+trans_RNA_percent_scale <- c("0.003", "0.010", "0.032", "0.100")
+trans_scale <- c(-2.5, -3, -3.5, -4, -4.5)
+trans_percent_scale <- c("0.316", "0.100", "0.032", "0.01", "0.003")
+CAZ_percent_scale <- c(0.8, 0.4, 0.2, 0.1)
+CAZ_scale <- log10(CAZ_percent_scale/100)
+
+# BAT.sample.size = mala_cov[c('sample', 'lower_filter_size')]
+# BAT.sample.size$filter_size = ifelse(
+#   BAT.sample.size$lower_filter_size == 0.2, "0.2-0.8", "0.8-5.0")
+# 
+# BAT.sample.size = filter(BAT.sample.size, filter_size == "0.2-0.8")
+# 
+# BAT.COG.corr = COG.corr[COG.corr$Layer_DNA == "BAT", ]
+# BAT.COG.corr = merge(BAT.COG.corr, BAT.sample.size, on = "sample")
+# tara.COG.corr = COG.corr[COG.corr$Layer_DNA != "BAT", ]
+```

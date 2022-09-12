@@ -45,7 +45,7 @@ fg1_to_graph %>%
   scale_y_continuous(limits = c(4, 5000), trans = "log10") +
   labs(y="Depth (m)", x="Transposase gene abundance (%)", colour="Depth") +
   geom_jitter(aes(color = Layer_DNA), size = 1, height = 0.015) +
-  geom_smooth(method = "lm", se = F, color = "orange") +
+  geom_smooth(method = "lm", se = T, color = "orange") +
   scale_color_manual(breaks=color_breaks,
                      labels=long_depths,
                      values=colors)

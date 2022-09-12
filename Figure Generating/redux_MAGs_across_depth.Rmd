@@ -1,0 +1,109 @@
+---
+title: "Particle associated lifestyle and transposase taxon across depths"
+author: "Jimmy Zhong"
+date: "9/12/2022"
+output: html_document
+---
+
+```{r}
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
+source("./init_share.R")
+g(all_MAGs, low_trans, high_trans) %=% init_bins()
+
+all_MAGs = merge_MAGs_CAZyme_peptide(all_MAGs)
+MAGs.d = filter(all_MAGs, eukarya_prop < 0.05 & depth != "MIXED")
+
+depths.lvl = c("SRF","DCM","MES","BAT")
+```
+
+## increasing particle-associated MAGs in deep ocean
+```{r}
+lifstyl = c("Planktonic (secretory CAZyme < 10% & peptidase < 20%)",
+            "Mixed (not planktonic or particle-associated)", 
+            "Particle-associated (secretory CAZ > 20% & pep > 40%)")
+
+MAGs.d = MAGs.d %>%
+  mutate( sum.CAZpep = percent_sect_CAZ + percent_sect_pep,
+  lifestyle = ifelse(percent_sect_CAZ < 10 & percent_sect_pep < 20, lifstyl[1],
+              ifelse(percent_sect_CAZ > 20 & percent_sect_pep > 40, lifstyl[3], lifstyl[2])))
+
+# MAGs.d.melt = MAGs.d[c("depth", "percent_sect_CAZ", "percent_sect_pep")] %>%
+#   reshape2::melt(id = c("depth"))
+# 
+# MAGs.d.melt %>%
+#   ggplot(aes(x = value, y=fct_rev(depth))) +
+#   geom_boxplot() +
+#   facet_wrap(~variable) +
+#   scale_x_log10()
+
+depth_size = MAGs.d %>%
+  count(lifestyle, depth) %>%
+  mutate(depth = factor(depth, levels = depths.lvl),
+         lifestyle = factor(lifestyle, levels = rev(lifstyl)))
+
+MAG_l = ggplot(depth_size, aes(fill=lifestyle, y=fct_rev(depth), x=n))  + 
+  geom_bar(position="fill", stat="identity") +
+  geom_text(aes(label = n), position = position_fill(vjust = 0.5)) +
+  xlab("Proportion of MAGs") +
+  ylab("Depth") +
+  scale_fill_manual(values = rev(c('green','gray', "orange")))+
+  guides(fill=guide_legend(title="MAG Lifestyle", reverse = TRUE)) + #, reverse = TRUE
+  theme_classic() +
+  theme(legend.justification='left',
+        legend.margin = margin(0),
+        legend.position="top",
+        legend.direction="vertical")
+
+```
+
+
+```{r}
+# from redux_fig3_stats.R
+low_trans <- c("Acidimicrobidae", "novelClass_E",
+               "Flavobacteria", "SAR202-2")
+high_trans <- c("Alphaproteobacteria","Gammaproteobacteria",
+                "Betaproteobacteria","Actinobacteria")
+
+labels = c("Unknown Taxon",
+           "High transposase abundance", 
+           "Average transposase abundance",
+           "Low transposase abundance")
+
+unknown = c("Others Or Unknown", "other")
+g_tax_col <- c("steelblue","cyan", "yellow")
+
+MAGs.d = MAGs.d %>%
+  mutate(class_trans = ifelse(is.na(Class), labels[3],
+    ifelse(Class %in% high_trans, labels[2], 
+    ifelse(Class %in% low_trans, labels[4], labels[3] ))),
+  depth = factor(depth, levels=depths.lvl)) %>%
+  mutate(class_trans = factor(class_trans, levels =labels))
+
+depth_trans = MAGs.d %>% count(class_trans, depth)
+
+MAG_r = ggplot(depth_trans, aes(fill=class_trans, y=fct_rev(depth), x=n)) + 
+  geom_bar(position="fill", stat="identity") +
+  geom_text(aes(label = n), position = position_fill(vjust = 0.5)) +
+  xlab("Proportion of MAGs") +
+  ylab("Depth") +
+  guides(fill=guide_legend(title="MAG taxon class category", reverse = TRUE)) +
+  scale_fill_manual(guide = guide_legend(reverse = TRUE),
+                    values = g_tax_col)+
+  theme_classic() +
+  theme(axis.title.y = element_blank(),
+        # legend.title = element_blank(),
+        legend.justification='left',
+        legend.margin = margin(0),
+        legend.position="top",
+        legend.direction="vertical")
+```
+
+```{r}
+ggarrange(MAG_l, MAG_r, labels = c("A", "B"), 
+          ncol = 2, nrow = 1, widths = c(0.53, 0.5))
+
+ggsave("out/S3_MAG_prop_depth_combine.pdf", 
+       plot = last_plot(),
+       height = 3.5,
+       width = 9)
+```
