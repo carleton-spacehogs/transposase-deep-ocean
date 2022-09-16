@@ -1,6 +1,6 @@
-"Explanatory Variables","P for F-test","Cumulative R^2"
-"Depth","< 1e-10",0.343
-"Secretory CAZyme (%)","< 1e-10",0.368
-"Secretory Peptidase (%)","0.00644",0.37
-"Complete Genome Size (Mbp)","< 1e-10",0.53
-"Taxonomy (Class)","< 1e-10",0.624
+"Explanatory Variables","P for F-test"
+"Depth","< 1e-10"
+"Secretory CAZyme (%)","< 1e-10"
+"Secretory Peptidase (%)","0.00374"
+"Complete Genome Size (Mbp)","< 1e-10"
+"Taxonomy (Class)","< 1e-10"

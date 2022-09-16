@@ -30,7 +30,10 @@ oxy_share = function(g) {
     scale_y_continuous(trans = 'log10', 
                        labels = function(x) ifelse(x == 0, "0", x)) +
     theme_classic() +
-    xlab(expression(paste("Dissolved Oxygen (", mu, "mol/Kg)"))) +
+    theme(axis.text.x = element_text(color="black"),
+          axis.text.y = element_text(color="black"),
+          legend.title = element_blank()) +
+    xlab(expression(paste("dissolved oxygen (", mu, "mol/Kg)"))) +
     scale_color_brewer(palette="Set1") +
     stat_cor(method = "spearman", cor.coef.name = "rho",
              label.y.npc="bottom", label.x.npc = "left") +
@@ -45,13 +48,12 @@ oxy_DNA = oxy_to_graph %>%
   ggplot(aes(x=Oxygen_DNA, y=DNA_transposase*100)) +
   facet_wrap(~Layer_DNA, nrow = 2) + # scales = "free"
   geom_point(aes(color = Ocean_DNA)) + 
-  ylab("Transposase gene abundance (%)") +
-  theme()
+  ylab("transposase gene abundance (%)")
 
 oxy_share(oxy_DNA)
 
 ggsave("out/S2_oxygen_transposase_corr.pdf", 
-       plot = last_plot(), width = 7.5, height = 5.5)
+       plot = last_plot(), width = 7, height = 5)
 ```
 
 

@@ -39,44 +39,6 @@ pt_to_graph = tmp %>%
   mutate(Depth = factor(Layer_DNA, levels = c("SRF","DCM","MES","BAT")))
 ```
 
-> summary(pt_to_graph$DNA_peptidase)
-    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
-0.004958 0.026718 0.029942 0.029231 0.034359 0.046223 
-> summary(pt_to_graph$DNA_CAZyme)
-    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
-0.004601 0.015382 0.018450 0.018156 0.020963 0.029557
-> sd(pt_to_graph$DNA_CAZyme)
-[1] 0.004086007
-> sd(pt_to_graph$DNA_peptidase)
-[1] 0.00777566
-
-The total abundance of CAZyme and peptidase are similar in magnitude
-
-## RNA particle association to transposase abundance
-```{r}
-ann_text = data.frame(percent_rna_sect_CAZ = 20, DNA_trans_percent = 0.05,
-           label = "No metatranscriptome\nsamples available",
-           Layer_RNA = factor("BAT",levels = c("SRF", "DCM", "MES", "BAT")))
-
-RNA_tara_g %>%
-  ggplot(aes(x=percent_rna_sect_pep, y=RNA_transposase)) +
-  scale_color_brewer(palette="Set1")+
-  stat_cor(method = "spearman", cor.coef.name = "rho") +
-  facet_wrap(~Layer_RNA, ncol = 2) +
-  geom_point(aes(color = Ocean)) + 
-  scale_y_log10() +
-  theme_classic() +
-  labs( y = "Transposase gene abundance (%)",
-        x = "Secretory CAZyme and peptidase transcript (%)") +
-  geom_smooth(method = "lm", se = T)
-  # geom_text(data = ann_text,label=ann_text$label)
-  # theme(legend.position = "none")
-
-## supplementary figure 1
-# ggsave("out/sectCAZpep_transpose_RNA.pdf",
-#        plot = last_plot(), width = 6.5, height = 5) 
-```
-
 ## DNA particle assocation to transpoase abundance
 ```{r}
 id.col = c("Depth", "Ocean_DNA", "DNA_trans_percent")
@@ -98,10 +60,12 @@ pt.depth.melt %>%
   theme_bw() +
   scale_y_log10() +
   labs( color = "Ocean", 
-    y = "Transposase gene abundance (%)",
-    x = "Secretory CAZyme/peptidase genes (%)") +
+    y = "transposase gene abundance (%)",
+    x = "secretory CAZyme/peptidase genes (%)") +
   geom_smooth(method = "lm", se = T)  +
-  theme()
+  theme(axis.text.x = element_text(color="black"),
+        axis.text.y = element_text(color="black"),
+        legend.title = element_blank())
 
 ## supplementary figure 2
 ggsave("out/sectCAZpep_transpose_DNA.pdf",
@@ -114,7 +78,9 @@ ggsave("out/sectCAZpep_transpose_DNA.pdf",
 Correlation with transposase abundance (DNA and RNA)
 ```{r}
 gen_corr_shared = function(g, gene, type) {
-  g = g + theme_classic() + 
+  g = g + theme_classic() +
+    theme(axis.text.x = element_text(color="black"),
+          axis.text.y = element_text(color="black")) +
     scale_y_continuous(trans = "log10",
                        limits = c(min(RNA_tara_g$RNA_trans_percent)*0.99,
                                   1.2),
@@ -123,8 +89,8 @@ gen_corr_shared = function(g, gene, type) {
     # geom_smooth(method = "lm", se = T) +
     stat_cor(method = "spearman", cor.coef.name = "rho") +
     labs( color = "Depth",
-          x = sprintf("Secretory %s %ss (%%)", gene, type),
-          y = sprintf("Transposase\n%s abundance (%%)", type))
+          x = sprintf("secretory %s %ss (%%)", gene, type),
+          y = sprintf("transposase\n%s abundance (%%)", type))
   return(g)
 }
 
@@ -170,12 +136,12 @@ ggsave("out/CAZyme_peptidase_separate_corr.pdf",
 
 ## Show that deep oceans rely more on particle-associated lifestyle (RNA)
 ```{r}
-RNA_tara_g %>%
-  ggplot(aes(x = percent_rna_sect_pep, y= log_rna_trans)) +
-  geom_point(aes(color = Layer_RNA)) +
-  scale_x_log10() +
-  facet_wrap(~Ocean) +
-  geom_smooth(method = "lm", se = F)
+# RNA_tara_g %>%
+#   ggplot(aes(x = percent_rna_sect_pep, y= log_rna_trans)) +
+#   geom_point(aes(color = Layer_RNA)) +
+#   scale_x_log10() +
+#   facet_wrap(~Ocean) +
+#   geom_smooth(method = "lm", se = F)
 
 summary(lm(log_dna_trans~Depth + Ocean + Oxygen_DNA, pt_to_graph))
 summary(lm(log_dna_trans~Depth + Ocean + Oxygen_DNA, DNA_RNA_tara))
@@ -189,7 +155,10 @@ gen_depth_shared = function(data, data.test) {
                        tip.length = 0.01, hide.ns = TRUE)+ 
     scale_color_brewer(palette="Set1") +
     theme_classic() + 
-    theme(axis.title.y = element_blank()) +
+    theme(axis.title.y = element_blank(),
+          legend.title = element_blank(),
+          axis.text.x = element_text(color="black"),
+          axis.text.y = element_text(color="black")) +
     coord_flip()
   return(g)
 }
@@ -271,7 +240,7 @@ ggarrange( nrow = 2,
 
 ## supplementary figure 3
 ggsave("out/sectCAZpep_increase_depth.pdf",
-       plot = last_plot(), width = 9, height = 5.5)
+       plot = last_plot(), width = 9, height = 4.5)
 ```
 
 ## stats section for particle-assocation transposase correlation
@@ -321,8 +290,8 @@ reg1 = reg.stats(pt_to_graph[!is.na(pt_to_graph$Oxygen_DNA), ],
                  "Layer_DNA", "Oxygen_DNA", "log_dna_trans")
 reg2 = reg.stats(pt_to_graph, "Layer_DNA", "percent_dna_sect_CAZ", "log_dna_trans")
 reg3 = reg.stats(pt_to_graph, "Layer_DNA", "percent_dna_sect_pep", "log_dna_trans")
-RNA_tara.oxy = RNA_tara_g[!is.na(RNA_tara_g$Oxygen_RNA), ]
-reg4 = reg.stats(RNA_tara.oxy, "Layer_RNA", "Oxygen_RNA", "log_rna_trans")
+# RNA_tara.oxy = RNA_tara_g[!is.na(RNA_tara_g$Oxygen_RNA), ]
+# reg4 = reg.stats(RNA_tara.oxy, "Layer_RNA", "Oxygen_RNA", "log_rna_trans")
 reg5 = reg.stats(RNA_tara_g, "Layer_RNA", "log_percent_CAZ", "log_rna_trans")
 reg6 = reg.stats(RNA_tara_g, "Layer_RNA", "log_percent_pep", "log_rna_trans")
 
@@ -416,4 +385,43 @@ CAZ_scale <- log10(CAZ_percent_scale/100)
 # BAT.COG.corr = COG.corr[COG.corr$Layer_DNA == "BAT", ]
 # BAT.COG.corr = merge(BAT.COG.corr, BAT.sample.size, on = "sample")
 # tara.COG.corr = COG.corr[COG.corr$Layer_DNA != "BAT", ]
+```
+
+
+> summary(pt_to_graph$DNA_peptidase)
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+0.004958 0.026718 0.029942 0.029231 0.034359 0.046223 
+> summary(pt_to_graph$DNA_CAZyme)
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+0.004601 0.015382 0.018450 0.018156 0.020963 0.029557
+> sd(pt_to_graph$DNA_CAZyme)
+[1] 0.004086007
+> sd(pt_to_graph$DNA_peptidase)
+[1] 0.00777566
+
+The total abundance of CAZyme and peptidase are similar in magnitude
+
+## RNA particle association to transposase abundance
+```{r}
+ann_text = data.frame(percent_rna_sect_CAZ = 20, DNA_trans_percent = 0.05,
+           label = "No metatranscriptome\nsamples available",
+           Layer_RNA = factor("BAT",levels = c("SRF", "DCM", "MES", "BAT")))
+
+RNA_tara_g %>%
+  ggplot(aes(x=percent_rna_sect_pep, y=RNA_transposase)) +
+  scale_color_brewer(palette="Set1")+
+  stat_cor(method = "spearman", cor.coef.name = "rho") +
+  facet_wrap(~Layer_RNA, ncol = 2) +
+  geom_point(aes(color = Ocean)) + 
+  scale_y_log10() +
+  theme_classic() +
+  labs( y = "Transposase gene abundance (%)",
+        x = "Secretory CAZyme and peptidase transcript (%)") +
+  geom_smooth(method = "lm", se = T)
+  # geom_text(data = ann_text,label=ann_text$label)
+  # theme(legend.position = "none")
+
+## supplementary figure 1
+# ggsave("out/sectCAZpep_transpose_RNA.pdf",
+#        plot = last_plot(), width = 6.5, height = 5) 
 ```

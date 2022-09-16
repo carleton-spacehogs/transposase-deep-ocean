@@ -16,11 +16,14 @@ mala_cov = init_mala_cov()
 ```{r}
 fg1_sel_col = c("DNA_transposase", "Depth",  "Ocean_DNA", "Layer_DNA")
 
+depth = c("SRF","DCM","MES","BAT")
+
 tmp = rbind(mala_cov[ ,fg1_sel_col], DNA_tara[,fg1_sel_col])
 fg1_to_graph = tmp %>%
   mutate(DNA_trans_percent = DNA_transposase * 100) %>%
   filter(Layer_DNA != "MIX" & Ocean_DNA != "Arctic") %>%
-  mutate(Layer_DNA = factor(Layer_DNA, levels = c("SRF","DCM","MES","BAT")))
+  mutate(depth = factor(Layer_DNA, levels = rev(depth)),
+         is_deep = ifelse(Layer_DNA %in% c("SRF","DCM"), "SRF, DCM", "MES, BAT"))
 ```
 
 ```{r}
@@ -28,36 +31,111 @@ long_depths = c("SRF (surface)", "DCM (deep chlorophyll maximum)",
                 "MES (mesopelagic zone)", "BAT (bathypelagic zone)")
 
 colors <- c("light blue","sky blue", "steelblue","blue")
-color_breaks <- c('SRF','DCM','MES','BAT')
-depth_scale = c(5, 10, 40, 100, 400, 1000, 4000)
-d_scale = log10(depth_scale)
-fg1_to_graph$log_depth <- log10(fg1_to_graph$Depth)
 
-# install.packages("ggforce")
-library(ggforce)
-
-fg1_to_graph %>% 
-  # ggplot(aes(y = log_depth * -1, x = DNA_trans_percent)) +
-  ggplot(aes(y = Depth, x = DNA_trans_percent)) +
+fg1_to_graph %>%
+  ggplot(aes(y = DNA_trans_percent, x = Depth)) +
   stat_cor(method = "spearman", cor.coef.name = "rho") +
   theme_classic() +
-  scale_x_log10() +
-  scale_y_continuous(limits = c(4, 5000), trans = "log10") +
-  labs(y="Depth (m)", x="Transposase gene abundance (%)", colour="Depth") +
-  geom_jitter(aes(color = Layer_DNA), size = 1, height = 0.015) +
-  geom_smooth(method = "lm", se = T, color = "orange") +
-  scale_color_manual(breaks=color_breaks,
-                     labels=long_depths,
-                     values=colors)
+  scale_y_log10() +
+  scale_color_brewer(palette="Set1")+
+  scale_x_continuous(limits = c(4, 5000), trans = "log10") +
+  labs(x="depth (m)", y="transposase gene abundance (%)", colour="Ocean") +
+  geom_jitter(aes(color = Ocean_DNA), width = 0.015) +
+  geom_smooth(method = "lm", se = T) +
+  theme(axis.text.x = element_text(color="black"),
+        axis.text.y = element_text(color="black"))
 
-ggsave(paste0(googleDrive.loc, "/Figure1-metagenome-trans-depth-corr.pdf"),
-       plot = last_plot(), width = 7, height = 4)
-
-ggsave("out/Figure1-metagenome-trans-depth-corr.pdf",
-       width = 7, height = 5.6)
+ggsave("out/S1-metagenome-trans-depth-corr.pdf", width = 6, height = 4)
 ```
 
+```{r}
+aov.res = aov(log(DNA_trans_percent)~depth, data = fg1_to_graph)
+letters.df = data.frame(multcompView::multcompLetters(TukeyHSD(aov.res)$depth[,4])$Letters)
+colnames(letters.df)[1] = "Letter"
+letters.df$depth = rownames(letters.df)
+placement = fg1_to_graph %>%
+  group_by(depth) %>%
+  summarise(y.pos = quantile(DNA_trans_percent)[4])
 
+letters.df = left_join(placement, letters.df) 
+```
+
+```{r}
+a = min(fg1_to_graph$DNA_trans_percent) * 0.95
+b = max(fg1_to_graph$DNA_trans_percent)
+c = 10 ** -2.2
+
+counts = group_by(fg1_to_graph, depth) %>% tally
+
+fg1_to_graph %>%
+  wilcox_test(DNA_trans_percent~Layer_DNA)
+
+fg1_to_graph %>%
+  ggplot(aes(x=depth, y=DNA_trans_percent)) +
+  geom_boxplot(varwidth = TRUE, outlier.alpha = 0, fill = "orange") +
+  coord_flip() + scale_y_log10() +
+  geom_rect(aes(xmin = 0.5, xmax = 1.5, ymin = a, ymax = b * 1.2),
+            fill = "#57C1FF", alpha = 0.1) +
+  geom_rect(aes(xmin = 1.5, xmax = 4.5, ymin = a, ymax = b * 1.2),
+            fill = "#A9E6FF", alpha = 0.1) +
+  geom_boxplot(varwidth = TRUE, outlier.alpha = 0.5, fill = "orange") +
+  scale_fill_manual(values=c("orange")) +
+  theme_classic() +
+  scale_x_discrete(labels=c("SRF" = "SRF (n = 64, \ndepth < 10 m)", 
+                            "DCM" = "DCM (n = 44, \n17 - 120 m)",
+                            "MES" = "MES (n = 30, \n250 - 1000 m)",
+                            "BAT" = "BAT (n = 58, \n2400 - 4000 m)")) + 
+  annotate(geom="text", x=2.25, y=c, 
+           label="italic(Tara)~Oceans", parse=TRUE, color="blue") +
+  annotate(geom="text", x=1.9, y=c, 
+           label="metagenomes", color="blue") +
+  annotate(geom="text", x=1.2, y=c, 
+           label="Malaspina", color="dark blue") +
+  annotate(geom="text", x=0.85, y=c, 
+           label="metagenomes", color="dark blue") +
+  geom_text(data = letters.df, aes(x = depth, y = y.pos, label = Letter),
+            size = 4, color = "black", hjust = -0.4, vjust = -0.4) +
+  labs(x="depth", y="transposase gene abundance (%)")
+  # stat_summary(fun.data = boxplot.give.n, size = 2.5,
+  #              geom = "text", position=position_nudge(x = 0, y = -0.06))
+
+shapiro.test(resid(lm(log(DNA_trans_percent)~depth, fg1_to_graph)))
+
+ggsave(paste0(googleDrive.loc, "/Figure1-metagenome-trans-depth.pdf"),
+       plot = last_plot(), width = 5.5, height = 3)
+
+ggsave("out/Figure1-metagenome-trans-depth.pdf", width = 5.5, height = 3)
+```
+
+## Per Ocean comparison, not used
+```{r}
+tmp.fg1 = fg1_to_graph %>% filter(!Ocean_DNA %in% c("Southern", "Red Sea", "Mediterranean"))
+counts = tmp.fg1 %>% group_by(is_deep, Ocean_DNA) %>% tally
+
+is.deep.stats = tmp.fg1 %>%
+  group_by(Ocean_DNA) %>%
+  wilcox_test(DNA_trans_percent~is_deep) %>%
+  adjust_pvalue() %>%
+  add_significance() %>%
+  add_xy_position()
+
+tmp.fg1 %>%
+  filter(!Ocean_DNA %in% c("Southern", "Red Sea", "Mediterranean")) %>%
+  ggplot(aes(x=fct_rev(Ocean_DNA), y=DNA_trans_percent, fill=is_deep)) +
+  theme_classic() +
+  geom_boxplot(outlier.color = "gray") + 
+  geom_text(data=counts, aes(label=n, y=0.5),
+            position=position_dodge(0.8)) +
+  stat_pvalue_manual(is.deep.stats, label = "p.adj.signif", 
+                     tip.length = 0.01, hide.ns = TRUE) +
+  labs(y ="Transposase gene abundance (%)", fill="Depth") +
+  scale_y_log10() +
+  scale_fill_manual(values=rev(c('azure','blue'))) + 
+  coord_flip() +
+  theme(axis.title.y = element_blank(),
+        axis.text.x = element_text(color="black"),
+        axis.text.y = element_text(color="black"))
+```
 
 
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))

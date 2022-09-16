@@ -8,74 +8,57 @@ output: html_document
 ```{r setup, include=FALSE}
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
 source("./init_share.R")
-g(all_MAGs, low_trans, high_trans) %=% init_bins()
-```
+all_MAGs = init_bins()
+MAGs.p = filter(all_MAGs, eukarya_prop < 0.05 & depth != "MIXED")
+MAGs.p$trans_fudge = MAGs.p$percent_trans + get.fudge(MAGs.p, "percent_trans")
 
-## Find specific MAGs that are present everywhere
-```{r}
 scg_trans = read_csv("../MAG_pnps_redux/transposase-abun-vs-scg-pnps.csv")
-
-scg_trans %>% 
-  filter(total_count > 50 & transposase_count > 0) %>%
-  group_by(bin) %>%
-  summarize(count = n()) %>%
-  filter(count >= 12)
-```
-
-  bin       count
-1 deep-0269    12
-2 deep-0293    18
-3 deep-0592    14
-4 IN-32        14
-5 NP-15        21
-
-These are the only ones
-
-## Do NP-15
-```{r}
-MAG.reg = filter(scg_trans, total_count > 50 & bin == "deep-0592")
-
-cor.test(MAG.reg$Trans_abun, MAG.reg$MAG_pnps_median, method = "sp")
+scg_trans$MAG_pnps_median = scg_trans$MAG_pnps_median + get.fudge(scg_trans, "MAG_pnps_median")
 ```
 
 ## Take only the depth that a MAG is in
 
 This is the bottom graph
 ```{r}
-MAGs.col = c("bin", "depth", "Class", "percent_trans")
-pnps.col = c("bin", "depth", "total_count", "MAG_pnps_median", "scg_pnps_median")
+id.col = c("bin", "depth")
+MAGs.col = c(id.col, "Class", "trans_fudge")
+pnps.col = c(id.col, "total_count", "MAG_pnps_median", "scg_pnps_median")
 
 tmp = scg_trans[pnps.col]
 tmp$depth = gsub("deep", "BAT", tmp$depth)
 tmp$bin = gsub("deep-", "deep_MAG_", tmp$bin)
 
-pnps.match = merge(all_MAGs[MAGs.col], tmp, by = c("bin", "depth"))
+pnps.match = merge(MAGs.p[MAGs.col], tmp, by = id.col)
 pnps.match$depth = factor(pnps.match$depth, c("SRF","DCM","MES","BAT"))
-
 pnps.cutoff = quantile(pnps.match$MAG_pnps_median, 0.95) # 0.427
-pnps.match$norm.trans = pnps.match$percent_trans + get.fudge(pnps.match, "percent_trans")
-pnps.match = filter(pnps.match, total_count >= 100 & MAG_pnps_median < pnps.cutoff)
 
-pnps.a = pnps.match %>%
-  ggplot(aes(x = MAG_pnps_median, y = norm.trans)) +
+pnps.g = pnps.match %>%
+  filter(total_count >= 100 & MAG_pnps_median < pnps.cutoff)
+
+y.limits = c(0.9 * min(pnps.g$trans_fudge), 1.1 * max(pnps.g$trans_fudge))
+
+pnps.a = pnps.g %>%
+  ggplot(aes(x = MAG_pnps_median, y = trans_fudge)) +
   facet_wrap(~depth) +
-  scale_y_continuous(limits = c(0.01, 2), trans = "log10") +
+  scale_y_continuous(limits = y.limits, trans = "log10") +
   theme_bw() +
   stat_cor(method = "spearman", cor.coef.name = "rho") +
   geom_smooth(method = "lm", se = T, color = "orange") +
-  geom_point(alpha = 0.5, size = 1) +
+  geom_point(alpha = 0.3, size = 1) +
   labs(x = "MAG median *pN/pS*",
        y = "transposase ORF in MAGs (%)") +
-  theme(axis.title.x = ggtext::element_markdown())
+  theme(axis.title.x = ggtext::element_markdown(),
+        axis.text.x = element_text(color="black"),
+        axis.text.y = element_text(color="black"))
 ```
 
 ## The top graph
 ```{r}
-pnps.match2 = pnps.match %>%
+pnps.match2 = pnps.g %>%
   mutate(depth = fct_rev(depth))
 
 depth.t = table(pnps.match2$depth)
-MAGs.t = table(unique(pnps.match[c("bin","depth")])$depth)
+MAGs.t = table(unique(pnps.g[id.col])$depth)
 depth.str = as.character(pnps.match2$depth)
 depth.counts = paste0("    ", depth.str, " (n = ", depth.t[depth.str],
                      ", ", MAGs.t[depth.str], " MAGs)")
@@ -95,13 +78,15 @@ letters.df = left_join(letters.df, placement)
 pnps.b = pnps.match2 %>%
   mutate(depth = factor(depth, levels = c(depth.c[4], depth.c[1], depth.c[2], depth.c[3]))) %>%
   ggplot(aes(y = MAG_pnps_median, x = depth)) +
-  geom_boxplot() +
+  geom_boxplot(alpha = 0.3) +
   geom_text(data = letters.df, aes(x = depth, y = y.pos, label = Letter),
             size = 4, color = "black", hjust = -1, vjust = -0.4) +
   labs(y = "MAG median *pN/pS*") +
   coord_flip() +
   theme_classic() +
   theme(axis.title.x = ggtext::element_markdown(),
+        axis.text.x = element_text(color="black"),
+        axis.text.y = element_text(color="black"),
         axis.title.y = element_blank())
 
 ggarrange(pnps.b, pnps.a, ncol = 1, heights = c(1,2.8),
@@ -218,5 +203,30 @@ pnps_melt(toxin_df, sel) %>%
 
 
 
+## Find specific MAGs that are present everywhere
+```{r}
+scg_trans = read_csv("../MAG_pnps_redux/transposase-abun-vs-scg-pnps.csv")
 
+scg_trans %>% 
+  filter(total_count > 50 & transposase_count > 0) %>%
+  group_by(bin) %>%
+  summarize(count = n()) %>%
+  filter(count >= 12)
+```
+
+  bin       count
+1 deep-0269    12
+2 deep-0293    18
+3 deep-0592    14
+4 IN-32        14
+5 NP-15        21
+
+These are the only ones
+
+## Do NP-15
+```{r}
+MAG.reg = filter(scg_trans, total_count > 50 & bin == "deep-0592")
+
+cor.test(MAG.reg$Trans_abun, MAG.reg$MAG_pnps_median, method = "sp")
+```
 

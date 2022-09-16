@@ -107,17 +107,16 @@ p_cassette_category = g.melt %>%
   ggplot(aes(fill=type, y=value, x=COG)) +
   geom_bar(position="dodge", stat="identity", width = 0.66) + 
   coord_flip(ylim = c(0, 0.15), clip = "off") +
-  ylab("Proprotion to total ORF calls\n") + 
+  ylab("proportion to total ORF calls\n") + 
   theme_classic() +
   guides(fill = guide_legend(reverse = TRUE, title = "COG gene-calls for:")) +
   scale_fill_manual(values=c("dark gray", "orange"), 
                     labels = c(nor_legend, cas_legend)) +
-  theme(axis.text.y = element_text(hjust = 0.5), # size=6, 
+  theme(axis.text.y = element_text(hjust = 0.5, color="black"), # size=6,
+        axis.text.x = element_text(color="black"),
     axis.title.y = element_blank(),
     plot.background = element_rect(fill='transparent', color=NA),
     legend.background = element_rect(fill="transparent", color="transparent")) 
-# ggsave(filename = "redux_out/integron-COG-category-only.pdf",
-#        last_plot(), width = 5.2, height = 6)
 ```
 
 ## COG enrichement

@@ -45,12 +45,14 @@ gene_col =c("Extracellular_struct", "Mobilome_prophages_transposons",
             "Signal_transduction_mechanisms", "Transcription",
             "Cell_motility", "transposase")
 
-pretty.exp = c("Extracellular structures", "Mobilome...",
-  "Defense mechanisms", "Replication...", "Signal transduction",
-  "Transcription", "Cell motility", "Transposase")
+pretty.exp = c("Extracellular structures", "Mobilome prophages transposons",
+  "Defense mechanisms", "Replication recombination and repair",
+  "Signal transduction mechanisms", "Transcription",
+  "Cell motility", "Transposase")
 
 out.f = "/Figure6-integron-COGs-expression-ratios.pdf"
-height = 3
+height = 4.5
+num.col = 3
 sig.bar.pos = log10(c(5, 7,
                      2.5, 3.4,
                      1.1, 1.3,
@@ -81,6 +83,7 @@ pretty.exp = c("Lipid T.M.", "Coenzyme T.M.",
 
 out.f = "/Figure6-other-COGs-expression-ratios.pdf"
 height = 6
+num.col = 4
 sig.bar.pos = log10(c(1.2, 1.6,
                      1.1,
                      1.1, 1.5,
@@ -102,7 +105,7 @@ DNA_RNA$depth = factor(DNA_RNA$Layer_RNA, levels = c("MES","DCM","SRF"))
 base.cols = c("depth", "connector_DNA", "percent_dna_sect_CAZ", "percent_dna_sect_pep")
 target = DNA_RNA[c(base.cols, exp_cols)]
 exp.melt = target %>% reshape2::melt(id.var = base.cols)
-colnames(exp.melt) = c(base.col, "gene", "expression")
+colnames(exp.melt) = c(base.cols, "gene", "expression")
 
 old.gene = unique(exp.melt$gene)
 exp.melt$pretty.gene = exp.melt$gene
@@ -128,24 +131,60 @@ exp.stats = exp.melt %>%
 exp.stats$y.position = sig.bar.pos
 
 exp.melt %>%
-  # filter(expression < 12) %>% # an extreme outlier for transposase, SRFs
   ggplot(aes(y = expression, x = depth)) +
-  facet_wrap(~pretty.gene, scales = "free_x", ncol = 4) + # 
+  facet_wrap(~pretty.gene, scales = "free_x", ncol = num.col) + 
   scale_y_continuous(trans = "log10",
     labels = function(x) ifelse(x == 0, "0", x)) +
   geom_boxplot(outlier.shape = NA) +
-  geom_jitter(alpha = 0.12, width = 0.2) +
+  geom_jitter(alpha = 0.2, width = 0.2, size = 1) +
   stat_pvalue_manual(exp.stats, tip.length = 0.01,
     label = "p.adj.signif", hide.ns = TRUE ) +
   coord_flip() +
   theme_classic() +
-  ylab("RNA/DNA ratio (transcript / gene abundance(%) per sample)") +
-  theme(axis.title.y = element_blank())
+  ylab("RNA/DNA ratio (transcript / gene abundance per sample)") +
+  theme(axis.title.y = element_blank(),
+        axis.text.x = element_text(color="black"),
+        axis.text.y = element_text(color="black"))
 
 ggsave(paste0("out", out.f), height = height, width = 7)
 ggsave(paste0(googleDrive.loc, out.f), width = 7, height = height)
 ```
 
+```{r}
+D.RNA = c("Extracellular_struct", "Mobilome_prophages_transposons",
+            "Defense_mechanisms", "Replication_recombination_and_repair",
+            "Signal_transduction_mechanisms", "Transcription",
+            "Cell_motility", "transposase")
+D.RNA.col = c("Layer_RNA", paste0("DNA_", D.RNA), paste0("RNA_", D.RNA))
+DNA.RNA.melt = DNA_RNA[D.RNA.col] %>%
+  reshape2::melt(id = "Layer_RNA")
+
+DNA.RNA.melt[c("Type", "gene")] = str_split_fixed(DNA.RNA.melt$variable, "_", 2)
+DNA.RNA.melt$gene = gsub("_", " ", DNA.RNA.melt$gene)
+DNA.RNA.melt$gene = gsub("transposase", "Transposase", DNA.RNA.melt$gene)
+DNA.RNA.melt$gene = gsub("struct", "Structures", DNA.RNA.melt$gene)
+
+DNA.RNA.melt %>%
+  mutate(Type = ifelse(Type == "RNA", "transcript (RNA)", "gene (DNA)")) %>%
+  ggplot(aes(y=fct_rev(Layer_RNA), x=value*100)) + 
+  geom_boxplot(aes(fill = Type), outlier.alpha = 0.3) +
+  facet_wrap(~gene, scale = "free_x") + 
+  scale_fill_manual(values = c(`transcript (RNA)` = "orange", `gene (DNA)` = "gray")) +
+  scale_x_log10() +
+  theme_classic() +
+  xlab("gene / transcript abundance (%)") +
+  theme(axis.title.y = element_blank(),
+        legend.title = element_blank(),
+        axis.text.x = element_text(color="black"),
+        axis.text.y = element_text(color="black"),
+        legend.position = c(0.8,0.15))
+
+dna.rna.out.f = "/S7-integron-COGs-DNA-RNA.pdf"
+ggsave(paste0("out", dna.rna.out.f), height = 5, width = 7)
+```
+
+
+## Not used
 
 ## direct correlation between partcle association and genes, not too useful
 ```{r}
@@ -161,12 +200,6 @@ exp.melt %>%
   theme(axis.title.y = element_blank())
 ggsave("old graphs/gene-expression-ratios-CAZ.pdf", height = 8, width =10)
 ```
-
-
-
-
-
-
 
 
 ```{r}
@@ -188,8 +221,8 @@ gen_plot <- function(gene_name, log_scale, percent_scale, upscale,
   tmp1$type <- "DNA"
   tmp2$type <- "RNA"
   
-  tmp1 <- filter_outliers(tmp1, DNA_gene)
-  tmp2 <- filter_outliers(tmp2, RNA_gene)
+  # tmp1 <- filter_outliers(tmp1, DNA_gene)
+  # tmp2 <- filter_outliers(tmp2, RNA_gene)
   
   g_cols <- c("log_abundance", "depth", "type")
   DNA_RNA_bar <- rbind(`colnames<-`(tmp1, g_cols),
@@ -231,37 +264,6 @@ gen_plot <- function(gene_name, log_scale, percent_scale, upscale,
   }
   return(p)
 }
-```
-
-## Using the function
-```{r}
-exp_biofilm <- gen_plot("biofilm", c(-4.301, -4, -3.698, -3.3979),
-                        c("0.005%", "0.01%", "0.02%", "0.04%"), 4.3,
-                        "gray", "green", 0.54, 0.44)
-
-exp_trans <- gen_plot("trans", c(-4.523, -4, -3.523, -3, -2.523), 
-                      c("0.003%", "0.01%", "0.03%", "0.10%","0.3%"),
-                      4.52, "gray", "light blue", 0.54, 0.46)
-
-exp_defense <- gen_plot("defense", c(-3, -2.699, -2.398, -2.097),
-                        c("0.1%", "0.2%", "0.4%","0.8%"),
-                        3, "gray", "red", 0.1, 0.1)
-
-gen_plot("signalT", c(-3, -2.699, -2.398, -2.097),
-         c("0.1%", "0.2%", "0.4%","0.8%"),
-         3, "gray", "red", 0.1, 0.1)
-
-gen_plot("coenzyme", c(-3, -2.699, -2.398, -2.097),
-         c("0.1%", "0.2%", "0.4%","0.8%"),
-         3, "gray", "red", 0.1, 0.1)
-
-gen_plot("energyPC", c(-3, -2.699, -2.398, -2.097),
-         c("0.1%", "0.2%", "0.4%","0.8%"),
-         3, "gray", "red", 0.1, 0.1)
-
-gen_plot("replication", c(-3, -2.699, -2.398, -2.097),
-         c("0.1%", "0.2%", "0.4%","0.8%"),
-         3, "gray", "red", 0.1, 0.1)
 ```
 
 

@@ -61,7 +61,6 @@ get.depth.trans.corr(xvar = "percent_sect_CAZ", yvar = "complete_genome_size")
 get.depth.trans.corr(xvar = "percent_sect_pep", yvar = "complete_genome_size")
 ```
 
-
 ## addition of models
 ```{r}
 MAGs_p.s = MAGs_p[!is.na(MAGs_p$percent_sect_pep), ]
@@ -71,7 +70,6 @@ depth.lm = lm(log_percent_trans~depth, data=MAGs_p.s)
 depth.gz.lm = update(depth.lm, .~. + log_genome_size)
 depth.CP.lm = update(depth.lm, .~. + log_sect_CAZ + log_sect_pep)
 depth.CP.gz.lm = update(depth.CP.lm, .~. + log_genome_size)
-# depth.CP.gz.lm2 = update(depth.CP.gz.lm, .~. + I(log_genome_size^3))
 depth.CP.gz.tax.lm = update(depth.CP.gz.lm, .~. + Class)
 
 get.lm.stats = function(lm1, lm2) {
@@ -82,6 +80,14 @@ get.lm.stats = function(lm1, lm2) {
 
 get_r(depth.lm)
 get.lm.stats(depth.lm, depth.gz.lm)
+
+anova(depth.CP.gz.lm, depth.gz.lm)
+anova(depth.lm, update(depth.lm, .~. + Class))
+
+summary(update(depth.lm, .~. + log_sect_pep))
+summary(update(depth.lm, .~. + log_sect_CAZ))
+summary(update(depth.lm, .~. + log_genome_size))
+summary(update(depth.lm, .~. + Class))
 ```
 
 ```{r}
@@ -111,35 +117,97 @@ write.csv(reg.aov2, file = paste0(googleDrive.loc, "/Table1-MAGs-reg-raw.csv"),
           row.names = FALSE)
 ```
 
-
+## per-taxon per-depth particle association V2
 ```{r}
-taxa_cor = MAGs_p %>%
-  group_by(large_classes, depth) %>%
-  mutate(n = n()) %>%
-  filter(n >= 15) %>%
-  summarize(p.val = cor.test(percent_sect_CAZpep, complete_genome_size, method = "spearman")$p.val,
-            estimate = cor.test(percent_sect_CAZpep, complete_genome_size, method = "spearman")$estimate,
-            count = n()) %>%
-  adjust_pvalue(method = "BH") %>%
-  add_significance()
+id.var = c("Class", "depth")
 
-sign_sort = rbind(taxa_cor[taxa_cor$p.val.adj.signif != "ns", ],
-                  taxa_cor[taxa_cor$p.val.adj.signif == "ns", ]) 
+get.taxa.cor = function(MAGs.df, var1, var2) {
+  tmp = MAGs.df[c(id.var, var1, var2)]
+  colnames(tmp) = c(id.var, "var1", "var2")
+  
+  reg.res = tmp %>%
+    group_by(Class, depth) %>%
+    summarize(count = n(),
+      p.val = suppressWarnings(cor.test(var1, var2, method = "spearman")$p.val),
+      est = suppressWarnings(cor.test(var1, var2, method = "spearman")$estimate)) %>%
+    adjust_pvalue(method = "BH") %>%
+    add_significance()
+  
+  per.var = c("est", "p.val.adj", "p.val.adj.signif")
+  per.var2 = paste0(paste0(var1, ".", var2), ".corr")
+  
+  out.res = reg.res[c(id.var, per.var)]
+  out.res = out.res %>%
+    mutate(est = ifelse(p.val.adj < 0.05, 
+                        paste0(round(est, 3), p.val.adj.signif),
+                        p.val.adj.signif))
+  
+  out.res = out.res[c(id.var, "est")]
+  colnames(out.res) = c(id.var, per.var2)
+  return(out.res)
+}
 
-sign_sort = sign_sort %>%
-  # mutate(p_text = round(p.val.adj, 4)) %>%
-  select(c("large_classes","depth","estimate","count","p.val.adj","p.val.adj.signif"))
+MAG.big.taxa = MAGs_p %>%
+  filter(!is.na(Class)) %>%
+  group_by(Class, depth) %>%
+  mutate(n = n(),
+         gsize = complete_genome_size,
+         transposase = percent_trans,
+         CAZyme = percent_sect_CAZ,
+         peptidase = percent_sect_pep) %>%
+  filter(n >= 12)
 
-colnames(sign_sort) = c("class", "depth", "correlation estimate", "count", "adjusted p-value", "significance")
-write.csv(sign_sort,"redux_out/per-class-depth-sect-gsize-corr.csv", row.names = FALSE)
+MAG.stat.base = MAG.big.taxa %>%
+  group_by(Class, depth) %>%
+  summarize(count = n(),
+            `mean CAZyme (%)` = round(mean(CAZyme),2),
+            `mean peptidase (%)` = round(mean(peptidase),2))
+
+CAZ.gs.stats = get.taxa.cor(MAG.big.taxa, "CAZyme", "gsize")
+pep.gs.stats = get.taxa.cor(MAG.big.taxa, "peptidase", "gsize")
+
+CAZ.trans.stats = get.taxa.cor(MAG.big.taxa, "CAZyme", "transposase")
+pep.trans.stats = get.taxa.cor(MAG.big.taxa, "peptidase", "transposase")
+
+tmp = merge(MAG.stat.base, CAZ.gs.stats, by = id.var)
+tmp = merge(tmp, pep.gs.stats, by = id.var)
+tmp = merge(tmp, CAZ.trans.stats, by = id.var)
+MAG.stat.full = merge(tmp, pep.trans.stats, by = id.var)
+MAG.stat.full = MAG.stat.full %>%
+  mutate(depth = factor(depth, levels = c("SRF", "DCM", "MES", "BAT"))) %>%
+  arrange(Class, depth)
+
+write.csv(MAG.stat.full,"out/per-class-depth-sect-gsize-corr.csv", row.names = FALSE)
 ```
 
+## Are CAZyme peptidase different in MAGs taxon across depth?
+```{r}
+get.diff = function(MAG.df, taxon, var) {
+  tmp = MAG.df[MAG.df$Class == taxon, ]
+  tmp['var'] = tmp[var]
+  aov.res = aov(var~depth, data = tmp)
+  print(multcompView::multcompLetters(TukeyHSD(aov.res)$depth[,4])$Letters)
+}
 
-# sample size
-# Analysis of small sample size studies using nonparametric bootstrap test with pooled resampling method
+get.diff(MAGs_p, "Acidimicrobidae", "percent_sect_CAZ")
+get.diff(MAGs_p, "Acidimicrobidae", "percent_sect_pep")
+
+get.diff(MAGs_p, "Alphaproteobacteria", "percent_sect_CAZ")
+get.diff(MAGs_p, "Alphaproteobacteria", "percent_sect_pep")
+
+get.diff(MAGs_p, "Flavobacteria", "percent_sect_CAZ")
+get.diff(MAGs_p, "Flavobacteria", "percent_sect_pep")
+
+get.diff(MAGs_p, "Gammaproteobacteria", "percent_sect_CAZ")
+get.diff(MAGs_p, "Gammaproteobacteria", "percent_sect_pep")
+
+get.diff(MAGs_p, "Verrucomicrobia", "percent_sect_CAZ")
+get.diff(MAGs_p, "Verrucomicrobia", "percent_sect_pep")
+```
+
+# which taxa class is transposase enriched?
 
 ```{r}
-# which taxa class is transposase enriched?
 MAGs.t = MAGs_p
 MAGs.t$Class[is.na(MAGs.t$Class)] = "other"
 # MAGs.t = MAGs_p[MAGs.t$Class != "other", ]

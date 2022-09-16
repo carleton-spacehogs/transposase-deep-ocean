@@ -8,13 +8,61 @@ output: html_document
 ```{r}
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
 source("./init_share.R")
-g(all_MAGs, low_trans, high_trans) %=% init_bins()
-
+all_MAGs = init_bins()
 all_MAGs = merge_MAGs_CAZyme_peptide(all_MAGs)
 MAGs.d = filter(all_MAGs, eukarya_prop < 0.05 & depth != "MIXED")
 
 depths.lvl = c("SRF","DCM","MES","BAT")
 ```
+
+```{r}
+# from redux_fig3_stats.R
+low_trans <- c("Acidimicrobidae", "novelClass_E",
+               "Flavobacteria", "SAR202-2")
+high_trans <- c("Alphaproteobacteria","Gammaproteobacteria",
+                "Betaproteobacteria","Actinobacteria")
+
+labels = c("Unknown Taxon",
+           "High transposase abundance", 
+           "Average transposase abundance",
+           "Low transposase abundance")
+
+unknown = c("Others Or Unknown", "other")
+g_tax_col = rev(c("steelblue","cyan", "yellow"))
+
+MAGs.d = MAGs.d %>%
+  mutate(class_trans = ifelse(is.na(Class), labels[3],
+    ifelse(Class %in% high_trans, labels[2], 
+    ifelse(Class %in% low_trans, labels[4], labels[3] ))),
+  depth = factor(depth, levels=depths.lvl)) %>%
+  mutate(class_trans = factor(class_trans, levels =labels))
+
+depth_trans = MAGs.d %>% count(class_trans, depth)
+
+ggplot(depth_trans, aes(fill=class_trans, y=fct_rev(depth), x=n)) + 
+  geom_bar(position="fill", stat="identity") +
+  geom_text(aes(label = n), position = position_fill(vjust = 0.5)) +
+  xlab("proportion of MAGs") +
+  ylab("depth") +
+  guides(fill=guide_legend(title="MAG class", reverse = TRUE)) +
+  scale_fill_manual(guide = guide_legend(reverse = TRUE),
+                    values = g_tax_col)+
+  theme_classic() +
+  theme(legend.text = element_markdown(),
+        axis.text.x = element_text(color="black"),
+        axis.text.y = element_text(color="black"))
+  # theme(axis.title.y = element_blank(),
+  #       # legend.title = element_blank(),
+  #       legend.justification='left',
+  #       legend.margin = margin(0),
+  #       legend.position="top",
+  #       legend.direction="vertical")
+
+ggsave("out/S4_MAG-transposase-taxon-depth.pdf", 
+       height = 2, width = 6)
+```
+
+## Trashed
 
 ## increasing particle-associated MAGs in deep ocean
 ```{r}
@@ -27,14 +75,14 @@ MAGs.d = MAGs.d %>%
   lifestyle = ifelse(percent_sect_CAZ < 10 & percent_sect_pep < 20, lifstyl[1],
               ifelse(percent_sect_CAZ > 20 & percent_sect_pep > 40, lifstyl[3], lifstyl[2])))
 
-# MAGs.d.melt = MAGs.d[c("depth", "percent_sect_CAZ", "percent_sect_pep")] %>%
-#   reshape2::melt(id = c("depth"))
-# 
-# MAGs.d.melt %>%
-#   ggplot(aes(x = value, y=fct_rev(depth))) +
-#   geom_boxplot() +
-#   facet_wrap(~variable) +
-#   scale_x_log10()
+MAGs.d.melt = MAGs.d[c("depth", "percent_sect_CAZ", "percent_sect_pep")] %>%
+  reshape2::melt(id = c("depth")) %>%
+  mutate(is_deep = ifelse(depth %in% c("SRF","DCM"), "Shallow", "Deep"))
+
+MAGs.d.melt %>%
+  ggplot(aes(x = value, y=is_deep)) +
+  geom_boxplot() +
+  facet_wrap(~variable)
 
 depth_size = MAGs.d %>%
   count(lifestyle, depth) %>%
@@ -54,48 +102,6 @@ MAG_l = ggplot(depth_size, aes(fill=lifestyle, y=fct_rev(depth), x=n))  +
         legend.position="top",
         legend.direction="vertical")
 
-```
-
-
-```{r}
-# from redux_fig3_stats.R
-low_trans <- c("Acidimicrobidae", "novelClass_E",
-               "Flavobacteria", "SAR202-2")
-high_trans <- c("Alphaproteobacteria","Gammaproteobacteria",
-                "Betaproteobacteria","Actinobacteria")
-
-labels = c("Unknown Taxon",
-           "High transposase abundance", 
-           "Average transposase abundance",
-           "Low transposase abundance")
-
-unknown = c("Others Or Unknown", "other")
-g_tax_col <- c("steelblue","cyan", "yellow")
-
-MAGs.d = MAGs.d %>%
-  mutate(class_trans = ifelse(is.na(Class), labels[3],
-    ifelse(Class %in% high_trans, labels[2], 
-    ifelse(Class %in% low_trans, labels[4], labels[3] ))),
-  depth = factor(depth, levels=depths.lvl)) %>%
-  mutate(class_trans = factor(class_trans, levels =labels))
-
-depth_trans = MAGs.d %>% count(class_trans, depth)
-
-MAG_r = ggplot(depth_trans, aes(fill=class_trans, y=fct_rev(depth), x=n)) + 
-  geom_bar(position="fill", stat="identity") +
-  geom_text(aes(label = n), position = position_fill(vjust = 0.5)) +
-  xlab("Proportion of MAGs") +
-  ylab("Depth") +
-  guides(fill=guide_legend(title="MAG taxon class category", reverse = TRUE)) +
-  scale_fill_manual(guide = guide_legend(reverse = TRUE),
-                    values = g_tax_col)+
-  theme_classic() +
-  theme(axis.title.y = element_blank(),
-        # legend.title = element_blank(),
-        legend.justification='left',
-        legend.margin = margin(0),
-        legend.position="top",
-        legend.direction="vertical")
 ```
 
 ```{r}

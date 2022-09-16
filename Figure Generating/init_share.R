@@ -5,6 +5,7 @@ init_env <- function(){
   library(purrr)
   library(ggpubr)
   library(ggrepel)
+  library(ggtext)
   library("ggplot2")
   library("ggpmisc")
   library("readxl")
@@ -284,7 +285,7 @@ init_bins <- function(){
     `Total ORFs` = as.numeric(`Total ORFs`)
   )
   all_MAGs = merge_MAGs_eukaryote(all_MAGs)
-  return(list(all_MAGs, low_trans, high_trans))
+  return(all_MAGs)
 }
 
 merge_MAGs_CAZyme_peptide = function(bin_df){
@@ -337,24 +338,32 @@ init_integron <- function(){
 }
 
 init_integron_category <- function(){
-  # summary <- read_csv("data/tara_malaspina_integron_func_category_count.csv")
-  summary = read_csv('../integron_finder_v2/integron_known_COG_category_summary.csv')
+  summary <- read_csv("data/tara_malaspina_integron_func_category_count.csv")
+  # summary = read_csv('../integron_finder_v2/integron_known_COG_category_summary.csv')
+  
+  # col1 <- c('Secondary metabolites biosynthesis, transport and catabolism',
+  #           "Mobilome: prophages, transposons",
+  #           "Posttranslational modification, protein turnover, chaperones", 
+  #           "Intracellular trafficking, secretion, and vesicular transport",
+  #           "Cell cycle control, cell division, chromosome partitioning",
+  #           "Replication, recombination and repair",
+  #           "Translation, ribosomal structure and biogenesis")
+  # col2 <- c("Secondary metabolites", "Mobilome prophages transposons",
+  #           "Posttranslational modification",
+  #           "Intracellular trafficking", "Cell cycle control",
+  #           "Replication recombination and repair",
+  #           "Translation, ribosomal structure")
   
   col1 <- c('Secondary metabolites biosynthesis, transport and catabolism',
-            "Mobilome: prophages, transposons",
             "Posttranslational modification, protein turnover, chaperones", 
             "Intracellular trafficking, secretion, and vesicular transport",
             "Cell cycle control, cell division, chromosome partitioning",
-            "Replication, recombination and repair",
-            "Translation, ribosomal structure and biogenesis")
-  # col2 <- c("Secondary metabolites...", "Posttranslational modification...",
-  #           "Intracellular trafficking...", "Cell cycle control...",
-  #           "Translation, ribosomal structure...", "T.M.")
-  col2 <- c("Secondary metabolites", "Mobilome prophages transposons",
-            "Posttranslational modification",
-            "Intracellular trafficking", "Cell cycle control",
-            "Replication recombination and repair",
-            "Translation, ribosomal structure")
+            "Translation, ribosomal structure and biogenesis",
+            "transport and metabolism")
+  col2 <- c("Secondary metabolites...", "Posttranslational modification...",
+            "Intracellular trafficking...", "Cell cycle control...",
+            "Translation, ribosomal structure...", "T.M.")
+
   replace <- data.frame(col1, col2)
   
   for (r in 1:nrow(replace)){

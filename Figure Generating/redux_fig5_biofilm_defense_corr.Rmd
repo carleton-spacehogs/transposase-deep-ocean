@@ -158,7 +158,8 @@ COG_ggheatmap = COG.graph %>%
   theme_classic() +
   labs(fill = "COG correlation with\nsecretory CAZyme & \npeptidase genes (%)") +
   scale_y_discrete(position = "right") + 
-  theme (axis.text.x = element_text(angle = -35, vjust = 0.5, size = 10),
+  theme (axis.text.x = element_text(angle = -35, vjust = 0.5, 
+                                    size = 10, color="black"),
          axis.title.x = element_blank(), # ggtext::element_markdown(),
          legend.background = element_rect(fill="transparent",
                                           color="transparent"),
