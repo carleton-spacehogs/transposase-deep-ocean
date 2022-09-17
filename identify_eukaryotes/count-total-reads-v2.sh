@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # echo sample,num_reads > count-ocean.out
-# cat *-reads.out > count-ocean.out
+# cat *-reads.out >> count-ocean.out
 ocean=$1
 
 prefix="/researchdrive/zhongj2/MAG_pnps_redux/$ocean/raw_reads/"
