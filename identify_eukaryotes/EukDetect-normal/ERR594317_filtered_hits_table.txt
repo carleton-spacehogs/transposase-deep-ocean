@@ -1,0 +1,14 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Stramenopiles sp. TOSAG23-2	species	species-Stramenopiles_sp._TOSAG23-2	1735743	44	499	93.62%	46.83%	99.35%
+Stramenopiles sp. TOSAG41-1	species	species-Stramenopiles_sp._TOSAG41-1	1735744	37	227	71.15%	28.93%	98.88%
+Micromonas pusilla	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_pusilla	38833	10	30	38.46%	10.28%	98.43%
+Micromonas	genus	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	38832	50	109	28.09%	5.23%	98.33%
+unclassified Bathycoccus	no rank	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	2590008	9	22	17.31%	6.21%	99.53%
+Cafeteria roenbergensis	species	class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	33653	7	13	16.28%	10.56%	99.23%
+Partenskyella glossopodia	species	phylum-Cercozoa|class-Chlorarachniophyceae|genus-Partenskyella|species-Partenskyella_glossopodia	552666	6	14	10.0%	7.38%	99.55%
+Bathycoccus prasinos	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	41875	12	21	9.76%	4.97%	99.37%
+Triparma eleuthera	species	class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_eleuthera	172717	7	10	9.59%	4.93%	99.44%
+Ostreococcus lucimarinus CCE9901	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._'lucimarinus'	436017	7	16	6.14%	4.36%	99.57%
+Malassezia globosa CBS 7966	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_globosa	425265	2	4	1.27%	5.92%	99.36%
+Exophiala xenobiotica	species	phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala|species-Exophiala_xenobiotica	348802	2	4	1.0%	3.29%	99.14%
+[Nectria] haematococca mpVI 77-13-4	no rank	phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Nectriaceae|genus-Fusarium|species-[Nectria]_haematococca	660122	2	4	0.98%	10.69%	100.0%

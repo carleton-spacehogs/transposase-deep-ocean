@@ -1,0 +1,18 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Bathycoccus prasinos	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	41875	123	34315	100.0%	90.77%	96.83%
+Mamiellales	order	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	13792	3	18	100.0%	20.25%	99.04%
+Stramenopiles sp. TOSAG23-2	species	species-Stramenopiles_sp._TOSAG23-2	1735743	46	943	97.87%	68.84%	99.41%
+Aureococcus anophagefferens	species	class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus|species-Aureococcus_anophagefferens	44056	63	1031	96.92%	57.88%	98.19%
+unclassified Bathycoccus	no rank	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	2590008	50	594	96.15%	41.35%	98.91%
+Stramenopiles sp. TOSAG23-3	species	species-Stramenopiles_sp._TOSAG23-3	1735745	50	332	83.33%	33.89%	99.79%
+Chloropicon roscoffensis	species	phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	1461544	114	743	72.15%	26.37%	99.17%
+Pelagomonas calceolata	species	class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	35677	52	865	67.53%	27.25%	97.22%
+Prasinoderma singulare	species	phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinoderma|species-Prasinoderma_singulare	676789	53	172	58.24%	16.37%	99.63%
+unclassified Ostreococcus	no rank	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	2268852	5	12	41.67%	9.04%	99.19%
+Ostreococcus lucimarinus CCE9901	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._'lucimarinus'	436017	43	104	37.72%	6.89%	99.74%
+Triparma eleuthera	species	class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_eleuthera	172717	27	58	36.99%	11.86%	99.11%
+Phaeocystis globosa	species	phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_globosa	33658	25	261	21.55%	44.25%	98.43%
+Micromonas	genus	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	38832	30	134	16.85%	7.12%	96.7%
+Gephyrocapsa oceanica	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	38817	7	11	7.0%	10.49%	99.4%
+Neobodo designis	species	phylum-Euglenozoa|order-Kinetoplastida|family-Bodonidae|genus-Neobodo|species-Neobodo_designis	312471	2	4	3.03%	22.16%	98.01%
+Durinskia baltica	species	class-Dinophyceae|order-Peridiniales|family-Kryptoperidiniaceae|genus-Durinskia|species-Durinskia_baltica	400756	4	6	2.84%	6.88%	100.0%

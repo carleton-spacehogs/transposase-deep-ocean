@@ -1,0 +1,8 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Stramenopiles sp. TOSAG23-2	species	species-Stramenopiles_sp._TOSAG23-2	1735743	46	1683	97.87%	83.56%	99.21%
+Stramenopiles sp. TOSAG41-1	species	species-Stramenopiles_sp._TOSAG41-1	1735744	39	193	75.0%	23.75%	99.13%
+Triparma eleuthera	species	class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_eleuthera	172717	22	47	30.14%	9.29%	99.74%
+Bigelowiella natans CCMP2755	species	phylum-Cercozoa|class-Chlorarachniophyceae|genus-Bigelowiella|species-Bigelowiella_natans	753081	3	10	13.04%	8.51%	99.42%
+Cafeteria roenbergensis	species	class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	33653	4	5	9.3%	9.01%	99.79%
+Gephyrocapsa oceanica	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	38817	3	4	3.0%	12.99%	98.93%
+Prymnesium polylepis	species	phylum-Haptista|class-Haptophyta|order-Prymnesiales|family-Prymnesiaceae|genus-Prymnesium|species-Prymnesium_polylepis	72548	2	6	2.25%	13.97%	96.51%

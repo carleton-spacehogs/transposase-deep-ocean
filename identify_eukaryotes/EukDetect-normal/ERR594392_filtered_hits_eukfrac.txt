@@ -1,0 +1,7 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Basidiomycota	phylum	Basidiomycota	5204	0.0201	100.0	7	348317
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.0201	100.0	7	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.0201	100.0	7	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae	family	Malasseziaceae	742845	0.0201	100.0	7	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.0201	100.0	7	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.0201	100.0	7	348317

@@ -1,0 +1,14 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Exophiala xenobiotica	species	phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala|species-Exophiala_xenobiotica	348802	91	284	45.5%	10.71%	99.34%
+Cyphellophora europaea CBS 101466	species	phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Cyphellophoraceae|genus-Cyphellophora|species-Cyphellophora_europaea	1220924	68	190	34.17%	8.68%	99.78%
+Cafeteria roenbergensis	species	class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	33653	6	11	13.95%	10.49%	99.18%
+Hortaea werneckii EXF-2000	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	1157616	41	90	11.05%	5.82%	99.69%
+Bathycoccus prasinos	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	41875	13	21	10.57%	5.52%	99.45%
+Micromonas pusilla	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_pusilla	38833	2	5	7.69%	7.13%	97.73%
+Chloropicon roscoffensis	species	phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	1461544	12	20	7.59%	6.96%	99.55%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	9	19	6.0%	4.44%	98.88%
+Candida parapsilosis	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida|species-Candida_parapsilosis	5480	6	12	3.49%	6.32%	99.7%
+Micromonas	genus	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	38832	6	10	3.37%	4.63%	98.21%
+Neobodo designis	species	phylum-Euglenozoa|order-Kinetoplastida|family-Bodonidae|genus-Neobodo|species-Neobodo_designis	312471	2	4	3.03%	10.54%	98.3%
+Ochroconis constricta UM 578	species	phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae|genus-Ochroconis|species-Ochroconis_constricta	1442076	5	12	2.55%	7.03%	98.59%
+Cadophora sp. DSE1049	species	phylum-Ascomycota|class-Leotiomycetes|order-Helotiales|genus-Cadophora|species-Cadophora_sp._DSE1049	1485229	5	7	2.42%	3.34%	98.33%

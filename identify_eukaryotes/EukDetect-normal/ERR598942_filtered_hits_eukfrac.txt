@@ -1,0 +1,48 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	31.9581	78.895	18265	571529
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	31.9581	78.3174	18265	571529
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	50.4023	75.6252	17797	353099
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	74.8007	77.2803	17145	229209
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	2.3173	3.477	453	195483
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._'lucimarinus'	species	Ostreococcus sp. 'lucimarinus'	242159	1.8206	1.8809	453	248824
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	0.3035	0.4554	6	19767
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	0.0181	0.0447	5	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	0.0181	0.0444	5	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.0181	0.0272	5	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	0.0181	0.0187	5	275974
+phylum-Chlorophyta|class-Palmophyllophyceae	class	Palmophyllophyceae	2201463	0.288	0.7109	35	121534
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales	order	Prasinococcales	485343	0.288	0.7057	35	121534
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinoderma	genus	Prasinoderma	156132	0.288	0.4321	35	121534
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinoderma|species-Prasinoderma_singulare	species	Prasinoderma singulare	676789	0.288	0.2975	35	121534
+phylum-Chordata|class-Appendicularia	class	Appendicularia	30302	2.9302	7.2337	352	120130
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	2.9302	7.1807	352	120130
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura	genus	Oikopleura	34763	2.9302	4.3965	352	120130
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	species	Oikopleura longicauda	107032	2.9302	3.0273	352	120130
+class-Pelagophyceae	class	Pelagophyceae	35675	4.3855	10.8264	940	214344
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	4.3855	10.7472	940	214344
+class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus	genus	Aureococcus	44055	5.5704	8.3579	479	85991
+class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus|species-Aureococcus_anophagefferens	species	Aureococcus anophagefferens	44056	5.5704	5.755	479	85991
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	3.5917	5.389	461	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	3.5917	3.7107	461	128353
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	5.1169	5.2865	339	66251
+species-Stramenopiles_sp._TOSAG41-1	species	Stramenopiles sp. TOSAG41-1	1735744	0.3395	0.3508	23	67745
+species-Stramenopiles_sp._TOSAG23-3	species	Stramenopiles sp. TOSAG23-3	1735745	1.1422	1.18	92	80549
+class-Dictyochophyceae	class	Dictyochophyceae	39119	0.1239	0.3059	11	88783
+class-Dictyochophyceae|order-Florenciellales	order	Florenciellales	590977	0.1239	0.3036	11	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella	genus	Florenciella	236786	0.1239	0.1859	11	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella|species-Florenciella_parvula	species	Florenciella parvula	236787	0.1239	0.128	11	88783
+class-Bolidophyceae	class	Bolidophyceae	91989	0.3368	0.8315	17	50473
+class-Bolidophyceae|order-Parmales	order	Parmales	722750	0.3368	0.8254	17	50473
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma	genus	Triparma	722752	0.3368	0.5054	17	50473
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_laevis	species	Triparma laevis	1534972	0.3368	0.348	17	50473
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.3765	0.9295	122	324013
+phylum-Haptista|class-Haptophyta|order-Isochrysidales	order	Isochrysidales	73020	0.08	0.196	11	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa	genus	Gephyrocapsa	38816	0.08	0.12	11	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	species	Gephyrocapsa oceanica	38817	0.08	0.0826	11	137559
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	0.5953	1.4589	111	186454
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	0.5953	0.8932	111	186454
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_globosa	species	Phaeocystis globosa	33658	0.5426	0.5606	84	154798
+class-Dinophyceae	class	Dinophyceae	2864	0.0901	0.2223	22	244301
+class-Dinophyceae|order-Peridiniales	order	Peridiniales	2910	0.0901	0.2207	22	244301
+class-Dinophyceae|order-Peridiniales|family-Kryptoperidiniaceae|genus-Durinskia	genus	Durinskia	400754	0.0901	0.1351	22	244301
+class-Dinophyceae|order-Peridiniales|family-Kryptoperidiniaceae|genus-Durinskia|species-Durinskia_baltica	species	Durinskia baltica	400756	0.0901	0.093	22	244301

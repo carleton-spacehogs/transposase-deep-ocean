@@ -1,0 +1,23 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Micromonas pusilla	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_pusilla	38833	26	1261	100.0%	68.54%	97.49%
+Mamiellales	order	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	13792	3	321	100.0%	69.64%	98.21%
+unclassified Ostreococcus	no rank	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	2268852	12	1066	100.0%	80.53%	98.21%
+unclassified Bathycoccus	no rank	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	2590008	50	10124	96.15%	86.74%	97.57%
+Ostreococcus sp. SAG10	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._SAG10	2590005	24	3755	96.0%	92.46%	98.15%
+Stramenopiles sp. TOSAG23-2	species	species-Stramenopiles_sp._TOSAG23-2	1735743	45	376	95.74%	40.4%	99.43%
+Bathycoccus sp. TOSAG39-1	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_sp._TOSAG39-1	1735750	12	1645	92.31%	52.29%	97.66%
+Aureococcus anophagefferens	species	class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus|species-Aureococcus_anophagefferens	44056	59	559	90.77%	41.37%	98.39%
+Micromonas	genus	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	38832	140	6860	78.65%	62.04%	97.54%
+Stramenopiles sp. TOSAG41-1	species	species-Stramenopiles_sp._TOSAG41-1	1735744	40	183	76.92%	25.39%	99.71%
+Pelagomonas calceolata	species	class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	35677	47	424	61.04%	24.21%	97.63%
+Stramenopiles sp. TOSAG23-3	species	species-Stramenopiles_sp._TOSAG23-3	1735745	31	97	51.67%	14.68%	98.15%
+Gephyrocapsa oceanica	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	38817	28	52	28.0%	8.58%	98.46%
+Phaeocystis globosa	species	phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_globosa	33658	25	79	21.55%	22.8%	99.17%
+Chloropicon roscoffensis	species	phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	1461544	30	55	18.99%	7.18%	99.68%
+Emiliania huxleyi CCMP1516	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania|species-Emiliania_huxleyi	280463	6	17	17.65%	20.8%	99.14%
+Arcocellulus cornucervis	species	phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Arcocellulus|species-Arcocellulus_cornucervis	1155433	8	11	9.64%	8.68%	98.0%
+Pycnococcus provasolii	species	phylum-Chlorophyta|family-Pycnococcaceae|genus-Pycnococcus|species-Pycnococcus_provasolii	41880	6	13	6.19%	13.31%	99.47%
+Neobodo designis	species	phylum-Euglenozoa|order-Kinetoplastida|family-Bodonidae|genus-Neobodo|species-Neobodo_designis	312471	3	5	4.55%	10.14%	98.31%
+Triparma pacifica	species	class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_pacifica	91992	2	4	3.57%	5.62%	99.73%
+Alexandrium tamarense	species	class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium|species-Alexandrium_tamarense	2926	4	50	2.84%	34.22%	98.4%
+Minutocellus polymorphus	species	phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Minutocellus|species-Minutocellus_polymorphus	265543	3	7	2.01%	5.76%	96.98%

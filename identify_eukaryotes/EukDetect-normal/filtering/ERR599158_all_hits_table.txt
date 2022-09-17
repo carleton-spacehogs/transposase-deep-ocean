@@ -1,0 +1,28 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Ostreococcus sp. SAG9	2590004	species	4	41	100.0%	47.39%	99.52%	6096
+Ostreococcus sp. SAG11	2590006	species	4	26	100.0%	28.42%	99.44%	5643
+Ostreococcus sp. SAG12	2590007	species	12	212	92.31%	45.38%	99.45%	29000
+Ostreococcus sp. SAG10	2590005	species	23	431	92.0%	46.76%	99.43%	56396
+unclassified Ostreococcus	2268852	genus	11	124	91.67%	40.87%	99.49%	18843
+Stramenopiles sp. TOSAG41-1	1735744	species	40	270	76.92%	32.46%	99.17%	67745
+unclassified Bathycoccus	2590008	genus	39	323	75.0%	25.97%	99.53%	95463
+Bathycoccus sp. SAG2	2589997	species	3	22	75.0%	22.35%	99.75%	8737
+Triparma pacifica	91992	species	34	125	60.71%	11.3%	99.49%	110146
+Bathycoccus sp. SAG3	2589998	species	2	10	50.0%	19.49%	99.76%	6679
+Bathycoccus sp. TOSAG39-1	1735750	species	6	54	46.15%	28.97%	99.71%	28758
+Bathycoccus sp. SAG4	2589999	species	3	6	42.86%	14.45%	99.63%	10392
+Bathycoccus sp. SAG1	2589996	species	2	3	40.0%	9.7%	99.64%	5703
+Triparma eleuthera	172717	species	26	58	35.62%	11.47%	99.47%	101435
+Micromonas pusilla	38833	species	9	31	34.62%	9.92%	98.02%	49695
+Mamiellales	13792	order	1	43	33.33%	66.0%	99.19%	6183
+Micromonas	38832	genus	59	174	33.15%	7.76%	97.96%	358692
+Stramenopiles sp. TOSAG23-2	1735743	species	13	37	27.66%	11.5%	98.92%	66251
+Prasinococcaceae	2201465	family	5	10	20.0%	11.41%	99.18%	36508
+Pelagomonas calceolata	35677	species	14	64	18.18%	16.38%	98.68%	128353
+Prasinococcaceae sp. CCMP 1430	2489100	species	15	33	13.76%	5.68%	99.14%	225148
+Prasinoderma coloniale	156133	species	9	20	10.47%	10.71%	99.45%	155270
+Phaeocystis globosa	33658	species	4	5	3.45%	9.71%	98.95%	154798
+Phaeocystis antarctica	33657	species	2	3	2.0%	5.19%	97.67%	158488
+Stramenopiles sp. TOSAG23-3	1735745	species	1	2	1.67%	13.9%	99.4%	80549
+Ostreococcus lucimarinus CCE9901	436017	species	1	1	0.88%	7.25%	97.0%	233346
+Komagataella phaffii GS115	644223	species	1	1	0.63%	1.8%	100.0%	318579

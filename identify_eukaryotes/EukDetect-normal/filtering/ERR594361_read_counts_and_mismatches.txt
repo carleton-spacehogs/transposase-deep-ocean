@@ -1,0 +1,17 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+other_MGCollapse_EASP3-56	2	88	3	91	4050	2.25	96.7
+other_MGCollapse_EASP3-36	2	119	4	123	4998	2.46	96.75
+other_MGCollapse_EASP3-2	1	76	2	78	9513	0.82	97.44
+other_MGCollapse_EASP3-53	2	107	0	107	4209	2.54	100.0
+greenalgae-Micromonas_pusilla-1342242at2759-S1	2	88	1	89	3096	2.87	98.88
+greenalgae-Ostreococcus_sp_SAG10-1108845at2759-S1	2	121	2	123	2133	5.77	98.37
+greenalgae-Bathycoccus_sp_TOSAG39_1-551907at2759-S1	2	104	0	104	3183	3.27	100.0
+greenalgae-Bathycoccus_SPCollapse_SP5	2	93	2	95	1911	4.97	97.89
+greenalgae-Bathycoccus_SPCollapse_SP3-25	2	85	0	85	1308	6.5	100.0
+protist-Cafeteria_roenbergensis-858842at2759-S1	2	200	0	200	1260	15.87	100.0
+protist-Cafeteria_roenbergensis-604979at2759-S1	1	99	1	100	1476	6.78	99.0
+protist-Cafeteria_roenbergensis-293315at2759-S1	4	201	1	202	4491	4.5	99.5
+protist-Cafeteria_roenbergensis-598949at2759-S1	2	135	0	135	2976	4.54	100.0
+protist-Cafeteria_roenbergensis-1264469at2759-S1	2	180	0	180	999	18.02	100.0
+protist-Cafeteria_roenbergensis-1051021at2759-S1	2	200	0	200	1773	11.28	100.0
+fungi-Lecanicillium_sp_LEC01-306227at2759-S1	1	101	0	101	2670	3.78	100.0

@@ -1,0 +1,11 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Stramenopiles sp. TOSAG23-2	species	species-Stramenopiles_sp._TOSAG23-2	1735743	46	3482	97.87%	91.61%	98.89%
+Stramenopiles sp. TOSAG41-1	species	species-Stramenopiles_sp._TOSAG41-1	1735744	26	154	50.0%	22.61%	98.69%
+Stramenopiles sp. TOSAG23-3	species	species-Stramenopiles_sp._TOSAG23-3	1735745	22	46	36.67%	10.03%	99.82%
+Stramenopiles sp. TOSAG23-6	species	species-Stramenopiles_sp._TOSAG23-6	1735747	8	22	26.67%	9.45%	99.39%
+Triparma eleuthera	species	class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_eleuthera	172717	17	42	23.29%	10.03%	98.82%
+Bigelowiella natans CCMP2755	species	phylum-Cercozoa|class-Chlorarachniophyceae|genus-Bigelowiella|species-Bigelowiella_natans	753081	5	9	21.74%	6.81%	98.93%
+Bathycoccus prasinos	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	41875	8	13	6.5%	4.9%	99.18%
+Candida parapsilosis	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida|species-Candida_parapsilosis	5480	8	14	4.65%	5.86%	99.67%
+Pelagomonas calceolata	species	class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	35677	3	4	3.9%	5.14%	96.54%
+Pycnococcus provasolii	species	phylum-Chlorophyta|family-Pycnococcaceae|genus-Pycnococcus|species-Pycnococcus_provasolii	41880	3	6	3.09%	11.11%	99.38%

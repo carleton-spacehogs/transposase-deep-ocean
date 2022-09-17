@@ -1,0 +1,10 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+fungi-Meyerozyma_SPCollapse_SP3-28	2	171	0	171	2151	7.95	100.0
+fungi-Malassezia_restricta-779909at2759-S1	2	95	0	95	1032	9.21	100.0
+fungi-Malassezia_restricta-355408at2759-S1	1	100	0	100	5281	1.89	100.0
+fungi-Malassezia_restricta-1019762at2759-S1	2	192	0	192	4821	3.98	100.0
+fungi-Malassezia_restricta-604979at2759-S1	2	198	3	201	4023	5.0	98.51
+fungi-Ochroconis_constricta_UM_578-543764at2759-S1	1	101	0	101	1923	5.25	100.0
+fungi-Ochroconis_constricta_UM_578-1348942at2759-S1	2	200	1	201	1068	18.82	99.5
+fungi-Saccharomyces_cerevisiae_S288C-1513531at2759-S1	1	101	0	101	2169	4.66	100.0
+fungi-Agaricus_bisporus_var_bisporus_H97-1379600at2759-S1	1	101	0	101	2571	3.93	100.0

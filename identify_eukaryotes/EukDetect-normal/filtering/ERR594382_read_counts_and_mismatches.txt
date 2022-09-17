@@ -1,0 +1,5 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+greenalgae-Tetraselmis_striata-734341at2759-S1	2	171	4	175	3993	4.38	97.71
+greenalgae-Bathycoccus_SPCollapse_SP3-17	2	98	2	100	1566	6.39	98.0
+fungi-Malassezia_restricta-39650at2759-S1	2	196	6	202	7377	2.74	97.03
+fungi-Cyberlindnera_jadinii_NRRL_Y-1542-331411at2759-S1	1	101	0	101	4863	2.08	100.0

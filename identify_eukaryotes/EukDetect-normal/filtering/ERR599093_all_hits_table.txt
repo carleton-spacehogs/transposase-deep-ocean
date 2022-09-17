@@ -1,0 +1,16 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Stramenopiles sp. TOSAG23-2	1735743	species	46	732	97.87%	58.52%	99.28%	66251
+Mamiellales	13792	order	1	4	33.33%	34.86%	100.0%	6183
+Voromonas pontica	333133	species	2	3	12.5%	16.03%	99.2%	11409
+Triparma eleuthera	172717	species	8	10	10.96%	8.84%	99.35%	101435
+Stramenopiles sp. TOSAG41-1	1735744	species	3	12	5.77%	17.91%	99.2%	67745
+Triparma pacifica	91992	species	2	2	3.57%	2.94%	100.0%	110146
+Emiliania huxleyi CCMP1516	280463	species	1	2	2.94%	6.3%	100.0%	44652
+Triparma laevis	1534972	species	1	2	2.78%	6.27%	100.0%	50473
+Cafeteria roenbergensis	33653	species	1	2	2.33%	15.78%	98.88%	50724
+Phaeocystis antarctica	33657	species	2	3	2.0%	4.77%	96.58%	158488
+unclassified Bathycoccus	2590008	genus	1	6	1.92%	80.05%	99.15%	95463
+Meyerozyma	766728	genus	1	2	0.76%	7.02%	100.0%	218630
+Tetraselmis striata	3165	species	1	48	0.71%	46.33%	97.84%	255923
+Malassezia restricta	76775	species	1	2	0.67%	6.89%	99.41%	348317
+Rhodotorula diobovata	5288	species	1	1	0.61%	1.72%	100.0%	358851

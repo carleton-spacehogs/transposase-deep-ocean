@@ -1,0 +1,15 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Bathycoccus prasinos	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	41875	123	3789	100.0%	69.2%	98.83%
+Mamiellales	order	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	13792	3	24	100.0%	29.1%	98.83%
+Ostreococcus lucimarinus CCE9901	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._'lucimarinus'	436017	113	12889	99.12%	87.21%	98.46%
+unclassified Ostreococcus	no rank	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	2268852	11	87	91.67%	29.59%	98.89%
+unclassified Bathycoccus	no rank	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	2590008	47	313	90.38%	26.19%	99.27%
+Stramenopiles sp. TOSAG23-2	species	species-Stramenopiles_sp._TOSAG23-2	1735743	37	284	78.72%	34.67%	99.34%
+Micromonas bravo	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_bravo	296588	80	238	67.8%	13.89%	98.38%
+Stramenopiles sp. TOSAG23-3	species	species-Stramenopiles_sp._TOSAG23-3	1735745	36	129	60.0%	18.15%	99.74%
+Micromonas	genus	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	38832	62	177	34.83%	7.92%	98.17%
+Aureococcus anophagefferens	species	class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus|species-Aureococcus_anophagefferens	44056	19	42	29.23%	8.21%	98.28%
+Pelagomonas calceolata	species	class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	35677	17	34	22.08%	11.27%	98.56%
+Phaeocystis globosa	species	phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_globosa	33658	5	6	4.31%	7.69%	98.72%
+Prasinoderma singulare	species	phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinoderma|species-Prasinoderma_singulare	676789	3	4	3.3%	5.94%	98.82%
+Chloropicon roscoffensis	species	phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	1461544	5	9	3.16%	10.11%	99.26%

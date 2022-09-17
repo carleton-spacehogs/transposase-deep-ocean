@@ -1,0 +1,34 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania	genus	Emiliania	2902	3.1315	0.9135	83	26505
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania|species-Emiliania_huxleyi	species	Emiliania huxleyi	2903	3.1315	0.7887	83	26505
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa	genus	Gephyrocapsa	38816	2.2681	0.6617	312	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	species	Gephyrocapsa oceanica	38817	2.2681	0.5713	312	137559
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	1.4561	0.4248	284	195043
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_globosa	species	Phaeocystis globosa	33658	1.4406	0.3628	223	154798
+phylum-Euglenozoa|order-Kinetoplastida|family-Bodonidae|genus-Neobodo	genus	Neobodo	312470	0.3174	0.0926	32	100830
+phylum-Euglenozoa|order-Kinetoplastida|family-Bodonidae|genus-Neobodo|species-Neobodo_designis	species	Neobodo designis	312471	0.3174	0.0799	32	100830
+phylum-Chlorophyta|family-Pycnococcaceae|genus-Pycnococcus	genus	Pycnococcus	41879	0.0671	0.0196	8	119181
+phylum-Chlorophyta|family-Pycnococcaceae|genus-Pycnococcus|species-Pycnococcus_provasolii	species	Pycnococcus provasolii	41880	0.0671	0.0169	8	119181
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.3975	0.116	113	284296
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	0.3877	0.0977	107	275974
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	106.0801	30.9468	47126	444249
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_pusilla	species	Micromonas pusilla	38833	145.8296	36.7309	7247	49695
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	48.3272	14.0985	5466	113104
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._SAG10	species	Ostreococcus sp. SAG10	2590005	51.0143	12.8492	2877	56396
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	116.4006	33.9575	24862	213590
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_sp._TOSAG39-1	species	Bathycoccus sp. TOSAG39-1	1735750	119.0625	29.9889	3424	28758
+class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus	genus	Aureococcus	44055	47.1794	13.7636	4057	85991
+class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus|species-Aureococcus_anophagefferens	species	Aureococcus anophagefferens	44056	47.1794	11.8833	4057	85991
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	15.286	4.4594	1962	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	15.286	3.8502	1962	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagococcus	genus	Pelagococcus	35678	0.0757	0.0221	6	79272
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagococcus|species-Pelagococcus_subviridis	species	Pelagococcus subviridis	35679	0.0757	0.0191	6	79272
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma	genus	Triparma	722752	0.1663	0.0485	20	120231
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_eleuthera	species	Triparma eleuthera	172717	0.1084	0.0273	11	101435
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	5.8867	1.4827	390	66251
+species-Stramenopiles_sp._TOSAG41-1	species	Stramenopiles sp. TOSAG41-1	1735744	2.1699	0.5465	147	67745
+species-Stramenopiles_sp._TOSAG23-3	species	Stramenopiles sp. TOSAG23-3	1735745	1.167	0.2939	94	80549
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.0115	0.0034	4	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.0115	0.0029	4	348317
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium	genus	Alexandrium	2924	1.6184	0.4721	314	194024
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium|species-Alexandrium_tamarense	species	Alexandrium tamarense	2926	1.6184	0.4076	314	194024

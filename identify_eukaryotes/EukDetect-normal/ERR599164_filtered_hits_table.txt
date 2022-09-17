@@ -1,0 +1,16 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+unclassified Bathycoccus	no rank	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	2590008	22	68	42.31%	10.89%	99.53%
+Bathycoccus sp. TOSAG39-1	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_sp._TOSAG39-1	1735750	5	10	38.46%	8.41%	99.46%
+Cafeteria roenbergensis	species	class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	33653	11	24	25.58%	11.52%	99.47%
+Ostreococcus sp. SAG10	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._SAG10	2590005	6	13	24.0%	4.06%	99.74%
+Micromonas pusilla	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_pusilla	38833	5	12	19.23%	8.71%	98.24%
+Micromonas	genus	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	38832	31	66	17.42%	4.87%	98.35%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	14	22	9.33%	4.89%	99.17%
+Meyerozyma	genus	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Meyerozyma	766728	12	23	9.16%	5.55%	99.89%
+Stramenopiles sp. TOSAG41-1	species	species-Stramenopiles_sp._TOSAG41-1	1735744	4	9	7.69%	10.42%	99.5%
+Candida parapsilosis	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida|species-Candida_parapsilosis	5480	12	22	6.98%	8.33%	99.89%
+Meyerozyma caribbica MG20W	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Meyerozyma|species-Meyerozyma_caribbica	1091232	3	8	6.67%	3.87%	99.44%
+Chloropicon roscoffensis	species	phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	1461544	5	9	3.16%	8.49%	99.63%
+Aureococcus anophagefferens	species	class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus|species-Aureococcus_anophagefferens	44056	2	4	3.08%	16.36%	100.0%
+Monosiga brevicollis MX1	species	class-Choanoflagellata|order-Craspedida|family-Salpingoecidae|genus-Monosiga|species-Monosiga_brevicollis	431895	2	4	2.22%	7.69%	98.11%
+Cladosporium sphaerospermum UM 843	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae|genus-Cladosporium|species-Cladosporium_sphaerospermum	1151026	2	5	0.99%	4.67%	99.77%

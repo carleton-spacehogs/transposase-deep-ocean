@@ -1,0 +1,22 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Stramenopiles sp. TOSAG23-2	1735743	species	37	332	78.72%	41.32%	99.43%	66251
+Mamiellales	13792	order	2	7	66.67%	16.95%	100.0%	6183
+Stramenopiles sp. TOSAG23-3	1735745	species	38	127	63.33%	18.6%	99.73%	80549
+Bathycoccus prasinos	41875	species	53	170	43.09%	11.59%	99.05%	229209
+Ostreococcus sp. SAG10	2590005	species	10	31	40.0%	8.17%	98.76%	56396
+Ostreococcus sp. SAG12	2590007	species	4	11	30.77%	6.94%	99.4%	29000
+unclassified Bathycoccus	2590008	genus	15	33	28.85%	7.64%	99.46%	95463
+unclassified Ostreococcus	2268852	genus	3	7	25.0%	9.08%	99.54%	18843
+Bathycoccus sp. SAG3	2589998	species	1	2	25.0%	7.82%	98.46%	6679
+Bathycoccus sp. SAG2	2589997	species	1	1	25.0%	20.93%	100.0%	8737
+Triparma eleuthera	172717	species	18	41	24.66%	11.48%	98.53%	101435
+Bathycoccus sp. TOSAG39-1	1735750	species	3	12	23.08%	17.58%	99.0%	28758
+Malassezia restricta	76775	species	30	62	20.0%	6.02%	99.44%	348317
+Stramenopiles sp. TOSAG23-6	1735747	species	5	10	16.67%	8.18%	99.37%	44106
+Pelagomonas calceolata	35677	species	7	11	9.09%	12.2%	98.36%	128353
+Stramenopiles sp. TOSAG41-1	1735744	species	2	3	3.85%	10.62%	98.18%	67745
+Emiliania huxleyi CCMP1516	280463	species	1	2	2.94%	4.96%	100.0%	44652
+Triparma laevis	1534972	species	1	2	2.78%	6.1%	98.95%	50473
+Aureococcus anophagefferens	44056	species	1	2	1.54%	9.0%	97.35%	85991
+Pelagococcus subviridis	35679	species	1	1	1.52%	6.19%	96.43%	79272
+Pycnococcus provasolii	41880	species	1	2	1.03%	8.61%	97.62%	119181

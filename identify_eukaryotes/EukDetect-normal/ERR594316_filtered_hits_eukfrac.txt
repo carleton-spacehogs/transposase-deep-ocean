@@ -1,0 +1,16 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+species-Stramenopiles_sp._TOSAG41-1	species	Stramenopiles sp. TOSAG41-1	1735744	1.1661	25.9675	79	67745
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	2.8226	62.8536	187	66251
+class-Bolidophyceae	class	Bolidophyceae	91989	0.0394	10.265	4	101435
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma	genus	Triparma	722752	0.0394	2.0398	4	101435
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_eleuthera	species	Triparma eleuthera	172717	0.0394	0.8781	4	101435
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	0.2253	58.6604	81	359442
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	0.4495	23.2503	56	124587
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_pusilla	species	Micromonas pusilla	38833	0.1811	4.0328	9	49695
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	1.2508	64.6986	6	4797
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._'lucimarinus'	species	Ostreococcus sp. 'lucimarinus'	242159	0.0879	1.9581	5	56860
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	0.0742	3.8365	17	229209
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	0.0742	1.6516	17	229209
+phylum-Cercozoa|class-Chlorarachniophyceae	class	Chlorarachniophyceae	29197	0.1194	31.0746	10	83769
+phylum-Cercozoa|class-Chlorarachniophyceae|genus-Partenskyella	genus	Partenskyella	647365	0.1194	6.1749	10	83769
+phylum-Cercozoa|class-Chlorarachniophyceae|genus-Partenskyella|species-Partenskyella_glossopodia	species	Partenskyella glossopodia	552666	0.1194	2.6583	10	83769

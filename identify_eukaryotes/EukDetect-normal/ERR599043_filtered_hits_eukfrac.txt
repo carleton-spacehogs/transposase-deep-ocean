@@ -1,0 +1,17 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+species-Stramenopiles_sp._TOSAG41-1	species	Stramenopiles sp. TOSAG41-1	1735744	2.2732	3.9658	154	67745
+species-Stramenopiles_sp._TOSAG23-3	species	Stramenopiles sp. TOSAG23-3	1735745	0.5711	0.9963	46	80549
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	52.5577	91.6913	3482	66251
+species-Stramenopiles_sp._TOSAG23-6	species	Stramenopiles sp. TOSAG23-6	1735747	0.4988	0.8702	22	44106
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma	genus	Triparma	722752	0.4171	29.3241	44	105479
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_eleuthera	species	Triparma eleuthera	172717	0.4141	0.7224	42	101435
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	0.0312	2.1907	4	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	0.0312	0.0544	4	128353
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida	genus	Candida	1535326	0.0449	3.1543	14	312010
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida|species-Candida_parapsilosis	species	Candida parapsilosis	5480	0.0449	0.0783	14	312010
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	0.0567	3.987	13	229209
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	0.0567	0.0989	13	229209
+phylum-Chlorophyta|family-Pycnococcaceae|genus-Pycnococcus	genus	Pycnococcus	41879	0.0503	3.539	6	119181
+phylum-Chlorophyta|family-Pycnococcaceae|genus-Pycnococcus|species-Pycnococcus_provasolii	species	Pycnococcus provasolii	41880	0.0503	0.0878	6	119181
+phylum-Cercozoa|class-Chlorarachniophyceae|genus-Bigelowiella	genus	Bigelowiella	227085	0.8223	57.8049	9	10945
+phylum-Cercozoa|class-Chlorarachniophyceae|genus-Bigelowiella|species-Bigelowiella_natans	species	Bigelowiella natans	227086	0.8223	1.4346	9	10945

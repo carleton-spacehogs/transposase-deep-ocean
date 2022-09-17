@@ -1,0 +1,4 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+greenalgae-Tetraselmis_striata-734341at2759-S1	3	256	7	263	3993	6.59	97.34
+protist-Prorocentrum_minimum-734341at2759-D1	128	660	31	691	798	86.59	95.51
+fungi-Candida_parapsilosis-891751at2759-S1	2	113	1	114	1536	7.42	99.12

@@ -1,0 +1,3 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Tetraselmis striata	3165	species	1	2	0.71%	4.66%	96.77%	255923
+Malassezia restricta	76775	species	1	1	0.67%	6.6%	100.0%	348317

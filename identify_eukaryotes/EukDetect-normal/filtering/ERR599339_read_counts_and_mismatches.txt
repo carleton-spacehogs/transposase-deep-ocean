@@ -1,0 +1,7 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+fungi-Malassezia_restricta-774318at2759-S1	2	198	4	202	1482	13.63	98.02
+fungi-Malassezia_restricta-39650at2759-S1	2	186	0	186	7377	2.52	100.0
+fungi-Malassezia_restricta-1112002at2759-S1	2	175	2	177	2931	6.04	98.87
+fungi-Malassezia_restricta-937686at2759-S1	2	158	0	158	1341	11.78	100.0
+fungi-Malassezia_restricta-891751at2759-S1	2	182	3	185	1989	9.3	98.38
+fungi-Malassezia_restricta-293315at2759-S1	1	81	2	83	5661	1.47	97.59

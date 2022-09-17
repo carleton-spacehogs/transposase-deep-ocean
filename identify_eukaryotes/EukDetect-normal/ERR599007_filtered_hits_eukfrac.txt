@@ -1,0 +1,24 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	11.5603	84.7062	3249	281049
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	11.5603	84.7062	3249	281049
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	15.5771	81.6771	3190	204788
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_sp._TOSAG39-1	species	Bathycoccus sp. TOSAG39-1	1735750	11.8228	59.7244	340	28758
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	0.6136	3.2174	43	70078
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._SAG10	species	Ostreococcus sp. SAG10	2590005	0.4256	2.1498	24	56396
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	0.7609	5.5757	210	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	0.7609	5.5757	210	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.7609	3.9899	210	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	0.7609	3.844	210	275974
+species-Stramenopiles_sp._TOSAG23-3	species	Stramenopiles sp. TOSAG23-3	1735745	0.1241	0.6271	10	80549
+species-Stramenopiles_sp._TOSAG41-1	species	Stramenopiles sp. TOSAG41-1	1735744	0.4871	2.4608	33	67745
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	4.0905	20.6637	271	66251
+class-Pelagophyceae	class	Pelagophyceae	35675	1.1617	8.5121	249	214344
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	1.1617	8.5121	249	214344
+class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus	genus	Aureococcus	44055	0.0465	0.2439	4	85991
+class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus|species-Aureococcus_anophagefferens	species	Aureococcus anophagefferens	44056	0.0465	0.235	4	85991
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	1.9088	10.0086	245	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	1.9088	9.6425	245	128353
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.1646	1.206	27	164041
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	0.1646	1.206	27	164041
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	0.1646	0.863	27	164041
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_globosa	species	Phaeocystis globosa	33658	0.1292	0.6527	20	154798

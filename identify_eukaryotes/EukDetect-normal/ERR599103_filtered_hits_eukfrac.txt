@@ -1,0 +1,34 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	20.6396	66.5377	17065	826808
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	20.6396	66.5377	17065	826808
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	0.4416	0.6188	143	323833
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_bravo	species	Micromonas bravo	296588	0.0547	0.0577	10	182724
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_pusilla	species	Micromonas pusilla	38833	0.161	0.1699	8	49695
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	0.8422	1.1802	119	141293
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._'lucimarinus'	species	Ostreococcus sp. 'lucimarinus'	242159	0.4902	0.5173	69	140746
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	46.8505	65.6497	16796	358502
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	67.3926	71.1105	15447	229209
+phylum-Chlorophyta|class-Palmophyllophyceae	class	Palmophyllophyceae	2201463	0.1234	0.3979	15	121534
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales	order	Prasinococcales	485343	0.1234	0.3979	15	121534
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinoderma	genus	Prasinoderma	156132	0.1234	0.1729	15	121534
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinoderma|species-Prasinoderma_singulare	species	Prasinoderma singulare	676789	0.1234	0.1302	15	121534
+species-Stramenopiles_sp._TOSAG23-3	species	Stramenopiles sp. TOSAG23-3	1735745	0.7076	0.7467	57	80549
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	2.7471	2.8987	182	66251
+class-Pelagophyceae	class	Pelagophyceae	35675	9.3728	30.2158	2009	214344
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	9.3728	30.2158	2009	214344
+class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus	genus	Aureococcus	44055	19.9091	27.8978	1712	85991
+class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus|species-Aureococcus_anophagefferens	species	Aureococcus anophagefferens	44056	19.9091	21.0074	1712	85991
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	2.3139	3.2424	297	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	2.3139	2.4416	297	128353
+class-Bolidophyceae	class	Bolidophyceae	91989	0.1189	0.3832	6	50473
+class-Bolidophyceae|order-Parmales	order	Parmales	722750	0.1189	0.3832	6	50473
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma	genus	Triparma	722752	0.1189	0.1666	6	50473
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_laevis	species	Triparma laevis	1534972	0.1189	0.1254	6	50473
+class-Dinophyceae	class	Dinophyceae	2864	0.0876	0.2825	17	194024
+class-Dinophyceae|order-Gonyaulacales	order	Gonyaulacales	40984	0.0876	0.2825	17	194024
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium	genus	Alexandrium	2924	0.0876	0.1228	17	194024
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium|species-Alexandrium_tamarense	species	Alexandrium tamarense	2926	0.0876	0.0925	17	194024
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.6771	2.1829	127	187558
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	0.6771	2.1829	127	187558
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	0.6771	0.9488	127	187558
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_globosa	species	Phaeocystis globosa	33658	0.6654	0.7021	103	154798

@@ -1,0 +1,30 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Micromonas pusilla	38833	species	26	396	100.0%	44.67%	98.15%	49695
+Ostreococcus sp. SAG9	2590004	species	4	198	100.0%	89.16%	98.38%	6096
+Ostreococcus sp. SAG11	2590006	species	4	79	100.0%	41.18%	98.67%	5643
+Ostreococcus sp. SAG10	2590005	species	24	1467	96.0%	83.88%	98.6%	56396
+Ostreococcus sp. SAG12	2590007	species	12	749	92.31%	83.68%	98.33%	29000
+unclassified Ostreococcus	2268852	genus	11	439	91.67%	78.46%	98.5%	18843
+unclassified Bathycoccus	2590008	genus	47	954	90.38%	57.25%	99.37%	95463
+Bathycoccus sp. SAG1	2589996	species	4	9	80.0%	16.31%	99.07%	5703
+Bathycoccus sp. TOSAG39-1	1735750	species	10	135	76.92%	39.45%	99.34%	28758
+Micromonas	38832	genus	134	2239	75.28%	42.51%	98.18%	358692
+Bathycoccus sp. SAG2	2589997	species	3	52	75.0%	38.41%	99.31%	8737
+Stramenopiles sp. TOSAG41-1	1735744	species	39	147	75.0%	21.16%	98.59%	67745
+Bathycoccus sp. SAG4	2589999	species	5	40	71.43%	28.66%	99.54%	10392
+Mamiellales	13792	order	2	102	66.67%	57.69%	98.93%	6183
+Bathycoccus sp. SAG3	2589998	species	2	62	50.0%	71.21%	99.27%	6679
+Pelagomonas calceolata	35677	species	14	36	18.18%	11.12%	97.99%	128353
+Stramenopiles sp. TOSAG23-2	1735743	species	7	14	14.89%	10.26%	98.3%	66251
+Triparma pacifica	91992	species	4	7	7.14%	3.91%	99.51%	110146
+Pycnococcus provasolii	41880	species	6	10	6.19%	10.02%	99.23%	119181
+Triparma eleuthera	172717	species	4	5	5.48%	7.64%	99.78%	101435
+Bathycoccus prasinos	41875	species	6	13	4.88%	4.34%	97.03%	229209
+Phaeocystis globosa	33658	species	4	8	3.45%	16.39%	98.59%	154798
+Micromonas bravo	296588	species	4	8	3.39%	6.55%	98.31%	182724
+Chloropicon roscoffensis	1461544	species	5	10	3.16%	6.44%	99.31%	275974
+Stramenopiles sp. TOSAG23-3	1735745	species	1	2	1.67%	16.85%	97.79%	80549
+Alexandrium tamarense	2926	species	2	13	1.42%	34.4%	98.6%	194024
+Phaeocystis antarctica	33657	species	1	1	1.0%	2.19%	97.98%	158488
+Chlorophyta	3041	phylum	1	1	0.92%	1.39%	97.03%	200893
+Tetraselmis striata	3165	species	1	2	0.71%	4.41%	98.3%	255923

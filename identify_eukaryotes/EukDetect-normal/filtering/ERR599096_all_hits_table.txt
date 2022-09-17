@@ -1,0 +1,22 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Mamiellales	13792	order	1	2	33.33%	20.02%	100.0%	6183
+Chloropicon mariensis	1606511	species	36	78	32.73%	9.69%	99.52%	157984
+Stramenopiles sp. TOSAG23-2	1735743	species	8	21	17.02%	8.76%	99.2%	66251
+Pelagomonas calceolata	35677	species	13	27	16.88%	10.88%	98.26%	128353
+Paraphysomonas bandaiensis	89770	species	13	23	14.61%	5.07%	99.86%	154847
+Phaeocystis globosa	33658	species	9	13	7.76%	10.73%	98.92%	154798
+Cyphellophora europaea CBS 101466	1220924	species	14	30	7.04%	5.92%	99.7%	391280
+unclassified Bathycoccus	2590008	genus	3	5	5.77%	3.45%	98.91%	95463
+Stramenopiles sp. TOSAG41-1	1735744	species	3	4	5.77%	10.26%	99.16%	67745
+Exophiala xenobiotica	348802	species	11	24	5.5%	4.52%	99.68%	372377
+Chloropicon roscoffensis	1461544	species	8	16	5.06%	6.87%	99.93%	275974
+Stramenopiles sp. TOSAG23-3	1735745	species	2	4	3.33%	9.43%	97.89%	80549
+Hortaea werneckii EXF-2000	1157616	species	7	14	1.89%	6.36%	98.96%	717212
+Triparma pacifica	91992	species	1	2	1.79%	4.33%	100.0%	110146
+Ochroconis constricta UM 578	1442076	species	3	5	1.53%	3.55%	99.56%	370078
+Neobodo designis	312471	species	1	2	1.52%	16.29%	99.43%	100830
+Cadophora sp. DSE1049	1485229	species	3	5	1.45%	4.84%	97.83%	369337
+Rhodotorula diobovata	5288	species	2	3	1.23%	4.15%	100.0%	358851
+Phaeocystis antarctica	33657	species	1	4	1.0%	18.93%	96.6%	158488
+Gephyrocapsa oceanica	38817	species	1	1	1.0%	5.43%	96.84%	137559
+Exophiala aquamarina CBS 119918	1182545	species	1	1	0.5%	2.13%	97.03%	376942

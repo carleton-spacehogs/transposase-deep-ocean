@@ -1,0 +1,20 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+species-Stramenopiles_sp._TOSAG41-1	species	Stramenopiles sp. TOSAG41-1	1735744	0.1329	2.5462	9	67745
+species-Stramenopiles_sp._TOSAG23-3	species	Stramenopiles sp. TOSAG23-3	1735745	1.1422	21.8904	92	80549
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	2.4302	46.5758	161	66251
+species-Stramenopiles_sp._TOSAG23-6	species	Stramenopiles sp. TOSAG23-6	1735747	0.0907	1.7382	4	44106
+class-Bolidophyceae	class	Bolidophyceae	91989	0.1577	18.6321	16	101435
+class-Bolidophyceae|order-Parmales	order	Parmales	722750	0.1577	18.6321	16	101435
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma	genus	Triparma	722752	0.1577	7.6415	16	101435
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_eleuthera	species	Triparma eleuthera	172717	0.1577	3.0231	16	101435
+class-Pelagophyceae	class	Pelagophyceae	35675	0.0623	7.3623	8	128353
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	0.0623	7.3623	8	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	0.0623	3.0195	8	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	0.0623	1.1946	8	128353
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	0.6265	74.0056	223	355935
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	0.6265	74.0056	223	355935
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	0.4459	21.603	4	8970
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	0.5581	27.035	144	258037
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	0.5279	10.1177	121	229209
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	0.8402	40.701	74	88079
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._SAG10	species	Ostreococcus sp. SAG10	2590005	0.6738	12.914	38	56396

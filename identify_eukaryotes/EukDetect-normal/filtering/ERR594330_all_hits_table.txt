@@ -1,0 +1,23 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Bathycoccus sp. SAG2	2589997	species	1	2	25.0%	17.23%	99.35%	8737
+Prasinococcaceae	2201465	family	2	4	8.0%	3.03%	98.78%	36508
+Ostreococcus sp. SAG10	2590005	species	2	4	8.0%	13.2%	100.0%	56396
+Ostreococcus sp. SAG12	2590007	species	1	2	7.69%	2.37%	100.0%	29000
+Bathycoccus sp. TOSAG39-1	1735750	species	1	2	7.69%	8.61%	99.43%	28758
+Stramenopiles sp. TOSAG23-2	1735743	species	3	6	6.38%	7.6%	98.83%	66251
+[Nectria] haematococca mpVI 77-13-4	660122	no rank	13	24	6.37%	5.24%	99.81%	351719
+Monosiga brevicollis MX1	431895	species	5	7	5.56%	6.72%	98.87%	126657
+Pelagomonas calceolata	35677	species	3	5	3.9%	6.23%	99.77%	128353
+Purpureocillium lilacinum	33203	species	5	10	2.43%	6.06%	99.1%	356037
+Cafeteria roenbergensis	33653	species	1	2	2.33%	14.21%	99.44%	50724
+Stramenopiles sp. TOSAG41-1	1735744	species	1	2	1.92%	12.9%	99.37%	67745
+Triparma pacifica	91992	species	1	2	1.79%	15.45%	99.42%	110146
+Micromonas	38832	genus	3	6	1.69%	2.63%	98.09%	358692
+Fusarium sp. AF-4	1325735	species	2	3	1.49%	3.95%	97.23%	265969
+Malassezia restricta	76775	species	2	4	1.33%	3.36%	99.72%	348317
+Meira nashicola	286112	species	2	3	1.09%	8.73%	100.0%	341159
+Fusarium solani	169388	species	2	4	1.03%	4.99%	99.02%	338685
+Oithona nana	136191	species	1	1	0.67%	7.57%	97.03%	244880
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	4.88%	100.0%	332937
+Candida parapsilosis	5480	species	1	2	0.58%	3.03%	100.0%	312010
+Fusarium metavorans	2421284	species	1	1	0.5%	7.01%	96.94%	347782

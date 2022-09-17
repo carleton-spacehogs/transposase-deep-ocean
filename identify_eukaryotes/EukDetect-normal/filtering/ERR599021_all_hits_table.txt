@@ -1,0 +1,30 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+unclassified Bathycoccus	2590008	genus	14	35	26.92%	6.94%	99.6%	95463
+Bathycoccus sp. SAG3	2589998	species	1	2	25.0%	6.74%	100.0%	6679
+Bathycoccus sp. SAG2	2589997	species	1	2	25.0%	3.15%	100.0%	8737
+Bathycoccus sp. TOSAG39-1	1735750	species	3	8	23.08%	7.14%	99.51%	28758
+Micromonas pusilla	38833	species	5	8	19.23%	10.33%	98.45%	49695
+Cafeteria roenbergensis	33653	species	7	18	16.28%	12.65%	99.94%	50724
+Micromonas	38832	genus	27	47	15.17%	3.92%	98.26%	358692
+Bathycoccus sp. SAG4	2589999	species	1	3	14.29%	15.38%	100.0%	10392
+Saccharomyces cerevisiae S288C	559292	species	22	47	12.09%	5.17%	99.69%	308302
+Meyerozyma	766728	genus	8	16	6.11%	5.5%	99.85%	218630
+Candida parapsilosis	5480	species	8	12	4.65%	4.1%	100.0%	312010
+Meyerozyma caribbica MG20W	1091232	species	2	4	4.44%	3.88%	99.71%	140144
+Ostreococcus sp. SAG10	2590005	species	1	2	4.0%	12.09%	100.0%	56396
+Chloropicon roscoffensis	1461544	species	5	9	3.16%	4.9%	98.97%	275974
+Malassezia restricta	76775	species	4	7	2.67%	4.29%	99.34%	348317
+Monosiga brevicollis MX1	431895	species	2	3	2.22%	4.74%	98.64%	126657
+Stramenopiles sp. TOSAG23-2	1735743	species	1	1	2.13%	1.38%	100.0%	66251
+Aureococcus anophagefferens	44056	species	1	2	1.54%	5.25%	97.69%	85991
+Cladosporium sphaerospermum UM 843	1151026	species	3	5	1.48%	5.2%	99.1%	363001
+Chloropicon primus	1764295	species	2	4	1.45%	4.75%	99.72%	281336
+Gephyrocapsa oceanica	38817	species	1	2	1.0%	6.64%	98.31%	137559
+Tyrophagus putrescentiae	59818	species	1	2	0.86%	12.35%	97.69%	241626
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	2.29%	98.94%	332937
+[Candida] intermedia	45354	species	1	2	0.57%	6.1%	99.43%	350551
+Candida sake	39397	species	1	2	0.56%	12.54%	98.9%	323512
+Cyphellophora europaea CBS 101466	1220924	species	1	2	0.5%	6.9%	96.23%	391280
+Exophiala xenobiotica	348802	species	1	2	0.5%	1.69%	95.87%	372377
+[Nectria] haematococca mpVI 77-13-4	660122	no rank	1	2	0.49%	12.16%	100.0%	351719
+Hortaea werneckii EXF-2000	1157616	species	1	2	0.27%	3.18%	100.0%	717212

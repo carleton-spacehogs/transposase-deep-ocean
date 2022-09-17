@@ -1,0 +1,26 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Exophiala xenobiotica	348802	species	91	284	45.5%	10.71%	99.34%	372377
+Cyphellophora europaea CBS 101466	1220924	species	68	190	34.17%	8.68%	99.78%	391280
+Cafeteria roenbergensis	33653	species	6	11	13.95%	10.49%	99.18%	50724
+Hortaea werneckii EXF-2000	1157616	species	41	90	11.05%	5.82%	99.69%	717212
+Bathycoccus prasinos	41875	species	13	21	10.57%	5.52%	99.45%	229209
+Micromonas pusilla	38833	species	2	5	7.69%	7.13%	97.73%	49695
+Chloropicon roscoffensis	1461544	species	12	20	7.59%	6.96%	99.55%	275974
+Malassezia restricta	76775	species	9	19	6.0%	4.44%	98.88%	348317
+Candida parapsilosis	5480	species	6	12	3.49%	6.32%	99.7%	312010
+Micromonas	38832	genus	6	10	3.37%	4.63%	98.21%	358692
+Neobodo designis	312471	species	2	4	3.03%	10.54%	98.3%	100830
+Ochroconis constricta UM 578	1442076	species	5	12	2.55%	7.03%	98.59%	370078
+Cadophora sp. DSE1049	1485229	species	5	7	2.42%	3.34%	98.33%	369337
+Stramenopiles sp. TOSAG23-2	1735743	species	1	2	2.13%	7.51%	100.0%	66251
+Aureococcus anophagefferens	44056	species	1	1	1.54%	5.79%	100.0%	85991
+Pelagomonas calceolata	35677	species	1	1	1.3%	10.4%	97.94%	128353
+Rhodotorula diobovata	5288	species	2	3	1.23%	3.6%	99.64%	358851
+Paraphysomonas bandaiensis	89770	species	1	2	1.12%	8.91%	100.0%	154847
+Chloropicon mariensis	1606511	species	1	1	0.91%	6.13%	99.01%	157984
+Hanseniaspora pseudoguilliermondii	332229	species	1	2	0.91%	4.45%	100.0%	223778
+Meyerozyma	766728	genus	1	2	0.76%	2.13%	99.43%	218630
+Tetraselmis striata	3165	species	1	12	0.71%	26.4%	97.91%	255923
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	7.96%	98.87%	332937
+Cladosporium cladosporioides	29917	species	1	3	0.56%	4.48%	99.67%	333901
+Helotiales sp. F229	1967635	species	1	1	0.5%	3.61%	96.04%	364015

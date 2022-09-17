@@ -1,0 +1,33 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Bathycoccus sp. SAG3	2589998	species	2	6	50.0%	12.12%	99.42%	6679
+unclassified Bathycoccus	2590008	genus	22	68	42.31%	10.89%	99.53%	95463
+Bathycoccus sp. TOSAG39-1	1735750	species	5	10	38.46%	8.41%	99.46%	28758
+Cafeteria roenbergensis	33653	species	11	24	25.58%	11.52%	99.47%	50724
+Ostreococcus sp. SAG10	2590005	species	6	13	24.0%	4.06%	99.74%	56396
+Bathycoccus sp. SAG1	2589996	species	1	1	20.0%	7.04%	100.0%	5703
+Micromonas pusilla	38833	species	5	12	19.23%	8.71%	98.24%	49695
+Micromonas	38832	genus	31	66	17.42%	4.87%	98.35%	358692
+Ostreococcus sp. SAG12	2590007	species	2	3	15.38%	7.19%	99.62%	29000
+Bathycoccus sp. SAG4	2589999	species	1	1	14.29%	7.41%	98.78%	10392
+Malassezia restricta	76775	species	14	22	9.33%	4.89%	99.17%	348317
+Meyerozyma	766728	genus	12	23	9.16%	5.55%	99.89%	218630
+unclassified Ostreococcus	2268852	genus	1	2	8.33%	4.33%	98.73%	18843
+Stramenopiles sp. TOSAG41-1	1735744	species	4	9	7.69%	10.42%	99.5%	67745
+Candida parapsilosis	5480	species	12	22	6.98%	8.33%	99.89%	312010
+Meyerozyma caribbica MG20W	1091232	species	3	8	6.67%	3.87%	99.44%	140144
+Meyerozyma guilliermondii ATCC 6260	294746	species	2	3	5.56%	1.94%	100.0%	107589
+Stramenopiles sp. TOSAG23-2	1735743	species	2	3	4.26%	3.25%	99.64%	66251
+Chloropicon roscoffensis	1461544	species	5	9	3.16%	8.49%	99.63%	275974
+Aureococcus anophagefferens	44056	species	2	4	3.08%	16.36%	100.0%	85991
+Pelagomonas calceolata	35677	species	2	3	2.6%	9.97%	97.67%	128353
+Monosiga brevicollis MX1	431895	species	2	4	2.22%	7.69%	98.11%	126657
+Malassezia globosa CBS 7966	425265	species	2	4	1.27%	3.69%	98.62%	332937
+Phaeocystis antarctica	33657	species	1	2	1.0%	9.01%	96.45%	158488
+Cladosporium sphaerospermum UM 843	1151026	species	2	5	0.99%	4.67%	99.77%	363001
+Tyrophagus putrescentiae	59818	species	1	2	0.86%	3.0%	100.0%	241626
+Bathycoccus prasinos	41875	species	1	2	0.81%	4.72%	96.71%	229209
+Rhodotorula diobovata	5288	species	1	1	0.61%	3.47%	100.0%	358851
+Exophiala oligosperma	215243	species	1	1	0.5%	2.73%	100.0%	386708
+Nigrograna mackinnonii	1489893	species	1	2	0.5%	16.49%	97.83%	355882
+Exophiala xenobiotica	348802	species	1	2	0.5%	1.88%	100.0%	372377
+Hortaea werneckii EXF-2000	1157616	species	1	2	0.27%	1.92%	100.0%	717212

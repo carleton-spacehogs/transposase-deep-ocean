@@ -1,0 +1,33 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Bathycoccus prasinos	41875	species	123	15447	100.0%	88.8%	97.91%	229209
+Aureococcus anophagefferens	44056	species	63	1712	96.92%	64.42%	97.77%	85991
+unclassified Bathycoccus	2590008	genus	47	1032	90.38%	56.91%	98.46%	95463
+Stramenopiles sp. TOSAG23-2	1735743	species	36	182	76.6%	25.47%	99.36%	66251
+Bathycoccus sp. SAG2	2589997	species	3	59	75.0%	46.25%	98.48%	8737
+Bathycoccus sp. TOSAG39-1	1735750	species	9	148	69.23%	42.96%	98.53%	28758
+Mamiellales	13792	order	2	7	66.67%	17.58%	99.28%	6183
+Pelagomonas calceolata	35677	species	46	297	59.74%	19.31%	97.74%	128353
+Bathycoccus sp. SAG4	2589999	species	4	43	57.14%	23.05%	98.57%	10392
+Bathycoccus sp. SAG3	2589998	species	2	49	50.0%	58.45%	98.59%	6679
+Ostreococcus sp. SAG12	2590007	species	6	14	46.15%	7.03%	98.91%	29000
+Bathycoccus sp. SAG1	2589996	species	2	18	40.0%	47.32%	98.48%	5703
+Stramenopiles sp. TOSAG23-3	1735745	species	23	57	38.33%	12.68%	99.78%	80549
+Ostreococcus sp. SAG10	2590005	species	9	27	36.0%	8.66%	99.19%	56396
+Ostreococcus lucimarinus CCE9901	436017	species	31	69	27.19%	6.69%	99.66%	233346
+Ostreococcus sp. SAG9	2590004	species	1	2	25.0%	6.04%	97.3%	6096
+Ostreococcus sp. SAG11	2590006	species	1	1	25.0%	11.95%	100.0%	5643
+Micromonas	38832	genus	37	125	20.79%	7.41%	97.4%	358692
+Lithomelissa setosa	1054399	species	1	27	20.0%	92.71%	96.63%	2562
+Phaeocystis globosa	33658	species	23	103	19.83%	27.51%	98.69%	154798
+Micromonas pusilla	38833	species	5	8	19.23%	6.65%	97.97%	49695
+unclassified Ostreococcus	2268852	genus	2	6	16.67%	9.37%	99.26%	18843
+Phaeocystis antarctica	33657	species	14	24	14.0%	6.79%	97.39%	158488
+Prasinoderma singulare	676789	species	10	15	10.99%	8.08%	99.46%	121534
+Triparma laevis	1534972	species	3	6	8.33%	10.34%	98.94%	50473
+Stramenopiles sp. TOSAG41-1	1735744	species	1	1	1.92%	9.3%	100.0%	67745
+Micromonas bravo	296588	species	2	10	1.69%	28.31%	96.99%	182724
+Alexandrium tamarense	2926	species	2	17	1.42%	41.09%	97.47%	194024
+Monosiga brevicollis MX1	431895	species	1	1	1.11%	8.72%	98.15%	126657
+Oikopleura albicans	2500139	species	1	1	1.06%	4.18%	98.82%	126693
+Chloropicon mariensis	1606511	species	1	2	0.91%	7.97%	100.0%	157984
+Chloropicon roscoffensis	1461544	species	1	2	0.63%	2.89%	100.0%	275974

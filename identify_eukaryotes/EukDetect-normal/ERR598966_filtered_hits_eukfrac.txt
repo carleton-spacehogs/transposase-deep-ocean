@@ -1,0 +1,18 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+species-Stramenopiles_sp._TOSAG41-1	species	Stramenopiles sp. TOSAG41-1	1735744	1.6385	24.8678	111	67745
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	0.5132	7.7889	34	66251
+class-Bolidophyceae	class	Bolidophyceae	91989	0.1428	6.9733	15	105046
+class-Bolidophyceae|order-Parmales	order	Parmales	722750	0.1428	6.9733	15	105046
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma	genus	Triparma	722752	0.1428	2.6524	15	105046
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_eleuthera	species	Triparma eleuthera	172717	0.1282	1.9451	13	101435
+class-Pelagophyceae	class	Pelagophyceae	35675	0.0623	3.0438	8	128353
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	0.0623	3.0438	8	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	0.0623	1.1577	8	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	0.0623	0.946	8	128353
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	1.8426	89.983	531	288177
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	1.8426	89.983	531	288177
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	1.15	21.36	123	106961
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_sp._TOSAG39-1	species	Bathycoccus sp. TOSAG39-1	1735750	0.452	6.8608	13	28758
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	3.6277	67.3829	366	100891
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._SAG10	species	Ostreococcus sp. SAG10	2590005	3.7946	57.5913	214	56396
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	0.4009	7.447	31	77322

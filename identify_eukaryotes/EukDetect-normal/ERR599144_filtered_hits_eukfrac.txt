@@ -1,0 +1,33 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	0.6341	1.1983	145	228660
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_bravo	species	Micromonas bravo	296588	0.5746	1.1058	105	182724
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	32.1715	60.7922	7374	229209
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	32.1715	61.9092	7374	229209
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	13.9555	26.3708	3446	246927
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._'lucimarinus'	species	Ostreococcus sp. 'lucimarinus'	242159	12.0508	23.1899	3433	284878
+phylum-Chlorophyta|family-Pycnococcaceae|genus-Pycnococcus	genus	Pycnococcus	41879	0.0755	0.1427	9	119181
+phylum-Chlorophyta|family-Pycnococcaceae|genus-Pycnococcus|species-Pycnococcus_provasolii	species	Pycnococcus provasolii	41880	0.0755	0.1453	9	119181
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania	genus	Emiliania	2902	0.4801	0.9073	4	8331
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania|species-Emiliania_huxleyi	species	Emiliania huxleyi	2903	0.4801	0.9239	4	8331
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	0.1024	0.1934	16	156291
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_globosa	species	Phaeocystis globosa	33658	0.084	0.1616	13	154798
+phylum-Ciliophora|class-Oligohymenophorea|order-Hymenostomatida|family-Tetrahymenidae|genus-Tetrahymena	genus	Tetrahymena	5890	2.7451	5.1872	42	15300
+phylum-Ciliophora|class-Oligohymenophorea|order-Hymenostomatida|family-Tetrahymenidae|genus-Tetrahymena|species-Tetrahymena_thermophila	species	Tetrahymena thermophila	5911	2.7451	5.2825	42	15300
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium	genus	Alexandrium	2924	0.0876	0.1656	17	194024
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium|species-Alexandrium_tamarense	species	Alexandrium tamarense	2926	0.0876	0.1686	17	194024
+class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus	genus	Aureococcus	44055	1.0117	1.9118	87	85991
+class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus|species-Aureococcus_anophagefferens	species	Aureococcus anophagefferens	44056	1.0117	1.9469	87	85991
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	0.039	0.0736	5	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	0.039	0.075	5	128353
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	0.7547	1.4523	50	66251
+species-Stramenopiles_sp._TOSAG23-3	species	Stramenopiles sp. TOSAG23-3	1735745	0.2731	0.5256	22	80549
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Minutocellus	genus	Minutocellus	265542	0.0234	0.0442	6	256500
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Minutocellus|species-Minutocellus_polymorphus	species	Minutocellus polymorphus	265543	0.0234	0.045	6	256500
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Arcocellulus	genus	Arcocellulus	420263	1.0827	2.046	116	107135
+phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Arcocellulus|species-Arcocellulus_cornucervis	species	Arcocellulus cornucervis	1155433	1.0827	2.0836	116	107135
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella	genus	Florenciella	236786	0.1352	0.2554	12	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella|species-Florenciella_parvula	species	Florenciella parvula	236787	0.1352	0.2601	12	88783
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma	genus	Triparma	722752	0.2972	0.5616	15	50473
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_laevis	species	Triparma laevis	1534972	0.2972	0.5719	15	50473
+phylum-Cryptophyta|order-Cryptomonadales|family-Hemiselmidaceae|genus-Hemiselmis	genus	Hemiselmis	77924	0.0794	0.15	5	62987
+phylum-Cryptophyta|order-Cryptomonadales|family-Hemiselmidaceae|genus-Hemiselmis|species-Hemiselmis_rufescens	species	Hemiselmis rufescens	77926	0.0794	0.1528	5	62987

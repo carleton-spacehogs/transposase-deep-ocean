@@ -1,0 +1,27 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.017	1.1941	6	351941
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.017	1.1941	6	351941
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.017	0.9325	6	351941
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.0115	0.7194	4	348317
+phylum-Ascomycota|class-Sordariomycetes	class	Sordariomycetes	147550	0.1024	7.1729	42	410137
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales	order	Hypocreales	5125	0.1024	7.1729	42	410137
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Ophiocordycipitaceae|genus-Purpureocillium	genus	Purpureocillium	1052105	0.0281	1.5362	10	356037
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Ophiocordycipitaceae|genus-Purpureocillium|species-Purpureocillium_lilacinum	species	Purpureocillium lilacinum	33203	0.0281	1.7595	10	356037
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Nectriaceae|genus-Fusarium	genus	Fusarium	5506	0.5915	32.3521	32	54100
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Nectriaceae|genus-Fusarium|species-[Nectria]_haematococca	species	[Nectria] haematococca	140110	0.5977	37.445	24	40151
+class-Choanoflagellata	class	Choanoflagellata	28009	0.7586	53.133	7	9228
+class-Choanoflagellata|order-Craspedida	order	Craspedida	1924738	0.7586	53.133	7	9228
+class-Choanoflagellata|order-Craspedida|family-Salpingoecidae|genus-Monosiga	genus	Monosiga	81525	0.7586	41.4897	7	9228
+class-Choanoflagellata|order-Craspedida|family-Salpingoecidae|genus-Monosiga|species-Monosiga_brevicollis	species	Monosiga brevicollis	81824	0.7586	47.5193	7	9228
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	0.1424	9.9748	12	84266
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	0.1424	9.9748	12	84266
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	0.3009	16.4571	6	19941
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	0.0933	5.1018	6	64325
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._SAG10	species	Ostreococcus sp. SAG10	2590005	0.0709	4.4432	4	56396
+phylum-Chlorophyta|class-Palmophyllophyceae	class	Palmophyllophyceae	2201463	0.3683	25.7967	4	10861
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales	order	Prasinococcales	485343	0.3683	25.7967	4	10861
+class-Pelagophyceae	class	Pelagophyceae	35675	0.039	2.7286	5	128353
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	0.039	2.7286	5	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	0.039	2.1307	5	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	0.039	2.4403	5	128353
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	0.0906	5.6733	6	66251

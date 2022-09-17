@@ -1,0 +1,23 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Stramenopiles sp. TOSAG23-2	1735743	species	38	161	80.85%	20.53%	99.17%	66251
+Ostreococcus sp. SAG12	2590007	species	7	27	53.85%	12.9%	98.42%	29000
+Ostreococcus sp. SAG11	2590006	species	2	3	50.0%	6.54%	98.44%	5643
+Ostreococcus sp. SAG10	2590005	species	12	38	48.0%	8.49%	99.08%	56396
+Stramenopiles sp. TOSAG23-3	1735745	species	28	92	46.67%	14.63%	99.61%	80549
+Bathycoccus prasinos	41875	species	43	121	34.96%	8.57%	99.54%	229209
+Mamiellales	13792	order	1	1	33.33%	11.9%	99.01%	6183
+Ostreococcus sp. SAG9	2590004	species	1	1	25.0%	3.26%	100.0%	6096
+unclassified Ostreococcus	2268852	genus	3	5	25.0%	7.02%	99.78%	18843
+Bathycoccus sp. SAG2	2589997	species	1	4	25.0%	5.31%	99.34%	8737
+unclassified Bathycoccus	2590008	genus	8	17	15.38%	7.05%	99.8%	95463
+Triparma eleuthera	172717	species	8	16	10.96%	9.83%	98.45%	101435
+Bathycoccus sp. TOSAG39-1	1735750	species	1	2	7.69%	10.02%	100.0%	28758
+Stramenopiles sp. TOSAG41-1	1735744	species	4	9	7.69%	12.82%	98.53%	67745
+Stramenopiles sp. TOSAG23-6	1735747	species	2	4	6.67%	13.21%	98.82%	44106
+Pelagomonas calceolata	35677	species	4	8	5.19%	12.92%	98.13%	128353
+Triparma laevis	1534972	species	1	2	2.78%	24.16%	100.0%	50473
+Partenskyella glossopodia	552666	species	1	2	1.67%	4.4%	100.0%	83769
+Micromonas	38832	genus	2	4	1.12%	3.99%	98.6%	358692
+Gephyrocapsa oceanica	38817	species	1	2	1.0%	21.19%	98.9%	137559
+Malassezia restricta	76775	species	1	2	0.67%	6.57%	100.0%	348317
+Leptocylindrus danicus	163516	species	1	2	0.54%	18.03%	98.74%	278595

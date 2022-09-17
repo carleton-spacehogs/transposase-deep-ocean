@@ -1,0 +1,46 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Ascomycota|class-Eurotiomycetes	class	Eurotiomycetes	147545	0.0107	0.4252	4	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala	genus	Exophiala	5583	0.0107	0.1797	4	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala|species-Exophiala_xenobiotica	species	Exophiala xenobiotica	348802	0.0107	0.038	4	372377
+phylum-Ascomycota|class-Sordariomycetes	class	Sordariomycetes	147550	0.025	0.9909	9	359577
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Nectriaceae|genus-Fusarium	genus	Fusarium	5506	1.4124	23.63	5	3540
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Nectriaceae|genus-Fusarium|species-[Nectria]_haematococca	species	[Nectria] haematococca	140110	1.4749	5.221	4	2712
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Ophiocordycipitaceae|genus-Purpureocillium	genus	Purpureocillium	1052105	0.0112	0.188	4	356037
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Ophiocordycipitaceae|genus-Purpureocillium|species-Purpureocillium_lilacinum	species	Purpureocillium lilacinum	33203	0.0112	0.0398	4	356037
+phylum-Ascomycota|class-Saccharomycetes	class	Saccharomycetes	4891	0.0192	0.7613	6	312010
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida	genus	Candida	1535326	0.0192	0.3217	6	312010
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida|species-Candida_parapsilosis	species	Candida parapsilosis	5480	0.0192	0.0681	6	312010
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.0226	0.8942	8	354188
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.0226	0.3779	8	354188
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_globosa	species	Malassezia globosa	76773	0.6813	2.4118	4	5871
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.0115	0.0407	4	348317
+phylum-Arthropoda|class-Hexanauplia	class	Hexanauplia	72037	0.0163	0.6467	4	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona	genus	Oithona	136190	0.0163	0.2733	4	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	species	Oithona nana	136191	0.0163	0.0578	4	244880
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	0.6266	24.8051	342	545821
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	0.2533	4.2371	60	236910
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	0.2225	0.7876	51	229209
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	0.5583	9.3406	28	50151
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._'lucimarinus'	species	Ostreococcus sp. 'lucimarinus'	242159	0.2171	0.7684	20	92140
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	0.9034	15.1141	233	257911
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_pusilla	species	Micromonas pusilla	38833	0.6439	2.2794	32	49695
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.0872	3.4535	12	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa	genus	Gephyrocapsa	38816	0.0872	1.4595	12	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	species	Gephyrocapsa oceanica	38817	0.0872	0.3088	12	137559
+class-Bolidophyceae	class	Bolidophyceae	91989	0.4042	16.0015	41	101435
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma	genus	Triparma	722752	0.4042	6.7623	41	101435
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_eleuthera	species	Triparma eleuthera	172717	0.4042	1.4308	41	101435
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	15.8337	56.0492	1049	66251
+species-Stramenopiles_sp._TOSAG41-1	species	Stramenopiles sp. TOSAG41-1	1735744	6.3473	22.4687	430	67745
+species-Stramenopiles_sp._TOSAG23-3	species	Stramenopiles sp. TOSAG23-3	1735745	0.0745	0.2637	6	80549
+class-Bigyra	class	Bigyra	2683628	0.7689	30.438	39	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria	genus	Cafeteria	33652	0.7689	12.8632	39	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	species	Cafeteria roenbergensis	33653	0.7689	2.7217	39	50724
+phylum-Cercozoa|class-Chlorarachniophyceae	class	Chlorarachniophyceae	29197	0.4371	17.3036	42	96090
+phylum-Cercozoa|class-Chlorarachniophyceae|genus-Bigelowiella	genus	Bigelowiella	227085	1.0551	17.652	13	12321
+phylum-Cercozoa|class-Chlorarachniophyceae|genus-Bigelowiella|species-Bigelowiella_natans	species	Bigelowiella natans	227086	0.9708	3.4364	9	9271
+phylum-Cercozoa|class-Chlorarachniophyceae|genus-Partenskyella	genus	Partenskyella	647365	0.3462	5.7918	29	83769
+phylum-Cercozoa|class-Chlorarachniophyceae|genus-Partenskyella|species-Partenskyella_glossopodia	species	Partenskyella glossopodia	552666	0.3462	1.2255	29	83769
+class-Dinophyceae	class	Dinophyceae	2864	0.1081	4.2801	4	36997
+class-Dinophyceae|order-Syndiniales|family-Amoebophryaceae|genus-Amoebophrya	genus	Amoebophrya	88551	0.1081	1.8088	4	36997
+class-Dinophyceae|order-Syndiniales|family-Amoebophryaceae|genus-Amoebophrya|species-Amoebophrya_sp._AT5.2	species	Amoebophrya sp. AT5.2	1775427	0.1081	0.3827	4	36997

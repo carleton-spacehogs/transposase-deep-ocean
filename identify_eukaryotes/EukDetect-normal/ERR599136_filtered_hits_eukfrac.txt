@@ -1,0 +1,47 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Ascomycota|class-Eurotiomycetes	class	Eurotiomycetes	147545	0.0286	0.1682	28	977882
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales	order	Chaetothyriales	34395	0.0269	0.1575	10	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala	genus	Exophiala	5583	0.0269	0.1092	10	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala|species-Exophiala_xenobiotica	species	Exophiala xenobiotica	348802	0.0269	0.0817	10	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales	order	Eurotiales	5042	0.0297	0.1743	18	605505
+phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae|genus-Aspergillus	genus	Aspergillus	5052	0.0297	0.1209	18	605505
+phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae|genus-Aspergillus|species-Aspergillus_sp._MA_6041	species	Aspergillus sp. MA 6041	2153248	0.0297	0.0904	18	605505
+phylum-Ascomycota|class-Dothideomycetes	class	Dothideomycetes	147541	0.5572	3.2727	33	59223
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales	order	Capnodiales	134362	0.5572	3.2673	33	59223
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea	genus	Hortaea	91942	0.5572	2.2658	33	59223
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	species	Hortaea werneckii	91943	0.5572	1.6944	33	59223
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.0115	0.0674	4	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.0115	0.0673	4	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.0115	0.0467	4	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.0115	0.0349	4	348317
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	0.029	0.1703	8	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	0.029	0.17	8	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.029	0.1179	8	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	0.029	0.0882	8	275974
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	10.0581	59.0739	5985	595040
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	10.0581	58.977	5985	595040
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	15.2667	62.0781	5628	368645
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_pusilla	species	Micromonas pusilla	38833	17.7483	53.9706	882	49695
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	0.3117	1.2676	20	64156
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._SAG10	species	Ostreococcus sp. SAG10	2590005	0.1419	0.4314	8	56396
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	2.0181	8.2061	321	159059
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_sp._TOSAG39-1	species	Bathycoccus sp. TOSAG39-1	1735750	1.5648	4.7583	45	28758
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	3.0792	9.3635	204	66251
+species-Stramenopiles_sp._TOSAG41-1	species	Stramenopiles sp. TOSAG41-1	1735744	3.2622	9.9201	221	67745
+species-Stramenopiles_sp._TOSAG23-3	species	Stramenopiles sp. TOSAG23-3	1735745	0.1366	0.4153	11	80549
+class-Pelagophyceae	class	Pelagophyceae	35675	5.7887	33.9985	743	128353
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	5.7887	33.9428	743	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	5.7887	23.5383	743	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	5.7887	17.6029	743	128353
+class-Bigyra	class	Bigyra	2683628	0.1183	0.6947	6	50724
+class-Bigyra|order-Bicosoecida	order	Bicosoecida	33651	0.1183	0.6936	6	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria	genus	Cafeteria	33652	0.1183	0.481	6	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	species	Cafeteria roenbergensis	33653	0.1183	0.3597	6	50724
+class-Dinophyceae	class	Dinophyceae	2864	0.2165	1.2714	42	194024
+class-Dinophyceae|order-Gonyaulacales	order	Gonyaulacales	40984	0.2165	1.2693	42	194024
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium	genus	Alexandrium	2924	0.2165	0.8802	42	194024
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium|species-Alexandrium_tamarense	species	Alexandrium tamarense	2926	0.2165	0.6583	42	194024
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.2184	1.283	36	164799
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	0.2184	1.2809	36	164799
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	0.2184	0.8883	36	164799
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_globosa	species	Phaeocystis globosa	33658	0.1744	0.5304	27	154798

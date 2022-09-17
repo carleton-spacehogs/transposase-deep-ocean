@@ -1,0 +1,47 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Kryptoperidiniaceae	2137591	family	1	1	100.0%	5.89%	100.0%	1612
+Mamiellales	13792	order	3	18	100.0%	20.25%	99.04%	6183
+Bathycoccus prasinos	41875	species	123	34315	100.0%	90.77%	96.83%	229209
+Stramenopiles sp. TOSAG23-2	1735743	species	46	943	97.87%	68.84%	99.41%	66251
+Aureococcus anophagefferens	44056	species	63	1031	96.92%	57.88%	98.19%	85991
+unclassified Bathycoccus	2590008	genus	50	594	96.15%	41.35%	98.91%	95463
+Stramenopiles sp. TOSAG23-3	1735745	species	50	332	83.33%	33.89%	99.79%	80549
+Bathycoccus sp. SAG1	2589996	species	4	12	80.0%	17.24%	99.87%	5703
+Bathycoccus sp. SAG2	2589997	species	3	38	75.0%	31.1%	99.1%	8737
+Chloropicon roscoffensis	1461544	species	114	743	72.15%	26.37%	99.17%	275974
+Bathycoccus sp. TOSAG39-1	1735750	species	9	95	69.23%	32.12%	98.99%	28758
+Pelagomonas calceolata	35677	species	52	865	67.53%	27.25%	97.22%	128353
+Prasinoderma singulare	676789	species	53	172	58.24%	16.37%	99.63%	121534
+Bathycoccus sp. SAG4	2589999	species	4	19	57.14%	17.78%	99.55%	10392
+Bathycoccus sp. SAG3	2589998	species	2	21	50.0%	37.29%	99.37%	6679
+unclassified Ostreococcus	2268852	genus	5	12	41.67%	9.04%	99.19%	18843
+Ostreococcus sp. SAG10	2590005	species	10	26	40.0%	7.03%	99.32%	56396
+Ostreococcus lucimarinus CCE9901	436017	species	43	104	37.72%	6.89%	99.74%	233346
+Triparma eleuthera	172717	species	27	58	36.99%	11.86%	99.11%	101435
+Ostreococcus sp. SAG12	2590007	species	4	14	30.77%	8.19%	99.08%	29000
+Triparma laevis	1534972	species	10	22	27.78%	9.65%	99.64%	50473
+Ostreococcus sp. SAG9	2590004	species	1	2	25.0%	6.11%	99.47%	6096
+Ostreococcus sp. SAG11	2590006	species	1	2	25.0%	21.5%	100.0%	5643
+Phaeocystis antarctica	33657	species	23	93	23.0%	15.66%	97.08%	158488
+Phaeocystis globosa	33658	species	25	261	21.55%	44.25%	98.43%	154798
+Lithomelissa setosa	1054399	species	1	23	20.0%	99.74%	98.17%	2562
+Micromonas	38832	genus	30	134	16.85%	7.12%	96.7%	358692
+Gephyrocapsa oceanica	38817	species	7	11	7.0%	10.49%	99.4%	137559
+Micromonas pusilla	38833	species	1	2	3.85%	6.29%	97.09%	49695
+Neobodo designis	312471	species	2	4	3.03%	22.16%	98.01%	100830
+Pelagococcus subviridis	35679	species	2	2	3.03%	10.19%	98.51%	79272
+Durinskia baltica	400756	species	4	6	2.84%	6.88%	100.0%	244301
+Phaeocystis rex	1631189	species	1	2	2.56%	32.03%	98.26%	40152
+Chrysocystis fragilis	1411660	species	1	1	2.17%	2.55%	96.77%	68187
+Stramenopiles sp. TOSAG41-1	1735744	species	1	9	1.92%	48.58%	99.82%	67745
+Triparma pacifica	91992	species	1	1	1.79%	3.33%	97.92%	110146
+Chloropicon laureae	464258	species	1	2	1.79%	13.9%	99.46%	50762
+Oikopleura dioica	34765	species	1	1	1.27%	2.69%	97.03%	176745
+Pycnococcus provasolii	41880	species	1	1	1.03%	6.74%	100.0%	119181
+Isochrysis galbana	37099	species	1	1	1.0%	1.95%	96.34%	185902
+Prasinococcaceae sp. CCMP 1430	2489100	species	1	1	0.92%	2.98%	97.03%	225148
+Micromonas bravo	296588	species	1	1	0.85%	16.92%	98.0%	182724
+Chloropicon primus	1764295	species	1	2	0.72%	6.67%	97.46%	281336
+Alexandrium tamarense	2926	species	1	13	0.71%	29.13%	97.42%	194024
+Tetraselmis striata	3165	species	1	2	0.71%	4.26%	96.47%	255923
+Exophiala xenobiotica	348802	species	1	1	0.5%	2.8%	100.0%	372377

@@ -1,0 +1,5 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+protist-Gephyrocapsa_oceanica-1287094at2759-S1	2	128	3	131	708	18.5	97.71
+greenalgae-Tetraselmis_striata-734341at2759-S1	1	88	3	91	3993	2.28	96.7
+protist-Emiliania_huxleyi_CCMP1516-1248958at2759-S1	1	100	1	101	2778	3.64	99.01
+protist-Emiliania_huxleyi_CCMP1516-156083at2759-S1	1	100	0	100	7233	1.38	100.0

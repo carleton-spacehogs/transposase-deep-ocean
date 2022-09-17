@@ -1,0 +1,4 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Rhodotorula sp. FNED7-22	1928479	species	1	1	1.61%	3.13%	100.0%	96261
+Malassezia slooffiae	76776	species	1	2	0.75%	4.78%	98.39%	236907
+Tetraselmis striata	3165	species	1	4	0.71%	8.54%	98.53%	255923

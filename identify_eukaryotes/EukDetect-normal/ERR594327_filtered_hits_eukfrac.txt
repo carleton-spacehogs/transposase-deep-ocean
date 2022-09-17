@@ -1,0 +1,24 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+species-Stramenopiles_sp._TOSAG41-1	species	Stramenopiles sp. TOSAG41-1	1735744	0.1476	9.4048	10	67745
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	0.0217	1.4111	6	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	0.0217	1.4111	6	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae	family	Chloropicaceae	2302913	0.0217	0.9338	6	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.0217	0.9338	6	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	0.0217	1.3852	6	275974
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	0.636	41.2806	45	70754
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	0.636	41.2806	45	70754
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae	family	Mamiellaceae	41873	0.861	36.9823	15	17421
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	0.861	36.9823	15	17421
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae	family	Bathycoccaceae	1525212	0.5625	24.1602	30	53333
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	0.5625	24.1602	30	53333
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._SAG12	species	Ostreococcus sp. SAG12	2590007	0.5172	32.955	15	29000
+phylum-Ascomycota|class-Saccharomycetes	class	Saccharomycetes	4891	0.0128	0.8321	4	312010
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales	order	Saccharomycetales	4892	0.0128	0.8321	4	312010
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae	family	Debaryomycetaceae	766764	0.0128	0.5506	4	312010
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida	genus	Candida	1535326	0.0128	0.5506	4	312010
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida|species-Candida_parapsilosis	species	Candida parapsilosis	5480	0.0128	0.8168	4	312010
+class-Choanoflagellata	class	Choanoflagellata	28009	0.8701	56.4762	23	26433
+class-Choanoflagellata|order-Craspedida	order	Craspedida	1924738	0.8701	56.4762	23	26433
+class-Choanoflagellata|order-Craspedida|family-Salpingoecidae	family	Salpingoecidae	81529	0.8701	37.373	23	26433
+class-Choanoflagellata|order-Craspedida|family-Salpingoecidae|genus-Monosiga	genus	Monosiga	81525	0.8701	37.373	23	26433
+class-Choanoflagellata|order-Craspedida|family-Salpingoecidae|genus-Monosiga|species-Monosiga_brevicollis	species	Monosiga brevicollis	81824	0.8701	55.4382	23	26433

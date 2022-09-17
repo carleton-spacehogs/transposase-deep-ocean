@@ -1,0 +1,17 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	0.029	7.7631	8	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae	family	Chloropicaceae	2302913	0.029	8.2836	8	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.029	8.2836	8	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	0.029	11.236	8	275974
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	0.1863	49.9032	12	64397
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae	family	Bathycoccaceae	1525212	0.1629	46.5446	10	61394
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	0.1629	46.5446	10	61394
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._SAG10	species	Ostreococcus sp. SAG10	2590005	0.0709	27.4917	4	56396
+class-Bigyra|order-Bicosoecida	order	Bicosoecida	33651	0.0986	26.3979	5	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae	family	Cafeteriaceae	238884	0.0986	28.1677	5	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria	genus	Cafeteria	33652	0.0986	28.1677	5	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	species	Cafeteria roenbergensis	33653	0.0986	38.2073	5	50724
+phylum-Euglenozoa|order-Kinetoplastida	order	Kinetoplastida	5653	0.0595	15.9358	6	100830
+phylum-Euglenozoa|order-Kinetoplastida|family-Bodonidae	family	Bodonidae	5708	0.0595	17.0042	6	100830
+phylum-Euglenozoa|order-Kinetoplastida|family-Bodonidae|genus-Neobodo	genus	Neobodo	312470	0.0595	17.0042	6	100830
+phylum-Euglenozoa|order-Kinetoplastida|family-Bodonidae|genus-Neobodo|species-Neobodo_designis	species	Neobodo designis	312471	0.0595	23.0649	6	100830

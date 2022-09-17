@@ -1,0 +1,20 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+unclassified Bathycoccus	2590008	genus	39	210	75.0%	19.59%	98.78%	95463
+Stramenopiles sp. TOSAG23-2	1735743	species	34	265	72.34%	32.55%	99.46%	66251
+Bathycoccus sp. SAG3	2589998	species	2	4	50.0%	7.07%	98.01%	6679
+Bathycoccus sp. SAG2	2589997	species	2	12	50.0%	13.81%	97.79%	8737
+Bathycoccus sp. TOSAG39-1	1735750	species	6	28	46.15%	16.11%	98.53%	28758
+Bathycoccus sp. SAG4	2589999	species	3	9	42.86%	21.37%	99.18%	10392
+Bathycoccus sp. SAG1	2589996	species	2	4	40.0%	18.85%	99.41%	5703
+Pelagomonas calceolata	35677	species	15	35	19.48%	13.52%	98.66%	128353
+Stramenopiles sp. TOSAG41-1	1735744	species	10	27	19.23%	12.06%	99.27%	67745
+Triparma pacifica	91992	species	6	11	10.71%	7.36%	99.79%	110146
+Chloropicon roscoffensis	1461544	species	16	29	10.13%	7.61%	99.6%	275974
+Stramenopiles sp. TOSAG23-3	1735745	species	3	5	5.0%	11.79%	97.94%	80549
+Cafeteria roenbergensis	33653	species	2	4	4.65%	11.6%	100.0%	50724
+Ostreococcus sp. SAG10	2590005	species	1	2	4.0%	5.71%	100.0%	56396
+Ancyromonas sigmoides	85707	species	1	1	2.78%	4.35%	100.0%	41716
+Triparma eleuthera	172717	species	2	6	2.74%	15.15%	99.79%	101435
+Aureococcus anophagefferens	44056	species	1	1	1.54%	1.49%	97.0%	85991
+Prymnesium polylepis	72548	species	1	1	1.12%	4.81%	96.88%	134351
+Bathycoccus prasinos	41875	species	1	1	0.81%	1.42%	97.03%	229209

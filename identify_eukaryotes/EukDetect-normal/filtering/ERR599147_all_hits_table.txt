@@ -1,0 +1,10 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Stramenopiles sp. TOSAG23-3	1735745	species	5	12	8.33%	17.82%	99.7%	80549
+Bathycoccus sp. TOSAG39-1	1735750	species	1	2	7.69%	14.56%	97.04%	28758
+Cafeteria roenbergensis	33653	species	1	1	2.33%	9.99%	97.03%	50724
+unclassified Bathycoccus	2590008	genus	1	2	1.92%	4.36%	98.71%	95463
+Durinskia baltica	400756	species	1	2	0.71%	19.77%	100.0%	244301
+Malassezia restricta	76775	species	1	2	0.67%	2.54%	97.19%	348317
+Chloropicon roscoffensis	1461544	species	1	2	0.63%	7.84%	97.59%	275974
+Cyphellophora europaea CBS 101466	1220924	species	1	2	0.5%	4.67%	100.0%	391280
+Exophiala xenobiotica	348802	species	1	2	0.5%	1.85%	97.7%	372377

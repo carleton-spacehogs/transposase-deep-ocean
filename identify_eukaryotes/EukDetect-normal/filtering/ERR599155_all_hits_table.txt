@@ -1,0 +1,23 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Bathycoccus sp. SAG1	2589996	species	5	12	100.0%	15.04%	99.07%	5703
+unclassified Bathycoccus	2590008	genus	48	666	92.31%	43.7%	99.3%	95463
+Bathycoccus sp. SAG2	2589997	species	3	28	75.0%	30.03%	99.02%	8737
+Bathycoccus sp. TOSAG39-1	1735750	species	9	120	69.23%	40.16%	99.34%	28758
+Mamiellales	13792	order	2	9	66.67%	13.93%	99.06%	6183
+Stramenopiles sp. TOSAG41-1	1735744	species	33	110	63.46%	19.78%	98.91%	67745
+Stramenopiles sp. TOSAG23-2	1735743	species	29	120	61.7%	19.48%	99.42%	66251
+Bathycoccus sp. SAG4	2589999	species	4	37	57.14%	44.75%	99.36%	10392
+Micromonas pusilla	38833	species	13	47	50.0%	12.95%	98.61%	49695
+Bathycoccus sp. SAG3	2589998	species	2	44	50.0%	61.88%	99.43%	6679
+Micromonas	38832	genus	73	274	41.01%	9.92%	98.32%	358692
+Ostreococcus sp. SAG12	2590007	species	5	12	38.46%	7.37%	99.05%	29000
+unclassified Ostreococcus	2268852	genus	4	8	33.33%	7.81%	99.55%	18843
+Ostreococcus sp. SAG10	2590005	species	8	18	32.0%	5.3%	99.03%	56396
+Ostreococcus sp. SAG9	2590004	species	1	1	25.0%	7.75%	100.0%	6096
+Triparma eleuthera	172717	species	11	20	15.07%	6.91%	99.48%	101435
+Stramenopiles sp. TOSAG23-3	1735745	species	9	17	15.0%	9.9%	98.21%	80549
+Triparma pacifica	91992	species	5	9	8.93%	4.97%	99.58%	110146
+Pelagomonas calceolata	35677	species	5	8	6.49%	8.79%	98.03%	128353
+Chloropicon roscoffensis	1461544	species	7	13	4.43%	6.48%	99.64%	275974
+Bathycoccus prasinos	41875	species	2	3	1.63%	2.99%	97.21%	229209
+Pycnococcus provasolii	41880	species	1	2	1.03%	13.85%	98.24%	119181

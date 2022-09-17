@@ -1,0 +1,23 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Ostreococcus sp. SAG11	2590006	species	4	18	100.0%	26.92%	99.61%	5643
+Ostreococcus sp. SAG10	2590005	species	24	309	96.0%	36.51%	99.36%	56396
+Ostreococcus sp. SAG12	2590007	species	12	122	92.31%	34.06%	99.3%	29000
+unclassified Ostreococcus	2268852	genus	11	99	91.67%	34.74%	99.44%	18843
+Ostreococcus sp. SAG9	2590004	species	3	40	75.0%	52.0%	99.46%	6096
+Stramenopiles sp. TOSAG41-1	1735744	species	39	212	75.0%	28.53%	99.25%	67745
+Mamiellales	13792	order	2	21	66.67%	22.18%	99.58%	6183
+unclassified Bathycoccus	2590008	genus	33	154	63.46%	15.9%	99.69%	95463
+Bathycoccus sp. SAG1	2589996	species	3	11	60.0%	21.67%	100.0%	5703
+Bathycoccus sp. TOSAG39-1	1735750	species	7	32	53.85%	17.87%	99.85%	28758
+Stramenopiles sp. TOSAG23-2	1735743	species	18	48	38.3%	10.59%	99.25%	66251
+Bathycoccus sp. SAG4	2589999	species	2	5	28.57%	18.85%	99.53%	10392
+Bathycoccus sp. SAG3	2589998	species	1	12	25.0%	36.54%	99.78%	6679
+Bathycoccus sp. SAG2	2589997	species	1	11	25.0%	13.24%	100.0%	8737
+Micromonas pusilla	38833	species	6	11	23.08%	5.58%	97.93%	49695
+Triparma eleuthera	172717	species	10	25	13.7%	9.11%	99.67%	101435
+Micromonas	38832	genus	20	52	11.24%	5.27%	98.05%	358692
+Pelagomonas calceolata	35677	species	8	26	10.39%	13.87%	98.26%	128353
+Triparma pacifica	91992	species	4	8	7.14%	6.85%	100.0%	110146
+Prasinococcaceae sp. CCMP 1430	2489100	species	1	1	0.92%	7.5%	100.0%	225148
+Phaeocystis globosa	33658	species	1	1	0.86%	10.83%	99.01%	154798
+Chloropicon roscoffensis	1461544	species	1	2	0.63%	12.44%	98.08%	275974

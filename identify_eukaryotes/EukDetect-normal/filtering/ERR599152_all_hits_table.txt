@@ -1,0 +1,15 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+unclassified Bathycoccus	2590008	genus	4	8	7.69%	3.14%	99.5%	95463
+Chloropicon roscoffensis	1461544	species	6	14	3.8%	10.3%	99.49%	275974
+Exophiala xenobiotica	348802	species	6	12	3.0%	3.55%	99.89%	372377
+Cafeteria roenbergensis	33653	species	1	2	2.33%	4.77%	99.3%	50724
+Durinskia baltica	400756	species	3	6	2.13%	3.82%	99.4%	244301
+Neobodo designis	312471	species	1	2	1.52%	9.07%	100.0%	100830
+Malassezia restricta	76775	species	2	3	1.33%	2.73%	99.19%	348317
+Cyphellophora europaea CBS 101466	1220924	species	2	4	1.01%	6.64%	100.0%	391280
+Purpureocillium lilacinum	33203	species	2	3	0.97%	5.47%	100.0%	356037
+Chloropicon mariensis	1606511	species	1	2	0.91%	22.52%	98.0%	157984
+Tetraselmis striata	3165	species	1	4	0.71%	8.24%	98.18%	255923
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	11.86%	100.0%	332937
+Rhodotorula diobovata	5288	species	1	2	0.61%	3.66%	100.0%	358851
+Hortaea werneckii EXF-2000	1157616	species	1	2	0.27%	6.13%	99.38%	717212

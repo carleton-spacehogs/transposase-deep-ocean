@@ -1,0 +1,24 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+species-Stramenopiles_sp._TOSAG41-1	species	Stramenopiles sp. TOSAG41-1	1735744	0.3986	6.6529	27	67745
+species-Stramenopiles_sp._TOSAG23-3	species	Stramenopiles sp. TOSAG23-3	1735745	0.0621	1.0362	5	80549
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	3.9999	66.7691	265	66251
+class-Bigyra	class	Bigyra	2683628	0.0789	3.0581	4	50724
+class-Bigyra|order-Bicosoecida	order	Bicosoecida	33651	0.0789	3.0581	4	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria	genus	Cafeteria	33652	0.0789	3.0581	4	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	species	Cafeteria roenbergensis	33653	0.0789	1.3163	4	50724
+class-Bolidophyceae	class	Bolidophyceae	91989	0.1501	5.82	17	113274
+class-Bolidophyceae|order-Parmales	order	Parmales	722750	0.1501	5.82	17	113274
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma	genus	Triparma	722752	0.1501	5.82	17	113274
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_pacifica	species	Triparma pacifica	91992	0.0999	1.667	11	110146
+class-Pelagophyceae	class	Pelagophyceae	35675	0.2727	10.5747	35	128353
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	0.2727	10.5747	35	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	0.2727	10.5747	35	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	0.2727	4.5518	35	128353
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	1.972	76.4722	268	135905
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	1.972	76.4722	268	135905
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	1.972	76.4722	268	135905
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_sp._TOSAG39-1	species	Bathycoccus sp. TOSAG39-1	1735750	0.9736	16.2526	28	28758
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	0.1051	4.0751	29	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	0.1051	4.0751	29	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.1051	4.0751	29	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	0.1051	1.7541	29	275974

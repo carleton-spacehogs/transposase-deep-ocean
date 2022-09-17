@@ -1,0 +1,17 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+unclassified Ostreococcus	no rank	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	2268852	11	103	91.67%	38.54%	99.08%
+Ostreococcus sp. SAG10	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._SAG10	2590005	22	426	88.0%	49.46%	98.96%
+Micromonas pusilla	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_pusilla	38833	18	89	69.23%	18.51%	98.19%
+Micromonas	genus	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	38832	97	485	54.49%	14.53%	98.14%
+unclassified Bathycoccus	no rank	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	2590008	27	110	51.92%	13.9%	99.59%
+Bathycoccus sp. TOSAG39-1	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_sp._TOSAG39-1	1735750	6	15	46.15%	8.35%	98.99%
+Stramenopiles sp. TOSAG41-1	species	species-Stramenopiles_sp._TOSAG41-1	1735744	17	50	32.69%	17.22%	99.08%
+Saccharomyces cerevisiae S288C	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces|species-Saccharomyces_cerevisiae	559292	50	130	27.47%	7.36%	99.86%
+Chloropicon roscoffensis	species	phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	1461544	34	76	21.52%	8.72%	99.51%
+Pelagomonas calceolata	species	class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	35677	13	33	16.88%	10.44%	98.36%
+Pycnococcus provasolii	species	phylum-Chlorophyta|family-Pycnococcaceae|genus-Pycnococcus|species-Pycnococcus_provasolii	41880	9	17	9.28%	10.53%	99.13%
+Meira nashicola	species	phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales|family-Brachybasidiaceae|genus-Meira|species-Meira_nashicola	286112	12	27	6.56%	7.87%	99.96%
+Phaeocystis globosa	species	phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_globosa	33658	6	9	5.17%	14.56%	99.31%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	4	8	2.67%	3.36%	98.76%
+Rhizosolenia setigera	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Rhizosoleniales|family-Rhizosoleniaceae|genus-Rhizosolenia|species-Rhizosolenia_setigera	3005	2	4	1.9%	4.13%	99.18%
+Rhodotorula diobovata	species	phylum-Basidiomycota|class-Microbotryomycetes|order-Sporidiobolales|family-Sporidiobolaceae|genus-Rhodotorula|species-Rhodotorula_diobovata	5288	3	5	1.84%	2.69%	99.75%

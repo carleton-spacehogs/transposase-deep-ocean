@@ -1,0 +1,6 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Stramenopiles sp. TOSAG23-2	1735743	species	10	13	21.28%	5.38%	99.16%	66251
+Stramenopiles sp. TOSAG41-1	1735744	species	1	2	1.92%	17.57%	99.51%	67745
+Stramenopiles sp. TOSAG23-3	1735745	species	1	1	1.67%	18.91%	100.0%	80549
+Malassezia restricta	76775	species	1	1	0.67%	1.71%	100.0%	348317
+Zygosaccharomyces	4953	genus	1	1	0.34%	4.07%	100.0%	509583

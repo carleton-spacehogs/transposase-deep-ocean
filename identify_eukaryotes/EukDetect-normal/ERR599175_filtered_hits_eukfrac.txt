@@ -1,0 +1,22 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae	family	Herpotrichiellaceae	43219	0.0215	1.3532	8	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala	genus	Exophiala	5583	0.0215	1.3532	8	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala|species-Exophiala_xenobiotica	species	Exophiala xenobiotica	348802	0.0215	1.4086	8	372377
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae	family	Teratosphaeriaceae	668547	0.7207	45.3954	4	5550
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea	genus	Hortaea	91942	0.7207	45.3954	4	5550
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	species	Hortaea werneckii	91943	0.7207	47.2535	4	5550
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae	family	Chloropicaceae	2302913	0.0254	1.5976	7	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.0254	1.5976	7	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	0.0254	1.663	7	275974
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae	family	Bathycoccaceae	1525212	0.2397	15.1007	16	66737
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	0.2397	15.1007	16	66737
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._SAG10	species	Ostreococcus sp. SAG10	2590005	0.1773	11.6257	10	56396
+family-Apusomonadidae	family	Apusomonadidae	172820	0.3925	24.7223	4	10191
+family-Apusomonadidae|genus-Thecamonas	genus	Thecamonas	877559	0.3925	24.7223	4	10191
+family-Apusomonadidae|genus-Thecamonas|species-Thecamonas_trahens	species	Thecamonas trahens	529818	0.3925	25.7342	4	10191
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae	family	Cafeteriaceae	238884	0.0986	6.2087	5	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria	genus	Cafeteria	33652	0.0986	6.2087	5	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	species	Cafeteria roenbergensis	33653	0.0986	6.4628	5	50724
+phylum-Euglenozoa|order-Kinetoplastida|family-Bodonidae	family	Bodonidae	5708	0.0893	5.6221	9	100830
+phylum-Euglenozoa|order-Kinetoplastida|family-Bodonidae|genus-Neobodo	genus	Neobodo	312470	0.0893	5.6221	9	100830
+phylum-Euglenozoa|order-Kinetoplastida|family-Bodonidae|genus-Neobodo|species-Neobodo_designis	species	Neobodo designis	312471	0.0893	5.8522	9	100830

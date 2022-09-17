@@ -1,0 +1,20 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Ascomycota	phylum	Ascomycota	4890	0.06	12.4641	24	399706
+phylum-Ascomycota|class-Eurotiomycetes	class	Eurotiomycetes	147545	0.06	4.6429	24	399706
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales	order	Chaetothyriales	34395	0.06	4.6429	24	399706
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae	family	Herpotrichiellaceae	43219	0.0188	1.0031	7	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala	genus	Exophiala	5583	0.0188	1.0031	7	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala|species-Exophiala_xenobiotica	species	Exophiala xenobiotica	348802	0.0188	1.7836	7	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Cyphellophoraceae	family	Cyphellophoraceae	1341112	0.622	33.1929	17	27329
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Cyphellophoraceae|genus-Cyphellophora	genus	Cyphellophora	226991	0.622	33.1929	17	27329
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Cyphellophoraceae|genus-Cyphellophora|species-Cyphellophora_europaea	species	Cyphellophora europaea	293227	0.622	59.0219	17	27329
+phylum-Chlorophyta	phylum	Chlorophyta	3041	0.4217	87.5359	119	282196
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	0.4147	32.0667	115	277309
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	0.4147	32.0667	115	277309
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae	family	Chloropicaceae	2302913	0.4147	22.1286	115	277309
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.4147	22.1286	115	277309
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	0.4131	39.1945	114	275974
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	0.8185	63.2904	4	4887
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	0.8185	63.2904	4	4887
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae	family	Bathycoccaceae	1525212	0.8185	43.6755	4	4887
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	0.8185	43.6755	4	4887

@@ -1,0 +1,21 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Ostreococcus sp. SAG11	2590006	species	1	1	25.0%	3.45%	96.97%	5643
+Ostreococcus sp. SAG10	2590005	species	4	8	16.0%	9.08%	98.67%	56396
+Ostreococcus sp. SAG12	2590007	species	2	5	15.38%	4.29%	98.89%	29000
+Bathycoccus sp. TOSAG39-1	1735750	species	1	1	7.69%	5.0%	100.0%	28758
+Neobodo designis	312471	species	4	7	6.06%	8.82%	99.17%	100830
+Chloropicon roscoffensis	1461544	species	4	7	2.53%	5.57%	99.51%	275974
+Cafeteria roenbergensis	33653	species	1	1	2.33%	8.17%	100.0%	50724
+Stramenopiles sp. TOSAG23-2	1735743	species	1	2	2.13%	29.87%	96.34%	66251
+unclassified Bathycoccus	2590008	genus	1	2	1.92%	2.72%	100.0%	95463
+Stramenopiles sp. TOSAG41-1	1735744	species	1	2	1.92%	11.48%	96.79%	67745
+Paraphysomonas bandaiensis	89770	species	1	2	1.12%	31.06%	99.39%	154847
+Hortaea werneckii EXF-2000	1157616	species	4	8	1.08%	4.05%	99.26%	717212
+Cyphellophora europaea CBS 101466	1220924	species	2	4	1.01%	10.16%	100.0%	391280
+Chloropicon mariensis	1606511	species	1	2	0.91%	25.96%	100.0%	157984
+Tetraselmis striata	3165	species	1	6	0.71%	13.42%	97.39%	255923
+Malassezia restricta	76775	species	1	1	0.67%	2.54%	100.0%	348317
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	2.04%	97.01%	332937
+Rhodotorula diobovata	5288	species	1	1	0.61%	7.15%	97.75%	358851
+Ochroconis constricta UM 578	1442076	species	1	2	0.51%	2.02%	98.75%	370078
+Purpureocillium lilacinum	33203	species	1	2	0.49%	2.25%	99.45%	356037

@@ -1,0 +1,21 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Mamiellales	13792	order	3	10	100.0%	11.77%	98.9%	6183
+unclassified Bathycoccus	2590008	genus	48	676	92.31%	42.15%	98.45%	95463
+Stramenopiles sp. TOSAG23-2	1735743	species	41	305	87.23%	33.57%	99.09%	66251
+Bathycoccus sp. SAG2	2589997	species	3	45	75.0%	30.88%	98.45%	8737
+Bathycoccus sp. TOSAG39-1	1735750	species	8	90	61.54%	35.97%	98.57%	28758
+Bathycoccus sp. SAG3	2589998	species	2	37	50.0%	51.93%	98.55%	6679
+Bathycoccus sp. SAG4	2589999	species	3	24	42.86%	33.16%	98.42%	10392
+Bathycoccus sp. SAG1	2589996	species	2	3	40.0%	11.76%	99.61%	5703
+Stramenopiles sp. TOSAG23-3	1735745	species	17	42	28.33%	10.64%	98.45%	80549
+Pelagomonas calceolata	35677	species	14	40	18.18%	11.93%	98.71%	128353
+Phaeocystis globosa	33658	species	13	28	11.21%	15.84%	98.66%	154798
+unclassified Ostreococcus	2268852	genus	1	1	8.33%	4.51%	98.02%	18843
+Ostreococcus sp. SAG10	2590005	species	2	3	8.0%	2.47%	98.42%	56396
+Ostreococcus sp. SAG12	2590007	species	1	1	7.69%	1.15%	100.0%	29000
+Stramenopiles sp. TOSAG41-1	1735744	species	2	6	3.85%	9.69%	99.4%	67745
+Phaeocystis antarctica	33657	species	3	7	3.0%	11.5%	97.37%	158488
+Gephyrocapsa oceanica	38817	species	1	2	1.0%	4.28%	98.17%	137559
+Bathycoccus prasinos	41875	species	1	2	0.81%	5.7%	97.39%	229209
+Helotiales sp. F229	1967635	species	1	1	0.5%	1.75%	97.03%	364015
+Exophiala xenobiotica	348802	species	1	1	0.5%	8.66%	100.0%	372377

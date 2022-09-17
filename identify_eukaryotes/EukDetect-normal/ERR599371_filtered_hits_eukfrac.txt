@@ -1,0 +1,31 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Ascomycota	phylum	Ascomycota	4890	0.3738	88.6226	564	1508657
+phylum-Ascomycota|class-Saccharomycetes	class	Saccharomycetes	4891	0.6831	83.7952	533	780243
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales	order	Saccharomycetales	4892	0.6831	83.7952	533	780243
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae	family	Debaryomycetaceae	766764	1.2258	54.7131	521	425039
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Meyerozyma	genus	Meyerozyma	766728	0.654	21.3366	64	97852
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Meyerozyma|species-Meyerozyma_caribbica	species	Meyerozyma caribbica	66948	0.4784	16.541	16	33445
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida	genus	Candida	1535326	1.3968	45.5653	457	327187
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida|species-Candida_parapsilosis	species	Candida parapsilosis	5480	1.407	48.6485	439	312010
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Metschnikowiaceae	family	Metschnikowiaceae	27319	0.0228	1.0186	8	350551
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Metschnikowiaceae|genus-Clavispora	genus	Clavispora	36910	0.0228	0.7445	8	350551
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Metschnikowiaceae|genus-Clavispora|species-[Candida]_intermedia	species	[Candida] intermedia	45354	0.0228	0.7891	8	350551
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae	family	Saccharomycetaceae	4893	0.8597	38.3716	4	4653
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces	genus	Saccharomyces	4930	0.8597	28.0441	4	4653
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces|species-Saccharomyces_cerevisiae	species	Saccharomyces cerevisiae	4932	0.8597	29.7235	4	4653
+phylum-Ascomycota|class-Eurotiomycetes	class	Eurotiomycetes	147545	0.0645	7.9059	24	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales	order	Chaetothyriales	34395	0.0645	7.9059	24	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae	family	Herpotrichiellaceae	43219	0.0645	2.8768	24	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala	genus	Exophiala	5583	0.0645	2.1025	24	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala|species-Exophiala_xenobiotica	species	Exophiala xenobiotica	348802	0.0645	2.2284	24	372377
+phylum-Ascomycota|class-Sordariomycetes	class	Sordariomycetes	147550	0.0197	2.4117	7	356037
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales	order	Hypocreales	5125	0.0197	2.4117	7	356037
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Ophiocordycipitaceae	family	Ophiocordycipitaceae	474942	0.0197	0.8776	7	356037
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Ophiocordycipitaceae|genus-Purpureocillium	genus	Purpureocillium	1052105	0.0197	0.6414	7	356037
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Ophiocordycipitaceae|genus-Purpureocillium|species-Purpureocillium_lilacinum	species	Purpureocillium lilacinum	33203	0.0197	0.6798	7	356037
+phylum-Basidiomycota	phylum	Basidiomycota	5204	0.048	11.3774	17	354212
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.048	5.8872	17	354212
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.048	5.8872	17	354212
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae	family	Malasseziaceae	742845	0.048	2.1422	17	354212
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.048	1.5657	17	354212
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.0402	1.3897	14	348317

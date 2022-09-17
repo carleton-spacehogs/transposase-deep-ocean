@@ -1,0 +1,14 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+species-Stramenopiles_sp._TOSAG41-1	species	Stramenopiles sp. TOSAG41-1	1735744	0.3986	4.7192	27	67745
+species-Stramenopiles_sp._TOSAG23-3	species	Stramenopiles sp. TOSAG23-3	1735745	0.3476	4.116	28	80549
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	6.5358	77.3884	433	66251
+species-Stramenopiles_sp._TOSAG23-6	species	Stramenopiles sp. TOSAG23-6	1735747	0.3401	4.0269	15	44106
+class-Bolidophyceae	class	Bolidophyceae	91989	0.1828	19.6805	19	103923
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma	genus	Triparma	722752	0.1828	20.8057	19	103923
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_eleuthera	species	Triparma eleuthera	172717	0.1676	1.9845	17	101435
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	0.1689	18.1809	40	236831
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	0.1187	13.5027	28	235982
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	0.0785	0.9299	18	229209
+phylum-Cercozoa|class-Chlorarachniophyceae	class	Chlorarachniophyceae	29197	0.5773	62.1387	6	10394
+phylum-Cercozoa|class-Chlorarachniophyceae|genus-Bigelowiella	genus	Bigelowiella	227085	0.5773	65.6916	6	10394
+phylum-Cercozoa|class-Chlorarachniophyceae|genus-Bigelowiella|species-Bigelowiella_natans	species	Bigelowiella natans	227086	0.5773	6.8352	6	10394

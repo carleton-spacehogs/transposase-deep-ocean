@@ -1,0 +1,21 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+species-Stramenopiles_sp._TOSAG41-1	species	Stramenopiles sp. TOSAG41-1	1735744	3.9855	23.9672	270	67745
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	0.5585	3.3585	37	66251
+class-Bolidophyceae	class	Bolidophyceae	91989	1.1966	23.6337	183	152930
+class-Bolidophyceae|order-Parmales	order	Parmales	722750	1.1966	23.6337	183	152930
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_pacifica	species	Triparma pacifica	91992	1.1349	6.8245	125	110146
+class-Pelagophyceae	class	Pelagophyceae	35675	0.4986	9.848	64	128353
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	0.4986	9.848	64	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	0.4986	2.9985	64	128353
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	3.1557	62.3267	1501	475642
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	3.1557	62.3267	1501	475642
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_sp._TOSAG39-1	species	Bathycoccus sp. TOSAG39-1	1735750	1.8777	11.2919	54	28758
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._SAG10	species	Ostreococcus sp. SAG10	2590005	7.6424	45.9579	431	56396
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_pusilla	species	Micromonas pusilla	38833	0.6238	3.7513	31	49695
+phylum-Chlorophyta|class-Palmophyllophyceae	class	Palmophyllophyceae	2201463	0.1624	3.2075	63	387922
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales	order	Prasinococcales	485343	0.1624	3.2075	63	387922
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinoderma|species-Prasinoderma_coloniale	species	Prasinoderma coloniale	156133	0.1288	0.7746	20	155270
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|species-Prasinococcaceae_sp._CCMP_1430	species	Prasinococcaceae sp. CCMP 1430	2489100	0.1466	0.8814	33	225148
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.0498	0.984	8	160573
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	0.0498	0.984	8	160573
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_globosa	species	Phaeocystis globosa	33658	0.0323	0.1942	5	154798

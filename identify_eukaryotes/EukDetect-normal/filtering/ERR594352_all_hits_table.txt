@@ -1,0 +1,4 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Saccharomyces cerevisiae S288C	559292	species	33	65	18.13%	5.11%	99.7%	308302
+Malassezia restricta	76775	species	4	5	2.67%	5.72%	99.16%	348317
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	9.49%	99.43%	332937

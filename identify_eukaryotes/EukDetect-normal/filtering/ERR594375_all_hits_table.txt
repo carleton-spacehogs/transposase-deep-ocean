@@ -1,0 +1,4 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Prorocentrum minimum	39449	species	1	128	100.0%	86.59%	95.51%	798
+Tetraselmis striata	3165	species	1	3	0.71%	6.59%	97.34%	255923
+Candida parapsilosis	5480	species	1	2	0.58%	7.42%	99.12%	312010

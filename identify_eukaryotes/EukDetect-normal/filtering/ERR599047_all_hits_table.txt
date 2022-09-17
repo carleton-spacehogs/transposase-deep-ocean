@@ -1,0 +1,31 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Ostreococcus sp. SAG9	2590004	species	1	1	25.0%	3.04%	98.92%	6096
+Cafeteria roenbergensis	33653	species	10	22	23.26%	11.04%	99.63%	50724
+Exophiala xenobiotica	348802	species	46	103	23.0%	6.59%	98.94%	372377
+Cyphellophora europaea CBS 101466	1220924	species	39	88	19.6%	5.7%	99.66%	391280
+unclassified Ostreococcus	2268852	genus	2	4	16.67%	15.01%	100.0%	18843
+Bathycoccus sp. SAG4	2589999	species	1	1	14.29%	6.12%	98.9%	10392
+Tetrahymena thermophila	5911	species	1	2	12.5%	6.48%	99.39%	15300
+Bathycoccus prasinos	41875	species	10	20	8.13%	8.47%	99.4%	229209
+Ostreococcus sp. SAG10	2590005	species	2	4	8.0%	3.38%	98.85%	56396
+Ostreococcus sp. SAG12	2590007	species	1	2	7.69%	4.25%	98.71%	29000
+unclassified Bathycoccus	2590008	genus	4	6	7.69%	4.54%	99.45%	95463
+Cadophora sp. DSE1049	1485229	species	10	14	4.83%	4.69%	97.3%	369337
+Micromonas pusilla	38833	species	1	2	3.85%	10.47%	99.41%	49695
+Rhodotorula diobovata	5288	species	6	10	3.68%	3.82%	99.42%	358851
+Micromonas	38832	genus	4	6	2.25%	4.21%	99.62%	358692
+Hortaea werneckii EXF-2000	1157616	species	8	16	2.16%	5.12%	100.0%	717212
+Stramenopiles sp. TOSAG23-2	1735743	species	1	2	2.13%	3.76%	97.5%	66251
+Ostreococcus lucimarinus CCE9901	436017	species	2	4	1.75%	6.45%	99.69%	233346
+Stramenopiles sp. TOSAG23-3	1735745	species	1	2	1.67%	6.53%	100.0%	80549
+Malassezia restricta	76775	species	2	4	1.33%	8.58%	99.08%	348317
+Arcocellulus cornucervis	1155433	species	1	2	1.2%	6.95%	98.04%	107135
+Eukaryota	2759	superkingdom	2	4	0.78%	2.76%	100.0%	467758
+Durinskia baltica	400756	species	1	2	0.71%	1.49%	100.0%	244301
+Wallemia mellicola CBS 633.66	671144	species	1	2	0.66%	3.94%	100.0%	303670
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	4.98%	99.44%	332937
+Candida orthopsilosis Co 90-125	1136231	species	1	1	0.6%	4.77%	99.0%	306002
+Aspergillus sp. MA 6041	2153248	species	2	4	0.6%	2.96%	100.0%	605505
+Candida parapsilosis	5480	species	1	2	0.58%	30.89%	100.0%	312010
+Cladosporium sphaerospermum UM 843	1151026	species	1	2	0.49%	5.64%	100.0%	363001
+Lecanicillium fungicola 150-1	1294127	species	1	2	0.49%	4.93%	100.0%	356487

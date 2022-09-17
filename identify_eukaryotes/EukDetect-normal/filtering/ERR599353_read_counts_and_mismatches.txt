@@ -1,0 +1,2 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+greenalgae-Chloropicon_roscoffensis-306227at2759-S1	2	149	1	150	2454	6.11	99.33

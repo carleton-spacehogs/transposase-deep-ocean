@@ -1,0 +1,10 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Meira nashicola	species	phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales|family-Brachybasidiaceae|genus-Meira|species-Meira_nashicola	286112	49	102	26.78%	7.42%	99.89%
+Candida parapsilosis	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida|species-Candida_parapsilosis	5480	40	90	23.26%	7.07%	99.94%
+Saccharomyces cerevisiae S288C	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces|species-Saccharomyces_cerevisiae	559292	38	89	20.88%	6.29%	99.78%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	25	63	16.67%	5.76%	99.32%
+Lecanicillium sp. LEC01	species	phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae|genus-Lecanicillium|species-Lecanicillium_sp._LEC01	2013060	34	75	16.5%	7.87%	98.64%
+Cladosporium sphaerospermum UM 843	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae|genus-Cladosporium|species-Cladosporium_sphaerospermum	1151026	26	47	12.81%	5.65%	98.89%
+Rhodotorula diobovata	species	phylum-Basidiomycota|class-Microbotryomycetes|order-Sporidiobolales|family-Sporidiobolaceae|genus-Rhodotorula|species-Rhodotorula_diobovata	5288	20	38	12.27%	4.24%	99.78%
+Ostreococcus sp. SAG10	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._SAG10	2590005	3	6	12.0%	4.47%	100.0%
+Alternaria sect. Alternaria	section	phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Pleosporaceae|genus-Alternaria	2499237	3	5	4.69%	9.68%	100.0%

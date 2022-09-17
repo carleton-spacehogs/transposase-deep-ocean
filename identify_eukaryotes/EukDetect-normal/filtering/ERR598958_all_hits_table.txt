@@ -1,0 +1,41 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Mamiellales	13792	order	2	4	66.67%	9.01%	98.85%	6183
+Ostreococcus sp. SAG10	2590005	species	14	51	56.0%	10.57%	99.28%	56396
+Stramenopiles sp. TOSAG23-2	1735743	species	25	107	53.19%	18.01%	98.2%	66251
+Arcocellulus cornucervis	1155433	species	41	154	49.4%	19.55%	98.81%	107135
+Bathycoccus sp. SAG4	2589999	species	3	5	42.86%	11.4%	99.54%	10392
+unclassified Ostreococcus	2268852	genus	4	10	33.33%	9.78%	99.22%	18843
+unclassified Bathycoccus	2590008	genus	14	36	26.92%	7.4%	99.24%	95463
+Ostreococcus sp. SAG9	2590004	species	1	2	25.0%	5.62%	100.0%	6096
+Bathycoccus sp. SAG3	2589998	species	1	2	25.0%	6.34%	100.0%	6679
+Bathycoccus sp. SAG2	2589997	species	1	2	25.0%	2.94%	100.0%	8737
+Ostreococcus sp. SAG12	2590007	species	3	14	23.08%	10.5%	98.61%	29000
+Bathycoccus sp. TOSAG39-1	1735750	species	3	6	23.08%	6.7%	99.07%	28758
+Micromonas	38832	genus	34	79	19.1%	5.32%	98.62%	358692
+Micromonas pusilla	38833	species	4	7	15.38%	9.04%	97.71%	49695
+Cafeteria roenbergensis	33653	species	6	13	13.95%	8.35%	99.36%	50724
+Bathycoccus prasinos	41875	species	15	29	12.2%	7.42%	99.49%	229209
+Stramenopiles sp. TOSAG23-3	1735745	species	6	14	10.0%	8.37%	99.67%	80549
+Pelagomonas calceolata	35677	species	7	15	9.09%	11.96%	98.5%	128353
+Oikopleura albicans	2500139	species	8	12	8.51%	6.58%	99.15%	126693
+Pycnococcus provasolii	41880	species	7	12	7.22%	8.76%	99.72%	119181
+Cyphellophora europaea CBS 101466	1220924	species	12	22	6.03%	4.36%	99.68%	391280
+Minutocellus polymorphus	265543	species	6	12	4.03%	4.48%	96.73%	256500
+Stramenopiles sp. TOSAG41-1	1735744	species	2	4	3.85%	16.23%	97.8%	67745
+Ostreococcus lucimarinus CCE9901	436017	species	4	6	3.51%	6.16%	99.81%	233346
+Neobodo designis	312471	species	2	4	3.03%	10.72%	97.44%	100830
+Exophiala xenobiotica	348802	species	6	12	3.0%	4.26%	98.74%	372377
+Phaeocystis globosa	33658	species	3	4	2.59%	12.71%	99.74%	154798
+Cadophora sp. DSE1049	1485229	species	5	8	2.42%	3.67%	97.27%	369337
+Eukaryota	2759	superkingdom	6	13	2.34%	7.09%	99.7%	467758
+Micromonas bravo	296588	species	2	3	1.69%	3.86%	99.61%	182724
+Ochroconis constricta UM 578	1442076	species	3	6	1.53%	3.73%	99.6%	370078
+Prasinoderma singulare	676789	species	1	1	1.1%	4.09%	100.0%	121534
+Phaeocystis antarctica	33657	species	1	1	1.0%	3.47%	97.03%	158488
+Chloropicon mariensis	1606511	species	1	2	0.91%	5.46%	98.82%	157984
+Hortaea werneckii EXF-2000	1157616	species	3	6	0.81%	5.39%	98.99%	717212
+Alexandrium tamarense	2926	species	1	2	0.71%	13.41%	100.0%	194024
+Malassezia restricta	76775	species	1	2	0.67%	2.37%	98.37%	348317
+Chloropicon roscoffensis	1461544	species	1	2	0.63%	5.25%	99.45%	275974
+Aspergillus sp. MA 6041	2153248	species	2	4	0.6%	6.06%	99.72%	605505
+Blattella germanica	6973	species	1	1	0.58%	13.74%	99.01%	257349

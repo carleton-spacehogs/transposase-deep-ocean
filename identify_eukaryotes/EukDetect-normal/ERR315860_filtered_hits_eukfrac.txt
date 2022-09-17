@@ -1,0 +1,22 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	0.7565	52.8507	274	362175
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	0.7565	52.8507	274	362175
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	0.7777	37.3789	218	280300
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	0.7417	8.4533	170	229209
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	0.628	30.1833	49	78023
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._SAG10	species	Ostreococcus sp. SAG10	2590005	0.5497	6.265	31	56396
+species-Stramenopiles_sp._TOSAG23-3	species	Stramenopiles sp. TOSAG23-3	1735745	1.5767	17.9701	127	80549
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	5.0112	57.1153	332	66251
+species-Stramenopiles_sp._TOSAG23-6	species	Stramenopiles sp. TOSAG23-6	1735747	0.2267	2.5841	10	44106
+class-Bolidophyceae	class	Bolidophyceae	91989	0.4112	28.7277	43	104565
+class-Bolidophyceae|order-Parmales	order	Parmales	722750	0.4112	28.7277	43	104565
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma	genus	Triparma	722752	0.4112	19.764	43	104565
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_eleuthera	species	Triparma eleuthera	172717	0.4042	4.6068	41	101435
+class-Pelagophyceae	class	Pelagophyceae	35675	0.0857	5.9869	11	128353
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	0.0857	5.9869	11	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	0.0857	4.1189	11	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	0.0857	0.9768	11	128353
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.178	12.4347	62	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.178	12.4347	62	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.178	8.5548	62	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.178	2.0287	62	348317

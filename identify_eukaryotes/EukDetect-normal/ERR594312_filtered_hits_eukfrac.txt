@@ -1,0 +1,44 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Basidiomycota|class-Exobasidiomycetes	class	Exobasidiomycetes	452283	0.1231	4.1355	42	341159
+phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales	order	Exobasidiales	5404	0.1231	4.1355	42	341159
+phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales|family-Brachybasidiaceae|genus-Meira	genus	Meira	215251	0.1231	2.7493	42	341159
+phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales|family-Brachybasidiaceae|genus-Meira|species-Meira_nashicola	species	Meira nashicola	286112	0.1231	3.1994	42	341159
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.3307	11.1086	147	444526
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.3307	11.1086	147	444526
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.3307	7.3849	147	444526
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.2785	7.2373	97	348317
+phylum-Basidiomycota|class-Microbotryomycetes	class	Microbotryomycetes	162481	0.025	0.8395	9	360129
+phylum-Basidiomycota|class-Microbotryomycetes|order-Sporidiobolales	order	Sporidiobolales	231213	0.025	0.8395	9	360129
+phylum-Basidiomycota|class-Microbotryomycetes|order-Sporidiobolales|family-Sporidiobolaceae|genus-Rhodotorula	genus	Rhodotorula	5533	0.025	0.5581	9	360129
+phylum-Basidiomycota|class-Microbotryomycetes|order-Sporidiobolales|family-Sporidiobolaceae|genus-Rhodotorula|species-Rhodotorula_diobovata	species	Rhodotorula diobovata	5288	0.0223	0.5794	8	358851
+phylum-Ascomycota|class-Sordariomycetes	class	Sordariomycetes	147550	0.0226	0.7588	8	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales	order	Hypocreales	5125	0.0226	0.7588	8	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae|genus-Lecanicillium	genus	Lecanicillium	291363	0.0226	0.5044	8	354158
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae|genus-Lecanicillium|species-Lecanicillium_sp._LEC01	species	Lecanicillium sp. LEC01	2013060	0.0226	0.587	8	354158
+phylum-Ascomycota|class-Dothideomycetes	class	Dothideomycetes	147541	0.4824	16.2046	5	10365
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales	order	Capnodiales	134362	0.4824	16.2046	5	10365
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae|genus-Cladosporium	genus	Cladosporium	5498	0.4824	10.7727	5	10365
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae|genus-Cladosporium|species-Cladosporium_sphaerospermum	species	Cladosporium sphaerospermum	92950	0.4824	12.5366	5	10365
+phylum-Ascomycota|class-Saccharomycetes	class	Saccharomycetes	4891	0.5856	19.6707	245	418393
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales	order	Saccharomycetales	4892	0.5856	19.6707	245	418393
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida	genus	Candida	1535326	0.3974	8.8752	124	312010
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida|species-Candida_parapsilosis	species	Candida parapsilosis	5480	0.3974	10.3284	124	312010
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Meyerozyma	genus	Meyerozyma	766728	0.5208	11.6311	4	7680
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces	genus	Saccharomyces	4930	1.1854	26.4715	117	98703
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces|species-Saccharomyces_cerevisiae	species	Saccharomyces cerevisiae	4932	1.1854	30.806	117	98703
+class-Choanoflagellata	class	Choanoflagellata	28009	1.0549	35.4373	43	40761
+class-Choanoflagellata|order-Craspedida	order	Craspedida	1924738	1.0549	35.4373	43	40761
+class-Choanoflagellata|order-Craspedida|family-Salpingoecidae|genus-Monosiga	genus	Monosiga	81525	1.0549	23.5584	43	40761
+class-Choanoflagellata|order-Craspedida|family-Salpingoecidae|genus-Monosiga|species-Monosiga_brevicollis	species	Monosiga brevicollis	81824	1.0549	27.416	43	40761
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	0.0217	0.7303	6	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	0.0217	0.7303	6	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.0217	0.4855	6	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	0.0217	0.565	6	275974
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	0.2841	9.5444	20	70391
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	0.2841	9.5444	20	70391
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	0.2671	5.965	18	67388
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._SAG10	species	Ostreococcus sp. SAG10	2590005	0.2128	5.5299	12	56396
+class-Pelagophyceae	class	Pelagophyceae	35675	0.0467	1.5703	6	128353
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	0.0467	1.5703	6	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	0.0467	1.0439	6	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	0.0467	1.2149	6	128353

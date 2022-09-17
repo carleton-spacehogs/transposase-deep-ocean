@@ -1,0 +1,32 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Bathycoccus prasinos	41875	species	123	15211	100.0%	88.83%	97.91%	229209
+Aureococcus anophagefferens	44056	species	63	1676	96.92%	65.33%	97.78%	85991
+unclassified Bathycoccus	2590008	genus	49	1093	94.23%	59.1%	98.42%	95463
+Bathycoccus sp. SAG1	2589996	species	4	21	80.0%	24.75%	99.22%	5703
+Bathycoccus sp. SAG2	2589997	species	3	57	75.0%	33.72%	97.96%	8737
+Stramenopiles sp. TOSAG23-2	1735743	species	35	161	74.47%	22.57%	99.22%	66251
+Bathycoccus sp. TOSAG39-1	1735750	species	9	154	69.23%	44.2%	98.54%	28758
+Mamiellales	13792	order	2	10	66.67%	21.35%	99.26%	6183
+Pelagomonas calceolata	35677	species	46	279	59.74%	20.31%	97.76%	128353
+Bathycoccus sp. SAG4	2589999	species	4	46	57.14%	28.02%	98.54%	10392
+Bathycoccus sp. SAG3	2589998	species	2	43	50.0%	52.56%	98.17%	6679
+Stramenopiles sp. TOSAG23-3	1735745	species	26	62	43.33%	12.82%	99.81%	80549
+unclassified Ostreococcus	2268852	genus	4	11	33.33%	10.5%	99.08%	18843
+Ostreococcus lucimarinus CCE9901	436017	species	34	69	29.82%	6.7%	99.72%	233346
+Micromonas pusilla	38833	species	7	12	26.92%	5.92%	97.3%	49695
+Triparma laevis	1534972	species	9	19	25.0%	7.86%	99.0%	50473
+Ostreococcus sp. SAG9	2590004	species	1	2	25.0%	6.37%	98.46%	6096
+Ostreococcus sp. SAG11	2590006	species	1	1	25.0%	11.49%	100.0%	5643
+Ostreococcus sp. SAG10	2590005	species	6	16	24.0%	7.02%	99.02%	56396
+Micromonas	38832	genus	38	99	21.35%	5.3%	97.14%	358692
+Phaeocystis globosa	33658	species	24	77	20.69%	23.91%	98.52%	154798
+Lithomelissa setosa	1054399	species	1	10	20.0%	92.45%	98.59%	2562
+Prasinoderma singulare	676789	species	12	21	13.19%	9.36%	99.57%	121534
+Phaeocystis antarctica	33657	species	11	19	11.0%	7.32%	98.13%	158488
+Ostreococcus sp. SAG12	2590007	species	1	2	7.69%	13.76%	98.76%	29000
+Chloropicon roscoffensis	1461544	species	5	9	3.16%	5.25%	100.0%	275974
+Prymnesium polylepis	72548	species	2	2	2.25%	2.01%	97.98%	134351
+Stramenopiles sp. TOSAG41-1	1735744	species	1	4	1.92%	29.37%	99.71%	67745
+Alexandrium tamarense	2926	species	2	17	1.42%	34.27%	97.26%	194024
+Prasinococcaceae sp. CCMP 1430	2489100	species	1	1	0.92%	8.65%	97.22%	225148
+Micromonas bravo	296588	species	1	4	0.85%	50.08%	96.62%	182724

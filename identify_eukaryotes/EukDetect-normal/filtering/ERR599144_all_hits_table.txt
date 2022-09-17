@@ -1,0 +1,28 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Bathycoccus prasinos	41875	species	123	7374	100.0%	82.47%	98.57%	229209
+Ostreococcus lucimarinus CCE9901	436017	species	111	3433	97.37%	66.94%	99.55%	233346
+Tetrahymena thermophila	5911	species	6	42	75.0%	24.97%	99.31%	15300
+Alveolata	33630	superkingdom	5	22	71.43%	32.66%	99.87%	6135
+Aureococcus anophagefferens	44056	species	33	87	50.77%	13.08%	98.65%	85991
+Arcocellulus cornucervis	1155433	species	40	116	48.19%	17.29%	99.01%	107135
+Micromonas bravo	296588	species	43	105	36.44%	12.05%	97.64%	182724
+Stramenopiles sp. TOSAG23-2	1735743	species	15	50	31.91%	13.3%	99.37%	66251
+Eukaryota	2759	superkingdom	81	653	31.64%	28.04%	99.44%	467758
+Ostreococcus sp. SAG9	2590004	species	1	2	25.0%	36.98%	98.59%	6096
+Lithomelissa setosa	1054399	species	1	5	20.0%	84.38%	99.38%	2562
+Triparma laevis	1534972	species	7	15	19.44%	9.07%	99.93%	50473
+Stramenopiles sp. TOSAG23-3	1735745	species	9	22	15.0%	13.45%	99.75%	80549
+Florenciella parvula	236787	species	7	12	9.59%	9.09%	99.34%	88783
+Micromonas	38832	genus	15	36	8.43%	6.09%	96.73%	358692
+Micromonas pusilla	38833	species	2	4	7.69%	5.34%	96.43%	49695
+Hemiselmis rufescens	77926	species	3	5	6.38%	6.05%	100.0%	62987
+Emiliania huxleyi CCMP1516	280463	species	2	4	5.88%	3.87%	100.0%	44652
+Alexandrium tamarense	2926	species	8	17	5.67%	22.76%	98.76%	194024
+Pelagomonas calceolata	35677	species	4	5	5.19%	10.89%	99.18%	128353
+Phaeocystis globosa	33658	species	6	13	5.17%	11.3%	98.05%	154798
+Pycnococcus provasolii	41880	species	5	9	5.15%	9.67%	98.93%	119181
+Ostreococcus mediterraneus	1486918	species	4	11	2.99%	6.26%	98.09%	261255
+Phaeocystis antarctica	33657	species	2	3	2.0%	14.94%	97.76%	158488
+Minutocellus polymorphus	265543	species	2	6	1.34%	3.69%	97.16%	256500
+Nephroselmis pyriformis	156128	species	1	1	1.25%	8.6%	100.0%	94224
+Pyramimonas obovata	1411642	species	1	2	0.88%	10.88%	98.74%	138365

@@ -1,0 +1,32 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Micromonas pusilla	38833	species	26	488	100.0%	45.64%	97.96%	49695
+Mamiellales	13792	order	3	56	100.0%	29.52%	99.07%	6183
+unclassified Ostreococcus	2268852	genus	12	102	100.0%	34.44%	99.04%	18843
+Ostreococcus sp. SAG11	2590006	species	4	19	100.0%	19.92%	99.29%	5643
+Bathycoccus sp. SAG1	2589996	species	5	72	100.0%	37.12%	98.25%	5703
+unclassified Bathycoccus	2590008	genus	49	3959	94.23%	83.39%	98.29%	95463
+Ostreococcus sp. SAG12	2590007	species	12	159	92.31%	39.84%	99.16%	29000
+Bathycoccus sp. TOSAG39-1	1735750	species	12	626	92.31%	48.34%	98.31%	28758
+Ostreococcus sp. SAG10	2590005	species	23	348	92.0%	39.63%	99.13%	56396
+Bathycoccus sp. SAG4	2589999	species	6	158	85.71%	32.84%	98.59%	10392
+Micromonas	38832	genus	137	2963	76.97%	43.54%	97.87%	358692
+Stramenopiles sp. TOSAG23-2	1735743	species	36	194	76.6%	25.04%	99.38%	66251
+Ostreococcus sp. SAG9	2590004	species	3	53	75.0%	55.93%	99.25%	6096
+Bathycoccus sp. SAG3	2589998	species	3	179	75.0%	69.42%	98.1%	6679
+Bathycoccus sp. SAG2	2589997	species	3	227	75.0%	58.43%	98.03%	8737
+Stramenopiles sp. TOSAG41-1	1735744	species	18	64	34.62%	16.65%	98.95%	67745
+Aureococcus anophagefferens	44056	species	17	42	26.15%	9.74%	98.62%	85991
+Pelagomonas calceolata	35677	species	19	60	24.68%	15.31%	98.16%	128353
+Stramenopiles sp. TOSAG23-3	1735745	species	12	26	20.0%	9.54%	97.76%	80549
+Bathycoccus prasinos	41875	species	8	23	6.5%	4.55%	96.17%	229209
+Emiliania huxleyi CCMP1516	280463	species	2	3	5.88%	19.18%	100.0%	44652
+Gephyrocapsa oceanica	38817	species	5	7	5.0%	7.03%	98.1%	137559
+Phaeocystis antarctica	33657	species	4	6	4.0%	6.21%	96.75%	158488
+Phaeocystis globosa	33658	species	4	5	3.45%	10.33%	99.07%	154798
+Chloropicon roscoffensis	1461544	species	5	7	3.16%	4.41%	99.53%	275974
+Micromonas bravo	296588	species	2	3	1.69%	7.53%	95.94%	182724
+Neobodo designis	312471	species	1	2	1.52%	37.42%	96.55%	100830
+Monosiga brevicollis MX1	431895	species	1	1	1.11%	5.05%	100.0%	126657
+Prasinococcaceae sp. CCMP 1430	2489100	species	1	1	0.92%	7.93%	97.98%	225148
+Chloropicon primus	1764295	species	1	2	0.72%	2.45%	99.37%	281336
+Alexandrium tamarense	2926	species	1	21	0.71%	55.26%	99.18%	194024

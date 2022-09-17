@@ -1,0 +1,17 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Candida parapsilosis	5480	species	109	439	63.37%	15.04%	99.66%	312010
+Meyerozyma	766728	genus	23	46	17.56%	6.34%	99.48%	218630
+Meyerozyma caribbica MG20W	1091232	species	7	16	15.56%	3.94%	99.62%	140144
+Exophiala xenobiotica	348802	species	13	24	6.5%	5.19%	99.57%	372377
+Candida albicans SC5314	237561	species	9	18	5.39%	7.49%	99.21%	269952
+Malassezia restricta	76775	species	8	14	5.33%	3.19%	98.86%	348317
+Meyerozyma guilliermondii ATCC 6260	294746	species	1	2	2.78%	1.26%	100.0%	107589
+[Candida] intermedia	45354	species	4	8	2.29%	4.45%	98.38%	350551
+Purpureocillium lilacinum	33203	species	4	7	1.94%	5.97%	99.6%	356037
+Saccharomyces cerevisiae S288C	559292	species	2	4	1.1%	4.51%	100.0%	308302
+Rhodotorula mucilaginosa	5537	species	1	2	1.06%	9.42%	100.0%	219600
+Malassezia sympodialis ATCC 42132	1230383	species	1	2	0.72%	4.09%	100.0%	313165
+Malassezia globosa CBS 7966	425265	species	1	1	0.64%	9.76%	97.92%	332937
+Chloropicon roscoffensis	1461544	species	1	2	0.63%	13.07%	99.44%	275974
+Cyberlindnera jadinii NRRL Y-1542	983966	species	1	2	0.58%	6.6%	97.59%	333761
+Aspergillus versicolor CBS 583.65	1036611	species	1	2	0.49%	10.11%	100.0%	361482

@@ -1,0 +1,6 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Malassezia restricta	76775	species	4	7	2.67%	3.88%	99.49%	348317
+Ochroconis constricta UM 578	1442076	species	2	3	1.02%	10.1%	99.67%	370078
+Meyerozyma	766728	genus	1	2	0.76%	7.95%	100.0%	218630
+Saccharomyces cerevisiae S288C	559292	species	1	1	0.55%	4.66%	100.0%	308302
+Agaricus bisporus var. bisporus H97	936046	varietas	1	1	0.55%	3.93%	100.0%	333187

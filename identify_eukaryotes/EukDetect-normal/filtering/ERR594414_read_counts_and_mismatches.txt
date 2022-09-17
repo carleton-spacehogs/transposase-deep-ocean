@@ -1,0 +1,4 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+greenalgae-Tetraselmis_striata-734341at2759-S1	2	196	6	202	3993	5.06	97.03
+fungi-Malassezia_restricta-156083at2759-S1	2	185	0	185	8085	2.29	100.0
+fungi-Malassezia_restricta-87842at2759-S1	2	196	6	202	6654	3.04	97.03

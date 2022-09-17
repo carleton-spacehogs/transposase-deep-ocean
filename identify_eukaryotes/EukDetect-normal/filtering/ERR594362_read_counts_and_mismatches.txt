@@ -1,0 +1,6 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+fungi-Malassezia_restricta-814241at2759-S1	2	196	2	198	1656	11.96	98.99
+fungi-Malassezia_globosa_CBS_7966-814241at2759-S1	2	183	0	183	1887	9.7	100.0
+fungi-Malassezia_globosa_CBS_7966-604979at2759-S1	2	201	1	202	2691	7.51	99.5
+fungi-Nectria_haematococca_mpVI_77-13-4-551907at2759-S1	1	98	0	98	2949	3.32	100.0
+fungi-Fusarium_solani-166920at2759-S1	2	179	5	184	5985	3.07	97.28

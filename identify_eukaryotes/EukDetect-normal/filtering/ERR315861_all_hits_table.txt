@@ -1,0 +1,10 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Stramenopiles sp. TOSAG23-2	1735743	species	46	469	97.87%	47.4%	99.27%	66251
+Mamiellales	13792	order	1	2	33.33%	22.97%	100.0%	6183
+Stramenopiles sp. TOSAG23-6	1735747	species	8	17	26.67%	9.93%	99.63%	44106
+Stramenopiles sp. TOSAG23-3	1735745	species	11	20	18.33%	13.41%	99.48%	80549
+Stramenopiles sp. TOSAG41-1	1735744	species	7	21	13.46%	16.61%	99.33%	67745
+Triparma eleuthera	172717	species	8	17	10.96%	8.16%	98.2%	101435
+Bathycoccus prasinos	41875	species	12	26	9.76%	5.44%	99.28%	229209
+Triparma laevis	1534972	species	1	2	2.78%	16.85%	99.4%	50473
+Phaeocystis antarctica	33657	species	1	1	1.0%	2.39%	97.22%	158488

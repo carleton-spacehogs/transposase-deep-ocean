@@ -1,0 +1,29 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Tetrahymena thermophila	5911	species	8	49	100.0%	22.48%	99.19%	15300
+Bathycoccus prasinos	41875	species	123	7068	100.0%	82.21%	98.65%	229209
+Ostreococcus lucimarinus CCE9901	436017	species	111	3020	97.37%	62.74%	99.56%	233346
+Alveolata	33630	superkingdom	5	34	71.43%	49.42%	99.2%	6135
+Aureococcus anophagefferens	44056	species	32	85	49.23%	12.87%	98.74%	85991
+Arcocellulus cornucervis	1155433	species	36	125	43.37%	17.53%	99.11%	107135
+Stramenopiles sp. TOSAG23-2	1735743	species	18	51	38.3%	12.6%	99.5%	66251
+Eukaryota	2759	superkingdom	85	607	33.2%	26.23%	99.43%	467758
+Micromonas bravo	296588	species	38	81	32.2%	9.55%	97.83%	182724
+Triparma laevis	1534972	species	8	15	22.22%	8.48%	99.64%	50473
+Florenciella parvula	236787	species	16	26	21.92%	10.84%	99.76%	88783
+Lithomelissa setosa	1054399	species	1	7	20.0%	74.48%	98.95%	2562
+Stramenopiles sp. TOSAG23-3	1735745	species	8	16	13.33%	9.66%	99.72%	80549
+Micromonas	38832	genus	17	44	9.55%	6.88%	97.12%	358692
+Hemiselmis rufescens	77926	species	4	6	8.51%	3.71%	99.81%	62987
+Phaeocystis antarctica	33657	species	7	13	7.0%	8.58%	97.0%	158488
+Ostreococcus mediterraneus	1486918	species	9	16	6.72%	4.99%	98.15%	261255
+Alexandrium tamarense	2926	species	9	24	6.38%	19.54%	98.98%	194024
+Pycnococcus provasolii	41880	species	5	11	5.15%	11.28%	99.06%	119181
+Pelagomonas calceolata	35677	species	3	5	3.9%	10.64%	97.35%	128353
+Micromonas pusilla	38833	species	1	2	3.85%	4.13%	99.46%	49695
+unclassified Bathycoccus	2590008	genus	2	3	3.85%	3.66%	97.16%	95463
+Phaeocystis globosa	33658	species	4	8	3.45%	16.76%	97.8%	154798
+Minutocellus polymorphus	265543	species	4	8	2.68%	4.15%	97.06%	256500
+Haptolina ericina	156174	species	1	2	1.85%	7.04%	100.0%	58551
+Pelagococcus subviridis	35679	species	1	1	1.52%	14.04%	100.0%	79272
+Prasinococcaceae sp. CCMP 1430	2489100	species	1	1	0.92%	8.41%	98.1%	225148
+Pyramimonas obovata	1411642	species	1	1	0.88%	29.48%	100.0%	138365

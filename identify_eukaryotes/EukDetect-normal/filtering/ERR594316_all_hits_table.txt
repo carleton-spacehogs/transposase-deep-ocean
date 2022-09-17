@@ -1,0 +1,18 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Stramenopiles sp. TOSAG23-2	1735743	species	37	187	78.72%	23.83%	99.15%	66251
+Stramenopiles sp. TOSAG41-1	1735744	species	21	79	40.38%	18.93%	98.85%	67745
+Mamiellales	13792	order	1	2	33.33%	20.38%	100.0%	6183
+Ostreococcus sp. SAG9	2590004	species	1	1	25.0%	5.63%	98.61%	6096
+Micromonas pusilla	38833	species	4	9	15.38%	6.57%	98.9%	49695
+Micromonas	38832	genus	18	45	10.11%	4.76%	98.12%	358692
+Bathycoccus prasinos	41875	species	9	17	7.32%	6.99%	99.27%	229209
+Partenskyella glossopodia	552666	species	4	10	6.67%	9.1%	99.88%	83769
+Bigelowiella natans CCMP2755	753081	species	1	1	4.35%	2.86%	97.0%	31850
+unclassified Bathycoccus	2590008	genus	2	3	3.85%	8.84%	98.94%	95463
+Triparma eleuthera	172717	species	2	4	2.74%	7.52%	99.71%	101435
+Ostreococcus lucimarinus CCE9901	436017	species	3	5	2.63%	13.07%	98.7%	233346
+Cafeteria roenbergensis	33653	species	1	2	2.33%	10.68%	99.43%	50724
+Thraustochytrium sp. ATCC 26185	672127	species	1	1	1.92%	16.01%	98.98%	71099
+Pycnococcus provasolii	41880	species	1	2	1.03%	24.14%	98.71%	119181
+Gephyrocapsa oceanica	38817	species	1	2	1.0%	12.1%	99.42%	137559
+Micromonas bravo	296588	species	1	2	0.85%	15.96%	99.37%	182724

@@ -1,0 +1,27 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Chloropicon mariensis	1606511	species	39	83	35.45%	9.66%	99.58%	157984
+Pelagomonas calceolata	35677	species	16	31	20.78%	9.94%	97.92%	128353
+Stramenopiles sp. TOSAG23-2	1735743	species	8	24	17.02%	10.53%	99.19%	66251
+Chloropicon roscoffensis	1461544	species	16	32	10.13%	6.0%	99.35%	275974
+Paraphysomonas bandaiensis	89770	species	8	15	8.99%	5.35%	99.93%	154847
+Ostreococcus sp. SAG10	2590005	species	2	4	8.0%	3.78%	98.91%	56396
+Phaeocystis globosa	33658	species	8	19	6.9%	13.76%	99.11%	154798
+Cyphellophora europaea CBS 101466	1220924	species	13	25	6.53%	6.58%	99.95%	391280
+Stramenopiles sp. TOSAG41-1	1735744	species	3	4	5.77%	7.75%	98.97%	67745
+Exophiala xenobiotica	348802	species	10	19	5.0%	5.33%	99.52%	372377
+unclassified Bathycoccus	2590008	genus	2	4	3.85%	3.01%	99.43%	95463
+Phaeocystis antarctica	33657	species	3	7	3.0%	14.22%	97.38%	158488
+Malassezia restricta	76775	species	4	8	2.67%	3.47%	99.28%	348317
+Cafeteria roenbergensis	33653	species	1	2	2.33%	11.23%	100.0%	50724
+Triparma pacifica	91992	species	1	2	1.79%	4.57%	100.0%	110146
+Stramenopiles sp. TOSAG23-3	1735745	species	1	2	1.67%	6.2%	98.28%	80549
+Cadophora sp. DSE1049	1485229	species	3	4	1.45%	3.38%	97.86%	369337
+Hortaea werneckii EXF-2000	1157616	species	5	8	1.35%	4.81%	98.03%	717212
+Rhodotorula diobovata	5288	species	2	3	1.23%	3.47%	100.0%	358851
+Candida parapsilosis	5480	species	2	4	1.16%	11.03%	100.0%	312010
+Gephyrocapsa oceanica	38817	species	1	1	1.0%	1.43%	100.0%	137559
+Cladosporium sphaerospermum UM 843	1151026	species	2	3	0.99%	10.37%	98.92%	363001
+Komagataella phaffii GS115	644223	species	1	2	0.63%	11.29%	100.0%	318579
+Saccharomyces cerevisiae S288C	559292	species	1	2	0.55%	2.17%	98.78%	308302
+Ochroconis constricta UM 578	1442076	species	1	2	0.51%	12.39%	100.0%	370078
+Exophiala aquamarina CBS 119918	1182545	species	1	1	0.5%	2.13%	97.03%	376942

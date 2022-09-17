@@ -1,0 +1,38 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Ascomycota|class-Eurotiomycetes	class	Eurotiomycetes	147545	0.1762	11.9529	195	1106478
+phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales	order	Eurotiales	5042	0.0066	0.3918	4	605505
+phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae|genus-Aspergillus	genus	Aspergillus	5052	0.0066	0.2263	4	605505
+phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae|genus-Aspergillus|species-Aspergillus_sp._MA_6041	species	Aspergillus sp. MA 6041	2153248	0.0066	0.2824	4	605505
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales	order	Chaetothyriales	34395	0.3813	22.6127	191	500973
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala	genus	Exophiala	5583	0.2766	9.4742	103	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala|species-Exophiala_xenobiotica	species	Exophiala xenobiotica	348802	0.2766	11.8234	103	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Cyphellophoraceae|genus-Cyphellophora	genus	Cyphellophora	226991	0.6843	23.4393	88	128596
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Cyphellophoraceae|genus-Cyphellophora|species-Cyphellophora_europaea	species	Cyphellophora europaea	293227	0.6843	29.2513	88	128596
+phylum-Ascomycota|class-Leotiomycetes	class	Leotiomycetes	147548	0.0379	2.5709	14	369337
+phylum-Ascomycota|class-Leotiomycetes|order-Helotiales	order	Helotiales	5178	0.0379	2.2482	14	369337
+phylum-Ascomycota|class-Leotiomycetes|order-Helotiales|genus-Cadophora	genus	Cadophora	210567	0.0379	1.2984	14	369337
+phylum-Ascomycota|class-Leotiomycetes|order-Helotiales|genus-Cadophora|species-Cadophora_sp._DSE1049	species	Cadophora sp. DSE1049	1485229	0.0379	1.6203	14	369337
+phylum-Ascomycota|class-Dothideomycetes	class	Dothideomycetes	147541	0.6342	43.0116	16	25230
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales	order	Capnodiales	134362	0.6342	37.6128	16	25230
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea	genus	Hortaea	91942	0.6342	21.7216	16	25230
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	species	Hortaea werneckii	91943	0.6342	27.1077	16	25230
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.0171	1.1565	6	351890
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.0171	1.0113	6	351890
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.0171	0.584	6	351890
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.0115	0.4909	4	348317
+phylum-Basidiomycota|class-Microbotryomycetes	class	Microbotryomycetes	162481	0.0279	1.89	10	358851
+phylum-Basidiomycota|class-Microbotryomycetes|order-Sporidiobolales	order	Sporidiobolales	231213	0.0279	1.6528	10	358851
+phylum-Basidiomycota|class-Microbotryomycetes|order-Sporidiobolales|family-Sporidiobolaceae|genus-Rhodotorula	genus	Rhodotorula	5533	0.0279	0.9545	10	358851
+phylum-Basidiomycota|class-Microbotryomycetes|order-Sporidiobolales|family-Sporidiobolaceae|genus-Rhodotorula|species-Rhodotorula_diobovata	species	Rhodotorula diobovata	5288	0.0279	1.1912	10	358851
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	0.1475	10.0016	48	325504
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	0.1475	8.7462	48	325504
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	0.4765	16.3222	6	12591
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	0.2135	7.3124	15	70262
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._'lucimarinus'	species	Ostreococcus sp. 'lucimarinus'	242159	0.0686	2.9317	4	58321
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._SAG10	species	Ostreococcus sp. SAG10	2590005	0.0709	3.0318	4	56396
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	0.1113	3.8113	27	242651
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	0.0873	3.7298	20	229209
+class-Bigyra	class	Bigyra	2683628	0.4337	29.4166	22	50724
+class-Bigyra|order-Bicosoecida	order	Bicosoecida	33651	0.4337	25.7242	22	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria	genus	Cafeteria	33652	0.4337	14.8559	22	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	species	Cafeteria roenbergensis	33653	0.4337	18.5395	22	50724

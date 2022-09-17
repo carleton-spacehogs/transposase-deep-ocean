@@ -1,0 +1,17 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Mamiellales	13792	order	1	2	33.33%	5.63%	99.41%	6183
+Ostreococcus sp. SAG9	2590004	species	1	2	25.0%	11.82%	100.0%	6096
+unclassified Ostreococcus	2268852	genus	1	4	8.33%	6.67%	97.93%	18843
+Ostreococcus sp. SAG10	2590005	species	2	4	8.0%	3.79%	98.84%	56396
+Bathycoccus sp. TOSAG39-1	1735750	species	1	1	7.69%	6.25%	99.01%	28758
+Cafeteria roenbergensis	33653	species	3	5	6.98%	7.89%	99.52%	50724
+Neobodo designis	312471	species	3	6	4.55%	10.31%	99.06%	100830
+Stramenopiles sp. TOSAG41-1	1735744	species	2	3	3.85%	6.77%	97.18%	67745
+Chloropicon roscoffensis	1461544	species	4	8	2.53%	4.08%	98.97%	275974
+unclassified Bathycoccus	2590008	genus	1	2	1.92%	4.8%	99.43%	95463
+Chloropicon mariensis	1606511	species	1	2	0.91%	14.23%	99.44%	157984
+Malassezia dermatis	169489	species	1	2	0.74%	6.89%	100.0%	308173
+Tetraselmis striata	3165	species	1	2	0.71%	4.43%	97.18%	255923
+Hortaea werneckii EXF-2000	1157616	species	2	3	0.54%	1.79%	98.87%	717212
+Exophiala oligosperma	215243	species	1	2	0.5%	5.65%	100.0%	386708
+Cyphellophora europaea CBS 101466	1220924	species	1	1	0.5%	4.59%	100.0%	391280

@@ -1,0 +1,33 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Micromonas pusilla	38833	species	26	1602	100.0%	67.24%	97.2%	49695
+Mamiellales	13792	order	3	94	100.0%	52.85%	99.36%	6183
+Ostreococcus sp. SAG9	2590004	species	4	101	100.0%	73.05%	98.99%	6096
+Ostreococcus sp. SAG11	2590006	species	4	41	100.0%	34.2%	98.76%	5643
+Bathycoccus sp. SAG1	2589996	species	5	109	100.0%	36.16%	98.69%	5703
+unclassified Bathycoccus	2590008	genus	50	7079	96.15%	85.72%	97.71%	95463
+Ostreococcus sp. SAG10	2590005	species	24	837	96.0%	70.72%	99.07%	56396
+Aureococcus anophagefferens	44056	species	62	819	95.38%	49.99%	98.18%	85991
+Ostreococcus sp. SAG12	2590007	species	12	385	92.31%	71.22%	99.04%	29000
+unclassified Ostreococcus	2268852	genus	11	235	91.67%	64.94%	99.19%	18843
+Bathycoccus sp. SAG4	2589999	species	6	212	85.71%	32.47%	98.51%	10392
+Bathycoccus sp. TOSAG39-1	1735750	species	11	1141	84.62%	58.13%	97.61%	28758
+Micromonas	38832	genus	140	9458	78.65%	64.38%	97.2%	358692
+Bathycoccus sp. SAG2	2589997	species	3	418	75.0%	59.93%	97.33%	8737
+Pelagomonas calceolata	35677	species	53	445	68.83%	20.28%	97.56%	128353
+Stramenopiles sp. TOSAG23-2	1735743	species	29	158	61.7%	26.13%	99.46%	66251
+Bathycoccus sp. SAG3	2589998	species	2	322	50.0%	89.27%	97.97%	6679
+Stramenopiles sp. TOSAG41-1	1735744	species	24	62	46.15%	17.97%	99.16%	67745
+Stramenopiles sp. TOSAG23-3	1735745	species	20	52	33.33%	12.26%	98.44%	80549
+Gephyrocapsa oceanica	38817	species	27	51	27.0%	8.93%	98.32%	137559
+Emiliania huxleyi CCMP1516	280463	species	6	8	17.65%	5.26%	99.05%	44652
+Phaeocystis globosa	33658	species	18	49	15.52%	18.86%	98.97%	154798
+Chloropicon roscoffensis	1461544	species	21	40	13.29%	7.79%	99.72%	275974
+Bathycoccus prasinos	41875	species	16	42	13.01%	3.83%	97.25%	229209
+Micromonas bravo	296588	species	15	28	12.71%	6.18%	97.75%	182724
+Neobodo designis	312471	species	6	9	9.09%	7.65%	98.33%	100830
+Phaeocystis antarctica	33657	species	9	17	9.0%	9.53%	97.27%	158488
+Triparma pacifica	91992	species	2	2	3.57%	2.3%	99.5%	110146
+Alexandrium tamarense	2926	species	3	77	2.13%	47.01%	98.34%	194024
+Triparma eleuthera	172717	species	1	2	1.37%	9.07%	99.47%	101435
+Prasinococcaceae sp. CCMP 1430	2489100	species	1	1	0.92%	7.21%	96.67%	225148
+Chloropicon primus	1764295	species	1	2	0.72%	1.33%	100.0%	281336

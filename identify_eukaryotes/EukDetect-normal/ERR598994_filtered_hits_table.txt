@@ -1,0 +1,20 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Tetrahymena thermophila	species	phylum-Ciliophora|class-Oligohymenophorea|order-Hymenostomatida|family-Tetrahymenidae|genus-Tetrahymena|species-Tetrahymena_thermophila	5911	8	49	100.0%	22.48%	99.19%
+Bathycoccus prasinos	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	41875	123	7068	100.0%	82.21%	98.65%
+Ostreococcus lucimarinus CCE9901	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._'lucimarinus'	436017	111	3020	97.37%	62.74%	99.56%
+Alveolata	no rank		33630	5	34	71.43%	49.42%	99.2%
+Aureococcus anophagefferens	species	class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus|species-Aureococcus_anophagefferens	44056	32	85	49.23%	12.87%	98.74%
+Arcocellulus cornucervis	species	phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Arcocellulus|species-Arcocellulus_cornucervis	1155433	36	125	43.37%	17.53%	99.11%
+Stramenopiles sp. TOSAG23-2	species	species-Stramenopiles_sp._TOSAG23-2	1735743	18	51	38.3%	12.6%	99.5%
+Eukaryota	superkingdom		2759	85	607	33.2%	26.23%	99.43%
+Micromonas bravo	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_bravo	296588	38	81	32.2%	9.55%	97.83%
+Triparma laevis	species	class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_laevis	1534972	8	15	22.22%	8.48%	99.64%
+Florenciella parvula	species	class-Dictyochophyceae|order-Florenciellales|genus-Florenciella|species-Florenciella_parvula	236787	16	26	21.92%	10.84%	99.76%
+Stramenopiles sp. TOSAG23-3	species	species-Stramenopiles_sp._TOSAG23-3	1735745	8	16	13.33%	9.66%	99.72%
+Micromonas	genus	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	38832	17	44	9.55%	6.88%	97.12%
+Hemiselmis rufescens	species	phylum-Cryptophyta|order-Cryptomonadales|family-Hemiselmidaceae|genus-Hemiselmis|species-Hemiselmis_rufescens	77926	4	6	8.51%	3.71%	99.81%
+Phaeocystis antarctica	species	phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	33657	7	13	7.0%	8.58%	97.0%
+Alexandrium tamarense	species	class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium|species-Alexandrium_tamarense	2926	9	24	6.38%	19.54%	98.98%
+Pycnococcus provasolii	species	phylum-Chlorophyta|family-Pycnococcaceae|genus-Pycnococcus|species-Pycnococcus_provasolii	41880	5	11	5.15%	11.28%	99.06%
+Pelagomonas calceolata	species	class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	35677	3	5	3.9%	10.64%	97.35%
+Minutocellus polymorphus	species	phylum-Bacillariophyta|class-Mediophyceae|order-Cymatosirales|family-Cymatosiraceae|genus-Minutocellus|species-Minutocellus_polymorphus	265543	4	8	2.68%	4.15%	97.06%

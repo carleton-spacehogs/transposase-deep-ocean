@@ -1,0 +1,17 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+species-Stramenopiles_sp._TOSAG41-1	species	Stramenopiles sp. TOSAG41-1	1735744	1.2547	5.8795	85	67745
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	19.9846	93.6473	1324	66251
+class-Bolidophyceae	class	Bolidophyceae	91989	0.0493	4.5984	5	101435
+class-Bolidophyceae|order-Parmales	order	Parmales	722750	0.0493	4.5984	5	101435
+class-Bolidophyceae|order-Parmales|family-Triparmaceae	family	Triparmaceae	722751	0.0493	13.5443	5	101435
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma	genus	Triparma	722752	0.0493	13.5443	5	101435
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_eleuthera	species	Triparma eleuthera	172717	0.0493	0.231	5	101435
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.0614	5.7294	22	358211
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.0614	5.7294	22	358211
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae	family	Malasseziaceae	742845	0.0614	16.8755	22	358211
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.0614	16.8755	22	358211
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.0517	0.2422	18	348317
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	0.9612	89.6723	16	16645
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	0.9612	89.6723	16	16645
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae	family	Mamiellaceae	41873	0.2532	69.5802	4	15796
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	0.2532	69.5802	4	15796

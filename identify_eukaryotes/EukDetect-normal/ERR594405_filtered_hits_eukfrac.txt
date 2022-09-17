@@ -1,0 +1,13 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Basidiomycota	phylum	Basidiomycota	5204	0.1399	13.1459	50	357308
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.1399	13.1459	50	357308
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.1399	13.1459	50	357308
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae	family	Malasseziaceae	742845	0.1399	13.1459	50	357308
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.1399	13.1459	50	357308
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.1321	12.4988	46	348317
+phylum-Ascomycota	phylum	Ascomycota	4890	0.9245	86.8541	39	42183
+phylum-Ascomycota|class-Saccharomycetes	class	Saccharomycetes	4891	0.9245	86.8541	39	42183
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales	order	Saccharomycetales	4892	0.9245	86.8541	39	42183
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae	family	Saccharomycetaceae	4893	0.9245	86.8541	39	42183
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces	genus	Saccharomyces	4930	0.9245	86.8541	39	42183
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces|species-Saccharomyces_cerevisiae	species	Saccharomyces cerevisiae	4932	0.9245	87.5012	39	42183

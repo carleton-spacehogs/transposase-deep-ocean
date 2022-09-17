@@ -1,0 +1,30 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+species-Stramenopiles_sp._TOSAG23-3	species	Stramenopiles sp. TOSAG23-3	1735745	0.5835	4.4906	47	80549
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	0.0906	0.697	6	66251
+class-Dictyochophyceae	class	Dictyochophyceae	39119	0.0451	0.5532	4	88783
+class-Dictyochophyceae|order-Florenciellales	order	Florenciellales	590977	0.0451	0.4688	4	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella	genus	Florenciella	236786	0.0451	0.3343	4	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella|species-Florenciella_parvula	species	Florenciella parvula	236787	0.0451	0.3467	4	88783
+class-Bolidophyceae	class	Bolidophyceae	91989	0.7925	9.7302	40	50473
+class-Bolidophyceae|order-Parmales	order	Parmales	722750	0.7925	8.2458	40	50473
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma	genus	Triparma	722752	0.7925	5.8812	40	50473
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_laevis	species	Triparma laevis	1534972	0.7925	6.0992	40	50473
+class-Pelagophyceae	class	Pelagophyceae	35675	0.2723	3.3432	45	165263
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	0.2723	2.8331	45	165263
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagococcus	genus	Pelagococcus	35678	0.2523	1.8723	20	79272
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagococcus|species-Pelagococcus_subviridis	species	Pelagococcus subviridis	35679	0.2523	1.9417	20	79272
+class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus	genus	Aureococcus	44055	0.2907	2.1575	25	85991
+class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus|species-Aureococcus_anophagefferens	species	Aureococcus anophagefferens	44056	0.2907	2.2375	25	85991
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	1.74	21.3635	525	301723
+phylum-Haptista|class-Haptophyta|order-Isochrysidales	order	Isochrysidales	73020	0.0509	0.5295	7	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa	genus	Gephyrocapsa	38816	0.0509	0.3776	7	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	species	Gephyrocapsa oceanica	38817	0.0509	0.3916	7	137559
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	3.1554	32.8309	518	164164
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	3.1554	23.4161	518	164164
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	species	Phaeocystis antarctica	33657	3.0791	23.6969	488	158488
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	5.2949	65.0099	1918	362235
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	5.2949	55.092	1918	362235
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	1.2404	9.2047	165	133026
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_pusilla	species	Micromonas pusilla	38833	0.161	1.2389	8	49695
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	7.648	56.7562	1753	229209
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	7.648	58.8598	1753	229209

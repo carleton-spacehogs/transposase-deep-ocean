@@ -1,0 +1,31 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Bathycoccus prasinos	41875	species	123	17145	100.0%	89.12%	97.58%	229209
+Aureococcus anophagefferens	44056	species	60	479	92.31%	36.81%	98.65%	85991
+Stramenopiles sp. TOSAG23-2	1735743	species	43	339	91.49%	37.45%	99.45%	66251
+unclassified Bathycoccus	2590008	genus	46	489	88.46%	35.38%	98.38%	95463
+Bathycoccus sp. SAG2	2589997	species	3	22	75.0%	19.69%	97.93%	8737
+Oikopleura longicauda	107032	species	52	352	71.23%	23.06%	98.49%	120130
+Bathycoccus sp. TOSAG39-1	1735750	species	9	87	69.23%	29.94%	98.65%	28758
+Ostreococcus lucimarinus CCE9901	436017	species	78	453	68.42%	17.65%	99.77%	233346
+Mamiellales	13792	order	2	9	66.67%	13.81%	97.72%	6183
+Bathycoccus sp. SAG4	2589999	species	4	27	57.14%	39.87%	98.23%	10392
+Stramenopiles sp. TOSAG23-3	1735745	species	32	92	53.33%	15.17%	99.75%	80549
+Pelagomonas calceolata	35677	species	39	461	50.65%	18.28%	96.67%	128353
+Bathycoccus sp. SAG3	2589998	species	2	21	50.0%	31.35%	98.65%	6679
+Triparma laevis	1534972	species	8	17	22.22%	6.95%	99.7%	50473
+Prasinoderma singulare	676789	species	19	35	20.88%	8.27%	99.64%	121534
+Bathycoccus sp. SAG1	2589996	species	1	6	20.0%	26.57%	98.69%	5703
+Stramenopiles sp. TOSAG41-1	1735744	species	10	23	19.23%	13.52%	99.21%	67745
+Phaeocystis globosa	33658	species	20	84	17.24%	25.89%	98.72%	154798
+Phaeocystis antarctica	33657	species	13	27	13.0%	7.13%	97.21%	158488
+Florenciella parvula	236787	species	8	11	10.96%	7.7%	99.4%	88783
+Gephyrocapsa oceanica	38817	species	8	11	8.0%	7.08%	98.9%	137559
+Durinskia baltica	400756	species	9	22	6.38%	6.47%	99.73%	244301
+Emiliania huxleyi CCMP1516	280463	species	2	3	5.88%	6.86%	98.87%	44652
+Bicosta minor	1864616	species	2	3	2.74%	4.55%	97.37%	126984
+Cafeteria roenbergensis	33653	species	1	1	2.33%	9.99%	98.02%	50724
+Micromonas	38832	genus	4	6	2.25%	2.65%	96.76%	358692
+Chloropicon roscoffensis	1461544	species	3	5	1.9%	4.39%	98.44%	275974
+Pelagococcus subviridis	35679	species	1	1	1.52%	4.43%	98.99%	79272
+Paraphysomonas imperforata	37642	species	1	1	1.12%	7.49%	98.02%	140687
+Tetraselmis striata	3165	species	1	16	0.71%	26.45%	98.01%	255923

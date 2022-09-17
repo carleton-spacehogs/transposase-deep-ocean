@@ -1,0 +1,22 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Stramenopiles sp. TOSAG23-2	1735743	species	38	335	80.85%	40.83%	99.35%	66251
+Mamiellales	13792	order	2	6	66.67%	14.64%	100.0%	6183
+Stramenopiles sp. TOSAG23-3	1735745	species	37	125	61.67%	18.44%	99.81%	80549
+Ostreococcus sp. SAG12	2590007	species	6	15	46.15%	8.75%	98.64%	29000
+Bathycoccus prasinos	41875	species	53	160	43.09%	10.8%	99.18%	229209
+unclassified Bathycoccus	2590008	genus	15	43	28.85%	9.14%	99.59%	95463
+Ostreococcus sp. SAG10	2590005	species	7	18	28.0%	7.11%	98.6%	56396
+unclassified Ostreococcus	2268852	genus	3	7	25.0%	8.52%	99.12%	18843
+Bathycoccus sp. SAG3	2589998	species	1	2	25.0%	6.98%	99.43%	6679
+Bathycoccus sp. SAG2	2589997	species	1	2	25.0%	36.24%	100.0%	8737
+Bathycoccus sp. TOSAG39-1	1735750	species	3	7	23.08%	10.27%	99.86%	28758
+Bathycoccus sp. SAG1	2589996	species	1	2	20.0%	13.88%	100.0%	5703
+Stramenopiles sp. TOSAG23-6	1735747	species	6	12	20.0%	10.08%	99.83%	44106
+Triparma eleuthera	172717	species	13	27	17.81%	8.24%	98.74%	101435
+Pelagomonas calceolata	35677	species	11	21	14.29%	10.02%	97.75%	128353
+Malassezia restricta	76775	species	20	42	13.33%	5.18%	99.11%	348317
+Triparma laevis	1534972	species	1	2	2.78%	9.83%	98.42%	50473
+Stramenopiles sp. TOSAG41-1	1735744	species	1	2	1.92%	9.05%	99.54%	67745
+Pelagococcus subviridis	35679	species	1	1	1.52%	10.08%	97.2%	79272
+Thecamonas trahens ATCC 50062	461836	species	1	2	1.52%	14.95%	99.51%	96258
+Gephyrocapsa oceanica	38817	species	1	2	1.0%	7.72%	97.19%	137559

@@ -1,0 +1,31 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Bathycoccus prasinos	41875	species	121	3972	98.37%	67.69%	98.93%	229209
+Ostreococcus lucimarinus CCE9901	436017	species	108	2394	94.74%	55.14%	99.65%	233346
+Tetrahymena thermophila	5911	species	6	22	75.0%	13.72%	99.75%	15300
+Saccharomyces cerevisiae S288C	559292	species	86	234	47.25%	7.67%	99.78%	308302
+Alveolata	33630	superkingdom	3	13	42.86%	23.05%	98.61%	6135
+Eukaryota	2759	superkingdom	60	278	23.44%	15.58%	99.56%	467758
+Lithomelissa setosa	1054399	species	1	5	20.0%	72.4%	99.64%	2562
+Stramenopiles sp. TOSAG23-2	1735743	species	7	11	14.89%	5.75%	99.49%	66251
+Micromonas bravo	296588	species	16	37	13.56%	7.75%	98.09%	182724
+Bathycoccus sp. TOSAG39-1	1735750	species	1	1	7.69%	2.17%	97.26%	28758
+Arcocellulus cornucervis	1155433	species	6	13	7.23%	11.42%	98.67%	107135
+Aureococcus anophagefferens	44056	species	4	9	6.15%	7.82%	99.25%	85991
+Ostreococcus mediterraneus	1486918	species	8	16	5.97%	5.38%	98.54%	261255
+Stramenopiles sp. TOSAG23-3	1735745	species	3	6	5.0%	9.01%	99.51%	80549
+Cafeteria roenbergensis	33653	species	2	4	4.65%	8.31%	99.28%	50724
+Micromonas	38832	genus	8	16	4.49%	4.09%	97.0%	358692
+Rhodotorula sp. JG-1b	1305733	species	6	11	3.33%	3.2%	99.89%	395750
+Florenciella parvula	236787	species	2	2	2.74%	12.23%	99.39%	88783
+Phaeocystis globosa	33658	species	3	4	2.59%	7.37%	99.13%	154798
+Hemiselmis rufescens	77926	species	1	2	2.13%	8.09%	100.0%	62987
+Pycnococcus provasolii	41880	species	2	4	2.06%	21.11%	99.45%	119181
+unclassified Bathycoccus	2590008	genus	1	2	1.92%	2.76%	96.57%	95463
+Alexandrium tamarense	2926	species	2	4	1.42%	19.5%	98.31%	194024
+Saccharomyces paradoxus	27291	species	2	3	1.08%	3.19%	96.92%	307043
+Hortaea werneckii EXF-2000	1157616	species	3	5	0.81%	5.05%	99.07%	717212
+Meyerozyma	766728	genus	1	2	0.76%	3.58%	100.0%	218630
+Minutocellus polymorphus	265543	species	1	1	0.67%	6.26%	97.03%	256500
+[Candida] intermedia	45354	species	1	2	0.57%	9.13%	98.31%	350551
+Meira nashicola	286112	species	1	2	0.55%	9.05%	100.0%	341159
+Aspergillus sp. MA 6041	2153248	species	1	2	0.3%	3.76%	96.86%	605505

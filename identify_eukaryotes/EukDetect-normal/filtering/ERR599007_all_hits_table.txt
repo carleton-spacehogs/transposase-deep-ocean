@@ -1,0 +1,25 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Mamiellales	13792	order	3	16	100.0%	17.37%	98.6%	6183
+unclassified Bathycoccus	2590008	genus	50	2466	96.15%	73.29%	98.17%	95463
+Bathycoccus sp. TOSAG39-1	1735750	species	11	340	84.62%	44.48%	98.39%	28758
+Stramenopiles sp. TOSAG23-2	1735743	species	38	271	80.85%	33.06%	99.42%	66251
+Bathycoccus sp. SAG1	2589996	species	4	50	80.0%	39.5%	98.53%	5703
+Bathycoccus sp. SAG2	2589997	species	3	107	75.0%	53.89%	97.94%	8737
+Bathycoccus sp. SAG4	2589999	species	4	86	57.14%	66.72%	98.17%	10392
+Pelagomonas calceolata	35677	species	40	245	51.95%	19.04%	97.95%	128353
+Bathycoccus sp. SAG3	2589998	species	2	93	50.0%	69.99%	98.49%	6679
+unclassified Ostreococcus	2268852	genus	5	12	41.67%	12.07%	98.53%	18843
+Chloropicon roscoffensis	1461544	species	65	210	41.14%	12.58%	99.36%	275974
+Ostreococcus sp. SAG10	2590005	species	8	24	32.0%	9.22%	98.62%	56396
+Stramenopiles sp. TOSAG41-1	1735744	species	14	33	26.92%	12.59%	99.55%	67745
+Ostreococcus sp. SAG9	2590004	species	1	2	25.0%	5.58%	97.66%	6096
+Bathycoccus prasinos	41875	species	20	48	16.26%	6.63%	99.01%	229209
+Ostreococcus sp. SAG12	2590007	species	2	5	15.38%	16.2%	99.32%	29000
+Stramenopiles sp. TOSAG23-3	1735745	species	6	10	10.0%	7.38%	99.33%	80549
+Phaeocystis globosa	33658	species	10	20	8.62%	13.5%	98.32%	154798
+Aureococcus anophagefferens	44056	species	3	4	4.62%	2.81%	98.9%	85991
+Phaeocystis antarctica	33657	species	4	7	4.0%	5.37%	97.38%	158488
+Triparma pacifica	91992	species	2	3	3.57%	2.7%	100.0%	110146
+Triparma laevis	1534972	species	1	2	2.78%	3.0%	100.0%	50473
+Triparma eleuthera	172717	species	2	3	2.74%	11.58%	98.47%	101435
+Tetraselmis striata	3165	species	1	3	0.71%	6.36%	98.03%	255923

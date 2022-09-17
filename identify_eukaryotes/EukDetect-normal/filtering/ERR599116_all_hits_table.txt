@@ -1,0 +1,32 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Mamiellales	13792	order	3	49	100.0%	31.94%	98.68%	6183
+Ostreococcus sp. SAG9	2590004	species	4	12	100.0%	16.63%	99.7%	6096
+unclassified Bathycoccus	2590008	genus	51	3538	98.08%	81.96%	99.06%	95463
+Stramenopiles sp. TOSAG41-1	1735744	species	51	578	98.08%	46.77%	98.74%	67745
+Micromonas pusilla	38833	species	25	293	96.15%	36.07%	97.92%	49695
+Stramenopiles sp. TOSAG23-2	1735743	species	45	846	95.74%	66.84%	99.28%	66251
+Bathycoccus sp. TOSAG39-1	1735750	species	12	648	92.31%	47.82%	98.86%	28758
+Bathycoccus sp. SAG4	2589999	species	6	155	85.71%	33.5%	98.8%	10392
+Bathycoccus sp. SAG1	2589996	species	4	60	80.0%	41.94%	99.18%	5703
+Ostreococcus sp. SAG12	2590007	species	10	76	76.92%	23.17%	99.02%	29000
+Micromonas	38832	genus	135	1708	75.84%	33.08%	98.13%	358692
+unclassified Ostreococcus	2268852	genus	9	38	75.0%	16.98%	99.61%	18843
+Ostreococcus sp. SAG11	2590006	species	3	9	75.0%	10.03%	98.34%	5643
+Bathycoccus sp. SAG2	2589997	species	3	202	75.0%	59.27%	98.77%	8737
+Ostreococcus sp. SAG10	2590005	species	18	116	72.0%	18.91%	99.12%	56396
+Bathycoccus sp. SAG3	2589998	species	2	215	50.0%	85.49%	99.01%	6679
+Stramenopiles sp. TOSAG23-3	1735745	species	30	92	50.0%	16.08%	97.98%	80549
+Triparma eleuthera	172717	species	31	91	42.47%	15.79%	99.61%	101435
+Chloropicon roscoffensis	1461544	species	44	91	27.85%	7.55%	99.54%	275974
+Bigelowiella natans CCMP2755	753081	species	6	29	26.09%	13.96%	99.32%	31850
+Pelagomonas calceolata	35677	species	17	48	22.08%	11.24%	98.16%	128353
+Triparma pacifica	91992	species	11	24	19.64%	5.58%	99.86%	110146
+Bathycoccus prasinos	41875	species	10	28	8.13%	3.7%	96.87%	229209
+Pycnococcus provasolii	41880	species	6	9	6.19%	10.01%	99.49%	119181
+Micromonas bravo	296588	species	3	3	2.54%	3.91%	98.92%	182724
+Pelagococcus subviridis	35679	species	1	1	1.52%	9.04%	96.88%	79272
+Alexandrium tamarense	2926	species	2	22	1.42%	37.97%	98.31%	194024
+Prymnesium polylepis	72548	species	1	2	1.12%	23.41%	96.74%	134351
+Phaeocystis antarctica	33657	species	1	1	1.0%	5.44%	98.02%	158488
+Chloropicon primus	1764295	species	1	2	0.72%	7.33%	99.46%	281336
+Malassezia restricta	76775	species	1	2	0.67%	2.73%	98.87%	348317

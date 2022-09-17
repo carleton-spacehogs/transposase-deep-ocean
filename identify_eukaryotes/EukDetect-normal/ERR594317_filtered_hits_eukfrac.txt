@@ -1,0 +1,28 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+species-Stramenopiles_sp._TOSAG41-1	species	Stramenopiles sp. TOSAG41-1	1735744	3.3508	23.4278	227	67745
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	7.532	52.6613	499	66251
+class-Bolidophyceae	class	Bolidophyceae	91989	0.0986	3.3466	10	101435
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma	genus	Triparma	722752	0.0986	2.6146	10	101435
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_eleuthera	species	Triparma eleuthera	172717	0.0986	0.6893	10	101435
+class-Bigyra	class	Bigyra	2683628	0.2563	8.7	13	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria	genus	Cafeteria	33652	0.2563	6.7971	13	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	species	Cafeteria roenbergensis	33653	0.2563	1.7919	13	50724
+phylum-Ascomycota|class-Eurotiomycetes	class	Eurotiomycetes	147545	0.0107	0.3646	4	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala	genus	Exophiala	5583	0.0107	0.2849	4	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala|species-Exophiala_xenobiotica	species	Exophiala xenobiotica	348802	0.0107	0.0751	4	372377
+phylum-Ascomycota|class-Sordariomycetes	class	Sordariomycetes	147550	1.2508	42.4591	4	3198
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Nectriaceae|genus-Fusarium	genus	Fusarium	5506	1.2508	33.1721	4	3198
+phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Nectriaceae|genus-Fusarium|species-[Nectria]_haematococca	species	[Nectria] haematococca	140110	1.2508	8.7451	4	3198
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.7541	25.6003	4	5304
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.7541	20.0008	4	5304
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_globosa	species	Malassezia globosa	76773	0.7541	5.2728	4	5304
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	0.4082	13.8561	218	534078
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	0.6351	16.8444	146	229873
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_pusilla	species	Micromonas pusilla	38833	0.6037	4.2208	30	49695
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	0.4153	11.015	19	45747
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._'lucimarinus'	species	Ostreococcus sp. 'lucimarinus'	242159	0.1869	1.3069	16	85597
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	0.1824	4.8387	47	257609
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_prasinos	species	Bathycoccus prasinos	41875	0.0916	0.6406	21	229209
+phylum-Cercozoa|class-Chlorarachniophyceae	class	Chlorarachniophyceae	29197	0.1671	5.6733	14	83769
+phylum-Cercozoa|class-Chlorarachniophyceae|genus-Partenskyella	genus	Partenskyella	647365	0.1671	4.4324	14	83769
+phylum-Cercozoa|class-Chlorarachniophyceae|genus-Partenskyella|species-Partenskyella_glossopodia	species	Partenskyella glossopodia	552666	0.1671	1.1685	14	83769

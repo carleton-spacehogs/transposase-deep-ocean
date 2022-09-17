@@ -1,0 +1,9 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Candida parapsilosis	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida|species-Candida_parapsilosis	5480	109	439	63.37%	15.04%	99.66%
+Meyerozyma	genus	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Meyerozyma	766728	23	46	17.56%	6.34%	99.48%
+Meyerozyma caribbica MG20W	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Meyerozyma|species-Meyerozyma_caribbica	1091232	7	16	15.56%	3.94%	99.62%
+Exophiala xenobiotica	species	phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala|species-Exophiala_xenobiotica	348802	13	24	6.5%	5.19%	99.57%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	8	14	5.33%	3.19%	98.86%
+[Candida] intermedia	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Metschnikowiaceae|genus-Clavispora|species-[Candida]_intermedia	45354	4	8	2.29%	4.45%	98.38%
+Purpureocillium lilacinum	species	phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Ophiocordycipitaceae|genus-Purpureocillium|species-Purpureocillium_lilacinum	33203	4	7	1.94%	5.97%	99.6%
+Saccharomyces cerevisiae S288C	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces|species-Saccharomyces_cerevisiae	559292	2	4	1.1%	4.51%	100.0%

@@ -1,0 +1,29 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Ostreococcus sp. SAG9	2590004	species	4	21	100.0%	25.54%	98.78%	6096
+Stramenopiles sp. TOSAG23-2	1735743	species	46	791	97.87%	61.78%	99.34%	66251
+Stramenopiles sp. TOSAG23-3	1735745	species	51	476	85.0%	40.87%	99.83%	80549
+Ostreococcus sp. SAG10	2590005	species	20	103	80.0%	16.78%	99.2%	56396
+Bathycoccus prasinos	41875	species	94	532	76.42%	20.73%	99.53%	229209
+Mamiellales	13792	order	2	26	66.67%	30.53%	99.57%	6183
+Ostreococcus sp. SAG12	2590007	species	8	51	61.54%	18.81%	99.13%	29000
+unclassified Ostreococcus	2268852	genus	7	24	58.33%	15.28%	99.16%	18843
+unclassified Bathycoccus	2590008	genus	17	48	32.69%	10.52%	99.46%	95463
+Bathycoccus sp. TOSAG39-1	1735750	species	4	6	30.77%	4.87%	99.26%	28758
+Stramenopiles sp. TOSAG23-6	1735747	species	9	21	30.0%	10.01%	99.21%	44106
+Bathycoccus sp. SAG2	2589997	species	1	2	25.0%	3.36%	100.0%	8737
+Triparma eleuthera	172717	species	15	35	20.55%	9.58%	98.6%	101435
+Pelagomonas calceolata	35677	species	9	23	11.69%	13.36%	97.82%	128353
+Stramenopiles sp. TOSAG41-1	1735744	species	6	54	11.54%	27.99%	97.68%	67745
+Micromonas	38832	genus	13	19	7.3%	3.3%	98.65%	358692
+Emiliania huxleyi CCMP1516	280463	species	2	3	5.88%	11.34%	99.63%	44652
+Triparma laevis	1534972	species	2	3	5.56%	8.8%	99.28%	50473
+Micromonas pusilla	38833	species	1	2	3.85%	6.25%	99.48%	49695
+Micromonas bravo	296588	species	3	5	2.54%	11.76%	97.39%	182724
+Malassezia restricta	76775	species	3	5	2.0%	4.31%	99.54%	348317
+Partenskyella glossopodia	552666	species	1	2	1.67%	4.34%	100.0%	83769
+Pycnococcus provasolii	41880	species	1	2	1.03%	14.16%	99.43%	119181
+Gephyrocapsa oceanica	38817	species	1	1	1.0%	16.61%	100.0%	137559
+Alexandrium tamarense	2926	species	1	2	0.71%	12.31%	98.17%	194024
+Oithona nana	136191	species	1	2	0.67%	5.85%	97.1%	244880
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	5.17%	100.0%	332937
+Sporisorium graminicola	280036	species	1	2	0.5%	14.75%	99.3%	399989

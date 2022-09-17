@@ -1,0 +1,13 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Exophiala xenobiotica	348802	species	7	12	3.5%	3.58%	99.72%	372377
+Ochroconis constricta UM 578	1442076	species	5	9	2.55%	5.32%	99.54%	370078
+Stramenopiles sp. TOSAG23-2	1735743	species	1	2	2.13%	8.22%	100.0%	66251
+unclassified Bathycoccus	2590008	genus	1	1	1.92%	4.53%	98.02%	95463
+Thecamonas trahens ATCC 50062	461836	species	1	1	1.52%	6.23%	99.0%	96258
+Tetraselmis striata	3165	species	1	4	0.71%	8.39%	98.21%	255923
+Lutzomyia longipalpis	7200	species	1	2	0.71%	8.57%	96.94%	236724
+Rhodotorula diobovata	5288	species	1	1	0.61%	13.15%	100.0%	358851
+Helotiales sp. F229	1967635	species	1	2	0.5%	5.25%	96.6%	364015
+Cyphellophora europaea CBS 101466	1220924	species	1	1	0.5%	10.08%	97.03%	391280
+Cladosporium sphaerospermum UM 843	1151026	species	1	2	0.49%	9.9%	98.86%	363001
+Cadophora sp. DSE1049	1485229	species	1	1	0.48%	7.53%	97.03%	369337

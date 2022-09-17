@@ -1,0 +1,5 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+unclassified Bathycoccus	2590008	genus	1	2	1.92%	6.39%	98.0%	95463
+Tetraselmis striata	3165	species	1	2	0.71%	4.38%	97.71%	255923
+Malassezia restricta	76775	species	1	2	0.67%	2.74%	97.03%	348317
+Cyberlindnera jadinii NRRL Y-1542	983966	species	1	1	0.58%	2.08%	100.0%	333761

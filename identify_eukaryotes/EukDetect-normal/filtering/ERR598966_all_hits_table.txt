@@ -1,0 +1,22 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Ostreococcus sp. SAG10	2590005	species	21	214	84.0%	29.65%	99.33%	56396
+Ostreococcus sp. SAG12	2590007	species	10	85	76.92%	26.56%	99.27%	29000
+unclassified Ostreococcus	2268852	genus	9	44	75.0%	25.09%	99.38%	18843
+Stramenopiles sp. TOSAG41-1	1735744	species	27	111	51.92%	21.98%	99.26%	67745
+Ostreococcus sp. SAG9	2590004	species	2	21	50.0%	34.51%	99.48%	6096
+unclassified Bathycoccus	2590008	genus	26	94	50.0%	11.55%	99.72%	95463
+Bathycoccus sp. SAG3	2589998	species	2	8	50.0%	15.57%	99.7%	6679
+Bathycoccus sp. TOSAG39-1	1735750	species	5	13	38.46%	8.72%	99.61%	28758
+Mamiellales	13792	order	1	11	33.33%	29.37%	99.32%	6183
+Stramenopiles sp. TOSAG23-2	1735743	species	13	34	27.66%	8.62%	99.46%	66251
+Ostreococcus sp. SAG11	2590006	species	1	2	25.0%	16.48%	100.0%	5643
+Bathycoccus sp. SAG2	2589997	species	1	6	25.0%	8.81%	99.8%	8737
+Bathycoccus sp. SAG4	2589999	species	1	2	14.29%	14.26%	99.4%	10392
+Micromonas	38832	genus	18	31	10.11%	3.54%	98.14%	358692
+Triparma eleuthera	172717	species	6	13	8.22%	9.86%	100.0%	101435
+Pelagomonas calceolata	35677	species	6	8	7.79%	6.08%	98.8%	128353
+Triparma pacifica	91992	species	1	2	1.79%	4.57%	100.0%	110146
+Prasinoderma coloniale	156133	species	1	2	1.16%	15.59%	100.0%	155270
+Pycnococcus provasolii	41880	species	1	4	1.03%	30.1%	99.66%	119181
+Phaeocystis globosa	33658	species	1	2	0.86%	23.06%	100.0%	154798
+Chloropicon roscoffensis	1461544	species	1	2	0.63%	9.14%	100.0%	275974

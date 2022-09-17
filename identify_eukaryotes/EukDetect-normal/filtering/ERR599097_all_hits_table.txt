@@ -1,0 +1,38 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Micromonas pusilla	38833	species	26	1393	100.0%	66.92%	97.28%	49695
+Ostreococcus sp. SAG9	2590004	species	4	133	100.0%	82.78%	98.83%	6096
+unclassified Ostreococcus	2268852	genus	12	284	100.0%	64.82%	98.81%	18843
+Bathycoccus sp. SAG1	2589996	species	5	196	100.0%	39.79%	97.4%	5703
+unclassified Bathycoccus	2590008	genus	50	9791	96.15%	86.67%	97.57%	95463
+Ostreococcus sp. SAG10	2590005	species	24	1145	96.0%	75.84%	98.76%	56396
+Ostreococcus sp. SAG12	2590007	species	12	558	92.31%	76.41%	98.58%	29000
+Bathycoccus sp. TOSAG39-1	1735750	species	12	1669	92.31%	52.44%	97.48%	28758
+Bathycoccus sp. SAG4	2589999	species	6	388	85.71%	35.08%	97.33%	10392
+Micromonas	38832	genus	139	8422	78.09%	63.7%	97.26%	358692
+Ostreococcus sp. SAG11	2590006	species	3	60	75.0%	71.93%	98.85%	5643
+Bathycoccus sp. SAG3	2589998	species	3	445	75.0%	76.7%	98.0%	6679
+Bathycoccus sp. SAG2	2589997	species	3	589	75.0%	59.78%	97.02%	8737
+Mamiellales	13792	order	2	134	66.67%	66.37%	98.62%	6183
+Pelagomonas calceolata	35677	species	46	444	59.74%	20.36%	97.05%	128353
+Stramenopiles sp. TOSAG23-2	1735743	species	11	28	23.4%	10.66%	99.56%	66251
+Bathycoccus prasinos	41875	species	19	85	15.45%	5.27%	96.42%	229209
+Stramenopiles sp. TOSAG41-1	1735744	species	8	26	15.38%	15.64%	99.37%	67745
+Phaeocystis globosa	33658	species	14	37	12.07%	16.23%	99.27%	154798
+Chloropicon roscoffensis	1461544	species	14	27	8.86%	6.95%	99.69%	275974
+Micromonas bravo	296588	species	6	10	5.08%	6.55%	98.83%	182724
+Phaeocystis antarctica	33657	species	5	10	5.0%	10.42%	96.38%	158488
+Stramenopiles sp. TOSAG23-3	1735745	species	3	5	5.0%	12.75%	97.7%	80549
+Cafeteria roenbergensis	33653	species	2	3	4.65%	6.22%	99.63%	50724
+Aureococcus anophagefferens	44056	species	2	3	3.08%	2.83%	98.55%	85991
+Emiliania huxleyi CCMP1516	280463	species	1	2	2.94%	5.4%	96.67%	44652
+Alexandrium tamarense	2926	species	3	81	2.13%	45.37%	98.36%	194024
+Gephyrocapsa oceanica	38817	species	2	4	2.0%	6.35%	98.73%	137559
+Malassezia restricta	76775	species	3	6	2.0%	4.12%	97.62%	348317
+Triparma pacifica	91992	species	1	1	1.79%	3.53%	100.0%	110146
+Picochlorum oklahomense	249345	species	1	2	1.19%	14.54%	96.82%	117813
+Tripos fusus	2916	species	1	2	1.11%	12.14%	98.18%	132892
+Chloropicon mariensis	1606511	species	1	2	0.91%	22.08%	98.74%	157984
+Ostreococcus lucimarinus CCE9901	436017	species	1	1	0.88%	7.25%	98.0%	233346
+Picochlorum sp. SENEW3	1470871	species	1	2	0.75%	4.96%	98.09%	291610
+Armadillidium vulgare	13347	species	1	2	0.73%	6.45%	97.39%	216246
+Tetraselmis striata	3165	species	1	2	0.71%	4.46%	98.31%	255923

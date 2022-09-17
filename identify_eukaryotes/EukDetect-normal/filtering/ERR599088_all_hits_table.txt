@@ -1,0 +1,30 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Mamiellales	13792	order	3	41	100.0%	39.56%	99.43%	6183
+Ostreococcus sp. SAG9	2590004	species	4	52	100.0%	45.37%	99.17%	6096
+Bathycoccus sp. TOSAG39-1	1735750	species	13	572	100.0%	47.93%	98.71%	28758
+Micromonas pusilla	38833	species	25	435	96.15%	42.27%	97.9%	49695
+unclassified Bathycoccus	2590008	genus	50	3841	96.15%	82.43%	98.54%	95463
+Ostreococcus sp. SAG10	2590005	species	23	332	92.0%	40.32%	99.3%	56396
+unclassified Ostreococcus	2268852	genus	11	98	91.67%	36.86%	99.17%	18843
+Stramenopiles sp. TOSAG23-2	1735743	species	41	262	87.23%	30.4%	99.29%	66251
+Ostreococcus sp. SAG12	2590007	species	11	141	84.62%	38.24%	99.42%	29000
+Bathycoccus sp. SAG1	2589996	species	4	100	80.0%	42.07%	98.62%	5703
+Micromonas	38832	genus	138	2523	77.53%	39.73%	97.87%	358692
+Ostreococcus sp. SAG11	2590006	species	3	6	75.0%	10.85%	99.62%	5643
+Bathycoccus sp. SAG2	2589997	species	3	186	75.0%	56.4%	98.28%	8737
+Bathycoccus sp. SAG4	2589999	species	5	175	71.43%	52.98%	98.04%	10392
+Bathycoccus sp. SAG3	2589998	species	2	162	50.0%	85.77%	98.27%	6679
+Stramenopiles sp. TOSAG41-1	1735744	species	18	38	34.62%	13.01%	99.48%	67745
+Aureococcus anophagefferens	44056	species	21	31	32.31%	6.33%	98.59%	85991
+Pelagomonas calceolata	35677	species	22	60	28.57%	12.17%	98.77%	128353
+Stramenopiles sp. TOSAG23-3	1735745	species	10	18	16.67%	11.11%	98.52%	80549
+Bathycoccus prasinos	41875	species	10	27	8.13%	4.48%	96.82%	229209
+Gephyrocapsa oceanica	38817	species	6	8	6.0%	6.64%	98.6%	137559
+Micromonas bravo	296588	species	4	5	3.39%	3.94%	97.24%	182724
+Emiliania huxleyi CCMP1516	280463	species	1	2	2.94%	21.03%	99.37%	44652
+Phaeocystis antarctica	33657	species	2	3	2.0%	11.12%	97.8%	158488
+Triparma eleuthera	172717	species	1	1	1.37%	11.43%	100.0%	101435
+Chloropicon mariensis	1606511	species	1	2	0.91%	8.8%	100.0%	157984
+Phaeocystis globosa	33658	species	1	1	0.86%	3.86%	100.0%	154798
+Alexandrium tamarense	2926	species	1	13	0.71%	62.46%	98.92%	194024
+Chloropicon roscoffensis	1461544	species	1	2	0.63%	4.25%	98.35%	275974

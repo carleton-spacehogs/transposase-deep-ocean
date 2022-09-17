@@ -1,0 +1,40 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+species-Stramenopiles_sp._TOSAG41-1	species	Stramenopiles sp. TOSAG41-1	1735744	0.1329	3.7077	9	67745
+class-Bigyra	class	Bigyra	2683628	0.4731	16.5006	24	50724
+class-Bigyra|order-Bicosoecida	order	Bicosoecida	33651	0.4731	16.5006	24	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria	genus	Cafeteria	33652	0.4731	10.5378	24	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	species	Cafeteria roenbergensis	33653	0.4731	13.205	24	50724
+class-Pelagophyceae	class	Pelagophyceae	35675	0.0465	1.6222	4	85991
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	0.0465	1.6222	4	85991
+class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus	genus	Aureococcus	44055	0.0465	1.036	4	85991
+class-Pelagophyceae|order-Pelagomonadales|genus-Aureococcus|species-Aureococcus_anophagefferens	species	Aureococcus anophagefferens	44056	0.0465	1.2982	4	85991
+phylum-Ascomycota|class-Saccharomycetes	class	Saccharomycetes	4891	0.1501	5.233	56	373194
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales	order	Saccharomycetales	4892	0.1501	5.233	56	373194
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Meyerozyma	genus	Meyerozyma	766728	0.5557	12.3764	34	61184
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Meyerozyma|species-Meyerozyma_caribbica	species	Meyerozyma caribbica	66948	0.4334	12.0961	8	18458
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida	genus	Candida	1535326	0.0705	1.5704	22	312010
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida|species-Candida_parapsilosis	species	Candida parapsilosis	5480	0.0705	1.9679	22	312010
+phylum-Ascomycota|class-Dothideomycetes	class	Dothideomycetes	147541	0.5408	18.8589	5	9246
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales	order	Capnodiales	134362	0.5408	18.8589	5	9246
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae|genus-Cladosporium	genus	Cladosporium	5498	0.5408	12.044	5	9246
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae|genus-Cladosporium|species-Cladosporium_sphaerospermum	species	Cladosporium sphaerospermum	92950	0.5408	15.0923	5	9246
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.073	2.5459	26	356144
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.073	2.5459	26	356144
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.073	1.6259	26	356144
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.0632	1.7627	22	348317
+class-Choanoflagellata	class	Choanoflagellata	28009	0.9704	33.8418	4	4122
+class-Choanoflagellata|order-Craspedida	order	Craspedida	1924738	0.9704	33.8418	4	4122
+class-Choanoflagellata|order-Craspedida|family-Salpingoecidae|genus-Monosiga	genus	Monosiga	81525	0.9704	21.6125	4	4122
+class-Choanoflagellata|order-Craspedida|family-Salpingoecidae|genus-Monosiga|species-Monosiga_brevicollis	species	Monosiga brevicollis	81824	0.9704	27.0827	4	4122
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	0.581	20.2602	184	316719
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	0.581	20.2602	184	316719
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	0.9619	21.4231	88	91486
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus|species-Bathycoccus_sp._TOSAG39-1	species	Bathycoccus sp. TOSAG39-1	1735750	0.3477	9.7047	10	28758
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	0.2825	6.2924	18	63710
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._SAG10	species	Ostreococcus sp. SAG10	2590005	0.2305	6.4333	13	56396
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	0.4829	10.7551	78	161523
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_pusilla	species	Micromonas pusilla	38833	0.2415	6.7392	12	49695
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	0.0326	1.1373	9	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	0.0326	1.1373	9	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.0326	0.7263	9	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	0.0326	0.9102	9	275974

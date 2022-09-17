@@ -1,0 +1,27 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Stramenopiles sp. TOSAG23-2	1735743	species	46	3482	97.87%	91.61%	98.89%	66251
+Stramenopiles sp. TOSAG41-1	1735744	species	26	154	50.0%	22.61%	98.69%	67745
+Stramenopiles sp. TOSAG23-3	1735745	species	22	46	36.67%	10.03%	99.82%	80549
+Mamiellales	13792	order	1	48	33.33%	97.17%	99.88%	6183
+Stramenopiles sp. TOSAG23-6	1735747	species	8	22	26.67%	9.45%	99.39%	44106
+Triparma eleuthera	172717	species	17	42	23.29%	10.03%	98.82%	101435
+Bigelowiella natans CCMP2755	753081	species	5	9	21.74%	6.81%	98.93%	31850
+Ostreococcus sp. SAG10	2590005	species	2	2	8.0%	1.85%	99.45%	56396
+Bathycoccus prasinos	41875	species	8	13	6.5%	4.9%	99.18%	229209
+Candida parapsilosis	5480	species	8	14	4.65%	5.86%	99.67%	312010
+Pelagomonas calceolata	35677	species	3	4	3.9%	5.14%	96.54%	128353
+Pycnococcus provasolii	41880	species	3	6	3.09%	11.11%	99.38%	119181
+Cafeteria roenbergensis	33653	species	1	1	2.33%	2.25%	100.0%	50724
+unclassified Bathycoccus	2590008	genus	1	15	1.92%	92.97%	98.29%	95463
+Triparma pacifica	91992	species	1	2	1.79%	4.4%	96.63%	110146
+Thecamonas trahens ATCC 50062	461836	species	1	2	1.52%	9.43%	100.0%	96258
+Florenciella parvula	236787	species	1	1	1.37%	1.21%	98.81%	88783
+Prymnesium polylepis	72548	species	1	2	1.12%	2.68%	96.32%	134351
+Prasinoderma singulare	676789	species	1	1	1.1%	9.62%	98.02%	121534
+Phaeocystis antarctica	33657	species	1	1	1.0%	8.96%	97.56%	158488
+Vermamoeba vermiformis	5778	species	1	2	0.9%	13.01%	98.32%	195976
+Meyerozyma	766728	genus	1	2	0.76%	8.56%	100.0%	218630
+Lutzomyia longipalpis	7200	species	1	2	0.71%	8.75%	96.0%	236724
+[Candida] haemulonis	45357	species	1	1	0.62%	1.51%	100.0%	339692
+Debaryomyces hansenii CBS767	284592	species	1	2	0.55%	1.9%	96.47%	326457
+Yarrowia lipolytica CLIB122	284591	species	1	2	0.53%	2.31%	100.0%	346692

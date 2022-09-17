@@ -1,0 +1,17 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+species-Stramenopiles_sp._TOSAG41-1	species	Stramenopiles sp. TOSAG41-1	1735744	2.8489	9.5378	193	67745
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	25.4034	85.0476	1683	66251
+class-Bolidophyceae	class	Bolidophyceae	91989	0.4718	29.6939	50	105985
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma	genus	Triparma	722752	0.4718	29.0189	50	105985
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_eleuthera	species	Triparma eleuthera	172717	0.4634	1.5512	47	101435
+class-Bigyra	class	Bigyra	2683628	0.0986	6.2044	5	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria	genus	Cafeteria	33652	0.0986	6.0633	5	50724
+class-Bigyra|order-Bicosoecida|family-Cafeteriaceae|genus-Cafeteria|species-Cafeteria_roenbergensis	species	Cafeteria roenbergensis	33653	0.0986	0.33	5	50724
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.0368	2.3148	10	271910
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa	genus	Gephyrocapsa	38816	0.0291	1.7887	4	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	species	Gephyrocapsa oceanica	38817	0.0291	0.0974	4	137559
+phylum-Haptista|class-Haptophyta|order-Prymnesiales|family-Prymnesiaceae|genus-Prymnesium	genus	Prymnesium	35143	0.0447	2.747	6	134351
+phylum-Haptista|class-Haptophyta|order-Prymnesiales|family-Prymnesiaceae|genus-Prymnesium|species-Prymnesium_polylepis	species	Prymnesium polylepis	72548	0.0447	0.1495	6	134351
+phylum-Cercozoa|class-Chlorarachniophyceae	class	Chlorarachniophyceae	29197	0.9816	61.7868	10	10187
+phylum-Cercozoa|class-Chlorarachniophyceae|genus-Bigelowiella	genus	Bigelowiella	227085	0.9816	60.3821	10	10187
+phylum-Cercozoa|class-Chlorarachniophyceae|genus-Bigelowiella|species-Bigelowiella_natans	species	Bigelowiella natans	227086	0.9816	3.2864	10	10187

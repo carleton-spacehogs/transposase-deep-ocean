@@ -1,0 +1,4 @@
+Subject	Readcount	Correct_bases	Incorrect_bases	Total_bases	Subjlen	Coverage	Percent_ID
+greenalgae-Tetraselmis_striata-734341at2759-S1	4	336	5	341	3993	8.54	98.53
+fungi-Malassezia_slooffiae-290630at2759-S1	2	122	2	124	2595	4.78	98.39
+fungi-Rhodotorula_sp_FNED7-22-1404162at2759-S1	1	92	0	92	2943	3.13	100.0

@@ -1,0 +1,13 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Bathycoccus prasinos	41875	species	29	70	23.58%	6.55%	99.22%	229209
+Bathycoccus sp. TOSAG39-1	1735750	species	1	1	7.69%	2.41%	97.53%	28758
+Voromonas pontica	333133	species	1	54	6.25%	91.69%	98.46%	11409
+Pelagomonas calceolata	35677	species	3	5	3.9%	3.82%	98.38%	128353
+Prasinoderma singulare	676789	species	3	5	3.3%	5.67%	99.77%	121534
+Oikopleura longicauda	107032	species	1	1	1.37%	5.78%	100.0%	120130
+Gephyrocapsa oceanica	38817	species	1	3	1.0%	10.47%	98.79%	137559
+Vermamoeba vermiformis	5778	species	1	2	0.9%	16.39%	97.33%	195976
+Alexandrium tamarense	2926	species	1	1	0.71%	7.51%	98.0%	194024
+Chloropicon roscoffensis	1461544	species	1	2	0.63%	14.2%	98.82%	275974
+Rhodotorula diobovata	5288	species	1	2	0.61%	17.65%	99.38%	358851
+Exophiala xenobiotica	348802	species	1	2	0.5%	21.88%	100.0%	372377

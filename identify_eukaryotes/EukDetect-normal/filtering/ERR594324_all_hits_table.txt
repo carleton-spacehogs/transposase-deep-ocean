@@ -1,0 +1,34 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Micromonas pusilla	38833	species	26	278	100.0%	33.0%	98.0%	49695
+Bathycoccus sp. SAG1	2589996	species	5	29	100.0%	26.07%	99.66%	5703
+unclassified Bathycoccus	2590008	genus	50	1616	96.15%	67.53%	99.14%	95463
+Ostreococcus sp. SAG12	2590007	species	11	68	84.62%	22.33%	99.37%	29000
+Bathycoccus sp. TOSAG39-1	1735750	species	11	266	84.62%	44.65%	99.17%	28758
+Ostreococcus sp. SAG10	2590005	species	19	101	76.0%	16.4%	99.36%	56396
+Bathycoccus sp. SAG2	2589997	species	3	110	75.0%	54.17%	98.81%	8737
+Micromonas	38832	genus	133	1811	74.72%	35.28%	98.08%	358692
+Bathycoccus sp. SAG4	2589999	species	5	72	71.43%	48.58%	99.37%	10392
+Mamiellales	13792	order	2	15	66.67%	16.74%	99.44%	6183
+Ostreococcus sp. SAG9	2590004	species	2	15	50.0%	25.94%	99.3%	6096
+Ostreococcus sp. SAG11	2590006	species	2	6	50.0%	26.94%	99.23%	5643
+Bathycoccus sp. SAG3	2589998	species	2	98	50.0%	74.61%	99.09%	6679
+Stramenopiles sp. TOSAG23-2	1735743	species	20	78	42.55%	17.57%	99.51%	66251
+unclassified Ostreococcus	2268852	genus	5	23	41.67%	16.31%	99.36%	18843
+Pelagomonas calceolata	35677	species	15	38	19.48%	11.57%	97.75%	128353
+Aureococcus anophagefferens	44056	species	12	29	18.46%	9.88%	99.0%	85991
+Saccharomyces cerevisiae S288C	559292	species	33	81	18.13%	7.22%	99.73%	308302
+Stramenopiles sp. TOSAG41-1	1735744	species	5	10	9.62%	12.2%	98.9%	67745
+Stramenopiles sp. TOSAG23-3	1735745	species	4	10	6.67%	22.09%	97.63%	80549
+Phaeocystis globosa	33658	species	5	10	4.31%	14.8%	98.04%	154798
+Bathycoccus prasinos	41875	species	4	8	3.25%	3.98%	96.64%	229209
+Gephyrocapsa oceanica	38817	species	3	5	3.0%	5.97%	99.32%	137559
+Malassezia restricta	76775	species	4	6	2.67%	3.31%	99.43%	348317
+Candida parapsilosis	5480	species	3	6	1.74%	5.83%	100.0%	312010
+Neobodo designis	312471	species	1	2	1.52%	9.22%	99.21%	100830
+Chloropicon primus	1764295	species	2	4	1.45%	9.51%	100.0%	281336
+Triparma eleuthera	172717	species	1	2	1.37%	2.5%	99.42%	101435
+Chloropicon roscoffensis	1461544	species	2	4	1.27%	14.27%	99.44%	275974
+Alexandrium tamarense	2926	species	1	12	0.71%	41.29%	98.73%	194024
+[Candida] haemulonis	45357	species	1	2	0.62%	5.92%	100.0%	339692
+Meira nashicola	286112	species	1	2	0.55%	3.72%	100.0%	341159
+Hortaea werneckii EXF-2000	1157616	species	2	3	0.54%	3.1%	100.0%	717212

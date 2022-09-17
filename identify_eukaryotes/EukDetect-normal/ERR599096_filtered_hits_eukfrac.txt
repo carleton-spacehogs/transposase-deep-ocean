@@ -1,0 +1,40 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+species-Stramenopiles_sp._TOSAG41-1	species	Stramenopiles sp. TOSAG41-1	1735744	0.059	1.8492	4	67745
+species-Stramenopiles_sp._TOSAG23-3	species	Stramenopiles sp. TOSAG23-3	1735745	0.0497	1.5553	4	80549
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	0.317	9.9274	21	66251
+class-Chrysophyceae	class	Chrysophyceae	2825	0.1485	6.7002	23	154847
+class-Chrysophyceae|order-Chromulinales	order	Chromulinales	96792	0.1485	5.4375	23	154847
+class-Chrysophyceae|order-Chromulinales|family-Paraphysomonadaceae|genus-Paraphysomonas	genus	Paraphysomonas	36769	0.1485	4.6354	23	154847
+class-Chrysophyceae|order-Chromulinales|family-Paraphysomonadaceae|genus-Paraphysomonas|species-Paraphysomonas_bandaiensis	species	Paraphysomonas bandaiensis	89770	0.1485	4.652	23	154847
+class-Pelagophyceae	class	Pelagophyceae	35675	0.2104	9.489	27	128353
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	0.2104	7.7007	27	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	0.2104	6.5648	27	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	0.2104	6.5882	27	128353
+phylum-Ascomycota|class-Eurotiomycetes	class	Eurotiomycetes	147545	0.1301	5.8671	55	422868
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales	order	Chaetothyriales	34395	0.1301	4.7613	55	422868
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala	genus	Exophiala	5583	0.0663	2.0689	25	377112
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Herpotrichiellaceae|genus-Exophiala|species-Exophiala_xenobiotica	species	Exophiala xenobiotica	348802	0.0645	2.0185	24	372377
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Cyphellophoraceae|genus-Cyphellophora	genus	Cyphellophora	226991	0.6557	20.4614	30	45756
+phylum-Ascomycota|class-Eurotiomycetes|order-Chaetothyriales|family-Cyphellophoraceae|genus-Cyphellophora|species-Cyphellophora_europaea	species	Cyphellophora europaea	293227	0.6557	20.5345	30	45756
+phylum-Ascomycota|class-Leotiomycetes	class	Leotiomycetes	147548	0.0135	0.6107	5	369337
+phylum-Ascomycota|class-Leotiomycetes|order-Helotiales	order	Helotiales	5178	0.0135	0.4956	5	369337
+phylum-Ascomycota|class-Leotiomycetes|order-Helotiales|genus-Cadophora	genus	Cadophora	210567	0.0135	0.4225	5	369337
+phylum-Ascomycota|class-Leotiomycetes|order-Helotiales|genus-Cadophora|species-Cadophora_sp._DSE1049	species	Cadophora sp. DSE1049	1485229	0.0135	0.424	5	369337
+phylum-Ascomycota|class-Dothideomycetes	class	Dothideomycetes	147541	0.5822	26.2624	19	32635
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales	order	Capnodiales	134362	0.7095	25.9747	14	19731
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea	genus	Hortaea	91942	0.7095	22.1432	14	19731
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	species	Hortaea werneckii	91943	0.7095	22.2223	14	19731
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales	order	Venturiales	1111111	0.3875	14.1846	5	12904
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae|genus-Ochroconis	genus	Ochroconis	227045	0.3875	12.0923	5	12904
+phylum-Ascomycota|class-Dothideomycetes|order-Venturiales|family-Sympoventuriaceae|genus-Ochroconis|species-Ochroconis_constricta	species	Ochroconis constricta	227046	0.3875	12.1354	5	12904
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	0.5267	23.7603	94	178460
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	0.5267	19.2823	94	178460
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.5267	16.438	94	178460
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_mariensis	species	Chloropicon mariensis	1606511	0.4937	15.4629	78	157984
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	0.4969	22.4153	7	14087
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	0.4969	18.1908	7	14087
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	0.3777	11.7872	5	13238
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.1085	4.8949	17	156663
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	0.1085	3.9724	17	156663
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	0.1085	3.3864	17	156663
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_globosa	species	Phaeocystis globosa	33658	0.084	2.6302	13	154798

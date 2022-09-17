@@ -1,0 +1,23 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+species-Stramenopiles_sp._TOSAG41-1	species	Stramenopiles sp. TOSAG41-1	1735744	4.9303	32.9555	334	67745
+species-Stramenopiles_sp._TOSAG23-3	species	Stramenopiles sp. TOSAG23-3	1735745	0.0869	0.5809	7	80549
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	4.2264	28.2503	280	66251
+class-Bolidophyceae	class	Bolidophyceae	91989	0.435	6.9243	58	133323
+class-Bolidophyceae|order-Parmales	order	Parmales	722750	0.435	6.9243	58	133323
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma	genus	Triparma	722752	0.435	6.9911	58	133323
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_pacifica	species	Triparma pacifica	91992	0.3359	2.2454	37	110146
+class-Pelagophyceae	class	Pelagophyceae	35675	2.4386	38.8145	313	128353
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	2.4386	38.8145	313	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	2.4386	39.1887	313	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	2.4386	16.3003	313	128353
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	2.4083	38.3321	746	309765
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	2.4083	38.3321	746	309765
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	2.4083	38.7016	746	309765
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	2.6452	17.6812	730	275974
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	0.6349	10.1063	16	25199
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	0.6349	10.1063	16	25199
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Bathycoccus	genus	Bathycoccus	41874	0.5749	9.2396	14	24350
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.3658	5.8228	67	183147
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	0.3658	5.8228	67	183147
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	0.3658	5.8789	67	183147
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_globosa	species	Phaeocystis globosa	33658	0.2972	1.9863	46	154798

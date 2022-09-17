@@ -1,0 +1,8 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+species-Stramenopiles_sp._TOSAG41-1	species	Stramenopiles sp. TOSAG41-1	1735744	0.1771	1.5642	12	67745
+species-Stramenopiles_sp._TOSAG23-2	species	Stramenopiles sp. TOSAG23-2	1735743	11.0489	97.5653	732	66251
+class-Bolidophyceae	class	Bolidophyceae	91989	0.1262	100.0	14	110900
+class-Bolidophyceae|order-Parmales	order	Parmales	722750	0.1262	100.0	14	110900
+class-Bolidophyceae|order-Parmales|family-Triparmaceae	family	Triparmaceae	722751	0.1262	100.0	14	110900
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma	genus	Triparma	722752	0.1262	100.0	14	110900
+class-Bolidophyceae|order-Parmales|family-Triparmaceae|genus-Triparma|species-Triparma_eleuthera	species	Triparma eleuthera	172717	0.0986	0.8705	10	101435

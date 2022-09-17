@@ -1,0 +1,4 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Emiliania huxleyi CCMP1516	280463	species	2	2	5.88%	2.01%	99.5%	44652
+Gephyrocapsa oceanica	38817	species	1	2	1.0%	18.5%	97.71%	137559
+Tetraselmis striata	3165	species	1	1	0.71%	2.28%	96.7%	255923

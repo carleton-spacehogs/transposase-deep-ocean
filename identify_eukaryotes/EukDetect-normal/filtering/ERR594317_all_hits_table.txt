@@ -1,0 +1,36 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Stramenopiles sp. TOSAG23-2	1735743	species	44	499	93.62%	46.83%	99.35%	66251
+Stramenopiles sp. TOSAG41-1	1735744	species	37	227	71.15%	28.93%	98.88%	67745
+Micromonas pusilla	38833	species	10	30	38.46%	10.28%	98.43%	49695
+Mamiellales	13792	order	1	6	33.33%	32.74%	99.64%	6183
+Micromonas	38832	genus	50	109	28.09%	5.23%	98.33%	358692
+Bathycoccus sp. SAG1	2589996	species	1	1	20.0%	25.07%	100.0%	5703
+unclassified Bathycoccus	2590008	genus	9	22	17.31%	6.21%	99.53%	95463
+Cafeteria roenbergensis	33653	species	7	13	16.28%	10.56%	99.23%	50724
+Bathycoccus sp. TOSAG39-1	1735750	species	2	3	15.38%	6.23%	99.23%	28758
+Partenskyella glossopodia	552666	species	6	14	10.0%	7.38%	99.55%	83769
+Bathycoccus prasinos	41875	species	12	21	9.76%	4.97%	99.37%	229209
+Triparma eleuthera	172717	species	7	10	9.59%	4.93%	99.44%	101435
+unclassified Ostreococcus	2268852	genus	1	1	8.33%	2.78%	100.0%	18843
+Ostreococcus sp. SAG12	2590007	species	1	1	7.69%	1.22%	100.0%	29000
+Ostreococcus lucimarinus CCE9901	436017	species	7	16	6.14%	4.36%	99.57%	233346
+Emiliania huxleyi CCMP1516	280463	species	2	3	5.88%	9.39%	100.0%	44652
+Bigelowiella longifila	552665	species	2	2	4.44%	9.37%	100.0%	33290
+Bigelowiella natans CCMP2755	753081	species	1	2	4.35%	7.18%	100.0%	31850
+Ostreococcus sp. SAG10	2590005	species	1	1	4.0%	4.96%	100.0%	56396
+Micromonas bravo	296588	species	4	7	3.39%	8.23%	98.74%	182724
+Stramenopiles sp. TOSAG23-3	1735745	species	1	1	1.67%	9.12%	97.03%	80549
+Aureococcus anophagefferens	44056	species	1	2	1.54%	2.2%	100.0%	85991
+Oikopleura longicauda	107032	species	1	1	1.37%	3.32%	100.0%	120130
+Oikopleura dioica	34765	species	1	2	1.27%	2.13%	96.23%	176745
+Malassezia globosa CBS 7966	425265	species	2	4	1.27%	5.92%	99.36%	332937
+Pycnococcus provasolii	41880	species	1	2	1.03%	13.52%	97.32%	119181
+Phaeocystis antarctica	33657	species	1	2	1.0%	2.69%	96.74%	158488
+Gephyrocapsa oceanica	38817	species	1	3	1.0%	7.98%	99.61%	137559
+Exophiala xenobiotica	348802	species	2	4	1.0%	3.29%	99.14%	372377
+[Nectria] haematococca mpVI 77-13-4	660122	no rank	2	4	0.98%	10.69%	100.0%	351719
+Alexandrium tamarense	2926	species	1	2	0.71%	17.78%	100.0%	194024
+Cydia pomonella	82600	species	1	1	0.58%	16.42%	100.0%	295934
+Candida parapsilosis	5480	species	1	2	0.58%	8.76%	100.0%	312010
+Linderina pennispora	61395	species	1	1	0.53%	2.17%	96.39%	349115
+Eukaryota	2759	superkingdom	1	1	0.39%	8.75%	100.0%	467758

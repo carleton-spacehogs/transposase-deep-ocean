@@ -1,0 +1,16 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Meira nashicola	species	phylum-Basidiomycota|class-Exobasidiomycetes|order-Exobasidiales|family-Brachybasidiaceae|genus-Meira|species-Meira_nashicola	286112	92	239	50.27%	9.27%	99.93%
+Candida parapsilosis	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Candida|species-Candida_parapsilosis	5480	73	216	42.44%	10.32%	99.85%
+Saccharomyces cerevisiae S288C	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces|species-Saccharomyces_cerevisiae	559292	74	210	40.66%	8.12%	99.79%
+Lecanicillium sp. LEC01	species	phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae|genus-Lecanicillium|species-Lecanicillium_sp._LEC01	2013060	72	177	34.95%	8.65%	98.93%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	44	132	29.33%	6.5%	99.24%
+Rhodotorula diobovata	species	phylum-Basidiomycota|class-Microbotryomycetes|order-Sporidiobolales|family-Sporidiobolaceae|genus-Rhodotorula|species-Rhodotorula_diobovata	5288	41	92	25.15%	5.71%	99.78%
+Cladosporium sphaerospermum UM 843	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Cladosporiaceae|genus-Cladosporium|species-Cladosporium_sphaerospermum	1151026	50	115	24.63%	7.19%	99.03%
+Ostreococcus sp. SAG10	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._SAG10	2590005	2	8	8.0%	6.84%	99.41%
+Alternaria sect. Alternaria	section	phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Pleosporaceae|genus-Alternaria	2499237	3	6	4.69%	10.28%	100.0%
+Alternaria tenuissima	species	phylum-Ascomycota|class-Dothideomycetes|order-Pleosporales|family-Pleosporaceae|genus-Alternaria|species-Alternaria_tenuissima	119927	2	4	2.94%	7.66%	99.12%
+Chloropicon roscoffensis	species	phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	1461544	4	8	2.53%	6.22%	99.46%
+Meyerozyma	genus	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Debaryomycetaceae|genus-Meyerozyma	766728	2	4	1.53%	3.36%	100.0%
+Aureobasidium melanogenum	species	phylum-Ascomycota|class-Dothideomycetes|order-Dothideales|family-Saccotheciaceae|genus-Aureobasidium|species-Aureobasidium_melanogenum	46634	3	6	1.46%	7.81%	99.46%
+Penicillium digitatum Pd1	species	phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae|genus-Penicillium|species-Penicillium_digitatum	1170230	3	6	1.43%	5.07%	100.0%
+[Candida] intermedia	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Metschnikowiaceae|genus-Clavispora|species-[Candida]_intermedia	45354	2	4	1.14%	3.26%	98.15%

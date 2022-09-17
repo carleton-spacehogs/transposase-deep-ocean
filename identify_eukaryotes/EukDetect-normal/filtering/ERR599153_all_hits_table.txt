@@ -1,0 +1,23 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Stramenopiles sp. TOSAG23-2	1735743	species	44	455	93.62%	46.92%	99.24%	66251
+Stramenopiles sp. TOSAG23-3	1735745	species	54	374	90.0%	34.37%	99.71%	80549
+unclassified Bathycoccus	2590008	genus	18	52	34.62%	9.17%	99.43%	95463
+Mamiellales	13792	order	1	1	33.33%	11.9%	100.0%	6183
+Bathycoccus sp. SAG4	2589999	species	2	3	28.57%	11.54%	98.85%	10392
+Bathycoccus sp. SAG3	2589998	species	1	4	25.0%	14.8%	99.73%	6679
+Bathycoccus sp. SAG2	2589997	species	1	2	25.0%	32.95%	100.0%	8737
+Bathycoccus sp. TOSAG39-1	1735750	species	3	7	23.08%	7.3%	99.2%	28758
+Bathycoccus sp. SAG1	2589996	species	1	1	20.0%	9.46%	98.02%	5703
+Pelagomonas calceolata	35677	species	15	37	19.48%	11.27%	98.15%	128353
+Bathycoccus prasinos	41875	species	22	54	17.89%	8.23%	98.98%	229209
+Ostreococcus sp. SAG10	2590005	species	3	4	12.0%	2.8%	98.3%	56396
+Triparma laevis	1534972	species	3	6	8.33%	4.77%	99.63%	50473
+unclassified Ostreococcus	2268852	genus	1	1	8.33%	2.78%	99.01%	18843
+Thecamonas trahens ATCC 50062	461836	species	2	4	3.03%	7.25%	100.0%	96258
+Emiliania huxleyi CCMP1516	280463	species	1	2	2.94%	2.6%	100.0%	44652
+Cafeteria roenbergensis	33653	species	1	1	2.33%	3.39%	98.02%	50724
+Stramenopiles sp. TOSAG41-1	1735744	species	1	9	1.92%	60.29%	99.71%	67745
+Paraphysomonas imperforata	37642	species	1	1	1.12%	5.41%	99.01%	140687
+Gephyrocapsa oceanica	38817	species	1	1	1.0%	7.55%	97.03%	137559
+Alexandrium tamarense	2926	species	1	1	0.71%	7.58%	100.0%	194024
+Malassezia restricta	76775	species	1	2	0.67%	11.9%	98.89%	348317

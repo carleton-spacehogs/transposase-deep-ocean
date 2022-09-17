@@ -1,0 +1,30 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Mamiellales	13792	order	1	2	33.33%	5.33%	100.0%	6183
+Candida parapsilosis	5480	species	51	124	29.65%	7.41%	99.9%	312010
+Ostreococcus sp. SAG9	2590004	species	1	2	25.0%	5.68%	100.0%	6096
+Saccharomyces cerevisiae S288C	559292	species	45	117	24.73%	7.57%	99.75%	308302
+Malassezia restricta	76775	species	34	97	22.67%	5.96%	99.15%	348317
+Monosiga brevicollis MX1	431895	species	19	43	21.11%	9.05%	98.92%	126657
+Ostreococcus sp. SAG10	2590005	species	5	12	20.0%	5.72%	98.93%	56396
+Malassezia globosa CBS 7966	425265	species	23	48	14.65%	4.36%	98.51%	332937
+Meira nashicola	286112	species	22	42	12.02%	7.27%	99.83%	341159
+Ostreococcus sp. SAG12	2590007	species	1	4	7.69%	4.34%	100.0%	29000
+Bathycoccus sp. TOSAG39-1	1735750	species	1	2	7.69%	9.83%	100.0%	28758
+Pelagomonas calceolata	35677	species	4	6	5.19%	8.13%	97.83%	128353
+Rhodotorula diobovata	5288	species	5	8	3.07%	2.51%	99.71%	358851
+Meyerozyma guilliermondii ATCC 6260	294746	species	1	2	2.78%	4.23%	100.0%	107589
+Lecanicillium sp. LEC01	2013060	species	4	8	1.94%	4.82%	98.39%	354158
+unclassified Bathycoccus	2590008	genus	1	2	1.92%	8.58%	100.0%	95463
+Chloropicon roscoffensis	1461544	species	3	6	1.9%	4.43%	100.0%	275974
+Acanthamoeba polyphaga	5757	species	1	1	1.79%	3.86%	100.0%	76663
+Meyerozyma	766728	genus	2	4	1.53%	4.31%	100.0%	218630
+Cladosporium sphaerospermum UM 843	1151026	species	3	5	1.48%	4.2%	97.93%	363001
+Oikopleura longicauda	107032	species	1	1	1.37%	18.5%	97.03%	120130
+Acanthamoeba quina	211522	species	1	1	1.3%	16.5%	100.0%	117232
+Exophiala xenobiotica	348802	species	2	3	1.0%	5.67%	100.0%	372377
+Aureobasidium melanogenum	46634	species	2	3	0.98%	4.18%	97.66%	367526
+Malassezia japonica	223818	species	1	2	0.76%	2.75%	97.25%	330549
+Chloropicon primus	1764295	species	1	2	0.72%	6.78%	97.85%	281336
+Rhodotorula sp. JG-1b	1305733	species	1	1	0.56%	7.82%	100.0%	395750
+Byssochlamys spectabilis	264951	species	1	2	0.48%	14.3%	100.0%	356356
+Byssochlamys sp. IMV 00045	2562440	species	1	2	0.32%	2.35%	98.21%	541072
