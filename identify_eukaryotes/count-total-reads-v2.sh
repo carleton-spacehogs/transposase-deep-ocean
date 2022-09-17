@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# /researchdrive/zhongj2/MAG_pnps_redux/IN/raw_reads
-# /researchdrive/zhongj2/MAG_pnps_redux/SRF_5-20/raw_reads/
-# /workspace/data/zhongj/Transposase_Project/other_DNA_to_keep
+# echo sample,num_reads > count-ocean.out
+# cat *-reads.out > count-ocean.out
 ocean=$1
 
 prefix="/researchdrive/zhongj2/MAG_pnps_redux/$ocean/raw_reads/"
