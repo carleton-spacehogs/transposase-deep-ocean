@@ -1,0 +1,26 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Stramenopiles sp. TOSAG23-2	1735743	species	46	676	97.87%	58.32%	99.26%	66251
+unclassified Bathycoccus	2590008	genus	49	643	94.23%	41.47%	98.74%	95463
+Chloropicon mariensis	1606511	species	93	874	84.55%	40.77%	99.68%	157984
+Bathycoccus sp. TOSAG39-1	1735750	species	10	104	76.92%	25.22%	98.59%	28758
+Bathycoccus sp. SAG2	2589997	species	3	29	75.0%	23.72%	98.58%	8737
+Stramenopiles sp. TOSAG23-3	1735745	species	45	225	75.0%	25.07%	98.37%	80549
+Mamiellales	13792	order	2	18	66.67%	27.67%	99.09%	6183
+Pelagomonas calceolata	35677	species	48	385	62.34%	22.81%	97.64%	128353
+Bathycoccus sp. SAG1	2589996	species	3	11	60.0%	22.58%	99.31%	5703
+Bathycoccus sp. SAG3	2589998	species	2	32	50.0%	42.13%	98.61%	6679
+Bathycoccus sp. SAG4	2589999	species	3	21	42.86%	42.01%	98.54%	10392
+Phaeocystis globosa	33658	species	27	170	23.28%	34.97%	98.64%	154798
+Phaeocystis antarctica	33657	species	16	65	16.0%	11.2%	97.25%	158488
+Stramenopiles sp. TOSAG41-1	1735744	species	7	26	13.46%	15.73%	98.9%	67745
+Bathycoccus prasinos	41875	species	5	5	4.07%	2.25%	97.14%	229209
+Cyphellophora europaea CBS 101466	1220924	species	8	17	4.02%	5.18%	99.86%	391280
+Malassezia restricta	76775	species	3	6	2.0%	8.3%	99.45%	348317
+Pelagococcus subviridis	35679	species	1	1	1.52%	9.51%	97.03%	79272
+Chloropicon roscoffensis	1461544	species	2	4	1.27%	3.6%	100.0%	275974
+Exophiala xenobiotica	348802	species	2	4	1.0%	3.81%	99.15%	372377
+Pichia kluyveri	36015	species	1	2	0.97%	10.97%	97.28%	170307
+Tetraselmis striata	3165	species	1	1	0.71%	2.05%	95.12%	255923
+Malassezia globosa CBS 7966	425265	species	1	1	0.64%	2.14%	100.0%	332937
+Meyerozyma carpophila	374178	species	1	2	0.58%	2.17%	100.0%	362969
+Ochroconis constricta UM 578	1442076	species	1	2	0.51%	2.92%	100.0%	370078

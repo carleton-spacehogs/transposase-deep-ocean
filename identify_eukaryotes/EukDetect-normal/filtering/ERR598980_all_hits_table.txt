@@ -1,0 +1,21 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Ostreococcus sp. SAG11	2590006	species	1	1	25.0%	9.58%	99.0%	5643
+Cafeteria roenbergensis	33653	species	8	18	18.6%	10.91%	99.3%	50724
+Malassezia restricta	76775	species	14	27	9.33%	5.43%	99.21%	348317
+Stramenopiles sp. TOSAG23-2	1735743	species	3	6	6.38%	6.47%	98.77%	66251
+Ochroconis constricta UM 578	1442076	species	8	14	4.08%	4.0%	99.32%	370078
+Ostreococcus sp. SAG10	2590005	species	1	2	4.0%	8.83%	99.35%	56396
+unclassified Bathycoccus	2590008	genus	2	4	3.85%	3.47%	98.13%	95463
+Bathycoccus prasinos	41875	species	4	8	3.25%	4.08%	99.53%	229209
+Stramenopiles sp. TOSAG41-1	1735744	species	1	1	1.92%	4.07%	97.94%	67745
+Poteriospumella lacustris	1117027	species	1	2	1.41%	32.56%	100.0%	83728
+Pelagomonas calceolata	35677	species	1	2	1.3%	14.93%	99.35%	128353
+Candida parapsilosis	5480	species	2	4	1.16%	28.88%	100.0%	312010
+Chloropicon mariensis	1606511	species	1	2	0.91%	2.93%	100.0%	157984
+Tetraselmis striata	3165	species	1	5	0.71%	10.94%	97.48%	255923
+Lutzomyia longipalpis	7200	species	1	1	0.71%	7.44%	96.47%	236724
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	4.84%	98.78%	332937
+Brettanomyces custersianus	13368	species	1	2	0.58%	10.21%	98.28%	334229
+Saccharomyces cerevisiae S288C	559292	species	1	2	0.55%	8.71%	100.0%	308302
+Exophiala xenobiotica	348802	species	1	2	0.5%	32.28%	100.0%	372377
+Hortaea werneckii EXF-2000	1157616	species	1	2	0.27%	4.85%	100.0%	717212

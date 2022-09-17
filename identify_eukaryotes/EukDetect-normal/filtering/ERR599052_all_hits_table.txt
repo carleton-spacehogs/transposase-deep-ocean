@@ -1,0 +1,28 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Bathycoccus prasinos	41875	species	123	8749	100.0%	85.28%	98.17%	229209
+Stramenopiles sp. TOSAG23-2	1735743	species	46	1711	97.87%	85.62%	99.19%	66251
+Aureococcus anophagefferens	44056	species	63	1893	96.92%	73.16%	97.82%	85991
+Stramenopiles sp. TOSAG23-3	1735745	species	53	371	88.33%	34.4%	99.8%	80549
+Triparma laevis	1534972	species	18	44	50.0%	12.8%	99.77%	50473
+Pelagomonas calceolata	35677	species	31	214	40.26%	18.36%	97.18%	128353
+Mamiellales	13792	order	1	13	33.33%	67.73%	99.83%	6183
+Stramenopiles sp. TOSAG41-1	1735744	species	17	80	32.69%	13.29%	98.96%	67745
+Triparma eleuthera	172717	species	15	31	20.55%	9.1%	98.23%	101435
+Emiliania huxleyi CCMP1516	280463	species	5	7	14.71%	6.79%	99.06%	44652
+Phaeocystis globosa	33658	species	15	52	12.93%	20.4%	98.62%	154798
+Chloropicon roscoffensis	1461544	species	14	23	8.86%	5.12%	99.2%	275974
+Bathycoccus sp. TOSAG39-1	1735750	species	1	1	7.69%	2.94%	96.97%	28758
+Pycnococcus provasolii	41880	species	5	10	5.15%	12.44%	99.32%	119181
+Phaeocystis antarctica	33657	species	5	9	5.0%	6.27%	97.39%	158488
+Gephyrocapsa oceanica	38817	species	5	8	5.0%	4.3%	98.54%	137559
+Oikopleura longicauda	107032	species	3	4	4.11%	6.95%	98.66%	120130
+unclassified Bathycoccus	2590008	genus	2	7	3.85%	6.82%	97.84%	95463
+Haptolina ericina	156174	species	2	4	3.7%	15.3%	100.0%	58551
+Pelagococcus subviridis	35679	species	2	3	3.03%	15.0%	96.58%	79272
+Paraphysomonas bandaiensis	89770	species	2	3	2.25%	9.17%	99.64%	154847
+Prasinoderma singulare	676789	species	2	3	2.2%	5.54%	99.65%	121534
+Ostreococcus lucimarinus CCE9901	436017	species	1	2	0.88%	7.82%	100.0%	233346
+Limonomyces culmigenus	228944	species	1	1	0.72%	4.65%	97.03%	275377
+Tetraselmis striata	3165	species	1	43	0.71%	55.77%	97.93%	255923
+Debaryomyces hansenii CBS767	284592	species	1	1	0.55%	14.83%	97.03%	326457
+Hortaea werneckii EXF-2000	1157616	species	1	2	0.27%	11.81%	98.22%	717212

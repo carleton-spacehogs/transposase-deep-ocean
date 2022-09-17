@@ -1,0 +1,44 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Mamiellales	13792	order	3	256	100.0%	67.25%	97.55%	6183
+Ostreococcus sp. SAG9	2590004	species	4	321	100.0%	95.31%	97.81%	6096
+unclassified Ostreococcus	2268852	genus	12	687	100.0%	72.77%	97.57%	18843
+Ostreococcus sp. SAG11	2590006	species	4	114	100.0%	44.43%	96.77%	5643
+Stramenopiles sp. TOSAG23-3	1735745	species	59	1778	98.33%	80.84%	99.54%	80549
+Stramenopiles sp. TOSAG23-2	1735743	species	46	3425	97.87%	92.65%	98.61%	66251
+unclassified Bathycoccus	2590008	genus	50	8938	96.15%	82.8%	95.83%	95463
+Ostreococcus sp. SAG10	2590005	species	24	2559	96.0%	88.39%	97.58%	56396
+Ostreococcus sp. SAG12	2590007	species	12	1218	92.31%	89.19%	97.53%	29000
+Bathycoccus sp. TOSAG39-1	1735750	species	12	1507	92.31%	47.92%	95.7%	28758
+Bathycoccus sp. SAG1	2589996	species	4	187	80.0%	45.83%	96.61%	5703
+Pelagomonas calceolata	35677	species	59	1353	76.62%	33.01%	96.93%	128353
+Bathycoccus sp. SAG2	2589997	species	3	507	75.0%	59.65%	95.22%	8737
+Bathycoccus prasinos	41875	species	78	326	63.41%	13.24%	98.78%	229209
+Bathycoccus sp. SAG4	2589999	species	4	313	57.14%	70.1%	96.42%	10392
+Bathycoccus sp. SAG3	2589998	species	2	466	50.0%	84.95%	95.96%	6679
+Cafeteria roenbergensis	33653	species	12	21	27.91%	12.19%	99.33%	50724
+Phaeocystis antarctica	33657	species	25	179	25.0%	15.04%	96.78%	158488
+Phaeocystis globosa	33658	species	25	421	21.55%	55.55%	98.44%	154798
+Chloropicon mariensis	1606511	species	11	22	10.0%	7.32%	97.84%	157984
+Phaeocystis rex	1631189	species	3	5	7.69%	13.57%	97.95%	40152
+Pelagococcus subviridis	35679	species	2	4	3.03%	10.85%	96.68%	79272
+Gephyrocapsa oceanica	38817	species	3	6	3.0%	8.25%	98.44%	137559
+Poteriospumella lacustris	1117027	species	2	4	2.82%	8.71%	98.46%	83728
+Malassezia restricta	76775	species	3	6	2.0%	3.64%	98.67%	348317
+Stramenopiles sp. TOSAG41-1	1735744	species	1	63	1.92%	94.14%	98.99%	67745
+Aureococcus anophagefferens	44056	species	1	1	1.54%	4.76%	97.0%	85991
+Exophiala xenobiotica	348802	species	3	6	1.5%	3.84%	100.0%	372377
+Naegleria gruberi	5762	species	1	1	1.22%	7.19%	100.0%	124232
+Calcidiscus leptoporus	127549	species	1	1	1.18%	1.37%	97.0%	114854
+Salpingoeca punica	1924735	species	1	2	0.96%	17.17%	100.0%	146723
+Prasinococcaceae sp. CCMP 1430	2489100	species	1	1	0.92%	8.09%	97.03%	225148
+Pyramimonas obovata	1411642	species	1	2	0.88%	2.42%	96.45%	138365
+Ostreococcus lucimarinus CCE9901	436017	species	1	1	0.88%	7.17%	96.97%	233346
+Durinskia baltica	400756	species	1	2	0.71%	1.43%	98.04%	244301
+Tetraselmis striata	3165	species	1	2	0.71%	4.26%	98.82%	255923
+Lutzomyia longipalpis	7200	species	1	3	0.71%	8.4%	95.83%	236724
+Chloropicon roscoffensis	1461544	species	1	2	0.63%	7.65%	99.47%	275974
+Candida parapsilosis	5480	species	1	1	0.58%	1.97%	100.0%	312010
+Hortaea werneckii EXF-2000	1157616	species	2	4	0.54%	5.56%	98.19%	717212
+Ochroconis constricta UM 578	1442076	species	1	2	0.51%	4.08%	99.41%	370078
+Cyphellophora europaea CBS 101466	1220924	species	1	2	0.5%	9.18%	100.0%	391280
+Cadophora sp. DSE1049	1485229	species	1	1	0.48%	1.15%	100.0%	369337

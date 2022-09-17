@@ -1,0 +1,28 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Bathycoccus prasinos	41875	species	44	121	35.77%	7.7%	99.39%	229209
+Exophiala xenobiotica	348802	species	44	94	22.0%	6.71%	99.63%	372377
+Prasinoderma singulare	676789	species	12	17	13.19%	6.06%	99.93%	121534
+Hortaea werneckii EXF-2000	1157616	species	48	121	12.94%	6.83%	99.63%	717212
+Stramenopiles sp. TOSAG23-2	1735743	species	5	10	10.64%	5.65%	98.91%	66251
+Rhodotorula diobovata	5288	species	17	29	10.43%	3.96%	99.8%	358851
+Malassezia restricta	76775	species	14	23	9.33%	3.78%	99.07%	348317
+Aureococcus anophagefferens	44056	species	6	10	9.23%	6.38%	98.97%	85991
+Emiliania huxleyi CCMP1516	280463	species	2	4	5.88%	3.63%	100.0%	44652
+Bicosta minor	1864616	species	4	7	5.48%	3.8%	99.15%	126984
+Oikopleura longicauda	107032	species	3	6	4.11%	5.61%	99.16%	120130
+Stramenopiles sp. TOSAG23-3	1735745	species	2	4	3.33%	9.88%	100.0%	80549
+Gephyrocapsa oceanica	38817	species	3	6	3.0%	7.49%	98.75%	137559
+Triparma laevis	1534972	species	1	1	2.78%	7.97%	100.0%	50473
+Pelagomonas calceolata	35677	species	2	4	2.6%	8.58%	100.0%	128353
+unclassified Bathycoccus	2590008	genus	1	3	1.92%	6.63%	98.39%	95463
+Malassezia globosa CBS 7966	425265	species	3	5	1.91%	3.18%	99.53%	332937
+Candida parapsilosis	5480	species	3	6	1.74%	3.32%	100.0%	312010
+Ochroconis constricta UM 578	1442076	species	3	6	1.53%	7.21%	99.56%	370078
+Cyphellophora europaea CBS 101466	1220924	species	2	4	1.01%	3.28%	98.84%	391280
+Ostreococcus lucimarinus CCE9901	436017	species	1	2	0.88%	7.89%	100.0%	233346
+Meyerozyma	766728	genus	1	2	0.76%	9.06%	100.0%	218630
+Tetraselmis striata	3165	species	1	10	0.71%	21.21%	97.87%	255923
+Lutzomyia longipalpis	7200	species	1	3	0.71%	7.87%	96.67%	236724
+Cladosporium cladosporioides	29917	species	1	2	0.56%	2.38%	99.38%	333901
+Aspergillus versicolor CBS 583.65	1036611	species	1	1	0.49%	7.37%	100.0%	361482
+Aspergillus sp. MA 6041	2153248	species	1	2	0.3%	1.79%	100.0%	605505
