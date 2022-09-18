@@ -46,7 +46,7 @@ pt.depth.melt = pt_to_graph[c(id.col, "percent_dna_sect_CAZ",
                               "percent_dna_sect_pep")] %>%
   reshape2::melt(id = id.col)
 
-pt.depth.melt %>%
+DNA.depth = pt.depth.melt %>%
   mutate(gene = ifelse(variable == "percent_dna_sect_CAZ", "CAZyme", "peptidase")) %>%
   ggplot(aes(x=value, y=DNA_trans_percent)) +
   scale_color_brewer(palette="Set1")+
@@ -57,7 +57,7 @@ pt.depth.melt %>%
     breaks = c(-Inf, 0.0001, 0.001, 0.01, 0.05, Inf),
     labels = c("'****'", "'***'", "'**'", "'*'", "'ns'")), 
     sep = "~"))) +
-  theme_bw() +
+  theme_classic() +
   scale_y_log10() +
   labs( color = "Ocean", 
     y = "transposase gene abundance (%)",
@@ -65,13 +65,48 @@ pt.depth.melt %>%
   geom_smooth(method = "lm", se = T)  +
   theme(axis.text.x = element_text(color="black"),
         axis.text.y = element_text(color="black"),
+        legend.position = "None",
         legend.title = element_blank())
-
-## supplementary figure 2
-ggsave("out/sectCAZpep_transpose_DNA.pdf",
-       plot = last_plot(), width = 6.5, height = 8)
 ```
 
+
+```{r}
+RNA.id = c("Layer_RNA", "Ocean", "RNA_trans_percent")
+RNA.melt = RNA_tara_g[c(RNA.id, "percent_rna_sect_CAZ",
+                                "percent_rna_sect_pep")] %>%
+  reshape2::melt(id = RNA.id)
+
+RNA.melt$gene = ifelse(RNA.melt$variable == "percent_rna_sect_CAZ", "CAZyme", "peptidase")
+
+RNA.depth = RNA.melt %>%
+  ggplot(aes(x=value, y=RNA_trans_percent)) +
+  scale_color_brewer(palette="Set1")+
+  facet_grid(Layer_RNA ~ gene, scale = "free_x") +
+  # facet_wrap(~Layer_RNA, scale = "free_x") +
+  geom_point(aes(color = Ocean)) + 
+  stat_cor(method = "spearman", cor.coef.name = "rho",
+           aes(label = paste(..r.label.., cut(..p.., 
+    breaks = c(-Inf, 0.0001, 0.001, 0.01, 0.05, Inf),
+    labels = c("'****'", "'***'", "'**'", "'*'", "'ns'")), 
+    sep = "~"))) +
+  theme_classic() +
+  scale_y_log10() +
+  scale_x_log10() +
+  labs( color = "Ocean", 
+    y = "transposase transcript abundance (%)",
+    x = "secretory CAZyme/peptidase transcript (%)\n\n\nMetatranscriptome samples unavailable\nin the bathypelagic zone (BAT)") +
+  geom_smooth(method = "lm", se = T)  +
+  theme(axis.text.x = element_text(color="black"),
+        axis.text.y = element_text(color="black"),
+        legend.position = "bottom",
+        legend.title = element_blank()) +
+  guides(color=guide_legend(nrow=3, byrow=TRUE))
+
+ggarrange(DNA.depth, RNA.depth)
+## supplementary figure 2
+ggsave("out/sectCAZpep_transpose_DNARNA.pdf",
+       plot = last_plot(), width = 9, height = 8)
+```
 
 ## indiviudal CAZyme and peptidase
 
@@ -90,7 +125,7 @@ gen_corr_shared = function(g, gene, type) {
     stat_cor(method = "spearman", cor.coef.name = "rho") +
     labs( color = "Depth",
           x = sprintf("secretory %s %ss (%%)", gene, type),
-          y = sprintf("transposase\n%s abundance (%%)", type))
+          y = sprintf("transposase %s abundance (%%)", type))
   return(g)
 }
 
@@ -124,7 +159,7 @@ pep_DNA = gen_DNA_corr("percent_dna_sect_pep", "peptidase", "gene") +
   theme( axis.title.y = element_blank() )
 
 ggarrange(CAZ_DNA, pep_DNA, CAZ_RNA, pep_RNA,
-          labels = c("A", "B", "C", "D"),
+          # labels = c("A", "B", "C", "D"),
           ncol = 2, nrow = 2, widths = c(0.45, 0.55))
 
 ggsave(paste0(googleDrive.loc, "/Figure2_CAZyme_peptidase_separate_corr.pdf"),
@@ -279,7 +314,7 @@ tmp = rbind(DNA_tara[cols], mala_cov[cols])
 tmp = tmp[tmp$Ocean_DNA != "Arctic", ]
 
 summary(lm(log_dna_trans~Layer_DNA, tmp ))
-summary(lm(log_dna_trans~Depth, pt_to_graph))
+summary(lm(log_dna_trans~Layer_DNA, pt_to_graph))
 
 # DNA_RNA_tara_g$Depth = DNA_RNA_tara_g$Layer_RNA
 # DNA_RNA_tara_g$log_percent_CAZ = log(DNA_RNA_tara_g$percent_rna_sect_CAZ)

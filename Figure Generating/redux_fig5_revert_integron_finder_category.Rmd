@@ -40,11 +40,11 @@ p_cassette_category <- graphing %>%
              x=reorder(COG_function, desc(integron_val_rank)))) + # SORT
   geom_bar(position="dodge", stat="identity") + 
   coord_flip(ylim = c(0, 0.15), clip = "off") +
-  ylab("Proprotion to total ORF calls") +
+  ylab("proportion to total ORF calls") +
   theme_classic() +
   guides(fill = guide_legend(reverse = TRUE, title = "COG gene-calls for:")) +
   scale_fill_manual(values=c("dark gray", "orange"), 
-                    labels = c("all ORFs in metagenomes", cas_legend)) +
+                    labels = c("All ORFs in metagenomes", cas_legend)) +
   # annotate(geom="text", x=20.3, y=0.108, size = 3.3,
   #          label="& Malaspina metagenomes") +
   theme(legend.position = c(0.65, 0.93),
@@ -72,6 +72,18 @@ tmp = tmp %>% filter(Layer_DNA != "MIX" & Ocean_DNA != "Arctic") %>%
 int.melt = tmp %>% reshape2::melt(id = id.col)
 
 int.melt$gene = ifelse(int.melt$variable == 'percent_dna_sect_CAZ', 'CAZyme', 'peptidase')
+
+mala_cov %>%
+  ggplot(aes(x = percent_dna_sect_pep, y = DNA_ToxinAntiT * 100)) +
+  geom_point() +
+  stat_cor(method = "spearman", cor.coef.name = "rho",
+           aes(label = paste(..r.label.., cut(..p.., 
+    breaks = c(-Inf, 0.0001, 0.001, 0.01, 0.05, Inf),
+    labels = c("'****'", "'***'", "'**'", "'*'", "'ns'")), 
+    sep = "~"))) +
+  theme_bw() +
+  scale_y_log10() +
+  geom_smooth(method = "lm", se = T)
 ```
 
 ## graphing
@@ -89,9 +101,9 @@ defense.particle.corr = int.melt %>%
     labels = c("'****'", "'***'", "'**'", "'*'", "'ns'")), 
     sep = "~"))) +
   theme_bw() +
-  scale_y_continuous(limits = c(0.003, 1.8)) +
+  scale_y_continuous(limits = c(0.35, 2), trans = "log10") +
   labs( y = "defense mechanisms gene abundance (%)",
-        x = "secretory CAZyme/peptidase (%)") +
+        x = "secretory CAZyme/peptidase genes (%)  ") +
   geom_smooth(method = "lm", se = T)  +
   theme(axis.text.x = element_text(color="black"),
         axis.text.y = element_text(color="black"),
@@ -105,8 +117,10 @@ defense.particle.corr = int.melt %>%
 ggarrange(p_cassette_category, defense.particle.corr, labels = c("A", "B"), 
           ncol = 2, nrow = 1, widths = c(0.7, 0.45))
 
-ggsave("out/F5_cassette-COG-cateogory_particle-vs-defense.pdf", 
-       height = 6.5, width = 8)
+f.name = "/Figure5_cassette-COG_particle-vs-defense.pdf"
+ggsave(paste0("out", f.name), height = 6.5, width = 8)
+
+ggsave(paste0(googleDrive.loc, f.name), height = 6.5, width = 8)
 ```
 
 
@@ -116,30 +130,4 @@ int.RNA = RNA_tara %>%
   filter(Layer_RNA != "MIX" & Ocean != "Arctic Ocean") %>%
   mutate(RNA_trans_percent = RNA_transposase * 100) %>%
   mutate(Depth = factor(Layer_RNA, levels = c("BAT","MES","DCM","SRF")))
-
-int.RNA %>%
-  ggplot(aes(x = percent_rna_sect_pep, y = RNA_Defense_mechanisms * 100)) +
-  facet_wrap(~Depth, scale = "free_x") +
-  geom_point() +
-  stat_cor(method = "spearman", cor.coef.name = "rho",
-           aes(label = paste(..r.label.., cut(..p.., 
-    breaks = c(-Inf, 0.0001, 0.001, 0.01, 0.05, Inf),
-    labels = c("'****'", "'***'", "'**'", "'*'", "'ns'")), 
-    sep = "~"))) +
-  theme_bw() +
-  # scale_y_log10() +
-  scale_y_continuous(limits = c(0.003, 1.8)) +
-  labs( y = "defense mechanisms abundance (%)",
-        x = "secretory CAZyme/peptidase genes (%)") +
-  geom_smooth(method = "lm", se = T)  +
-  theme(axis.text.x = element_text(color="black"),
-        axis.text.y = element_text(color="black"),
-        legend.title = element_blank())
-
-
-id.col = c("DNA_Defense_mechanisms", "Ocean_DNA", "Layer_DNA", "size_fraction")
-integron.sel = c("percent_dna_sect_CAZ", "percent_dna_sect_pep", id.col)
-
-
-int.RNA.melt = 
 ```
