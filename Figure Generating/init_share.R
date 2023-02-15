@@ -182,7 +182,7 @@ newvct = c("trans", "CAZyme", "peptidase", "sect_CAZ", "sect_pep",
 "Chromatin_structure_and_dynamics", "Cell_cycle_control", "Intracellular_trafficking", "Secondary_metabolites", 
 "Translation_ribosomal_structure", "Transcription", "Posttranslational_modification", "Mobilome_prophages_transposons")
 
-oldvct = c("transposase", "CAZyme", "peptidase", "secretory_CAZyme", "secretory_peptidase",
+oldvct = c("transposase", "CAZyme", "peptidase", "secretory_CAZyme", "secretory_peptidase", "biofilm",
 "Lipid_TM", "Coenzyme_TM", "Signal_transduction_mechanisms", 
 "Defense_mechanisms", "Energy_production_and_conversion", "Replication_recombination_and_repair", "Cell_wall",
 "Amino_acid_TM","Cell_motility", "Extracellular_struct", "Cytoskeleton",

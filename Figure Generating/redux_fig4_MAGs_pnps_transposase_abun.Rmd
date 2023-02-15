@@ -89,15 +89,27 @@ pnps.b = pnps.match2 %>%
         axis.text.y = element_text(color="black"),
         axis.title.y = element_blank())
 
-ggarrange(pnps.b, pnps.a, ncol = 1, heights = c(1,2.8),
-          labels = c("A", "B"))
-
-ggsave("out/F4_MAG-trans-median-pnps.pdf",
-       height = 6, width = 5)
-
-ggsave(paste0(googleDrive.loc, "/Figure4_MAG-trans-median-pnps.pdf"),
-       plot = last_plot(), height = 6, width = 5)
+# ggarrange(pnps.b, pnps.a, ncol = 1, heights = c(1,2.8),
+#           labels = c("A", "B"))
+# 
+# ggsave("out/F4_MAG-trans-median-pnps.pdf",
+#        height = 6, width = 5)
+# 
+# ggsave(paste0(googleDrive.loc, "/Figure4_MAG-trans-median-pnps.pdf"),
+#        plot = last_plot(), height = 6, width = 5)
 ```  
+
+## filter out 0% transposase test
+```{r}
+min_trans = min(pnps.g$trans_fudge)
+pnps.g %>%
+  filter(trans_fudge > min_trans) %>%
+  group_by(depth) %>%
+  cor_test(MAG_pnps_median, trans_fudge, method = "sp") %>%
+  adjust_pvalue() %>%
+  select(c("cor", "p.adj"))
+```
+
 
 
 ```{r}

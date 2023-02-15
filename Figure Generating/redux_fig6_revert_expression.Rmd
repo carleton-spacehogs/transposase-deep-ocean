@@ -40,13 +40,13 @@ boxplot(ratio~Layer_RNA, check.df)
 
 ## Run this for integron-enriched COGs
 ```{r}
-gene_col =c("secretory_CAZyme", "secretory_peptidase",
+gene_col =c("secretory_CAZyme", "secretory_peptidase", "biofilm", # 
             "Defense_mechanisms", "transposase")
 
-pretty.exp = c("secretory CAZyme", "secretory peptidase",
+pretty.exp = c("secretory CAZyme", "secretory peptidase", "biofilm",
                "defense mechanisms", "transposase")
 
-out.f = "/Figure6-expression-ratios.pdf"
+out.f = "/Figure6-expression-ratios-with-biofilm.pdf"
 ```
 
 ```{r}
@@ -78,7 +78,11 @@ exp.stats = exp.melt %>%
   add_significance() %>% 
   add_xy_position()
 
-exp.stats$y.position = log10(c( 2.5, 3, 1.1, 1.2, 1.4))
+# with biofilm
+exp.stats$y.position = log10(c( 2.5, 3, 1.1, 1.9, 3.9, 4.4, 1.2, 1.4))
+
+# without biofilm
+# exp.stats$y.position = log10(c( 2.7, 3.5, 1.1, 1.2, 1.4))
 
 exp.melt %>%
   ggplot(aes(y = expression, x = depth)) +
@@ -96,8 +100,8 @@ exp.melt %>%
         axis.text.x = element_text(color="black"),
         axis.text.y = element_text(color="black"))
 
-ggsave(paste0("out", out.f), height = 3, width = 5)
-ggsave(paste0(googleDrive.loc, out.f), height = 3, width = 5)
+ggsave(paste0("out", out.f), height = 3, width = 4.5) # 6.5 with biofilm
+ggsave(paste0(googleDrive.loc, out.f), height = 3, width = 4.5) # 6.5
 ```
 
 ```{r}
@@ -118,7 +122,7 @@ DNA.RNA.melt %>%
   scale_fill_manual(values = c(`transcript` = "orange", `gene` = "gray")) +
   scale_x_log10() +
   theme_classic() +
-  xlab("transcript / gene abundance (%)") +
+  xlab("transcript and gene abundance (%)") +
   theme(axis.title.y = element_blank(),
         legend.title = element_blank(),
         axis.text.x = element_text(color="black"),
@@ -126,6 +130,12 @@ DNA.RNA.melt %>%
 
 dna.rna.out.f = "/S7-expression-DNA-RNA.pdf"
 ggsave(paste0("out", dna.rna.out.f), height = 4.2, width = 6)
+```
+
+## Biofilm special!
+```{r}
+biofilm_df = DNA_RNA[c("Layer_RNA")]
+
 ```
 
 

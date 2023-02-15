@@ -109,7 +109,6 @@ defense.particle.corr = int.melt %>%
         axis.text.y = element_text(color="black"),
         legend.title = element_blank(),
         legend.position = "top")
-
 ```
 
 ## p_bd sees gen_figure5_biofilm_defense_corr.R
@@ -121,6 +120,40 @@ f.name = "/Figure5_cassette-COG_particle-vs-defense.pdf"
 ggsave(paste0("out", f.name), height = 6.5, width = 8)
 
 ggsave(paste0(googleDrive.loc, f.name), height = 6.5, width = 8)
+```
+
+## For supplementary on biofilm (S6)
+```{r}
+integron.sel = c("DNA_biofilm", id.col)
+biofilm_dna_scale2 = c(0.01, 0.02, 0.04, 0.08)
+tmp2 = rbind(mala_cov[ ,integron.sel], DNA_tara[,integron.sel])
+
+tmp2 = tmp2 %>% filter(Layer_DNA != "MIX" & Ocean_DNA != "Arctic") %>%
+  mutate(Layer_DNA = factor(Layer_DNA, levels = c("SRF","DCM","MES","BAT")))
+
+tmp2$log_dna_biofilm = log2(tmp2$DNA_biofilm)
+
+tmp2 %>%
+  ggplot(aes(x = log_dna_biofilm, y = DNA_Defense_mechanisms * 100)) +
+  geom_point(aes(color = Layer_DNA)) +
+  stat_cor(method = "spearman", cor.coef.name = "rho",
+           aes(label = paste(..r.label.., cut(..p.., 
+    breaks = c(-Inf, 0.0001, 0.001, 0.01, 0.05, Inf),
+    labels = c("'****'", "'***'", "'**'", "'*'", "'ns'")), 
+    sep = "~"))) +
+  theme_bw() +
+  scale_y_continuous(limits = c(0.35, 2), trans = "log10") +
+  scale_x_continuous(limits = c(-13.8, -10.7),
+                     breaks = log2(biofilm_dna_scale2/100), labels = biofilm_dna_scale2) +
+  labs( y = "defense mechanisms gene abundance (%)",
+        x = "biofilm-associated ORF gene abundance (%)  ") +
+  geom_smooth(method = "lm", se = T)  +
+  theme(axis.text.x = element_text(color="black"),
+        axis.text.y = element_text(color="black"),
+        legend.title = element_blank(),
+        legend.position = "top")
+
+ggsave(paste0("out/biofilm-defense-mechanism-association.pdf"), height = 4.5, width = 4.5)
 ```
 
 

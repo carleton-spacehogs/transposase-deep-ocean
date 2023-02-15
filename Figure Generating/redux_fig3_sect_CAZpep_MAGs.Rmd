@@ -203,6 +203,9 @@ class.median = MAGs_p %>%
 ```{r}
 class.count = paste0(class.median$Class, " (n=", class.median$count, ")")
 
+gsub(class.count, "Dehalococcoidia", "Dehalococcoidia*")
+
+
 MAGs_p2 = MAGs_p %>% filter(Class %in% class.median$Class)
 
 for (c in 1:length(class.median$Class)) {
@@ -232,16 +235,6 @@ tax.melt %>%
 
 ggsave("out/S5-class-secretory-CAZyme-peptidase.pdf",
        height = 5, width = 6)
-
-# MAGs_p2 %>%
-#   ggplot(aes(y = fct_rev(Class), x = trans_fudge)) +
-#   geom_boxplot() +
-#   scale_x_log10() +
-#   labs(x = "transposase ORF in MAGs (%)",
-#        y = "class") +
-#   theme_classic() +
-#   stat_summary(fun.data = boxplot.give.nr, 
-#                geom = "text", position=position_nudge(x = 0.05, y = 0))
 ```
 
 *The stats supporting more particle-associated MAGs in deep ocean*

@@ -27,7 +27,7 @@ RNA_tara_g = RNA_tara %>%
 
 pt_sel_col <- c("log_dna_trans", "log_dna_defense","DNA_transposase",
                 "log_dna_sect_CAZ","log_dna_sect_pep",
-                "DNA_CAZyme","DNA_peptidase",
+                "DNA_CAZyme","DNA_peptidase", "DNA_biofilm",
                 "percent_dna_sect_CAZpep","percent_dna_sect_CAZ",
                 "percent_dna_sect_pep",
                 "Ocean_DNA", "Layer_DNA", "Oxygen_DNA", "size_fraction")
@@ -37,12 +37,18 @@ pt_to_graph = tmp %>%
   mutate(DNA_trans_percent = DNA_transposase * 100) %>%
   filter(Layer_DNA != "MIX" & Ocean_DNA != "Arctic") %>%
   mutate(Depth = factor(Layer_DNA, levels = c("SRF","DCM","MES","BAT")))
+
+pt_to_graph$log_dna_biofilm = log2(pt_to_graph$DNA_biofilm)
+RNA_tara_g$log_rna_biofilm = log2(RNA_tara_g$RNA_biofilm)
+biofilm_dna_scale = c(0.005, 0.01, 0.02, 0.04, 0.08)
+biofilm_rna_scale = c(0.001, 0.003, 0.01, 0.03, 0.1)
 ```
 
 ## DNA particle assocation to transpoase abundance
 ```{r}
 id.col = c("Depth", "Ocean_DNA", "DNA_trans_percent")
-pt.depth.melt = pt_to_graph[c(id.col, "percent_dna_sect_CAZ",
+pt.depth.melt = pt_to_graph[c(id.col,
+                              "percent_dna_sect_CAZ",
                               "percent_dna_sect_pep")] %>%
   reshape2::melt(id = id.col)
 
@@ -103,10 +109,66 @@ RNA.depth = RNA.melt %>%
   guides(color=guide_legend(nrow=3, byrow=TRUE))
 
 ggarrange(DNA.depth, RNA.depth)
-## supplementary figure 2
+## supplementary figure 3
 ggsave("out/sectCAZpep_transpose_DNARNA.pdf",
        plot = last_plot(), width = 9, height = 8)
 ```
+
+## Biofilm and transposase abundance correlation (DNA and RNA)
+```{r}
+trans_dna_scale = c(0.001, 0.003, 0.01, 0.03, 0.1, 0.3)
+
+bt_DNA = pt_to_graph %>%
+  ggplot(aes(x=log_dna_biofilm, y=log_dna_trans)) +
+  scale_x_continuous(breaks = log2(biofilm_dna_scale/100), labels = biofilm_dna_scale) +
+  scale_y_continuous(breaks = log2(trans_dna_scale/100), labels = trans_dna_scale) +
+  scale_color_brewer(palette="Set1")+
+  facet_wrap(~Depth) +
+  geom_point(aes(color = Ocean_DNA), size = 1) + 
+  theme_classic() +
+  stat_cor(method = "spearman", cor.coef.name = "rho",
+           aes(label = paste(..r.label.., cut(..p.., 
+    breaks = c(-Inf, 0.0001, 0.001, 0.01, 0.05, Inf),
+    labels = c("'****'", "'***'", "'**'", "'*'", "'ns'")), 
+    sep = "~"))) +
+  xlab("biofilm-associated ORFs gene abundance (%)") +
+  ylab("transposase gene abundance (%)") +
+  geom_smooth(method = "lm")  +
+  theme(legend.position = "none") # legend.position = "none"
+
+ann_text <- data.frame(log_rna_biofilm = -13, log_rna_trans = -12,
+            label = "Metatranscriptomes\nnot available",
+            Layer_RNA = factor("BAT",levels = c("SRF", "DCM", "MES", "BAT")))
+
+biofilm_rna_scale1 = c(0.001, 0.003, 0.01, 0.03, 0.1, 0.3)
+trans_rna_scale = c(0.001, 0.003, 0.01, 0.03, 0.1, 0.3)
+bt_RNA = RNA_tara_g %>%
+  filter(!is.na(Layer_RNA)) %>%
+  mutate(Layer_RNA = factor(Layer_RNA, levels = c("SRF", "DCM", "MES", "BAT"))) %>% # for the BAT text
+  ggplot(aes(x=log_rna_biofilm, y=log_rna_trans)) +
+  theme_classic() +
+  scale_y_continuous(breaks = log2(biofilm_rna_scale1/100), labels = biofilm_rna_scale1) +
+  scale_x_continuous(breaks = log2(trans_rna_scale/100), labels = trans_rna_scale) +
+  facet_wrap(~Layer_RNA, nrow = 2, drop = FALSE) +
+  geom_point(aes(color = Ocean), size = 1) + 
+  scale_color_brewer(palette="Set1")+
+  stat_cor(method = "spearman", cor.coef.name = "rho",
+           aes(label = paste(..r.label.., cut(..p.., 
+    breaks = c(-Inf, 0.0001, 0.001, 0.01, 0.05, Inf),
+    labels = c("'****'", "'***'", "'**'", "'*'", "'ns'")), 
+    sep = "~"))) +
+  xlab("biofilm-associated ORFs transcript abundance (%)") +
+  ylab("transposase transcript abundance (%)") +
+  geom_smooth(method = "lm") +
+  geom_text(data = ann_text,label=ann_text$label)
+
+ggarrange(bt_DNA, bt_RNA, labels = c("A", "B"), widths = c(0.42,0.6), ncol =2)
+
+# supplementary figure 4
+ggsave("out/biofilm_transpose_DNARNA.pdf",
+       plot = last_plot(), width = 10, height = 4.5)
+```
+
 
 ## indiviudal CAZyme and peptidase
 
@@ -198,19 +260,20 @@ gen_depth_shared = function(data, data.test) {
   return(g)
 }
 
-gen_RNA_depth = function(x_var, position_vec, text_pos){
+gen_RNA_depth = function(x_var, position_vec, 
+  text_pos, BAT_text = "NA"){
   RNA_tara_g['cur_var'] = RNA_tara_g[x_var]
   secretory_rna.test <- RNA_tara_g %>%
   rstatix::wilcox_test(cur_var ~ Layer_RNA) %>%
   adjust_pvalue(method = "BH") %>%
   add_significance() %>%
   add_xy_position() %>%
-  mutate(xmin = xmin + 1, xmax = xmax + 1) # for the empty BAT group
+  mutate(xmin = 5 - xmin, xmax = 5 - xmax) # the empty BAT group and the coor_flip makes everything weird, but I think this is right. 1 -> SRF: 5 - 1 = 4 (top, new SRF); 3 -> MES: 5 - 3 = 2 (second to the last, MES)
   
   secretory_rna.test$y.position = position_vec
   
   ann_text2 = data.frame(cur_var = text_pos,
-    label = "Metatranscriptome samples unavailable",
+    label = BAT_text,
     Depth = factor("BAT",levels = c("BAT","MES","DCM","SRF")))
   
   set.seed(33)
@@ -225,12 +288,15 @@ gen_RNA_depth = function(x_var, position_vec, text_pos){
 # gen_RNA_depth("percent_rna_sect_CAZpep", c(31, 33.3, 29.7), 21) +
 #   ylab("secretory CAZyme and peptidase transcript (%)")
 
-CAZ_RNA_depth = gen_RNA_depth("percent_rna_sect_CAZ",
-  c(14.5, 16, 13), 11) +
+CAZ_RNA_depth = gen_RNA_depth(
+  x_var = "percent_rna_sect_CAZ",
+  position_vec = c(13, 16, 14.5),
+  text_pos = 11,
+  BAT_text = "Metatranscriptome samples not available") +
   ylab("secretory CAZyme transcript (%)") +
   theme(legend.position = "none")
 
-pep_RNA_depth = gen_RNA_depth("percent_rna_sect_pep", c(51, 53, 47), 32) +
+pep_RNA_depth = gen_RNA_depth("percent_rna_sect_pep", c(47, 53, 51), 32) +
   ylab("secretory peptidase transcript (%)") +
   theme(legend.position = "none")
 ```
@@ -258,25 +324,46 @@ gen_DNA_depth = function(x_var, position_vec, seed = 33){
 
 CAZ_DNA_depth = gen_DNA_depth("percent_dna_sect_CAZ",
   c(21, 22, 23, 19, 20, 10.0), seed = 44) +
-  ylab("secretory CAZyme genes (%)") +
-  theme(legend.position = "none")
+  ylab("secretory CAZyme gene (%)")
 
 pep_DNA_depth = gen_DNA_depth("percent_dna_sect_pep",
-                  c(38, 39, 40, 35, 36, 10)) +
-                  ylab("secretory peptidase genes (%)")
+  c(38, 39, 40, 35, 36, 10)) +
+  ylab("secretory peptidase gene (%)") +
+  theme(legend.position = "none")
+```
+
+## Adding biofilm gene and transcript abundance with depth
+```{r}
+biofilm_DNA_depth = gen_DNA_depth("log_dna_biofilm",
+                                  seed = 32,
+                                  c(0, -7.2, -7.1, -7.5, -7.4, 0)) +
+  ylab("biofilm-associated gene abundance (%)") +
+  theme(legend.position = "none") +
+  scale_y_continuous(breaks = log2(biofilm_dna_scale/100), labels = biofilm_dna_scale)
+
+biofilm_RNA_depth = gen_RNA_depth("log_rna_biofilm",
+  position_vec = c(0, -6.6, -6.8), 
+  text_pos = -8.75) +
+  ylab("biofilm-associated transcript abundance (%)") +
+  theme(legend.position = "none") +
+  scale_y_continuous(breaks = log2(biofilm_rna_scale/100), labels = biofilm_rna_scale)
+
 
 blank_plot = ggplot() + theme_void()
 
-ggarrange( nrow = 2,
-  ggarrange( CAZ_DNA_depth, pep_DNA_depth, ncol = 2,
+ggarrange( nrow = 3,
+  ggarrange( CAZ_RNA_depth, CAZ_DNA_depth, ncol = 2,
         labels = c("A","B"), widths = c(0.4, 0.55)),
-  ggarrange( CAZ_RNA_depth, pep_RNA_depth, blank_plot, ncol = 3,
-        labels = c("C","D"), widths = c(0.4, 0.4, 0.15)))
+  ggarrange( pep_RNA_depth, pep_DNA_depth, blank_plot, ncol = 3,
+        labels = c("C","D"), widths = c(0.4, 0.4, 0.15)),
+  ggarrange( biofilm_RNA_depth, biofilm_DNA_depth, blank_plot, ncol = 3,
+        labels = c("E","F"), widths = c(0.4, 0.4, 0.15)))
 
-## supplementary figure 3
+## supplementary figure 2
 ggsave("out/sectCAZpep_increase_depth.pdf",
-       plot = last_plot(), width = 9, height = 4.5)
+       plot = last_plot(), width = 9, height = 7)
 ```
+
 
 ## stats section for particle-assocation transposase correlation
 
