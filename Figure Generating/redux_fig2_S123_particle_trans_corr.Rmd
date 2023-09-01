@@ -9,7 +9,7 @@ output: html_document
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
 source("./init_share.R")
 g(DNA_tara, RNA_tara, DNA_RNA_tara) %=% init_tara()
-mala_cov <- init_mala_cov()
+mala_cov = init_mala_cov()
 mala_cov$size_fraction <- ifelse(mala_cov$lower_filter_size == "0.2", "planktonic", "particle")
 DNA_tara$size_fraction <- ifelse(DNA_tara$upper_size_dna == "1.6", "planktonic", "particle")
 ```
@@ -17,11 +17,11 @@ DNA_tara$size_fraction <- ifelse(DNA_tara$upper_size_dna == "1.6", "planktonic",
 ## Data preparations
 ```{r}
 DNA_RNA_tara_g = DNA_RNA_tara %>%
-  filter(Layer_RNA != "MIX" & Ocean != "Arctic Ocean") %>%
+  filter(Layer_RNA != "MIX") %>% #& Ocean != "Arctic Ocean"
   mutate(DNA_trans_percent = DNA_transposase * 100)
 
 RNA_tara_g = RNA_tara %>%
-  filter(Layer_RNA != "MIX" & Ocean != "Arctic Ocean") %>%
+  filter(Layer_RNA != "MIX") %>% # & Ocean != "Arctic Ocean"
   mutate(RNA_trans_percent = RNA_transposase * 100) %>%
   mutate(Depth = factor(Layer_RNA, levels = c("BAT","MES","DCM","SRF")))
 
@@ -29,13 +29,13 @@ pt_sel_col <- c("log_dna_trans", "log_dna_defense","DNA_transposase",
                 "log_dna_sect_CAZ","log_dna_sect_pep",
                 "DNA_CAZyme","DNA_peptidase", "DNA_biofilm",
                 "percent_dna_sect_CAZpep","percent_dna_sect_CAZ",
-                "percent_dna_sect_pep",
+                "percent_dna_sect_pep", "Temperature",
                 "Ocean_DNA", "Layer_DNA", "Oxygen_DNA", "size_fraction")
 
 tmp = rbind(mala_cov[ ,pt_sel_col], DNA_tara[,pt_sel_col])
 pt_to_graph = tmp %>%
   mutate(DNA_trans_percent = DNA_transposase * 100) %>%
-  filter(Layer_DNA != "MIX" & Ocean_DNA != "Arctic") %>%
+  filter(Layer_DNA != "MIX") %>% # & Ocean_DNA != "Arctic"
   mutate(Depth = factor(Layer_DNA, levels = c("SRF","DCM","MES","BAT")))
 
 pt_to_graph$log_dna_biofilm = log2(pt_to_graph$DNA_biofilm)
@@ -240,8 +240,10 @@ ggsave("out/CAZyme_peptidase_separate_corr.pdf",
 #   facet_wrap(~Ocean) +
 #   geom_smooth(method = "lm", se = F)
 
-summary(lm(log_dna_trans~Depth + Ocean + Oxygen_DNA, pt_to_graph))
-summary(lm(log_dna_trans~Depth + Ocean + Oxygen_DNA, DNA_RNA_tara))
+summary(lm(log_dna_trans~Depth + Ocean_DNA + Oxygen_DNA + Temperature, pt_to_graph))
+summary(lm(log_dna_trans~Depth + Ocean_DNA + Oxygen_DNA, pt_to_graph))
+
+# summary(lm(log_dna_trans~Depth + Ocean_DNA + Oxygen_DNA, DNA_RNA_tara))
 
 gen_depth_shared = function(data, data.test) {
   g = ggplot(data, aes(x=Depth, y=cur_var)) + 
@@ -398,7 +400,7 @@ reg.stats = function(big_df, depth, feature, trans) {
 
 cols = c("log_dna_trans","Depth","Ocean_DNA", "Layer_DNA")
 tmp = rbind(DNA_tara[cols], mala_cov[cols])
-tmp = tmp[tmp$Ocean_DNA != "Arctic", ]
+# tmp = tmp[tmp$Ocean_DNA != "Arctic", ]
 
 summary(lm(log_dna_trans~Layer_DNA, tmp ))
 summary(lm(log_dna_trans~Layer_DNA, pt_to_graph))
@@ -417,7 +419,7 @@ reg3 = reg.stats(pt_to_graph, "Layer_DNA", "percent_dna_sect_pep", "log_dna_tran
 reg5 = reg.stats(RNA_tara_g, "Layer_RNA", "log_percent_CAZ", "log_rna_trans")
 reg6 = reg.stats(RNA_tara_g, "Layer_RNA", "log_percent_pep", "log_rna_trans")
 
-CAZpep.reg = rbind(reg1, reg2, reg3, reg4, reg5, reg6) %>%
+CAZpep.reg = rbind(reg1, reg2, reg3, reg5, reg6) %>%
   adjust_pvalue(method = "BY")
 
 write.csv(CAZpep.reg, file = "redux_out/regression-results.csv")

@@ -1,0 +1,81 @@
+---
+title: "Do the stats for metagenomic particle association and transposase abundance"
+author: "Jimmy Zhong"
+date: "7/4/2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path ))
+source("./init_share.R")
+g(DNA_tara, RNA_tara, DNA_RNA_tara) %=% init_tara()
+mala_cov = init_mala_cov()
+mala_cov$size_fraction <- ifelse(mala_cov$lower_filter_size == "0.2", "planktonic", "particle")
+DNA_tara$size_fraction <- ifelse(DNA_tara$upper_size_dna == "1.6", "planktonic", "particle")
+
+sel_col = c("log_dna_trans", "log_dna_defense","DNA_transposase",
+            "log_dna_sect_CAZ","log_dna_sect_pep",
+            "DNA_CAZyme","DNA_peptidase", "DNA_biofilm",
+            "percent_dna_sect_CAZpep","percent_dna_sect_CAZ",
+            "percent_dna_sect_pep", "Temperature",
+            "Ocean_DNA", "Layer_DNA", "Oxygen_DNA", "size_fraction")
+
+tmp = rbind(mala_cov[, sel_col], DNA_tara[, sel_col])
+abun_df = tmp %>%
+  mutate(DNA_trans_percent = DNA_transposase * 100) %>%
+  filter(Layer_DNA != "MIX" & Ocean_DNA != "Arctic") %>% # 
+  mutate(Depth = factor(Layer_DNA, levels = c("SRF","DCM","MES","BAT")))
+
+boxplot(log_dna_trans ~ Ocean_DNA, abun_df)
+```
+
+
+```{r}
+oxy_df = abun_df[!is.na(abun_df$Oxygen_DNA),]
+tmp_df = abun_df[!is.na(abun_df$Temperature),]
+
+plus_oxy = lm(log_dna_trans~Depth + Oxygen_DNA, oxy_df)
+anova(lm(log_dna_trans~Depth, oxy_df), plus_oxy)
+
+plus_tmp = lm(log_dna_trans~Depth + Temperature, tmp_df)
+anova(lm(log_dna_trans~Depth, tmp_df), plus_tmp)
+
+lm(log_dna_trans~Depth, tmp_df)
+
+summary(lm(log_dna_trans~Depth + Oxygen_DNA, abun_df)) # Ocean_DNA + 
+summary(lm(log_dna_trans~Depth + Temperature, abun_df)) # Ocean_DNA + 
+
+abun_df %>%
+  ggplot(aes(x=Oxygen_DNA, y=log_dna_trans)) +
+  # facet_wrap(~Layer_RNA, nrow = 2) + # scales = "free"
+  geom_point(aes(color = Ocean_DNA)) + 
+  ylab("Transposase transcript abundance (%)") +
+  xlab("Sample concentration of Oxygen")
+
+abun_df %>%
+  ggplot(aes(x=Temperature, y=log_dna_trans)) +
+  facet_wrap(~Depth, nrow = 2) + # scales = "free"
+  geom_point(aes(color = Ocean_DNA)) + 
+  ylab("Transposase transcript abundance (%)") +
+  xlab("Temperature (C)")
+
+abun_df %>%
+  ggplot(aes(x=Temperature, y=DNA_transposase*100)) +
+  facet_wrap(~Layer_DNA, nrow = 2) + # scales = "free"
+  geom_point(aes(color = Ocean_DNA)) + 
+  ylab("transposase gene abundance (%)") +
+  labs(color="Ocean") +
+    scale_y_continuous(trans = 'log10', 
+                       labels = function(x) ifelse(x == 0, "0", x)) +
+    theme_classic() +
+    theme(axis.text.x = element_text(color="black"),
+          axis.text.y = element_text(color="black"),
+          legend.title = element_blank()) +
+    xlab(expression(paste("temperature (", degree, "C)"))) +
+    scale_color_brewer(palette="Set1") +
+    stat_cor(method = "spearman", cor.coef.name = "rho",
+             label.y.npc="bottom", label.x.npc = "left") +
+    geom_smooth(method = "lm", se = T)
+```
+
+

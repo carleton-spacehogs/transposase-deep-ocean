@@ -194,17 +194,16 @@ class.median = MAGs_p %>%
   filter(!is.na(percent_sect_pep)) %>%
   group_by(Class) %>%
   summarise(count =n(),
-    median_CAZ = mean(percent_sect_CAZ),
-    median_pep = mean(percent_sect_pep)) %>%
+    median_CAZ = median(percent_sect_CAZ),
+    median_pep = median(percent_sect_pep)) %>%
   filter(count >= 10 & !Class == "Others Or Unknown" & !Class == "other") %>%
-  arrange(median_CAZ + median_pep)
+  arrange(median_CAZ + median_pep) #  
 ```
 
 ```{r}
 class.count = paste0(class.median$Class, " (n=", class.median$count, ")")
 
-gsub(class.count, "Dehalococcoidia", "Dehalococcoidia*")
-
+# class.count = str_replace(class.count, "OM190 \\(", "OM190 \\(under Planctomycetes, ")
 
 MAGs_p2 = MAGs_p %>% filter(Class %in% class.median$Class)
 

@@ -15,7 +15,7 @@ mala_cov <- init_mala_cov()
 g(DNA_Metadata, RNA_Metadata) %=% init_tara_md(factorize = FALSE)
 
 size.frac = c("0.22 - 1.6 (*Tara*)", "0.22 - 3 (*Tara*)",
-              "0.2 - 0.8 (Malaspina)", "0.8 - 5 (Malaspina)",
+              "0.2 - 0.8 (Malaspina)", "0.8 - 5 (Malaspina)", "size5-20",
               "0.22 - 1.6 (*Tara*) Arctic", "0.22 - 3 (*Tara*) Arctic")
 ```
 
@@ -56,17 +56,17 @@ euk_read_count08$filter_size = size.frac[4]
 deep_euk_count = rbind(euk_read_count02, euk_read_count08)
 deep_euk_count$depth = "BAT"
 
-# base_big_SRF = "../identify_eukaryotes/EukDetect-SRF_5-20/filtering"
-# base_big_DCM = "../identify_eukaryotes/EukDetect-DCM_5-20/filtering"
-# big_size_SRF_f = Sys.glob(file.path(base_big_SRF, hit_table))
-# big_size_DCM_f = Sys.glob(file.path(base_big_DCM, hit_table))
-# 
-# big_size_SRF = sum_reads_into_row(big_size_SRF_f, base_big_SRF)
-# big_size_SRF$depth = "SRF"
-# big_size_DCM = sum_reads_into_row(big_size_DCM_f, base_big_DCM)
-# big_size_DCM$depth = "DCM"
-# big_size_count = rbind(big_size_SRF, big_size_DCM)
-# big_size_count$filter_size <- "size5-20"
+base_big_SRF = "../identify_eukaryotes/EukDetect-SRF_5-20/filtering"
+base_big_DCM = "../identify_eukaryotes/EukDetect-DCM_5-20/filtering"
+big_size_SRF_f = Sys.glob(file.path(base_big_SRF, hit_table))
+big_size_DCM_f = Sys.glob(file.path(base_big_DCM, hit_table))
+
+big_size_SRF = sum_reads_into_row(big_size_SRF_f, base_big_SRF)
+big_size_SRF$depth = "SRF"
+big_size_DCM = sum_reads_into_row(big_size_DCM_f, base_big_DCM)
+big_size_DCM$depth = "DCM"
+big_size_count = rbind(big_size_SRF, big_size_DCM)
+big_size_count$filter_size = size.frac[5]
 
 base_tara="../identify_eukaryotes/EukDetect-normal/filtering"
 tara_normal = Sys.glob(file.path(base_tara, hit_table))
@@ -108,7 +108,7 @@ merged_tara = tmp %>%
          euk_read_count = as.numeric(as.character(euk_read_count)))
 
 sel_col2 = c("sample", "filter_size", "euk_read_count", "depth")
-depth_cat = rbind(merged_tara[sel_col2], deep_euk_count[sel_col2]) # big_size_count[sel_col2]
+depth_cat = rbind(merged_tara[sel_col2], deep_euk_count[sel_col2], big_size_count[sel_col2]) # 
 total_reads = read_csv("../identify_eukaryotes/count-ocean.out")
 all_cat = merge(depth_cat, total_reads, by = "sample")
 

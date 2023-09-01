@@ -21,7 +21,7 @@ scg_trans$MAG_pnps_median = scg_trans$MAG_pnps_median + get.fudge(scg_trans, "MA
 This is the bottom graph
 ```{r}
 id.col = c("bin", "depth")
-MAGs.col = c(id.col, "Class", "trans_fudge")
+MAGs.col = c(id.col, "Class", "trans_fudge", "percent_trans")
 pnps.col = c(id.col, "total_count", "MAG_pnps_median", "scg_pnps_median")
 
 tmp = scg_trans[pnps.col]
@@ -29,6 +29,15 @@ tmp$depth = gsub("deep", "BAT", tmp$depth)
 tmp$bin = gsub("deep-", "deep_MAG_", tmp$bin)
 
 pnps.match = merge(MAGs.p[MAGs.col], tmp, by = id.col)
+
+# pnps.class.match = pnps.match %>% group_by(Class) %>%
+#   summarise(mean_trans = mean(percent_trans),
+#             median_pnps = median(scg_pnps_median))
+# 
+# View(pnps.class.match)
+# 
+# plot(log(mean_trans) ~ log(median_pnps), pnps.class.match)
+
 pnps.match$depth = factor(pnps.match$depth, c("SRF","DCM","MES","BAT"))
 pnps.cutoff = quantile(pnps.match$MAG_pnps_median, 0.95) # 0.427
 

@@ -174,7 +174,7 @@ init_individual_metagenomes <- function(){
 # newvct = c("trans","defense","signalT","replication","sect_CAZ","sect_pep","aminoTM",
 #            "lipidTM","coenzyme","energyPC","cellWall")
 
-newvct = c("trans", "CAZyme", "peptidase", "sect_CAZ", "sect_pep",
+newvct = c("trans", "CAZyme", "peptidase", "sect_CAZ", "sect_pep", "biofilm",
 "Lipid_TM", "Coenzyme_TM", "Signal_transduction_mechanisms", 
 "defense", "Energy_production_and_conversion", "Replication_recombination_and_repair", "Cell_wall",
 "Amino_acid_TM","Cell_motility", "Extracellular_struct", "Cytoskeleton",
@@ -306,8 +306,6 @@ init_integron <- function(){
   pn_ps_integron <- pn_ps_integron %>% mutate(log_pnps = ifelse(pnps < 0.01, -2, log10(pnps)))
   pn_ps_bins <- read_csv("data/bin_median_pnps.csv")
   pn_ps_total <- read_csv("data/pNpS_total.csv")
-  # pn_ps_total <- pn_ps_total %>% mutate(gene_type = ifelse(integron == "Y", "all cassette genes", 
-  #                             ifelse(transposase == "Y", "transposase", "normal") ))
   tara_non_cassette <- pn_ps_total %>% 
     filter(integron == "N" & transposase == "N") %>% 
     mutate(gene_type = "normal")

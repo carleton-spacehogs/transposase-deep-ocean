@@ -40,10 +40,10 @@ boxplot(ratio~Layer_RNA, check.df)
 
 ## Run this for integron-enriched COGs
 ```{r}
-gene_col =c("secretory_CAZyme", "secretory_peptidase", "biofilm", # 
+gene_col =c("secretory_CAZyme", "secretory_peptidase", # "biofilm",
             "Defense_mechanisms", "transposase")
 
-pretty.exp = c("secretory CAZyme", "secretory peptidase", "biofilm",
+pretty.exp = c("secretory CAZyme", "secretory peptidase", # "biofilm",
                "defense mechanisms", "transposase")
 
 out.f = "/Figure6-expression-ratios-with-biofilm.pdf"
@@ -64,6 +64,15 @@ for (g in 1:length(old.gene)) {
 }
 
 exp.melt$pretty.gene = factor(exp.melt$pretty.gene, levels = pretty.exp)
+
+format_boxplots = function(g) {
+  g = g +
+    theme_classic() +
+    theme(axis.title.y = element_blank(),
+        axis.text.x = element_text(color="black"),
+        axis.text.y = element_text(color="black"))
+  return(g)
+}
 ```
 
 
@@ -79,12 +88,12 @@ exp.stats = exp.melt %>%
   add_xy_position()
 
 # with biofilm
-exp.stats$y.position = log10(c( 2.5, 3, 1.1, 1.9, 3.9, 4.4, 1.2, 1.4))
+# exp.stats$y.position = log10(c( 2.5, 3, 1.1, 1.9, 3.9, 4.4, 1.2, 1.4))
 
 # without biofilm
-# exp.stats$y.position = log10(c( 2.7, 3.5, 1.1, 1.2, 1.4))
+exp.stats$y.position = log10(c( 2.7, 3.5, 1.1, 1.2, 1.4))
 
-exp.melt %>%
+tmp = exp.melt %>%
   ggplot(aes(y = expression, x = depth)) +
   facet_wrap(~pretty.gene, scales = "free_x", ncol = 2) + 
   scale_y_continuous(trans = "log10",
@@ -93,12 +102,10 @@ exp.melt %>%
   geom_jitter(alpha = 0.2, width = 0.2, size = 1) +
   stat_pvalue_manual(exp.stats, tip.length = 0.01,
     label = "p.adj.signif", hide.ns = TRUE ) +
-  coord_flip() +
-  theme_classic() +
-  ylab("RNA/DNA ratio (transcript / gene abundance)") +
-  theme(axis.title.y = element_blank(),
-        axis.text.x = element_text(color="black"),
-        axis.text.y = element_text(color="black"))
+  ylab("RNA/DNA ratio (transcript / gene abundance)") + 
+  coord_flip()
+
+format_boxplots(tmp)
 
 ggsave(paste0("out", out.f), height = 3, width = 4.5) # 6.5 with biofilm
 ggsave(paste0(googleDrive.loc, out.f), height = 3, width = 4.5) # 6.5
@@ -114,19 +121,17 @@ DNA.RNA.melt$gene = gsub("_", " ", DNA.RNA.melt$gene)
 DNA.RNA.melt$gene = gsub("Defense", "defense", DNA.RNA.melt$gene)
 DNA.RNA.melt$gene = factor(DNA.RNA.melt$gene, levels = pretty.exp)
 
-DNA.RNA.melt %>%
+tmp = DNA.RNA.melt %>%
   mutate(Type = ifelse(Type == "RNA", "transcript", "gene")) %>%
   ggplot(aes(y=fct_rev(Layer_RNA), x=value*100)) + 
   geom_boxplot(aes(fill = Type), outlier.alpha = 0.3) +
   facet_wrap(~gene, scale = "free_x") + 
   scale_fill_manual(values = c(`transcript` = "orange", `gene` = "gray")) +
   scale_x_log10() +
-  theme_classic() +
-  xlab("transcript and gene abundance (%)") +
-  theme(axis.title.y = element_blank(),
-        legend.title = element_blank(),
-        axis.text.x = element_text(color="black"),
-        axis.text.y = element_text(color="black")) # legend.position = c(0.8,0.15)
+  xlab("transcript and gene abundance (%)")
+
+format_boxplots(tmp) +
+  theme(legend.title = element_blank()) # legend.position = c(0.8,0.15)
 
 dna.rna.out.f = "/S7-expression-DNA-RNA.pdf"
 ggsave(paste0("out", dna.rna.out.f), height = 4.2, width = 6)
@@ -134,12 +139,58 @@ ggsave(paste0("out", dna.rna.out.f), height = 4.2, width = 6)
 
 ## Biofilm special!
 ```{r}
-biofilm_df = DNA_RNA[c("Layer_RNA")]
+biofilm_df = DNA_RNA[c("Layer_RNA", "biofilm_exp", "DNA_biofilm", "RNA_biofilm")]
+biofilm_df$depth = fct_rev(biofilm_df$Layer_RNA)
 
+biofilm.stats = biofilm_df %>%
+  wilcox_test(biofilm_exp~depth) %>%
+  adjust_pvalue(method = "BH") %>%
+  filter(p.adj < 0.05) %>%
+  add_significance() %>% 
+  add_xy_position() %>%
+  mutate(y.position = log10(c(3.9, 4.6)))
+
+tmp = biofilm_df %>%
+  ggplot(aes(y = biofilm_exp, x = depth)) +
+  scale_y_continuous(trans = "log10",
+    labels = function(x) ifelse(x == 0, "0", x)) +
+  geom_boxplot(outlier.shape = NA) +
+  geom_jitter(alpha = 0.2, width = 0.2, size = 1) +
+  stat_pvalue_manual(biofilm.stats, tip.length = 0.01,
+    label = "p.adj.signif", hide.ns = TRUE ) +
+  coord_flip() +
+  ylab("RNA/DNA ratio (transcript / gene abundance)") +
+  ggtitle("biofilm")
+
+biofilm.exp = format_boxplots(tmp) +
+  theme(plot.title = element_text(hjust = 0.5))
+
+biofilm.melt = biofilm_df[c("depth", "DNA_biofilm", "RNA_biofilm")] %>% reshape2::melt(id = "depth")
+
+tmp = biofilm.melt %>%
+  mutate(Type = ifelse(variable == "RNA_biofilm", "transcript", "gene")) %>%
+  ggplot(aes(y=depth, x=value*100)) + 
+  geom_boxplot(aes(fill = Type), outlier.alpha = 0.3) +
+  scale_fill_manual(values = c(`transcript` = "orange", `gene` = "gray")) +
+  scale_x_log10() +
+  xlab("transcript and gene abundance (%)") +
+  ggtitle("biofilm") +
+  theme(legend.title = element_blank(),
+        plot.title = element_text(hjust = 0.5))
+
+biofilm.dna_rna = format_boxplots(tmp) +
+  theme(plot.title = element_text(hjust = 0.5))
+
+ggarrange(biofilm.exp, biofilm.dna_rna, labels = c("A", "B"),
+          ncol = 2, widths = c(5,6.5))
+
+biofilm.out.f = "/biofilm-expression-DNA-RNA.pdf"
+ggsave(paste0("out", biofilm.out.f), height = 3, width = 8)
 ```
 
 
 ## Not used
+## Trashed
 
 ## direct correlation between partcle association and genes, not too useful
 ```{r}
