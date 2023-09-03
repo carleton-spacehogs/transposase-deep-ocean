@@ -4,7 +4,7 @@
 # cat *-reads.out >> count-ocean.out
 ocean=$1
 
-prefix="/researchdrive/SpaceHogs_shared/jimmy_stuff/DNA_raw_reads/$ocean"
+prefix="/researchdrive/SpaceHogs_shared/jimmy_stuff/DNA_raw_reads/$ocean/"
 suffix="_1.fastq.gz"
 samples=$(ls ${prefix}*${suffix})
 for sample in $samples; do

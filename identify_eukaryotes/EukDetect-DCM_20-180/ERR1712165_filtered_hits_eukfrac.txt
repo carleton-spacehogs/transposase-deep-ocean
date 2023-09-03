@@ -1,0 +1,43 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+class-Dinophyceae	class	Dinophyceae	2864	0.4676	32.2584	76	162536
+class-Dinophyceae|order-Gonyaulacales	order	Gonyaulacales	40984	0.4676	31.5811	76	162536
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae	family	Gonyaulacaceae	33834	0.2024	11.6179	6	29644
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium	genus	Alexandrium	2924	0.2024	11.6179	6	29644
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium|species-Alexandrium_andersonii	species	Alexandrium andersonii	327968	0.2024	11.6978	6	29644
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae	family	Ceratiaceae	39451	0.5267	30.2352	70	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos	genus	Tripos	2126447	0.5267	30.2352	70	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	species	Tripos fusus	2916	0.5267	30.443	70	132892
+phylum-Bacillariophyta|class-Fragilariophyceae	class	Fragilariophyceae	33853	0.2455	16.935	38	154802
+phylum-Bacillariophyta|class-Fragilariophyceae|order-Thalassionemales	order	Thalassionemales	426665	0.2455	16.5794	38	154802
+phylum-Bacillariophyta|class-Fragilariophyceae|order-Thalassionemales|family-Thalassionemataceae	family	Thalassionemataceae	38755	0.2455	14.0903	38	154802
+phylum-Bacillariophyta|class-Fragilariophyceae|order-Thalassionemales|family-Thalassionemataceae|genus-Thalassionema	genus	Thalassionema	33648	0.2455	14.0903	38	154802
+phylum-Bacillariophyta|class-Fragilariophyceae|order-Thalassionemales|family-Thalassionemataceae|genus-Thalassionema|species-Thalassionema_frauenfeldii	species	Thalassionema frauenfeldii	186022	0.2455	14.1872	38	154802
+phylum-Bacillariophyta|class-Coscinodiscophyceae	class	Coscinodiscophyceae	33836	0.0273	1.8821	13	476507
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Leptocylindrales	order	Leptocylindrales	163513	0.0179	1.2122	5	278595
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Leptocylindrales|family-Leptocylindraceae	family	Leptocylindraceae	163514	0.0179	1.0302	5	278595
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Leptocylindrales|family-Leptocylindraceae|genus-Leptocylindrus	genus	Leptocylindrus	163515	0.0179	1.0302	5	278595
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Leptocylindrales|family-Leptocylindraceae|genus-Leptocylindrus|species-Leptocylindrus_danicus	species	Leptocylindrus danicus	163516	0.0179	1.0373	5	278595
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Chaetocerotales	order	Chaetocerotales	265576	0.0404	2.7301	8	197912
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Chaetocerotales|family-Chaetocerotaceae	family	Chaetocerotaceae	49236	0.0404	2.3202	8	197912
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Chaetocerotales|family-Chaetocerotaceae|genus-Chaetoceros	genus	Chaetoceros	49237	0.0404	2.3202	8	197912
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Chaetocerotales|family-Chaetocerotaceae|genus-Chaetoceros|species-Chaetoceros_affinis	species	Chaetoceros affinis	426623	0.0404	2.3362	8	197912
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	0.0752	5.1874	12	159592
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	0.0752	5.0785	12	159592
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae	family	Chloropicaceae	2302913	0.0752	4.316	12	159592
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.0752	4.316	12	159592
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_mariensis	species	Chloropicon mariensis	1606511	0.0633	3.6583	10	157984
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.141	9.7243	16	113512
+phylum-Haptista|class-Haptophyta|order-Coccosphaerales	order	Coccosphaerales	73027	0.141	9.5201	16	113512
+phylum-Haptista|class-Haptophyta|order-Coccosphaerales|family-Pontosphaeraceae	family	Pontosphaeraceae	418939	0.141	8.0908	16	113512
+phylum-Haptista|class-Haptophyta|order-Coccosphaerales|family-Pontosphaeraceae|genus-Scyphosphaera	genus	Scyphosphaera	2134067	0.141	8.0908	16	113512
+phylum-Haptista|class-Haptophyta|order-Coccosphaerales|family-Pontosphaeraceae|genus-Scyphosphaera|species-Scyphosphaera_apsteinii	species	Scyphosphaera apsteinii	418940	0.141	8.1464	16	113512
+phylum-Chordata|class-Appendicularia	class	Appendicularia	30302	0.3746	25.8428	45	120130
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	0.3746	25.3002	45	120130
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae	family	Oikopleuridae	41302	0.3746	21.5018	45	120130
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura	genus	Oikopleura	34763	0.3746	21.5018	45	120130
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	species	Oikopleura longicauda	107032	0.3746	21.6496	45	120130
+phylum-Arthropoda|class-Hexanauplia	class	Hexanauplia	72037	0.1184	8.17	29	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida	order	Cyclopoida	84308	0.1184	7.9985	29	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae	family	Oithonidae	136189	0.1184	6.7976	29	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona	genus	Oithona	136190	0.1184	6.7976	29	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	species	Oithona nana	136191	0.1184	6.8444	29	244880

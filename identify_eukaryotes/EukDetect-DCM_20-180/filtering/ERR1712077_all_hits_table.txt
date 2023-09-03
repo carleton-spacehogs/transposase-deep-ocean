@@ -1,0 +1,15 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Oithona nana	136191	species	48	138	32.21%	11.39%	97.25%	244880
+Tetrahymena thermophila	5911	species	1	1	12.5%	4.22%	98.98%	15300
+Penicillium nalgiovense	60175	species	10	16	4.83%	3.41%	100.0%	361128
+Oikopleura longicauda	107032	species	3	11	4.11%	6.06%	98.41%	120130
+Malassezia restricta	76775	species	5	8	3.33%	2.83%	99.72%	348317
+Chloropicon laureae	464258	species	1	1	1.79%	7.38%	98.99%	50762
+Tripos fusus	2916	species	1	1	1.11%	11.85%	97.03%	132892
+Gephyrocapsa oceanica	38817	species	1	2	1.0%	31.15%	97.66%	137559
+Chloropicon mariensis	1606511	species	1	1	0.91%	6.93%	97.89%	157984
+Alexandrium tamarense	2926	species	1	2	0.71%	10.09%	98.05%	194024
+Debaryomyces hansenii CBS767	284592	species	1	2	0.55%	4.16%	100.0%	326457
+Rhodotorula taiwanensis	741276	species	1	1	0.54%	4.13%	96.74%	385813
+Penicillium carneum LCP05634	1439351	species	1	1	0.49%	0.92%	95.4%	373367
+Eukaryota	2759	superkingdom	1	1	0.39%	3.45%	99.01%	467758

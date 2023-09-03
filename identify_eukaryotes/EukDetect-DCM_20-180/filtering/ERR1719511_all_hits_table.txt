@@ -1,0 +1,32 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Noctiluca scintillans	2966	species	91	4041	100.0%	65.89%	97.19%	152611
+Brandtodinium nutricula	1333877	species	52	199	73.24%	22.22%	99.15%	88461
+Oithona nana	136191	species	79	623	53.02%	17.09%	96.64%	244880
+Amphilonche elongata	1127133	species	1	2	50.0%	9.71%	98.78%	2250
+Tripos fusus	2916	species	42	102	46.67%	12.48%	98.77%	132892
+Alexandrium andersonii	327968	species	6	12	22.22%	15.14%	98.78%	29644
+Chloropicon laureae	464258	species	11	20	19.64%	16.04%	99.29%	50762
+Chloropicon roscoffensis	1461544	species	31	74	19.62%	9.65%	99.37%	275974
+Gephyrocapsa oceanica	38817	species	10	17	10.0%	7.13%	99.07%	137559
+Oikopleura longicauda	107032	species	6	216	8.22%	12.67%	94.74%	120130
+Diacronema lutheri	2081491	species	2	2	7.41%	8.5%	100.0%	24803
+Chloropicon mariensis	1606511	species	7	12	6.36%	5.8%	98.75%	157984
+Chloropicon primus	1764295	species	8	14	5.8%	4.43%	99.27%	281336
+Alexandrium tamarense	2926	species	8	18	5.67%	9.79%	96.8%	194024
+Pelagomonas calceolata	35677	species	4	8	5.19%	12.0%	97.17%	128353
+Effrenium voratum	2562239	species	5	10	4.81%	4.69%	98.66%	156738
+Malassezia restricta	76775	species	5	9	3.33%	4.72%	98.78%	348317
+Emiliania huxleyi CCMP1516	280463	species	1	2	2.94%	13.81%	96.67%	44652
+Rhizosolenia setigera	3005	species	2	4	1.9%	16.36%	99.68%	165278
+Scrippsiella trochoidea	71861	species	2	4	1.77%	19.19%	97.93%	163897
+Phaeocystis globosa	33658	species	2	3	1.72%	7.87%	98.34%	154798
+Oikopleura dioica	34765	species	1	30	1.27%	13.98%	96.36%	176745
+Phaeomonas parva	124430	species	1	2	1.22%	34.25%	100.0%	94577
+Pseudo-nitzschia fraudulenta	183588	species	1	1	1.1%	5.3%	96.63%	108708
+Prasinoderma singulare	676789	species	1	2	1.1%	7.27%	99.43%	121534
+Pycnococcus provasolii	41880	species	1	1	1.03%	8.12%	100.0%	119181
+Lingulodinium polyedra	160621	species	1	3	0.92%	11.11%	97.48%	165396
+Thalassiothrix antarctica	1049557	species	1	2	0.86%	24.79%	96.69%	177575
+Batrachochytrium salamandrivorans	1357716	species	1	1	0.59%	3.98%	94.51%	292885
+Mucor velutinosus B5328	1274784	species	1	2	0.53%	12.53%	100.0%	322929
+Hortaea werneckii EXF-2000	1157616	species	1	2	0.27%	7.0%	100.0%	717212

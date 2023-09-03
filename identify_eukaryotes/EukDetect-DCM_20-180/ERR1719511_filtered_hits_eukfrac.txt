@@ -1,0 +1,47 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.1236	1.2282	17	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales	order	Isochrysidales	73020	0.1236	0.3595	17	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa	genus	Gephyrocapsa	38816	0.1236	0.3542	17	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	species	Gephyrocapsa oceanica	38817	0.1236	0.358	17	137559
+class-Dinophyceae	class	Dinophyceae	2864	4.9029	48.7256	4386	894580
+class-Dinophyceae|order-Gonyaulacales	order	Gonyaulacales	40984	0.3965	1.1537	132	332873
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos	genus	Tripos	2126447	0.7675	2.1997	102	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	species	Tripos fusus	2916	0.7675	2.2232	102	132892
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium	genus	Alexandrium	2924	0.15	0.4299	30	199981
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium|species-Alexandrium_tamarense	species	Alexandrium tamarense	2926	0.0928	0.2687	18	194024
+class-Dinophyceae|order-Peridiniales	order	Peridiniales	2910	2.2496	6.5447	199	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium	genus	Brandtodinium	1482939	2.2496	6.4469	199	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	species	Brandtodinium nutricula	1333877	2.2496	6.5161	199	88461
+class-Dinophyceae|order-Noctilucales	order	Noctilucales	2964	26.4791	77.0351	4041	152611
+class-Dinophyceae|order-Noctilucales|family-Noctilucaceae|genus-Noctiluca	genus	Noctiluca	2965	26.4791	75.8849	4041	152611
+class-Dinophyceae|order-Noctilucales|family-Noctilucaceae|genus-Noctiluca|species-Noctiluca_scintillans	species	Noctiluca scintillans	2966	26.4791	76.6989	4041	152611
+class-Dinophyceae|order-Thoracosphaerales	order	Thoracosphaerales	33835	0.0244	0.071	4	163897
+class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae|genus-Scrippsiella	genus	Scrippsiella	54902	0.0244	0.0699	4	163897
+class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae|genus-Scrippsiella|species-Scrippsiella_trochoidea	species	Scrippsiella trochoidea	71861	0.0244	0.0707	4	163897
+class-Dinophyceae|order-Suessiales	order	Suessiales	89954	0.0638	0.1856	10	156738
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Effrenium	genus	Effrenium	2562238	0.0638	0.1828	10	156738
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Effrenium|species-Effrenium_voratum	species	Effrenium voratum	2562239	0.0638	0.1848	10	156738
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.0258	0.2568	9	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.0258	0.0752	9	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.0258	0.074	9	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.0258	0.0748	9	348317
+phylum-Chordata|class-Appendicularia	class	Appendicularia	30302	2.0181	20.0563	246	121897
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	2.0181	5.8712	246	121897
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura	genus	Oikopleura	34763	2.0181	5.7836	246	121897
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	species	Oikopleura longicauda	107032	1.7981	5.2082	216	120130
+phylum-Arthropoda|class-Hexanauplia	class	Hexanauplia	72037	2.5441	25.2838	623	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida	order	Cyclopoida	84308	2.5441	7.4015	623	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona	genus	Oithona	136190	2.5441	7.291	623	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	species	Oithona nana	136191	2.5441	7.3692	623	244880
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	0.3612	3.5893	120	332257
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	0.3612	1.0507	120	332257
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.3612	1.035	120	332257
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	0.2681	0.7767	74	275974
+class-Pelagophyceae	class	Pelagophyceae	35675	0.0623	0.6194	8	128353
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	0.0623	0.1813	8	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	0.0623	0.1786	8	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	0.0623	0.1805	8	128353
+phylum-Bacillariophyta|class-Coscinodiscophyceae	class	Coscinodiscophyceae	33836	0.0242	0.2405	4	165278
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Rhizosoleniales	order	Rhizosoleniales	33844	0.0242	0.0704	4	165278
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Rhizosoleniales|family-Rhizosoleniaceae|genus-Rhizosolenia	genus	Rhizosolenia	3004	0.0242	0.0694	4	165278
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Rhizosoleniales|family-Rhizosoleniaceae|genus-Rhizosolenia|species-Rhizosolenia_setigera	species	Rhizosolenia setigera	3005	0.0242	0.0701	4	165278

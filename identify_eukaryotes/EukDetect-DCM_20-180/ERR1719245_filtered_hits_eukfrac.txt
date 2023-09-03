@@ -1,0 +1,66 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Bacillariophyta|class-Coscinodiscophyceae	class	Coscinodiscophyceae	33836	0.0303	0.0366	5	165190
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales	order	Thalassiosirales	33847	0.0303	0.0317	5	165190
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Thalassiosiraceae|genus-Thalassiosira	genus	Thalassiosira	35127	0.0303	0.0307	5	165190
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Thalassiosiraceae|genus-Thalassiosira|species-Thalassiosira_oceanica	species	Thalassiosira oceanica	159749	0.0303	0.0288	5	165190
+phylum-Bacillariophyta|class-Bacillariophyceae	class	Bacillariophyceae	33849	0.3403	0.4115	60	176338
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales	order	Bacillariales	33851	0.3403	0.356	60	176338
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Pseudo-nitzschia	genus	Pseudo-nitzschia	41953	0.3403	0.3453	60	176338
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Pseudo-nitzschia|species-Pseudo-nitzschia_heimii	species	Pseudo-nitzschia heimii	476441	0.3403	0.3241	60	176338
+class-Pelagophyceae	class	Pelagophyceae	35675	1.9892	2.4059	413	207625
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	1.9892	2.0811	413	207625
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	3.1632	3.2103	406	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	3.1632	3.0129	406	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagococcus	genus	Pelagococcus	35678	0.0883	0.0896	7	79272
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagococcus|species-Pelagococcus_subviridis	species	Pelagococcus subviridis	35679	0.0883	0.0841	7	79272
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.8069	0.9759	165	204497
+phylum-Haptista|class-Haptophyta|order-Isochrysidales	order	Isochrysidales	73020	0.4781	0.5002	68	142236
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania	genus	Emiliania	2902	1.4967	1.519	7	4677
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania|species-Emiliania_huxleyi	species	Emiliania huxleyi	2903	1.4967	1.4256	7	4677
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa	genus	Gephyrocapsa	38816	0.4434	0.4501	61	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	species	Gephyrocapsa oceanica	38817	0.4434	0.4224	61	137559
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	1.558	1.6299	97	62261
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	1.558	1.5812	97	62261
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_rex	species	Phaeocystis rex	1631189	1.0958	1.0438	44	40152
+phylum-Chordata|class-Appendicularia	class	Appendicularia	30302	4.8477	5.8634	770	158837
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	4.8477	5.0717	770	158837
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura	genus	Oikopleura	34763	4.8477	4.92	770	158837
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	species	Oikopleura longicauda	107032	4.8448	4.6147	582	120130
+phylum-Arthropoda|class-Hexanauplia	class	Hexanauplia	72037	40.5954	49.101	9941	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida	order	Cyclopoida	84308	40.5954	42.4707	9941	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona	genus	Oithona	136190	40.5954	41.2003	9941	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	species	Oithona nana	136191	40.5954	38.6674	9941	244880
+phylum-Ctenophora|class-Nuda	class	Nuda	1919246	0.0182	0.022	4	220090
+phylum-Ctenophora|class-Nuda|order-Beroida	order	Beroida	37538	0.0182	0.019	4	220090
+phylum-Ctenophora|class-Nuda|order-Beroida|family-Beroidae|genus-Beroe	genus	Beroe	10199	0.0182	0.0184	4	220090
+phylum-Ctenophora|class-Nuda|order-Beroida|family-Beroidae|genus-Beroe|species-Beroe_forskalii	species	Beroe forskalii	140453	0.0182	0.0173	4	220090
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.0388	0.0469	14	360777
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.0388	0.0406	14	360777
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.0388	0.0394	14	360777
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_globosa	species	Malassezia globosa	76773	0.5618	0.5351	7	12460
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.0201	0.0191	7	348317
+phylum-Ascomycota|class-Dothideomycetes	class	Dothideomycetes	147541	1.0054	1.2161	13	12930
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales	order	Capnodiales	134362	1.0054	1.0519	13	12930
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea	genus	Hortaea	91942	1.0054	1.0204	13	12930
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	species	Hortaea werneckii	91943	1.0054	0.9577	13	12930
+class-Dinophyceae	class	Dinophyceae	2864	6.5149	7.8799	1641	251883
+class-Dinophyceae|order-Gonyaulacales	order	Gonyaulacales	40984	0.4222	0.4417	69	163422
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium	genus	Alexandrium	2924	0.1638	0.1662	5	30530
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium|species-Alexandrium_andersonii	species	Alexandrium andersonii	327968	0.1349	0.1285	4	29644
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos	genus	Tripos	2126447	0.4816	0.4888	64	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	species	Tripos fusus	2916	0.4816	0.4587	64	132892
+class-Dinophyceae|order-Peridiniales	order	Peridiniales	2910	17.7705	18.5915	1572	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium	genus	Brandtodinium	1482939	17.7705	18.0353	1572	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	species	Brandtodinium nutricula	1333877	17.7705	16.9266	1572	88461
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	8.1616	9.8716	4938	605030
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	8.1616	8.5386	4938	605030
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	8.1616	8.2832	4938	605030
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	14.5666	13.8748	4020	275974
+phylum-Chlorophyta|class-Palmophyllophyceae	class	Palmophyllophyceae	2201463	1.4399	1.7416	175	121534
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales	order	Prasinococcales	485343	1.4399	1.5064	175	121534
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinoderma	genus	Prasinoderma	156132	1.4399	1.4614	175	121534
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinoderma|species-Prasinoderma_singulare	species	Prasinoderma singulare	676789	1.4399	1.3715	175	121534
+class-Acantharea	class	Acantharea	65574	16.8889	20.4275	38	2250
+class-Acantharea|order-Arthracanthida	order	Arthracanthida	85460	16.8889	17.6691	38	2250
+class-Acantharea|order-Arthracanthida|family-Acanthometridae|genus-Amphilonche	genus	Amphilonche	1127132	16.8889	17.1405	38	2250
+class-Acantharea|order-Arthracanthida|family-Acanthometridae|genus-Amphilonche|species-Amphilonche_elongata	species	Amphilonche elongata	1127133	16.8889	16.0868	38	2250

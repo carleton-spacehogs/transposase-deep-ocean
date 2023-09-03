@@ -1,0 +1,19 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Tripos fusus	2916	species	19	70	21.11%	12.27%	99.04%	132892
+Alexandrium andersonii	327968	species	3	6	11.11%	21.02%	99.16%	29644
+Oithona nana	136191	species	14	29	9.4%	6.78%	97.32%	244880
+Scyphosphaera apsteinii	418940	species	6	16	7.5%	17.47%	99.39%	113512
+Thalassionema frauenfeldii	186022	species	7	38	6.6%	21.9%	97.62%	154802
+Oikopleura longicauda	107032	species	2	45	2.74%	8.46%	95.92%	120130
+Chloropicon mariensis	1606511	species	2	10	1.82%	29.51%	99.2%	157984
+Acanthamoeba pearcei	65662	species	1	2	1.67%	35.64%	98.51%	66582
+Leptocylindrus danicus	163516	species	3	5	1.62%	5.9%	97.64%	278595
+Chaetoceros affinis	426623	species	2	8	1.56%	2.38%	96.14%	197912
+Brandtodinium nutricula	1333877	species	1	2	1.41%	13.8%	100.0%	88461
+Chloroparvula japonica	1411623	species	1	1	1.1%	9.74%	100.0%	149101
+Gephyrocapsa oceanica	38817	species	1	1	1.0%	34.36%	100.0%	137559
+Lingulodinium polyedra	160621	species	1	4	0.92%	23.2%	97.76%	165396
+Acanthamoeba palestinensis	28015	species	1	2	0.86%	5.37%	98.92%	150122
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	1.21%	100.0%	332937
+Chloropicon roscoffensis	1461544	species	1	2	0.63%	7.28%	100.0%	275974
+Calocera viscosa TUFC12733	1330018	species	1	1	0.57%	2.39%	94.95%	364392

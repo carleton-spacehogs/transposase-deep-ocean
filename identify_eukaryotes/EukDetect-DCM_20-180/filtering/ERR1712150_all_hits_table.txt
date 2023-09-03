@@ -1,0 +1,32 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Oikopleura longicauda	107032	species	33	774	45.21%	15.58%	97.06%	120130
+Oithona nana	136191	species	67	2544	44.97%	18.01%	98.1%	244880
+Malassezia restricta	76775	species	45	104	30.0%	6.29%	99.19%	348317
+Thalassionema frauenfeldii	186022	species	18	259	16.98%	15.24%	96.91%	154802
+Tripos fusus	2916	species	11	58	12.22%	15.11%	99.2%	132892
+Leptocylindrus danicus	163516	species	17	268	9.19%	14.32%	98.7%	278595
+Oikopleura albicans	2500139	species	4	41	4.26%	11.66%	98.29%	126693
+Oikopleura dioica	34765	species	3	137	3.8%	15.74%	95.07%	176745
+Chaetoceros affinis	426623	species	4	80	3.12%	13.78%	98.51%	197912
+Penicillium nalgiovense	60175	species	5	12	2.42%	7.24%	99.73%	361128
+Malassezia sympodialis ATCC 42132	1230383	species	3	6	2.16%	5.82%	99.83%	313165
+Clytia hemisphaerica	252671	species	2	23	1.36%	12.13%	96.71%	232614
+unclassified Chloroidium	2202635	genus	1	2	1.27%	5.83%	100.0%	90121
+Malassezia globosa CBS 7966	425265	species	2	2	1.27%	3.21%	99.5%	332937
+Pelagodinium beii	43686	species	1	11	1.11%	13.7%	96.02%	127026
+Dinophysis acuminata	47934	species	1	2	1.06%	63.83%	98.33%	125543
+Asterionellopsis glacialis	33640	species	1	2	0.91%	12.9%	97.03%	140981
+Beroe forskalii	140453	species	1	2	0.83%	8.01%	97.69%	220090
+Cyclotella meneghiniana	29205	species	1	1	0.81%	6.45%	98.78%	230200
+Botrytis	33196	genus	1	3	0.71%	3.82%	99.11%	220563
+Bemisia tabaci	7038	species	1	2	0.61%	3.5%	96.51%	251012
+Metschnikowia bicuspidata var. bicuspidata NRRL YB-4993	869754	varietas	1	1	0.6%	4.23%	100.0%	304087
+Pichia membranifaciens NRRL Y-2026	763406	species	1	2	0.6%	6.84%	98.86%	330702
+Batrachochytrium salamandrivorans	1357716	species	1	1	0.59%	4.42%	97.03%	292885
+Saccharomyces cerevisiae S288C	559292	species	1	2	0.55%	1.55%	100.0%	308302
+Yarrowia lipolytica CLIB122	284591	species	1	2	0.53%	8.18%	99.24%	346692
+Peniophora sp. CONT	1314672	species	1	2	0.52%	4.02%	97.56%	356854
+Lecanicillium psalliotae	73499	species	1	2	0.5%	10.19%	98.01%	341989
+Phialemoniopsis curvata	1093900	species	1	2	0.5%	10.23%	100.0%	366905
+Oidium heveae	299130	species	1	18	0.49%	18.34%	96.06%	336881
+Eukaryota	2759	superkingdom	1	1	0.39%	34.71%	98.02%	467758

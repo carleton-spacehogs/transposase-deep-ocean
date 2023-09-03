@@ -1,0 +1,16 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Ascomycota|class-Dothideomycetes	class	Dothideomycetes	147541	0.8689	5.3609	16	18414
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales	order	Capnodiales	134362	0.8689	5.3609	16	18414
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae	family	Teratosphaeriaceae	668547	0.8689	5.3609	16	18414
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea	genus	Hortaea	91942	0.8689	5.3609	16	18414
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	species	Hortaea werneckii	91943	0.8689	5.3609	16	18414
+phylum-Chordata|class-Appendicularia	class	Appendicularia	30302	14.7174	90.803	1768	120130
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	14.7174	90.803	1768	120130
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae	family	Oikopleuridae	41302	14.7174	90.803	1768	120130
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura	genus	Oikopleura	34763	14.7174	90.803	1768	120130
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	species	Oikopleura longicauda	107032	14.7174	90.803	1768	120130
+class-Dinophyceae	class	Dinophyceae	2864	0.6217	3.836	55	88461
+class-Dinophyceae|order-Peridiniales	order	Peridiniales	2910	0.6217	3.836	55	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae	family	Endodiniaceae	1333875	0.6217	3.836	55	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium	genus	Brandtodinium	1482939	0.6217	3.836	55	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	species	Brandtodinium nutricula	1333877	0.6217	3.836	55	88461

@@ -1,0 +1,49 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Chloropicon roscoffensis	1461544	species	105	443	66.46%	16.96%	99.48%	275974
+Chaetoceros affinis	426623	species	45	431	35.16%	20.03%	99.23%	197912
+Tripos fusus	2916	species	27	256	30.0%	25.37%	99.03%	132892
+Chaetoceros curvisetus	230516	species	12	64	25.0%	32.3%	98.3%	43877
+Oithona nana	136191	species	36	227	24.16%	20.94%	97.96%	244880
+Lithomelissa setosa	1054399	species	1	95	20.0%	96.56%	93.52%	2562
+Pseudo-nitzschia arenysensis	697910	species	23	67	18.25%	8.87%	99.36%	204829
+Pelagomonas calceolata	35677	species	14	24	18.18%	9.3%	98.75%	128353
+Gephyrocapsa oceanica	38817	species	18	35	18.0%	10.28%	98.98%	137559
+Pseudo-nitzschia fraudulenta	183588	species	16	76	17.58%	18.68%	98.42%	108708
+Pseudo-nitzschia heimii	476441	species	18	84	16.36%	13.49%	98.13%	176338
+Emiliania huxleyi CCMP1516	280463	species	5	7	14.71%	3.68%	99.48%	44652
+Thalassionema frauenfeldii	186022	species	14	48	13.21%	12.48%	97.61%	154802
+Leptocylindrus danicus	163516	species	18	80	9.73%	13.62%	97.81%	278595
+Pycnococcus provasolii	41880	species	4	7	4.12%	5.36%	100.0%	119181
+Rhizosolenia setigera	3005	species	3	25	2.86%	22.7%	99.11%	165278
+Phaeocystis rex	1631189	species	1	2	2.56%	14.58%	100.0%	40152
+Protoceratium reticulatum	133427	species	2	7	2.5%	22.5%	99.31%	112099
+Dactyliosolen fragilissimus	1118495	species	3	15	2.36%	18.57%	99.39%	224851
+Chloropicon primus	1764295	species	3	6	2.17%	6.85%	100.0%	281336
+Dinophysis acuminata	47934	species	2	4	2.13%	18.08%	97.35%	125543
+Oikopleura albicans	2500139	species	2	5	2.13%	13.07%	98.19%	126693
+Malassezia restricta	76775	species	3	6	2.0%	3.44%	98.5%	348317
+Skeletonema japonicum	267983	species	2	3	1.96%	8.89%	98.97%	151895
+Fritillaria borealis	2507563	species	1	1	1.59%	4.59%	97.03%	117198
+Alternaria sect. Alternaria	2499237	section	1	1	1.56%	3.47%	100.0%	83976
+Aureococcus anophagefferens	44056	species	1	1	1.54%	4.76%	97.0%	85991
+Skeletonema grethae	267565	species	1	2	1.49%	5.66%	97.42%	88109
+Acanthamoeba quina	211522	species	1	2	1.3%	10.48%	99.38%	117232
+Acanthamoeba rhysodes	32599	species	1	1	1.3%	11.45%	100.0%	113910
+Chaetoceros dichaeta	420782	species	1	1	1.23%	9.2%	97.03%	98517
+Arcocellulus cornucervis	1155433	species	1	1	1.2%	17.26%	99.01%	107135
+Rhodotorula sp. CCFEE 5036	1965284	species	1	2	1.15%	13.0%	100.0%	209302
+Alexandrium catenella	2925	species	1	2	1.09%	22.54%	99.16%	112057
+Thalassiosira oceanica	159749	species	1	1	1.02%	3.01%	100.0%	165190
+Prorocentrum cordatum	2364126	species	1	1	1.01%	13.22%	96.91%	135765
+Phaeocystis antarctica	33657	species	1	2	1.0%	32.35%	98.47%	158488
+Acanthamoeba	5754	genus	1	2	0.95%	12.22%	96.61%	134855
+Thalassionema nitzschioides	33649	species	1	1	0.91%	6.48%	95.79%	171917
+Scrippsiella trochoidea	71861	species	1	2	0.88%	8.87%	97.09%	163897
+Acaulopage tetraceros	1172177	species	1	1	0.83%	1.75%	95.79%	296010
+Mnemiopsis leidyi	27923	species	1	10	0.75%	13.72%	98.15%	220847
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	10.78%	98.45%	332937
+Rhodotorula diobovata	5288	species	1	6	0.61%	15.86%	100.0%	358851
+Batrachochytrium salamandrivorans	1357716	species	1	1	0.59%	3.89%	97.75%	292885
+Rhodotorula sp. JG-1b	1305733	species	1	5	0.56%	45.4%	100.0%	395750
+Hortaea werneckii EXF-2000	1157616	species	2	8	0.54%	15.42%	99.82%	717212
+Cladosporium phlei	1116209	species	1	2	0.5%	5.74%	96.48%	364263

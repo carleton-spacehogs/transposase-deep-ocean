@@ -1,0 +1,21 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Oithona nana	136191	species	121	2264	81.21%	24.07%	96.13%	244880
+Chloropicon roscoffensis	1461544	species	81	247	51.27%	12.68%	99.38%	275974
+Phaeocystis rex	1631189	species	12	30	30.77%	15.4%	99.72%	40152
+Beroe forskalii	140453	species	24	84	19.83%	11.2%	98.37%	220090
+Oikopleura longicauda	107032	species	13	59	17.81%	6.62%	98.24%	120130
+Stramenopiles sp. TOSAG23-6	1735747	species	5	40	16.67%	18.94%	99.79%	44106
+Stramenopiles sp. TOSAG23-3	1735745	species	6	29	10.0%	27.84%	99.72%	80549
+Chloropicon mariensis	1606511	species	9	17	8.18%	10.35%	99.65%	157984
+Chloropicon primus	1764295	species	11	24	7.97%	6.19%	97.68%	281336
+Pelagomonas calceolata	35677	species	6	11	7.79%	12.16%	98.72%	128353
+Prasinoderma singulare	676789	species	5	10	5.49%	9.31%	99.24%	121534
+Chloropicon laureae	464258	species	3	4	5.36%	11.1%	99.74%	50762
+Malassezia restricta	76775	species	6	12	4.0%	5.82%	98.72%	348317
+Emiliania huxleyi CCMP1516	280463	species	1	2	2.94%	2.93%	99.12%	44652
+Malassezia globosa CBS 7966	425265	species	4	6	2.55%	3.56%	99.17%	332937
+Thalassiosira oceanica	159749	species	2	4	2.04%	9.47%	97.02%	165190
+Gephyrocapsa oceanica	38817	species	2	2	2.0%	10.63%	98.49%	137559
+Phaeocystis globosa	33658	species	2	3	1.72%	8.25%	99.65%	154798
+Brandtodinium nutricula	1333877	species	1	1	1.41%	5.67%	100.0%	88461
+Oikopleura dioica	34765	species	1	4	1.27%	5.51%	97.06%	176745

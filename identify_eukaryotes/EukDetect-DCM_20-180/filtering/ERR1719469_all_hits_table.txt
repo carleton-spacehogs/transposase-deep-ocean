@@ -1,0 +1,38 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Chaetoceros	49237	genus	1	5	100.0%	74.38%	99.67%	402
+Chaetoceros dichaeta	420782	species	81	5835	100.0%	86.14%	97.1%	98517
+Corethron pennatum	218684	species	118	17375	99.16%	72.26%	95.63%	169912
+Dinophysis acuminata	47934	species	91	1404	96.81%	54.86%	98.37%	125543
+Chaetoceros debilis	122233	species	134	1644	91.16%	38.75%	99.12%	259523
+Proboscia	216776	genus	17	187	89.47%	44.31%	99.22%	17415
+Eucampia antarctica	49252	species	65	805	89.04%	39.86%	99.2%	89123
+Phaeocystis antarctica	33657	species	81	8172	81.0%	53.04%	95.37%	158488
+Fragilariopsis kerguelensis	186038	species	112	1540	74.17%	37.51%	98.38%	252214
+Fragilariopsis cylindrus CCMP1102	635003	species	101	879	55.8%	20.57%	98.64%	370513
+Proboscia alata	216777	species	59	414	48.76%	21.14%	98.75%	231020
+Thalassiothrix antarctica	1049557	species	54	201	46.55%	19.43%	99.42%	177575
+Proboscia inermis	420281	species	14	148	42.42%	35.31%	98.97%	31078
+Lithomelissa setosa	1054399	species	2	118	40.0%	56.34%	94.83%	2562
+Fritillaria borealis	2507563	species	15	239	23.81%	11.67%	95.87%	117198
+Micromonas polaris	1848828	species	21	98	13.91%	13.15%	99.18%	307796
+Malassezia restricta	76775	species	17	33	11.33%	4.42%	99.12%	348317
+Phaeocystis rex	1631189	species	4	9	10.26%	12.5%	96.77%	40152
+Micromonas sp. ASP10-01a	1621096	species	8	17	8.99%	5.4%	99.66%	191706
+Phaeocystis globosa	33658	species	10	105	8.62%	26.03%	96.09%	154798
+Micromonas	38832	genus	7	17	3.93%	12.48%	99.85%	358692
+Florenciella parvula	236787	species	2	4	2.74%	15.17%	96.61%	88783
+Cafeteria roenbergensis	33653	species	1	2	2.33%	27.24%	99.5%	50724
+Candida sake	39397	species	4	6	2.22%	5.77%	97.77%	323512
+Prorocentrum cordatum	2364126	species	2	2	2.02%	8.52%	97.31%	135765
+Thalassiosira gravida	420259	species	1	2	1.28%	11.98%	97.18%	100384
+Rhodotorula	5533	genus	1	2	1.18%	11.61%	100.0%	158633
+Debaryomyces hansenii CBS767	284592	species	2	2	1.09%	4.56%	99.5%	326457
+Malassezia furfur	55194	species	2	3	1.0%	11.73%	100.0%	451087
+Hortaea werneckii EXF-2000	1157616	species	3	6	0.81%	5.49%	98.69%	717212
+Thalassiosira antarctica	160265	species	1	1	0.74%	22.15%	97.03%	212563
+Basidioascus undulatus	1230402	species	1	1	0.74%	4.47%	96.94%	259870
+Candida orthopsilosis Co 90-125	1136231	species	1	2	0.6%	18.91%	97.03%	306002
+Saccharomyces cerevisiae S288C	559292	species	1	1	0.55%	6.49%	99.01%	308302
+Lecanicillium psalliotae	73499	species	1	1	0.5%	2.52%	96.63%	341989
+Exophiala xenobiotica	348802	species	1	2	0.5%	1.7%	100.0%	372377
+Penicillium nalgiovense	60175	species	1	2	0.48%	18.0%	100.0%	361128

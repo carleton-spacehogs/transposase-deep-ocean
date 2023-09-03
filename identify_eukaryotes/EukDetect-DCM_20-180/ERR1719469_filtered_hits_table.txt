@@ -1,0 +1,19 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Chaetoceros dichaeta	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Chaetocerotales|family-Chaetocerotaceae|genus-Chaetoceros|species-Chaetoceros_dichaeta	420782	81	5835	100.0%	86.14%	97.1%
+Corethron pennatum	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Corethrales|family-Corethraceae|genus-Corethron|species-Corethron_pennatum	218684	118	17375	99.16%	72.26%	95.63%
+Dinophysis acuminata	species	class-Dinophyceae|order-Dinophysiales|family-Dinophysiaceae|genus-Dinophysis|species-Dinophysis_acuminata	47934	91	1404	96.81%	54.86%	98.37%
+Chaetoceros debilis	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Chaetocerotales|family-Chaetocerotaceae|genus-Chaetoceros|species-Chaetoceros_debilis	122233	134	1644	91.16%	38.75%	99.12%
+Proboscia	genus	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Rhizosoleniales|family-Rhizosoleniaceae|genus-Proboscia	216776	17	187	89.47%	44.31%	99.22%
+Eucampia antarctica	species	phylum-Bacillariophyta|class-Mediophyceae|order-Hemiaulales|family-Hemiaulaceae|genus-Eucampia|species-Eucampia_antarctica	49252	65	805	89.04%	39.86%	99.2%
+Phaeocystis antarctica	species	phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	33657	81	8172	81.0%	53.04%	95.37%
+Fragilariopsis kerguelensis	species	phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Fragilariopsis|species-Fragilariopsis_kerguelensis	186038	112	1540	74.17%	37.51%	98.38%
+Proboscia alata	species	phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Rhizosoleniales|family-Rhizosoleniaceae|genus-Proboscia|species-Proboscia_alata	216777	59	414	48.76%	21.14%	98.75%
+Thalassiothrix antarctica	species	phylum-Bacillariophyta|class-Fragilariophyceae|order-Thalassionemales|family-Thalassionemataceae|genus-Thalassiothrix|species-Thalassiothrix_antarctica	1049557	54	201	46.55%	19.43%	99.42%
+Lithomelissa setosa	species	class-Polycystinea|order-Nassellaria|family-Plagiacanthidae|genus-Lithomelissa|species-Lithomelissa_setosa	1054399	2	118	40.0%	56.34%	94.83%
+Fritillaria borealis	species	phylum-Chordata|class-Appendicularia|order-Copelata|family-Fritillariidae|genus-Fritillaria|species-Fritillaria_borealis	2507563	15	239	23.81%	11.67%	95.87%
+Micromonas polaris	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_polaris	1848828	21	98	13.91%	13.15%	99.18%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	17	33	11.33%	4.42%	99.12%
+Micromonas	genus	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	38832	7	17	3.93%	12.48%	99.85%
+Florenciella parvula	species	class-Dictyochophyceae|order-Florenciellales|genus-Florenciella|species-Florenciella_parvula	236787	2	4	2.74%	15.17%	96.61%
+Candida sake	species	phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|genus-Candida|species-Candida_sake	39397	4	6	2.22%	5.77%	97.77%
+Hortaea werneckii EXF-2000	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	1157616	3	6	0.81%	5.49%	98.69%

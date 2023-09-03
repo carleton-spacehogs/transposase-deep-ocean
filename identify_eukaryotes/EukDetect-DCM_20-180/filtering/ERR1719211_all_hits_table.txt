@@ -1,0 +1,24 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Tripos fusus	2916	species	74	603	82.22%	34.27%	99.21%	132892
+Chloropicon mariensis	1606511	species	79	461	71.82%	25.21%	99.65%	157984
+Oithona nana	136191	species	87	535	58.39%	14.91%	97.03%	244880
+Brandtodinium nutricula	1333877	species	37	107	52.11%	17.22%	99.37%	88461
+Alveolata	33630	superkingdom	1	2	14.29%	17.09%	98.5%	6135
+Symbiodinium microadriaticum	2951	species	1	1	14.29%	3.64%	98.36%	7644
+Pelagomonas calceolata	35677	species	8	24	10.39%	11.16%	98.27%	128353
+Gephyrocapsa oceanica	38817	species	10	17	10.0%	11.2%	98.5%	137559
+Oikopleura dioica	34765	species	6	26	7.59%	4.44%	97.13%	176745
+Oikopleura albicans	2500139	species	3	5	3.19%	16.63%	97.75%	126693
+Emiliania huxleyi CCMP1516	280463	species	1	2	2.94%	34.22%	100.0%	44652
+Oikopleura longicauda	107032	species	2	36	2.74%	6.44%	97.32%	120130
+Eukaryota	2759	superkingdom	7	15	2.73%	7.28%	98.06%	467758
+Pseudo-nitzschia heimii	476441	species	2	3	1.82%	11.22%	97.66%	176338
+Chloropicon laureae	464258	species	1	1	1.79%	7.3%	100.0%	50762
+Chloropicon primus	1764295	species	2	5	1.45%	2.41%	96.88%	281336
+Hortaea werneckii EXF-2000	1157616	species	5	9	1.35%	7.8%	99.2%	717212
+Bursaphelenchus xylophilus	6326	species	1	2	1.01%	2.5%	97.03%	159590
+Effrenium voratum	2562239	species	1	2	0.96%	9.2%	95.77%	156738
+Alexandrium tamarense	2926	species	1	1	0.71%	23.54%	99.01%	194024
+Rhodotorula diobovata	5288	species	1	2	0.61%	5.07%	99.45%	358851
+Batrachochytrium salamandrivorans	1357716	species	1	5	0.59%	5.64%	95.35%	292885
+Moesziomyces antarcticus	84753	species	1	2	0.5%	14.71%	100.0%	385953

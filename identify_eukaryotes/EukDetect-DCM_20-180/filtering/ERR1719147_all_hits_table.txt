@@ -1,0 +1,12 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Brandtodinium nutricula	1333877	species	37	102	52.11%	16.76%	99.35%	88461
+Amphilonche elongata	1127133	species	1	2	50.0%	11.55%	98.97%	2250
+Oikopleura longicauda	107032	species	7	102	9.59%	9.35%	95.89%	120130
+Chloropicon roscoffensis	1461544	species	10	19	6.33%	6.23%	99.73%	275974
+Pelagomonas calceolata	35677	species	4	7	5.19%	8.25%	97.6%	128353
+Architeuthis dux	256136	species	4	4	2.72%	6.52%	97.92%	233481
+Beroe forskalii	140453	species	2	2	1.65%	3.53%	97.03%	220090
+Tripos fusus	2916	species	1	1	1.11%	5.42%	97.03%	132892
+Phaeocystis antarctica	33657	species	1	1	1.0%	1.48%	100.0%	158488
+Eucidaris tribuloides	7632	species	1	2	0.68%	5.51%	98.51%	194139
+Oithona nana	136191	species	1	2	0.67%	14.63%	96.51%	244880

@@ -1,0 +1,9 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Symbiodinium sp. clade C Y103	1563116	no rank	1	2	33.33%	25.21%	98.31%	2103
+Brandtodinium nutricula	1333877	species	9	55	12.68%	14.23%	99.29%	88461
+Oikopleura longicauda	107032	species	6	1768	8.22%	14.76%	90.16%	120130
+Hortaea werneckii EXF-2000	1157616	species	6	16	1.62%	7.26%	99.85%	717212
+Malassezia restricta	76775	species	1	2	0.67%	13.58%	100.0%	348317
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	6.52%	100.0%	332937
+Batrachochytrium salamandrivorans	1357716	species	1	1	0.59%	4.42%	97.03%	292885
+Saccharomyces cerevisiae S288C	559292	species	1	2	0.55%	4.79%	100.0%	308302

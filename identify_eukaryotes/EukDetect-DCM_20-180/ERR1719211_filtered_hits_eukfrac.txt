@@ -1,0 +1,33 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.1236	1.2942	17	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales	order	Isochrysidales	73020	0.1236	1.0223	17	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa	genus	Gephyrocapsa	38816	0.1236	1.0223	17	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	species	Gephyrocapsa oceanica	38817	0.1236	0.9853	17	137559
+class-Dinophyceae	class	Dinophyceae	2864	3.2075	33.5906	710	221353
+class-Dinophyceae|order-Gonyaulacales	order	Gonyaulacales	40984	4.5375	37.5359	603	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos	genus	Tripos	2126447	4.5375	37.5359	603	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	species	Tripos fusus	2916	4.5375	36.1778	603	132892
+class-Dinophyceae|order-Peridiniales	order	Peridiniales	2910	1.2096	10.006	107	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium	genus	Brandtodinium	1482939	1.2096	10.006	107	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	species	Brandtodinium nutricula	1333877	1.2096	9.644	107	88461
+phylum-Chordata|class-Appendicularia	class	Appendicularia	30302	0.2235	2.3403	67	299809
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	0.2235	1.8487	67	299809
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura	genus	Oikopleura	34763	0.2235	1.8487	67	299809
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_dioica	species	Oikopleura dioica	34765	0.1471	1.1729	26	176745
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	species	Oikopleura longicauda	107032	0.2997	2.3893	36	120130
+phylum-Arthropoda|class-Hexanauplia	class	Hexanauplia	72037	2.1847	22.8794	535	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida	order	Cyclopoida	84308	2.1847	18.0729	535	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona	genus	Oithona	136190	2.1847	18.0729	535	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	species	Oithona nana	136191	2.1847	17.4191	535	244880
+phylum-Ascomycota|class-Dothideomycetes	class	Dothideomycetes	147541	0.9351	9.7923	9	9625
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales	order	Capnodiales	134362	0.9351	7.7352	9	9625
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea	genus	Hortaea	91942	0.9351	7.7352	9	9625
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	species	Hortaea werneckii	91943	0.9351	7.4553	9	9625
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	2.6875	28.1449	467	173765
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	2.6875	22.2322	467	173765
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	2.6875	22.2322	467	173765
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_mariensis	species	Chloropicon mariensis	1606511	2.918	23.2655	461	157984
+class-Pelagophyceae	class	Pelagophyceae	35675	0.187	1.9582	24	128353
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	0.187	1.5468	24	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	0.187	1.5468	24	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	0.187	1.4908	24	128353

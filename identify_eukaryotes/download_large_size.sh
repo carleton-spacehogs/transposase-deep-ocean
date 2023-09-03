@@ -1,15 +1,17 @@
 #!/bin/bash
 
-depth_samples=$(grep "5 - 20" Carradec-et-al-AGlobalOceanAtlasOfEukaryoticGenes-SuppTable6.csv | grep ${1} | shuf -n 20 | sed 's/ //g')
-> ${1}_5-20_sampled.txt
+low=20
+high=180
+depth=${1}
+
+depth_samples=$(grep "$low - $high" Carradec-et-al-AGlobalOceanAtlasOfEukaryoticGenes-SuppTable6.csv | grep $depth | shuf -n 2 | sed 's/ //g')
 pre="ascp -QT -l 300m -P 33001 -i /Accounts/zhongj2/.aspera/connect/etc/asperaweb_id_dsa.openssh era-fasp@fasp.sra.ebi.ac.uk:vol1/fastq"
-root="/researchdrive/zhongj2/MAG_pnps_redux"
-depth_folder=${root}/${1}_5-20/raw_reads
+depth_folder=/researchdrive/SpaceHogs_shared/jimmy_stuff/DNA_raw_reads/${depth}_${low}_${high}_reads
 
 mkdir $depth_folder
 
 for line in $depth_samples; do
-echo $line >> ${1}_5-20_sampled.txt
+echo $line >> ${depth}_${low}_${high}_sampled.txt
 ERRs=$(echo $line | awk -F"," '{print $12}' | sed s/\"//g)
 echo $ERRs
 for ERR in $ERRs; do 

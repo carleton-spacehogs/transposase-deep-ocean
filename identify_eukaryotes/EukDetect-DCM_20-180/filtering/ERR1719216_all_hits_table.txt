@@ -1,0 +1,30 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Oithona nana	136191	species	127	711	85.23%	22.8%	99.19%	244880
+Tripos fusus	2916	species	48	160	53.33%	15.87%	99.27%	132892
+Sticholonche zanclea	1054997	species	1	4	50.0%	52.28%	97.71%	1431
+Amphilonche elongata	1127133	species	1	10	50.0%	38.01%	98.44%	2250
+Brandtodinium nutricula	1333877	species	27	69	38.03%	14.82%	99.65%	88461
+Scyphosphaera apsteinii	418940	species	30	81	37.5%	12.15%	99.73%	113512
+Pelagodinium beii	43686	species	25	74	27.78%	11.8%	98.76%	127026
+Leptocylindrus danicus	163516	species	38	127	20.54%	12.02%	98.73%	278595
+Lithomelissa setosa	1054399	species	1	7	20.0%	70.89%	98.9%	2562
+Thalassionema frauenfeldii	186022	species	20	53	18.87%	16.27%	98.2%	154802
+Dinophysis acuminata	47934	species	17	35	18.09%	11.91%	98.56%	125543
+Gephyrocapsa oceanica	38817	species	9	15	9.0%	11.58%	97.65%	137559
+Emiliania huxleyi CCMP1516	280463	species	3	7	8.82%	5.63%	99.81%	44652
+Oikopleura longicauda	107032	species	5	28	6.85%	7.66%	98.14%	120130
+Chaetoceros affinis	426623	species	6	13	4.69%	4.43%	99.55%	197912
+Pelagomonas calceolata	35677	species	3	5	3.9%	5.83%	97.26%	128353
+Effrenium voratum	2562239	species	4	7	3.85%	6.89%	98.08%	156738
+Aphidius	37852	genus	1	1	2.94%	2.96%	96.04%	48966
+Thalassiosira oceanica	159749	species	2	4	2.04%	7.61%	100.0%	165190
+Gonyaulax spinifera	66791	species	1	1	1.43%	7.32%	97.03%	72996
+Malassezia restricta	76775	species	2	3	1.33%	2.84%	99.31%	348317
+Monosiga brevicollis MX1	431895	species	1	2	1.11%	39.84%	100.0%	126657
+Lingulodinium polyedra	160621	species	1	2	0.92%	12.69%	99.37%	165396
+Scrippsiella trochoidea	71861	species	1	2	0.88%	31.24%	98.97%	163897
+Phaeocystis globosa	33658	species	1	2	0.86%	15.13%	97.01%	154798
+Eukaryota	2759	superkingdom	2	3	0.78%	9.57%	98.25%	467758
+Alexandrium tamarense	2926	species	1	1	0.71%	9.33%	97.03%	194024
+Durinskia baltica	400756	species	1	2	0.71%	6.1%	98.15%	244301
+Xylaria sp. JS573	1580213	species	1	2	0.52%	5.91%	98.17%	348530

@@ -1,0 +1,25 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Basidiomycota	phylum	Basidiomycota	5204	0.023	3.1725	8	348317
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.023	3.1725	8	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.023	3.1725	8	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae	family	Malasseziaceae	742845	0.023	3.1725	8	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.023	3.1725	8	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.023	3.1794	8	348317
+phylum-Ascomycota	phylum	Ascomycota	4890	0.0459	6.3369	17	370560
+phylum-Ascomycota|class-Eurotiomycetes	class	Eurotiomycetes	147545	0.0459	6.3369	17	370560
+phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales	order	Eurotiales	5042	0.0459	6.3369	17	370560
+phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae	family	Aspergillaceae	1131492	0.0459	6.3369	17	370560
+phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae|genus-Penicillium	genus	Penicillium	5073	0.0459	6.3369	17	370560
+phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae|genus-Penicillium|species-Penicillium_nalgiovense	species	Penicillium nalgiovense	60175	0.0443	6.1333	16	361128
+phylum-Chordata	phylum	Chordata	7711	0.0916	12.6483	11	120130
+phylum-Chordata|class-Appendicularia	class	Appendicularia	30302	0.0916	12.6483	11	120130
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	0.0916	12.6483	11	120130
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae	family	Oikopleuridae	41302	0.0916	12.6483	11	120130
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura	genus	Oikopleura	34763	0.0916	12.6483	11	120130
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	species	Oikopleura longicauda	107032	0.0916	12.6758	11	120130
+phylum-Arthropoda	phylum	Arthropoda	6656	0.5635	77.8423	138	244880
+phylum-Arthropoda|class-Hexanauplia	class	Hexanauplia	72037	0.5635	77.8423	138	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida	order	Cyclopoida	84308	0.5635	77.8423	138	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae	family	Oithonidae	136189	0.5635	77.8423	138	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona	genus	Oithona	136190	0.5635	77.8423	138	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	species	Oithona nana	136191	0.5635	78.0115	138	244880

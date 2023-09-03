@@ -1,0 +1,21 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Chloropicon roscoffensis	1461544	species	103	379	65.19%	15.68%	99.17%	275974
+Chloropicon mariensis	1606511	species	66	764	60.0%	28.83%	99.41%	157984
+Malassezia restricta	76775	species	87	316	58.0%	10.1%	98.99%	348317
+Prasinococcaceae	2201465	family	13	58	52.0%	16.44%	99.31%	36508
+Prasinococcaceae sp. CCMP 1430	2489100	species	43	129	39.45%	9.69%	99.18%	225148
+Pelagomonas calceolata	35677	species	30	153	38.96%	15.6%	97.78%	128353
+Prasinoderma coloniale	156133	species	29	68	33.72%	9.06%	99.06%	155270
+Chloropicon laureae	464258	species	14	34	25.0%	16.96%	99.13%	50762
+Chloropicon primus	1764295	species	27	85	19.57%	7.1%	97.29%	281336
+Gephyrocapsa oceanica	38817	species	7	8	7.0%	3.85%	99.21%	137559
+Emiliania huxleyi CCMP1516	280463	species	2	3	5.88%	10.1%	99.65%	44652
+Oithona nana	136191	species	8	26	5.37%	10.7%	97.26%	244880
+Oikopleura dioica	34765	species	3	10	3.8%	3.65%	96.75%	176745
+Brandtodinium nutricula	1333877	species	2	12	2.82%	25.51%	99.84%	88461
+Oikopleura longicauda	107032	species	2	35	2.74%	8.3%	96.77%	120130
+Malassezia globosa CBS 7966	425265	species	4	8	2.55%	3.43%	99.14%	332937
+Pelagococcus subviridis	35679	species	1	1	1.52%	3.71%	96.39%	79272
+Tripos fusus	2916	species	1	8	1.11%	33.33%	99.06%	132892
+Scrippsiella trochoidea	71861	species	1	1	0.88%	18.42%	97.0%	163897
+Bullera alba	157611	species	1	1	0.61%	0.88%	100.0%	328465

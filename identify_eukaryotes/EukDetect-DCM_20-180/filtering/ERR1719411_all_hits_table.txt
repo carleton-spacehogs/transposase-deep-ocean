@@ -1,0 +1,50 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Brandtodinium nutricula	1333877	species	71	1528	100.0%	67.93%	98.96%	88461
+Chloropicon roscoffensis	1461544	species	96	412	60.76%	16.08%	99.09%	275974
+Oithona nana	136191	species	80	701	53.69%	17.6%	96.63%	244880
+Tripos fusus	2916	species	47	144	52.22%	14.44%	98.41%	132892
+Amphilonche elongata	1127133	species	1	2	50.0%	9.53%	96.89%	2250
+Chloropicon laureae	464258	species	24	78	42.86%	26.38%	99.51%	50762
+Chloropicon mariensis	1606511	species	40	124	36.36%	14.19%	98.79%	157984
+Prasinococcaceae	2201465	family	9	18	36.0%	10.43%	99.13%	36508
+Alexandrium andersonii	327968	species	9	24	33.33%	12.36%	98.75%	29644
+Symbiodinium sp. clade C Y103	1563116	no rank	1	1	33.33%	14.39%	97.03%	2103
+Pocillopora	46730	genus	11	42	31.43%	26.79%	99.37%	32193
+Pelagomonas calceolata	35677	species	23	138	29.87%	14.52%	97.73%	128353
+Gephyrocapsa oceanica	38817	species	18	33	18.0%	9.23%	99.12%	137559
+Prasinococcaceae sp. CCMP 1430	2489100	species	16	33	14.68%	9.76%	99.25%	225148
+Pocillopora verrucosa	203993	species	16	54	12.8%	12.07%	99.48%	210876
+Prasinoderma coloniale	156133	species	10	36	11.63%	16.75%	98.78%	155270
+Pocillopora damicornis	46731	species	11	28	9.91%	9.58%	99.54%	182542
+Emiliania huxleyi CCMP1516	280463	species	3	4	8.82%	16.78%	98.66%	44652
+Oikopleura longicauda	107032	species	6	75	8.22%	10.66%	95.92%	120130
+Chloropicon primus	1764295	species	9	20	6.52%	4.78%	97.58%	281336
+Malassezia restricta	76775	species	9	16	6.0%	3.97%	98.8%	348317
+Effrenium voratum	2562239	species	6	11	5.77%	7.94%	98.07%	156738
+Lingulodinium polyedra	160621	species	6	12	5.5%	11.64%	97.97%	165396
+Pinctada imbricata	66713	species	8	18	5.16%	10.7%	98.92%	245631
+Phaeocystis antarctica	33657	species	5	10	5.0%	12.47%	97.27%	158488
+Prasinoderma singulare	676789	species	4	8	4.4%	21.26%	99.69%	121534
+Scyphosphaera apsteinii	418940	species	3	5	3.75%	5.21%	98.89%	113512
+Phaeomonas parva	124430	species	3	4	3.66%	14.15%	100.0%	94577
+Phaeocystis globosa	33658	species	4	13	3.45%	25.62%	99.11%	154798
+Durusdinium trenchii	1381693	species	1	2	2.17%	26.47%	97.32%	38336
+Alexandrium tamarense	2926	species	3	4	2.13%	5.52%	97.12%	194024
+Oikopleura albicans	2500139	species	2	3	2.13%	17.99%	96.4%	126693
+Fritillaria borealis	2507563	species	1	2	1.59%	5.5%	96.69%	117198
+Holothuria glaberrima	31192	species	1	2	1.47%	21.47%	97.09%	83715
+Gonyaulax spinifera	66791	species	1	1	1.43%	7.32%	97.03%	72996
+Stylophora pistillata	50429	species	2	4	1.33%	8.67%	96.3%	238357
+Oikopleura dioica	34765	species	1	3	1.27%	10.81%	97.91%	176745
+Bursaphelenchus xylophilus	6326	species	1	2	1.01%	2.55%	93.2%	159590
+Starmerella bacillaris	1247836	species	1	2	0.9%	36.81%	99.0%	165674
+Scrippsiella trochoidea	71861	species	1	1	0.88%	10.56%	98.7%	163897
+Beroe forskalii	140453	species	1	1	0.83%	4.0%	99.01%	220090
+Scenedesmus sp. NREL 46B-D3	2650976	species	1	1	0.72%	3.41%	96.94%	242615
+Modiolus philippinarum	310899	species	1	1	0.7%	5.86%	98.02%	207179
+Dioszegia crocea	4974	species	1	1	0.64%	4.63%	99.01%	338808
+Batrachochytrium salamandrivorans	1357716	species	1	11	0.59%	6.96%	92.45%	292885
+Micromonas	38832	genus	1	2	0.56%	5.83%	99.19%	358692
+Phanerochaete chrysosporium	5306	species	1	1	0.56%	1.42%	96.91%	359765
+Aspergillus sp. MA 6041	2153248	species	1	1	0.3%	8.84%	100.0%	605505
+Hortaea werneckii EXF-2000	1157616	species	1	1	0.27%	4.35%	100.0%	717212

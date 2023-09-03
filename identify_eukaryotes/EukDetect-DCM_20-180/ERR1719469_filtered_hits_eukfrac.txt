@@ -1,0 +1,60 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Chordata|class-Appendicularia	class	Appendicularia	30302	2.0393	1.3119	239	117198
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	2.0393	0.8188	239	117198
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Fritillariidae|genus-Fritillaria	genus	Fritillaria	2507559	2.0393	0.8188	239	117198
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Fritillariidae|genus-Fritillaria|species-Fritillaria_borealis	species	Fritillaria borealis	2507563	2.0393	0.6847	239	117198
+phylum-Ascomycota|class-Saccharomycetes	class	Saccharomycetes	4891	0.0185	0.0119	6	323512
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales	order	Saccharomycetales	4892	0.0185	0.0074	6	323512
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|genus-Candida	genus	Candida	5475	0.0185	0.0074	6	323512
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|genus-Candida|species-Candida_sake	species	Candida sake	39397	0.0185	0.0062	6	323512
+phylum-Ascomycota|class-Dothideomycetes	class	Dothideomycetes	147541	0.6174	0.3972	6	9718
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales	order	Capnodiales	134362	0.6174	0.2479	6	9718
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea	genus	Hortaea	91942	0.6174	0.2479	6	9718
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	species	Hortaea werneckii	91943	0.6174	0.2073	6	9718
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.1026	0.066	36	350900
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.1026	0.0412	36	350900
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.1026	0.0412	36	350900
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.0947	0.0318	33	348317
+phylum-Bacillariophyta|class-Coscinodiscophyceae	class	Coscinodiscophyceae	33836	32.387	20.835	25608	790687
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Chaetocerotales	order	Chaetocerotales	265576	20.8792	8.3835	7484	358442
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Chaetocerotales|family-Chaetocerotaceae|genus-Chaetoceros	genus	Chaetoceros	49237	20.8792	8.3835	7484	358442
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Chaetocerotales|family-Chaetocerotaceae|genus-Chaetoceros|species-Chaetoceros_dichaeta	species	Chaetoceros dichaeta	420782	59.2284	19.8872	5835	98517
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Chaetocerotales|family-Chaetocerotaceae|genus-Chaetoceros|species-Chaetoceros_debilis	species	Chaetoceros debilis	122233	6.3347	2.127	1644	259523
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Corethrales	order	Corethrales	420269	102.2588	41.0593	17375	169912
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Corethrales|family-Corethraceae|genus-Corethron	genus	Corethron	49242	102.2588	41.0593	17375	169912
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Corethrales|family-Corethraceae|genus-Corethron|species-Corethron_pennatum	species	Corethron pennatum	218684	102.2588	34.3357	17375	169912
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Rhizosoleniales	order	Rhizosoleniales	33844	2.8551	1.1464	749	262333
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Rhizosoleniales|family-Rhizosoleniaceae|genus-Proboscia	genus	Proboscia	216776	2.8551	1.1464	749	262333
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Rhizosoleniales|family-Rhizosoleniaceae|genus-Proboscia|species-Proboscia_alata	species	Proboscia alata	216777	1.7921	0.6017	414	231020
+phylum-Bacillariophyta|class-Bacillariophyceae	class	Bacillariophyceae	33849	4.8991	3.1517	2419	493764
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales	order	Bacillariales	33851	4.8991	1.9671	2419	493764
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Fragilariopsis	genus	Fragilariopsis	186035	4.8991	1.9671	2419	493764
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Fragilariopsis|species-Fragilariopsis_kerguelensis	species	Fragilariopsis kerguelensis	186038	6.1059	2.0502	1540	252214
+phylum-Bacillariophyta|class-Fragilariophyceae	class	Fragilariophyceae	33853	1.1319	0.7282	201	177575
+phylum-Bacillariophyta|class-Fragilariophyceae|order-Thalassionemales	order	Thalassionemales	426665	1.1319	0.4545	201	177575
+phylum-Bacillariophyta|class-Fragilariophyceae|order-Thalassionemales|family-Thalassionemataceae|genus-Thalassiothrix	genus	Thalassiothrix	515469	1.1319	0.4545	201	177575
+phylum-Bacillariophyta|class-Fragilariophyceae|order-Thalassionemales|family-Thalassionemataceae|genus-Thalassiothrix|species-Thalassiothrix_antarctica	species	Thalassiothrix antarctica	1049557	1.1319	0.3801	201	177575
+phylum-Bacillariophyta|class-Mediophyceae	class	Mediophyceae	589449	9.0325	5.8107	805	89123
+phylum-Bacillariophyta|class-Mediophyceae|order-Hemiaulales	order	Hemiaulales	420267	9.0325	3.6267	805	89123
+phylum-Bacillariophyta|class-Mediophyceae|order-Hemiaulales|family-Hemiaulaceae|genus-Eucampia	genus	Eucampia	49251	9.0325	3.6267	805	89123
+phylum-Bacillariophyta|class-Mediophyceae|order-Hemiaulales|family-Hemiaulaceae|genus-Eucampia|species-Eucampia_antarctica	species	Eucampia antarctica	49252	9.0325	3.0328	805	89123
+class-Dictyochophyceae	class	Dictyochophyceae	39119	0.0451	0.029	4	88783
+class-Dictyochophyceae|order-Florenciellales	order	Florenciellales	590977	0.0451	0.0181	4	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella	genus	Florenciella	236786	0.0451	0.0181	4	88783
+class-Dictyochophyceae|order-Florenciellales|genus-Florenciella|species-Florenciella_parvula	species	Florenciella parvula	236787	0.0451	0.0151	4	88783
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	0.3822	0.2459	132	345335
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	0.3822	0.1535	132	345335
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas	genus	Micromonas	38832	0.3822	0.1535	132	345335
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Mamiellaceae|genus-Micromonas|species-Micromonas_polaris	species	Micromonas polaris	1848828	0.3184	0.1069	98	307796
+class-Dinophyceae	class	Dinophyceae	2864	11.1834	7.1944	1404	125543
+class-Dinophyceae|order-Dinophysiales	order	Dinophysiales	447211	11.1834	4.4904	1404	125543
+class-Dinophyceae|order-Dinophysiales|family-Dinophysiaceae|genus-Dinophysis	genus	Dinophysis	47933	11.1834	4.4904	1404	125543
+class-Dinophyceae|order-Dinophysiales|family-Dinophysiaceae|genus-Dinophysis|species-Dinophysis_acuminata	species	Dinophysis acuminata	47934	11.1834	3.7551	1404	125543
+class-Polycystinea	class	Polycystinea	65582	46.0578	29.6296	118	2562
+class-Polycystinea|order-Nassellaria	order	Nassellaria	278980	46.0578	18.4933	118	2562
+class-Polycystinea|order-Nassellaria|family-Plagiacanthidae|genus-Lithomelissa	genus	Lithomelissa	366587	46.0578	18.4933	118	2562
+class-Polycystinea|order-Nassellaria|family-Plagiacanthidae|genus-Lithomelissa|species-Lithomelissa_setosa	species	Lithomelissa setosa	1054399	46.0578	15.4649	118	2562
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	47.5483	30.5885	8286	174265
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	47.5483	19.0918	8286	174265
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	47.5483	19.0918	8286	174265
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	species	Phaeocystis antarctica	33657	51.5623	17.3132	8172	158488

@@ -1,0 +1,26 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Oithona nana	136191	species	38	322	25.5%	15.33%	96.57%	244880
+Malassezia restricta	76775	species	19	40	12.67%	4.09%	99.06%	348317
+Chloropicon roscoffensis	1461544	species	19	126	12.03%	11.88%	99.22%	275974
+Oikopleura longicauda	107032	species	8	446	10.96%	17.1%	94.23%	120130
+unclassified Ostreococcus	2268852	genus	1	1	8.33%	4.64%	100.0%	18843
+Ostreococcus sp. SAG10	2590005	species	2	5	8.0%	4.15%	99.43%	56396
+Tripos fusus	2916	species	6	31	6.67%	22.86%	98.85%	132892
+Chloropicon mariensis	1606511	species	6	78	5.45%	28.75%	99.14%	157984
+Phaeocystis rex	1631189	species	2	4	5.13%	15.8%	98.23%	40152
+Helicotheca tamesis	374047	species	2	5	5.13%	7.54%	98.52%	39616
+Alexandrium andersonii	327968	species	1	15	3.7%	44.47%	99.83%	29644
+Pelagomonas calceolata	35677	species	2	2	2.6%	6.24%	100.0%	128353
+Oikopleura dioica	34765	species	2	22	2.53%	7.05%	95.91%	176745
+Chloropicon primus	1764295	species	3	17	2.17%	6.23%	99.76%	281336
+Malassezia sympodialis ATCC 42132	1230383	species	3	6	2.16%	8.4%	100.0%	313165
+Effrenium voratum	2562239	species	2	15	1.92%	19.27%	98.49%	156738
+Chloropicon laureae	464258	species	1	1	1.79%	7.55%	100.0%	50762
+Gongronella sp. w5	483437	species	3	4	1.64%	2.79%	98.72%	333057
+Gephyrocapsa oceanica	38817	species	1	1	1.0%	2.75%	100.0%	137559
+Phaeocystis globosa	33658	species	1	2	0.86%	12.97%	100.0%	154798
+Acaulopage tetraceros	1172177	species	1	1	0.83%	1.84%	97.0%	296010
+Rhipicephalus annulatus	34611	species	1	1	0.67%	8.29%	95.83%	242749
+Batrachochytrium salamandrivorans	1357716	species	1	13	0.59%	6.96%	94.34%	292885
+Cyberlindnera jadinii NRRL Y-1542	983966	species	1	2	0.58%	8.1%	98.37%	333761
+Calocera viscosa TUFC12733	1330018	species	1	1	0.57%	2.03%	96.43%	364392

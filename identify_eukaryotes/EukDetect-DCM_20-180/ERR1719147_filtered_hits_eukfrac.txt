@@ -1,0 +1,21 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	0.0688	3.2132	19	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	0.0688	3.2132	19	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.0688	3.2132	19	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	0.0688	3.2132	19	275974
+phylum-Mollusca|class-Cephalopoda	class	Cephalopoda	6605	0.0171	0.7996	4	233481
+phylum-Mollusca|class-Cephalopoda|order-Teuthida	order	Teuthida	551290	0.0171	0.7996	4	233481
+phylum-Mollusca|class-Cephalopoda|order-Teuthida|family-Architeuthidae|genus-Architeuthis	genus	Architeuthis	34555	0.0171	0.7996	4	233481
+phylum-Mollusca|class-Cephalopoda|order-Teuthida|family-Architeuthidae|genus-Architeuthis|species-Architeuthis_dux	species	Architeuthis dux	256136	0.0171	0.7996	4	233481
+phylum-Chordata|class-Appendicularia	class	Appendicularia	30302	0.8491	39.6276	102	120130
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	0.8491	39.6276	102	120130
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura	genus	Oikopleura	34763	0.8491	39.6276	102	120130
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	species	Oikopleura longicauda	107032	0.8491	39.6276	102	120130
+class-Dinophyceae	class	Dinophyceae	2864	1.1531	53.8143	102	88461
+class-Dinophyceae|order-Peridiniales	order	Peridiniales	2910	1.1531	53.8143	102	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium	genus	Brandtodinium	1482939	1.1531	53.8143	102	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	species	Brandtodinium nutricula	1333877	1.1531	53.8143	102	88461
+class-Pelagophyceae	class	Pelagophyceae	35675	0.0545	2.5453	7	128353
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	0.0545	2.5453	7	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	0.0545	2.5453	7	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	0.0545	2.5453	7	128353

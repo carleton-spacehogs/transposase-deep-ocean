@@ -1,0 +1,47 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Cnidaria|class-Anthozoa	class	Anthozoa	6101	0.2659	2.6674	128	481412
+phylum-Cnidaria|class-Anthozoa|order-Scleractinia	order	Scleractinia	6125	0.2659	1.0559	128	481412
+phylum-Cnidaria|class-Anthozoa|order-Scleractinia|family-Pocilloporidae|genus-Pocillopora|species-Pocillopora_verrucosa	species	Pocillopora verrucosa	203993	0.2561	0.9033	54	210876
+phylum-Cnidaria|class-Anthozoa|order-Scleractinia|family-Pocilloporidae|genus-Stylophora|species-Stylophora_pistillata	species	Stylophora pistillata	50429	0.0168	0.0592	4	238357
+phylum-Chordata|class-Appendicularia	class	Appendicularia	30302	0.6562	6.5828	81	123442
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	0.6562	2.6059	81	123442
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	species	Oikopleura longicauda	107032	0.6243	2.2023	75	120130
+phylum-Mollusca|class-Bivalvia	class	Bivalvia	6544	0.0733	0.7352	18	245631
+phylum-Mollusca|class-Bivalvia|order-Pterioida	order	Pterioida	44598	0.0733	0.291	18	245631
+phylum-Mollusca|class-Bivalvia|order-Pterioida|family-Pteriidae|genus-Pinctada|species-Pinctada_imbricata	species	Pinctada imbricata	66713	0.0733	0.2585	18	245631
+phylum-Arthropoda|class-Hexanauplia	class	Hexanauplia	72037	2.8626	28.718	701	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida	order	Cyclopoida	84308	2.8626	11.3683	701	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	species	Oithona nana	136191	2.8626	10.0978	701	244880
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.0459	0.4608	16	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.0459	0.1824	16	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.0459	0.162	16	348317
+phylum-Chlorophyta|class-Palmophyllophyceae	class	Palmophyllophyceae	2201463	0.2382	2.3895	95	398842
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales	order	Prasinococcales	485343	0.2382	0.9459	95	398842
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|species-Prasinococcaceae_sp._CCMP_1430	species	Prasinococcaceae sp. CCMP 1430	2489100	0.1466	0.517	33	225148
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinoderma|species-Prasinoderma_coloniale	species	Prasinoderma coloniale	156133	0.2319	0.8179	36	155270
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	1.5748	15.7989	634	402580
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	1.5748	6.2542	634	402580
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	1.4929	5.2661	412	275974
+class-Pinguiophyceae	class	Pinguiophyceae	157124	0.0423	0.4243	4	94577
+class-Pinguiophyceae|order-Pinguiochrysidales	order	Pinguiochrysidales	1004267	0.0423	0.168	4	94577
+class-Pinguiophyceae|order-Pinguiochrysidales|family-Pinguiochrysidaceae|genus-Phaeomonas|species-Phaeomonas_parva	species	Phaeomonas parva	124430	0.0423	0.1492	4	94577
+class-Pelagophyceae	class	Pelagophyceae	35675	1.0752	10.7861	138	128353
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	1.0752	4.2698	138	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	1.0752	3.7926	138	128353
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.1568	1.573	65	414540
+phylum-Haptista|class-Haptophyta|order-Isochrysidales	order	Isochrysidales	73020	0.2647	1.0512	37	139776
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania|species-Emiliania_huxleyi	species	Emiliania huxleyi	2903	1.8042	6.3644	4	2217
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	species	Gephyrocapsa oceanica	38817	0.2399	0.8462	33	137559
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	0.1426	0.5664	23	161252
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_globosa	species	Phaeocystis globosa	33658	0.084	0.2962	13	154798
+phylum-Haptista|class-Haptophyta|order-Coccosphaerales	order	Coccosphaerales	73027	0.044	0.1749	5	113512
+phylum-Haptista|class-Haptophyta|order-Coccosphaerales|family-Pontosphaeraceae|genus-Scyphosphaera|species-Scyphosphaera_apsteinii	species	Scyphosphaera apsteinii	418940	0.044	0.1554	5	113512
+class-Dinophyceae	class	Dinophyceae	2864	2.9769	29.864	1723	578798
+class-Dinophyceae|order-Gonyaulacales	order	Gonyaulacales	40984	0.5516	2.1904	184	333599
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium|species-Alexandrium_andersonii	species	Alexandrium andersonii	327968	0.8096	2.8559	24	29644
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	species	Tripos fusus	2916	1.0836	3.8223	144	132892
+class-Dinophyceae|order-Gonyaulacales|genus-Lingulodinium|species-Lingulodinium_polyedra	species	Lingulodinium polyedra	160621	0.0726	0.2559	12	165396
+class-Dinophyceae|order-Suessiales	order	Suessiales	89954	0.0702	0.2787	11	156738
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Effrenium|species-Effrenium_voratum	species	Effrenium voratum	2562239	0.0702	0.2476	11	156738
+class-Dinophyceae|order-Peridiniales	order	Peridiniales	2910	17.2731	68.5969	1528	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	species	Brandtodinium nutricula	1333877	17.2731	60.9303	1528	88461

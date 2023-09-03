@@ -1,0 +1,27 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Tripos fusus	2916	species	74	428	82.22%	25.88%	99.27%	132892
+Oikopleura longicauda	107032	species	58	829	79.45%	21.96%	97.89%	120130
+Calanus sinicus	114070	species	2	19	66.67%	48.86%	96.26%	1470
+Amphilonche elongata	1127133	species	1	7	50.0%	21.49%	98.35%	2250
+Prasinoderma singulare	676789	species	44	140	48.35%	15.33%	99.69%	121534
+Brandtodinium nutricula	1333877	species	20	45	28.17%	13.0%	99.38%	88461
+Chloropicon roscoffensis	1461544	species	41	109	25.95%	12.52%	99.15%	275974
+Dinophysis acuminata	47934	species	22	56	23.4%	13.69%	97.67%	125543
+Lithomelissa setosa	1054399	species	1	41	20.0%	90.14%	96.01%	2562
+Pelagomonas calceolata	35677	species	13	29	16.88%	7.31%	98.52%	128353
+Aureococcus anophagefferens	44056	species	7	15	10.77%	8.51%	98.44%	85991
+Gephyrocapsa oceanica	38817	species	10	19	10.0%	8.86%	98.62%	137559
+Oikopleura albicans	2500139	species	7	13	7.45%	15.04%	98.77%	126693
+Protoceratium reticulatum	133427	species	4	7	5.0%	17.01%	98.42%	112099
+Pelagococcus subviridis	35679	species	3	4	4.55%	4.31%	97.73%	79272
+Phaeocystis globosa	33658	species	5	13	4.31%	19.06%	99.21%	154798
+Phaeocystis antarctica	33657	species	3	9	3.0%	6.57%	98.52%	158488
+Pleurobrachia bachei	34499	species	3	5	2.19%	28.62%	97.39%	271180
+Pseudo-nitzschia heimii	476441	species	2	4	1.82%	10.66%	99.12%	176338
+Alternaria sect. Alternaria	2499237	section	1	1	1.56%	20.65%	100.0%	83976
+Malassezia restricta	76775	species	2	3	1.33%	2.99%	100.0%	348317
+Calcidiscus leptoporus	127549	species	1	1	1.18%	4.84%	100.0%	114854
+Hortaea werneckii EXF-2000	1157616	species	4	6	1.08%	5.55%	97.33%	717212
+Lingulodinium polyedra	160621	species	1	2	0.92%	10.06%	99.3%	165396
+Bathycoccus prasinos	41875	species	1	2	0.81%	6.75%	100.0%	229209
+Acartia fossae	1453877	species	1	2	0.55%	8.31%	97.32%	227099

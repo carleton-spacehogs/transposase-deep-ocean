@@ -1,0 +1,40 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Pelagococcus subviridis	35679	species	62	1386	93.94%	60.45%	99.2%	79272
+Tripos fusus	2916	species	84	1548	93.33%	57.75%	99.01%	132892
+Prasinoderma singulare	676789	species	84	1087	92.31%	42.59%	99.31%	121534
+Pycnococcus provasolii	41880	species	69	507	71.13%	32.02%	99.45%	119181
+Dinophysis acuminata	47934	species	53	174	56.38%	18.01%	98.67%	125543
+Amphilonche elongata	1127133	species	1	4	50.0%	22.79%	98.18%	2250
+Pelagomonas calceolata	35677	species	36	298	46.75%	22.71%	98.44%	128353
+Phaeocystis antarctica	33657	species	42	400	42.0%	25.48%	96.84%	158488
+Protoceratium reticulatum	133427	species	25	58	31.25%	15.8%	99.83%	112099
+Brandtodinium nutricula	1333877	species	17	32	23.94%	11.81%	98.91%	88461
+Lithomelissa setosa	1054399	species	1	983	20.0%	100.0%	72.14%	2562
+Alexandrium catenella	2925	species	12	18	13.04%	11.44%	98.48%	112057
+Pelagodinium beii	43686	species	11	20	12.22%	10.08%	99.34%	127026
+Azadinium spinosum	632150	species	3	5	10.71%	8.6%	98.78%	41582
+Prorocentrum cordatum	2364126	species	10	19	10.1%	9.08%	97.43%	135765
+Arcocellulus cornucervis	1155433	species	8	20	9.64%	13.51%	98.87%	107135
+Phaeocystis globosa	33658	species	11	36	9.48%	21.46%	98.22%	154798
+Gonyaulax spinifera	66791	species	6	8	8.57%	12.91%	97.51%	72996
+Amoebophrya sp. AT5.2	1775427	species	1	1	4.55%	4.99%	98.89%	36997
+Ostreococcus lucimarinus CCE9901	436017	species	4	8	3.51%	7.07%	99.23%	233346
+Aureococcus anophagefferens	44056	species	2	3	3.08%	15.52%	99.28%	85991
+Gephyrocapsa oceanica	38817	species	2	3	2.0%	20.05%	97.66%	137559
+Malassezia restricta	76775	species	3	6	2.0%	4.91%	99.24%	348317
+Lingulodinium polyedra	160621	species	2	4	1.83%	8.95%	96.59%	165396
+Thalassiothrix antarctica	1049557	species	2	3	1.72%	7.42%	96.31%	177575
+Hortaea werneckii EXF-2000	1157616	species	4	6	1.08%	2.77%	99.5%	717212
+Chrysotila carterae	13221	species	1	2	1.02%	2.67%	96.74%	144814
+Thalassiosira oceanica	159749	species	1	1	1.02%	10.55%	97.03%	165190
+Cylindrotheca closterium	2856	species	1	1	0.93%	13.41%	100.0%	181103
+Corethron pennatum	218684	species	1	2	0.84%	11.09%	99.37%	169912
+Acaulopage tetraceros	1172177	species	1	2	0.83%	1.82%	95.96%	296010
+Chaetoceros affinis	426623	species	1	2	0.78%	12.73%	99.5%	197912
+Alexandrium tamarense	2926	species	1	2	0.71%	19.72%	96.45%	194024
+Fragilariopsis kerguelensis	186038	species	1	2	0.66%	14.92%	98.8%	252214
+Chloropicon roscoffensis	1461544	species	1	2	0.63%	3.34%	99.1%	275974
+Wickerhamomyces anomalus NRRL Y-366-8	683960	species	1	2	0.57%	3.81%	100.0%	287658
+Rhodotorula sp. JG-1b	1305733	species	1	2	0.56%	5.25%	100.0%	395750
+Puccinia triticina 1-1 BBBD Race 1	630390	species	1	2	0.55%	18.1%	100.0%	326961
+Puccinia coronata var. avenae f. sp. avenae	200324	varietas	1	2	0.5%	2.89%	100.0%	388186
