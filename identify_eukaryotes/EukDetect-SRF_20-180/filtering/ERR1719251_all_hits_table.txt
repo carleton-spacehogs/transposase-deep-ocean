@@ -1,0 +1,51 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Phaeocystis rex	1631189	species	28	144	71.79%	28.66%	99.54%	40152
+Tripos fusus	2916	species	64	280	71.11%	21.01%	99.22%	132892
+Brandtodinium nutricula	1333877	species	49	166	69.01%	19.49%	99.5%	88461
+Thalassionema frauenfeldii	186022	species	71	675	66.98%	26.59%	97.51%	154802
+Oithona nana	136191	species	89	791	59.73%	17.96%	96.75%	244880
+Amphilonche elongata	1127133	species	1	8	50.0%	38.48%	98.15%	2250
+Pelagomonas calceolata	35677	species	30	269	38.96%	23.27%	97.54%	128353
+Chloropicon roscoffensis	1461544	species	49	176	31.01%	10.89%	99.28%	275974
+Pycnococcus provasolii	41880	species	30	82	30.93%	18.4%	98.8%	119181
+Alexandrium andersonii	327968	species	6	13	22.22%	15.44%	99.17%	29644
+Chloropicon laureae	464258	species	12	28	21.43%	20.14%	99.4%	50762
+Helicotheca tamesis	374047	species	8	16	20.51%	10.29%	99.82%	39616
+Scyphosphaera apsteinii	418940	species	16	44	20.0%	10.38%	99.78%	113512
+Gephyrocapsa oceanica	38817	species	18	33	18.0%	10.86%	99.08%	137559
+Corethron hystrix	216773	species	11	24	15.94%	11.2%	98.8%	86215
+Alveolata	33630	superkingdom	1	2	14.29%	8.24%	96.15%	6135
+Chloropicon mariensis	1606511	species	13	40	11.82%	13.32%	98.52%	157984
+Chloropicon primus	1764295	species	14	36	10.14%	10.15%	99.68%	281336
+Emiliania huxleyi CCMP1516	280463	species	3	5	8.82%	12.3%	99.74%	44652
+unclassified Ostreococcus	2268852	genus	1	1	8.33%	4.51%	100.0%	18843
+Ostreococcus sp. SAG12	2590007	species	1	2	7.69%	5.51%	99.0%	29000
+Arcocellulus cornucervis	1155433	species	4	7	4.82%	12.66%	98.08%	107135
+Oikopleura longicauda	107032	species	3	49	4.11%	9.95%	95.97%	120130
+Prasinococcaceae	2201465	family	1	2	4.0%	9.67%	100.0%	36508
+Micromonas pusilla	38833	species	1	2	3.85%	6.47%	97.51%	49695
+Oikopleura dioica	34765	species	3	94	3.8%	9.46%	96.19%	176745
+Pelagodinium beii	43686	species	3	6	3.33%	14.8%	98.52%	127026
+Pseudo-nitzschia heimii	476441	species	3	5	2.73%	8.79%	97.43%	176338
+Phaeocystis globosa	33658	species	3	5	2.59%	12.29%	99.73%	154798
+Protoceratium reticulatum	133427	species	2	2	2.5%	13.05%	100.0%	112099
+Prasinoderma coloniale	156133	species	2	3	2.33%	10.16%	100.0%	155270
+Paraphysomonas bandaiensis	89770	species	2	4	2.25%	9.93%	100.0%	154847
+Phaeocystis antarctica	33657	species	2	5	2.0%	4.5%	98.21%	158488
+Effrenium voratum	2562239	species	2	4	1.92%	10.03%	97.74%	156738
+unclassified Bathycoccus	2590008	genus	1	2	1.92%	12.91%	99.44%	95463
+Rhizosolenia setigera	3005	species	2	4	1.9%	10.17%	98.74%	165278
+Scrippsiella trochoidea	71861	species	2	4	1.77%	13.46%	97.86%	163897
+Alternaria sect. Alternaria	2499237	section	1	1	1.56%	15.72%	100.0%	83976
+Stephanopyxis turris	515487	species	1	1	1.22%	3.65%	100.0%	96388
+Micromonas	38832	genus	2	4	1.12%	10.93%	98.13%	358692
+Pseudo-nitzschia fraudulenta	183588	species	1	1	1.1%	13.15%	98.02%	108708
+Prasinoderma singulare	676789	species	1	2	1.1%	13.87%	99.46%	121534
+Chloroparvula japonica	1411623	species	1	2	1.1%	18.36%	100.0%	149101
+Leptocylindrus danicus	163516	species	2	4	1.08%	11.32%	99.26%	278595
+Thalassiosira oceanica	159749	species	1	2	1.02%	3.53%	98.02%	165190
+Bursaphelenchus xylophilus	6326	species	1	1	1.01%	2.5%	97.03%	159590
+Malassezia restricta	76775	species	1	1	0.67%	1.35%	97.03%	348317
+Batrachochytrium salamandrivorans	1357716	species	1	2	0.59%	4.33%	95.96%	292885
+Hortaea werneckii EXF-2000	1157616	species	2	3	0.54%	6.31%	99.19%	717212
+Exophiala oligosperma	215243	species	1	2	0.5%	5.72%	100.0%	386708

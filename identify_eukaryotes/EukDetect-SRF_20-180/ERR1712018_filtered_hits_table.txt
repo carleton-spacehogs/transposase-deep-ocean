@@ -1,0 +1,12 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Oithona nana	species	phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	136191	38	322	25.5%	15.33%	96.57%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	19	40	12.67%	4.09%	99.06%
+Chloropicon roscoffensis	species	phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	1461544	19	126	12.03%	11.88%	99.22%
+Oikopleura longicauda	species	phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	107032	8	446	10.96%	17.1%	94.23%
+Ostreococcus sp. SAG10	species	phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._SAG10	2590005	2	5	8.0%	4.15%	99.43%
+Tripos fusus	species	class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	2916	6	31	6.67%	22.86%	98.85%
+Phaeocystis rex	species	phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_rex	1631189	2	4	5.13%	15.8%	98.23%
+Helicotheca tamesis	species	phylum-Bacillariophyta|class-Mediophyceae|order-Lithodesmiales|family-Lithodesmiaceae|genus-Helicotheca|species-Helicotheca_tamesis	374047	2	5	5.13%	7.54%	98.52%
+Chloropicon primus	species	phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_primus	1764295	3	17	2.17%	6.23%	99.76%
+Effrenium voratum	species	class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Effrenium|species-Effrenium_voratum	2562239	2	15	1.92%	19.27%	98.49%
+Gongronella sp. w5	species	phylum-Mucoromycota|class-Mucoromycetes|order-Mucorales|family-Cunninghamellaceae|genus-Gongronella|species-Gongronella_sp._w5	483437	3	4	1.64%	2.79%	98.72%

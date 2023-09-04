@@ -1,0 +1,40 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+class-Dinophyceae	class	Dinophyceae	2864	1.3869	3.0448	1253	903473
+class-Dinophyceae|order-Gonyaulacales	order	Gonyaulacales	40984	1.1344	2.1137	372	327932
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium	genus	Alexandrium	2924	0.1687	0.2534	5	29644
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium|species-Alexandrium_andersonii	species	Alexandrium andersonii	327968	0.1687	0.2534	5	29644
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos	genus	Tripos	2126447	2.6488	3.98	352	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	species	Tripos fusus	2916	2.6488	3.98	352	132892
+class-Dinophyceae|order-Gonyaulacales|genus-Lingulodinium	genus	Lingulodinium	160620	0.0907	0.1363	15	165396
+class-Dinophyceae|order-Gonyaulacales|genus-Lingulodinium|species-Lingulodinium_polyedra	species	Lingulodinium polyedra	160621	0.0907	0.1363	15	165396
+class-Dinophyceae|order-Suessiales	order	Suessiales	89954	0.5848	1.0897	189	323183
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Effrenium	genus	Effrenium	2562238	0.9698	1.4572	152	156738
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Effrenium|species-Effrenium_voratum	species	Effrenium voratum	2562239	0.9698	1.4572	152	156738
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Cladocopium	genus	Cladocopium	2486696	10.157	15.2617	11	1083
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Cladocopium|species-Cladocopium_sp._clade_C	species	Cladocopium sp. clade C	293275	10.157	15.2617	11	1083
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Durusdinium	genus	Durusdinium	2486699	0.5217	0.7839	20	38336
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Durusdinium|species-Durusdinium_trenchii	species	Durusdinium trenchii	1381693	0.5217	0.7839	20	38336
+class-Dinophyceae|order-Suessiales|family-Suessiaceae|genus-Pelagodinium	genus	Pelagodinium	766107	0.0472	0.071	6	127026
+class-Dinophyceae|order-Suessiales|family-Suessiaceae|genus-Pelagodinium|species-Pelagodinium_beii	species	Pelagodinium beii	43686	0.0472	0.071	6	127026
+class-Dinophyceae|order-Peridiniales	order	Peridiniales	2910	7.7435	14.4287	685	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium	genus	Brandtodinium	1482939	7.7435	11.6353	685	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	species	Brandtodinium nutricula	1333877	7.7435	11.6353	685	88461
+class-Dinophyceae|order-Thoracosphaerales	order	Thoracosphaerales	33835	0.0427	0.0796	7	163897
+class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae|genus-Scrippsiella	genus	Scrippsiella	54902	0.0427	0.0642	7	163897
+class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae|genus-Scrippsiella|species-Scrippsiella_trochoidea	species	Scrippsiella trochoidea	71861	0.0427	0.0642	7	163897
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.1163	0.2554	16	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales	order	Isochrysidales	73020	0.1163	0.2167	16	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa	genus	Gephyrocapsa	38816	0.1163	0.1748	16	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	species	Gephyrocapsa oceanica	38817	0.1163	0.1748	16	137559
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.0287	0.063	10	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.0287	0.0535	10	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.0287	0.0431	10	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.0287	0.0431	10	348317
+phylum-Arthropoda|class-Hexanauplia	class	Hexanauplia	72037	43.8378	96.2434	10735	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida	order	Cyclopoida	84308	43.8378	81.6842	10735	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona	genus	Oithona	136190	43.8378	65.8699	10735	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	species	Oithona nana	136191	43.8378	65.8699	10735	244880
+class-Pelagophyceae	class	Pelagophyceae	35675	0.1792	0.3934	23	128353
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	0.1792	0.3339	23	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	0.1792	0.2693	23	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	0.1792	0.2693	23	128353

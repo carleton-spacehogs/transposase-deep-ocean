@@ -1,0 +1,45 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Tripos fusus	2916	species	68	382	75.56%	23.38%	99.17%	132892
+Calanus sinicus	114070	species	2	11	66.67%	43.63%	98.07%	1470
+Pycnococcus provasolii	41880	species	60	375	61.86%	30.43%	99.26%	119181
+Corethron hystrix	216773	species	42	207	60.87%	21.33%	98.46%	86215
+Arcocellulus cornucervis	1155433	species	46	208	55.42%	22.12%	98.99%	107135
+Protoceratium reticulatum	133427	species	36	91	45.0%	12.87%	99.39%	112099
+Pelagococcus subviridis	35679	species	24	66	36.36%	16.05%	99.48%	79272
+Lithomelissa setosa	1054399	species	1	170	20.0%	88.42%	92.21%	2562
+Prasinoderma singulare	676789	species	14	31	15.38%	11.12%	99.82%	121534
+Alveolata	33630	superkingdom	1	1	14.29%	12.33%	97.8%	6135
+Tetrahymena thermophila	5911	species	1	2	12.5%	6.9%	100.0%	15300
+Pseudo-nitzschia heimii	476441	species	12	23	10.91%	8.67%	98.73%	176338
+Bathycoccus prasinos	41875	species	8	17	6.5%	4.19%	98.62%	229209
+Puccinia coronata var. avenae f. sp. avenae	200324	varietas	10	19	5.03%	8.73%	99.46%	388186
+Puccinia triticina 1-1 BBBD Race 1	630390	species	9	17	4.92%	7.79%	99.84%	326961
+Ostreococcus lucimarinus CCE9901	436017	species	5	9	4.39%	3.83%	99.38%	233346
+Hemiselmis rufescens	77926	species	2	4	4.26%	11.5%	100.0%	62987
+Minutocellus polymorphus	265543	species	6	9	4.03%	9.51%	97.76%	256500
+Malassezia restricta	76775	species	6	10	4.0%	3.2%	98.64%	348317
+Hortaea werneckii EXF-2000	1157616	species	12	19	3.23%	9.54%	99.15%	717212
+Emiliania huxleyi CCMP1516	280463	species	1	1	2.94%	7.82%	99.0%	44652
+Pelagomonas calceolata	35677	species	2	3	2.6%	5.6%	98.94%	128353
+Heterocapsa arctica	192219	species	2	2	2.38%	2.41%	98.02%	110745
+Thalassiosira oceanica	159749	species	2	3	2.04%	6.29%	97.62%	165190
+Prorocentrum cordatum	2364126	species	2	4	2.02%	9.59%	96.86%	135765
+Gephyrocapsa oceanica	38817	species	2	3	2.0%	6.97%	98.6%	137559
+Thalassionema frauenfeldii	186022	species	2	4	1.89%	9.82%	97.82%	154802
+Eukaryota	2759	superkingdom	4	7	1.56%	3.53%	98.57%	467758
+Blumeria graminis f. sp. tritici	62690	species	3	5	1.45%	6.9%	99.3%	337764
+Oikopleura longicauda	107032	species	1	2	1.37%	2.79%	97.3%	120130
+Oikopleura dioica	34765	species	1	1	1.27%	26.51%	98.02%	176745
+Karlodinium veneficum	407301	species	1	2	1.14%	17.09%	99.17%	136208
+Phaeocystis antarctica	33657	species	1	1	1.0%	1.48%	99.01%	158488
+Thalassionema nitzschioides	33649	species	1	2	0.91%	6.03%	96.88%	171917
+Thalassiosira punctigera	265564	species	1	2	0.88%	7.82%	99.5%	184275
+Acaulopage tetraceros	1172177	species	1	3	0.83%	1.75%	95.79%	296010
+Thalassiosira minuscula	385413	species	1	2	0.79%	11.54%	99.26%	220844
+Tisbe holothuriae	2056173	species	1	5	0.74%	24.55%	95.41%	231941
+Alexandrium tamarense	2926	species	1	2	0.71%	6.22%	98.11%	194024
+Pollicipes pollicipes	41117	species	1	1	0.56%	1.15%	96.39%	311603
+Cladosporium sp. SL-16	2048672	species	1	2	0.5%	4.83%	97.96%	366513
+Pyrenophora teres f. teres	97479	forma	1	1	0.49%	5.15%	100.0%	364472
+Stemphylium vesicarium	119933	species	1	2	0.48%	8.56%	100.0%	369073
+Puccinia hordei	27345	species	1	2	0.48%	6.54%	98.78%	386838

@@ -1,0 +1,46 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.1514	0.1367	38	251071
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa	genus	Gephyrocapsa	38816	0.109	0.0761	15	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	species	Gephyrocapsa oceanica	38817	0.109	0.0761	15	137559
+phylum-Haptista|class-Haptophyta|order-Coccosphaerales|family-Pontosphaeraceae|genus-Scyphosphaera	genus	Scyphosphaera	2134067	0.2026	0.1414	23	113512
+phylum-Haptista|class-Haptophyta|order-Coccosphaerales|family-Pontosphaeraceae|genus-Scyphosphaera|species-Scyphosphaera_apsteinii	species	Scyphosphaera apsteinii	418940	0.2026	0.1414	23	113512
+class-Dinophyceae	class	Dinophyceae	2864	4.8814	4.4093	3453	707384
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos	genus	Tripos	2126447	3.4991	2.4422	465	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	species	Tripos fusus	2916	3.4991	2.4425	465	132892
+class-Dinophyceae|order-Gonyaulacales|genus-Lingulodinium	genus	Lingulodinium	160620	0.0242	0.0169	4	165396
+class-Dinophyceae|order-Gonyaulacales|genus-Lingulodinium|species-Lingulodinium_polyedra	species	Lingulodinium polyedra	160621	0.0242	0.0169	4	165396
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium	genus	Brandtodinium	1482939	33.608	23.4565	2973	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	species	Brandtodinium nutricula	1333877	33.608	23.4593	2973	88461
+class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae|genus-Scrippsiella	genus	Scrippsiella	54902	0.0244	0.017	4	163897
+class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae|genus-Scrippsiella|species-Scrippsiella_trochoidea	species	Scrippsiella trochoidea	71861	0.0244	0.017	4	163897
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Effrenium	genus	Effrenium	2562238	0.0447	0.0312	7	156738
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Effrenium|species-Effrenium_voratum	species	Effrenium voratum	2562239	0.0447	0.0312	7	156738
+phylum-Bacillariophyta|class-Fragilariophyceae	class	Fragilariophyceae	33853	0.0323	0.0292	5	154802
+phylum-Bacillariophyta|class-Fragilariophyceae|order-Thalassionemales|family-Thalassionemataceae|genus-Thalassionema	genus	Thalassionema	33648	0.0323	0.0225	5	154802
+phylum-Bacillariophyta|class-Fragilariophyceae|order-Thalassionemales|family-Thalassionemataceae|genus-Thalassionema|species-Thalassionema_frauenfeldii	species	Thalassionema frauenfeldii	186022	0.0323	0.0225	5	154802
+class-Pelagophyceae	class	Pelagophyceae	35675	0.1247	0.1126	16	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	0.1247	0.087	16	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	0.1247	0.087	16	128353
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	0.0718	0.0649	31	431654
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloroparvula	genus	Chloroparvula	2302916	0.114	0.0796	17	149101
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloroparvula|species-Chloroparvula_japonica	species	Chloroparvula japonica	1411623	0.114	0.0796	17	149101
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.0495	0.0346	14	282553
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	0.0326	0.0228	9	275974
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.0201	0.0182	7	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.0201	0.014	7	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.0201	0.014	7	348317
+phylum-Ascomycota|class-Dothideomycetes	class	Dothideomycetes	147541	0.4271	0.3858	8	18729
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea	genus	Hortaea	91942	0.4271	0.2981	8	18729
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	species	Hortaea werneckii	91943	0.4271	0.2982	8	18729
+phylum-Chordata|class-Appendicularia	class	Appendicularia	30302	9.2483	8.3539	1111	120130
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura	genus	Oikopleura	34763	9.2483	6.4548	1111	120130
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	species	Oikopleura longicauda	107032	9.2483	6.4556	1111	120130
+phylum-Arthropoda|class-Hexanauplia	class	Hexanauplia	72037	0.5676	0.5127	139	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona	genus	Oithona	136190	0.5676	0.3962	139	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	species	Oithona nana	136191	0.5676	0.3962	139	244880
+class-Acantharea	class	Acantharea	65574	95.1111	85.9126	214	2250
+class-Acantharea|order-Arthracanthida|family-Acanthometridae|genus-Amphilonche	genus	Amphilonche	1127132	95.1111	66.3823	214	2250
+class-Acantharea|order-Arthracanthida|family-Acanthometridae|genus-Amphilonche|species-Amphilonche_elongata	species	Amphilonche elongata	1127133	95.1111	66.3901	214	2250
+phylum-Cercozoa|class-Chlorarachniophyceae	class	Chlorarachniophyceae	29197	0.071	0.0641	4	56325
+phylum-Cercozoa|class-Chlorarachniophyceae|genus-Lotharella	genus	Lotharella	74819	0.071	0.0496	4	56325
+phylum-Cercozoa|class-Chlorarachniophyceae|genus-Lotharella|species-Lotharella_oceanica	species	Lotharella oceanica	641309	0.071	0.0496	4	56325

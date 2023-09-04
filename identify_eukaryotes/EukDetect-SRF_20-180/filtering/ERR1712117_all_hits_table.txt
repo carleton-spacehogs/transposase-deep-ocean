@@ -1,0 +1,20 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Oithona nana	136191	species	105	1256	70.47%	21.24%	96.45%	244880
+Amphilonche elongata	1127133	species	1	2	50.0%	11.96%	100.0%	2250
+Oikopleura longicauda	107032	species	10	450	13.7%	14.63%	95.89%	120130
+Tripos fusus	2916	species	11	44	12.22%	17.46%	98.51%	132892
+Brandtodinium nutricula	1333877	species	4	23	5.63%	22.14%	99.53%	88461
+Effrenium voratum	2562239	species	5	31	4.81%	18.08%	98.07%	156738
+Pelagomonas calceolata	35677	species	3	11	3.9%	11.09%	98.22%	128353
+Malassezia restricta	76775	species	4	6	2.67%	4.17%	98.06%	348317
+Durusdinium trenchii	1381693	species	1	2	2.17%	30.84%	97.03%	38336
+Chloropicon roscoffensis	1461544	species	2	4	1.27%	9.12%	98.87%	275974
+Malassezia globosa CBS 7966	425265	species	2	3	1.27%	4.37%	97.89%	332937
+Hortaea werneckii EXF-2000	1157616	species	4	7	1.08%	3.01%	99.6%	717212
+Bursaphelenchus xylophilus	6326	species	1	1	1.01%	2.26%	96.7%	159590
+Gephyrocapsa oceanica	38817	species	1	1	1.0%	2.58%	98.99%	137559
+Prasinococcaceae sp. CCMP 1430	2489100	species	1	2	0.92%	13.65%	100.0%	225148
+Chloropicon mariensis	1606511	species	1	11	0.91%	51.87%	98.46%	157984
+Scrippsiella trochoidea	71861	species	1	2	0.88%	20.62%	98.99%	163897
+Hanseniaspora uvarum	29833	species	1	4	0.87%	7.93%	100.0%	220680
+Stylophora pistillata	50429	species	1	2	0.67%	18.46%	100.0%	238357

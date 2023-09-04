@@ -1,0 +1,39 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Amphilonche elongata	1127133	species	2	214	100.0%	78.76%	96.73%	2250
+Brandtodinium nutricula	1333877	species	71	2973	100.0%	83.5%	98.81%	88461
+Tripos fusus	2916	species	73	465	81.11%	27.85%	98.59%	132892
+Oithona nana	136191	species	45	139	30.2%	13.35%	97.34%	244880
+Oikopleura longicauda	107032	species	11	1111	15.07%	16.07%	94.19%	120130
+Scyphosphaera apsteinii	418940	species	12	23	15.0%	10.3%	99.29%	113512
+Gephyrocapsa oceanica	38817	species	7	15	7.0%	11.43%	98.54%	137559
+Chloroparvula japonica	1411623	species	6	17	6.59%	11.2%	100.0%	149101
+Pelagomonas calceolata	35677	species	4	16	5.19%	22.39%	97.48%	128353
+Prasinococcaceae	2201465	family	1	2	4.0%	16.25%	100.0%	36508
+Lotharella oceanica	641309	species	2	4	3.28%	9.03%	100.0%	56325
+Chloropicon roscoffensis	1461544	species	5	9	3.16%	6.8%	99.87%	275974
+Holothuria glaberrima	31192	species	2	3	2.94%	17.94%	96.35%	83715
+Effrenium voratum	2562239	species	3	7	2.88%	8.54%	98.83%	156738
+Thalassionema frauenfeldii	186022	species	3	5	2.83%	14.22%	98.66%	154802
+Malassezia restricta	76775	species	4	7	2.67%	3.36%	99.65%	348317
+Acanthamoeba rhysodes	32599	species	2	3	2.6%	15.76%	98.31%	113910
+Helicotheca tamesis	374047	species	1	2	2.56%	7.2%	100.0%	39616
+Durusdinium trenchii	1381693	species	1	1	2.17%	16.84%	97.98%	38336
+Phaeocystis antarctica	33657	species	2	2	2.0%	7.27%	97.34%	158488
+Lingulodinium polyedra	160621	species	2	4	1.83%	16.77%	97.87%	165396
+Chloropicon mariensis	1606511	species	2	3	1.82%	10.06%	99.33%	157984
+Scrippsiella trochoidea	71861	species	2	4	1.77%	15.59%	97.74%	163897
+Fritillaria borealis	2507563	species	1	2	1.59%	3.91%	96.51%	117198
+Hortaea werneckii EXF-2000	1157616	species	5	8	1.35%	3.9%	99.86%	717212
+Acanthamoeba lugdunensis	61605	species	1	2	1.2%	10.62%	97.78%	108538
+Karlodinium veneficum	407301	species	1	1	1.14%	19.96%	99.01%	136208
+Pelagodinium beii	43686	species	1	2	1.11%	7.33%	98.35%	127026
+Bursaphelenchus xylophilus	6326	species	1	2	1.01%	2.65%	95.33%	159590
+Pyrodinium bahamense	73915	species	1	2	0.94%	5.86%	100.0%	145514
+Prasinococcaceae sp. CCMP 1430	2489100	species	1	1	0.92%	4.68%	99.01%	225148
+Phaeocystis globosa	33658	species	1	2	0.86%	7.35%	99.37%	154798
+Chaetoceros affinis	426623	species	1	1	0.78%	12.2%	99.01%	197912
+Pleurobrachia bachei	34499	species	1	1	0.73%	4.43%	97.03%	271180
+Chloropicon primus	1764295	species	1	2	0.72%	5.3%	99.48%	281336
+Acanthaster planci	133434	species	1	3	0.62%	2.62%	97.03%	251068
+Batrachochytrium salamandrivorans	1357716	species	1	2	0.59%	4.46%	96.08%	292885
+Epicoccum nigrum	105696	species	1	2	0.49%	13.38%	100.0%	360210

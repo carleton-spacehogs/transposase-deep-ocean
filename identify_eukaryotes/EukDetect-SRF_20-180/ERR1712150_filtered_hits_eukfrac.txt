@@ -1,0 +1,45 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+class-Dinophyceae	class	Dinophyceae	2864	0.4364	2.0736	58	132892
+class-Dinophyceae|order-Gonyaulacales	order	Gonyaulacales	40984	0.4364	2.0128	58	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae	family	Ceratiaceae	39451	0.4364	2.0128	58	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos	genus	Tripos	2126447	0.4364	2.0128	58	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	species	Tripos fusus	2916	0.4364	2.1045	58	132892
+phylum-Bacillariophyta|class-Fragilariophyceae	class	Fragilariophyceae	33853	1.6731	7.9492	259	154802
+phylum-Bacillariophyta|class-Fragilariophyceae|order-Thalassionemales	order	Thalassionemales	426665	1.6731	7.7161	259	154802
+phylum-Bacillariophyta|class-Fragilariophyceae|order-Thalassionemales|family-Thalassionemataceae	family	Thalassionemataceae	38755	1.6731	7.7161	259	154802
+phylum-Bacillariophyta|class-Fragilariophyceae|order-Thalassionemales|family-Thalassionemataceae|genus-Thalassionema	genus	Thalassionema	33648	1.6731	7.7161	259	154802
+phylum-Bacillariophyta|class-Fragilariophyceae|order-Thalassionemales|family-Thalassionemataceae|genus-Thalassionema|species-Thalassionema_frauenfeldii	species	Thalassionema frauenfeldii	186022	1.6731	8.0677	259	154802
+phylum-Bacillariophyta|class-Coscinodiscophyceae	class	Coscinodiscophyceae	33836	0.7303	3.4699	348	476507
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Leptocylindrales	order	Leptocylindrales	163513	0.962	4.4365	268	278595
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Leptocylindrales|family-Leptocylindraceae	family	Leptocylindraceae	163514	0.962	4.4365	268	278595
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Leptocylindrales|family-Leptocylindraceae|genus-Leptocylindrus	genus	Leptocylindrus	163515	0.962	4.4365	268	278595
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Leptocylindrales|family-Leptocylindraceae|genus-Leptocylindrus|species-Leptocylindrus_danicus	species	Leptocylindrus danicus	163516	0.962	4.6386	268	278595
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Chaetocerotales	order	Chaetocerotales	265576	0.4042	1.8642	80	197912
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Chaetocerotales|family-Chaetocerotaceae	family	Chaetocerotaceae	49236	0.4042	1.8642	80	197912
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Chaetocerotales|family-Chaetocerotaceae|genus-Chaetoceros	genus	Chaetoceros	49237	0.4042	1.8642	80	197912
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Chaetocerotales|family-Chaetocerotaceae|genus-Chaetoceros|species-Chaetoceros_affinis	species	Chaetoceros affinis	426623	0.4042	1.9492	80	197912
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.3074	1.4604	112	364384
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.3074	1.4175	112	364384
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae	family	Malasseziaceae	742845	0.3074	1.4175	112	364384
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.3074	1.4175	112	364384
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.2986	1.4398	104	348317
+phylum-Ascomycota|class-Eurotiomycetes	class	Eurotiomycetes	147545	0.0332	0.1579	12	361128
+phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales	order	Eurotiales	5042	0.0332	0.1532	12	361128
+phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae	family	Aspergillaceae	1131492	0.0332	0.1532	12	361128
+phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae|genus-Penicillium	genus	Penicillium	5073	0.0332	0.1532	12	361128
+phylum-Ascomycota|class-Eurotiomycetes|order-Eurotiales|family-Aspergillaceae|genus-Penicillium|species-Penicillium_nalgiovense	species	Penicillium nalgiovense	60175	0.0332	0.1602	12	361128
+phylum-Cnidaria|class-Hydrozoa	class	Hydrozoa	6074	0.0989	0.4698	23	232614
+phylum-Cnidaria|class-Hydrozoa|order-Leptothecata	order	Leptothecata	500008	0.0989	0.456	23	232614
+phylum-Cnidaria|class-Hydrozoa|order-Leptothecata|family-Campanulariidae	family	Campanulariidae	27800	0.0989	0.456	23	232614
+phylum-Cnidaria|class-Hydrozoa|order-Leptothecata|family-Campanulariidae|genus-Clytia	genus	Clytia	13436	0.0989	0.456	23	232614
+phylum-Cnidaria|class-Hydrozoa|order-Leptothecata|family-Campanulariidae|genus-Clytia|species-Clytia_hemisphaerica	species	Clytia hemisphaerica	252671	0.0989	0.4768	23	232614
+phylum-Chordata|class-Appendicularia	class	Appendicularia	30302	7.3793	35.0603	952	129010
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	7.3793	34.0321	952	129010
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae	family	Oikopleuridae	41302	7.3793	34.0321	952	129010
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura	genus	Oikopleura	34763	7.3793	34.0321	952	129010
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	species	Oikopleura longicauda	107032	6.443	31.0684	774	120130
+phylum-Arthropoda|class-Hexanauplia	class	Hexanauplia	72037	10.3888	49.3589	2544	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida	order	Cyclopoida	84308	10.3888	47.9115	2544	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae	family	Oithonidae	136189	10.3888	47.9115	2544	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona	genus	Oithona	136190	10.3888	47.9115	2544	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	species	Oithona nana	136191	10.3888	50.0948	2544	244880

@@ -1,0 +1,32 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Brandtodinium nutricula	1333877	species	68	996	95.77%	55.43%	99.27%	88461
+Tripos fusus	2916	species	80	524	88.89%	27.21%	98.73%	132892
+Amphilonche elongata	1127133	species	1	28	50.0%	69.45%	98.72%	2250
+Chloropicon roscoffensis	1461544	species	75	364	47.47%	15.0%	99.23%	275974
+Pelagomonas calceolata	35677	species	27	103	35.06%	14.31%	98.19%	128353
+Oithona nana	136191	species	45	155	30.2%	10.68%	97.28%	244880
+Gephyrocapsa oceanica	38817	species	15	33	15.0%	9.81%	99.19%	137559
+Alexandrium andersonii	327968	species	4	11	14.81%	19.35%	98.84%	29644
+Symbiodinium sp. clade A Y106	1563115	no rank	1	2	14.29%	4.0%	96.43%	13782
+Oikopleura longicauda	107032	species	8	301	10.96%	14.99%	95.56%	120130
+Lingulodinium polyedra	160621	species	10	20	9.17%	13.27%	98.46%	165396
+Effrenium voratum	2562239	species	9	24	8.65%	10.53%	97.56%	156738
+Hortaea werneckii EXF-2000	1157616	species	25	51	6.74%	5.51%	99.36%	717212
+Oikopleura dioica	34765	species	5	13	6.33%	4.69%	97.5%	176745
+Chloropicon laureae	464258	species	3	6	5.36%	12.72%	99.57%	50762
+Chloropicon mariensis	1606511	species	5	12	4.55%	10.75%	98.9%	157984
+Scrippsiella trochoidea	71861	species	4	7	3.54%	14.24%	96.48%	163897
+Emiliania huxleyi CCMP1516	280463	species	1	2	2.94%	22.37%	98.71%	44652
+Durusdinium trenchii	1381693	species	1	2	2.17%	36.23%	96.0%	38336
+Malassezia restricta	76775	species	3	5	2.0%	3.09%	98.98%	348317
+Partenskyella glossopodia	552666	species	1	2	1.67%	19.24%	98.02%	83769
+Acanthamoeba rhysodes	32599	species	1	2	1.3%	24.82%	97.14%	113910
+Prasinoderma singulare	676789	species	1	2	1.1%	4.41%	100.0%	121534
+Busseola fusca	236788	species	1	1	1.1%	7.36%	96.39%	119389
+Thalassiosira oceanica	159749	species	1	2	1.02%	9.84%	96.39%	165190
+Alexandrium monilatum	311494	species	1	2	0.8%	9.46%	100.0%	184592
+Mnemiopsis leidyi	27923	species	1	1	0.75%	3.89%	97.03%	220847
+Alexandrium tamarense	2926	species	1	1	0.71%	7.26%	97.0%	194024
+Calocera viscosa TUFC12733	1330018	species	1	23	0.57%	3.45%	94.41%	364392
+Eurotiomycetes sp.	1709936	species	1	2	0.51%	6.8%	100.0%	385143
+Phialosimplex sp. HF37	1960876	species	1	2	0.49%	6.37%	98.02%	374233

@@ -1,0 +1,46 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+class-Dinophyceae	class	Dinophyceae	2864	2.1434	26.5529	1585	739473
+class-Dinophyceae|order-Gonyaulacales	order	Gonyaulacales	40984	1.689	8.8554	558	330377
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium	genus	Alexandrium	2924	0.4363	1.9936	14	32089
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium|species-Alexandrium_andersonii	species	Alexandrium andersonii	327968	0.3711	1.6809	11	29644
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos	genus	Tripos	2126447	3.9431	18.0179	524	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	species	Tripos fusus	2916	3.9431	17.8619	524	132892
+class-Dinophyceae|order-Gonyaulacales|genus-Lingulodinium	genus	Lingulodinium	160620	0.1209	0.5526	20	165396
+class-Dinophyceae|order-Gonyaulacales|genus-Lingulodinium|species-Lingulodinium_polyedra	species	Lingulodinium polyedra	160621	0.1209	0.5478	20	165396
+class-Dinophyceae|order-Peridiniales	order	Peridiniales	2910	11.2592	59.0326	996	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium	genus	Brandtodinium	1482939	11.2592	51.4491	996	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	species	Brandtodinium nutricula	1333877	11.2592	51.0038	996	88461
+class-Dinophyceae|order-Thoracosphaerales	order	Thoracosphaerales	33835	0.0427	0.2239	7	163897
+class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae|genus-Scrippsiella	genus	Scrippsiella	54902	0.0427	0.1952	7	163897
+class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae|genus-Scrippsiella|species-Scrippsiella_trochoidea	species	Scrippsiella trochoidea	71861	0.0427	0.1935	7	163897
+class-Dinophyceae|order-Suessiales	order	Suessiales	89954	0.1531	0.8028	24	156738
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Effrenium	genus	Effrenium	2562238	0.1531	0.6997	24	156738
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Effrenium|species-Effrenium_voratum	species	Effrenium voratum	2562239	0.1531	0.6936	24	156738
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.2399	2.9719	33	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales	order	Isochrysidales	73020	0.2399	1.2578	33	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa	genus	Gephyrocapsa	38816	0.2399	1.0962	33	137559
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	species	Gephyrocapsa oceanica	38817	0.2399	1.0867	33	137559
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.0144	0.1778	5	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.0144	0.0753	5	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.0144	0.0656	5	348317
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.0144	0.065	5	348317
+phylum-Ascomycota|class-Dothideomycetes	class	Dothideomycetes	147541	0.6709	8.311	51	76019
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales	order	Capnodiales	134362	0.6709	3.5175	51	76019
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea	genus	Hortaea	91942	0.6709	3.0656	51	76019
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	species	Hortaea werneckii	91943	0.6709	3.0391	51	76019
+phylum-Chordata|class-Appendicularia	class	Appendicularia	30302	2.2463	27.8273	314	139786
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	2.2463	11.7774	314	139786
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura	genus	Oikopleura	34763	2.2463	10.2645	314	139786
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	species	Oikopleura longicauda	107032	2.5056	11.3504	301	120130
+phylum-Arthropoda|class-Hexanauplia	class	Hexanauplia	72037	0.633	7.8412	155	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida	order	Cyclopoida	84308	0.633	3.3187	155	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona	genus	Oithona	136190	0.633	2.8923	155	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	species	Oithona nana	136191	0.633	2.8673	155	244880
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	1.322	16.3768	382	288961
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	1.322	6.9312	382	288961
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	1.322	6.0408	382	288961
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	1.319	5.9749	364	275974
+class-Pelagophyceae	class	Pelagophyceae	35675	0.8025	9.9411	103	128353
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	0.8025	4.2074	103	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas	genus	Pelagomonas	35676	0.8025	3.6669	103	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	0.8025	3.6352	103	128353

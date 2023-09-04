@@ -1,0 +1,25 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Pelagococcus subviridis	35679	species	35	613	53.03%	24.35%	98.22%	79272
+Phaeocystis antarctica	33657	species	44	1944	44.0%	27.94%	95.54%	158488
+Chaetoceros dichaeta	420782	species	27	224	33.33%	16.98%	98.61%	98517
+Tripos fusus	2916	species	29	272	32.22%	14.53%	98.14%	132892
+Lithomelissa setosa	1054399	species	1	96	20.0%	93.27%	96.14%	2562
+Prasinoderma singulare	676789	species	9	55	9.89%	11.83%	99.35%	121534
+Malassezia restricta	76775	species	11	23	7.33%	4.06%	98.68%	348317
+Phaeocystis globosa	33658	species	8	172	6.9%	20.49%	95.89%	154798
+Eucampia antarctica	49252	species	5	92	6.85%	11.41%	98.4%	89123
+Pseudo-nitzschia heimii	476441	species	3	8	2.73%	5.15%	97.07%	176338
+Phaeocystis rex	1631189	species	1	1	2.56%	7.77%	96.97%	40152
+Saccharomyces cerevisiae S288C	559292	species	4	53	2.2%	29.59%	99.77%	308302
+Dinophysis acuminata	47934	species	2	25	2.13%	15.59%	97.82%	125543
+Chaetoceros debilis	122233	species	3	17	2.04%	13.47%	99.54%	259523
+Gephyrocapsa oceanica	38817	species	2	2	2.0%	15.8%	99.5%	137559
+Aureococcus anophagefferens	44056	species	1	1	1.54%	14.93%	100.0%	85991
+Oikopleura longicauda	107032	species	1	8	1.37%	11.34%	96.58%	120130
+Fragilariopsis kerguelensis	186038	species	1	1	0.66%	3.37%	98.98%	252214
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	2.74%	100.0%	332937
+Cyberlindnera jadinii NRRL Y-1542	983966	species	1	1	0.58%	4.09%	100.0%	333761
+Baeospora myosura	139080	species	1	2	0.57%	18.39%	96.95%	336215
+Hortaea werneckii EXF-2000	1157616	species	2	10	0.54%	9.41%	99.2%	717212
+Aureobasidium melanogenum	46634	species	1	2	0.49%	3.72%	100.0%	367526
+Blumeria graminis f. sp. tritici	62690	species	1	1	0.48%	4.09%	99.01%	337764

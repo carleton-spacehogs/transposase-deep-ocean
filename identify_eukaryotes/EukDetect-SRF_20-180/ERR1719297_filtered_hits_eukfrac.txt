@@ -1,0 +1,47 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Bacillariophyta|class-Coscinodiscophyceae	class	Coscinodiscophyceae	33836	0.2391	1.0963	79	330468
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales	order	Thalassiosirales	33847	0.454	1.5505	75	165190
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Thalassiosirales|family-Thalassiosiraceae|genus-Thalassiosira|species-Thalassiosira_oceanica	species	Thalassiosira oceanica	159749	0.454	1.1782	75	165190
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Rhizosoleniales	order	Rhizosoleniales	33844	0.0242	0.0826	4	165278
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Rhizosoleniales|family-Rhizosoleniaceae|genus-Rhizosolenia|species-Rhizosolenia_setigera	species	Rhizosolenia setigera	3005	0.0242	0.0628	4	165278
+class-Pelagophyceae	class	Pelagophyceae	35675	0.3818	1.7507	49	128353
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	0.3818	1.3037	49	128353
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagomonas|species-Pelagomonas_calceolata	species	Pelagomonas calceolata	35677	0.3818	0.9907	49	128353
+phylum-Chlorophyta|class-Palmophyllophyceae	class	Palmophyllophyceae	2201463	0.1726	0.7914	66	382464
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales	order	Prasinococcales	485343	0.1726	0.5893	66	382464
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|species-Prasinococcaceae_sp._CCMP_1430	species	Prasinococcaceae sp. CCMP 1430	2489100	0.191	0.4956	43	225148
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinoderma|species-Prasinoderma_coloniale	species	Prasinoderma coloniale	156133	0.0902	0.234	14	155270
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	0.8998	4.1266	45	50009
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	0.8998	3.073	45	50009
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._SAG12	species	Ostreococcus sp. SAG12	2590007	0.8966	2.3265	26	29000
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	7.5175	34.4751	2517	334819
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	7.5175	25.6726	2517	334819
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_mariensis	species	Chloropicon mariensis	1606511	14.3875	37.3355	2273	157984
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	1.0004	4.5877	317	316884
+phylum-Haptista|class-Haptophyta|order-Isochrysidales	order	Isochrysidales	73020	1.6231	5.543	232	142935
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Emiliania|species-Emiliania_huxleyi	species	Emiliania huxleyi	2903	1.8601	4.827	10	5376
+phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	species	Gephyrocapsa oceanica	38817	1.6139	4.1879	222	137559
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	0.4886	1.6688	85	173949
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_globosa	species	Phaeocystis globosa	33658	0.3618	0.9388	56	154798
+phylum-Chordata|class-Appendicularia	class	Appendicularia	30302	8.6573	39.7021	1040	120130
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	8.6573	29.565	1040	120130
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	species	Oikopleura longicauda	107032	8.6573	22.4656	1040	120130
+phylum-Arthropoda|class-Hexanauplia	class	Hexanauplia	72037	0.803	3.6825	379	471979
+phylum-Arthropoda|class-Hexanauplia|order-Calanoida	order	Calanoida	6833	0.1321	0.4511	30	227099
+phylum-Arthropoda|class-Hexanauplia|order-Calanoida|family-Acartiidae|genus-Acartia|species-Acartia_fossae	species	Acartia fossae	1453877	0.1321	0.3428	30	227099
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida	order	Cyclopoida	84308	1.4252	4.8671	349	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	species	Oithona nana	136191	1.4252	3.6983	349	244880
+phylum-Ascomycota|class-Saccharomycetes	class	Saccharomycetes	4891	0.937	4.2973	44	46956
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales	order	Saccharomycetales	4892	0.937	3.2001	44	46956
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces|species-Saccharomyces_cerevisiae	species	Saccharomyces cerevisiae	4932	0.937	2.4316	44	46956
+class-Dinophyceae	class	Dinophyceae	2864	1.1972	5.4903	699	583867
+class-Dinophyceae|order-Gonyaulacales	order	Gonyaulacales	40984	1.2214	4.1711	201	164567
+class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium|species-Alexandrium_andersonii	species	Alexandrium andersonii	327968	0.1349	0.3502	4	29644
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	species	Tripos fusus	2916	1.4749	3.8273	196	132892
+class-Dinophyceae|order-Suessiales	order	Suessiales	89954	0.1948	0.6652	38	195074
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Durusdinium|species-Durusdinium_trenchii	species	Durusdinium trenchii	1381693	0.1565	0.4061	6	38336
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Effrenium|species-Effrenium_voratum	species	Effrenium voratum	2562239	0.2042	0.5298	32	156738
+class-Dinophyceae|order-Prorocentrales	order	Prorocentrales	2942	0.0884	0.3018	12	135765
+class-Dinophyceae|order-Prorocentrales|family-Prorocentraceae|genus-Prorocentrum|species-Prorocentrum_cordatum	species	Prorocentrum cordatum	2364126	0.0884	0.2294	12	135765
+class-Dinophyceae|order-Peridiniales	order	Peridiniales	2910	5.0644	17.2951	448	88461
+class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	species	Brandtodinium nutricula	1333877	5.0644	13.142	448	88461

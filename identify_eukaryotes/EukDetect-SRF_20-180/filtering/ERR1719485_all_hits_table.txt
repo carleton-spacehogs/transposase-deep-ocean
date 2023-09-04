@@ -1,0 +1,34 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Brandtodinium nutricula	1333877	species	65	685	91.55%	46.81%	99.34%	88461
+Oithona nana	136191	species	131	10735	87.92%	38.0%	94.7%	244880
+Tripos fusus	2916	species	66	352	73.33%	22.24%	98.42%	132892
+Symbiodinium sp. clade C Y103	1563116	no rank	2	11	66.67%	57.34%	98.07%	2103
+Amphilonche elongata	1127133	species	1	10	50.0%	32.92%	98.56%	2250
+Effrenium voratum	2562239	species	26	152	25.0%	25.02%	97.96%	156738
+Durusdinium trenchii	1381693	species	6	20	13.04%	32.56%	97.32%	38336
+Pelagomonas calceolata	35677	species	10	23	12.99%	10.04%	98.9%	128353
+Alexandrium andersonii	327968	species	3	5	11.11%	19.1%	98.34%	29644
+Gephyrocapsa oceanica	38817	species	9	16	9.0%	13.4%	98.08%	137559
+Lingulodinium polyedra	160621	species	7	15	6.42%	7.55%	97.81%	165396
+Malassezia restricta	76775	species	6	10	4.0%	2.46%	99.02%	348317
+Scrippsiella trochoidea	71861	species	4	7	3.54%	14.11%	98.61%	163897
+Pelagodinium beii	43686	species	3	6	3.33%	17.77%	99.78%	127026
+Protoceratium reticulatum	133427	species	2	3	2.5%	5.42%	97.51%	112099
+Stramenopiles sp. TOSAG23-2	1735743	species	1	2	2.13%	11.58%	100.0%	66251
+Prorocentrum cordatum	2364126	species	2	2	2.02%	13.8%	97.99%	135765
+Acanthamoeba palestinensis	28015	species	2	3	1.72%	5.43%	97.91%	150122
+Acanthamoeba castellanii str. Neff	1257118	species	1	1	1.67%	4.42%	97.89%	75967
+Pelagococcus subviridis	35679	species	1	1	1.52%	7.7%	96.7%	79272
+Gonyaulax spinifera	66791	species	1	1	1.43%	15.69%	97.73%	72996
+Portunus trituberculatus	210409	species	1	1	1.28%	2.66%	97.03%	126986
+Scyphosphaera apsteinii	418940	species	1	2	1.25%	4.62%	99.5%	113512
+Bursaphelenchus xylophilus	6326	species	1	1	1.01%	2.5%	97.03%	159590
+Phaeocystis antarctica	33657	species	1	1	1.0%	5.67%	97.5%	158488
+Hanseniaspora pseudoguilliermondii	332229	species	1	2	0.91%	7.09%	100.0%	223778
+Hanseniaspora thailandica	689838	species	1	2	0.86%	8.62%	99.31%	229666
+Mnemiopsis leidyi	27923	species	1	3	0.75%	4.23%	97.27%	220847
+Clytia hemisphaerica	252671	species	1	4	0.68%	28.27%	96.23%	232614
+Calocera viscosa TUFC12733	1330018	species	1	12	0.57%	3.38%	95.0%	364392
+Phanerochaete chrysosporium	5306	species	1	2	0.56%	1.51%	96.12%	359765
+Aspergillus sp. MA 6041	2153248	species	1	2	0.3%	3.98%	100.0%	605505
+Hortaea werneckii EXF-2000	1157616	species	1	2	0.27%	6.15%	98.46%	717212

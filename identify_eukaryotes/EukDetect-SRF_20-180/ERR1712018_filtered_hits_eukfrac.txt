@@ -1,0 +1,51 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+class-Dinophyceae	class	Dinophyceae	2864	0.1588	2.5927	46	289630
+class-Dinophyceae|order-Suessiales	order	Suessiales	89954	0.0957	1.52	15	156738
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae	family	Symbiodiniaceae	252141	0.0957	1.52	15	156738
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Effrenium	genus	Effrenium	2562238	0.0957	1.52	15	156738
+class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Effrenium|species-Effrenium_voratum	species	Effrenium voratum	2562239	0.0957	1.5155	15	156738
+class-Dinophyceae|order-Gonyaulacales	order	Gonyaulacales	40984	0.2333	3.7051	31	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae	family	Ceratiaceae	39451	0.2333	3.7051	31	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos	genus	Tripos	2126447	0.2333	3.7051	31	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	species	Tripos fusus	2916	0.2333	3.694	31	132892
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.1299	2.1211	46	354017
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.1299	2.0638	46	354017
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae	family	Malasseziaceae	742845	0.1299	2.0638	46	354017
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.1299	2.0638	46	354017
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.1148	1.8185	40	348317
+phylum-Mucoromycota|class-Mucoromycetes	class	Mucoromycetes	2212703	0.012	0.1961	4	333057
+phylum-Mucoromycota|class-Mucoromycetes|order-Mucorales	order	Mucorales	4827	0.012	0.1908	4	333057
+phylum-Mucoromycota|class-Mucoromycetes|order-Mucorales|family-Cunninghamellaceae	family	Cunninghamellaceae	4851	0.012	0.1908	4	333057
+phylum-Mucoromycota|class-Mucoromycetes|order-Mucorales|family-Cunninghamellaceae|genus-Gongronella	genus	Gongronella	101104	0.012	0.1908	4	333057
+phylum-Mucoromycota|class-Mucoromycetes|order-Mucorales|family-Cunninghamellaceae|genus-Gongronella|species-Gongronella_sp._w5	species	Gongronella sp. w5	483437	0.012	0.1902	4	333057
+phylum-Chordata|class-Appendicularia	class	Appendicularia	30302	3.7446	61.127	468	124981
+phylum-Chordata|class-Appendicularia|order-Copelata	order	Copelata	2507557	3.7446	59.475	468	124981
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae	family	Oikopleuridae	41302	3.7446	59.475	468	124981
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura	genus	Oikopleura	34763	3.7446	59.475	468	124981
+phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	species	Oikopleura longicauda	107032	3.7126	58.792	446	120130
+phylum-Arthropoda|class-Hexanauplia	class	Hexanauplia	72037	1.3149	21.4651	322	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida	order	Cyclopoida	84308	1.3149	20.885	322	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae	family	Oithonidae	136189	1.3149	20.885	322	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona	genus	Oithona	136190	1.3149	20.885	322	244880
+phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	species	Oithona nana	136191	1.3149	20.8227	322	244880
+phylum-Chlorophyta|class-Chloropicophyceae	class	Chloropicophyceae	2302911	0.3909	6.3809	221	565380
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales	order	Chloropicales	2302912	0.3909	6.2085	221	565380
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae	family	Chloropicaceae	2302913	0.3909	6.2085	221	565380
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon	genus	Chloropicon	2302914	0.3909	6.2085	221	565380
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	species	Chloropicon roscoffensis	1461544	0.4566	7.23	126	275974
+phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_primus	species	Chloropicon primus	1764295	0.0604	0.9569	17	281336
+phylum-Chlorophyta|class-Mamiellophyceae	class	Mamiellophyceae	1035538	0.1025	1.6728	6	58550
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales	order	Mamiellales	13792	0.1025	1.6276	6	58550
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae	family	Bathycoccaceae	1525212	0.1025	1.6276	6	58550
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus	genus	Ostreococcus	70447	0.1025	1.6276	6	58550
+phylum-Chlorophyta|class-Mamiellophyceae|order-Mamiellales|family-Bathycoccaceae|genus-Ostreococcus|species-Ostreococcus_sp._SAG10	species	Ostreococcus sp. SAG10	2590005	0.0887	1.404	5	56396
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	0.146	2.384	6	41085
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	0.146	2.3195	6	41085
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae	family	Phaeocystaceae	418920	0.146	2.3195	6	41085
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	0.146	2.3195	6	41085
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_rex	species	Phaeocystis rex	1631189	0.0996	1.5776	4	40152
+phylum-Bacillariophyta|class-Mediophyceae	class	Mediophyceae	589449	0.1262	2.0603	5	39616
+phylum-Bacillariophyta|class-Mediophyceae|order-Lithodesmiales	order	Lithodesmiales	420271	0.1262	2.0046	5	39616
+phylum-Bacillariophyta|class-Mediophyceae|order-Lithodesmiales|family-Lithodesmiaceae	family	Lithodesmiaceae	49247	0.1262	2.0046	5	39616
+phylum-Bacillariophyta|class-Mediophyceae|order-Lithodesmiales|family-Lithodesmiaceae|genus-Helicotheca	genus	Helicotheca	374046	0.1262	2.0046	5	39616
+phylum-Bacillariophyta|class-Mediophyceae|order-Lithodesmiales|family-Lithodesmiaceae|genus-Helicotheca|species-Helicotheca_tamesis	species	Helicotheca tamesis	374047	0.1262	1.9986	5	39616

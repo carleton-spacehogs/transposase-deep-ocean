@@ -1,0 +1,35 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Oithona nana	136191	species	125	3526	83.89%	27.34%	95.75%	244880
+Chloropicon roscoffensis	1461544	species	118	1936	74.68%	33.54%	99.08%	275974
+Chloropicon laureae	464258	species	25	70	44.64%	24.32%	99.3%	50762
+Pelagomonas calceolata	35677	species	27	213	35.06%	16.81%	97.51%	128353
+Prasinoderma singulare	676789	species	28	77	30.77%	14.58%	99.47%	121534
+Chloropicon mariensis	1606511	species	33	120	30.0%	13.69%	98.79%	157984
+Oikopleura longicauda	107032	species	19	1445	26.03%	19.79%	94.03%	120130
+Tripos fusus	2916	species	23	63	25.56%	10.7%	98.67%	132892
+Oikopleura dioica	34765	species	16	150	20.25%	7.33%	96.52%	176745
+Gephyrocapsa oceanica	38817	species	15	28	15.0%	10.5%	99.41%	137559
+Brandtodinium nutricula	1333877	species	10	18	14.08%	8.72%	97.95%	88461
+Chloropicon primus	1764295	species	12	21	8.7%	4.89%	97.6%	281336
+Alexandrium andersonii	327968	species	2	4	7.41%	17.75%	98.49%	29644
+Pseudo-nitzschia heimii	476441	species	7	14	6.36%	11.89%	97.55%	176338
+Phaeocystis antarctica	33657	species	6	17	6.0%	15.89%	96.61%	158488
+Pelagococcus subviridis	35679	species	3	5	4.55%	5.68%	97.47%	79272
+Phaeocystis globosa	33658	species	5	10	4.31%	20.94%	99.87%	154798
+Thecamonas trahens ATCC 50062	461836	species	2	3	3.03%	9.74%	100.0%	96258
+Effrenium voratum	2562239	species	3	6	2.88%	4.31%	98.51%	156738
+Malassezia restricta	76775	species	4	5	2.67%	2.77%	98.92%	348317
+Acanthamoeba rhysodes	32599	species	2	2	2.6%	9.87%	98.98%	113910
+Acanthamoeba polyphaga	5757	species	1	1	1.79%	4.24%	99.01%	76663
+Acanthamoeba pearcei	65662	species	1	2	1.67%	24.82%	98.57%	66582
+Gonyaulax spinifera	66791	species	1	1	1.43%	14.15%	97.78%	72996
+Rhodotorula diobovata	5288	species	2	3	1.23%	1.42%	100.0%	358851
+Phaeomonas parva	124430	species	1	2	1.22%	13.1%	100.0%	94577
+Prorocentrum cordatum	2364126	species	1	1	1.01%	13.14%	98.78%	135765
+Acanthamoeba	5754	genus	1	1	0.95%	5.71%	100.0%	134855
+Scrippsiella trochoidea	71861	species	1	1	0.88%	33.33%	95.83%	163897
+Acanthamoeba palestinensis	28015	species	1	1	0.86%	2.85%	97.96%	150122
+Alexandrium tamarense	2926	species	1	2	0.71%	24.25%	98.15%	194024
+Batrachochytrium salamandrivorans	1357716	species	1	3	0.59%	4.42%	96.04%	292885
+Apostichopus parvimensis	1902835	species	1	1	0.58%	1.12%	97.44%	276393
+Hortaea werneckii EXF-2000	1157616	species	1	2	0.27%	4.49%	98.04%	717212

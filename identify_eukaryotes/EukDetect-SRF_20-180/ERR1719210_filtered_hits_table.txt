@@ -1,0 +1,25 @@
+Name	Rank	Lineage	Taxid	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity
+Tripos fusus	species	class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	2916	83	949	92.22%	40.78%	97.22%
+Brandtodinium nutricula	species	class-Dinophyceae|order-Peridiniales|family-Endodiniaceae|genus-Brandtodinium|species-Brandtodinium_nutricula	1333877	40	157	56.34%	20.17%	99.02%
+Scrippsiella trochoidea	species	class-Dinophyceae|order-Thoracosphaerales|family-Thoracosphaeraceae|genus-Scrippsiella|species-Scrippsiella_trochoidea	71861	37	87	32.74%	13.03%	98.88%
+Effrenium voratum	species	class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Effrenium|species-Effrenium_voratum	2562239	31	449	29.81%	38.73%	98.01%
+Symbiodinium sp. clade A Y106	no rank	class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Symbiodinium|species-Symbiodinium_sp._clade_A	1563115	2	6	28.57%	5.83%	99.37%
+Oikopleura longicauda	species	phylum-Chordata|class-Appendicularia|order-Copelata|family-Oikopleuridae|genus-Oikopleura|species-Oikopleura_longicauda	107032	16	1068	21.92%	22.04%	95.04%
+Lingulodinium polyedra	species	class-Dinophyceae|order-Gonyaulacales|genus-Lingulodinium|species-Lingulodinium_polyedra	160621	23	43	21.1%	9.85%	98.5%
+Noctiluca scintillans	species	class-Dinophyceae|order-Noctilucales|family-Noctilucaceae|genus-Noctiluca|species-Noctiluca_scintillans	2966	17	33	18.68%	10.89%	97.8%
+Chloropicon roscoffensis	species	phylum-Chlorophyta|class-Chloropicophyceae|order-Chloropicales|family-Chloropicaceae|genus-Chloropicon|species-Chloropicon_roscoffensis	1461544	29	105	18.35%	12.17%	99.26%
+Durusdinium trenchii	species	class-Dinophyceae|order-Suessiales|family-Symbiodiniaceae|genus-Durusdinium|species-Durusdinium_trenchii	1381693	8	37	17.39%	32.79%	97.36%
+Oithona nana	species	phylum-Arthropoda|class-Hexanauplia|order-Cyclopoida|family-Oithonidae|genus-Oithona|species-Oithona_nana	136191	25	113	16.78%	8.57%	96.66%
+Protoceratium reticulatum	species	class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Protoceratium|species-Protoceratium_reticulatum	133427	10	15	12.5%	8.05%	98.06%
+Gephyrocapsa oceanica	species	phylum-Haptista|class-Haptophyta|order-Isochrysidales|family-Noelaerhabdaceae|genus-Gephyrocapsa|species-Gephyrocapsa_oceanica	38817	7	15	7.0%	6.7%	99.76%
+Purpureocillium lilacinum	species	phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Ophiocordycipitaceae|genus-Purpureocillium|species-Purpureocillium_lilacinum	33203	14	23	6.8%	6.06%	99.69%
+Amphibalanus amphitrite	species	phylum-Arthropoda|class-Hexanauplia|order-Sessilia|family-Balanidae|genus-Amphibalanus|species-Amphibalanus_amphitrite	1232801	12	28	6.56%	9.91%	99.07%
+Gonyaulax spinifera	species	class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Gonyaulax|species-Gonyaulax_spinifera	66791	4	4	5.71%	5.94%	97.49%
+Pelagodinium beii	species	class-Dinophyceae|order-Suessiales|family-Suessiaceae|genus-Pelagodinium|species-Pelagodinium_beii	43686	3	5	3.33%	7.6%	97.33%
+Prorocentrum cordatum	species	class-Dinophyceae|order-Prorocentrales|family-Prorocentraceae|genus-Prorocentrum|species-Prorocentrum_cordatum	2364126	3	5	3.03%	7.39%	96.93%
+Beroe forskalii	species	phylum-Ctenophora|class-Nuda|order-Beroida|family-Beroidae|genus-Beroe|species-Beroe_forskalii	140453	3	6	2.48%	7.73%	97.97%
+Alexandrium monilatum	species	class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium|species-Alexandrium_monilatum	311494	3	4	2.4%	8.82%	97.26%
+Alexandrium tamarense	species	class-Dinophyceae|order-Gonyaulacales|family-Gonyaulacaceae|genus-Alexandrium|species-Alexandrium_tamarense	2926	3	4	2.13%	6.38%	96.9%
+Malassezia restricta	species	phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	76775	2	4	1.33%	5.41%	98.41%
+Lecanicillium sp. MT-2017a	species	phylum-Ascomycota|class-Sordariomycetes|order-Hypocreales|family-Cordycipitaceae|genus-Lecanicillium|species-Lecanicillium_sp._MT-2017a	1964301	2	4	0.97%	8.28%	98.24%
+Hortaea werneckii EXF-2000	species	phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	1157616	3	6	0.81%	4.11%	99.12%

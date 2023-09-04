@@ -1,0 +1,45 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Chloropicon mariensis	1606511	species	106	2273	96.36%	58.56%	99.48%	157984
+Brandtodinium nutricula	1333877	species	64	448	90.14%	33.66%	99.32%	88461
+Tripos fusus	2916	species	54	196	60.0%	16.75%	98.86%	132892
+Amphilonche elongata	1127133	species	1	8	50.0%	32.39%	98.35%	2250
+Gephyrocapsa oceanica	38817	species	50	222	50.0%	23.27%	99.6%	137559
+Oithona nana	136191	species	64	349	42.95%	15.0%	97.07%	244880
+Chloropicon roscoffensis	1461544	species	57	183	36.08%	12.13%	99.48%	275974
+Chloropicon laureae	464258	species	17	35	30.36%	17.6%	99.76%	50762
+Ostreococcus sp. SAG9	2590004	species	1	1	25.0%	3.3%	97.03%	6096
+Ostreococcus sp. SAG11	2590006	species	1	1	25.0%	11.38%	100.0%	5643
+Thalassiosira oceanica	159749	species	24	75	24.49%	10.94%	97.21%	165190
+Ostreococcus sp. SAG10	2590005	species	6	13	24.0%	8.63%	99.55%	56396
+Oikopleura longicauda	107032	species	14	1040	19.18%	17.57%	94.81%	120130
+Pelagomonas calceolata	35677	species	14	49	18.18%	11.42%	98.18%	128353
+Prasinococcaceae sp. CCMP 1430	2489100	species	19	43	17.43%	7.24%	99.5%	225148
+unclassified Ostreococcus	2268852	genus	2	4	16.67%	6.52%	100.0%	18843
+Ostreococcus sp. SAG12	2590007	species	2	26	15.38%	17.75%	99.3%	29000
+Effrenium voratum	2562239	species	14	32	13.46%	8.22%	98.11%	156738
+Saccharomyces cerevisiae S288C	559292	species	22	44	12.09%	5.71%	99.7%	308302
+Emiliania huxleyi CCMP1516	280463	species	4	10	11.76%	14.36%	99.09%	44652
+Phaeocystis globosa	33658	species	12	56	10.34%	33.8%	99.36%	154798
+Chloropicon primus	1764295	species	12	26	8.7%	4.96%	97.74%	281336
+Phaeocystis antarctica	33657	species	8	25	8.0%	11.56%	97.34%	158488
+Prasinococcaceae	2201465	family	2	9	8.0%	31.57%	99.38%	36508
+Alexandrium andersonii	327968	species	2	4	7.41%	15.58%	98.81%	29644
+Prasinoderma coloniale	156133	species	6	14	6.98%	14.83%	98.94%	155270
+Durusdinium trenchii	1381693	species	3	6	6.52%	22.02%	97.56%	38336
+Acartia fossae	1453877	species	10	30	5.49%	10.71%	96.97%	227099
+Phaeocystis rex	1631189	species	2	4	5.13%	11.58%	97.29%	40152
+Prorocentrum cordatum	2364126	species	5	12	5.05%	9.97%	96.57%	135765
+Karlodinium veneficum	407301	species	2	3	2.27%	11.31%	97.98%	136208
+Rhizosolenia setigera	3005	species	2	4	1.9%	33.05%	98.58%	165278
+Pseudo-nitzschia heimii	476441	species	2	2	1.82%	11.84%	97.5%	176338
+Neobodo designis	312471	species	1	2	1.52%	1.54%	97.2%	100830
+Aplanochytrium kerguelense	87111	species	1	2	1.04%	8.07%	100.0%	106637
+Lingulodinium polyedra	160621	species	1	2	0.92%	10.25%	97.74%	165396
+Scrippsiella trochoidea	71861	species	1	1	0.88%	9.47%	97.03%	163897
+Pseudo-nitzschia arenysensis	697910	species	1	2	0.79%	13.1%	97.77%	204829
+Alexandrium tamarense	2926	species	1	1	0.71%	4.97%	98.02%	194024
+Clytia hemisphaerica	252671	species	1	2	0.68%	8.75%	96.93%	232614
+Malassezia restricta	76775	species	1	2	0.67%	7.91%	97.96%	348317
+Pichia kudriavzevii	4909	species	1	2	0.63%	13.36%	99.5%	299278
+Debaryomyces hansenii CBS767	284592	species	1	2	0.55%	8.76%	100.0%	326457
+Hortaea werneckii EXF-2000	1157616	species	2	3	0.54%	4.13%	100.0%	717212

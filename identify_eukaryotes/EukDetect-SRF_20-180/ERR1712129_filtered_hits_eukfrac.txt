@@ -1,0 +1,44 @@
+Lineage	Rank	Name	TaxID	RPKS	Euk_fraction	Reads	Amt_marker_sequence
+phylum-Bacillariophyta|class-Mediophyceae	class	Mediophyceae	589449	1.0323	2.7837	92	89123
+phylum-Bacillariophyta|class-Mediophyceae|order-Hemiaulales	order	Hemiaulales	420267	1.0323	2.7037	92	89123
+phylum-Bacillariophyta|class-Mediophyceae|order-Hemiaulales|family-Hemiaulaceae|genus-Eucampia	genus	Eucampia	49251	1.0323	2.7037	92	89123
+phylum-Bacillariophyta|class-Mediophyceae|order-Hemiaulales|family-Hemiaulaceae|genus-Eucampia|species-Eucampia_antarctica	species	Eucampia antarctica	49252	1.0323	2.7298	92	89123
+phylum-Bacillariophyta|class-Coscinodiscophyceae	class	Coscinodiscophyceae	33836	2.3314	6.287	241	103371
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Chaetocerotales	order	Chaetocerotales	265576	2.3314	6.1064	241	103371
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Chaetocerotales|family-Chaetocerotaceae|genus-Chaetoceros	genus	Chaetoceros	49237	2.3314	6.1064	241	103371
+phylum-Bacillariophyta|class-Coscinodiscophyceae|order-Chaetocerotales|family-Chaetocerotaceae|genus-Chaetoceros|species-Chaetoceros_dichaeta	species	Chaetoceros dichaeta	420782	2.2737	6.0127	224	98517
+phylum-Bacillariophyta|class-Bacillariophyceae	class	Bacillariophyceae	33849	0.0454	0.1223	8	176338
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales	order	Bacillariales	33851	0.0454	0.1188	8	176338
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Pseudo-nitzschia	genus	Pseudo-nitzschia	41953	0.0454	0.1188	8	176338
+phylum-Bacillariophyta|class-Bacillariophyceae|order-Bacillariales|family-Bacillariaceae|genus-Pseudo-nitzschia|species-Pseudo-nitzschia_heimii	species	Pseudo-nitzschia heimii	476441	0.0454	0.12	8	176338
+class-Pelagophyceae	class	Pelagophyceae	35675	7.7329	20.8527	613	79272
+class-Pelagophyceae|order-Pelagomonadales	order	Pelagomonadales	54409	7.7329	20.2538	613	79272
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagococcus	genus	Pelagococcus	35678	7.7329	20.2538	613	79272
+class-Pelagophyceae|order-Pelagomonadales|genus-Pelagococcus|species-Pelagococcus_subviridis	species	Pelagococcus subviridis	35679	7.7329	20.449	613	79272
+class-Dinophyceae	class	Dinophyceae	2864	1.1492	3.099	297	258435
+class-Dinophyceae|order-Gonyaulacales	order	Gonyaulacales	40984	2.0468	5.3609	272	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos	genus	Tripos	2126447	2.0468	5.3609	272	132892
+class-Dinophyceae|order-Gonyaulacales|family-Ceratiaceae|genus-Tripos|species-Tripos_fusus	species	Tripos fusus	2916	2.0468	5.4125	272	132892
+class-Dinophyceae|order-Dinophysiales	order	Dinophysiales	447211	0.1991	0.5216	25	125543
+class-Dinophyceae|order-Dinophysiales|family-Dinophysiaceae|genus-Dinophysis	genus	Dinophysis	47933	0.1991	0.5216	25	125543
+class-Dinophyceae|order-Dinophysiales|family-Dinophysiaceae|genus-Dinophysis|species-Dinophysis_acuminata	species	Dinophysis acuminata	47934	0.1991	0.5266	25	125543
+phylum-Basidiomycota|class-Malasseziomycetes	class	Malasseziomycetes	1538075	0.0703	0.1896	25	355625
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales	order	Malasseziales	162474	0.0703	0.1841	25	355625
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia	genus	Malassezia	55193	0.0703	0.1841	25	355625
+phylum-Basidiomycota|class-Malasseziomycetes|order-Malasseziales|family-Malasseziaceae|genus-Malassezia|species-Malassezia_restricta	species	Malassezia restricta	76775	0.066	0.1746	23	348317
+phylum-Ascomycota|class-Dothideomycetes	class	Dothideomycetes	147541	2.5233	6.8045	10	3963
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales	order	Capnodiales	134362	2.5233	6.6091	10	3963
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea	genus	Hortaea	91942	2.5233	6.6091	10	3963
+phylum-Ascomycota|class-Dothideomycetes|order-Capnodiales|family-Teratosphaeriaceae|genus-Hortaea|species-Hortaea_werneckii	species	Hortaea werneckii	91943	2.5233	6.6728	10	3963
+phylum-Ascomycota|class-Saccharomycetes	class	Saccharomycetes	4891	9.1775	24.7483	53	5775
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales	order	Saccharomycetales	4892	9.1775	24.0375	53	5775
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces	genus	Saccharomyces	4930	9.1775	24.0375	53	5775
+phylum-Ascomycota|class-Saccharomycetes|order-Saccharomycetales|family-Saccharomycetaceae|genus-Saccharomyces|species-Saccharomyces_cerevisiae	species	Saccharomyces cerevisiae	4932	9.1775	24.2691	53	5775
+phylum-Chlorophyta|class-Palmophyllophyceae	class	Palmophyllophyceae	2201463	0.4525	1.2204	55	121534
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales	order	Prasinococcales	485343	0.4525	1.1853	55	121534
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinoderma	genus	Prasinoderma	156132	0.4525	1.1853	55	121534
+phylum-Chlorophyta|class-Palmophyllophyceae|order-Prasinococcales|family-Prasinococcaceae|genus-Prasinoderma|species-Prasinoderma_singulare	species	Prasinoderma singulare	676789	0.4525	1.1967	55	121534
+phylum-Haptista|class-Haptophyta	class	Haptophyta	2830	12.5684	33.8925	2117	168438
+phylum-Haptista|class-Haptophyta|order-Phaeocystales	order	Phaeocystales	418919	12.5684	32.9189	2117	168438
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis	genus	Phaeocystis	33656	12.5684	32.9189	2117	168438
+phylum-Haptista|class-Haptophyta|order-Phaeocystales|family-Phaeocystaceae|genus-Phaeocystis|species-Phaeocystis_antarctica	species	Phaeocystis antarctica	33657	12.2659	32.4362	1944	158488

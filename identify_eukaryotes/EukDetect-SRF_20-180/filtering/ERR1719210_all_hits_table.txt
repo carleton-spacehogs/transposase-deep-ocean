@@ -1,0 +1,46 @@
+Name	Taxid	Rank	Observed_markers	Read_counts	Percent_observed_markers	Total_marker_coverage	Percent_identity	Amount of marker length in EukDetect db
+Tripos fusus	2916	species	83	949	92.22%	40.78%	97.22%	132892
+Brandtodinium nutricula	1333877	species	40	157	56.34%	20.17%	99.02%	88461
+Amphilonche elongata	1127133	species	1	1	50.0%	5.98%	98.02%	2250
+Scrippsiella trochoidea	71861	species	37	87	32.74%	13.03%	98.88%	163897
+Effrenium voratum	2562239	species	31	449	29.81%	38.73%	98.01%	156738
+Symbiodinium sp. clade A Y106	1563115	no rank	2	6	28.57%	5.83%	99.37%	13782
+Oikopleura longicauda	107032	species	16	1068	21.92%	22.04%	95.04%	120130
+Lingulodinium polyedra	160621	species	23	43	21.1%	9.85%	98.5%	165396
+Noctiluca scintillans	2966	species	17	33	18.68%	10.89%	97.8%	152611
+Chloropicon roscoffensis	1461544	species	29	105	18.35%	12.17%	99.26%	275974
+Durusdinium trenchii	1381693	species	8	37	17.39%	32.79%	97.36%	38336
+Oithona nana	136191	species	25	113	16.78%	8.57%	96.66%	244880
+Symbiodinium microadriaticum	2951	species	1	5	14.29%	24.75%	97.11%	7644
+Protoceratium reticulatum	133427	species	10	15	12.5%	8.05%	98.06%	112099
+Alexandrium andersonii	327968	species	2	2	7.41%	8.77%	98.91%	29644
+Gephyrocapsa oceanica	38817	species	7	15	7.0%	6.7%	99.76%	137559
+Purpureocillium lilacinum	33203	species	14	23	6.8%	6.06%	99.69%	356037
+Amphibalanus amphitrite	1232801	species	12	28	6.56%	9.91%	99.07%	332840
+Gonyaulax spinifera	66791	species	4	4	5.71%	5.94%	97.49%	72996
+Alexandrium minutum	39455	species	1	1	5.56%	22.6%	96.97%	15570
+Pelagodinium beii	43686	species	3	5	3.33%	7.6%	97.33%	127026
+Prorocentrum cordatum	2364126	species	3	5	3.03%	7.39%	96.93%	135765
+Emiliania huxleyi CCMP1516	280463	species	1	3	2.94%	17.76%	98.83%	44652
+Beroe forskalii	140453	species	3	6	2.48%	7.73%	97.97%	220090
+Alexandrium monilatum	311494	species	3	4	2.4%	8.82%	97.26%	184592
+Mnemiopsis leidyi	27923	species	3	3	2.26%	2.24%	98.01%	220847
+Alexandrium tamarense	2926	species	3	4	2.13%	6.38%	96.9%	194024
+Dracoamoeba jomungandri	2484127	species	1	2	1.75%	4.18%	100.0%	100170
+Synchroma pusillum	1181717	species	1	1	1.52%	10.5%	100.0%	68625
+Neobodo designis	312471	species	1	2	1.52%	9.7%	98.45%	100830
+Alternaria alternata	5599	species	1	1	1.49%	9.18%	100.0%	131319
+Malassezia restricta	76775	species	2	4	1.33%	5.41%	98.41%	348317
+Alternaria alternata complex	187734	species group	1	2	1.22%	16.42%	100.0%	165766
+Bursaphelenchus xylophilus	6326	species	1	1	1.01%	2.08%	97.62%	159590
+Lecanicillium sp. MT-2017a	1964301	species	2	4	0.97%	8.28%	98.24%	357651
+Hortaea werneckii EXF-2000	1157616	species	3	6	0.81%	4.11%	99.12%	717212
+Rhipicephalus annulatus	34611	species	1	2	0.67%	8.29%	95.83%	242749
+Alternaria arborescens	156630	species	1	1	0.67%	7.33%	100.0%	303330
+Malassezia globosa CBS 7966	425265	species	1	2	0.64%	15.79%	100.0%	332937
+Plutella xylostella	51655	species	1	1	0.6%	7.51%	97.03%	254784
+Batrachochytrium salamandrivorans	1357716	species	1	1	0.59%	3.41%	96.15%	292885
+Calocera viscosa TUFC12733	1330018	species	1	3	0.57%	2.94%	95.08%	364392
+Bipolaris sorokiniana ND90Pr	665912	species	1	1	0.49%	12.39%	100.0%	370622
+Epicoccum nigrum	105696	species	1	2	0.49%	9.9%	97.51%	360210
+Stemphylium vesicarium	119933	species	1	2	0.48%	7.59%	100.0%	369073
