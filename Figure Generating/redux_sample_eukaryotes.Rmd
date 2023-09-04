@@ -15,7 +15,7 @@ mala_cov <- init_mala_cov()
 g(DNA_Metadata, RNA_Metadata) %=% init_tara_md(factorize = FALSE)
 
 size.frac = c("0.22 - 1.6 (*Tara*)", "0.22 - 3 (*Tara*)",
-              "0.2 - 0.8 (Malaspina)", "0.8 - 5 (Malaspina)", "size5-20",
+              "0.2 - 0.8 (Malaspina)", "0.8 - 5 (Malaspina)", "size5-20", "size20-180",
               "0.22 - 1.6 (*Tara*) Arctic", "0.22 - 3 (*Tara*) Arctic")
 ```
 
@@ -43,48 +43,29 @@ sum_reads_into_row = function(hit_table_f, base_path){
   return(df)
 }
 
-hit_table = "*_all_hits_table.txt"
-base02="../identify_eukaryotes/EukDetect-deep/02_size_fraction/filtering"
-base08="../identify_eukaryotes/EukDetect-deep/08_size_fraction/filtering"
-deep_frac02 = Sys.glob(file.path(base02, hit_table))
-deep_frac08 = Sys.glob(file.path(base08, hit_table))
+get_read_counts = function(base_path, filter_size, depth){
+  hit_table = "*_all_hits_table.txt"
+  files = Sys.glob(file.path(base_path, hit_table))
+  df = sum_reads_into_row(files, base_path)
+  df$filter_size = filter_size
+  df$depth = depth
+  return(df)
+}
 
-euk_read_count02 = sum_reads_into_row(deep_frac02, base02)
-euk_read_count02$filter_size = size.frac[3]
-euk_read_count08 = sum_reads_into_row(deep_frac08, base08)
-euk_read_count08$filter_size = size.frac[4]
-deep_euk_count = rbind(euk_read_count02, euk_read_count08)
-deep_euk_count$depth = "BAT"
+deep_euk_count = rbind(get_read_counts("../identify_eukaryotes/EukDetect-deep/02_size_fraction/filtering", size.frac[3], "BAT"),
+                       get_read_counts("../identify_eukaryotes/EukDetect-deep/08_size_fraction/filtering", size.frac[4], "BAT"))
 
-base_big_SRF = "../identify_eukaryotes/EukDetect-SRF_5-20/filtering"
-base_big_DCM = "../identify_eukaryotes/EukDetect-DCM_5-20/filtering"
-big_size_SRF_f = Sys.glob(file.path(base_big_SRF, hit_table))
-big_size_DCM_f = Sys.glob(file.path(base_big_DCM, hit_table))
+size_5_20_count = rbind(get_read_counts("../identify_eukaryotes/EukDetect-SRF_5-20/filtering", size.frac[5], "SRF"),
+                        get_read_counts("../identify_eukaryotes/EukDetect-DCM_5-20/filtering", size.frac[5], "DCM"))
 
-big_size_SRF = sum_reads_into_row(big_size_SRF_f, base_big_SRF)
-big_size_SRF$depth = "SRF"
-big_size_DCM = sum_reads_into_row(big_size_DCM_f, base_big_DCM)
-big_size_DCM$depth = "DCM"
-big_size_count = rbind(big_size_SRF, big_size_DCM)
-big_size_count$filter_size = size.frac[5]
-
-base_tara="../identify_eukaryotes/EukDetect-normal/filtering"
-tara_normal = Sys.glob(file.path(base_tara, hit_table))
-euk_tara = sum_reads_into_row(tara_normal, base_tara)
-euk_tara$ocean = "normal"
-
-# base_arct="../identify_eukaryotes/EukDetect-arctic/filtering"
-# tara_arctic = Sys.glob(file.path(base_arct, hit_table))
-# euk_arctic = sum_reads_into_row(tara_arctic, base_arct)
-
-# euk_arctic$ocean = "arctic"
-# euk_tara = rbind(euk_tara, euk_arctic)
-
-euk_tara$euk_read_count = as.numeric(euk_tara$euk_read_count)
+size_20_180_count = rbind(get_read_counts("../identify_eukaryotes/EukDetect-SRF_20-180/filtering", size.frac[6], "SRF"),
+                          get_read_counts("../identify_eukaryotes/EukDetect-DCM_20-180/filtering", size.frac[6], "DCM"))
 ```
 
-
+# other, normal tara samples
 ```{r}
+euk_tara = get_read_counts("../identify_eukaryotes/EukDetect-normal/filtering", "unknown", "unknown")
+
 sel_col = c("Layer_DNA","upper_size_dna")
 match_md_row = function(x){
   md_row = DNA_Metadata[DNA_Metadata$ENA_Run_ID %like% x["sample"], sel_col]
@@ -102,13 +83,20 @@ tmp = tmp[!grepl("cannot find", tmp$sample), ]
 
 merged_tara = tmp %>%
   mutate(depth = Layer_DNA,
-         filter_size = ifelse(upper_size_dna == "1.6", 
-                       ifelse(ocean == "arctic", size.frac[5], size.frac[1]),
-                       ifelse(ocean == "arctic", size.frac[6], size.frac[2])),
+         filter_size = ifelse(upper_size_dna == "1.6", size.frac[1], size.frac[2]),
          euk_read_count = as.numeric(as.character(euk_read_count)))
+```
 
+
+```{r}
 sel_col2 = c("sample", "filter_size", "euk_read_count", "depth")
-depth_cat = rbind(merged_tara[sel_col2], deep_euk_count[sel_col2], big_size_count[sel_col2]) # 
+depth_cat = rbind(merged_tara[sel_col2], deep_euk_count[sel_col2], size_5_20_count[sel_col2], size_20_180_count[sel_col2])
+
+# rm count-ocean.out
+# echo "sample,num_reads" > tmp
+# cat *.out >> tmp
+# mv tmp count-ocean.out
+
 total_reads = read_csv("../identify_eukaryotes/count-ocean.out")
 all_cat = merge(depth_cat, total_reads, by = "sample")
 
@@ -126,17 +114,27 @@ all_cat %>%
   filter(depth != "MIX") %>%
   ggplot(aes(x = euk_prop * 100, y = depth, fill = filter_size)) +
   geom_boxplot(outlier.alpha = 0.5) +
-  # geom_point(shape = 21, alpha = 0.5,
-  #            position = position_jitterdodge(jitter.width = 0.3)) +
+  geom_point(shape = 21, alpha = 0.5,
+             position = position_jitterdodge(jitter.width = 0.3)) +
   labs(x = "reads mapped to eukaryotic markers (%)",
        fill = expression(paste("Size Fraction (", mu, "m)"))) +
   theme_bw() +
-  scale_x_log10() +
+  # scale_x_log10() +
   theme(legend.text = ggtext::element_markdown(),
         axis.text.x = element_text(color="black"),
         axis.text.y = element_text(color="black"))
 
-ggsave("out/S7-eukaryote-proportions.pdf",
+ggsave("out/S7-eukaryote-proportions-v2.pdf", 
+       # "out/S7-eukaryote-count.pdf",
        height = 3, width = 6)
 ```
 
+```{r}
+# trash
+# base_arct="../identify_eukaryotes/EukDetect-arctic/filtering"
+# tara_arctic = Sys.glob(file.path(base_arct, hit_table))
+# euk_arctic = sum_reads_into_row(tara_arctic, base_arct)
+
+# euk_arctic$ocean = "arctic"
+# euk_tara = rbind(euk_tara, euk_arctic)
+```
